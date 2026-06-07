@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="meta">
+  <span class="l">Exam &middot; question {{ n + 1 }} of {{ total }}</span>
+  <span class="r timer {{ 'low' if remaining < 300 }}">{{ remaining_mmss }} left</span>
+</div>
+
+<form method="post" action="{{ url_for('exam_nav') }}">
+  <input type="hidden" name="n" value="{{ n }}">
+  <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+  <div class="choices">
+    {% for c in choices %}
+    <label class="choice">
+      <input type="radio" name="choice" value="{{ c.idx }}" {{ 'checked' if c.idx == saved }}>
+      <span class="cl">{{ c.letter }}</span><span>{{ c.text }}</span>
+    </label>
+    {% endfor %}
+  </div>
+
+  <div class="btn-row" style="margin-bottom:6px">
+    {% if n > 0 %}<button type="submit" name="goto" value="{{ n - 1 }}">Previous</button>{% endif %}
+    {% if n < total - 1 %}<button type="submit" name="goto" value="{{ n + 1 }}" class="btn-primary" style="width:auto;flex:1">Save and next</button>
+    {% else %}<button type="submit" name="finish" value="1" class="btn-primary" style="width:auto;flex:1">Finish exam</button>{% endif %}
+  </div>
+
+  <div class="section-title">Question palette</div>
+  <div class="palette">
+    {% for i in range(total) %}
+    <button type="submit" name="goto" value="{{ i }}" class="{{ 'answered' if i in answered_set }} {{ 'current' if i == n }}">{{ i + 1 }}</button>
+    {% endfor %}
+  </div>
+
+  <button type="submit" name="finish" value="1">Finish and grade now</button>
+</form>
+{% endblock %}

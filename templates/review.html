@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="section-title">Lifetime accuracy by topic</div>
+{% if lifetime %}
+{% for b in lifetime %}
+<div class="bdrow">
+  <span class="nm">{{ b.name }}</span>
+  <span class="tr bar"><i style="width:{{ b.pct }}%;background:{{ b.color }}"></i></span>
+  <span class="vl" style="color:{{ b.color }}">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>
+</div>
+{% endfor %}
+{% else %}
+<div class="empty">No answers logged yet. Start practicing from the home page.</div>
+{% endif %}
+
+<div class="section-title">Study list, every missed question</div>
+<div class="filters">
+  <a href="{{ url_for('review') }}" class="{{ 'active' if not active_bucket }}">All</a>
+  {% for b in bucket_names %}
+  <a href="{{ url_for('review', bucket=b) }}" class="{{ 'active' if active_bucket == b }}">{{ b }}</a>
+  {% endfor %}
+</div>
+
+{% if missed %}
+{% for grp in missed %}
+<div class="mbucket">
+  <div class="mbname">{{ grp.name }} <span>{{ grp.qs|length }} to review</span></div>
+  {% for m in grp.qs %}
+  <div class="mcard">
+    <div class="mq">{{ m.q_html|safe }}{% if m.misses > 1 %} <span style="color:var(--red);font-family:var(--mono);font-size:11px">missed {{ m.misses }}x</span>{% endif %}</div>
+    <div class="ma">{{ m.letter }}. {{ m.answer }}</div>
+    <div class="mr">{{ m.e }}</div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
+{% else %}
+<div class="empty">Nothing on your study list{{ ' for this topic' if active_bucket }}. Miss a question and it lands here.</div>
+{% endif %}
+{% endblock %}

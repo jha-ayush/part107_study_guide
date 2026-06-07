@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Create account - Part 107 Ground School{% endblock %}
+{% block body %}
+<div class="section-title">Create an account</div>
+<p style="font-size:14px;color:var(--muted);margin-bottom:14px">An account lets your progress follow you across devices. If you have been practicing already, that progress moves into your new account automatically.</p>
+{% if error %}<div class="explain bad" style="margin-bottom:14px">{{ error }}</div>{% endif %}
+<form method="post" action="{{ url_for('register') }}" class="qcard">
+  <label style="display:block;font-size:13px;color:var(--muted);margin-bottom:5px">Username (3 to 24 letters, numbers, or underscores)</label>
+  <input type="text" name="username" value="{{ username or '' }}" autocomplete="username" required
+         style="width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:14px">
+  <label style="display:block;font-size:13px;color:var(--muted);margin-bottom:5px">Password (at least 6 characters)</label>
+  <input type="password" name="password" autocomplete="new-password" required
+         style="width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:18px">
+  <button type="submit" class="btn-primary">Create account</button>
+</form>
+<div class="center" style="font-size:14px;color:var(--muted)">Already have an account? <a href="{{ url_for('login') }}">Sign in</a></div>
+{% endblock %}

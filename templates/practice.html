@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="meta">
+  <span class="l">Practice</span>
+  <span class="r">{{ q.b }} &middot; {{ q.s }}</span>
+</div>
+
+{% if not answered %}
+<form method="post" action="{{ url_for('practice_answer') }}">
+  <input type="hidden" name="qid" value="{{ q.id }}">
+  <input type="hidden" name="bucket" value="{{ bucket }}">
+  <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+  <div class="choices">
+    {% for c in choices %}
+    <label class="choice">
+      <input type="radio" name="choice" value="{{ c.idx }}" required>
+      <span class="cl">{{ c.letter }}</span><span>{{ c.text }}</span>
+    </label>
+    {% endfor %}
+  </div>
+  <button type="submit" class="btn-primary">Check answer</button>
+</form>
+{% else %}
+  <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+  <div class="choices">
+    {% for c in choices %}
+    <div class="choice {{ 'correct' if c.idx == q.a else ('wrong' if c.idx == chosen else 'dim') }}">
+      <span class="cl">{{ c.letter }}</span><span>{{ c.text }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="explain {{ 'ok' if correct else 'bad' }}">
+    <span class="rl">{{ 'correct &middot; the rule'|safe if correct else 'the rule' }}</span>{{ q.e }}
+  </div>
+  <a class="btn-primary" href="{{ url_for('practice', bucket=bucket) }}">Next question</a>
+  <div class="center" style="margin-top:12px"><a href="{{ url_for('home') }}" style="font-size:13px;color:var(--muted)">Back to home</a></div>
+{% endif %}
+{% endblock %}
