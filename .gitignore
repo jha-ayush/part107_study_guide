@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# macOS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Server-side progress store (runtime data)
+progress_store.json
+
+# Accounts and session secret (runtime; never commit)
+users.json
+.flask_secret
