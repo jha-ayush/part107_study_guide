@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="meta">
-  <span class="l">Exam &middot; question {{ n + 1 }} of {{ total }}</span>
-  <span class="r timer {{ 'low' if remaining < 300 }}">{{ remaining_mmss }} left</span>
+  <span class="l">📝 Exam &middot; question {{ n + 1 }} of {{ total }}</span>
+  <span class="r timer {{ 'low' if remaining < 300 }}"><span class="te">{{ '⚠️' if remaining < 300 else '⏱️' }}</span>{{ remaining_mmss }} left</span>
 </div>
 
 <form method="post" action="{{ url_for('exam_nav') }}">
@@ -23,7 +23,7 @@
     {% else %}<button type="submit" name="finish" value="1" class="btn-primary" style="width:auto;flex:1">Finish exam</button>{% endif %}
   </div>
 
-  <div class="section-title">Question palette</div>
+  <div class="section-title">🧭 Question palette</div>
   <div class="palette">
     {% for i in range(total) %}
     <button type="submit" name="goto" value="{{ i }}" class="{{ 'answered' if i in answered_set }} {{ 'current' if i == n }}">{{ i + 1 }}</button>
