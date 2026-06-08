@@ -20,6 +20,7 @@
     <nav>
       <a href="{{ url_for('home') }}"><span class="nav-ic">🏠</span> Home</a>
       <a href="{{ url_for('review') }}"><span class="nav-ic">📚</span> Study list</a>
+      <a href="{{ url_for('history') }}"><span class="nav-ic">📈</span> Progress</a>
       <a class="theme-toggle" href="{{ url_for('toggle_theme') }}"
          aria-label="{{ 'Switch to light mode' if dark else 'Switch to dark mode' }}"
          title="{{ 'Light mode' if dark else 'Dark mode' }}">
