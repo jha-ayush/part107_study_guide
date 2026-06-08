@@ -22,6 +22,12 @@
 </div>
 
 {% if missed %}
+<div class="btn-row" style="margin-bottom:14px">
+  <a class="btn-primary" href="{{ url_for('drill', bucket=active_bucket) }}" style="width:auto;flex:1">🎯 Drill {{ 'these' if active_bucket else 'all' }} missed questions</a>
+</div>
+{% endif %}
+
+{% if missed %}
 {% for grp in missed %}
 <div class="mbucket">
   <div class="mbname"><span class="ic">{{ icons[grp.name] }}</span>{{ grp.name }} <span class="countbadge">{{ grp.qs|length }} to review</span></div>
