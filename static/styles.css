@@ -180,3 +180,11 @@ body.dark .btn-primary{background:linear-gradient(165deg,#3b6bbf,#274a86);border
 .mbname .ic{margin-right:4px;}
 .filters a .ic{margin-right:3px;}
 .timer .te{margin-right:3px;}
+
+/* exam trend chart */
+.trend{position:relative;display:flex;align-items:flex-end;gap:6px;height:124px;padding-top:6px;border-bottom:1px solid var(--line);margin-bottom:8px;}
+.trend .tb{flex:1;min-width:7px;border-radius:5px 5px 0 0;box-shadow:var(--shadow-sm);}
+.trend .tb.pass{background:linear-gradient(180deg,#34b277,#1F8A5B);}
+.trend .tb.fail{background:linear-gradient(180deg,#db6060,#C23B3B);}
+.trend .passline{position:absolute;left:0;right:0;border-top:1px dashed var(--muted);opacity:.65;pointer-events:none;}
+.trend .passline span{position:absolute;right:0;top:-8px;font-family:var(--mono);font-size:9px;color:var(--muted);background:var(--paper);padding:0 4px;}
