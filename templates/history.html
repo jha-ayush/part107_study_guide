@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Exam readiness - Part 107 Ground School{% endblock %}
+{% block body %}
+<div class="section-title">🎓 Exam readiness</div>
+{% if not taken %}
+<div class="empty">📝 No practice exams logged yet. Take one to see your readiness verdict and score trend.</div>
+<div class="center" style="margin-top:10px"><a class="btn-primary" href="{{ url_for('exam_start') }}" style="width:auto;display:inline-block">Start an exam</a></div>
+{% else %}
+<div class="qcard" style="text-align:center">
+  <span class="mbadge {{ verdict.cls }}" style="font-size:12px;padding:5px 12px">{{ verdict.emoji }} {{ verdict.label }}</span>
+  <p style="font-size:14px;color:var(--muted);margin:11px 0 0">{{ verdict.note }}</p>
+</div>
+
+<div class="tiles">
+  <div class="tile"><span class="ic">🏅</span><b>{{ best }}%</b><span>best score</span></div>
+  <div class="tile"><span class="ic">📊</span><b>{{ avg5 }}%</b><span>recent average</span></div>
+  <div class="tile"><span class="ic">✅</span><b>{{ pass_rate }}%</b><span>pass rate</span></div>
+</div>
+
+<div class="section-title">📈 Score trend &middot; last {{ trend|length }}</div>
+<div class="trend">
+  <div class="passline" style="bottom:{{ exam_pass }}%"><span>{{ exam_pass }}% pass</span></div>
+  {% for s in trend %}
+  <div class="tb {{ 'pass' if s.passed else 'fail' }}" style="height:{{ s.pct }}%" title="{{ s.pct }}%"></div>
+  {% endfor %}
+</div>
+<div class="center" style="font-family:var(--mono);font-size:10px;color:var(--muted)">oldest → newest</div>
+
+<div class="section-title">🗒️ Recent exams</div>
+{% for s in recent %}
+<div class="bdrow">
+  <span class="nm" style="width:auto;flex:1">{{ s.when }}</span>
+  <span class="vl" style="width:auto;color:var(--muted)">{{ s.correct }}/{{ s.total }}</span>
+  <span class="vl" style="color:{{ '#1F8A5B' if s.passed else '#C23B3B' }}">{{ s.pct }}%</span>
+  <span class="badge {{ 'pass' if s.passed else 'fail' }}" style="font-size:10px;padding:3px 9px">{{ '✅' if s.passed else '❌' }} {{ 'Pass' if s.passed else 'Fail' }}</span>
+</div>
+{% endfor %}
+
+<div class="btn-row" style="justify-content:center;margin-top:16px">
+  <a class="btn" href="{{ url_for('exam_start') }}">🔄 New exam</a>
+  <a class="btn" href="{{ url_for('home') }}">🏠 Home</a>
+</div>
+{% endif %}
+{% endblock %}
