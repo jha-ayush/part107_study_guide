@@ -2,28 +2,18 @@
 
 A FAA Part 107 knowledge-test prep app, built as a server-rendered Python
 (Flask) web app. All logic runs in Python: page rendering, answer checking,
-scoring, the exam timer, and progress tracking. There is no client-side
-application JavaScript.
+scoring, the exam timer, accounts, and progress tracking. There is no
+client-side application JavaScript.
 
-## Structure
+It ships in two equivalent forms:
 
-```
-part107_study_guide/
-  app.py                 Flask app and all logic (entry point)
-  questions.json         the 400-question bank
-  requirements.txt       Python dependencies
-  Procfile               process command for hosts like Render
-  run-local.sh           one-command local run
-  templates/             Jinja templates
-    base.html  home.html  practice.html  exam.html  exam_result.html  review.html
-  static/
-    styles.css           styling
-    icons/               app icons (used for the browser tab)
-  README.md
-  .gitignore  LICENSE
-```
+- A multi-file project (`app.py` plus `templates/` and `static/`).
+- A single self-contained file (`main.py`) with the questions and all HTML and
+  CSS embedded, for the simplest possible run and share.
 
 ## Run it locally
+
+Multi-file version:
 
 ```
 bash run-local.sh
@@ -38,30 +28,74 @@ pip install -r requirements.txt
 python app.py
 ```
 
-## How it works
+Single-file version:
 
-- `/` is the dashboard: lifetime accuracy, questions answered, study-list size,
-  and per-topic mastery.
-- `/practice?bucket=Weather` serves one question, checks your answer on submit,
-  shows the rule, and links to the next.
-- `/exam/start` builds a {exam_n}-question timed exam; you answer one per page
-  with a question palette and previous/next, then it grades against {exam_pass}%.
-- `/review` shows lifetime accuracy and your missed questions grouped by topic.
+```
+pip install flask
+python main.py
+```
+
+Either way, open http://127.0.0.1:8000.
+
+## Study modes
+
+- Learn: flashcard-style reading through a topic, showing each question with the
+  correct answer and the rule, no quiz. Ends by handing off to a quiz.
+- Practice: one question at a time with instant feedback and the rule. Filter by
+  topic or practice all topics.
+- Focus: practice weighted toward your lowest-scoring and not-yet-seen topics.
+- Drill: replays the specific questions you have missed, weighted toward the ones
+  you miss most. Questions leave the list once you answer them correctly.
+- Exam: a 60-question timed simulation (120-minute limit, 70 percent to pass)
+  with a question palette and previous/next, graded by topic with a missed list.
+- Study list: every missed question grouped by topic, with lifetime accuracy.
+- Progress: an exam history page with a readiness verdict, best score, recent
+  average, pass rate, and a score-trend chart with the pass line drawn in.
+- Cheat sheet: every distinct rule grouped by topic, print-optimized for
+  last-minute review (use Cmd or Ctrl + P).
+
+Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
+bank currently holds 519 questions. Per-topic mastery badges and a dark mode are
+built in.
 
 ## Accounts and progress
 
 Without an account, progress is stored on the server keyed to a cookie in your
 browser, so it persists on that machine. Create an account (`/register`) or sign
-in (`/login`) to make progress follow you across devices. When you first sign
-in, any anonymous progress on that browser migrates into your account.
+in (`/login`) with your email to make progress follow you across devices. When
+you first sign in, any anonymous progress on that browser migrates into your
+account.
 
 Accounts are stored in `users.json` with hashed passwords, and progress in
 `progress_store.json`, both kept out of version control. The session secret is
 read from the `FLASK_SECRET_KEY` environment variable, falling back to a local
 `.flask_secret` file for development. Set `FLASK_SECRET_KEY` in production.
 
+All POST forms (sign in, register, sign out, answer, exam navigation, reset) are
+protected against cross-site request forgery with a per-session token.
+
 The exam timer is enforced on the server. The remaining time is shown each time
 a page loads; since there is no JavaScript, it does not tick live between loads.
+
+## Project structure
+
+```
+part107_study_guide/
+  app.py                 Flask app and all logic (multi-file entry point)
+  main.py                single-file build (questions, HTML, and CSS embedded)
+  questions.json         the question bank
+  requirements.txt       Python dependencies
+  Procfile               process command for hosts like Render
+  run-local.sh           one-command local run
+  templates/             Jinja templates
+    base.html  home.html  learn.html  practice.html  exam.html
+    exam_result.html  review.html  history.html  cheatsheet.html
+    login.html  register.html
+  static/
+    styles.css           styling
+    icons/               app icons (used for the browser tab)
+  README.md  .gitignore  LICENSE
+```
 
 ## Edit the question bank
 
@@ -73,16 +107,21 @@ Open `questions.json`. Each entry:
 ```
 
 `b` is the bucket (Regulations, Airspace, Charts, Weather, Operations, Loading),
-`s` a subtopic, `c` the choices, `a` the index of the correct choice (0 to 3),
-`e` the one-sentence rule. Restart the server to load changes.
+`s` a subtopic, `c` the four choices, `a` the index of the correct choice (0 to
+3), `e` the one-sentence rule. Restart the server to load changes. The exam size,
+pass mark, and time limit are constants near the top of `app.py`.
 
-## Deploy later
+After editing the multi-file version, regenerate `main.py` if you want the
+single-file build to match, or just edit the one you use.
 
-The `Procfile` runs the app under gunicorn (`web: gunicorn app:app`), which works
-on hosts like Render.
+## Deploy
 
-## Roadmap
+The `Procfile` runs the app under gunicorn bound to the host port
+(`web: gunicorn app:app --bind 0.0.0.0:${PORT:-8000}`), which works on hosts like
+Render. Set `FLASK_SECRET_KEY` as an environment variable in production.
 
-- Accounts. Progress is per-browser via a cookie today; a sign-in would replace
-  that cookie id with a real user id for cross-device sync.
-- Continued bank growth, all in `questions.json`.
+One caveat to plan for: the file-based `users.json` and `progress_store.json`
+live on the local disk, which most hosts reset on every deploy or restart. For a
+hosted, multi-user deployment, put that data on a persistent disk or move it to a
+database (for example SQLite on a persistent disk, or managed Postgres) so
+accounts and progress survive redeploys.
