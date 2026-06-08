@@ -440,6 +440,41 @@ def review():
                            bucket_names=BUCKETS, active_bucket=active)
 
 
+def _nice_date(iso):
+    try:
+        return time.strftime("%b %d \u00b7 %H:%M", time.strptime(iso, "%Y-%m-%dT%H:%M:%S"))
+    except (ValueError, TypeError):
+        return iso
+
+
+@app.route("/history")
+def history():
+    exams = [s for s in g.record["sessions"] if s.get("mode") == "exam"]
+    taken = len(exams)
+    if not taken:
+        return render_template("history.html", taken=0)
+    best = max(s["pct"] for s in exams)
+    last5 = exams[-5:]
+    avg5 = round(sum(s["pct"] for s in last5) / len(last5))
+    pass_rate = round(sum(1 for s in exams if s["passed"]) / taken * 100)
+    last3 = exams[-3:]
+    avg3 = round(sum(s["pct"] for s in last3) / len(last3))
+    if avg3 >= 85 and exams[-1]["passed"]:
+        verdict = {"emoji": "\U0001F7E2", "label": "Exam-ready", "cls": "m-strong",
+                   "note": "Your recent scores clear the bar with margin. Keep drilling any weak topics and you are in good shape."}
+    elif avg3 >= EXAM_PASS:
+        verdict = {"emoji": "\U0001F7E1", "label": "On the cusp", "cls": "m-learn",
+                   "note": "You are passing, but the margin is thin. Aim for 85%+ across a few exams for a comfortable cushion."}
+    else:
+        verdict = {"emoji": "\U0001F534", "label": "Keep studying", "cls": "m-focus",
+                   "note": "Recent scores are below the " + str(EXAM_PASS) + "% passing line. Drill your missed questions, then retest."}
+    recent = [{**s, "when": _nice_date(s.get("date", ""))} for s in reversed(exams)][:15]
+    trend = exams[-12:]
+    return render_template("history.html", taken=taken, best=best, avg5=avg5,
+                           pass_rate=pass_rate, verdict=verdict, recent=recent,
+                           trend=trend, exam_pass=EXAM_PASS)
+
+
 @app.route("/theme/toggle")
 def toggle_theme():
     g.record["prefs"]["dark"] = not g.record["prefs"].get("dark", False)
