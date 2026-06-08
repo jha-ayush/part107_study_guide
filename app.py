@@ -47,6 +47,29 @@ for i, q in enumerate(QUESTIONS):
     q["id"] = i
 
 BUCKETS = ["Regulations", "Airspace", "Charts", "Weather", "Operations", "Loading"]
+BUCKET_ICONS = {
+    "Regulations": "\U0001F4CB",   # clipboard
+    "Airspace": "\U0001F5FA\uFE0F",  # map
+    "Charts": "\U0001F9ED",         # compass
+    "Weather": "\U0001F326\uFE0F",   # sun behind rain cloud
+    "Operations": "\U0001F681",     # helicopter
+    "Loading": "\u2696\uFE0F",       # balance scale
+}
+
+
+def mastery_badge(pct):
+    """Return a small achievement badge for a topic given its accuracy."""
+    if pct is None:
+        return {"emoji": "\U0001F195", "label": "New", "cls": "m-new"}
+    if pct >= 90:
+        return {"emoji": "\U0001F3C6", "label": "Master", "cls": "m-master"}
+    if pct >= 75:
+        return {"emoji": "\u2B50", "label": "Strong", "cls": "m-strong"}
+    if pct >= 50:
+        return {"emoji": "\U0001F331", "label": "Learning", "cls": "m-learn"}
+    return {"emoji": "\U0001F3AF", "label": "Focus", "cls": "m-focus"}
+
+
 LETTERS = "ABCD"
 EXAM_N = min(60, len(QUESTIONS))
 EXAM_PASS = 70
@@ -219,7 +242,8 @@ def _persist_cookie(resp):
 
 @app.context_processor
 def _inject():
-    return {"dark": g.record["prefs"].get("dark", False), "user": g.user}
+    return {"dark": g.record["prefs"].get("dark", False), "user": g.user,
+            "icons": BUCKET_ICONS, "mastery": mastery_badge}
 
 
 # ---- Routes -----------------------------------------------------------------
