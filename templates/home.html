@@ -20,6 +20,7 @@
   {% endif %}
   <a class="actioncard" href="{{ url_for('exam_start') }}"><b><span class="ic">📝</span>Exam simulation</b><span>{{ exam_n }} questions, {{ exam_min }} minutes, {{ exam_pass }}% to pass</span></a>
   <a class="actioncard" href="{{ url_for('practice', bucket='All') }}"><b><span class="ic">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>
+  <a class="actioncard" href="{{ url_for('focus') }}"><b><span class="ic">🎚️</span>Focus on weak topics</b><span>Practice weighted toward your lowest-scoring and not-yet-seen topics</span></a>
   <a class="actioncard" href="{{ url_for('review') }}"><b><span class="ic">📊</span>Study list and stats</b><span>Every missed question, grouped by topic</span></a>
 </div>
 
