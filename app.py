@@ -14,7 +14,7 @@ import time
 from pathlib import Path
 from uuid import uuid4
 
-from flask import (Flask, g, jsonify, redirect, render_template, request,
+from flask import (Flask, abort, g, jsonify, redirect, render_template, request,
                    session, url_for, Response)
 from markupsafe import Markup
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -229,6 +229,11 @@ def _load_state():
     g.user = read_users().get(uname) if uname else None
     g.owner = ("u:" + g.user["id"]) if g.user else ("d:" + uid)
     g.record = get_record(g.owner)
+    if "_csrf" not in session:
+        session["_csrf"] = secrets.token_hex(16)
+    if request.method == "POST" and not secrets.compare_digest(
+            request.form.get("_csrf", ""), session.get("_csrf", "")):
+        abort(400)
 
 
 @app.after_request
@@ -243,7 +248,8 @@ def _persist_cookie(resp):
 @app.context_processor
 def _inject():
     return {"dark": g.record["prefs"].get("dark", False), "user": g.user,
-            "icons": BUCKET_ICONS, "mastery": mastery_badge}
+            "icons": BUCKET_ICONS, "mastery": mastery_badge,
+            "csrf_token": session.get("_csrf", "")}
 
 
 # ---- Routes -----------------------------------------------------------------
