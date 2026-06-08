@@ -6,6 +6,7 @@
 </div>
 
 <form method="post" action="{{ url_for('exam_nav') }}">
+  <input type="hidden" name="_csrf" value="{{ csrf_token }}">
   <input type="hidden" name="n" value="{{ n }}">
   <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
   <div class="choices">
