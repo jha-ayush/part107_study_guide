@@ -33,6 +33,7 @@
       {% if user %}
       <span class="user-chip" title="{{ user.email }}">{{ user.email }}</span>
       <form method="post" action="{{ url_for('logout') }}" style="display:inline;margin:0">
+        <input type="hidden" name="_csrf" value="{{ csrf_token }}">
         <button type="submit" class="linkbtn">Sign out</button>
       </form>
       {% else %}
