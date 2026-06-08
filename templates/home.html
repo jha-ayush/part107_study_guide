@@ -1,41 +1,44 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="tiles">
-  <div class="tile"><b>{{ lifetime_pct if lifetime_pct is not none else "--" }}{{ "%" if lifetime_pct is not none else "" }}</b><span>lifetime accuracy</span></div>
-  <div class="tile"><b>{{ total_answered }}</b><span>questions answered</span></div>
-  <div class="tile"><b>{{ to_review }}</b><span>on your study list</span></div>
+  <div class="tile"><span class="ic">🎯</span><b>{{ lifetime_pct if lifetime_pct is not none else "--" }}{{ "%" if lifetime_pct is not none else "" }}</b><span>lifetime accuracy</span></div>
+  <div class="tile"><span class="ic">✍️</span><b>{{ total_answered }}</b><span>questions answered</span></div>
+  <div class="tile"><span class="ic">📚</span><b>{{ to_review }}</b><span>on your study list</span></div>
 </div>
 
 {% if not user %}
 <a class="actioncard" href="{{ url_for('register') }}" style="border-color:var(--blue);margin-bottom:8px">
-  <b>Create an account to sync across devices</b>
+  <b><span class="ic">☁️</span>Create an account to sync across devices</b>
   <span>Your current progress moves into the account automatically. Or <span style="text-decoration:underline">sign in</span> if you have one.</span>
 </a>
 {% endif %}
 
-<div class="section-title">Study</div>
+<div class="section-title">📖 Study</div>
 <div class="cards">
-  <a class="actioncard" href="{{ url_for('exam_start') }}"><b>Exam simulation</b><span>{{ exam_n }} questions, {{ exam_min }} minutes, {{ exam_pass }}% to pass</span></a>
-  <a class="actioncard" href="{{ url_for('practice', bucket='All') }}"><b>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>
-  <a class="actioncard" href="{{ url_for('review') }}"><b>Study list and stats</b><span>Every missed question, grouped by topic</span></a>
+  <a class="actioncard" href="{{ url_for('exam_start') }}"><b><span class="ic">📝</span>Exam simulation</b><span>{{ exam_n }} questions, {{ exam_min }} minutes, {{ exam_pass }}% to pass</span></a>
+  <a class="actioncard" href="{{ url_for('practice', bucket='All') }}"><b><span class="ic">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>
+  <a class="actioncard" href="{{ url_for('review') }}"><b><span class="ic">📊</span>Study list and stats</b><span>Every missed question, grouped by topic</span></a>
 </div>
 
-<div class="section-title">Practice by topic</div>
+<div class="section-title">🧩 Practice by topic</div>
 <div class="bgrid">
   {% for b in buckets %}
   <a class="bcard" href="{{ url_for('practice', bucket=b.name) }}">
-    <div class="n">{{ b.name }} ({{ b.count }})</div>
+    <div class="top-row">
+      <div class="n"><span class="ic">{{ icons[b.name] }}</span>{{ b.name }} ({{ b.count }})</div>
+      {% set m = mastery(b.pct) %}<span class="mbadge {{ m.cls }}">{{ m.emoji }} {{ m.label }}</span>
+    </div>
     <div class="pct">{{ b.pct if b.pct is not none else "not started" }}{{ "%" if b.pct is not none else "" }}</div>
     <div class="bar"><i style="width:{{ b.pct or 0 }}%;background:{{ b.color }}"></i></div>
   </a>
   {% endfor %}
 </div>
 
-<div class="section-title">Manage</div>
+<div class="section-title">⚙️ Manage</div>
 <div class="btn-row">
-  <a class="btn" href="{{ url_for('export_progress') }}">Export progress</a>
+  <a class="btn" href="{{ url_for('export_progress') }}">📤 Export progress</a>
   <form method="post" action="{{ url_for('reset_progress') }}" onsubmit="return confirm('Erase all saved progress on this server for your browser?')" style="display:inline">
-    <button type="submit">Reset all</button>
+    <button type="submit">🗑️ Reset all</button>
   </form>
 </div>
 {% endblock %}
