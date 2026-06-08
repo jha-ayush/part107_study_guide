@@ -302,6 +302,27 @@ def drill():
                            choices=shuffled(order, q), bucket=q["b"])
 
 
+@app.route("/focus")
+def focus():
+    """Practice weighted toward the weakest topics; unseen topics get strong focus."""
+    weights = []
+    for b in BUCKETS:
+        v = g.record["lifetime"].get(b)
+        if v and v.get("n"):
+            pct = v["c"] / v["n"] * 100
+            weights.append(max(8.0, 100 - pct))
+        else:
+            weights.append(70.0)
+    bucket = random.choices(BUCKETS, weights=weights, k=1)[0]
+    pool = [q for q in QUESTIONS if q["b"] == bucket]
+    q = random.choice(pool)
+    order = list(range(len(q["c"])))
+    random.shuffle(order)
+    return render_template("practice.html", answered=False, mode="focus",
+                           drill_bucket=None, q={**q, "q_html": q_html(q)},
+                           choices=shuffled(order, q), bucket=q["b"])
+
+
 @app.route("/practice/answer", methods=["POST"])
 def practice_answer():
     qid = int(request.form.get("qid", -1))
