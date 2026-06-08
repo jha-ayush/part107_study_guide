@@ -329,6 +329,26 @@ def focus():
                            choices=shuffled(order, q), bucket=q["b"])
 
 
+@app.route("/learn")
+def learn():
+    """Flashcard-style study: read each question with its answer and rule, no quiz."""
+    bucket = request.args.get("bucket")
+    if bucket not in BUCKETS:
+        bucket = BUCKETS[0]
+    pool = [q for q in QUESTIONS if q["b"] == bucket]
+    total = len(pool)
+    try:
+        n = int(request.args.get("n", 0))
+    except (TypeError, ValueError):
+        n = 0
+    n = max(0, min(n, total - 1))
+    q = pool[n]
+    choices = [{"idx": i, "letter": LETTERS[i], "text": q["c"][i]} for i in range(len(q["c"]))]
+    return render_template("learn.html", bucket=bucket, n=n, total=total,
+                           q={**q, "q_html": q_html(q)}, choices=choices,
+                           bucket_names=BUCKETS)
+
+
 @app.route("/practice/answer", methods=["POST"])
 def practice_answer():
     qid = int(request.form.get("qid", -1))
