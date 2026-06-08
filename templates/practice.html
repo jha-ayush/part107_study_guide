@@ -12,6 +12,7 @@
 
 {% if not answered %}
 <form method="post" action="{{ url_for('practice_answer') }}">
+  <input type="hidden" name="_csrf" value="{{ csrf_token }}">
   <input type="hidden" name="qid" value="{{ q.id }}">
   <input type="hidden" name="bucket" value="{{ bucket }}">
   <input type="hidden" name="mode" value="{{ mode }}">
