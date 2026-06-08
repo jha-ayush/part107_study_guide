@@ -4,12 +4,12 @@
 <div class="section-title">Sign in</div>
 {% if error %}<div class="explain bad" style="margin-bottom:14px">{{ error }}</div>{% endif %}
 <form method="post" action="{{ url_for('login') }}" class="qcard">
-  <label style="display:block;font-size:13px;color:var(--muted);margin-bottom:5px">Username</label>
-  <input type="text" name="username" value="{{ username or '' }}" autocomplete="username" required
-         style="width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:14px">
-  <label style="display:block;font-size:13px;color:var(--muted);margin-bottom:5px">Password</label>
+  <label class="flabel">Email</label>
+  <input type="email" name="email" value="{{ email or '' }}" autocomplete="email" required
+         class="field" style="margin-bottom:14px" placeholder="you@example.com">
+  <label class="flabel">Password</label>
   <input type="password" name="password" autocomplete="current-password" required
-         style="width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--ink);font-size:15px;margin-bottom:18px">
+         class="field" style="margin-bottom:18px">
   <button type="submit" class="btn-primary">Sign in</button>
 </form>
 <div class="center" style="font-size:14px;color:var(--muted)">No account yet? <a href="{{ url_for('register') }}">Create one</a></div>
