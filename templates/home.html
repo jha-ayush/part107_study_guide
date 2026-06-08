@@ -15,6 +15,9 @@
 
 <div class="section-title">📖 Study</div>
 <div class="cards">
+  {% if to_review %}
+  <a class="actioncard" href="{{ url_for('drill') }}" style="border-color:var(--magenta)"><b><span class="ic">🎯</span>Drill your {{ to_review }} missed question{{ 's' if to_review != 1 }}</b><span>Focused practice on exactly what you keep getting wrong, hardest first</span></a>
+  {% endif %}
   <a class="actioncard" href="{{ url_for('exam_start') }}"><b><span class="ic">📝</span>Exam simulation</b><span>{{ exam_n }} questions, {{ exam_min }} minutes, {{ exam_pass }}% to pass</span></a>
   <a class="actioncard" href="{{ url_for('practice', bucket='All') }}"><b><span class="ic">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>
   <a class="actioncard" href="{{ url_for('review') }}"><b><span class="ic">📊</span>Study list and stats</b><span>Every missed question, grouped by topic</span></a>
