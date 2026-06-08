@@ -188,3 +188,23 @@ body.dark .btn-primary{background:linear-gradient(165deg,#3b6bbf,#274a86);border
 .trend .tb.fail{background:linear-gradient(180deg,#db6060,#C23B3B);}
 .trend .passline{position:absolute;left:0;right:0;border-top:1px dashed var(--muted);opacity:.65;pointer-events:none;}
 .trend .passline span{position:absolute;right:0;top:-8px;font-family:var(--mono);font-size:9px;color:var(--muted);background:var(--paper);padding:0 4px;}
+
+/* cheat sheet */
+.cs-intro{font-size:14px;color:var(--muted);margin-bottom:18px;}
+.cs-group{margin-bottom:22px;}
+.cs-head{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--magenta);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:9px;display:flex;align-items:center;gap:7px;}
+.cs-head .cs-n{margin-left:auto;color:var(--muted);font-size:11px;}
+.cs-list{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.cs-list li{font-size:14px;line-height:1.5;padding-left:18px;position:relative;}
+.cs-list li::before{content:"\203A";position:absolute;left:4px;color:var(--blue);font-weight:700;}
+
+/* print-friendly output (Cmd/Ctrl + P) */
+@media print{
+  body{background:#fff;color:#000;padding:0;}
+  header.top,.note{display:none !important;}
+  .section-title::after{display:none;}
+  .cs-head{color:#000;border-color:#000;}
+  .cs-list li::before{color:#000;}
+  a{color:#000;text-decoration:none;}
+  .qcard,.actioncard,.tile,.bcard{box-shadow:none;}
+}
