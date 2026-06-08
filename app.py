@@ -98,7 +98,7 @@ def save_record(uid, rec):
 # ---- User accounts (file-based) ---------------------------------------------
 USERS_FILE = ROOT / "users.json"
 _users_lock = threading.Lock()
-_UNAME_RE = re.compile(r"^[A-Za-z0-9_]{3,24}$")
+_EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
 
 def read_users():
@@ -115,9 +115,9 @@ def write_users(users):
         USERS_FILE.write_text(json.dumps(users), encoding="utf-8")
 
 
-def validate_credentials(username, password):
-    if not _UNAME_RE.match(username or ""):
-        return "Username must be 3 to 24 letters, numbers, or underscores."
+def validate_credentials(email, password):
+    if not _EMAIL_RE.match(email or ""):
+        return "Enter a valid email address."
     if len(password or "") < 6:
         return "Password must be at least 6 characters."
     return None
@@ -418,20 +418,20 @@ def api_health():
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
-        username = request.form.get("username", "").strip()
+        email = request.form.get("email", "").strip()
         password = request.form.get("password", "")
-        err = validate_credentials(username, password)
+        err = validate_credentials(email, password)
         users = read_users()
-        if not err and username.lower() in users:
-            err = "That username is already taken."
+        if not err and email.lower() in users:
+            err = "An account with that email already exists."
         if err:
-            return render_template("register.html", error=err, username=username)
+            return render_template("register.html", error=err, email=email)
         user_id = uuid4().hex
-        users[username.lower()] = {"id": user_id, "username": username,
-                                   "pw_hash": generate_password_hash(password),
-                                   "created": time.strftime("%Y-%m-%dT%H:%M:%S")}
+        users[email.lower()] = {"id": user_id, "email": email,
+                                "pw_hash": generate_password_hash(password),
+                                "created": time.strftime("%Y-%m-%dT%H:%M:%S")}
         write_users(users)
-        session["user"] = username.lower()
+        session["user"] = email.lower()
         migrate_device_to_user(user_id)
         return redirect(url_for("home"))
     return render_template("register.html")
@@ -440,13 +440,13 @@ def register():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        username = request.form.get("username", "").strip().lower()
+        email = request.form.get("email", "").strip().lower()
         password = request.form.get("password", "")
-        user = read_users().get(username)
+        user = read_users().get(email)
         if not user or not check_password_hash(user["pw_hash"], password):
-            return render_template("login.html", error="Wrong username or password.",
-                                   username=request.form.get("username", ""))
-        session["user"] = username
+            return render_template("login.html", error="Wrong email or password.",
+                                   email=request.form.get("email", ""))
+        session["user"] = email
         migrate_device_to_user(user["id"])
         return redirect(url_for("home"))
     return render_template("login.html")
