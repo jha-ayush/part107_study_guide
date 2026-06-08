@@ -152,3 +152,31 @@ body.dark .btn-primary{background:linear-gradient(165deg,#3b6bbf,#274a86);border
   .actioncard:nth-child(4),.bcard:nth-child(4){animation-delay:.14s;}
 }
 @media(max-width:480px){.palette{grid-template-columns:repeat(6,1fr);}.bgrid{grid-template-columns:1fr;}.user-chip{max-width:90px;}}
+
+/* icons, emojis, badges */
+.nav-ic{font-size:13px;margin-right:1px;}
+.tile{position:relative;}
+.tile .ic{position:absolute;top:13px;right:14px;font-size:17px;opacity:.9;line-height:1;}
+.actioncard .ic,.bcard .ic{font-style:normal;margin-right:7px;}
+.actioncard b .ic{font-size:16px;}
+.bcard .n .ic{margin-right:5px;}
+.mbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow-sm);white-space:nowrap;}
+.mbadge.m-new{background:var(--surface-2);color:var(--muted);}
+.mbadge.m-master{background:rgba(185,124,12,.14);color:var(--amber);border-color:rgba(185,124,12,.45);}
+.mbadge.m-strong{background:var(--green-bg);color:var(--green);border-color:var(--green);}
+.mbadge.m-learn{background:rgba(43,92,158,.12);color:var(--blue);border-color:rgba(43,92,158,.4);}
+.mbadge.m-focus{background:var(--red-bg);color:var(--red);border-color:var(--red);}
+.bcard .top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+.countbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--red-bg);color:var(--red);border:1px solid var(--red);}
+.countbadge.ok{background:var(--green-bg);color:var(--green);border-color:var(--green);}
+.result-emoji{font-size:46px;line-height:1;margin-bottom:6px;}
+.badge .be{font-size:13px;margin-right:2px;}
+.choice .status{margin-left:auto;font-size:15px;align-self:center;}
+.feedback{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:11px 15px;border-radius:11px;margin-bottom:14px;box-shadow:var(--shadow-sm);}
+.feedback .fe{font-size:18px;}
+.feedback.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}
+.feedback.bad{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}
+.bdrow .nm .ic{margin-right:5px;}
+.mbname .ic{margin-right:4px;}
+.filters a .ic{margin-right:3px;}
+.timer .te{margin-right:3px;}
