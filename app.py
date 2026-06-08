@@ -349,6 +349,25 @@ def learn():
                            bucket_names=BUCKETS)
 
 
+@app.route("/cheatsheet")
+def cheatsheet():
+    """A condensed, printable list of every distinct rule, grouped by topic."""
+    sheet = []
+    for b in BUCKETS:
+        seen, rules = set(), []
+        for q in QUESTIONS:
+            if q["b"] != b:
+                continue
+            e = q["e"].strip()
+            if e and e not in seen:
+                seen.add(e)
+                rules.append(e)
+        rules.sort()
+        sheet.append({"name": b, "rules": rules, "count": len(rules)})
+    total = sum(s["count"] for s in sheet)
+    return render_template("cheatsheet.html", sheet=sheet, total=total)
+
+
 @app.route("/practice/answer", methods=["POST"])
 def practice_answer():
     qid = int(request.form.get("qid", -1))
