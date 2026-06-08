@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Rules cheat sheet - Part 107 Ground School{% endblock %}
+{% block body %}
+<div class="section-title">🗒️ Rules cheat sheet</div>
+<p class="cs-intro">{{ total }} key rules across all topics. Use your browser's print (Cmd or Ctrl + P) to save or print a clean copy for last-minute review.</p>
+{% for grp in sheet %}
+<div class="cs-group">
+  <div class="cs-head"><span class="ic">{{ icons[grp.name] }}</span>{{ grp.name }} <span class="cs-n">{{ grp.count }}</span></div>
+  <ul class="cs-list">
+    {% for r in grp.rules %}<li>{{ r }}</li>{% endfor %}
+  </ul>
+</div>
+{% endfor %}
+{% endblock %}
