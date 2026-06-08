@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Learn - Part 107 Ground School{% endblock %}
+{% block body %}
+<div class="section-title">📖 Learn by topic</div>
+<div class="filters">
+  {% for b in bucket_names %}
+  <a href="{{ url_for('learn', bucket=b, n=0) }}" class="{{ 'active' if bucket == b }}"><span class="ic">{{ icons[b] }}</span>{{ b }}</a>
+  {% endfor %}
+</div>
+
+<div class="meta">
+  <span class="l">{{ icons[bucket] }} {{ bucket }}</span>
+  <span class="r">card {{ n + 1 }} of {{ total }}</span>
+</div>
+
+<div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+<div class="choices">
+  {% for c in choices %}
+  <div class="choice {{ 'correct' if c.idx == q.a else 'dim' }}">
+    <span class="cl">{{ c.letter }}</span><span>{{ c.text }}</span>
+    {% if c.idx == q.a %}<span class="status">✅</span>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+<div class="explain ok"><span class="rl">📌 the rule</span>{{ q.e }}</div>
+
+<div class="btn-row">
+  {% if n > 0 %}<a class="btn" href="{{ url_for('learn', bucket=bucket, n=n-1) }}">← Previous</a>{% endif %}
+  {% if n < total - 1 %}
+  <a class="btn-primary" href="{{ url_for('learn', bucket=bucket, n=n+1) }}" style="width:auto;flex:1">Next card →</a>
+  {% else %}
+  <a class="btn-primary" href="{{ url_for('practice', bucket=bucket) }}" style="width:auto;flex:1">✍️ Quiz this topic →</a>
+  {% endif %}
+</div>
+<div class="center" style="margin-top:12px"><a href="{{ url_for('home') }}" style="font-size:13px;color:var(--muted)">Back to home</a></div>
+{% endblock %}
