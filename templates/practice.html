@@ -1,7 +1,12 @@
 {% extends "base.html" %}
 {% block body %}
+{% if drill_empty %}
+<div class="section-title">🎯 Drill misses</div>
+<div class="empty">🎉 No missed questions{{ ' in this topic' if drill_bucket }} to drill right now. Miss some in practice or the exam and they will collect here for focused drilling.</div>
+<div class="center" style="margin-top:8px"><a class="btn" href="{{ url_for('home') }}">🏠 Home</a> <a class="btn" href="{{ url_for('practice', bucket='All') }}">✍️ Practice all</a></div>
+{% else %}
 <div class="meta">
-  <span class="l">Practice</span>
+  <span class="l">{{ '🎯 Drill misses' if mode == 'drill' else '✍️ Practice' }}</span>
   <span class="r">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}</span>
 </div>
 
@@ -9,6 +14,8 @@
 <form method="post" action="{{ url_for('practice_answer') }}">
   <input type="hidden" name="qid" value="{{ q.id }}">
   <input type="hidden" name="bucket" value="{{ bucket }}">
+  <input type="hidden" name="mode" value="{{ mode }}">
+  <input type="hidden" name="dbucket" value="{{ drill_bucket or '' }}">
   <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
   <div class="choices">
     {% for c in choices %}
@@ -36,7 +43,8 @@
   <div class="explain {{ 'ok' if correct else 'bad' }}">
     <span class="rl">{{ '✅ correct &middot; the rule'|safe if correct else '📌 the rule'|safe }}</span>{{ q.e }}
   </div>
-  <a class="btn-primary" href="{{ url_for('practice', bucket=bucket) }}">Next question</a>
+  <a class="btn-primary" href="{% if mode == 'drill' %}{{ url_for('drill', bucket=drill_bucket) }}{% else %}{{ url_for('practice', bucket=bucket) }}{% endif %}">{{ '🎯 Next missed' if mode == 'drill' else 'Next question' }}</a>
   <div class="center" style="margin-top:12px"><a href="{{ url_for('home') }}" style="font-size:13px;color:var(--muted)">Back to home</a></div>
+{% endif %}
 {% endif %}
 {% endblock %}
