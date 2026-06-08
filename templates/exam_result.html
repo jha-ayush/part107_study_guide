@@ -1,41 +1,42 @@
 {% extends "base.html" %}
 {% block body %}
 <div class="center" style="padding:8px 0 16px">
+  <div class="result-emoji">{{ '🎉' if passed else '💪' }}</div>
   <div class="bigpct" style="color:{{ pass_color }}">{{ pct }}%</div>
-  <div style="margin:10px 0"><span class="badge {{ 'pass' if passed else 'fail' }}">{{ 'Pass' if passed else 'Did not pass' }}</span></div>
+  <div style="margin:10px 0"><span class="badge {{ 'pass' if passed else 'fail' }}"><span class="be">{{ '✅' if passed else '❌' }}</span>{{ 'Pass' if passed else 'Did not pass' }}</span></div>
   <div style="font-size:14px;color:var(--muted)">{{ correct }} of {{ total }} correct &middot; {{ time_used }} used &middot; {{ exam_pass }}% needed</div>
 </div>
 
 <div class="btn-row" style="justify-content:center;margin-bottom:8px">
-  <a class="btn" href="{{ url_for('exam_start') }}">New exam</a>
-  <a class="btn" href="{{ url_for('review') }}">Review study list</a>
-  <a class="btn" href="{{ url_for('home') }}">Home</a>
+  <a class="btn" href="{{ url_for('exam_start') }}">🔄 New exam</a>
+  <a class="btn" href="{{ url_for('review') }}">📚 Review study list</a>
+  <a class="btn" href="{{ url_for('home') }}">🏠 Home</a>
 </div>
 
-<div class="section-title">By topic</div>
+<div class="section-title">📊 By topic</div>
 {% for b in by_bucket %}
 <div class="bdrow">
-  <span class="nm">{{ b.name }}</span>
+  <span class="nm"><span class="ic">{{ icons[b.name] }}</span>{{ b.name }}</span>
   <span class="tr bar"><i style="width:{{ b.pct }}%;background:{{ b.color }}"></i></span>
   <span class="vl" style="color:{{ b.color }}">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>
 </div>
 {% endfor %}
 
 {% if missed %}
-<div class="section-title">Missed questions and the rule</div>
+<div class="section-title">📌 Missed questions and the rule</div>
 {% for grp in missed %}
 <div class="mbucket">
-  <div class="mbname">{{ grp.name }} <span>{{ grp.qs|length }} missed</span></div>
+  <div class="mbname"><span class="ic">{{ icons[grp.name] }}</span>{{ grp.name }} <span class="countbadge">{{ grp.qs|length }} missed</span></div>
   {% for m in grp.qs %}
   <div class="mcard">
     <div class="mq">{{ m.q_html|safe }}</div>
-    <div class="ma">{{ m.letter }}. {{ m.answer }}</div>
+    <div class="ma">✅ {{ m.letter }}. {{ m.answer }}</div>
     <div class="mr">{{ m.e }}</div>
   </div>
   {% endfor %}
 </div>
 {% endfor %}
 {% else %}
-<div class="empty">Perfect run. Nothing missed.</div>
+<div class="empty">🌟 Perfect run. Nothing missed.</div>
 {% endif %}
 {% endblock %}
