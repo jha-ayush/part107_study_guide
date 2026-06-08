@@ -273,14 +273,41 @@ def practice():
     q = random.choice(pool)
     order = list(range(len(q["c"])))
     random.shuffle(order)
-    return render_template("practice.html", answered=False, q={**q, "q_html": q_html(q)},
+    return render_template("practice.html", answered=False, mode="practice",
+                           drill_bucket=None, q={**q, "q_html": q_html(q)},
                            choices=shuffled(order, q), bucket=bucket)
+
+
+@app.route("/drill")
+def drill():
+    """Serve missed questions, weighted toward the ones missed most often."""
+    only = request.args.get("bucket")
+    if only not in BUCKETS:
+        only = None
+    pool, weights = [], []
+    for qid_str, misses in g.record["missed"].items():
+        q = QUESTIONS[int(qid_str)]
+        if only and q["b"] != only:
+            continue
+        pool.append(q)
+        weights.append(misses)
+    if not pool:
+        return render_template("practice.html", drill_empty=True, mode="drill",
+                               drill_bucket=only)
+    q = random.choices(pool, weights=weights, k=1)[0]
+    order = list(range(len(q["c"])))
+    random.shuffle(order)
+    return render_template("practice.html", answered=False, mode="drill",
+                           drill_bucket=only, q={**q, "q_html": q_html(q)},
+                           choices=shuffled(order, q), bucket=q["b"])
 
 
 @app.route("/practice/answer", methods=["POST"])
 def practice_answer():
     qid = int(request.form.get("qid", -1))
     bucket = request.form.get("bucket", "All")
+    mode = request.form.get("mode", "practice")
+    dbucket = request.form.get("dbucket") or None
     chosen = int(request.form.get("choice", -1))
     if not (0 <= qid < len(QUESTIONS)):
         return redirect(url_for("home"))
@@ -289,7 +316,8 @@ def practice_answer():
     record_answer(g.record, q, correct)
     save_record(g.owner, g.record)
     choices = [{"idx": i, "letter": LETTERS[i], "text": q["c"][i]} for i in range(len(q["c"]))]
-    return render_template("practice.html", answered=True, q={**q, "q_html": q_html(q)},
+    return render_template("practice.html", answered=True, mode=mode, drill_bucket=dbucket,
+                           q={**q, "q_html": q_html(q)},
                            choices=choices, chosen=chosen, correct=correct, bucket=bucket)
 
 
