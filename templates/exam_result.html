@@ -9,6 +9,7 @@
 
 <div class="btn-row" style="justify-content:center;margin-bottom:8px">
   <a class="btn" href="{{ url_for('exam_start') }}">🔄 New exam</a>
+  {% if missed %}<a class="btn" href="{{ url_for('drill') }}">🎯 Drill misses</a>{% endif %}
   <a class="btn" href="{{ url_for('review') }}">📚 Review study list</a>
   <a class="btn" href="{{ url_for('home') }}">🏠 Home</a>
 </div>
