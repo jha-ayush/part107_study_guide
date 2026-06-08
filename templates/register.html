@@ -5,6 +5,7 @@
 <p style="font-size:14px;color:var(--muted);margin-bottom:14px">Sign in with your email so your progress follows you across devices. If you have been practicing already, that progress moves into your account automatically.</p>
 {% if error %}<div class="explain bad" style="margin-bottom:14px">{{ error }}</div>{% endif %}
 <form method="post" action="{{ url_for('register') }}" class="qcard">
+  <input type="hidden" name="_csrf" value="{{ csrf_token }}">
   <label class="flabel">Email</label>
   <input type="email" name="email" value="{{ email or '' }}" autocomplete="email" required
          class="field" style="margin-bottom:14px" placeholder="you@example.com">
