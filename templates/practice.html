@@ -6,7 +6,7 @@
 <div class="center" style="margin-top:8px"><a class="btn" href="{{ url_for('home') }}">🏠 Home</a> <a class="btn" href="{{ url_for('practice', bucket='All') }}">✍️ Practice all</a></div>
 {% else %}
 <div class="meta">
-  <span class="l">{{ '🎯 Drill misses' if mode == 'drill' else '✍️ Practice' }}</span>
+  <span class="l">{% if mode == 'drill' %}🎯 Drill misses{% elif mode == 'focus' %}🎚️ Focus practice{% else %}✍️ Practice{% endif %}</span>
   <span class="r">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}</span>
 </div>
 
@@ -43,7 +43,7 @@
   <div class="explain {{ 'ok' if correct else 'bad' }}">
     <span class="rl">{{ '✅ correct &middot; the rule'|safe if correct else '📌 the rule'|safe }}</span>{{ q.e }}
   </div>
-  <a class="btn-primary" href="{% if mode == 'drill' %}{{ url_for('drill', bucket=drill_bucket) }}{% else %}{{ url_for('practice', bucket=bucket) }}{% endif %}">{{ '🎯 Next missed' if mode == 'drill' else 'Next question' }}</a>
+  <a class="btn-primary" href="{% if mode == 'drill' %}{{ url_for('drill', bucket=drill_bucket) }}{% elif mode == 'focus' %}{{ url_for('focus') }}{% else %}{{ url_for('practice', bucket=bucket) }}{% endif %}">{% if mode == 'drill' %}🎯 Next missed{% elif mode == 'focus' %}🎚️ Next focus{% else %}Next question{% endif %}</a>
   <div class="center" style="margin-top:12px"><a href="{{ url_for('home') }}" style="font-size:13px;color:var(--muted)">Back to home</a></div>
 {% endif %}
 {% endif %}
