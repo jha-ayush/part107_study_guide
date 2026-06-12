@@ -71,7 +71,9 @@ def mastery_badge(pct):
 
 
 LETTERS = "ABCD"
-EXAM_N = min(60, len(QUESTIONS))
+EXAM_N = min(65, len(QUESTIONS))
+EXAM_EXPERIMENTAL = 5 if EXAM_N > 5 else 0
+EXAM_SCORED = EXAM_N - EXAM_EXPERIMENTAL
 EXAM_PASS = 70
 EXAM_MIN = 120
 CODE_SUBTOPICS = {"METAR", "TAF", "Winds Aloft"}
@@ -267,6 +269,7 @@ def home():
                            lifetime_pct=(round(tot_c / tot_n * 100) if tot_n else None),
                            total_answered=tot_n, to_review=len(rec["missed"]),
                            buckets=buckets, exam_n=EXAM_N, exam_min=EXAM_MIN,
+                           exam_scored=EXAM_SCORED,
                            exam_pass=EXAM_PASS)
 
 
@@ -395,7 +398,8 @@ def exam_start():
         o = list(range(len(QUESTIONS[qid]["c"])))
         random.shuffle(o)
         order[str(qid)] = o
-    g.record["exam"] = {"qids": qids, "order": order, "answers": {}, "start": time.time()}
+    g.record["exam"] = {"qids": qids, "order": order, "answers": {}, "start": time.time(),
+                        "experimental": random.sample(qids, EXAM_EXPERIMENTAL)}
     save_record(g.owner, g.record)
     return redirect(url_for("exam_q", n=0))
 
@@ -443,13 +447,19 @@ def exam_submit():
     if not exam:
         return redirect(url_for("home"))
     qids = exam["qids"]
+    experimental = set(exam.get("experimental", []))
     answers = exam["answers"]
     correct = 0
+    total = 0
     per = {}
     missed_now = []
     for qid in qids:
         q = QUESTIONS[qid]
         ok = answers.get(str(qid)) == q["a"]
+        record_answer(g.record, q, ok)
+        if qid in experimental:
+            continue
+        total += 1
         p = per.setdefault(q["b"], {"c": 0, "n": 0})
         p["n"] += 1
         if ok:
@@ -457,8 +467,6 @@ def exam_submit():
             correct += 1
         else:
             missed_now.append(q)
-        record_answer(g.record, q, ok)
-    total = len(qids)
     pct = round(correct / total * 100) if total else 0
     passed = pct >= EXAM_PASS
     elapsed = time.time() - exam["start"]
@@ -485,6 +493,7 @@ def exam_submit():
             missed.append({"name": b, "qs": items})
     return render_template("exam_result.html", pct=pct, passed=passed, correct=correct,
                            total=total, time_used=mmss(elapsed), exam_pass=EXAM_PASS,
+                           experimental=EXAM_EXPERIMENTAL,
                            pass_color=color_for(pct), by_bucket=by_bucket, missed=missed)
 
 
