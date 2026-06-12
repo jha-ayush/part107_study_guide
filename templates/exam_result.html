@@ -5,6 +5,7 @@
   <div class="bigpct" style="color:{{ pass_color }}">{{ pct }}%</div>
   <div style="margin:10px 0"><span class="badge {{ 'pass' if passed else 'fail' }}"><span class="be">{{ '✅' if passed else '❌' }}</span>{{ 'Pass' if passed else 'Did not pass' }}</span></div>
   <div style="font-size:14px;color:var(--muted)">{{ correct }} of {{ total }} correct &middot; {{ time_used }} used &middot; {{ exam_pass }}% needed</div>
+  {% if experimental %}<div style="font-size:12px;color:var(--muted);margin-top:5px">{{ experimental }} experimental questions were not scored, just like the real exam.</div>{% endif %}
 </div>
 
 <div class="btn-row" style="justify-content:center;margin-bottom:8px">
