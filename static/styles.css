@@ -43,6 +43,9 @@ a{color:inherit;}
 /* header */
 header.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 16px;border-bottom:1px solid var(--line);margin-bottom:24px;flex-wrap:wrap;}
 .brand a{text-decoration:none;}
+.brand-link{display:flex;align-items:center;gap:11px;}
+.brand .logo{flex:0 0 auto;width:40px;height:40px;border-radius:11px;overflow:hidden;display:block;box-shadow:var(--shadow-sm);}
+.brand .logo svg{display:block;width:40px;height:40px;}
 .brand h1{font-size:21px;font-weight:760;letter-spacing:-.02em;}
 .brand .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-top:3px;}
 .top nav{display:flex;gap:13px;font-size:13px;font-family:var(--mono);align-items:center;}
