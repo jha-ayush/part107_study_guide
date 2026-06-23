@@ -32,19 +32,6 @@ from jinja2 import DictLoader
 QUESTIONS_JSON = r'''[
   {
     "b": "Regulations",
-    "s": "Altitude",
-    "q": "Under Part 107, what is the maximum operating altitude for a small UAS?",
-    "c": [
-      "400 ft AGL, or higher within 400 ft of a structure",
-      "400 ft MSL",
-      "1,200 ft MSL",
-      "500 ft AGL at all times"
-    ],
-    "a": 0,
-    "e": "You may exceed 400 ft AGL only within 400 ft of a structure, and no higher than 400 ft above it."
-  },
-  {
-    "b": "Regulations",
     "s": "Accident Reporting",
     "q": "A Part 107 flight causes $600 of damage to a third party's property. Within how many days must you report it to the FAA?",
     "c": [
@@ -217,12 +204,12 @@ QUESTIONS_JSON = r'''[
     "s": "TFR",
     "q": "A Temporary Flight Restriction over a stadium during a major game means a Part 107 pilot:",
     "c": [
-      "Is exempt because the drone is small",
-      "May fly if staying under 400 ft",
-      "May not enter the restricted area without specific authorization",
-      "May fly outside game hours only"
+      "May fly inside it during the hours when no game is being played",
+      "May fly inside it freely as long as the aircraft stays under 400 ft",
+      "Is exempt from the restriction because the drone weighs so little",
+      "May not enter the restricted area without specific authorization"
     ],
-    "a": 2,
+    "a": 3,
     "e": "TFRs apply to UAS exactly as to manned aircraft, so entry requires specific FAA authorization."
   },
   {
@@ -542,10 +529,10 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "'TEMPO' in a TAF indicates conditions that:",
     "c": [
-      "Are permanent for the outlook",
-      "Apply only during inversions",
+      "Persist for more than half of the forecast period overall",
+      "Are permanent for the entire valid period covered by the forecast",
       "Last under 60 minutes each and total less than half the period",
-      "Persist more than half the period"
+      "Apply only during a temperature inversion near the surface"
     ],
     "a": 2,
     "e": "TEMPO marks brief fluctuations, each under an hour, covering less than half the forecast period."
@@ -575,19 +562,6 @@ QUESTIONS_JSON = r'''[
     ],
     "a": 0,
     "e": "A small temperature-dewpoint spread means humidity near 100%, so fog or low stratus is likely."
-  },
-  {
-    "b": "Weather",
-    "s": "Fog & Clouds",
-    "q": "Radiation fog typically forms when:",
-    "c": [
-      "Warm moist air moves over cold ocean water",
-      "A cold front rapidly lifts warm air",
-      "Strong winds mix surface moisture upward",
-      "Ground cools on clear, calm nights until surface air hits its dewpoint"
-    ],
-    "a": 3,
-    "e": "Radiation fog needs clear skies for cooling, calm winds, and moist surface air."
   },
   {
     "b": "Weather",
@@ -893,12 +867,12 @@ QUESTIONS_JSON = r'''[
     "s": "Max Weight",
     "q": "Exceeding the manufacturer's maximum takeoff weight is likely to:",
     "c": [
+      "Raise the service ceiling the aircraft can safely reach",
       "Degrade climb performance and may prevent safe flight",
-      "Improve wind resistance",
-      "Raise the service ceiling",
-      "Extend battery life"
+      "Improve wind resistance by giving the aircraft more mass",
+      "Extend battery life by spreading the load more evenly"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Overloading past the manufacturer's limit cuts climb capability and can make safe flight impossible."
   },
   {
@@ -1166,12 +1140,12 @@ QUESTIONS_JSON = r'''[
     "s": "FRIA",
     "q": "A FAA-Recognized Identification Area (FRIA) is:",
     "c": [
-      "A pilot certification level",
       "A defined area where drones without Remote ID may be flown",
-      "A type of controlled airspace",
-      "A no-fly zone"
+      "A permanent no-fly zone closed to all unmanned aircraft",
+      "A type of controlled airspace requiring ATC authorization",
+      "A pilot certification level above the basic remote certificate"
     ],
-    "a": 1,
+    "a": 0,
     "e": "A FRIA is an approved location where aircraft without Remote ID broadcast capability may still be flown."
   },
   {
@@ -1543,9 +1517,9 @@ QUESTIONS_JSON = r'''[
     "s": "Equipment",
     "q": "A small UAS operating in authorized Class C airspace:",
     "c": [
-      "Must carry a Mode C transponder",
-      "Must squawk 7500",
-      "Must file IFR",
+      "Must file an IFR flight plan before entering the airspace",
+      "Must squawk 7500 on the transponder for the duration of the flight",
+      "Must carry a Mode C transponder and reply to interrogations",
       "Does not need a transponder, but does need the authorization"
     ],
     "a": 3,
@@ -1777,12 +1751,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "A small letter R inside an airport symbol indicates the airport is:",
     "c": [
+      "A military base restricted to government aircraft only",
+      "A seaplane base usable only by float-equipped aircraft",
       "Private, with restricted or prior-permission use",
-      "A seaplane base only",
-      "Closed permanently",
-      "A military base"
+      "Closed permanently and no longer available for landing"
     ],
-    "a": 0,
+    "a": 2,
     "e": "An R marks a private airport that requires prior permission, so it is not available for general public use."
   },
   {
@@ -2128,12 +2102,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People Cat 1",
     "q": "Category 1 operations over people generally require the aircraft to:",
     "c": [
-      "Weigh under 55 lb only",
-      "Have an airworthiness certificate",
-      "Weigh 0.55 lb or less and have no parts that can lacerate skin",
-      "Carry a parachute"
+      "Carry a current airworthiness certificate issued under part 21",
+      "Carry a deployable parachute system tested by an accredited lab",
+      "Weigh under 55 lb, the same limit that applies to all Part 107 flights",
+      "Weigh 0.55 lb or less and have no parts that can lacerate skin"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Category 1 allows flight over people for aircraft 0.55 lb or lighter with no exposed parts that could lacerate skin."
   },
   {
@@ -2258,12 +2232,12 @@ QUESTIONS_JSON = r'''[
     "s": "ADM",
     "q": "Aeronautical decision making (ADM) is best described as:",
     "c": [
-      "Reacting only after a problem occurs",
-      "Following the most experienced pilot's advice",
-      "Memorizing the regulations",
-      "A systematic approach to consistently choosing the best course of action"
+      "Reacting to problems only after they actually occur during the flight itself",
+      "Following the most experienced pilot's advice without question",
+      "A systematic approach to consistently choosing the best course of action",
+      "Memorizing the regulations so they can be recited from memory"
     ],
-    "a": 3,
+    "a": 2,
     "e": "ADM is a structured way of evaluating information and risks to consistently make sound flight decisions."
   },
   {
@@ -2453,12 +2427,12 @@ QUESTIONS_JSON = r'''[
     "s": "Cloud Clearance",
     "q": "Part 107 requires the aircraft to remain:",
     "c": [
-      "Below any overcast layer",
+      "Clear of clouds only, with no specific distance required",
+      "At least 1,000 ft above the nearest cloud at all times",
       "500 ft below and 2,000 ft horizontally from clouds",
-      "Clear of clouds only",
-      "1,000 ft above clouds"
+      "Below any overcast layer present over the operating area"
     ],
-    "a": 1,
+    "a": 2,
     "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud."
   },
   {
@@ -2856,12 +2830,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Compared with a cool sea-level day, a hot day at high elevation makes a multirotor:",
     "c": [
-      "Climb faster",
       "Climb more slowly and hover with less margin",
-      "Use less battery",
-      "Carry more payload"
+      "Climb faster because the warmer air is less dense",
+      "Use less battery thanks to the reduced air resistance",
+      "Carry more payload than it could at sea level"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Heat and altitude thin the air, cutting lift so it climbs and hovers with less margin."
   },
   {
@@ -2960,12 +2934,12 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "High density altitude is worst for a heavily loaded drone because it:",
     "c": [
-      "Improves climb",
       "Adds reduced lift to the extra weight, hurting climb most",
-      "Has no effect on multirotors",
-      "Only affects empty aircraft"
+      "Only affects empty aircraft that are flying without any payload",
+      "Has no effect on multirotors, which rely on direct motor thrust",
+      "Improves climb because the thinner air offers less resistance"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Thin air and heavy weight compound, so a loaded aircraft climbs the worst."
   },
   {
@@ -3051,12 +3025,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "The passage of a front is typically marked by:",
     "c": [
-      "A guaranteed clearing",
-      "Only a temperature rise",
-      "A wind shift with temperature and pressure changes",
-      "No change at all"
+      "A guaranteed clearing of all clouds within a few minutes",
+      "Only a temperature rise, with no change in wind or pressure",
+      "No noticeable change at all in the surface conditions",
+      "A wind shift with temperature and pressure changes"
     ],
-    "a": 2,
+    "a": 3,
     "e": "As a front passes, wind, temperature, and pressure all shift across the boundary."
   },
   {
@@ -3142,12 +3116,12 @@ QUESTIONS_JSON = r'''[
     "s": "Eligibility",
     "q": "Beyond being at least 16 and English-proficient, an applicant must be:",
     "c": [
-      "A licensed driver",
+      "The registered owner of the aircraft to be operated",
+      "A licensed automobile driver in the state of residence",
       "Physically and mentally able to operate safely",
-      "An aircraft owner",
-      "A military veteran"
+      "A military veteran or active-duty service member"
     ],
-    "a": 1,
+    "a": 2,
     "e": "An applicant must be in a physical and mental condition to operate a small UAS safely."
   },
   {
@@ -3389,10 +3363,10 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "A stationary front is likely to bring:",
     "c": [
-      "A rapid clearing",
-      "Strong downslope winds",
+      "No noticeable change in the weather at the surface",
+      "A rapid and complete clearing of the sky within a few hours",
       "Prolonged clouds and precipitation as it lingers",
-      "No weather change"
+      "Strong downslope winds and rapidly warming air"
     ],
     "a": 2,
     "e": "A stationary front barely moves, so its clouds and precipitation can persist for a long time."
@@ -3402,12 +3376,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazards",
     "q": "Structural icing is a risk when there is:",
     "c": [
-      "Visible moisture and temperatures near or below freezing",
-      "High pressure and clear skies",
-      "A warm, humid afternoon",
-      "Dry air at any temperature"
+      "A warm, humid afternoon with light and variable surface winds",
+      "High pressure with clear skies and warm surface temperatures",
+      "Dry air at any temperature, including well below freezing",
+      "Visible moisture and temperatures near or below freezing"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Icing needs visible moisture plus temperatures at or below freezing."
   },
   {
@@ -4104,12 +4078,12 @@ QUESTIONS_JSON = r'''[
     "s": "Failsafe",
     "q": "Before flying, a pilot should know the aircraft's failsafe behavior so they can:",
     "c": [
-      "Exceed the weight limit",
+      "Operate the aircraft without performing a preflight check",
+      "Safely exceed the published maximum takeoff weight limit",
       "Predict what it does on a lost link or low battery",
-      "Skip the briefing",
-      "Fly without a preflight"
+      "Skip the preflight briefing to save time before launch"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Knowing the failsafe response to a lost link or low battery lets the pilot plan for it."
   },
   {
@@ -4403,12 +4377,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class B",
     "q": "Authorization to fly a drone in Class B airspace is usually obtained:",
     "c": [
+      "By calling the primary airport's control tower before takeoff",
+      "Automatically, as long as the flight stays below 400 feet AGL",
       "Through LAANC where available, or DroneZone otherwise",
-      "Automatically below 400 ft",
-      "Only with a waiver",
-      "By calling the airport"
+      "Only with a specific waiver granted in advance by the FAA"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Class B access comes through LAANC where it is supported, or through DroneZone otherwise."
   },
   {
@@ -4442,12 +4416,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A pilot planning near a charted restricted area should first:",
     "c": [
-      "Treat it as Class G",
-      "Assume it is always inactive",
-      "Fly through quickly",
-      "Check whether it is active and get permission if needed"
+      "Assume it is always inactive outside of normal business hours",
+      "Check whether it is active and get permission if needed",
+      "Fly through it quickly to spend as little time inside as possible",
+      "Treat it as uncontrolled Class G and fly without authorization"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Restricted areas may be active, so check status and obtain permission before operating inside."
   },
   {
@@ -4521,9 +4495,9 @@ QUESTIONS_JSON = r'''[
     "q": "A government agency flying a drone may instead operate under:",
     "c": [
       "A Certificate of Waiver or Authorization (COA)",
-      "A manned type rating",
-      "No rules at all",
-      "A driver's license"
+      "A manned-aircraft type rating held by the operator",
+      "No rules at all, since government flights are exempt",
+      "A standard state driver's license held by the pilot"
     ],
     "a": 0,
     "e": "Public aircraft operations can be conducted under a COA rather than Part 107."
@@ -4598,12 +4572,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Compliance",
     "q": "For each flight, the remote PIC must ensure:",
     "c": [
-      "Any required airspace authorization is obtained beforehand",
-      "The aircraft is the newest model",
-      "The flight is recorded",
-      "A bystander is present"
+      "The aircraft is the newest model currently available from the manufacturer",
+      "The flight is recorded on video from start to finish",
+      "A bystander is present to watch the aircraft take off",
+      "Any required airspace authorization is obtained beforehand"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The remote PIC is responsible for obtaining any required airspace authorization before flying."
   },
   {
@@ -4832,9 +4806,9 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "A METAR is best described as a report that is:",
     "c": [
-      "Valid only above 1,000 ft",
-      "A multi-day forecast",
-      "Issued once per year",
+      "A multi-day forecast of the conditions expected ahead",
+      "Issued once per year for each reporting airport",
+      "Valid only above 1,000 feet over the reporting station",
       "Observed at a point in time, usually updated hourly"
     ],
     "a": 3,
@@ -4949,9 +4923,9 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "A soft magenta vignette differs from a dashed magenta line in that the vignette marks:",
     "c": [
-      "A restricted area",
-      "Class B",
-      "Class E to the surface",
+      "A restricted area that is closed during published hours",
+      "Class E that begins right at the surface of the airport",
+      "Class B airspace requiring a clearance before entry",
       "Class E starting at 700 ft AGL, not at the surface"
     ],
     "a": 3,
@@ -4975,12 +4949,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "The controlling agency for a charted restricted area is listed:",
     "c": [
-      "In the airport data block",
-      "Nowhere on the chart",
+      "On the compass rose drawn near the navigation aids",
       "In the special use airspace tabulation on the chart",
-      "On the compass rose"
+      "In the airport data block next to the nearest airport",
+      "Nowhere on the chart; it must be requested by radio"
     ],
-    "a": 2,
+    "a": 1,
     "e": "The margin tabulation lists each special use area's altitudes, times, and controlling agency."
   },
   {
@@ -5001,12 +4975,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "Reading latitude and longitude off a sectional is useful for:",
     "c": [
-      "Measuring wind speed",
-      "Entering a precise location into a flight planning app",
-      "Judging cloud height",
-      "Finding the tower frequency"
+      "Judging the height of the cloud base above the terrain",
+      "Finding the control tower frequency for the nearest airport",
+      "Measuring the surface wind speed across the charted area",
+      "Entering a precise location into a flight planning app"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The latitude and longitude grid lets a pilot enter an exact site location into planning tools."
   },
   {
@@ -5190,19 +5164,6 @@ QUESTIONS_JSON = r'''[
     ],
     "a": 1,
     "e": "Too much weight can leave a drone unable to climb out of ground effect into stable flight."
-  },
-  {
-    "b": "Loading",
-    "s": "Total Weight",
-    "q": "The maximum takeoff weight of a drone includes:",
-    "c": [
-      "The airframe, battery, and payload together",
-      "Only the payload",
-      "Only the airframe",
-      "Only the battery"
-    ],
-    "a": 0,
-    "e": "Maximum takeoff weight counts everything on board: airframe, battery, and payload."
   },
   {
     "b": "Loading",
@@ -5453,19 +5414,6 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Charts",
-    "s": "Airport Data",
-    "q": "A star symbol shown with an airport on a sectional chart indicates what?",
-    "c": [
-      "A control tower",
-      "A rotating beacon, meaning the airport is lighted",
-      "A military airfield",
-      "Fuel services available"
-    ],
-    "a": 1,
-    "e": "A star on the airport symbol indicates a rotating beacon, so the airport has lighting."
-  },
-  {
-    "b": "Charts",
     "s": "Navigation",
     "q": "Lines of latitude (parallels) on a sectional chart run in what direction?",
     "c": [
@@ -5586,12 +5534,12 @@ QUESTIONS_JSON = r'''[
     "s": "Lost Link",
     "q": "A sound lost-link procedure should cause the aircraft to do what?",
     "c": [
-      "Immediately cut power",
       "Perform a predictable action such as return-to-home or land",
-      "Continue the mission on its own",
-      "Hand control to a bystander"
+      "Hand control to the nearest bystander on the ground",
+      "Continue the planned mission on its own until the battery dies",
+      "Immediately cut power to all motors and drop straight to the ground"
     ],
-    "a": 1,
+    "a": 0,
     "e": "On lost link the aircraft should perform a predictable, preprogrammed safe action like return-to-home or a controlled landing."
   },
   {
@@ -5599,12 +5547,12 @@ QUESTIONS_JSON = r'''[
     "s": "Crew Coordination",
     "q": "Effective crew resource management mainly improves what?",
     "c": [
-      "Battery life",
-      "Maximum aircraft speed",
-      "Camera resolution",
-      "Communication and workload sharing among the crew"
+      "Maximum aircraft speed during the cruise portion of flight",
+      "Communication and workload sharing among the crew",
+      "Camera resolution by stabilizing the aircraft in the air",
+      "Battery life by coordinating the power used by each system"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Crew resource management focuses on clear communication and distributing workload to reduce error."
   },
   {
@@ -5664,9 +5612,9 @@ QUESTIONS_JSON = r'''[
     "s": "Voltage Sag",
     "q": "Under heavy current draw, battery voltage sag can cause what?",
     "c": [
-      "A stronger GPS lock",
-      "More payload capacity",
-      "Longer flight time",
+      "Longer total flight time because the pack runs cooler",
+      "A higher payload capacity for the remainder of the flight",
+      "A stronger and faster GPS lock when the aircraft powers on",
       "Premature low-voltage warnings and reduced power"
     ],
     "a": 3,
@@ -6015,12 +5963,12 @@ QUESTIONS_JSON = r'''[
     "s": "Elevation",
     "q": "What does the Maximum Elevation Figure (MEF) in a chart quadrangle tell you?",
     "c": [
-      "The airport field elevation",
       "The highest terrain or obstacle in that quadrant in MSL",
-      "The magnetic variation",
-      "The cloud base height"
+      "The magnetic variation to apply when navigating by compass",
+      "The field elevation of the primary airport in that quadrant",
+      "The height of the lowest cloud base reported in the area"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The Maximum Elevation Figure shows the highest known terrain or obstacle in that quadrant, in MSL."
   },
   {
@@ -6067,12 +6015,12 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "What does a TAF forecast cover?",
     "c": [
+      "The entire country in a single combined national outlook",
+      "Pilot-reported turbulence collected from aircraft in the area",
       "Conditions within about 5 statute miles of an airport",
-      "Pilot-reported turbulence",
-      "The entire country",
-      "Wind direction only"
+      "Wind direction only, with no information on clouds or visibility"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A TAF is a Terminal Aerodrome Forecast covering the area within about 5 statute miles of an airport."
   },
   {
@@ -6405,12 +6353,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Flight Rules",
     "q": "How is the Washington, DC area classified for UAS operations?",
     "c": [
-      "A Special Flight Rules Area with strict restrictions",
-      "Unrestricted below 400 ft",
-      "Open Class G airspace",
-      "A standard MOA"
+      "Unrestricted airspace below 400 feet above the ground at all times",
+      "A standard Military Operations Area with published hours",
+      "Open Class G airspace just like most rural areas of the country",
+      "A Special Flight Rules Area with strict restrictions"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The Washington, DC area is a Special Flight Rules Area where drone flight is heavily restricted or prohibited."
   },
   {
@@ -6717,12 +6665,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "What is the effect of flying at maximum payload in strong wind?",
     "c": [
-      "It improves stability",
       "It significantly reduces endurance and safety margins",
-      "It increases flight time",
-      "It lowers density altitude"
+      "It improves stability because the extra weight resists gusts",
+      "It increases total flight time by smoothing out the airflow",
+      "It lowers the density altitude around the aircraft in flight"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Combining maximum payload with strong wind sharply reduces endurance and safety margins."
   },
   {
@@ -6743,12 +6691,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "What should you confirm before adding any payload?",
     "c": [
-      "That the propellers are removed",
-      "That GPS is disabled",
+      "That the propellers have been removed before the payload goes on",
       "That it keeps the aircraft within weight and balance limits",
-      "That the battery is removed"
+      "That the battery has been removed and replaced with a fresh one",
+      "That the GPS receiver is disabled to save power for the payload"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Before adding payload, confirm it keeps the aircraft within its weight and balance limits."
   },
   {
@@ -7068,12 +7016,12 @@ QUESTIONS_JSON = r'''[
     "s": "CRM",
     "q": "Crew resource management (CRM) for sUAS operations refers to",
     "c": [
-      "scheduling maintenance",
-      "coordinating with air traffic control",
       "the effective use of all available resources, human and otherwise",
-      "managing battery charge cycles"
+      "the process of coordinating directly with air traffic control",
+      "the practice of managing the battery charge and discharge cycles",
+      "the schedule for routine maintenance of the aircraft and batteries"
     ],
-    "a": 2,
+    "a": 0,
     "e": "CRM is the effective use of all available resources to conduct a safe operation."
   },
   {
@@ -7218,19 +7166,6 @@ QUESTIONS_JSON = r'''[
     ],
     "a": 1,
     "e": "Maximum groundspeed under Part 107 is 87 knots (100 mph)."
-  },
-  {
-    "b": "Loading",
-    "s": "Center of gravity",
-    "q": "Loading a drone so the center of gravity is outside its limits will most likely",
-    "c": [
-      "make the aircraft unstable and harder to control",
-      "improve range",
-      "increase battery life",
-      "have no effect"
-    ],
-    "a": 0,
-    "e": "An out-of-limits center of gravity degrades stability and makes the aircraft harder to control."
   },
   {
     "b": "Loading",
@@ -7614,12 +7549,12 @@ QUESTIONS_JSON = r'''[
     "s": "Crew briefing",
     "q": "Before a crewed operation, briefing the visual observer and any crew on roles and emergency procedures primarily supports",
     "c": [
-      "Remote ID compliance",
       "crew resource management and safe coordination",
-      "registration",
-      "weather forecasting"
+      "weather forecasting for the planned operating area",
+      "registration of the aircraft with the FAA before flight",
+      "Remote ID compliance for the aircraft during the flight"
     ],
-    "a": 1,
+    "a": 0,
     "e": "A pre-operation crew briefing supports crew resource management and safe coordination."
   },
   {
@@ -8102,19 +8037,6 @@ QUESTIONS_JSON = r'''[
     ],
     "a": 3,
     "e": "Avoid operating near thunderstorms, which produce turbulence, wind shear, and downbursts."
-  },
-  {
-    "b": "Weather",
-    "s": "Wind shear",
-    "q": "A microburst is hazardous to flight because it produces",
-    "c": [
-      "steady, predictable winds",
-      "warmer temperatures only",
-      "improved visibility",
-      "strong, sudden downdrafts and rapidly changing winds"
-    ],
-    "a": 3,
-    "e": "A microburst produces strong, sudden downdrafts and rapidly changing winds that are hazardous to flight."
   },
   {
     "b": "Weather",
