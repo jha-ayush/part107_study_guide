@@ -251,7 +251,8 @@ def grouped_missed(rec, only_bucket=None):
             if q["b"] != b:
                 continue
             items.append({"q_html": q_html(q), "letter": LETTERS[q["a"]],
-                          "answer": q["c"][q["a"]], "e": q["e"], "misses": misses})
+                          "answer": q["c"][q["a"]], "e": q["e"], "misses": misses,
+                          "acs": q.get("acs")})
         if items:
             items.sort(key=lambda x: -x["misses"])
             groups.append({"name": b, "qs": items})
@@ -606,8 +607,23 @@ def review():
             pp = round(v["c"] / v["n"] * 100)
             lifetime.append({"name": b, "c": v["c"], "n": v["n"], "pct": pp,
                              "color": color_for(pp)})
+    # ACS tasks to review: distinct missed questions per FAA ACS task, the way
+    # the FAA Knowledge Test Report lists the codes an applicant should study.
+    acs_counts = {}
+    for qid_str in rec["missed"]:
+        q = QUESTIONS[int(qid_str)]
+        if active and q["b"] != active:
+            continue
+        code = q.get("acs")
+        if code:
+            acs_counts[code] = acs_counts.get(code, 0) + 1
+    acs_summary = sorted(
+        ({"code": c, "title": ACS_TASKS.get(c, c), "n": n}
+         for c, n in acs_counts.items()),
+        key=lambda x: (-x["n"], x["code"]))
     return render_template("review.html", lifetime=lifetime,
                            missed=grouped_missed(rec, active),
+                           acs_summary=acs_summary,
                            bucket_names=BUCKETS, active_bucket=active)
 
 
