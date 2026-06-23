@@ -46,8 +46,11 @@ Either way, open http://127.0.0.1:8000.
 - Focus: practice weighted toward your lowest-scoring and not-yet-seen topics.
 - Drill: replays the specific questions you have missed, weighted toward the ones
   you miss most. Questions leave the list once you answer them correctly.
-- Exam: a 60-question timed simulation (120-minute limit, 70 percent to pass)
-  with a question palette and previous/next, graded by topic with a missed list.
+- Exam: a timed simulation of 65 questions (60 scored plus 5 unscored
+  experimental, mirroring the real test), 120-minute limit, 70 percent of the
+  scored questions to pass. Questions are drawn in FAA ACS topic proportions
+  (Operations and Regulations weighted heaviest), with a question palette,
+  previous/next, a by-topic breakdown, and a missed list.
 - Study list: every missed question grouped by topic, with lifetime accuracy.
 - Progress: an exam history page with a readiness verdict, best score, recent
   average, pass rate, and a score-trend chart with the pass line drawn in.
@@ -55,8 +58,18 @@ Either way, open http://127.0.0.1:8000.
   last-minute review (use Cmd or Ctrl + P).
 
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
-bank currently holds 550+ questions. Per-topic mastery badges and a dark mode are
+bank currently holds 570+ questions. Per-topic mastery badges and a dark mode are
 built in.
+
+## Content currency
+
+Question content is written to current federal rules: 14 CFR parts 89 (Remote
+ID) and 107, aligned to the FAA Remote Pilot ACS (FAA-S-ACS-10B, current in
+2026). This includes the post-2021 rules for night operations, operations over
+people (Categories 1 to 4), operations over moving vehicles, and the Remote ID
+requirement in effect since 2023. The exam simulation follows the ACS
+knowledge-area weighting. See `CONTENT_CURRENCY.md` for the full baseline,
+sources, last-reviewed date, and the checks used to keep outdated material out.
 
 ## Accounts and progress
 
@@ -94,7 +107,7 @@ part107_study_guide/
   static/
     styles.css           styling
     icons/               app icons (used for the browser tab)
-  README.md  .gitignore  LICENSE
+  README.md  CONTENT_CURRENCY.md  .gitignore  LICENSE
 ```
 
 ## Edit the question bank
@@ -113,6 +126,10 @@ pass mark, and time limit are constants near the top of `app.py`.
 
 After editing the multi-file version, regenerate `main.py` if you want the
 single-file build to match, or just edit the one you use.
+
+Before adding questions, see `CONTENT_CURRENCY.md` for the rule baseline, the
+ACS-aligned exam weighting, and the currency checks that keep outdated content
+out of the bank.
 
 ## Deploy
 
