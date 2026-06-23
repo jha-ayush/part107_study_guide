@@ -60,7 +60,7 @@ Either way, open http://127.0.0.1:8000.
   last-minute review (use Cmd or Ctrl + P).
 
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
-bank currently holds 550+ questions, each tagged with its FAA ACS task code. Some
+bank currently holds 560+ questions, each tagged with its FAA ACS task code. Some
 chart questions include an original sectional-excerpt figure to read, and the
 cheat sheet carries a visual symbology legend. Per-topic mastery badges and a
 dark mode are built in.
