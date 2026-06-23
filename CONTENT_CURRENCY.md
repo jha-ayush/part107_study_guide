@@ -115,6 +115,11 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Review and study list now surface ACS codes. Each missed question
+  shows its ACS task, and the study list opens with an "FAA ACS tasks to study"
+  summary that lists the distinct tasks among missed questions with a count each,
+  mirroring the FAA Knowledge Test Report so a learner knows which ACS tasks to
+  focus on. The summary respects the topic filter.
 - June 2026: ACS code mapping (complete). Tagged every question in the bank (Regulations,
   Airspace, Charts, Weather, Loading, and Operations) with FAA Airman Certification Standards task codes (for example
   UA.I.B Operating Rules, UA.II.A Airspace Classification, UA.II.B Airspace
