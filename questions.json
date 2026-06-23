@@ -7810,15 +7810,15 @@
     "b": "Charts",
     "s": "Airspace Notation",
     "fig": "sectional_ceilfloor",
-    "q": "The magenta 700 near marker 3 tells you that, in that area:",
+    "q": "The faded magenta line at marker 3, with no floor figure printed, tells you Class E airspace there begins at:",
     "c": [
-      "Class E airspace begins at 700 ft AGL",
-      "the maximum safe altitude is 700 ft MSL",
-      "obstacles there rise to 700 ft above ground",
-      "a 700 ft minimum applies to every aircraft"
+      "700 ft AGL",
+      "the surface",
+      "1,200 ft AGL",
+      "18,000 ft MSL"
     ],
     "a": 0,
-    "e": "A faded magenta boundary with a number such as 700 marks where Class E airspace starts above ground level, here 700 ft AGL.",
+    "e": "A faded magenta line with no floor figure marks Class E starting at 700 ft AGL; a printed magenta number would show a different (higher) floor in MSL.",
     "acs": "UA.II.A"
   },
   {
