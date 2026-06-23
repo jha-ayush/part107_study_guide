@@ -223,3 +223,5 @@ body.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border
   a{color:#000;text-decoration:none;}
   .qcard,.actioncard,.tile,.bcard{box-shadow:none;}
 }
+
+.r .acs{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;opacity:.72;cursor:help}
