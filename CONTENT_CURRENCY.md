@@ -115,6 +115,17 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Started ACS code mapping (proof of concept). Tagged the Regulations
+  bank with FAA Airman Certification Standards task codes (UA.I.A General through
+  UA.I.F Remote Identification), shown next to each question during practice with
+  the task title on hover, so a learner can map a question to the ACS task to
+  study, the way the FAA Knowledge Test Report points to deficient codes. Note:
+  FAA-S-ACS-10B was marked obsolete in August 2025 pending a refreshed ACS; the
+  topics and the area/task code structure are unchanged, so task-level codes
+  remain valid, but element-level codes (the K-numbers) are deferred until the
+  updated document is published. Remaining buckets map to areas II Airspace
+  (including charts), III Weather, IV Loading and Performance, and V Operations,
+  to be tagged in later passes.
 - June 2026: Systematic dedup pass. Clustered the bank by answer concept
   (normalized correct answer within each topic) rather than by question
   wording, which surfaces duplicates that reworded questions hide. Reviewed
