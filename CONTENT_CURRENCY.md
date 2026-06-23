@@ -115,6 +115,10 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Added a personalized ACS study sheet (/studysheet, linked from the
+  review screen and home). It groups the questions you have missed by FAA ACS
+  task, ordered by miss count, and lists the rules to review under each, in a
+  print-friendly layout.
 - June 2026: The practice exam result now breaks missed questions down by FAA
   ACS task (a sorted summary plus the task code on each missed card), matching
   the review screen and the real Knowledge Test Report.
