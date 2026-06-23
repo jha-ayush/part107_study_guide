@@ -115,17 +115,19 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
-- June 2026: ACS code mapping. Tagged the Regulations, Weather, and Loading banks
-  with FAA Airman Certification Standards task codes (for example UA.I.B Operating
-  Rules, UA.III.A Sources of Weather, UA.III.B Effects of Weather, UA.IV.A Loading
-  and Performance), shown next to each question during practice with
+- June 2026: ACS code mapping. Tagged the Regulations, Airspace, Charts, Weather, and
+  Loading banks with FAA Airman Certification Standards task codes (for example
+  UA.I.B Operating Rules, UA.II.A Airspace Classification, UA.II.B Airspace
+  Operational Requirements, UA.III.B Effects of Weather, UA.IV.A Loading and
+  Performance), shown next to each question during practice with
   the task title on hover, so a learner can map a question to the ACS task to
   study, the way the FAA Knowledge Test Report points to deficient codes. Note:
   FAA-S-ACS-10B was marked obsolete in August 2025 pending a refreshed ACS; the
   topics and the area/task code structure are unchanged, so task-level codes
   remain valid, but element-level codes (the K-numbers) are deferred until the
-  updated document is published. Remaining to tag: Airspace and Charts (both Area
-  II), and Operations (Area V).
+  updated document is published. A few questions filed under one topic test
+  another area (a speed or altitude limit is a Regulations operating limitation)
+  and were coded to their true area. Remaining to tag: Operations (Area V).
 - June 2026: Systematic dedup pass. Clustered the bank by answer concept
   (normalized correct answer within each topic) rather than by question
   wording, which surfaces duplicates that reworded questions hide. Reviewed
