@@ -117,9 +117,9 @@ Process for a new batch:
   about 25 percent), which lets a test-taker game the bank by length. The
   worst offenders are being rewritten in batches to give plausible, clearly
   incorrect, comparable-length distractors so the correct answer is no longer a
-  length giveaway. Progress so far: 48 items rewritten across two batches, which
-  lowered the correct-is-longest rate from about 80 percent to about 68 percent.
-  Remediation continues in further batches toward roughly chance level.
+  length giveaway. Progress so far: 78 items rewritten across three batches,
+  which lowered the correct-is-longest rate from about 80 percent to about 64
+  percent. Remediation continues in further batches toward roughly chance level.
 - June 2026: Added a batch focused on loading and performance (maximum
   gross weight, weight and density-altitude effects, battery and
   temperature, propeller condition, center-of-gravity distribution) and
