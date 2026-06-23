@@ -626,7 +626,8 @@
       "1 statute mile"
     ],
     "a": 1,
-    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station."
+    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -639,7 +640,8 @@
       "1,000 ft below and 1 mile horizontal"
     ],
     "a": 1,
-    "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud."
+    "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -652,7 +654,8 @@
       "Maintain course since the drone is smaller"
     ],
     "a": 0,
-    "e": "A small UAS must always yield the right-of-way to all manned aircraft."
+    "e": "A small UAS must always yield the right-of-way to all manned aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -665,7 +668,8 @@
       "Keep the drone within 400 ft horizontally"
     ],
     "a": 0,
-    "e": "The aircraft must stay within unaided visual line of sight of the remote PIC or a visual observer."
+    "e": "The aircraft must stay within unaided visual line of sight of the remote PIC or a visual observer.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -678,7 +682,8 @@
       "The aircraft has anti-collision lights visible for 3 SM and the pilot has updated training"
     ],
     "a": 3,
-    "e": "Night flight is allowed with anti-collision lighting visible for at least 3 statute miles plus the updated knowledge."
+    "e": "Night flight is allowed with anti-collision lighting visible for at least 3 statute miles plus the updated knowledge.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -691,7 +696,8 @@
       "Allowed whenever the aircraft weighs more than 5 lb and carries a parachute"
     ],
     "a": 1,
-    "e": "Operations over people fall under Categories 1 through 4, set by the drone's weight and injury potential."
+    "e": "Operations over people fall under Categories 1 through 4, set by the drone's weight and injury potential.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -704,7 +710,8 @@
       "Is fine if no one is hurt"
     ],
     "a": 2,
-    "e": "Careless or reckless operation that endangers people or property is prohibited and can cost your certificate."
+    "e": "Careless or reckless operation that endangers people or property is prohibited and can cost your certificate.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -717,7 +724,8 @@
       "Two if both under 250 g"
     ],
     "a": 1,
-    "e": "A person may not act as remote PIC of more than one small UAS at the same time."
+    "e": "A person may not act as remote PIC of more than one small UAS at the same time.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -730,7 +738,8 @@
       "File a flight plan with the nearest air traffic control facility"
     ],
     "a": 0,
-    "e": "A preflight inspection of the aircraft and systems is required to confirm it is safe to fly."
+    "e": "A preflight inspection of the aircraft and systems is required to confirm it is safe to fly.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -743,7 +752,8 @@
       "Always prohibited under all circumstances"
     ],
     "a": 0,
-    "e": "Operation from a moving vehicle is allowed only over sparsely populated areas, not over people or congested areas."
+    "e": "Operation from a moving vehicle is allowed only over sparsely populated areas, not over people or congested areas.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Loading",
@@ -2142,7 +2152,8 @@
       "Only during takeoff and landing, not during cruise"
     ],
     "a": 1,
-    "e": "VLOS must be kept with natural vision, with glasses or contacts permitted, but not binoculars or a camera feed."
+    "e": "VLOS must be kept with natural vision, with glasses or contacts permitted, but not binoculars or a camera feed.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2155,7 +2166,8 @@
       "The aircraft being flown weighs less than 250 grams with its battery"
     ],
     "a": 2,
-    "e": "FPV is permitted as long as a visual observer keeps the aircraft within unaided line of sight at all times."
+    "e": "FPV is permitted as long as a visual observer keeps the aircraft within unaided line of sight at all times.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2168,7 +2180,8 @@
       "Stand at least 100 ft apart"
     ],
     "a": 0,
-    "e": "The remote PIC and visual observer must keep effective communication so see-and-avoid responsibilities are coordinated."
+    "e": "The remote PIC and visual observer must keep effective communication so see-and-avoid responsibilities are coordinated.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2181,7 +2194,8 @@
       "Weigh 0.55 lb or less and have no parts that can lacerate skin"
     ],
     "a": 3,
-    "e": "Category 1 allows flight over people for aircraft 0.55 lb or lighter with no exposed parts that could lacerate skin."
+    "e": "Category 1 allows flight over people for aircraft 0.55 lb or lighter with no exposed parts that could lacerate skin.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2194,7 +2208,8 @@
       "The time of day, since flights over people are permitted only during civil daylight hours"
     ],
     "a": 0,
-    "e": "Operations over people are sorted into Categories 1 through 4 based on weight and the risk of injury."
+    "e": "Operations over people are sorted into Categories 1 through 4 based on weight and the risk of injury.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2207,7 +2222,8 @@
       "Stay under 100 feet above the assembly at all times"
     ],
     "a": 0,
-    "e": "Flight over open-air assemblies requires meeting Category 1 through 3 conditions and broadcasting Remote ID."
+    "e": "Flight over open-air assemblies requires meeting Category 1 through 3 conditions and broadcasting Remote ID.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2220,7 +2236,8 @@
       "Deviate from Part 107 rules to the extent needed to meet the emergency"
     ],
     "a": 3,
-    "e": "In an in-flight emergency the remote PIC may deviate from any Part 107 rule to the extent required to handle it."
+    "e": "In an in-flight emergency the remote PIC may deviate from any Part 107 rule to the extent required to handle it.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2233,7 +2250,8 @@
       "Allowed only while the aircraft is on the ground and the motors are stopped"
     ],
     "a": 2,
-    "e": "Control may pass between qualified pilots if the handoff is coordinated and one PIC stays responsible."
+    "e": "Control may pass between qualified pilots if the handoff is coordinated and one PIC stays responsible.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2246,7 +2264,8 @@
       "Impulsivity"
     ],
     "a": 0,
-    "e": "The macho attitude shows up as overconfidence, and its antidote is taking it slow because reckless chances are foolish."
+    "e": "The macho attitude shows up as overconfidence, and its antidote is taking it slow because reckless chances are foolish.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2259,7 +2278,8 @@
       "Anti-authority"
     ],
     "a": 3,
-    "e": "The anti-authority attitude resists rules, and its antidote is recognizing that the rules are usually right."
+    "e": "The anti-authority attitude resists rules, and its antidote is recognizing that the rules are usually right.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2272,7 +2292,8 @@
       "Macho"
     ],
     "a": 2,
-    "e": "Invulnerability is thinking it cannot happen to you; the antidote is accepting that it can."
+    "e": "Invulnerability is thinking it cannot happen to you; the antidote is accepting that it can.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2285,7 +2306,8 @@
       "Impulsivity"
     ],
     "a": 3,
-    "e": "Impulsivity is doing something quickly without analysis, and its antidote is to think first, then act."
+    "e": "Impulsivity is doing something quickly without analysis, and its antidote is to think first, then act.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2298,7 +2320,8 @@
       "Macho"
     ],
     "a": 2,
-    "e": "Resignation is giving up a sense of control, and its antidote is recognizing that you can make a difference."
+    "e": "Resignation is giving up a sense of control, and its antidote is recognizing that you can make a difference.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2311,7 +2334,8 @@
       "Memorizing the regulations so they can be recited from memory"
     ],
     "a": 2,
-    "e": "ADM is a structured way of evaluating information and risks to consistently make sound flight decisions."
+    "e": "ADM is a structured way of evaluating information and risks to consistently make sound flight decisions.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2324,7 +2348,8 @@
       "Power, Altitude, Visibility, Endurance"
     ],
     "a": 0,
-    "e": "PAVE breaks risk into Pilot, Aircraft, enVironment, and External pressures so hazards can be identified before flight."
+    "e": "PAVE breaks risk into Pilot, Aircraft, enVironment, and External pressures so hazards can be identified before flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2337,7 +2362,8 @@
       "The pilot's own fitness to fly"
     ],
     "a": 3,
-    "e": "IMSAFE checks Illness, Medication, Stress, Alcohol, Fatigue, and Emotion to judge whether the pilot is fit to fly."
+    "e": "IMSAFE checks Illness, Medication, Stress, Alcohol, Fatigue, and Emotion to judge whether the pilot is fit to fly.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -2350,7 +2376,8 @@
       "Effectively using all available people, information, and equipment"
     ],
     "a": 3,
-    "e": "CRM is the effective use of all available resources, people, information, and equipment, to operate safely."
+    "e": "CRM is the effective use of all available resources, people, information, and equipment, to operate safely.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2363,7 +2390,8 @@
       "Having no effect on drone operations"
     ],
     "a": 2,
-    "e": "Fatigue slows reaction time and impairs decision making, so a tired pilot should not fly."
+    "e": "Fatigue slows reaction time and impairs decision making, so a tired pilot should not fly.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -2376,7 +2404,8 @@
       "Sharpen all senses indefinitely"
     ],
     "a": 2,
-    "e": "Stress can narrow attention and degrade judgment, which is why managing it is part of safe operation."
+    "e": "Stress can narrow attention and degrade judgment, which is why managing it is part of safe operation.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -2389,7 +2418,8 @@
       "The weather is perfect"
     ],
     "a": 2,
-    "e": "Planning for a lost link or lost GPS, such as a return-to-home behavior, reduces the chance of a fly-away."
+    "e": "Planning for a lost link or lost GPS, such as a return-to-home behavior, reduces the chance of a fly-away.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -2402,7 +2432,8 @@
       "The remote pilot's certificate number and its expiration date"
     ],
     "a": 2,
-    "e": "Verifying the control link, power, and firmware before flight helps prevent in-flight failures."
+    "e": "Verifying the control link, power, and firmware before flight helps prevent in-flight failures.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -2415,7 +2446,8 @@
       "Optional for hobby flights"
     ],
     "a": 1,
-    "e": "The remote PIC is responsible for determining the aircraft is in a safe condition before each flight."
+    "e": "The remote PIC is responsible for determining the aircraft is in a safe condition before each flight.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -2428,7 +2460,8 @@
       "Brief everyone on roles, the plan, and emergency procedures"
     ],
     "a": 3,
-    "e": "A preflight briefing of roles and emergency procedures keeps the crew coordinated and reduces errors."
+    "e": "A preflight briefing of roles and emergency procedures keeps the crew coordinated and reduces errors.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2441,7 +2474,8 @@
       "Descend and hold a low hover directly above the people until they leave"
     ],
     "a": 2,
-    "e": "The remote PIC must avoid flying over people not part of the operation, repositioning or landing as needed."
+    "e": "The remote PIC must avoid flying over people not part of the operation, repositioning or landing as needed.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2454,7 +2488,8 @@
       "Face downward toward the ground so that it does not distract other nearby aircraft"
     ],
     "a": 2,
-    "e": "Night flight requires anti-collision lights visible for at least 3 statute miles, flashing to help prevent a collision."
+    "e": "Night flight requires anti-collision lights visible for at least 3 statute miles, flashing to help prevent a collision.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -2467,7 +2502,8 @@
       "Obtain a specific waiver from the FAA before every individual night flight"
     ],
     "a": 0,
-    "e": "Night operations require the lighting plus the updated training that now includes night content."
+    "e": "Night operations require the lighting plus the updated training that now includes night content.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2480,7 +2516,8 @@
       "Directly participating in the operation, or under a covered structure or inside a stationary covered vehicle"
     ],
     "a": 3,
-    "e": "Without a category, you may fly only over participants or people shielded by a covered structure or stationary covered vehicle."
+    "e": "Without a category, you may fly only over participants or people shielded by a covered structure or stationary covered vehicle.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2493,7 +2530,8 @@
       "At cloud base"
     ],
     "a": 2,
-    "e": "Flight visibility of at least 3 statute miles is judged from the control station location."
+    "e": "Flight visibility of at least 3 statute miles is judged from the control station location.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2506,7 +2544,8 @@
       "Permission from the property owner or manager"
     ],
     "a": 3,
-    "e": "Federal rules govern the airspace, but you still need permission to launch from or land on private property."
+    "e": "Federal rules govern the airspace, but you still need permission to launch from or land on private property.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2519,7 +2558,8 @@
       "Only weather"
     ],
     "a": 1,
-    "e": "Accidents usually grow from a chain of small errors, and breaking any link in the chain can prevent the outcome."
+    "e": "Accidents usually grow from a chain of small errors, and breaking any link in the chain can prevent the outcome.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2532,7 +2572,8 @@
       "Allowed in Class G"
     ],
     "a": 1,
-    "e": "Careless or reckless operation that endangers life or property is prohibited and can lead to certificate action."
+    "e": "Careless or reckless operation that endangers life or property is prohibited and can lead to certificate action.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2545,7 +2586,8 @@
       "Make consistent go or no-go decisions and avoid pressing into unsafe conditions"
     ],
     "a": 3,
-    "e": "Personal minimums give a clear line for go or no-go decisions before external pressures push toward an unsafe flight."
+    "e": "Personal minimums give a clear line for go or no-go decisions before external pressures push toward an unsafe flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Loading",
@@ -3286,7 +3328,8 @@
       "Keep flying by the camera feed"
     ],
     "a": 1,
-    "e": "Losing unaided sight breaks VLOS, so regain it or land."
+    "e": "Losing unaided sight breaks VLOS, so regain it or land.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -3299,7 +3342,8 @@
       "Lower the density altitude and make the air easier to fly in"
     ],
     "a": 2,
-    "e": "External pressure can push a pilot past their personal minimums into an unsafe decision."
+    "e": "External pressure can push a pilot past their personal minimums into an unsafe decision.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3312,7 +3356,8 @@
       "Fly only under 100 feet until the warning eventually clears itself"
     ],
     "a": 1,
-    "e": "Launching with a known unresolved issue is careless, so address it first."
+    "e": "Launching with a known unresolved issue is careless, so address it first.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Weather",
@@ -3689,7 +3734,8 @@
       "Define, Examine, Choose, Init, Drive, Exit"
     ],
     "a": 0,
-    "e": "DECIDE means Detect, Estimate, Choose, Identify, Do, and Evaluate."
+    "e": "DECIDE means Detect, Estimate, Choose, Identify, Do, and Evaluate.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3702,7 +3748,8 @@
       "Plan, Prepare, Proceed"
     ],
     "a": 1,
-    "e": "The 3P model is Perceive the hazards, Process the risk, and Perform the response."
+    "e": "The 3P model is Perceive the hazards, Process the risk, and Perform the response.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3715,7 +3762,8 @@
       "A combination of how likely it is and how severe the outcome would be"
     ],
     "a": 3,
-    "e": "Risk combines the likelihood of an event with the severity of its outcome."
+    "e": "Risk combines the likelihood of an event with the severity of its outcome.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3728,7 +3776,8 @@
       "Continuously scan the sky around the aircraft for other traffic"
     ],
     "a": 3,
-    "e": "Continuous scanning of the surrounding sky is how the crew spots and avoids other aircraft."
+    "e": "Continuous scanning of the surrounding sky is how the crew spots and avoids other aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -3741,7 +3790,8 @@
       "The remote pilot's certificate number and date of issue"
     ],
     "a": 1,
-    "e": "Surveying the site for obstacles, people, and airspace lets the pilot plan a safe operation."
+    "e": "Surveying the site for obstacles, people, and airspace lets the pilot plan a safe operation.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3754,7 +3804,8 @@
       "At the maximum 400 ft for every flight"
     ],
     "a": 2,
-    "e": "Setting return-to-home above the tallest obstacle prevents a collision during an automatic return."
+    "e": "Setting return-to-home above the tallest obstacle prevents a collision during an automatic return.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -3767,7 +3818,8 @@
       "Takes over flying the aircraft whenever the remote pilot is busy"
     ],
     "a": 2,
-    "e": "The visual observer supports see-and-avoid but does not manipulate the controls."
+    "e": "The visual observer supports see-and-avoid but does not manipulate the controls.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3780,7 +3832,8 @@
       "Ignore the wind entirely because the reserve covers any added power use"
     ],
     "a": 0,
-    "e": "A planned reserve leaves enough power to land safely rather than risking a dead pack aloft."
+    "e": "A planned reserve leaves enough power to land safely rather than risking a dead pack aloft.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3793,7 +3846,8 @@
       "Match the manned aircraft's altitude and follow it at a fixed distance"
     ],
     "a": 0,
-    "e": "Yielding means giving way and remaining well clear, never crossing close in front of or near the aircraft."
+    "e": "Yielding means giving way and remaining well clear, never crossing close in front of or near the aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -3806,7 +3860,8 @@
       "I can handle anything"
     ],
     "a": 2,
-    "e": "The antidote to anti-authority is recognizing that the rules are usually there for good reason."
+    "e": "The antidote to anti-authority is recognizing that the rules are usually there for good reason.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3819,7 +3874,8 @@
       "Missing a problem that should have been caught on the ground"
     ],
     "a": 3,
-    "e": "Hurrying the preflight lets ground-detectable problems slip through into the flight."
+    "e": "Hurrying the preflight lets ground-detectable problems slip through into the flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Airspace",
@@ -4056,7 +4112,8 @@
       "Do it quickly"
     ],
     "a": 2,
-    "e": "The antidote to macho is recognizing that taking unnecessary chances is foolish."
+    "e": "The antidote to macho is recognizing that taking unnecessary chances is foolish.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4069,7 +4126,8 @@
       "Not so fast; think first"
     ],
     "a": 3,
-    "e": "The antidote to impulsivity is to slow down and think before acting."
+    "e": "The antidote to impulsivity is to slow down and think before acting.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4082,7 +4140,8 @@
       "It could happen to me"
     ],
     "a": 3,
-    "e": "The antidote to invulnerability is accepting that an accident could happen to you."
+    "e": "The antidote to invulnerability is accepting that an accident could happen to you.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4095,7 +4154,8 @@
       "Just hurry up now before the chance slips away"
     ],
     "a": 0,
-    "e": "The antidote to resignation is recognizing you can influence the outcome."
+    "e": "The antidote to resignation is recognizing you can influence the outcome.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4108,7 +4168,8 @@
       "Restricted, like flight over people, unless conditions or a category are met"
     ],
     "a": 3,
-    "e": "Flight over moving vehicles is restricted much like flight over people unless the operation meets the rules."
+    "e": "Flight over moving vehicles is restricted much like flight over people unless the operation meets the rules.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -4121,7 +4182,8 @@
       "Only that the propellers spin freely when the motors arm"
     ],
     "a": 1,
-    "e": "Confirming GPS lock and a set home point ensures features like return-to-home will work."
+    "e": "Confirming GPS lock and a set home point ensures features like return-to-home will work.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -4134,7 +4196,8 @@
       "Increase altitude and wait"
     ],
     "a": 0,
-    "e": "A pilot should be ready to take manual control and land if the aircraft loses GPS."
+    "e": "A pilot should be ready to take manual control and land if the aircraft loses GPS.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -4147,7 +4210,8 @@
       "Choose the most appropriate paint color for the drone"
     ],
     "a": 0,
-    "e": "A weather briefing reveals wind, ceilings, visibility, and storms that affect the go decision."
+    "e": "A weather briefing reveals wind, ceilings, visibility, and storms that affect the go decision.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Operations",
@@ -4160,7 +4224,8 @@
       "Ignore the change"
     ],
     "a": 1,
-    "e": "When conditions fall below personal minimums, the safe choice is to land and end the flight."
+    "e": "When conditions fall below personal minimums, the safe choice is to land and end the flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4173,7 +4238,8 @@
       "Is dangerous and prohibited, as it can ground firefighting aircraft"
     ],
     "a": 3,
-    "e": "Drones near wildfires or emergencies endanger and can ground crewed response aircraft, so do not fly there."
+    "e": "Drones near wildfires or emergencies endanger and can ground crewed response aircraft, so do not fly there.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -4186,7 +4252,8 @@
       "Skip the preflight briefing to save time before launch"
     ],
     "a": 2,
-    "e": "Knowing the failsafe response to a lost link or low battery lets the pilot plan for it."
+    "e": "Knowing the failsafe response to a lost link or low battery lets the pilot plan for it.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -4199,7 +4266,8 @@
       "Only one is the responsible remote PIC at any moment"
     ],
     "a": 3,
-    "e": "Control may pass between qualified pilots, but only one is the responsible remote PIC at a time."
+    "e": "Control may pass between qualified pilots, but only one is the responsible remote PIC at a time.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -4212,7 +4280,8 @@
       "Keep the aircraft close enough to see its position and orientation clearly"
     ],
     "a": 3,
-    "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly."
+    "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -4225,7 +4294,8 @@
       "Inside the control station alongside the remote pilot for the whole flight"
     ],
     "a": 1,
-    "e": "Keeping bystanders clear of the launch zone and out from under the aircraft protects them from injury."
+    "e": "Keeping bystanders clear of the launch zone and out from under the aircraft protects them from injury.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4238,7 +4308,8 @@
       "Nothing needs to be agreed in advance"
     ],
     "a": 1,
-    "e": "Agreeing on a communication method keeps the remote PIC and observer coordinated in flight."
+    "e": "Agreeing on a communication method keeps the remote PIC and observer coordinated in flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4251,7 +4322,8 @@
       "Not fly until the doubt is resolved"
     ],
     "a": 3,
-    "e": "When in doubt, do not fly until the safety or legality question is resolved."
+    "e": "When in doubt, do not fly until the safety or legality question is resolved.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4264,7 +4336,8 @@
       "The remote pilot certificate expiration date"
     ],
     "a": 1,
-    "e": "Thin wires and towers are easy to miss, so scan for them before any low maneuvering."
+    "e": "Thin wires and towers are easy to miss, so scan for them before any low maneuvering.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -4277,7 +4350,8 @@
       "Good practice, though not required by the rule"
     ],
     "a": 3,
-    "e": "Part 107 does not require a logbook, but accurate records are a useful safety habit."
+    "e": "Part 107 does not require a logbook, but accurate records are a useful safety habit.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Operations",
@@ -4290,7 +4364,8 @@
       "The certificate expires"
     ],
     "a": 2,
-    "e": "Sunset marks when civil twilight and night lighting requirements begin to apply."
+    "e": "Sunset marks when civil twilight and night lighting requirements begin to apply.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -5619,7 +5694,8 @@
       "Immediately cut power to all motors and drop straight to the ground"
     ],
     "a": 0,
-    "e": "On lost link the aircraft should perform a predictable, preprogrammed safe action like return-to-home or a controlled landing."
+    "e": "On lost link the aircraft should perform a predictable, preprogrammed safe action like return-to-home or a controlled landing.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -5632,7 +5708,8 @@
       "Battery life by coordinating the power used by each system"
     ],
     "a": 1,
-    "e": "Crew resource management focuses on clear communication and distributing workload to reduce error."
+    "e": "Crew resource management focuses on clear communication and distributing workload to reduce error.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Loading",
@@ -5981,7 +6058,8 @@
       "The rules do not matter"
     ],
     "a": 0,
-    "e": "Believing an accident will not happen to me is the invulnerability attitude; the antidote is that it could happen to me."
+    "e": "Believing an accident will not happen to me is the invulnerability attitude; the antidote is that it could happen to me.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -5994,7 +6072,8 @@
       "It increases the aircraft's top speed during routine operations"
     ],
     "a": 0,
-    "e": "Personal minimums set safety limits ahead of time so decisions are not driven by pressure in the moment."
+    "e": "Personal minimums set safety limits ahead of time so decisions are not driven by pressure in the moment.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6007,7 +6086,8 @@
       "Only announce your presence by radio"
     ],
     "a": 2,
-    "e": "Keep people who are not part of the operation clear of the area unless your operation is specifically approved to fly over people."
+    "e": "Keep people who are not part of the operation clear of the area unless your operation is specifically approved to fly over people.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Loading",
@@ -6384,7 +6464,8 @@
       "Only when the client specifically asks for one to be made"
     ],
     "a": 2,
-    "e": "Make a go/no-go decision before every flight based on weather, aircraft, and pilot readiness."
+    "e": "Make a go/no-go decision before every flight based on weather, aircraft, and pilot readiness.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6397,7 +6478,8 @@
       "Increase speed and fly around to try to locate it"
     ],
     "a": 0,
-    "e": "If you lose visual line of sight you must regain it or begin a safe recovery such as return-to-home."
+    "e": "If you lose visual line of sight you must regain it or begin a safe recovery such as return-to-home.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Loading",
@@ -6620,7 +6702,8 @@
       "only manned aircraft below 500 feet"
     ],
     "a": 1,
-    "e": "Under 14 CFR 107.37, the sUAS must yield the right of way to all other aircraft."
+    "e": "Under 14 CFR 107.37, the sUAS must yield the right of way to all other aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6633,7 +6716,8 @@
       "Corrective lenses"
     ],
     "a": 3,
-    "e": "VLOS may be maintained only with corrective lenses, not binoculars or first-person-view goggles."
+    "e": "VLOS may be maintained only with corrective lenses, not binoculars or first-person-view goggles.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6646,7 +6730,8 @@
       "two aircraft if both are under 0.55 lb"
     ],
     "a": 1,
-    "e": "A person may not act as remote PIC for more than one small unmanned aircraft at the same time."
+    "e": "A person may not act as remote PIC for more than one small unmanned aircraft at the same time.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6659,7 +6744,8 @@
       "1 statute mile"
     ],
     "a": 2,
-    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles."
+    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6672,7 +6758,8 @@
       "a second-class medical certificate"
     ],
     "a": 2,
-    "e": "The remote PIC must complete initial or recurrent training that covers night operations."
+    "e": "The remote PIC must complete initial or recurrent training that covers night operations.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6685,7 +6772,8 @@
       "the operation takes place in Class G airspace below 400 feet above the ground"
     ],
     "a": 1,
-    "e": "Flight over moving vehicles requires meeting an over-people category or that the occupants are participating in the operation."
+    "e": "Flight over moving vehicles requires meeting an over-people category or that the occupants are participating in the operation.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6698,7 +6786,8 @@
       "assess the operating environment and ensure the aircraft is safe for operation"
     ],
     "a": 3,
-    "e": "The remote PIC must assess the operating environment and ensure the sUAS is in a condition for safe operation."
+    "e": "The remote PIC must assess the operating environment and ensure the sUAS is in a condition for safe operation.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -6711,7 +6800,8 @@
       "the schedule for routine maintenance of the aircraft and batteries"
     ],
     "a": 0,
-    "e": "CRM is the effective use of all available resources to conduct a safe operation."
+    "e": "CRM is the effective use of all available resources to conduct a safe operation.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6724,7 +6814,8 @@
       "The FAA"
     ],
     "a": 0,
-    "e": "The remote pilot in command is directly responsible for and the final authority over the operation."
+    "e": "The remote pilot in command is directly responsible for and the final authority over the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -6877,7 +6968,8 @@
       "be registered with the FAA under the usual process"
     ],
     "a": 0,
-    "e": "Category 3 operations may not be conducted over open-air assemblies of people."
+    "e": "Category 3 operations may not be conducted over open-air assemblies of people.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6904,7 +6996,8 @@
       "a single waiver covering night flight is held, regardless of the over-people category"
     ],
     "a": 1,
-    "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training)."
+    "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training).",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6931,7 +7024,8 @@
       "stay below 100 feet"
     ],
     "a": 1,
-    "e": "A Remote ID broadcast module requires the operation to remain within visual line of sight."
+    "e": "A Remote ID broadcast module requires the operation to remain within visual line of sight.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -6958,7 +7052,8 @@
       "is under 0.25 lb and therefore exempt from the registration rules"
     ],
     "a": 0,
-    "e": "Inside a FRIA, a non-broadcasting drone must remain within visual line of sight of the operator."
+    "e": "Inside a FRIA, a non-broadcasting drone must remain within visual line of sight of the operator.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6971,7 +7066,8 @@
       "flying in Class G airspace"
     ],
     "a": 2,
-    "e": "The remote PIC may dim anti-collision lighting if a bright light would impair safe operation, using discretion in the interest of safety."
+    "e": "The remote PIC may dim anti-collision lighting if a bright light would impair safe operation, using discretion in the interest of safety.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6984,7 +7080,8 @@
       "ignore the facility map entirely, since it does not apply in uncontrolled Class G airspace at all"
     ],
     "a": 2,
-    "e": "Above the UAS Facility Map ceiling, you must seek further authorization rather than rely on standard LAANC approval."
+    "e": "Above the UAS Facility Map ceiling, you must seek further authorization rather than rely on standard LAANC approval.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Regulations",
@@ -7011,7 +7108,8 @@
       "over any gathering once the manufacturer has issued a Declaration of Compliance"
     ],
     "a": 2,
-    "e": "Category 3 may fly over people only within a closed or restricted-access site with notice, or without sustained flight over any person."
+    "e": "Category 3 may fly over people only within a closed or restricted-access site with notice, or without sustained flight over any person.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -7024,7 +7122,8 @@
       "climb above 400 feet AGL to regain the lost control signal faster"
     ],
     "a": 2,
-    "e": "Knowing the lost-link behavior lets the pilot anticipate the aircraft's response if the control link drops."
+    "e": "Knowing the lost-link behavior lets the pilot anticipate the aircraft's response if the control link drops.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -7037,7 +7136,8 @@
       "increase battery life because the surrounding metal shields the aircraft from wind"
     ],
     "a": 2,
-    "e": "Metal structures and power lines can cause magnetic or radio interference that degrades control or GPS navigation."
+    "e": "Metal structures and power lines can cause magnetic or radio interference that degrades control or GPS navigation.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -7050,7 +7150,8 @@
       "only the battery level, since the aircraft's software handles all other safety checks"
     ],
     "a": 1,
-    "e": "Preflight includes the aircraft and control link, power, and a survey of the operating area for hazards."
+    "e": "Preflight includes the aircraft and control link, power, and a survey of the operating area for hazards.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -7063,7 +7164,8 @@
       "perform maintenance only after the aircraft has been involved in a crash or hard landing event"
     ],
     "a": 0,
-    "e": "Follow the manufacturer's maintenance schedule; absent one, maintain the aircraft so it remains in a condition for safe operation."
+    "e": "Follow the manufacturer's maintenance schedule; absent one, maintain the aircraft so it remains in a condition for safe operation.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -7076,7 +7178,8 @@
       "degrading performance and decision making"
     ],
     "a": 3,
-    "e": "Fatigue, dehydration, and stress degrade a pilot's performance and decision making, even on the ground."
+    "e": "Fatigue, dehydration, and stress degrade a pilot's performance and decision making, even on the ground.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -7089,7 +7192,8 @@
       "the class of airspace and any authorization needed before launching the operation"
     ],
     "a": 0,
-    "e": "IMSAFE is a self-assessment of illness, medication, stress, alcohol, fatigue, and emotion."
+    "e": "IMSAFE is a self-assessment of illness, medication, stress, alcohol, fatigue, and emotion.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -7102,7 +7206,8 @@
       "register the drone"
     ],
     "a": 0,
-    "e": "Monitoring the CTAF builds awareness of nearby manned traffic at a non-towered airport."
+    "e": "Monitoring the CTAF builds awareness of nearby manned traffic at a non-towered airport.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -7115,7 +7220,8 @@
       "operate only above 400 feet so that manned aircraft remain well below the drone"
     ],
     "a": 1,
-    "e": "The remote PIC must maintain awareness and yield the right of way to all other aircraft."
+    "e": "The remote PIC must maintain awareness and yield the right of way to all other aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -7128,7 +7234,8 @@
       "Remote ID compliance for the aircraft during the flight"
     ],
     "a": 0,
-    "e": "A pre-operation crew briefing supports crew resource management and safe coordination."
+    "e": "A pre-operation crew briefing supports crew resource management and safe coordination.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Airspace",
@@ -7519,7 +7626,8 @@
       "surrender the certificate"
     ],
     "a": 1,
-    "e": "Upon FAA request, the remote PIC must submit a written report describing the emergency deviation."
+    "e": "Upon FAA request, the remote PIC must submit a written report describing the emergency deviation.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -7532,7 +7640,8 @@
       "remain above 400 feet above the ground at all times while near the airport"
     ],
     "a": 0,
-    "e": "Near an airport, the operation must not interfere with airport operations and must give way to manned aircraft."
+    "e": "Near an airport, the operation must not interfere with airport operations and must give way to manned aircraft.",
+    "acs": "UA.V.B"
   },
   {
     "b": "Operations",
@@ -7545,7 +7654,8 @@
       "the total weight stays under 55 lb, no hazardous material is carried, and the operation is within one state"
     ],
     "a": 3,
-    "e": "Carrying property for compensation requires total weight under 55 lb, no hazardous materials, and operation within a single state."
+    "e": "Carrying property for compensation requires total weight under 55 lb, no hazardous materials, and operation within a single state.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -7558,6 +7668,7 @@
       "remain seated inside a vehicle that is parked near the launch and recovery area"
     ],
     "a": 2,
-    "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC."
+    "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC.",
+    "acs": "UA.I.B"
   }
 ]
