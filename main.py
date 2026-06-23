@@ -75,15 +75,15 @@ QUESTIONS_JSON = r'''[
   {
     "b": "Regulations",
     "s": "Registration",
-    "q": "Under Part 107, a small unmanned aircraft must be registered when it weighs:",
+    "q": "A drone flown under the limited recreational exception, not Part 107, must be registered when it weighs:",
     "c": [
-      "Never, for commercial use",
-      "0.55 lb (250 g) up to under 55 lb",
-      "Over 5 lb only",
-      "Over 2 lb only"
+      "any weight, including under 250 g",
+      "0.55 lb (250 g) or more",
+      "over 5 lb only",
+      "over 2 lb only"
     ],
     "a": 1,
-    "e": "Aircraft from 0.55 lb up to under 55 lb must be registered before any Part 107 flight.",
+    "e": "Under the recreational exception, registration is required at 0.55 lb (250 g) or more; under Part 107 every drone is registered regardless of weight.",
     "acs": "UA.I.B"
   },
   {
