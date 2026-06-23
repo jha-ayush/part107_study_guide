@@ -35,7 +35,7 @@
   {% for b in buckets %}
   <a class="bcard" href="{{ url_for('practice', bucket=b.name) }}">
     <div class="top-row">
-      <div class="n"><span class="ic">{{ icons[b.name] }}</span>{{ b.name }} ({{ b.count }})</div>
+      <div class="n"><span class="ic">{{ icons[b.name] }}</span>{{ b.name }} ({{ soft_count(b.count) }})</div>
       {% set m = mastery(b.pct) %}<span class="mbadge {{ m.cls }}">{{ m.emoji }} {{ m.label }}</span>
     </div>
     <div class="pct">{{ b.pct if b.pct is not none else "not started" }}{{ "%" if b.pct is not none else "" }}</div>
