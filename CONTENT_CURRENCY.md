@@ -115,6 +115,12 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Added figure-based chart-reading questions. A chart question can
+  now reference an original SVG sectional excerpt (the FIGURES registry in
+  app.py), rendered above the question in study, practice, and the exam, the
+  way the FAA knowledge test shows chart figures. A first scene with four
+  questions (a Class D ring, towered vs non-towered airports, obstacle height,
+  and a maximum elevation figure) is in place; more scenes add the same way.
 - June 2026: Review and study list now surface ACS codes. Each missed question
   shows its ACS task, and the study list opens with an "FAA ACS tasks to study"
   summary that lists the distinct tasks among missed questions with a count each,
