@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="section-title">🎯 Your ACS study sheet</div>
+{% if tasks %}
+<p class="cs-intro">Your weak ACS tasks, built from the {{ total_missed }} question{{ 's' if total_missed != 1 }} you have missed, ordered by how often you missed them. Each task lists the rules to review. Generated {{ generated }}; use your browser's print (Cmd or Ctrl + P) to save a copy.</p>
+{% for t in tasks %}
+<div class="ss-task">
+  <div class="ss-head"><span class="ss-code">{{ t.code }}</span><span class="ss-title">{{ t.title }}</span><span class="ss-n">{{ t.misses }} miss{{ 'es' if t.misses != 1 }} &middot; {{ t.qcount }} question{{ 's' if t.qcount != 1 }}</span></div>
+  <ul class="ss-rules">
+    {% for r in t.rules %}<li>{{ r }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+{% else %}
+<div class="empty">🌟 Nothing missed yet. Take a practice exam or some practice questions, and the ACS tasks you need to study will show up here.</div>
+{% endif %}
+<div class="btn-row" style="margin-top:14px">
+  <a class="btn" href="{{ url_for('review') }}">📚 Study list</a>
+  {% if tasks %}<a class="btn" href="{{ url_for('drill') }}">🎯 Drill misses</a>{% endif %}
+  <a class="btn" href="{{ url_for('home') }}">🏠 Home</a>
+</div>
+{% endblock %}
