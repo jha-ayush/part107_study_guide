@@ -103,6 +103,9 @@ ACS_TASKS = {
     "UA.I.D": "Regulations - Waivers",
     "UA.I.E": "Regulations - Operations Over People",
     "UA.I.F": "Regulations - Remote Identification",
+    "UA.III.A": "Weather - Sources of Weather",
+    "UA.III.B": "Weather - Effects of Weather on Performance",
+    "UA.IV.A": "Loading and Performance",
 }
 
 # ---- Per-browser progress store (file-based) --------------------------------
