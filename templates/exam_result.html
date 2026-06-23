@@ -25,6 +25,15 @@
 </div>
 {% endfor %}
 
+{% if acs_summary %}
+<div class="section-title">🎯 FAA ACS tasks to study</div>
+<div class="acssummary">
+  {% for a in acs_summary %}
+  <div class="acsrow"><span class="acscode">{{ a.code }}</span><span class="acstitle">{{ a.title }}</span><span class="acsn">{{ a.n }}</span></div>
+  {% endfor %}
+</div>
+{% endif %}
+
 {% if missed %}
 <div class="section-title">📌 Missed questions and the rule</div>
 {% for grp in missed %}
@@ -35,6 +44,7 @@
     <div class="mq">{{ m.q_html|safe }}</div>
     <div class="ma">✅ {{ m.letter }}. {{ m.answer }}</div>
     <div class="mr">{{ m.e }}</div>
+    {% if m.acs %}<div class="macs">ACS <span class="acs" title="{{ acs_tasks[m.acs] }}">{{ m.acs }}</span> &middot; {{ acs_tasks[m.acs] }}</div>{% endif %}
   </div>
   {% endfor %}
 </div>
