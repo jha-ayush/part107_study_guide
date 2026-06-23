@@ -41,7 +41,8 @@ QUESTIONS_JSON = r'''[
       "No report required"
     ],
     "a": 2,
-    "e": "Report within 10 calendar days if an accident causes serious injury or at least $500 damage to others' property."
+    "e": "Report within 10 calendar days if an accident causes serious injury or at least $500 damage to others' property.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -54,7 +55,8 @@ QUESTIONS_JSON = r'''[
       "A near-miss with no contact"
     ],
     "a": 1,
-    "e": "Reporting is triggered by serious injury or at least $500 damage to others' property."
+    "e": "Reporting is triggered by serious injury or at least $500 damage to others' property.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -67,7 +69,8 @@ QUESTIONS_JSON = r'''[
       "Renew the certificate annually with the FAA"
     ],
     "a": 2,
-    "e": "Since 2021 currency is maintained by free online recurrent training every 24 calendar months, with no in-person retest."
+    "e": "Since 2021 currency is maintained by free online recurrent training every 24 calendar months, with no in-person retest.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -80,7 +83,8 @@ QUESTIONS_JSON = r'''[
       "Over 2 lb only"
     ],
     "a": 1,
-    "e": "Aircraft from 0.55 lb up to under 55 lb must be registered before any Part 107 flight."
+    "e": "Aircraft from 0.55 lb up to under 55 lb must be registered before any Part 107 flight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -93,7 +97,8 @@ QUESTIONS_JSON = r'''[
       "Only a printed paper copy of the full Part 107 regulations"
     ],
     "a": 1,
-    "e": "The remote PIC must keep their remote pilot certificate and ID readily accessible during all operations."
+    "e": "The remote PIC must keep their remote pilot certificate and ID readily accessible during all operations.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -106,7 +111,8 @@ QUESTIONS_JSON = r'''[
       "Carry a Mode C transponder like manned aircraft"
     ],
     "a": 1,
-    "e": "Remote ID makes the aircraft broadcast its identity, location, and altitude so it can be identified while airborne."
+    "e": "Remote ID makes the aircraft broadcast its identity, location, and altitude so it can be identified while airborne.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -119,7 +125,8 @@ QUESTIONS_JSON = r'''[
       "Under direct supervision of a certificated remote PIC who can take control"
     ],
     "a": 3,
-    "e": "A non-certificated person may fly only under the direct supervision of a remote PIC able to immediately take over."
+    "e": "A non-certificated person may fly only under the direct supervision of a remote PIC able to immediately take over.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -132,7 +139,8 @@ QUESTIONS_JSON = r'''[
       "14"
     ],
     "a": 0,
-    "e": "An applicant must be at least 16 years old to hold a remote pilot certificate."
+    "e": "An applicant must be at least 16 years old to hold a remote pilot certificate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -145,7 +153,8 @@ QUESTIONS_JSON = r'''[
       "24 hours"
     ],
     "a": 2,
-    "e": "No operation within 8 hours of alcohol, while impaired, or with a blood alcohol content of 0.04% or greater."
+    "e": "No operation within 8 hours of alcohol, while impaired, or with a blood alcohol content of 0.04% or greater.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -860,7 +869,8 @@ QUESTIONS_JSON = r'''[
       "Operate the aircraft without registering it or marking it with a registration number"
     ],
     "a": 1,
-    "e": "A waiver permits deviation from specific waivable rules only when the FAA is satisfied the operation can be done safely."
+    "e": "A waiver permits deviation from specific waivable rules only when the FAA is satisfied the operation can be done safely.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -873,7 +883,8 @@ QUESTIONS_JSON = r'''[
       "A medical certificate"
     ],
     "a": 1,
-    "e": "Airspace access is granted by an authorization, while permission to deviate from an operating rule comes from a waiver."
+    "e": "Airspace access is granted by an authorization, while permission to deviate from an operating rule comes from a waiver.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -886,7 +897,8 @@ QUESTIONS_JSON = r'''[
       "Take over flying the controls whenever the remote pilot becomes busy"
     ],
     "a": 2,
-    "e": "A visual observer keeps the aircraft in sight and stays in communication with the remote PIC to support see-and-avoid."
+    "e": "A visual observer keeps the aircraft in sight and stays in communication with the remote PIC to support see-and-avoid.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -899,7 +911,8 @@ QUESTIONS_JSON = r'''[
       "Allowed only within one state, under 55 lb total, with no hazardous materials"
     ],
     "a": 3,
-    "e": "Property for hire may be carried only within one state, under 55 lb total, and never hazardous materials."
+    "e": "Property for hire may be carried only within one state, under 55 lb total, and never hazardous materials.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -912,7 +925,8 @@ QUESTIONS_JSON = r'''[
       "Cargo, but never hazardous materials"
     ],
     "a": 3,
-    "e": "Part 107 prohibits carrying hazardous materials regardless of weight."
+    "e": "Part 107 prohibits carrying hazardous materials regardless of weight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -925,7 +939,8 @@ QUESTIONS_JSON = r'''[
       "Required only for night flight or operations conducted in controlled airspace near airports"
     ],
     "a": 1,
-    "e": "No medical certificate is required, but you may not fly with a condition that impairs safe operation."
+    "e": "No medical certificate is required, but you may not fly with a condition that impairs safe operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -938,7 +953,8 @@ QUESTIONS_JSON = r'''[
       "Own an aircraft that is registered with the FAA"
     ],
     "a": 0,
-    "e": "English proficiency in reading, speaking, writing, and understanding is an eligibility requirement for the certificate."
+    "e": "English proficiency in reading, speaking, writing, and understanding is an eligibility requirement for the certificate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -951,7 +967,8 @@ QUESTIONS_JSON = r'''[
       "Present the remote pilot certificate and allow inspection of the aircraft and records"
     ],
     "a": 3,
-    "e": "On request, the remote PIC must show the certificate and allow FAA inspection of the aircraft and records."
+    "e": "On request, the remote PIC must show the certificate and allow FAA inspection of the aircraft and records.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -964,7 +981,8 @@ QUESTIONS_JSON = r'''[
       "Broadcast over radio before flight"
     ],
     "a": 1,
-    "e": "The registration number must be displayed on the aircraft's exterior surface and be readable."
+    "e": "The registration number must be displayed on the aircraft's exterior surface and be readable.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -977,7 +995,8 @@ QUESTIONS_JSON = r'''[
       "5 years"
     ],
     "a": 1,
-    "e": "Small unmanned aircraft registration must be renewed every 3 years."
+    "e": "Small unmanned aircraft registration must be renewed every 3 years.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -990,7 +1009,8 @@ QUESTIONS_JSON = r'''[
       "Always prohibited under Part 107 regardless of the precautions that are taken"
     ],
     "a": 0,
-    "e": "You may drop an object as long as reasonable precautions prevent it from creating an undue hazard to people or property."
+    "e": "You may drop an object as long as reasonable precautions prevent it from creating an undue hazard to people or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -1003,7 +1023,8 @@ QUESTIONS_JSON = r'''[
       "The pilot's certificate expiration date and registration number"
     ],
     "a": 0,
-    "e": "A preflight assessment of local airspace, weather, terrain, and obstacles is required before every operation."
+    "e": "A preflight assessment of local airspace, weather, terrain, and obstacles is required before every operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -1016,7 +1037,8 @@ QUESTIONS_JSON = r'''[
       "Does not exempt you from state or local privacy and trespass laws"
     ],
     "a": 3,
-    "e": "Federal Part 107 governs the airspace operation but does not preempt state or local privacy, trespass, and similar laws."
+    "e": "Federal Part 107 governs the airspace operation but does not preempt state or local privacy, trespass, and similar laws.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1029,7 +1051,8 @@ QUESTIONS_JSON = r'''[
       "A designated remote PIC who is the final authority for that flight"
     ],
     "a": 3,
-    "e": "Each operation must have one remote PIC who is directly responsible for and the final authority over that flight."
+    "e": "Each operation must have one remote PIC who is directly responsible for and the final authority over that flight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -1042,7 +1065,8 @@ QUESTIONS_JSON = r'''[
       "Recreational flyers, not Part 107 commercial operators"
     ],
     "a": 3,
-    "e": "TRUST satisfies the recreational flyer requirement and is separate from the Part 107 knowledge test."
+    "e": "TRUST satisfies the recreational flyer requirement and is separate from the Part 107 knowledge test.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1055,7 +1079,8 @@ QUESTIONS_JSON = r'''[
       "Online from home using a webcam while a remote proctor monitors the session live"
     ],
     "a": 0,
-    "e": "The initial knowledge test is proctored at an FAA-approved testing center and requires valid photo identification."
+    "e": "The initial knowledge test is proctored at an FAA-approved testing center and requires valid photo identification.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1068,7 +1093,8 @@ QUESTIONS_JSON = r'''[
       "Registering the drone, which automatically issues the certificate"
     ],
     "a": 2,
-    "e": "The applicant files through IACRA, and after TSA vetting receives a temporary then a permanent remote pilot certificate."
+    "e": "The applicant files through IACRA, and after TSA vetting receives a temporary then a permanent remote pilot certificate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1081,7 +1107,8 @@ QUESTIONS_JSON = r'''[
       "Beyond visual line of sight"
     ],
     "a": 0,
-    "e": "Many operating rules are waivable, but the ban on carrying hazardous materials is not."
+    "e": "Many operating rules are waivable, but the ban on carrying hazardous materials is not.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -1094,7 +1121,8 @@ QUESTIONS_JSON = r'''[
       "Keeping the aircraft below 200 feet above the ground at all times"
     ],
     "a": 2,
-    "e": "Comply via a standard Remote ID drone, a broadcast module, or flying inside a FRIA."
+    "e": "Comply via a standard Remote ID drone, a broadcast module, or flying inside a FRIA.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -1107,7 +1135,8 @@ QUESTIONS_JSON = r'''[
       "A pilot certification level above the basic remote certificate"
     ],
     "a": 0,
-    "e": "A FRIA is an approved location where aircraft without Remote ID broadcast capability may still be flown."
+    "e": "A FRIA is an approved location where aircraft without Remote ID broadcast capability may still be flown.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -1120,7 +1149,8 @@ QUESTIONS_JSON = r'''[
       "Each aircraft is registered individually"
     ],
     "a": 3,
-    "e": "Part 107 requires each unmanned aircraft to be registered individually, each with its own registration."
+    "e": "Part 107 requires each unmanned aircraft to be registered individually, each with its own registration.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -1133,7 +1163,8 @@ QUESTIONS_JSON = r'''[
       "Only a concern for manned pilots, not remote pilots"
     ],
     "a": 2,
-    "e": "Making a fraudulent or false record or report is prohibited and can result in suspension, revocation, or penalties."
+    "e": "Making a fraudulent or false record or report is prohibited and can result in suspension, revocation, or penalties.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1146,7 +1177,8 @@ QUESTIONS_JSON = r'''[
       "Required every year and renewed before the prior one lapses"
     ],
     "a": 2,
-    "e": "Currency is kept through free online recurrent training every 24 calendar months, with no proctored retest."
+    "e": "Currency is kept through free online recurrent training every 24 calendar months, with no proctored retest.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1159,7 +1191,8 @@ QUESTIONS_JSON = r'''[
       "Does not expire, but the holder must stay current with recurrent training"
     ],
     "a": 3,
-    "e": "The certificate does not expire, but the pilot must complete recurrent training to remain eligible to operate."
+    "e": "The certificate does not expire, but the pilot must complete recurrent training to remain eligible to operate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1172,7 +1205,8 @@ QUESTIONS_JSON = r'''[
       "A manned-aircraft pilot certificate issued by the FAA after a checkride"
     ],
     "a": 2,
-    "e": "Recreational flying uses the limited recreational exception, which has its own rules separate from Part 107."
+    "e": "Recreational flying uses the limited recreational exception, which has its own rules separate from Part 107.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1185,7 +1219,8 @@ QUESTIONS_JSON = r'''[
       "The FAA, within 10 calendar days"
     ],
     "a": 3,
-    "e": "A qualifying accident is reported to the FAA within 10 calendar days of the operation."
+    "e": "A qualifying accident is reported to the FAA within 10 calendar days of the operation.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1198,7 +1233,8 @@ QUESTIONS_JSON = r'''[
       "A maximum weight of 25 lb"
     ],
     "a": 2,
-    "e": "Among the core limits are 400 ft AGL, 87 knots, and at least 3 statute miles of flight visibility from the control station."
+    "e": "Among the core limits are 400 ft AGL, 87 knots, and at least 3 statute miles of flight visibility from the control station.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -3005,7 +3041,8 @@ QUESTIONS_JSON = r'''[
       "Must retake the proctored exam"
     ],
     "a": 1,
-    "e": "You must be current on recurrent training to act as remote PIC."
+    "e": "You must be current on recurrent training to act as remote PIC.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -3018,7 +3055,8 @@ QUESTIONS_JSON = r'''[
       "Posted at the launch site"
     ],
     "a": 1,
-    "e": "The certificate of registration must be available to present on request during operations."
+    "e": "The certificate of registration must be available to present on request during operations.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -3031,7 +3069,8 @@ QUESTIONS_JSON = r'''[
       "A military veteran or active-duty service member"
     ],
     "a": 2,
-    "e": "An applicant must be in a physical and mental condition to operate a small UAS safely."
+    "e": "An applicant must be in a physical and mental condition to operate a small UAS safely.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -3044,7 +3083,8 @@ QUESTIONS_JSON = r'''[
       "0.10 percent or greater"
     ],
     "a": 1,
-    "e": "You may not operate at 0.04 percent or more, or within 8 hours of consuming alcohol."
+    "e": "You may not operate at 0.04 percent or more, or within 8 hours of consuming alcohol.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -3057,7 +3097,8 @@ QUESTIONS_JSON = r'''[
       "Flight plan"
     ],
     "a": 0,
-    "e": "Standard Remote ID broadcasts identity, location, and altitude during flight."
+    "e": "Standard Remote ID broadcasts identity, location, and altitude during flight.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -3070,7 +3111,8 @@ QUESTIONS_JSON = r'''[
       "Directly supervised by a remote PIC able to take control immediately"
     ],
     "a": 3,
-    "e": "A non-certificated person may fly only under a remote PIC able to take control at once."
+    "e": "A non-certificated person may fly only under a remote PIC able to take control at once.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -3746,7 +3788,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft manufacturer"
     ],
     "a": 1,
-    "e": "Waiver requests are filed through the FAA DroneZone portal."
+    "e": "Waiver requests are filed through the FAA DroneZone portal.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -3759,7 +3802,8 @@ QUESTIONS_JSON = r'''[
       "Air traffic control"
     ],
     "a": 0,
-    "e": "The remote PIC is directly responsible for and the final authority over the operation."
+    "e": "The remote PIC is directly responsible for and the final authority over the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -3772,7 +3816,8 @@ QUESTIONS_JSON = r'''[
       "Manned aircraft systems"
     ],
     "a": 0,
-    "e": "Recurrent training was updated to cover night operations along with the core knowledge areas."
+    "e": "Recurrent training was updated to cover night operations along with the core knowledge areas.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -3785,7 +3830,8 @@ QUESTIONS_JSON = r'''[
       "A local airport"
     ],
     "a": 2,
-    "e": "Aircraft registration is completed through the FAA DroneZone system."
+    "e": "Aircraft registration is completed through the FAA DroneZone system.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Loading",
@@ -4318,7 +4364,8 @@ QUESTIONS_JSON = r'''[
       "Part 107"
     ],
     "a": 3,
-    "e": "Any flight for a business or compensation falls under Part 107, not the recreational exception."
+    "e": "Any flight for a business or compensation falls under Part 107, not the recreational exception.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4331,7 +4378,8 @@ QUESTIONS_JSON = r'''[
       "70 percent"
     ],
     "a": 3,
-    "e": "A score of 70 percent or higher is required to pass the Part 107 knowledge test."
+    "e": "A score of 70 percent or higher is required to pass the Part 107 knowledge test.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4344,7 +4392,8 @@ QUESTIONS_JSON = r'''[
       "14 calendar days"
     ],
     "a": 3,
-    "e": "After a failed knowledge test, you must wait 14 calendar days before retesting."
+    "e": "After a failed knowledge test, you must wait 14 calendar days before retesting.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4357,7 +4406,8 @@ QUESTIONS_JSON = r'''[
       "The FAA, NTSB, TSA, or law enforcement"
     ],
     "a": 3,
-    "e": "The certificate must be shown on request to the FAA, NTSB, TSA, or law enforcement."
+    "e": "The certificate must be shown on request to the FAA, NTSB, TSA, or law enforcement.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4370,7 +4420,8 @@ QUESTIONS_JSON = r'''[
       "Public aircraft operated only by government agencies and police"
     ],
     "a": 0,
-    "e": "Part 107 governs civil small unmanned aircraft that weigh less than 55 lb."
+    "e": "Part 107 governs civil small unmanned aircraft that weigh less than 55 lb.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4383,7 +4434,8 @@ QUESTIONS_JSON = r'''[
       "A standard state driver's license held by the pilot"
     ],
     "a": 0,
-    "e": "Public aircraft operations can be conducted under a COA rather than Part 107."
+    "e": "Public aircraft operations can be conducted under a COA rather than Part 107.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4396,7 +4448,8 @@ QUESTIONS_JSON = r'''[
       "Broadcast by radio"
     ],
     "a": 1,
-    "e": "The registration marking must be legible and readable without disassembling the aircraft."
+    "e": "The registration marking must be legible and readable without disassembling the aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -4409,7 +4462,8 @@ QUESTIONS_JSON = r'''[
       "Denial, suspension, or revocation of the certificate"
     ],
     "a": 3,
-    "e": "Refusing testing or a drug or alcohol conviction can result in denial, suspension, or revocation."
+    "e": "Refusing testing or a drug or alcohol conviction can result in denial, suspension, or revocation.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4422,7 +4476,8 @@ QUESTIONS_JSON = r'''[
       "Fly in uncontrolled Class G airspace below 400 feet"
     ],
     "a": 0,
-    "e": "The recreational exception is for hobby flying only and cannot cover commercial operations."
+    "e": "The recreational exception is for hobby flying only and cannot cover commercial operations.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4435,7 +4490,8 @@ QUESTIONS_JSON = r'''[
       "Have a manned rating"
     ],
     "a": 1,
-    "e": "Only a holder of a remote pilot certificate may act as the remote PIC."
+    "e": "Only a holder of a remote pilot certificate may act as the remote PIC.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -4448,7 +4504,8 @@ QUESTIONS_JSON = r'''[
       "Does not authorize commercial operations"
     ],
     "a": 3,
-    "e": "TRUST covers recreational flying only and does not authorize commercial work."
+    "e": "TRUST covers recreational flying only and does not authorize commercial work.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4461,7 +4518,8 @@ QUESTIONS_JSON = r'''[
       "Any required airspace authorization is obtained beforehand"
     ],
     "a": 3,
-    "e": "The remote PIC is responsible for obtaining any required airspace authorization before flying."
+    "e": "The remote PIC is responsible for obtaining any required airspace authorization before flying.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -4474,7 +4532,8 @@ QUESTIONS_JSON = r'''[
       "Legally fly aircraft that weigh over 55 lb"
     ],
     "a": 0,
-    "e": "Staying current with recurrent training keeps a pilot eligible to exercise remote pilot privileges."
+    "e": "Staying current with recurrent training keeps a pilot eligible to exercise remote pilot privileges.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4487,7 +4546,8 @@ QUESTIONS_JSON = r'''[
       "Repaint it"
     ],
     "a": 2,
-    "e": "The aircraft must display its registration number before it is flown."
+    "e": "The aircraft must display its registration number before it is flown.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Weather",
@@ -5072,7 +5132,8 @@ QUESTIONS_JSON = r'''[
       "Every 24 calendar months"
     ],
     "a": 3,
-    "e": "Part 107 currency requires completing the free online recurrent training every 24 calendar months."
+    "e": "Part 107 currency requires completing the free online recurrent training every 24 calendar months.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -5085,7 +5146,8 @@ QUESTIONS_JSON = r'''[
       "100 mph (87 knots)"
     ],
     "a": 3,
-    "e": "Part 107 limits groundspeed to 100 mph, which is 87 knots."
+    "e": "Part 107 limits groundspeed to 100 mph, which is 87 knots.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5098,7 +5160,8 @@ QUESTIONS_JSON = r'''[
       "5 statute miles"
     ],
     "a": 2,
-    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station."
+    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5111,7 +5174,8 @@ QUESTIONS_JSON = r'''[
       "Communicate with each other at all times"
     ],
     "a": 3,
-    "e": "The remote PIC and visual observer must maintain effective communication throughout the operation."
+    "e": "The remote PIC and visual observer must maintain effective communication throughout the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5124,7 +5188,8 @@ QUESTIONS_JSON = r'''[
       "Anywhere below 400 ft AGL"
     ],
     "a": 0,
-    "e": "Aircraft without Remote ID must operate within an FAA-Recognized Identification Area."
+    "e": "Aircraft without Remote ID must operate within an FAA-Recognized Identification Area.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Airspace",
@@ -5410,7 +5475,8 @@ QUESTIONS_JSON = r'''[
       "Allowed up to 100 lb total as long as no hazardous materials are aboard"
     ],
     "a": 2,
-    "e": "Part 107 allows transporting property for compensation within a state as long as the aircraft and payload weigh under 55 lb."
+    "e": "Part 107 allows transporting property for compensation within a state as long as the aircraft and payload weigh under 55 lb.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5423,7 +5489,8 @@ QUESTIONS_JSON = r'''[
       "Always prohibited under Part 107, regardless of the precautions taken"
     ],
     "a": 0,
-    "e": "Part 107 permits dropping objects provided no undue hazard is created to persons or property."
+    "e": "Part 107 permits dropping objects provided no undue hazard is created to persons or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5436,7 +5503,8 @@ QUESTIONS_JSON = r'''[
       "Allowed over private land"
     ],
     "a": 1,
-    "e": "Part 107 prohibits careless or reckless operation that could endanger life or property."
+    "e": "Part 107 prohibits careless or reckless operation that could endanger life or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5449,7 +5517,8 @@ QUESTIONS_JSON = r'''[
       "Up to five"
     ],
     "a": 1,
-    "e": "A remote PIC may operate only one small unmanned aircraft at a time."
+    "e": "A remote PIC may operate only one small unmanned aircraft at a time.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5462,7 +5531,8 @@ QUESTIONS_JSON = r'''[
       "Never, in any case"
     ],
     "a": 1,
-    "e": "Part 107 permits operating from a moving vehicle only over sparsely populated areas."
+    "e": "Part 107 permits operating from a moving vehicle only over sparsely populated areas.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5475,7 +5545,8 @@ QUESTIONS_JSON = r'''[
       "File a detailed flight plan with air traffic control before launch"
     ],
     "a": 1,
-    "e": "The remote PIC must conduct a preflight inspection to confirm the aircraft is in a condition for safe operation."
+    "e": "The remote PIC must conduct a preflight inspection to confirm the aircraft is in a condition for safe operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5488,7 +5559,8 @@ QUESTIONS_JSON = r'''[
       "Only the local airport manager where the drone is normally based"
     ],
     "a": 1,
-    "e": "The remote PIC, owner, or controlling person must make the aircraft available to the FAA for inspection or testing."
+    "e": "The remote PIC, owner, or controlling person must make the aircraft available to the FAA for inspection or testing.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Airspace",
@@ -5800,7 +5872,8 @@ QUESTIONS_JSON = r'''[
       "Skipping the initial knowledge test required for the remote certificate"
     ],
     "a": 2,
-    "e": "A waiver lets you deviate from certain Part 107 rules when you show the operation can be conducted safely."
+    "e": "A waiver lets you deviate from certain Part 107 rules when you show the operation can be conducted safely.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -5813,7 +5886,8 @@ QUESTIONS_JSON = r'''[
       "Ten categories"
     ],
     "a": 0,
-    "e": "Operations over people fall into four categories defined by the injury risk the aircraft poses."
+    "e": "Operations over people fall into four categories defined by the injury risk the aircraft poses.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -5826,7 +5900,8 @@ QUESTIONS_JSON = r'''[
       "A strobe light that is visible for at least 1 statute mile"
     ],
     "a": 2,
-    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles."
+    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5839,7 +5914,8 @@ QUESTIONS_JSON = r'''[
       "Completing the required training, no waiver needed"
     ],
     "a": 3,
-    "e": "Night operations are allowed after completing the required training and using anti-collision lighting; a waiver is no longer needed."
+    "e": "Night operations are allowed after completing the required training and using anti-collision lighting; a waiver is no longer needed.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5852,7 +5928,8 @@ QUESTIONS_JSON = r'''[
       "On the controller screen"
     ],
     "a": 2,
-    "e": "The registration number must be legibly marked on the exterior surface of the aircraft."
+    "e": "The registration number must be legibly marked on the exterior surface of the aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5865,7 +5942,8 @@ QUESTIONS_JSON = r'''[
       "Continuous radio contact with ATC"
     ],
     "a": 1,
-    "e": "The remote PIC or a visual observer must keep the aircraft within visual line of sight throughout the operation."
+    "e": "The remote PIC or a visual observer must keep the aircraft within visual line of sight throughout the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -6151,7 +6229,8 @@ QUESTIONS_JSON = r'''[
       "By logging 10 flight hours"
     ],
     "a": 2,
-    "e": "Since April 6, 2021, recurrent currency is met with free online training, not a retest at a testing center."
+    "e": "Since April 6, 2021, recurrent currency is met with free online training, not a retest at a testing center.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -6164,7 +6243,8 @@ QUESTIONS_JSON = r'''[
       "only if flown in controlled airspace"
     ],
     "a": 2,
-    "e": "Every sUAS operated under Part 107 must be registered, regardless of weight."
+    "e": "Every sUAS operated under Part 107 must be registered, regardless of weight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -6177,7 +6257,8 @@ QUESTIONS_JSON = r'''[
       "16 years old"
     ],
     "a": 3,
-    "e": "An applicant for a remote pilot certificate must be at least 16 years old."
+    "e": "An applicant for a remote pilot certificate must be at least 16 years old.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -6190,7 +6271,8 @@ QUESTIONS_JSON = r'''[
       "$1,000"
     ],
     "a": 1,
-    "e": "Report if there is serious injury, loss of consciousness, or property damage exceeding $500."
+    "e": "Report if there is serious injury, loss of consciousness, or property damage exceeding $500.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -6203,7 +6285,8 @@ QUESTIONS_JSON = r'''[
       "allowed in Class G airspace"
     ],
     "a": 0,
-    "e": "Part 107 prohibits careless or reckless operation that endangers life or property."
+    "e": "Part 107 prohibits careless or reckless operation that endangers life or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -6216,7 +6299,8 @@ QUESTIONS_JSON = r'''[
       "the pilot has logged at least 100 hours as remote pilot in command"
     ],
     "a": 2,
-    "e": "A waiver is issued when the applicant demonstrates the proposed operation can be conducted safely."
+    "e": "A waiver is issued when the applicant demonstrates the proposed operation can be conducted safely.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -6229,7 +6313,8 @@ QUESTIONS_JSON = r'''[
       "no action if unintentional"
     ],
     "a": 0,
-    "e": "Falsification, reproduction, or alteration of records is grounds for suspension or revocation of the certificate."
+    "e": "Falsification, reproduction, or alteration of records is grounds for suspension or revocation of the certificate.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -6242,7 +6327,8 @@ QUESTIONS_JSON = r'''[
       "carry a working transponder that reports its position to ATC"
     ],
     "a": 0,
-    "e": "Registered drones must broadcast Remote ID unless operated within an FAA-recognized identification area (FRIA)."
+    "e": "Registered drones must broadcast Remote ID unless operated within an FAA-recognized identification area (FRIA).",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6450,7 +6536,8 @@ QUESTIONS_JSON = r'''[
       "Part 61"
     ],
     "a": 2,
-    "e": "14 CFR part 89 establishes the Remote Identification (Remote ID) requirements for unmanned aircraft."
+    "e": "14 CFR part 89 establishes the Remote Identification (Remote ID) requirements for unmanned aircraft.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -6463,7 +6550,8 @@ QUESTIONS_JSON = r'''[
       "a manufacturer record submitted to the FAA certifying an sUAS meets Category 2 or 3 requirements"
     ],
     "a": 3,
-    "e": "A Declaration of Compliance is a manufacturer record certifying the sUAS meets Category 2 or 3 over-people requirements."
+    "e": "A Declaration of Compliance is a manufacturer record certifying the sUAS meets Category 2 or 3 over-people requirements.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6476,7 +6564,8 @@ QUESTIONS_JSON = r'''[
       "there is no impact limit"
     ],
     "a": 0,
-    "e": "Category 2 limits transferred impact energy to 11 ft-lb, with no lacerating parts, no safety defects, and a Declaration of Compliance."
+    "e": "Category 2 limits transferred impact energy to 11 ft-lb, with no lacerating parts, no safety defects, and a Declaration of Compliance.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6489,7 +6578,8 @@ QUESTIONS_JSON = r'''[
       "25 ft-lb of kinetic energy"
     ],
     "a": 3,
-    "e": "Category 3 limits transferred impact energy to 25 ft-lb on impact."
+    "e": "Category 3 limits transferred impact energy to 25 ft-lb on impact.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6515,7 +6605,8 @@ QUESTIONS_JSON = r'''[
       "have an airworthiness certificate and be operated per its operating limitations"
     ],
     "a": 3,
-    "e": "Category 4 requires an airworthiness certificate issued under part 21 and operation per the aircraft's operating limitations."
+    "e": "Category 4 requires an airworthiness certificate issued under part 21 and operation per the aircraft's operating limitations.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6541,7 +6632,8 @@ QUESTIONS_JSON = r'''[
       "carrying a working transponder that reports to air traffic control"
     ],
     "a": 2,
-    "e": "Remote ID is met with a standard Remote ID drone, a broadcast module, or by operating within a FRIA."
+    "e": "Remote ID is met with a standard Remote ID drone, a broadcast module, or by operating within a FRIA.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6567,7 +6659,8 @@ QUESTIONS_JSON = r'''[
       "the remote pilot's certificate number and the date it was issued"
     ],
     "a": 1,
-    "e": "Standard Remote ID also broadcasts the control station location and an emergency status indication."
+    "e": "Standard Remote ID also broadcasts the control station location and an emergency status indication.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6619,7 +6712,8 @@ QUESTIONS_JSON = r'''[
       "must pick one category permanently"
     ],
     "a": 2,
-    "e": "A multi-category sUAS may be operated under any over-people category for which it qualifies."
+    "e": "A multi-category sUAS may be operated under any over-people category for which it qualifies.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6866,7 +6960,8 @@ QUESTIONS_JSON = r'''[
       "Careless or reckless operation"
     ],
     "a": 1,
-    "e": "A Part 107 waiver can authorize deviations such as beyond-visual-line-of-sight flight when safety is shown."
+    "e": "A Part 107 waiver can authorize deviations such as beyond-visual-line-of-sight flight when safety is shown.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -6879,7 +6974,8 @@ QUESTIONS_JSON = r'''[
       "in physical possession or immediately accessible"
     ],
     "a": 3,
-    "e": "The remote pilot certificate must be in the pilot's physical possession or immediately accessible during operations."
+    "e": "The remote pilot certificate must be in the pilot's physical possession or immediately accessible during operations.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Loading",
@@ -7155,7 +7251,7 @@ QUESTIONS_JSON = r'''[
     "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC."
   }
 ]'''
-TEMPLATES_JSON = r'''{"exam.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"meta\">\n  <span class=\"l\">📝 Exam &middot; question {{ n + 1 }} of {{ total }}</span>\n  <span class=\"r timer {{ 'low' if remaining < 300 }}\"><span class=\"te\">{{ '⚠️' if remaining < 300 else '⏱️' }}</span>{{ remaining_mmss }} left</span>\n</div>\n\n<form method=\"post\" action=\"{{ url_for('exam_nav') }}\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <input type=\"hidden\" name=\"n\" value=\"{{ n }}\">\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <label class=\"choice\">\n      <input type=\"radio\" name=\"choice\" value=\"{{ c.idx }}\" {{ 'checked' if c.idx == saved }}>\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    </label>\n    {% endfor %}\n  </div>\n\n  <div class=\"btn-row\" style=\"margin-bottom:6px\">\n    {% if n > 0 %}<button type=\"submit\" name=\"goto\" value=\"{{ n - 1 }}\">Previous</button>{% endif %}\n    {% if n < total - 1 %}<button type=\"submit\" name=\"goto\" value=\"{{ n + 1 }}\" class=\"btn-primary\" style=\"width:auto;flex:1\">Save and next</button>\n    {% else %}<button type=\"submit\" name=\"finish\" value=\"1\" class=\"btn-primary\" style=\"width:auto;flex:1\">Finish exam</button>{% endif %}\n  </div>\n\n  <div class=\"section-title\">🧭 Question palette</div>\n  <div class=\"palette\">\n    {% for i in range(total) %}\n    <button type=\"submit\" name=\"goto\" value=\"{{ i }}\" class=\"{{ 'answered' if i in answered_set }} {{ 'current' if i == n }}\">{{ i + 1 }}</button>\n    {% endfor %}\n  </div>\n\n  <button type=\"submit\" name=\"finish\" value=\"1\">Finish and grade now</button>\n</form>\n{% endblock %}\n", "home.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"tiles\">\n  <div class=\"tile\"><span class=\"ic\">🎯</span><b>{{ lifetime_pct if lifetime_pct is not none else \"--\" }}{{ \"%\" if lifetime_pct is not none else \"\" }}</b><span>lifetime accuracy</span></div>\n  <div class=\"tile\"><span class=\"ic\">✍️</span><b>{{ total_answered }}</b><span>questions answered</span></div>\n  <div class=\"tile\"><span class=\"ic\">📚</span><b>{{ to_review }}</b><span>on your study list</span></div>\n</div>\n\n{% if not user %}\n<a class=\"actioncard\" href=\"{{ url_for('register') }}\" style=\"border-color:var(--blue);margin-bottom:8px\">\n  <b><span class=\"ic\">☁️</span>Create an account to sync across devices</b>\n  <span>Your current progress moves into the account automatically. Or <span style=\"text-decoration:underline\">sign in</span> if you have one.</span>\n</a>\n{% endif %}\n\n<div class=\"section-title\">Study</div>\n{% if to_review %}\n<a class=\"hero\" href=\"{{ url_for('drill') }}\"><span class=\"ic\">🎯</span><b>Drill your {{ to_review }} missed question{{ 's' if to_review != 1 }}</b><span>Targeted practice on exactly what you keep getting wrong, hardest first</span></a>\n{% else %}\n<a class=\"hero\" href=\"{{ url_for('practice', bucket='All') }}\"><span class=\"ic\">✍️</span><b>Practice all topics</b><span>Instant feedback and the rule behind every answer</span></a>\n{% endif %}\n<div class=\"cards\">\n  <a class=\"actioncard\" href=\"{{ url_for('learn') }}\"><b><span class=\"ic\">📖</span>Learn the material</b><span>Read through each topic with the answer and rule, no quiz pressure</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('cheatsheet') }}\"><b><span class=\"ic\">🗒️</span>Rules cheat sheet</b><span>Every key rule by topic, printable for last-minute review</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('exam_start') }}\"><b><span class=\"ic\">📝</span>Exam simulation</b><span>{{ exam_n }} questions ({{ exam_scored }} scored), {{ exam_min }} min, {{ exam_pass }}% to pass</span></a>\n  {% if to_review %}\n  <a class=\"actioncard\" href=\"{{ url_for('practice', bucket='All') }}\"><b><span class=\"ic\">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>\n  {% endif %}\n  <a class=\"actioncard\" href=\"{{ url_for('focus') }}\"><b><span class=\"ic\">🎚️</span>Focus on weak topics</b><span>Practice weighted toward your lowest-scoring and not-yet-seen topics</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('review') }}\"><b><span class=\"ic\">📊</span>Study list and stats</b><span>Every missed question, grouped by topic</span></a>\n</div>\n\n<div class=\"section-title\">Practice by topic</div>\n<div class=\"bgrid\">\n  {% for b in buckets %}\n  <a class=\"bcard\" href=\"{{ url_for('practice', bucket=b.name) }}\">\n    <div class=\"top-row\">\n      <div class=\"n\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }} ({{ soft_count(b.count) }})</div>\n      {% set m = mastery(b.pct) %}<span class=\"mbadge {{ m.cls }}\">{{ m.emoji }} {{ m.label }}</span>\n    </div>\n    <div class=\"pct\">{{ b.pct if b.pct is not none else \"not started\" }}{{ \"%\" if b.pct is not none else \"\" }}</div>\n    <div class=\"bar\"><i style=\"width:{{ b.pct or 0 }}%;background:{{ b.color }}\"></i></div>\n  </a>\n  {% endfor %}\n</div>\n\n<div class=\"section-title\">Manage</div>\n<div class=\"btn-row\">\n  <a class=\"btn\" href=\"{{ url_for('export_progress') }}\">📤 Export progress</a>\n  <form method=\"post\" action=\"{{ url_for('reset_progress') }}\" onsubmit=\"return confirm('Erase all saved progress on this server for your browser?')\" style=\"display:inline\">\n    <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n    <button type=\"submit\">🗑️ Reset all</button>\n  </form>\n</div>\n{% endblock %}\n", "learn.html": "{% extends \"base.html\" %}\n{% block title %}Learn - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">📖 Learn by topic</div>\n<div class=\"filters\">\n  {% for b in bucket_names %}\n  <a href=\"{{ url_for('learn', bucket=b, n=0) }}\" class=\"{{ 'active' if bucket == b }}\"><span class=\"ic\">{{ icons[b] }}</span>{{ b }}</a>\n  {% endfor %}\n</div>\n\n<div class=\"meta\">\n  <span class=\"l\">{{ icons[bucket] }} {{ bucket }}</span>\n  <span class=\"r\">card {{ n + 1 }} of {{ total }}</span>\n</div>\n\n<div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n<div class=\"choices\">\n  {% for c in choices %}\n  <div class=\"choice {{ 'correct' if c.idx == q.a else 'dim' }}\">\n    <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    {% if c.idx == q.a %}<span class=\"status\">✅</span>{% endif %}\n  </div>\n  {% endfor %}\n</div>\n<div class=\"explain ok\"><span class=\"rl\">📌 the rule</span>{{ q.e }}</div>\n\n<div class=\"btn-row\">\n  {% if n > 0 %}<a class=\"btn\" href=\"{{ url_for('learn', bucket=bucket, n=n-1) }}\">← Previous</a>{% endif %}\n  {% if n < total - 1 %}\n  <a class=\"btn-primary\" href=\"{{ url_for('learn', bucket=bucket, n=n+1) }}\" style=\"width:auto;flex:1\">Next card →</a>\n  {% else %}\n  <a class=\"btn-primary\" href=\"{{ url_for('practice', bucket=bucket) }}\" style=\"width:auto;flex:1\">✍️ Quiz this topic →</a>\n  {% endif %}\n</div>\n<div class=\"center\" style=\"margin-top:12px\"><a href=\"{{ url_for('home') }}\" style=\"font-size:13px;color:var(--muted)\">Back to home</a></div>\n{% endblock %}\n", "review.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"section-title\">📈 Lifetime accuracy by topic</div>\n{% if lifetime %}\n{% for b in lifetime %}\n<div class=\"bdrow\">\n  <span class=\"nm\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }}</span>\n  <span class=\"tr bar\"><i style=\"width:{{ b.pct }}%;background:{{ b.color }}\"></i></span>\n  <span class=\"vl\" style=\"color:{{ b.color }}\">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">📭 No answers logged yet. Start practicing from the home page.</div>\n{% endif %}\n\n<div class=\"section-title\">📚 Study list, every missed question</div>\n<div class=\"filters\">\n  <a href=\"{{ url_for('review') }}\" class=\"{{ 'active' if not active_bucket }}\">All</a>\n  {% for b in bucket_names %}\n  <a href=\"{{ url_for('review', bucket=b) }}\" class=\"{{ 'active' if active_bucket == b }}\"><span class=\"ic\">{{ icons[b] }}</span>{{ b }}</a>\n  {% endfor %}\n</div>\n\n{% if missed %}\n<div class=\"btn-row\" style=\"margin-bottom:14px\">\n  <a class=\"btn-primary\" href=\"{{ url_for('drill', bucket=active_bucket) }}\" style=\"width:auto;flex:1\">🎯 Drill {{ 'these' if active_bucket else 'all' }} missed questions</a>\n</div>\n{% endif %}\n\n{% if missed %}\n{% for grp in missed %}\n<div class=\"mbucket\">\n  <div class=\"mbname\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"countbadge\">{{ grp.qs|length }} to review</span></div>\n  {% for m in grp.qs %}\n  <div class=\"mcard\">\n    <div class=\"mq\">{{ m.q_html|safe }}{% if m.misses > 1 %} <span style=\"color:var(--red);font-family:var(--mono);font-size:11px\">🔁 missed {{ m.misses }}x</span>{% endif %}</div>\n    <div class=\"ma\">✅ {{ m.letter }}. {{ m.answer }}</div>\n    <div class=\"mr\">{{ m.e }}</div>\n  </div>\n  {% endfor %}\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">🎉 Nothing on your study list{{ ' for this topic' if active_bucket }}. Miss a question and it lands here.</div>\n{% endif %}\n{% endblock %}\n", "login.html": "{% extends \"base.html\" %}\n{% block title %}Sign in - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">Sign in</div>\n{% if error %}<div class=\"explain bad\" style=\"margin-bottom:14px\">{{ error }}</div>{% endif %}\n<form method=\"post\" action=\"{{ url_for('login') }}\" class=\"qcard\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <label class=\"flabel\">Email</label>\n  <input type=\"email\" name=\"email\" value=\"{{ email or '' }}\" autocomplete=\"email\" required\n         class=\"field\" style=\"margin-bottom:14px\" placeholder=\"you@example.com\">\n  <label class=\"flabel\">Password</label>\n  <input type=\"password\" name=\"password\" autocomplete=\"current-password\" required\n         class=\"field\" style=\"margin-bottom:18px\">\n  <button type=\"submit\" class=\"btn-primary\">Sign in</button>\n</form>\n<div class=\"center\" style=\"font-size:14px;color:var(--muted)\">No account yet? <a href=\"{{ url_for('register') }}\">Create one</a></div>\n{% endblock %}\n", "exam_result.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"center\" style=\"padding:8px 0 16px\">\n  <div class=\"result-emoji\">{{ '🎉' if passed else '💪' }}</div>\n  <div class=\"bigpct\" style=\"color:{{ pass_color }}\">{{ pct }}%</div>\n  <div style=\"margin:10px 0\"><span class=\"badge {{ 'pass' if passed else 'fail' }}\"><span class=\"be\">{{ '✅' if passed else '❌' }}</span>{{ 'Pass' if passed else 'Did not pass' }}</span></div>\n  <div style=\"font-size:14px;color:var(--muted)\">{{ correct }} of {{ total }} correct &middot; {{ time_used }} used &middot; {{ exam_pass }}% needed</div>\n  {% if experimental %}<div style=\"font-size:12px;color:var(--muted);margin-top:5px\">{{ experimental }} experimental questions were not scored, just like the real exam.</div>{% endif %}\n</div>\n\n<div class=\"btn-row\" style=\"justify-content:center;margin-bottom:8px\">\n  <a class=\"btn\" href=\"{{ url_for('exam_start') }}\">🔄 New exam</a>\n  <a class=\"btn\" href=\"{{ url_for('history') }}\">📈 Progress</a>\n  {% if missed %}<a class=\"btn\" href=\"{{ url_for('drill') }}\">🎯 Drill misses</a>{% endif %}\n  <a class=\"btn\" href=\"{{ url_for('review') }}\">📚 Review study list</a>\n  <a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a>\n</div>\n\n<div class=\"section-title\">📊 By topic</div>\n{% for b in by_bucket %}\n<div class=\"bdrow\">\n  <span class=\"nm\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }}</span>\n  <span class=\"tr bar\"><i style=\"width:{{ b.pct }}%;background:{{ b.color }}\"></i></span>\n  <span class=\"vl\" style=\"color:{{ b.color }}\">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>\n</div>\n{% endfor %}\n\n{% if missed %}\n<div class=\"section-title\">📌 Missed questions and the rule</div>\n{% for grp in missed %}\n<div class=\"mbucket\">\n  <div class=\"mbname\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"countbadge\">{{ grp.qs|length }} missed</span></div>\n  {% for m in grp.qs %}\n  <div class=\"mcard\">\n    <div class=\"mq\">{{ m.q_html|safe }}</div>\n    <div class=\"ma\">✅ {{ m.letter }}. {{ m.answer }}</div>\n    <div class=\"mr\">{{ m.e }}</div>\n  </div>\n  {% endfor %}\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">🌟 Perfect run. Nothing missed.</div>\n{% endif %}\n{% endblock %}\n", "cheatsheet.html": "{% extends \"base.html\" %}\n{% block title %}Rules cheat sheet - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">🗒️ Rules cheat sheet</div>\n<p class=\"cs-intro\">{{ total }} key rules across all topics. Use your browser's print (Cmd or Ctrl + P) to save or print a clean copy for last-minute review.</p>\n{% for grp in sheet %}\n<div class=\"cs-group\">\n  <div class=\"cs-head\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"cs-n\">{{ soft_count(grp.count) }}</span></div>\n  <ul class=\"cs-list\">\n    {% for r in grp.rules %}<li>{{ r }}</li>{% endfor %}\n  </ul>\n</div>\n{% endfor %}\n{% endblock %}\n", "history.html": "{% extends \"base.html\" %}\n{% block title %}Exam readiness - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">🎓 Exam readiness</div>\n{% if not taken %}\n<div class=\"empty\">📝 No practice exams logged yet. Take one to see your readiness verdict and score trend.</div>\n<div class=\"center\" style=\"margin-top:10px\"><a class=\"btn-primary\" href=\"{{ url_for('exam_start') }}\" style=\"width:auto;display:inline-block\">Start an exam</a></div>\n{% else %}\n<div class=\"qcard\" style=\"text-align:center\">\n  <span class=\"mbadge {{ verdict.cls }}\" style=\"font-size:12px;padding:5px 12px\">{{ verdict.emoji }} {{ verdict.label }}</span>\n  <p style=\"font-size:14px;color:var(--muted);margin:11px 0 0\">{{ verdict.note }}</p>\n</div>\n\n<div class=\"tiles\">\n  <div class=\"tile\"><span class=\"ic\">🏅</span><b>{{ best }}%</b><span>best score</span></div>\n  <div class=\"tile\"><span class=\"ic\">📊</span><b>{{ avg5 }}%</b><span>recent average</span></div>\n  <div class=\"tile\"><span class=\"ic\">✅</span><b>{{ pass_rate }}%</b><span>pass rate</span></div>\n</div>\n\n<div class=\"section-title\">📈 Score trend &middot; last {{ trend|length }}</div>\n<div class=\"trend\">\n  <div class=\"passline\" style=\"bottom:{{ exam_pass }}%\"><span>{{ exam_pass }}% pass</span></div>\n  {% for s in trend %}\n  <div class=\"tb {{ 'pass' if s.passed else 'fail' }}\" style=\"height:{{ s.pct }}%\" title=\"{{ s.pct }}%\"></div>\n  {% endfor %}\n</div>\n<div class=\"center\" style=\"font-family:var(--mono);font-size:10px;color:var(--muted)\">oldest → newest</div>\n\n<div class=\"section-title\">🗒️ Recent exams</div>\n{% for s in recent %}\n<div class=\"bdrow\">\n  <span class=\"nm\" style=\"width:auto;flex:1\">{{ s.when }}</span>\n  <span class=\"vl\" style=\"width:auto;color:var(--muted)\">{{ s.correct }}/{{ s.total }}</span>\n  <span class=\"vl\" style=\"color:{{ '#1F8A5B' if s.passed else '#C23B3B' }}\">{{ s.pct }}%</span>\n  <span class=\"badge {{ 'pass' if s.passed else 'fail' }}\" style=\"font-size:10px;padding:3px 9px\">{{ '✅' if s.passed else '❌' }} {{ 'Pass' if s.passed else 'Fail' }}</span>\n</div>\n{% endfor %}\n\n<div class=\"btn-row\" style=\"justify-content:center;margin-top:16px\">\n  <a class=\"btn\" href=\"{{ url_for('exam_start') }}\">🔄 New exam</a>\n  <a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a>\n</div>\n{% endif %}\n{% endblock %}\n", "register.html": "{% extends \"base.html\" %}\n{% block title %}Create account - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">Create an account</div>\n<p style=\"font-size:14px;color:var(--muted);margin-bottom:14px\">Sign in with your email so your progress follows you across devices. If you have been practicing already, that progress moves into your account automatically.</p>\n{% if error %}<div class=\"explain bad\" style=\"margin-bottom:14px\">{{ error }}</div>{% endif %}\n<form method=\"post\" action=\"{{ url_for('register') }}\" class=\"qcard\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <label class=\"flabel\">Email</label>\n  <input type=\"email\" name=\"email\" value=\"{{ email or '' }}\" autocomplete=\"email\" required\n         class=\"field\" style=\"margin-bottom:14px\" placeholder=\"you@example.com\">\n  <label class=\"flabel\">Password (at least 6 characters)</label>\n  <input type=\"password\" name=\"password\" autocomplete=\"new-password\" required\n         class=\"field\" style=\"margin-bottom:18px\">\n  <button type=\"submit\" class=\"btn-primary\">Create account</button>\n</form>\n<div class=\"center\" style=\"font-size:14px;color:var(--muted)\">Already have an account? <a href=\"{{ url_for('login') }}\">Sign in</a></div>\n{% endblock %}\n", "base.html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"theme-color\" content=\"{{ '#1E2731' if dark else '#EAEFF3' }}\">\n<title>{% block title %}Part 107 Ground School{% endblock %}</title>\n<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDI4NEM3Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEQ5NDg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0idXJsKCNnKSIvPjxnIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxsaW5lIHgxPSIxNiIgeTE9IjE2IiB4Mj0iOCIgeTI9IjgiLz48bGluZSB4MT0iMTYiIHkxPSIxNiIgeDI9IjI0IiB5Mj0iOCIvPjxsaW5lIHgxPSIxNiIgeTE9IjE2IiB4Mj0iOCIgeTI9IjI0Ii8+PGxpbmUgeDE9IjE2IiB5MT0iMTYiIHgyPSIyNCIgeTI9IjI0Ii8+PC9nPjxnIGZpbGw9IiNmZmYiPjxjaXJjbGUgY3g9IjgiIGN5PSI4IiByPSIzIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSI4IiByPSIzIi8+PGNpcmNsZSBjeD0iOCIgY3k9IjI0IiByPSIzIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMyIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjMuNCIvPjwvZz48L3N2Zz4=\">\n<style>\n:root{\n  --paper:#EAEFF3; --surface:#FFFFFF; --surface-2:#F3F6F9; --ink:#16212C; --muted:#5A6A77;\n  --line:#D8E0E7; --line-2:#E7ECF1; --blue:#0284C7; --magenta:#0D9488; --green:#1F8A5B;\n  --green-bg:#E3F2EA; --red:#C23B3B; --red-bg:#F7E9E9; --amber:#B97C0C;\n  --shadow-sm:0 1px 2px rgba(22,33,44,.06), 0 1px 1px rgba(22,33,44,.04);\n  --shadow-md:0 2px 4px rgba(22,33,44,.05), 0 8px 20px -6px rgba(22,33,44,.12);\n  --shadow-lg:0 10px 36px -8px rgba(22,33,44,.18);\n  --shadow-pop:0 4px 10px rgba(22,33,44,.07), 0 16px 34px -8px rgba(2,132,199,.20);\n  --ring:rgba(2,132,199,.38);\n  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;\n  --sans:system-ui,-apple-system,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n}\nbody.dark{\n  --paper:#1E2731; --surface:#27323D; --surface-2:#2F3B47; --ink:#E7EDF2; --muted:#9DAAB6;\n  --line:#3A4853; --line-2:#2F3B4700; --green-bg:#173E2C; --red-bg:#3A2222;\n  --blue:#38BDF8; --magenta:#2DD4BF;\n  --shadow-sm:0 1px 2px rgba(0,0,0,.35);\n  --shadow-md:0 2px 6px rgba(0,0,0,.4), 0 10px 26px -8px rgba(0,0,0,.5);\n  --shadow-lg:0 16px 44px -10px rgba(0,0,0,.6);\n  --shadow-pop:0 4px 10px rgba(0,0,0,.4), 0 18px 40px -10px rgba(56,189,248,.34);\n  --ring:rgba(56,189,248,.5);\n}\n*{box-sizing:border-box;margin:0;padding:0;}\nbody{\n  font-family:var(--sans);color:var(--ink);line-height:1.55;padding:0 16px 56px;\n  -webkit-font-smoothing:antialiased;min-height:100vh;\n  background:\n    radial-gradient(1100px 560px at 82% -12%, rgba(2,132,199,.07), transparent 60%),\n    radial-gradient(820px 480px at -12% 6%, rgba(13,148,136,.06), transparent 55%),\n    var(--paper);\n  background-attachment:fixed;\n}\nbody.dark{\n  background:\n    radial-gradient(1100px 560px at 82% -12%, rgba(56,189,248,.12), transparent 60%),\n    radial-gradient(820px 480px at -12% 4%, rgba(45,212,191,.10), transparent 55%),\n    var(--paper);\n  background-attachment:fixed;\n}\na{color:inherit;}\n.wrap{max-width:680px;margin:0 auto;}\n\n/* header */\nheader.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 16px;border-bottom:1px solid var(--line);margin-bottom:24px;flex-wrap:wrap;}\n.brand a{text-decoration:none;}\n.brand-link{display:flex;align-items:center;gap:11px;}\n.brand .logo{flex:0 0 auto;width:40px;height:40px;border-radius:11px;overflow:hidden;display:block;box-shadow:var(--shadow-sm);}\n.brand .logo svg{display:block;width:40px;height:40px;}\n.brand h1{font-size:21px;font-weight:760;letter-spacing:-.02em;}\n.brand .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-top:3px;}\n.top nav{display:flex;gap:13px;font-size:13px;font-family:var(--mono);align-items:center;}\n.top nav a{color:var(--muted);text-decoration:none;transition:color .15s ease;}\n.top nav a:hover{color:var(--ink);}\n.user-chip{color:var(--ink);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}\n.linkbtn{border:none;background:none;padding:0;color:var(--muted);font-family:var(--mono);font-size:13px;cursor:pointer;transition:color .15s ease;}\n.linkbtn:hover{color:var(--ink);box-shadow:none;transform:none;}\n\n/* theme toggle icon */\n.theme-toggle{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--muted);box-shadow:var(--shadow-sm);transition:transform .16s ease, box-shadow .16s ease, color .15s ease, border-color .15s ease;}\n.theme-toggle:hover{color:var(--ink);border-color:var(--blue);transform:translateY(-1px);box-shadow:var(--shadow-md);}\n.theme-toggle svg{display:block;}\n\n/* surfaces with depth */\n.tiles{display:flex;gap:12px;margin-bottom:22px;flex-wrap:wrap;}\n.tile{flex:1;min-width:120px;background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:16px 16px 15px;box-shadow:var(--shadow-md);position:relative;overflow:hidden;}\n.tile::before{content:\"\";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--blue),var(--magenta));opacity:.85;}\n.tile b{display:block;font-family:var(--mono);font-size:31px;line-height:1;font-weight:700;letter-spacing:-.02em;color:var(--ink);}\n.tile span{display:block;margin-top:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);}\n.section-title{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:30px 0 13px;display:flex;align-items:center;gap:9px;}\n.section-title::before{content:\"\";flex:0 0 auto;width:3px;height:13px;border-radius:2px;background:linear-gradient(180deg,var(--blue),var(--magenta));}\n.section-title::after{content:\"\";flex:1;height:1px;background:var(--line);}\n.cards{display:flex;flex-direction:column;gap:11px;}\n.actioncard{position:relative;display:block;background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:15px 42px 15px 70px;text-decoration:none;color:inherit;box-shadow:var(--shadow-md);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;}\n.actioncard:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);border-color:var(--blue);}\n.actioncard b{font-size:15.5px;font-weight:680;letter-spacing:-.01em;color:var(--ink);}\n.actioncard > span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.45;}\n.actioncard .ic{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;margin:0;border-radius:12px;display:grid;place-items:center;font-size:20px;line-height:1;font-style:normal;background:linear-gradient(155deg,rgba(2,132,199,.14),rgba(13,148,136,.12));border:1px solid var(--line-2);box-shadow:var(--shadow-sm);}\nbody.dark .actioncard .ic{background:linear-gradient(155deg,rgba(56,189,248,.20),rgba(45,212,191,.16));border-color:var(--line);}\n.actioncard::after{content:\"›\";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:23px;line-height:1;color:var(--muted);opacity:.5;transition:transform .18s ease, opacity .18s ease, color .18s ease;}\n.actioncard:hover::after{transform:translateY(-50%) translateX(3px);opacity:1;color:var(--blue);}\n.hero{position:relative;display:block;border-radius:16px;padding:21px 48px 21px 78px;margin-bottom:11px;text-decoration:none;color:#fff;background:linear-gradient(145deg,#0EA5E9,#0284C7 52%,#0D9488);border:1px solid #0284C7;box-shadow:var(--shadow-lg);transition:transform .18s ease, box-shadow .18s ease;}\n.hero:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);}\n.hero b{display:block;font-size:18px;font-weight:700;letter-spacing:-.01em;color:#fff;line-height:1.2;}\n.hero > span{display:block;font-size:13px;color:rgba(255,255,255,.86);margin-top:4px;line-height:1.45;}\n.hero .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:46px;height:46px;margin:0;border-radius:13px;display:grid;place-items:center;font-size:23px;line-height:1;font-style:normal;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.32);}\n.hero::after{content:\"›\";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:26px;line-height:1;color:rgba(255,255,255,.92);transition:transform .18s ease;}\n.hero:hover::after{transform:translateY(-50%) translateX(3px);}\n.bgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;}\n.bcard{background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:14px 15px;text-decoration:none;color:inherit;box-shadow:var(--shadow-md);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;}\n.bcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);border-color:var(--blue);}\n.bcard .n{font-family:var(--mono);font-size:11px;color:var(--magenta);text-transform:uppercase;letter-spacing:.06em;}\n.bcard .pct{font-family:var(--mono);font-size:13px;color:var(--muted);}\n.bar{height:6px;background:var(--line);border-radius:4px;margin-top:9px;overflow:hidden;box-shadow:inset 0 1px 2px rgba(0,0,0,.10);}\n.bar > i{display:block;height:6px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--magenta));}\n\n/* practice + exam */\n.meta{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;margin-bottom:14px;}\n.meta .l{color:var(--muted);}\n.meta .r{color:var(--blue);letter-spacing:.05em;}\n.qcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:16px;box-shadow:var(--shadow-lg);}\n.qtext{font-size:16px;line-height:1.6;}\n.code{font-family:var(--mono);font-size:13px;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:2px 6px;}\n.choices{display:flex;flex-direction:column;gap:9px;margin:0 0 16px;}\n.choice{display:flex;align-items:flex-start;gap:11px;padding:13px 15px;border:1px solid var(--line);border-radius:11px;background:var(--surface);font-size:15px;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;}\n.choice:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);border-color:var(--blue);}\n.choice input{margin-top:3px;accent-color:var(--blue);}\n.choice .cl{font-family:var(--mono);font-size:13px;opacity:.55;}\n.choice.correct{background:var(--green-bg);border-color:var(--green);}\n.choice.wrong{background:var(--red-bg);border-color:var(--red);}\n.choice.dim{opacity:.55;}\n.explain{border-radius:11px;padding:13px 15px;margin-bottom:16px;font-size:14px;line-height:1.6;box-shadow:var(--shadow-sm);}\n.explain.ok{background:var(--green-bg);border:1px solid var(--green);}\n.explain.bad{background:var(--red-bg);border:1px solid var(--red);}\n.explain .rl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.7;display:block;margin-bottom:4px;}\n\n/* buttons */\nbutton,.btn{font-family:var(--sans);font-size:15px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:11px 16px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:var(--shadow-sm);transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;}\nbutton:hover,.btn:hover{border-color:var(--blue);transform:translateY(-1px);box-shadow:var(--shadow-md);}\n.btn-primary{background:linear-gradient(165deg,#0EA5E9,#0284C7);color:#fff;border-color:#0284C7;font-weight:600;width:100%;text-align:center;box-shadow:var(--shadow-md);}\n.btn-primary:hover{box-shadow:var(--shadow-pop);border-color:#0284C7;}\nbody.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border-color:#0369A1;color:#fff;}\n.btn-row{display:flex;gap:8px;flex-wrap:wrap;}\n:focus-visible{outline:2px solid var(--ring);outline-offset:2px;}\n\n/* results */\n.bigpct{font-family:var(--mono);font-size:54px;font-weight:700;line-height:1;text-align:center;letter-spacing:-.02em;}\n.badge{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 13px;border-radius:999px;box-shadow:var(--shadow-sm);}\n.badge.pass{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}\n.badge.fail{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.center{text-align:center;}\n.bdrow{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:14px;}\n.bdrow .nm{width:110px;flex-shrink:0;}\n.bdrow .tr{flex:1;}\n.bdrow .vl{font-family:var(--mono);font-size:12px;width:84px;text-align:right;flex-shrink:0;}\n.palette{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:14px 0;}\n.palette button{padding:0;height:36px;font-family:var(--mono);font-size:12px;border-radius:8px;}\n.palette button.answered{background:var(--blue);color:#fff;border-color:var(--blue);}\n.palette button.current{outline:2px solid var(--magenta);outline-offset:1px;}\n\n/* review */\n.mbucket{margin-bottom:16px;}\n.mbname{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--magenta);margin-bottom:8px;}\n.mbname span{color:var(--muted);}\n.mcard{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--magenta);border-radius:0 11px 11px 0;padding:11px 14px;margin-bottom:10px;box-shadow:var(--shadow-sm);}\n.mcard .mq{font-size:14px;margin-bottom:5px;}\n.mcard .ma{font-size:13.5px;color:var(--green);margin-bottom:3px;}\n.mcard .mr{font-size:13px;color:var(--muted);}\n.empty{text-align:center;color:var(--green);padding:18px 0;font-size:14px;}\n.timer{font-family:var(--mono);font-weight:700;}\n.timer.low{color:var(--red);}\n.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}\n.filters a{font-family:var(--mono);font-size:12px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--muted);background:var(--surface);box-shadow:var(--shadow-sm);transition:transform .14s ease, border-color .14s ease, color .14s ease;}\n.filters a:hover{transform:translateY(-1px);border-color:var(--blue);color:var(--ink);}\n.filters a.active{background:var(--blue);color:#fff;border-color:var(--blue);}\n.note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:28px;padding-top:14px;border-top:1px solid var(--line);}\n\n/* form fields */\n.field{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-size:15px;box-shadow:var(--shadow-sm);transition:border-color .15s ease, box-shadow .15s ease;}\n.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--ring);}\n.flabel{display:block;font-size:13px;color:var(--muted);margin-bottom:5px;}\n\n/* gentle load reveal */\n@keyframes rise{from{opacity:0;transform:translateY(9px);}to{opacity:1;transform:none;}}\n@media(prefers-reduced-motion:no-preference){\n  .tile,.actioncard,.bcard,.qcard,.meta,.mbucket,.bigpct,.badge{animation:rise .38s cubic-bezier(.2,.7,.3,1) both;}\n  .tile:nth-child(2),.actioncard:nth-child(2),.bcard:nth-child(2){animation-delay:.05s;}\n  .tile:nth-child(3),.actioncard:nth-child(3),.bcard:nth-child(3){animation-delay:.10s;}\n  .actioncard:nth-child(4),.bcard:nth-child(4){animation-delay:.14s;}\n}\n@media(max-width:480px){.palette{grid-template-columns:repeat(6,1fr);}.bgrid{grid-template-columns:1fr;}.user-chip{max-width:90px;}}\n\n/* icons, emojis, badges */\n.nav-ic{font-size:13px;margin-right:1px;}\n.tile{position:relative;}\n.tile .ic{position:absolute;top:13px;right:14px;font-size:17px;opacity:.9;line-height:1;}\n.bcard .ic{font-style:normal;margin-right:5px;}\n.bcard .n .ic{margin-right:5px;}\n.mbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow-sm);white-space:nowrap;}\n.mbadge.m-new{background:var(--surface-2);color:var(--muted);}\n.mbadge.m-master{background:rgba(185,124,12,.14);color:var(--amber);border-color:rgba(185,124,12,.45);}\n.mbadge.m-strong{background:var(--green-bg);color:var(--green);border-color:var(--green);}\n.mbadge.m-learn{background:rgba(43,92,158,.12);color:var(--blue);border-color:rgba(43,92,158,.4);}\n.mbadge.m-focus{background:var(--red-bg);color:var(--red);border-color:var(--red);}\n.bcard .top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}\n.countbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.countbadge.ok{background:var(--green-bg);color:var(--green);border-color:var(--green);}\n.result-emoji{font-size:46px;line-height:1;margin-bottom:6px;}\n.badge .be{font-size:13px;margin-right:2px;}\n.choice .status{margin-left:auto;font-size:15px;align-self:center;}\n.feedback{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:11px 15px;border-radius:11px;margin-bottom:14px;box-shadow:var(--shadow-sm);}\n.feedback .fe{font-size:18px;}\n.feedback.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}\n.feedback.bad{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.bdrow .nm .ic{margin-right:5px;}\n.mbname .ic{margin-right:4px;}\n.filters a .ic{margin-right:3px;}\n.timer .te{margin-right:3px;}\n\n/* exam trend chart */\n.trend{position:relative;display:flex;align-items:flex-end;gap:6px;height:124px;padding-top:6px;border-bottom:1px solid var(--line);margin-bottom:8px;}\n.trend .tb{flex:1;min-width:7px;border-radius:5px 5px 0 0;box-shadow:var(--shadow-sm);}\n.trend .tb.pass{background:linear-gradient(180deg,#34b277,#1F8A5B);}\n.trend .tb.fail{background:linear-gradient(180deg,#db6060,#C23B3B);}\n.trend .passline{position:absolute;left:0;right:0;border-top:1px dashed var(--muted);opacity:.65;pointer-events:none;}\n.trend .passline span{position:absolute;right:0;top:-8px;font-family:var(--mono);font-size:9px;color:var(--muted);background:var(--paper);padding:0 4px;}\n\n/* cheat sheet */\n.cs-intro{font-size:14px;color:var(--muted);margin-bottom:18px;}\n.cs-group{margin-bottom:22px;}\n.cs-head{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--magenta);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:9px;display:flex;align-items:center;gap:7px;}\n.cs-head .cs-n{margin-left:auto;color:var(--muted);font-size:11px;}\n.cs-list{list-style:none;display:flex;flex-direction:column;gap:7px;}\n.cs-list li{font-size:14px;line-height:1.5;padding-left:18px;position:relative;}\n.cs-list li::before{content:\"\\203A\";position:absolute;left:4px;color:var(--blue);font-weight:700;}\n\n/* print-friendly output (Cmd/Ctrl + P) */\n@media print{\n  body{background:#fff;color:#000;padding:0;}\n  header.top,.note{display:none !important;}\n  .section-title::after{display:none;}\n  .cs-head{color:#000;border-color:#000;}\n  .cs-list li::before{color:#000;}\n  a{color:#000;text-decoration:none;}\n  .qcard,.actioncard,.tile,.bcard{box-shadow:none;}\n}\n\n</style>\n</head>\n<body class=\"{{ 'dark' if dark else '' }}\">\n<div class=\"wrap\">\n  <header class=\"top\">\n    <div class=\"brand\">\n      <a href=\"{{ url_for('home') }}\" class=\"brand-link\">\n        <span class=\"logo\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 32 32\" width=\"40\" height=\"40\"><defs><linearGradient id=\"logoGrad\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#0284C7\"/><stop offset=\"1\" stop-color=\"#0D9488\"/></linearGradient></defs><rect width=\"32\" height=\"32\" rx=\"8\" fill=\"url(#logoGrad)\"/><g stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\"><line x1=\"16\" y1=\"16\" x2=\"8\" y2=\"8\"/><line x1=\"16\" y1=\"16\" x2=\"24\" y2=\"8\"/><line x1=\"16\" y1=\"16\" x2=\"8\" y2=\"24\"/><line x1=\"16\" y1=\"16\" x2=\"24\" y2=\"24\"/></g><g fill=\"#fff\"><circle cx=\"8\" cy=\"8\" r=\"3\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/><circle cx=\"8\" cy=\"24\" r=\"3\"/><circle cx=\"24\" cy=\"24\" r=\"3\"/><circle cx=\"16\" cy=\"16\" r=\"3.4\"/></g></svg>\n        </span>\n        <span class=\"brand-text\">\n          <h1>Part 107 Ground School</h1>\n          <div class=\"tag\">FAA prep</div>\n        </span>\n      </a>\n    </div>\n    <nav>\n      <a href=\"{{ url_for('home') }}\"><span class=\"nav-ic\">🏠</span> Home</a>\n      <a href=\"{{ url_for('review') }}\"><span class=\"nav-ic\">📚</span> Study list</a>\n      <a href=\"{{ url_for('history') }}\"><span class=\"nav-ic\">📈</span> Progress</a>\n      <a class=\"theme-toggle\" href=\"{{ url_for('toggle_theme') }}\"\n         aria-label=\"{{ 'Switch to light mode' if dark else 'Switch to dark mode' }}\"\n         title=\"{{ 'Light mode' if dark else 'Dark mode' }}\">\n        {% if dark %}\n        <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41\"/></svg>\n        {% else %}\n        <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"/></svg>\n        {% endif %}\n      </a>\n      {% if user %}\n      <span class=\"user-chip\" title=\"{{ user.email }}\">{{ user.email }}</span>\n      <form method=\"post\" action=\"{{ url_for('logout') }}\" style=\"display:inline;margin:0\">\n        <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n        <button type=\"submit\" class=\"linkbtn\">Sign out</button>\n      </form>\n      {% else %}\n      <a href=\"{{ url_for('login') }}\">Sign in</a>\n      {% endif %}\n    </nav>\n  </header>\n  {% block body %}{% endblock %}\n  <div class=\"note\">{% if user %}Signed in as {{ user.email }}. Progress syncs to your account across devices.{% else %}Progress saves on this server for this browser. Sign in to sync across devices.{% endif %}</div>\n</div>\n</body>\n</html>\n", "practice.html": "{% extends \"base.html\" %}\n{% block body %}\n{% if drill_empty %}\n<div class=\"section-title\">🎯 Drill misses</div>\n<div class=\"empty\">🎉 No missed questions{{ ' in this topic' if drill_bucket }} to drill right now. Miss some in practice or the exam and they will collect here for focused drilling.</div>\n<div class=\"center\" style=\"margin-top:8px\"><a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a> <a class=\"btn\" href=\"{{ url_for('practice', bucket='All') }}\">✍️ Practice all</a></div>\n{% else %}\n<div class=\"meta\">\n  <span class=\"l\">{% if mode == 'drill' %}🎯 Drill misses{% elif mode == 'focus' %}🎚️ Focus practice{% else %}✍️ Practice{% endif %}</span>\n  <span class=\"r\">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}</span>\n</div>\n\n{% if not answered %}\n<form method=\"post\" action=\"{{ url_for('practice_answer') }}\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <input type=\"hidden\" name=\"qid\" value=\"{{ q.id }}\">\n  <input type=\"hidden\" name=\"bucket\" value=\"{{ bucket }}\">\n  <input type=\"hidden\" name=\"mode\" value=\"{{ mode }}\">\n  <input type=\"hidden\" name=\"dbucket\" value=\"{{ drill_bucket or '' }}\">\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <label class=\"choice\">\n      <input type=\"radio\" name=\"choice\" value=\"{{ c.idx }}\" required>\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    </label>\n    {% endfor %}\n  </div>\n  <button type=\"submit\" class=\"btn-primary\">Check answer</button>\n</form>\n{% else %}\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"feedback {{ 'ok' if correct else 'bad' }}\">\n    <span class=\"fe\">{{ '✅' if correct else '❌' }}</span>{{ 'Correct' if correct else 'Not quite' }}\n  </div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <div class=\"choice {{ 'correct' if c.idx == q.a else ('wrong' if c.idx == chosen else 'dim') }}\">\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n      {% if c.idx == q.a %}<span class=\"status\">✅</span>{% elif c.idx == chosen %}<span class=\"status\">❌</span>{% endif %}\n    </div>\n    {% endfor %}\n  </div>\n  <div class=\"explain {{ 'ok' if correct else 'bad' }}\">\n    <span class=\"rl\">{{ '✅ correct &middot; the rule'|safe if correct else '📌 the rule'|safe }}</span>{{ q.e }}\n  </div>\n  <a class=\"btn-primary\" href=\"{% if mode == 'drill' %}{{ url_for('drill', bucket=drill_bucket) }}{% elif mode == 'focus' %}{{ url_for('focus') }}{% else %}{{ url_for('practice', bucket=bucket) }}{% endif %}\">{% if mode == 'drill' %}🎯 Next missed{% elif mode == 'focus' %}🎚️ Next focus{% else %}Next question{% endif %}</a>\n  <div class=\"center\" style=\"margin-top:12px\"><a href=\"{{ url_for('home') }}\" style=\"font-size:13px;color:var(--muted)\">Back to home</a></div>\n{% endif %}\n{% endif %}\n{% endblock %}\n"}'''
+TEMPLATES_JSON = r'''{"exam.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"meta\">\n  <span class=\"l\">📝 Exam &middot; question {{ n + 1 }} of {{ total }}</span>\n  <span class=\"r timer {{ 'low' if remaining < 300 }}\"><span class=\"te\">{{ '⚠️' if remaining < 300 else '⏱️' }}</span>{{ remaining_mmss }} left</span>\n</div>\n\n<form method=\"post\" action=\"{{ url_for('exam_nav') }}\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <input type=\"hidden\" name=\"n\" value=\"{{ n }}\">\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <label class=\"choice\">\n      <input type=\"radio\" name=\"choice\" value=\"{{ c.idx }}\" {{ 'checked' if c.idx == saved }}>\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    </label>\n    {% endfor %}\n  </div>\n\n  <div class=\"btn-row\" style=\"margin-bottom:6px\">\n    {% if n > 0 %}<button type=\"submit\" name=\"goto\" value=\"{{ n - 1 }}\">Previous</button>{% endif %}\n    {% if n < total - 1 %}<button type=\"submit\" name=\"goto\" value=\"{{ n + 1 }}\" class=\"btn-primary\" style=\"width:auto;flex:1\">Save and next</button>\n    {% else %}<button type=\"submit\" name=\"finish\" value=\"1\" class=\"btn-primary\" style=\"width:auto;flex:1\">Finish exam</button>{% endif %}\n  </div>\n\n  <div class=\"section-title\">🧭 Question palette</div>\n  <div class=\"palette\">\n    {% for i in range(total) %}\n    <button type=\"submit\" name=\"goto\" value=\"{{ i }}\" class=\"{{ 'answered' if i in answered_set }} {{ 'current' if i == n }}\">{{ i + 1 }}</button>\n    {% endfor %}\n  </div>\n\n  <button type=\"submit\" name=\"finish\" value=\"1\">Finish and grade now</button>\n</form>\n{% endblock %}\n", "home.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"tiles\">\n  <div class=\"tile\"><span class=\"ic\">🎯</span><b>{{ lifetime_pct if lifetime_pct is not none else \"--\" }}{{ \"%\" if lifetime_pct is not none else \"\" }}</b><span>lifetime accuracy</span></div>\n  <div class=\"tile\"><span class=\"ic\">✍️</span><b>{{ total_answered }}</b><span>questions answered</span></div>\n  <div class=\"tile\"><span class=\"ic\">📚</span><b>{{ to_review }}</b><span>on your study list</span></div>\n</div>\n\n{% if not user %}\n<a class=\"actioncard\" href=\"{{ url_for('register') }}\" style=\"border-color:var(--blue);margin-bottom:8px\">\n  <b><span class=\"ic\">☁️</span>Create an account to sync across devices</b>\n  <span>Your current progress moves into the account automatically. Or <span style=\"text-decoration:underline\">sign in</span> if you have one.</span>\n</a>\n{% endif %}\n\n<div class=\"section-title\">Study</div>\n{% if to_review %}\n<a class=\"hero\" href=\"{{ url_for('drill') }}\"><span class=\"ic\">🎯</span><b>Drill your {{ to_review }} missed question{{ 's' if to_review != 1 }}</b><span>Targeted practice on exactly what you keep getting wrong, hardest first</span></a>\n{% else %}\n<a class=\"hero\" href=\"{{ url_for('practice', bucket='All') }}\"><span class=\"ic\">✍️</span><b>Practice all topics</b><span>Instant feedback and the rule behind every answer</span></a>\n{% endif %}\n<div class=\"cards\">\n  <a class=\"actioncard\" href=\"{{ url_for('learn') }}\"><b><span class=\"ic\">📖</span>Learn the material</b><span>Read through each topic with the answer and rule, no quiz pressure</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('cheatsheet') }}\"><b><span class=\"ic\">🗒️</span>Rules cheat sheet</b><span>Every key rule by topic, printable for last-minute review</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('exam_start') }}\"><b><span class=\"ic\">📝</span>Exam simulation</b><span>{{ exam_n }} questions ({{ exam_scored }} scored), {{ exam_min }} min, {{ exam_pass }}% to pass</span></a>\n  {% if to_review %}\n  <a class=\"actioncard\" href=\"{{ url_for('practice', bucket='All') }}\"><b><span class=\"ic\">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>\n  {% endif %}\n  <a class=\"actioncard\" href=\"{{ url_for('focus') }}\"><b><span class=\"ic\">🎚️</span>Focus on weak topics</b><span>Practice weighted toward your lowest-scoring and not-yet-seen topics</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('review') }}\"><b><span class=\"ic\">📊</span>Study list and stats</b><span>Every missed question, grouped by topic</span></a>\n</div>\n\n<div class=\"section-title\">Practice by topic</div>\n<div class=\"bgrid\">\n  {% for b in buckets %}\n  <a class=\"bcard\" href=\"{{ url_for('practice', bucket=b.name) }}\">\n    <div class=\"top-row\">\n      <div class=\"n\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }} ({{ soft_count(b.count) }})</div>\n      {% set m = mastery(b.pct) %}<span class=\"mbadge {{ m.cls }}\">{{ m.emoji }} {{ m.label }}</span>\n    </div>\n    <div class=\"pct\">{{ b.pct if b.pct is not none else \"not started\" }}{{ \"%\" if b.pct is not none else \"\" }}</div>\n    <div class=\"bar\"><i style=\"width:{{ b.pct or 0 }}%;background:{{ b.color }}\"></i></div>\n  </a>\n  {% endfor %}\n</div>\n\n<div class=\"section-title\">Manage</div>\n<div class=\"btn-row\">\n  <a class=\"btn\" href=\"{{ url_for('export_progress') }}\">📤 Export progress</a>\n  <form method=\"post\" action=\"{{ url_for('reset_progress') }}\" onsubmit=\"return confirm('Erase all saved progress on this server for your browser?')\" style=\"display:inline\">\n    <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n    <button type=\"submit\">🗑️ Reset all</button>\n  </form>\n</div>\n{% endblock %}\n", "learn.html": "{% extends \"base.html\" %}\n{% block title %}Learn - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">📖 Learn by topic</div>\n<div class=\"filters\">\n  {% for b in bucket_names %}\n  <a href=\"{{ url_for('learn', bucket=b, n=0) }}\" class=\"{{ 'active' if bucket == b }}\"><span class=\"ic\">{{ icons[b] }}</span>{{ b }}</a>\n  {% endfor %}\n</div>\n\n<div class=\"meta\">\n  <span class=\"l\">{{ icons[bucket] }} {{ bucket }}</span>\n  <span class=\"r\">card {{ n + 1 }} of {{ total }}</span>\n</div>\n\n<div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n<div class=\"choices\">\n  {% for c in choices %}\n  <div class=\"choice {{ 'correct' if c.idx == q.a else 'dim' }}\">\n    <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    {% if c.idx == q.a %}<span class=\"status\">✅</span>{% endif %}\n  </div>\n  {% endfor %}\n</div>\n<div class=\"explain ok\"><span class=\"rl\">📌 the rule</span>{{ q.e }}</div>\n\n<div class=\"btn-row\">\n  {% if n > 0 %}<a class=\"btn\" href=\"{{ url_for('learn', bucket=bucket, n=n-1) }}\">← Previous</a>{% endif %}\n  {% if n < total - 1 %}\n  <a class=\"btn-primary\" href=\"{{ url_for('learn', bucket=bucket, n=n+1) }}\" style=\"width:auto;flex:1\">Next card →</a>\n  {% else %}\n  <a class=\"btn-primary\" href=\"{{ url_for('practice', bucket=bucket) }}\" style=\"width:auto;flex:1\">✍️ Quiz this topic →</a>\n  {% endif %}\n</div>\n<div class=\"center\" style=\"margin-top:12px\"><a href=\"{{ url_for('home') }}\" style=\"font-size:13px;color:var(--muted)\">Back to home</a></div>\n{% endblock %}\n", "review.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"section-title\">📈 Lifetime accuracy by topic</div>\n{% if lifetime %}\n{% for b in lifetime %}\n<div class=\"bdrow\">\n  <span class=\"nm\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }}</span>\n  <span class=\"tr bar\"><i style=\"width:{{ b.pct }}%;background:{{ b.color }}\"></i></span>\n  <span class=\"vl\" style=\"color:{{ b.color }}\">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">📭 No answers logged yet. Start practicing from the home page.</div>\n{% endif %}\n\n<div class=\"section-title\">📚 Study list, every missed question</div>\n<div class=\"filters\">\n  <a href=\"{{ url_for('review') }}\" class=\"{{ 'active' if not active_bucket }}\">All</a>\n  {% for b in bucket_names %}\n  <a href=\"{{ url_for('review', bucket=b) }}\" class=\"{{ 'active' if active_bucket == b }}\"><span class=\"ic\">{{ icons[b] }}</span>{{ b }}</a>\n  {% endfor %}\n</div>\n\n{% if missed %}\n<div class=\"btn-row\" style=\"margin-bottom:14px\">\n  <a class=\"btn-primary\" href=\"{{ url_for('drill', bucket=active_bucket) }}\" style=\"width:auto;flex:1\">🎯 Drill {{ 'these' if active_bucket else 'all' }} missed questions</a>\n</div>\n{% endif %}\n\n{% if missed %}\n{% for grp in missed %}\n<div class=\"mbucket\">\n  <div class=\"mbname\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"countbadge\">{{ grp.qs|length }} to review</span></div>\n  {% for m in grp.qs %}\n  <div class=\"mcard\">\n    <div class=\"mq\">{{ m.q_html|safe }}{% if m.misses > 1 %} <span style=\"color:var(--red);font-family:var(--mono);font-size:11px\">🔁 missed {{ m.misses }}x</span>{% endif %}</div>\n    <div class=\"ma\">✅ {{ m.letter }}. {{ m.answer }}</div>\n    <div class=\"mr\">{{ m.e }}</div>\n  </div>\n  {% endfor %}\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">🎉 Nothing on your study list{{ ' for this topic' if active_bucket }}. Miss a question and it lands here.</div>\n{% endif %}\n{% endblock %}\n", "login.html": "{% extends \"base.html\" %}\n{% block title %}Sign in - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">Sign in</div>\n{% if error %}<div class=\"explain bad\" style=\"margin-bottom:14px\">{{ error }}</div>{% endif %}\n<form method=\"post\" action=\"{{ url_for('login') }}\" class=\"qcard\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <label class=\"flabel\">Email</label>\n  <input type=\"email\" name=\"email\" value=\"{{ email or '' }}\" autocomplete=\"email\" required\n         class=\"field\" style=\"margin-bottom:14px\" placeholder=\"you@example.com\">\n  <label class=\"flabel\">Password</label>\n  <input type=\"password\" name=\"password\" autocomplete=\"current-password\" required\n         class=\"field\" style=\"margin-bottom:18px\">\n  <button type=\"submit\" class=\"btn-primary\">Sign in</button>\n</form>\n<div class=\"center\" style=\"font-size:14px;color:var(--muted)\">No account yet? <a href=\"{{ url_for('register') }}\">Create one</a></div>\n{% endblock %}\n", "exam_result.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"center\" style=\"padding:8px 0 16px\">\n  <div class=\"result-emoji\">{{ '🎉' if passed else '💪' }}</div>\n  <div class=\"bigpct\" style=\"color:{{ pass_color }}\">{{ pct }}%</div>\n  <div style=\"margin:10px 0\"><span class=\"badge {{ 'pass' if passed else 'fail' }}\"><span class=\"be\">{{ '✅' if passed else '❌' }}</span>{{ 'Pass' if passed else 'Did not pass' }}</span></div>\n  <div style=\"font-size:14px;color:var(--muted)\">{{ correct }} of {{ total }} correct &middot; {{ time_used }} used &middot; {{ exam_pass }}% needed</div>\n  {% if experimental %}<div style=\"font-size:12px;color:var(--muted);margin-top:5px\">{{ experimental }} experimental questions were not scored, just like the real exam.</div>{% endif %}\n</div>\n\n<div class=\"btn-row\" style=\"justify-content:center;margin-bottom:8px\">\n  <a class=\"btn\" href=\"{{ url_for('exam_start') }}\">🔄 New exam</a>\n  <a class=\"btn\" href=\"{{ url_for('history') }}\">📈 Progress</a>\n  {% if missed %}<a class=\"btn\" href=\"{{ url_for('drill') }}\">🎯 Drill misses</a>{% endif %}\n  <a class=\"btn\" href=\"{{ url_for('review') }}\">📚 Review study list</a>\n  <a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a>\n</div>\n\n<div class=\"section-title\">📊 By topic</div>\n{% for b in by_bucket %}\n<div class=\"bdrow\">\n  <span class=\"nm\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }}</span>\n  <span class=\"tr bar\"><i style=\"width:{{ b.pct }}%;background:{{ b.color }}\"></i></span>\n  <span class=\"vl\" style=\"color:{{ b.color }}\">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>\n</div>\n{% endfor %}\n\n{% if missed %}\n<div class=\"section-title\">📌 Missed questions and the rule</div>\n{% for grp in missed %}\n<div class=\"mbucket\">\n  <div class=\"mbname\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"countbadge\">{{ grp.qs|length }} missed</span></div>\n  {% for m in grp.qs %}\n  <div class=\"mcard\">\n    <div class=\"mq\">{{ m.q_html|safe }}</div>\n    <div class=\"ma\">✅ {{ m.letter }}. {{ m.answer }}</div>\n    <div class=\"mr\">{{ m.e }}</div>\n  </div>\n  {% endfor %}\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">🌟 Perfect run. Nothing missed.</div>\n{% endif %}\n{% endblock %}\n", "cheatsheet.html": "{% extends \"base.html\" %}\n{% block title %}Rules cheat sheet - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">🗒️ Rules cheat sheet</div>\n<p class=\"cs-intro\">{{ total }} key rules across all topics. Use your browser's print (Cmd or Ctrl + P) to save or print a clean copy for last-minute review.</p>\n{% for grp in sheet %}\n<div class=\"cs-group\">\n  <div class=\"cs-head\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"cs-n\">{{ soft_count(grp.count) }}</span></div>\n  <ul class=\"cs-list\">\n    {% for r in grp.rules %}<li>{{ r }}</li>{% endfor %}\n  </ul>\n</div>\n{% endfor %}\n{% endblock %}\n", "history.html": "{% extends \"base.html\" %}\n{% block title %}Exam readiness - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">🎓 Exam readiness</div>\n{% if not taken %}\n<div class=\"empty\">📝 No practice exams logged yet. Take one to see your readiness verdict and score trend.</div>\n<div class=\"center\" style=\"margin-top:10px\"><a class=\"btn-primary\" href=\"{{ url_for('exam_start') }}\" style=\"width:auto;display:inline-block\">Start an exam</a></div>\n{% else %}\n<div class=\"qcard\" style=\"text-align:center\">\n  <span class=\"mbadge {{ verdict.cls }}\" style=\"font-size:12px;padding:5px 12px\">{{ verdict.emoji }} {{ verdict.label }}</span>\n  <p style=\"font-size:14px;color:var(--muted);margin:11px 0 0\">{{ verdict.note }}</p>\n</div>\n\n<div class=\"tiles\">\n  <div class=\"tile\"><span class=\"ic\">🏅</span><b>{{ best }}%</b><span>best score</span></div>\n  <div class=\"tile\"><span class=\"ic\">📊</span><b>{{ avg5 }}%</b><span>recent average</span></div>\n  <div class=\"tile\"><span class=\"ic\">✅</span><b>{{ pass_rate }}%</b><span>pass rate</span></div>\n</div>\n\n<div class=\"section-title\">📈 Score trend &middot; last {{ trend|length }}</div>\n<div class=\"trend\">\n  <div class=\"passline\" style=\"bottom:{{ exam_pass }}%\"><span>{{ exam_pass }}% pass</span></div>\n  {% for s in trend %}\n  <div class=\"tb {{ 'pass' if s.passed else 'fail' }}\" style=\"height:{{ s.pct }}%\" title=\"{{ s.pct }}%\"></div>\n  {% endfor %}\n</div>\n<div class=\"center\" style=\"font-family:var(--mono);font-size:10px;color:var(--muted)\">oldest → newest</div>\n\n<div class=\"section-title\">🗒️ Recent exams</div>\n{% for s in recent %}\n<div class=\"bdrow\">\n  <span class=\"nm\" style=\"width:auto;flex:1\">{{ s.when }}</span>\n  <span class=\"vl\" style=\"width:auto;color:var(--muted)\">{{ s.correct }}/{{ s.total }}</span>\n  <span class=\"vl\" style=\"color:{{ '#1F8A5B' if s.passed else '#C23B3B' }}\">{{ s.pct }}%</span>\n  <span class=\"badge {{ 'pass' if s.passed else 'fail' }}\" style=\"font-size:10px;padding:3px 9px\">{{ '✅' if s.passed else '❌' }} {{ 'Pass' if s.passed else 'Fail' }}</span>\n</div>\n{% endfor %}\n\n<div class=\"btn-row\" style=\"justify-content:center;margin-top:16px\">\n  <a class=\"btn\" href=\"{{ url_for('exam_start') }}\">🔄 New exam</a>\n  <a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a>\n</div>\n{% endif %}\n{% endblock %}\n", "register.html": "{% extends \"base.html\" %}\n{% block title %}Create account - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">Create an account</div>\n<p style=\"font-size:14px;color:var(--muted);margin-bottom:14px\">Sign in with your email so your progress follows you across devices. If you have been practicing already, that progress moves into your account automatically.</p>\n{% if error %}<div class=\"explain bad\" style=\"margin-bottom:14px\">{{ error }}</div>{% endif %}\n<form method=\"post\" action=\"{{ url_for('register') }}\" class=\"qcard\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <label class=\"flabel\">Email</label>\n  <input type=\"email\" name=\"email\" value=\"{{ email or '' }}\" autocomplete=\"email\" required\n         class=\"field\" style=\"margin-bottom:14px\" placeholder=\"you@example.com\">\n  <label class=\"flabel\">Password (at least 6 characters)</label>\n  <input type=\"password\" name=\"password\" autocomplete=\"new-password\" required\n         class=\"field\" style=\"margin-bottom:18px\">\n  <button type=\"submit\" class=\"btn-primary\">Create account</button>\n</form>\n<div class=\"center\" style=\"font-size:14px;color:var(--muted)\">Already have an account? <a href=\"{{ url_for('login') }}\">Sign in</a></div>\n{% endblock %}\n", "base.html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"theme-color\" content=\"{{ '#1E2731' if dark else '#EAEFF3' }}\">\n<title>{% block title %}Part 107 Ground School{% endblock %}</title>\n<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDI4NEM3Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEQ5NDg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0idXJsKCNnKSIvPjxnIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxsaW5lIHgxPSIxNiIgeTE9IjE2IiB4Mj0iOCIgeTI9IjgiLz48bGluZSB4MT0iMTYiIHkxPSIxNiIgeDI9IjI0IiB5Mj0iOCIvPjxsaW5lIHgxPSIxNiIgeTE9IjE2IiB4Mj0iOCIgeTI9IjI0Ii8+PGxpbmUgeDE9IjE2IiB5MT0iMTYiIHgyPSIyNCIgeTI9IjI0Ii8+PC9nPjxnIGZpbGw9IiNmZmYiPjxjaXJjbGUgY3g9IjgiIGN5PSI4IiByPSIzIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSI4IiByPSIzIi8+PGNpcmNsZSBjeD0iOCIgY3k9IjI0IiByPSIzIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMyIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjMuNCIvPjwvZz48L3N2Zz4=\">\n<style>\n:root{\n  --paper:#EAEFF3; --surface:#FFFFFF; --surface-2:#F3F6F9; --ink:#16212C; --muted:#5A6A77;\n  --line:#D8E0E7; --line-2:#E7ECF1; --blue:#0284C7; --magenta:#0D9488; --green:#1F8A5B;\n  --green-bg:#E3F2EA; --red:#C23B3B; --red-bg:#F7E9E9; --amber:#B97C0C;\n  --shadow-sm:0 1px 2px rgba(22,33,44,.06), 0 1px 1px rgba(22,33,44,.04);\n  --shadow-md:0 2px 4px rgba(22,33,44,.05), 0 8px 20px -6px rgba(22,33,44,.12);\n  --shadow-lg:0 10px 36px -8px rgba(22,33,44,.18);\n  --shadow-pop:0 4px 10px rgba(22,33,44,.07), 0 16px 34px -8px rgba(2,132,199,.20);\n  --ring:rgba(2,132,199,.38);\n  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;\n  --sans:system-ui,-apple-system,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n}\nbody.dark{\n  --paper:#1E2731; --surface:#27323D; --surface-2:#2F3B47; --ink:#E7EDF2; --muted:#9DAAB6;\n  --line:#3A4853; --line-2:#2F3B4700; --green-bg:#173E2C; --red-bg:#3A2222;\n  --blue:#38BDF8; --magenta:#2DD4BF;\n  --shadow-sm:0 1px 2px rgba(0,0,0,.35);\n  --shadow-md:0 2px 6px rgba(0,0,0,.4), 0 10px 26px -8px rgba(0,0,0,.5);\n  --shadow-lg:0 16px 44px -10px rgba(0,0,0,.6);\n  --shadow-pop:0 4px 10px rgba(0,0,0,.4), 0 18px 40px -10px rgba(56,189,248,.34);\n  --ring:rgba(56,189,248,.5);\n}\n*{box-sizing:border-box;margin:0;padding:0;}\nbody{\n  font-family:var(--sans);color:var(--ink);line-height:1.55;padding:0 16px 56px;\n  -webkit-font-smoothing:antialiased;min-height:100vh;\n  background:\n    radial-gradient(1100px 560px at 82% -12%, rgba(2,132,199,.07), transparent 60%),\n    radial-gradient(820px 480px at -12% 6%, rgba(13,148,136,.06), transparent 55%),\n    var(--paper);\n  background-attachment:fixed;\n}\nbody.dark{\n  background:\n    radial-gradient(1100px 560px at 82% -12%, rgba(56,189,248,.12), transparent 60%),\n    radial-gradient(820px 480px at -12% 4%, rgba(45,212,191,.10), transparent 55%),\n    var(--paper);\n  background-attachment:fixed;\n}\na{color:inherit;}\n.wrap{max-width:680px;margin:0 auto;}\n\n/* header */\nheader.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 16px;border-bottom:1px solid var(--line);margin-bottom:24px;flex-wrap:wrap;}\n.brand a{text-decoration:none;}\n.brand-link{display:flex;align-items:center;gap:11px;}\n.brand .logo{flex:0 0 auto;width:40px;height:40px;border-radius:11px;overflow:hidden;display:block;box-shadow:var(--shadow-sm);}\n.brand .logo svg{display:block;width:40px;height:40px;}\n.brand h1{font-size:21px;font-weight:760;letter-spacing:-.02em;}\n.brand .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-top:3px;}\n.top nav{display:flex;gap:13px;font-size:13px;font-family:var(--mono);align-items:center;}\n.top nav a{color:var(--muted);text-decoration:none;transition:color .15s ease;}\n.top nav a:hover{color:var(--ink);}\n.user-chip{color:var(--ink);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}\n.linkbtn{border:none;background:none;padding:0;color:var(--muted);font-family:var(--mono);font-size:13px;cursor:pointer;transition:color .15s ease;}\n.linkbtn:hover{color:var(--ink);box-shadow:none;transform:none;}\n\n/* theme toggle icon */\n.theme-toggle{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--muted);box-shadow:var(--shadow-sm);transition:transform .16s ease, box-shadow .16s ease, color .15s ease, border-color .15s ease;}\n.theme-toggle:hover{color:var(--ink);border-color:var(--blue);transform:translateY(-1px);box-shadow:var(--shadow-md);}\n.theme-toggle svg{display:block;}\n\n/* surfaces with depth */\n.tiles{display:flex;gap:12px;margin-bottom:22px;flex-wrap:wrap;}\n.tile{flex:1;min-width:120px;background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:16px 16px 15px;box-shadow:var(--shadow-md);position:relative;overflow:hidden;}\n.tile::before{content:\"\";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--blue),var(--magenta));opacity:.85;}\n.tile b{display:block;font-family:var(--mono);font-size:31px;line-height:1;font-weight:700;letter-spacing:-.02em;color:var(--ink);}\n.tile span{display:block;margin-top:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);}\n.section-title{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:30px 0 13px;display:flex;align-items:center;gap:9px;}\n.section-title::before{content:\"\";flex:0 0 auto;width:3px;height:13px;border-radius:2px;background:linear-gradient(180deg,var(--blue),var(--magenta));}\n.section-title::after{content:\"\";flex:1;height:1px;background:var(--line);}\n.cards{display:flex;flex-direction:column;gap:11px;}\n.actioncard{position:relative;display:block;background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:15px 42px 15px 70px;text-decoration:none;color:inherit;box-shadow:var(--shadow-md);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;}\n.actioncard:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);border-color:var(--blue);}\n.actioncard b{font-size:15.5px;font-weight:680;letter-spacing:-.01em;color:var(--ink);}\n.actioncard > span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.45;}\n.actioncard .ic{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;margin:0;border-radius:12px;display:grid;place-items:center;font-size:20px;line-height:1;font-style:normal;background:linear-gradient(155deg,rgba(2,132,199,.14),rgba(13,148,136,.12));border:1px solid var(--line-2);box-shadow:var(--shadow-sm);}\nbody.dark .actioncard .ic{background:linear-gradient(155deg,rgba(56,189,248,.20),rgba(45,212,191,.16));border-color:var(--line);}\n.actioncard::after{content:\"›\";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:23px;line-height:1;color:var(--muted);opacity:.5;transition:transform .18s ease, opacity .18s ease, color .18s ease;}\n.actioncard:hover::after{transform:translateY(-50%) translateX(3px);opacity:1;color:var(--blue);}\n.hero{position:relative;display:block;border-radius:16px;padding:21px 48px 21px 78px;margin-bottom:11px;text-decoration:none;color:#fff;background:linear-gradient(145deg,#0EA5E9,#0284C7 52%,#0D9488);border:1px solid #0284C7;box-shadow:var(--shadow-lg);transition:transform .18s ease, box-shadow .18s ease;}\n.hero:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);}\n.hero b{display:block;font-size:18px;font-weight:700;letter-spacing:-.01em;color:#fff;line-height:1.2;}\n.hero > span{display:block;font-size:13px;color:rgba(255,255,255,.86);margin-top:4px;line-height:1.45;}\n.hero .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:46px;height:46px;margin:0;border-radius:13px;display:grid;place-items:center;font-size:23px;line-height:1;font-style:normal;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.32);}\n.hero::after{content:\"›\";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:26px;line-height:1;color:rgba(255,255,255,.92);transition:transform .18s ease;}\n.hero:hover::after{transform:translateY(-50%) translateX(3px);}\n.bgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;}\n.bcard{background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:14px 15px;text-decoration:none;color:inherit;box-shadow:var(--shadow-md);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;}\n.bcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);border-color:var(--blue);}\n.bcard .n{font-family:var(--mono);font-size:11px;color:var(--magenta);text-transform:uppercase;letter-spacing:.06em;}\n.bcard .pct{font-family:var(--mono);font-size:13px;color:var(--muted);}\n.bar{height:6px;background:var(--line);border-radius:4px;margin-top:9px;overflow:hidden;box-shadow:inset 0 1px 2px rgba(0,0,0,.10);}\n.bar > i{display:block;height:6px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--magenta));}\n\n/* practice + exam */\n.meta{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;margin-bottom:14px;}\n.meta .l{color:var(--muted);}\n.meta .r{color:var(--blue);letter-spacing:.05em;}\n.qcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:16px;box-shadow:var(--shadow-lg);}\n.qtext{font-size:16px;line-height:1.6;}\n.code{font-family:var(--mono);font-size:13px;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:2px 6px;}\n.choices{display:flex;flex-direction:column;gap:9px;margin:0 0 16px;}\n.choice{display:flex;align-items:flex-start;gap:11px;padding:13px 15px;border:1px solid var(--line);border-radius:11px;background:var(--surface);font-size:15px;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;}\n.choice:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);border-color:var(--blue);}\n.choice input{margin-top:3px;accent-color:var(--blue);}\n.choice .cl{font-family:var(--mono);font-size:13px;opacity:.55;}\n.choice.correct{background:var(--green-bg);border-color:var(--green);}\n.choice.wrong{background:var(--red-bg);border-color:var(--red);}\n.choice.dim{opacity:.55;}\n.explain{border-radius:11px;padding:13px 15px;margin-bottom:16px;font-size:14px;line-height:1.6;box-shadow:var(--shadow-sm);}\n.explain.ok{background:var(--green-bg);border:1px solid var(--green);}\n.explain.bad{background:var(--red-bg);border:1px solid var(--red);}\n.explain .rl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.7;display:block;margin-bottom:4px;}\n\n/* buttons */\nbutton,.btn{font-family:var(--sans);font-size:15px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:11px 16px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:var(--shadow-sm);transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;}\nbutton:hover,.btn:hover{border-color:var(--blue);transform:translateY(-1px);box-shadow:var(--shadow-md);}\n.btn-primary{background:linear-gradient(165deg,#0EA5E9,#0284C7);color:#fff;border-color:#0284C7;font-weight:600;width:100%;text-align:center;box-shadow:var(--shadow-md);}\n.btn-primary:hover{box-shadow:var(--shadow-pop);border-color:#0284C7;}\nbody.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border-color:#0369A1;color:#fff;}\n.btn-row{display:flex;gap:8px;flex-wrap:wrap;}\n:focus-visible{outline:2px solid var(--ring);outline-offset:2px;}\n\n/* results */\n.bigpct{font-family:var(--mono);font-size:54px;font-weight:700;line-height:1;text-align:center;letter-spacing:-.02em;}\n.badge{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 13px;border-radius:999px;box-shadow:var(--shadow-sm);}\n.badge.pass{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}\n.badge.fail{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.center{text-align:center;}\n.bdrow{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:14px;}\n.bdrow .nm{width:110px;flex-shrink:0;}\n.bdrow .tr{flex:1;}\n.bdrow .vl{font-family:var(--mono);font-size:12px;width:84px;text-align:right;flex-shrink:0;}\n.palette{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:14px 0;}\n.palette button{padding:0;height:36px;font-family:var(--mono);font-size:12px;border-radius:8px;}\n.palette button.answered{background:var(--blue);color:#fff;border-color:var(--blue);}\n.palette button.current{outline:2px solid var(--magenta);outline-offset:1px;}\n\n/* review */\n.mbucket{margin-bottom:16px;}\n.mbname{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--magenta);margin-bottom:8px;}\n.mbname span{color:var(--muted);}\n.mcard{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--magenta);border-radius:0 11px 11px 0;padding:11px 14px;margin-bottom:10px;box-shadow:var(--shadow-sm);}\n.mcard .mq{font-size:14px;margin-bottom:5px;}\n.mcard .ma{font-size:13.5px;color:var(--green);margin-bottom:3px;}\n.mcard .mr{font-size:13px;color:var(--muted);}\n.empty{text-align:center;color:var(--green);padding:18px 0;font-size:14px;}\n.timer{font-family:var(--mono);font-weight:700;}\n.timer.low{color:var(--red);}\n.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}\n.filters a{font-family:var(--mono);font-size:12px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--muted);background:var(--surface);box-shadow:var(--shadow-sm);transition:transform .14s ease, border-color .14s ease, color .14s ease;}\n.filters a:hover{transform:translateY(-1px);border-color:var(--blue);color:var(--ink);}\n.filters a.active{background:var(--blue);color:#fff;border-color:var(--blue);}\n.note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:28px;padding-top:14px;border-top:1px solid var(--line);}\n\n/* form fields */\n.field{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-size:15px;box-shadow:var(--shadow-sm);transition:border-color .15s ease, box-shadow .15s ease;}\n.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--ring);}\n.flabel{display:block;font-size:13px;color:var(--muted);margin-bottom:5px;}\n\n/* gentle load reveal */\n@keyframes rise{from{opacity:0;transform:translateY(9px);}to{opacity:1;transform:none;}}\n@media(prefers-reduced-motion:no-preference){\n  .tile,.actioncard,.bcard,.qcard,.meta,.mbucket,.bigpct,.badge{animation:rise .38s cubic-bezier(.2,.7,.3,1) both;}\n  .tile:nth-child(2),.actioncard:nth-child(2),.bcard:nth-child(2){animation-delay:.05s;}\n  .tile:nth-child(3),.actioncard:nth-child(3),.bcard:nth-child(3){animation-delay:.10s;}\n  .actioncard:nth-child(4),.bcard:nth-child(4){animation-delay:.14s;}\n}\n@media(max-width:480px){.palette{grid-template-columns:repeat(6,1fr);}.bgrid{grid-template-columns:1fr;}.user-chip{max-width:90px;}}\n\n/* icons, emojis, badges */\n.nav-ic{font-size:13px;margin-right:1px;}\n.tile{position:relative;}\n.tile .ic{position:absolute;top:13px;right:14px;font-size:17px;opacity:.9;line-height:1;}\n.bcard .ic{font-style:normal;margin-right:5px;}\n.bcard .n .ic{margin-right:5px;}\n.mbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow-sm);white-space:nowrap;}\n.mbadge.m-new{background:var(--surface-2);color:var(--muted);}\n.mbadge.m-master{background:rgba(185,124,12,.14);color:var(--amber);border-color:rgba(185,124,12,.45);}\n.mbadge.m-strong{background:var(--green-bg);color:var(--green);border-color:var(--green);}\n.mbadge.m-learn{background:rgba(43,92,158,.12);color:var(--blue);border-color:rgba(43,92,158,.4);}\n.mbadge.m-focus{background:var(--red-bg);color:var(--red);border-color:var(--red);}\n.bcard .top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}\n.countbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.countbadge.ok{background:var(--green-bg);color:var(--green);border-color:var(--green);}\n.result-emoji{font-size:46px;line-height:1;margin-bottom:6px;}\n.badge .be{font-size:13px;margin-right:2px;}\n.choice .status{margin-left:auto;font-size:15px;align-self:center;}\n.feedback{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:11px 15px;border-radius:11px;margin-bottom:14px;box-shadow:var(--shadow-sm);}\n.feedback .fe{font-size:18px;}\n.feedback.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}\n.feedback.bad{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.bdrow .nm .ic{margin-right:5px;}\n.mbname .ic{margin-right:4px;}\n.filters a .ic{margin-right:3px;}\n.timer .te{margin-right:3px;}\n\n/* exam trend chart */\n.trend{position:relative;display:flex;align-items:flex-end;gap:6px;height:124px;padding-top:6px;border-bottom:1px solid var(--line);margin-bottom:8px;}\n.trend .tb{flex:1;min-width:7px;border-radius:5px 5px 0 0;box-shadow:var(--shadow-sm);}\n.trend .tb.pass{background:linear-gradient(180deg,#34b277,#1F8A5B);}\n.trend .tb.fail{background:linear-gradient(180deg,#db6060,#C23B3B);}\n.trend .passline{position:absolute;left:0;right:0;border-top:1px dashed var(--muted);opacity:.65;pointer-events:none;}\n.trend .passline span{position:absolute;right:0;top:-8px;font-family:var(--mono);font-size:9px;color:var(--muted);background:var(--paper);padding:0 4px;}\n\n/* cheat sheet */\n.cs-intro{font-size:14px;color:var(--muted);margin-bottom:18px;}\n.cs-group{margin-bottom:22px;}\n.cs-head{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--magenta);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:9px;display:flex;align-items:center;gap:7px;}\n.cs-head .cs-n{margin-left:auto;color:var(--muted);font-size:11px;}\n.cs-list{list-style:none;display:flex;flex-direction:column;gap:7px;}\n.cs-list li{font-size:14px;line-height:1.5;padding-left:18px;position:relative;}\n.cs-list li::before{content:\"\\203A\";position:absolute;left:4px;color:var(--blue);font-weight:700;}\n\n/* print-friendly output (Cmd/Ctrl + P) */\n@media print{\n  body{background:#fff;color:#000;padding:0;}\n  header.top,.note{display:none !important;}\n  .section-title::after{display:none;}\n  .cs-head{color:#000;border-color:#000;}\n  .cs-list li::before{color:#000;}\n  a{color:#000;text-decoration:none;}\n  .qcard,.actioncard,.tile,.bcard{box-shadow:none;}\n}\n\n.r .acs{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;opacity:.72;cursor:help}\n\n</style>\n</head>\n<body class=\"{{ 'dark' if dark else '' }}\">\n<div class=\"wrap\">\n  <header class=\"top\">\n    <div class=\"brand\">\n      <a href=\"{{ url_for('home') }}\" class=\"brand-link\">\n        <span class=\"logo\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 32 32\" width=\"40\" height=\"40\"><defs><linearGradient id=\"logoGrad\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#0284C7\"/><stop offset=\"1\" stop-color=\"#0D9488\"/></linearGradient></defs><rect width=\"32\" height=\"32\" rx=\"8\" fill=\"url(#logoGrad)\"/><g stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\"><line x1=\"16\" y1=\"16\" x2=\"8\" y2=\"8\"/><line x1=\"16\" y1=\"16\" x2=\"24\" y2=\"8\"/><line x1=\"16\" y1=\"16\" x2=\"8\" y2=\"24\"/><line x1=\"16\" y1=\"16\" x2=\"24\" y2=\"24\"/></g><g fill=\"#fff\"><circle cx=\"8\" cy=\"8\" r=\"3\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/><circle cx=\"8\" cy=\"24\" r=\"3\"/><circle cx=\"24\" cy=\"24\" r=\"3\"/><circle cx=\"16\" cy=\"16\" r=\"3.4\"/></g></svg>\n        </span>\n        <span class=\"brand-text\">\n          <h1>Part 107 Ground School</h1>\n          <div class=\"tag\">FAA prep</div>\n        </span>\n      </a>\n    </div>\n    <nav>\n      <a href=\"{{ url_for('home') }}\"><span class=\"nav-ic\">🏠</span> Home</a>\n      <a href=\"{{ url_for('review') }}\"><span class=\"nav-ic\">📚</span> Study list</a>\n      <a href=\"{{ url_for('history') }}\"><span class=\"nav-ic\">📈</span> Progress</a>\n      <a class=\"theme-toggle\" href=\"{{ url_for('toggle_theme') }}\"\n         aria-label=\"{{ 'Switch to light mode' if dark else 'Switch to dark mode' }}\"\n         title=\"{{ 'Light mode' if dark else 'Dark mode' }}\">\n        {% if dark %}\n        <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41\"/></svg>\n        {% else %}\n        <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"/></svg>\n        {% endif %}\n      </a>\n      {% if user %}\n      <span class=\"user-chip\" title=\"{{ user.email }}\">{{ user.email }}</span>\n      <form method=\"post\" action=\"{{ url_for('logout') }}\" style=\"display:inline;margin:0\">\n        <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n        <button type=\"submit\" class=\"linkbtn\">Sign out</button>\n      </form>\n      {% else %}\n      <a href=\"{{ url_for('login') }}\">Sign in</a>\n      {% endif %}\n    </nav>\n  </header>\n  {% block body %}{% endblock %}\n  <div class=\"note\">{% if user %}Signed in as {{ user.email }}. Progress syncs to your account across devices.{% else %}Progress saves on this server for this browser. Sign in to sync across devices.{% endif %}</div>\n</div>\n</body>\n</html>\n", "practice.html": "{% extends \"base.html\" %}\n{% block body %}\n{% if drill_empty %}\n<div class=\"section-title\">🎯 Drill misses</div>\n<div class=\"empty\">🎉 No missed questions{{ ' in this topic' if drill_bucket }} to drill right now. Miss some in practice or the exam and they will collect here for focused drilling.</div>\n<div class=\"center\" style=\"margin-top:8px\"><a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a> <a class=\"btn\" href=\"{{ url_for('practice', bucket='All') }}\">✍️ Practice all</a></div>\n{% else %}\n<div class=\"meta\">\n  <span class=\"l\">{% if mode == 'drill' %}🎯 Drill misses{% elif mode == 'focus' %}🎚️ Focus practice{% else %}✍️ Practice{% endif %}</span>\n  <span class=\"r\">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}{% if q.acs %} &middot; <span class=\"acs\" title=\"{{ acs_tasks[q.acs] }}\">{{ q.acs }}</span>{% endif %}</span>\n</div>\n\n{% if not answered %}\n<form method=\"post\" action=\"{{ url_for('practice_answer') }}\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <input type=\"hidden\" name=\"qid\" value=\"{{ q.id }}\">\n  <input type=\"hidden\" name=\"bucket\" value=\"{{ bucket }}\">\n  <input type=\"hidden\" name=\"mode\" value=\"{{ mode }}\">\n  <input type=\"hidden\" name=\"dbucket\" value=\"{{ drill_bucket or '' }}\">\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <label class=\"choice\">\n      <input type=\"radio\" name=\"choice\" value=\"{{ c.idx }}\" required>\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    </label>\n    {% endfor %}\n  </div>\n  <button type=\"submit\" class=\"btn-primary\">Check answer</button>\n</form>\n{% else %}\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"feedback {{ 'ok' if correct else 'bad' }}\">\n    <span class=\"fe\">{{ '✅' if correct else '❌' }}</span>{{ 'Correct' if correct else 'Not quite' }}\n  </div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <div class=\"choice {{ 'correct' if c.idx == q.a else ('wrong' if c.idx == chosen else 'dim') }}\">\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n      {% if c.idx == q.a %}<span class=\"status\">✅</span>{% elif c.idx == chosen %}<span class=\"status\">❌</span>{% endif %}\n    </div>\n    {% endfor %}\n  </div>\n  <div class=\"explain {{ 'ok' if correct else 'bad' }}\">\n    <span class=\"rl\">{{ '✅ correct &middot; the rule'|safe if correct else '📌 the rule'|safe }}</span>{{ q.e }}\n  </div>\n  <a class=\"btn-primary\" href=\"{% if mode == 'drill' %}{{ url_for('drill', bucket=drill_bucket) }}{% elif mode == 'focus' %}{{ url_for('focus') }}{% else %}{{ url_for('practice', bucket=bucket) }}{% endif %}\">{% if mode == 'drill' %}🎯 Next missed{% elif mode == 'focus' %}🎚️ Next focus{% else %}Next question{% endif %}</a>\n  <div class=\"center\" style=\"margin-top:12px\"><a href=\"{{ url_for('home') }}\" style=\"font-size:13px;color:var(--muted)\">Back to home</a></div>\n{% endif %}\n{% endif %}\n{% endblock %}\n"}'''
 TEMPLATES = json.loads(TEMPLATES_JSON)
 
 ROOT = Path(__file__).resolve().parent
@@ -7231,6 +7327,17 @@ EXAM_BLUEPRINT = {
     "Charts": 0.06,
 }
 CODE_SUBTOPICS = {"METAR", "TAF", "Winds Aloft"}
+
+# ACS task codes (FAA-S-ACS-10B structure) -> human-readable titles, shown next
+# to a question so a learner can map it to the Airman Certification Standards.
+ACS_TASKS = {
+    "UA.I.A": "Regulations - General",
+    "UA.I.B": "Regulations - Operating Rules",
+    "UA.I.C": "Regulations - Remote Pilot Certification",
+    "UA.I.D": "Regulations - Waivers",
+    "UA.I.E": "Regulations - Operations Over People",
+    "UA.I.F": "Regulations - Remote Identification",
+}
 
 # ---- Per-browser progress store (file-based) --------------------------------
 STORE_FILE = ROOT / "progress_store.json"
@@ -7419,6 +7526,7 @@ def soft_count(n):
 def _inject():
     return {"dark": g.record["prefs"].get("dark", False), "user": g.user,
             "icons": BUCKET_ICONS, "mastery": mastery_badge, "soft_count": soft_count,
+            "acs_tasks": ACS_TASKS,
             "csrf_token": session.get("_csrf", "")}
 
 
