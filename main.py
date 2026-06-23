@@ -214,7 +214,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Airspace",
-    "s": "NOTAMs",
+    "s": "NOTAM",
     "q": "Checking NOTAMs before a flight helps a pilot identify:",
     "c": [
       "The drone's battery state",
@@ -656,7 +656,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Night Ops",
+    "s": "Night Operations",
     "q": "Under current Part 107 rules, night operations are permitted when:",
     "c": [
       "A specific Part 107 waiver is obtained from the FAA for every individual night flight",
@@ -721,7 +721,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Moving Vehicle",
+    "s": "Over Vehicles",
     "q": "Operating a small UAS from a moving vehicle under Part 107 is:",
     "c": [
       "Permitted only over sparsely populated areas",
@@ -786,7 +786,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Loading",
-    "s": "Weight Limit",
+    "s": "Maximum Weight",
     "q": "The maximum total weight including payload for Part 107 operation is:",
     "c": [
       "100 lb",
@@ -838,7 +838,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Loading",
-    "s": "Max Weight",
+    "s": "Maximum Weight",
     "q": "Exceeding the manufacturer's maximum takeoff weight is likely to:",
     "c": [
       "Raise the service ceiling the aircraft can safely reach",
@@ -994,7 +994,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Preflight Assessment",
+    "s": "Preflight",
     "q": "Before each Part 107 flight, the remote PIC must assess:",
     "c": [
       "The operating environment, including airspace, weather, and obstacles",
@@ -1449,7 +1449,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Airspace",
-    "s": "NOTAM Source",
+    "s": "NOTAM",
     "q": "Current NOTAMs and TFRs are best checked before flight:",
     "c": [
       "Through an official FAA source such as a preflight briefing or NOTAM search",
@@ -2229,7 +2229,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Crew Coordination",
+    "s": "CRM",
     "q": "Crew resource management for a Part 107 crew mainly involves:",
     "c": [
       "Letting the most senior person decide everything",
@@ -2281,7 +2281,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Preflight Check",
+    "s": "Preflight",
     "q": "A preflight check of the control station should confirm:",
     "c": [
       "Only that the propellers spin freely when the motors are armed",
@@ -3139,7 +3139,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Preflight Check",
+    "s": "Preflight",
     "q": "If a firmware warning appears during preflight, the pilot should:",
     "c": [
       "Ignore it and fly, since firmware warnings are usually harmless",
@@ -3906,7 +3906,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Preflight Check",
+    "s": "Preflight",
     "q": "Before takeoff, a pilot should confirm:",
     "c": [
       "The aircraft's exterior color and paint condition",
@@ -4036,7 +4036,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Decision Making",
+    "s": "ADM",
     "q": "When a pilot is unsure whether a flight is safe or legal, the best choice is to:",
     "c": [
       "Fly and find out",
@@ -5323,7 +5323,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Crew Coordination",
+    "s": "CRM",
     "q": "Effective crew resource management mainly improves what?",
     "c": [
       "Maximum aircraft speed during the cruise portion of flight",
@@ -5336,7 +5336,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Loading",
-    "s": "Max Weight",
+    "s": "Maximum Weight",
     "q": "Part 107 applies to small unmanned aircraft weighing how much?",
     "c": [
       "Less than 100 pounds",
@@ -5453,7 +5453,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Moving Vehicle",
+    "s": "Over Vehicles",
     "q": "Operating a small UAS from a moving vehicle is allowed only under what condition?",
     "c": [
       "Only on private roads",
@@ -5466,7 +5466,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Preflight Assessment",
+    "s": "Preflight",
     "q": "What must the remote PIC do before each flight regarding the aircraft?",
     "c": [
       "Inspect it only once per week, regardless of how often it flies",
@@ -5817,7 +5817,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Night Ops",
+    "s": "Night Operations",
     "q": "To operate at night under Part 107, the aircraft must have what?",
     "c": [
       "No special equipment beyond what daytime operations require",
@@ -6181,7 +6181,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Accident reporting",
+    "s": "Accident Reporting",
     "q": "An sUAS accident must be reported to the FAA if it causes at least serious injury, loss of consciousness, or property damage of more than",
     "c": [
       "$250",
@@ -6194,7 +6194,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Careless operation",
+    "s": "Careless Operation",
     "q": "Operating a small unmanned aircraft in a careless or reckless manner so as to endanger life or property is",
     "c": [
       "prohibited under Part 107",
@@ -6246,7 +6246,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Right of way",
+    "s": "Right-of-Way",
     "q": "Under Part 107, a small unmanned aircraft must yield the right of way to",
     "c": [
       "no other aircraft when in Class G",
@@ -6259,7 +6259,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Visual line of sight",
+    "s": "VLOS",
     "q": "When maintaining visual line of sight, which visual aid is allowed?",
     "c": [
       "First-person-view goggles",
@@ -6272,7 +6272,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Crew",
+    "s": "CRM",
     "q": "Under Part 107, one person acting as remote PIC may operate",
     "c": [
       "any number with a visual observer",
@@ -6285,7 +6285,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Night operations",
+    "s": "Night Operations",
     "q": "To fly at night under Part 107 without a waiver, the aircraft must have anti-collision lighting visible for at least",
     "c": [
       "5 statute miles",
@@ -6298,7 +6298,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Night operations",
+    "s": "Night Operations",
     "q": "In addition to anti-collision lighting, night operations under Part 107 require the remote PIC to have",
     "c": [
       "filed a NOTAM",
@@ -6311,7 +6311,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Over moving vehicles",
+    "s": "Over Vehicles",
     "q": "Sustained flight of an sUAS over a person inside a moving vehicle is allowed only when",
     "c": [
       "the remote pilot has notified the occupants and they have verbally given consent",
@@ -6402,7 +6402,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Weather",
-    "s": "Density altitude",
+    "s": "Density Altitude",
     "q": "High density altitude (hot, high, and humid conditions) affects sUAS performance by",
     "c": [
       "improving lift and thrust",
@@ -6415,7 +6415,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Loading",
-    "s": "Speed limit",
+    "s": "Speed Limit",
     "q": "The maximum groundspeed allowed for a small unmanned aircraft under Part 107 is",
     "c": [
       "57 knots (65 mph)",
@@ -6454,7 +6454,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "A Declaration of Compliance is",
     "c": [
       "an application a pilot files to request a waiver from a specific Part 107 operating rule",
@@ -6467,7 +6467,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "A Category 2 sUAS operated over people must not cause injury on impact exceeding",
     "c": [
       "11 ft-lb of kinetic energy",
@@ -6480,7 +6480,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "A Category 3 sUAS operated over people must not cause injury on impact exceeding",
     "c": [
       "there is no impact limit",
@@ -6493,7 +6493,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "Compared with Category 2, a Category 3 sUAS may NOT",
     "c": [
       "operate over open-air assemblies of people",
@@ -6506,7 +6506,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "To qualify for Category 4 operations over people, a small unmanned aircraft must",
     "c": [
       "carry a deployable parachute system that has been tested and approved by an accredited laboratory",
@@ -6519,7 +6519,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "Operations over people may be conducted at night when",
     "c": [
       "never, because combining night flight with operations over people is always prohibited",
@@ -6584,7 +6584,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Night operations",
+    "s": "Night Operations",
     "q": "The remote PIC may reduce the intensity of the required anti-collision lighting when",
     "c": [
       "the battery is low",
@@ -6610,7 +6610,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Regulations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "An sUAS that meets the requirements of more than one operations-over-people category",
     "c": [
       "must be re-registered for each category",
@@ -6623,7 +6623,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Over people",
+    "s": "Over People",
     "q": "A Category 3 sUAS may operate over people only when",
     "c": [
       "anywhere over moving people if the operation is conducted only during daylight hours",
@@ -6636,7 +6636,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Lost link",
+    "s": "Lost Link",
     "q": "Knowing a small unmanned aircraft's programmed lost-link behavior before flight is important because it lets the remote PIC",
     "c": [
       "fly beyond visual line of sight as long as the link is automatic",
@@ -6727,7 +6727,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "See and avoid",
+    "s": "See and Avoid",
     "q": "To meet see-and-avoid responsibilities, the remote PIC must",
     "c": [
       "rely solely on the aircraft's Remote ID broadcast to detect and avoid other traffic",
@@ -6740,7 +6740,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Crew briefing",
+    "s": "Crew Briefing",
     "q": "Before a crewed operation, briefing the visual observer and any crew on roles and emergency procedures primarily supports",
     "c": [
       "crew resource management and safe coordination",
@@ -6753,7 +6753,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Airspace",
-    "s": "Prohibited area",
+    "s": "Prohibited Area",
     "q": "Operations within a prohibited area are",
     "c": [
       "allowed with a visual observer",
@@ -6883,7 +6883,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Loading",
-    "s": "Max weight",
+    "s": "Maximum Weight",
     "q": "To be operated under Part 107, a small unmanned aircraft must weigh, including everything on board or attached, less than",
     "c": [
       "100 pounds",
@@ -7130,7 +7130,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Carriage of property",
+    "s": "Carriage of Property",
     "q": "Carrying property for compensation under Part 107 is allowed only if",
     "c": [
       "the delivery is flown at night under a waiver, with anti-collision lighting and the payload fully sealed for transport",
@@ -7143,7 +7143,7 @@ QUESTIONS_JSON = r'''[
   },
   {
     "b": "Operations",
-    "s": "Visual observer",
+    "s": "Visual Observer",
     "q": "A visual observer used to satisfy see-and-avoid must",
     "c": [
       "hold a current remote pilot certificate issued under Part 107 rules",
