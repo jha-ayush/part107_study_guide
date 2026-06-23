@@ -55,7 +55,7 @@ Either way, open http://127.0.0.1:8000.
   last-minute review (use Cmd or Ctrl + P).
 
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
-bank currently holds 519 questions. Per-topic mastery badges and a dark mode are
+bank currently holds 550+ questions. Per-topic mastery badges and a dark mode are
 built in.
 
 ## Accounts and progress
