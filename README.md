@@ -59,6 +59,9 @@ Either way, open http://127.0.0.1:8000.
   chart symbology legend (airport, airspace, obstacle, and navigation symbols
   drawn in chart-accurate blue and magenta), print-optimized for
   last-minute review (use Cmd or Ctrl + P).
+- ACS study sheet: a personalized, printable page of your weak FAA ACS tasks
+  and the rules to review under each, built from the questions you have
+  missed and ordered by how often.
 
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
 bank currently holds 560+ questions, each tagged with its FAA ACS task code. Some
@@ -108,6 +111,7 @@ part107_study_guide/
   templates/             Jinja templates
     base.html  home.html  learn.html  practice.html  exam.html
     exam_result.html  review.html  history.html  cheatsheet.html
+    studysheet.html
     login.html  register.html
   static/
     styles.css           styling
