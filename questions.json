@@ -394,12 +394,12 @@
     "s": "Airspace Symbols",
     "q": "Class B airspace on a sectional chart is depicted as:",
     "c": [
-      "Solid magenta concentric circles",
-      "Dashed magenta lines",
-      "Solid blue lines forming shelves, often with blue shading",
-      "Dashed blue circles"
+      "Dashed blue circles drawn around each nearby airport",
+      "Solid magenta concentric circles centered on the primary airport",
+      "Dashed magenta lines surrounding the airport boundary",
+      "Solid blue lines forming shelves, often with blue shading"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Solid blue lines and shading show the upside-down wedding-cake shelf structure of Class B airspace."
   },
   {
@@ -485,12 +485,12 @@
     "s": "TAF",
     "q": "In a TAF, 'FM1800' followed by new conditions means:",
     "c": [
-      "From 1800 local time",
-      "Fog and mist after 1800Z",
+      "From 1800 in the local time of the reporting station",
       "From 1800 UTC, all prior conditions are replaced",
-      "Max visibility 1,800 ft"
+      "Fog and mist are expected after 1800 Zulu time",
+      "Maximum visibility will be about 1,800 feet"
     ],
-    "a": 2,
+    "a": 1,
     "e": "FM gives a time in UTC after which all preceding forecast conditions are fully superseded."
   },
   {
@@ -807,19 +807,6 @@
   },
   {
     "b": "Loading",
-    "s": "Stability",
-    "q": "Unstable air is most likely to produce:",
-    "c": [
-      "Persistent fog",
-      "Smooth, hazy conditions",
-      "Cumuliform clouds, turbulence, and good visibility",
-      "Steady widespread drizzle"
-    ],
-    "a": 2,
-    "e": "Unstable air drives vertical development, so expect cumulus clouds, turbulence, showers, and good visibility."
-  },
-  {
-    "b": "Loading",
     "s": "Weight Distribution",
     "q": "A payload mounted far from the center of a multirotor most likely causes:",
     "c": [
@@ -1070,12 +1057,12 @@
     "s": "Certificate Application",
     "q": "After passing the knowledge test, an applicant obtains the certificate by:",
     "c": [
+      "Waiting two years for the FAA to mail it automatically",
+      "Paying a one-time fee directly to the drone manufacturer",
       "Applying through IACRA and completing TSA security vetting",
-      "Paying a fee to the manufacturer",
-      "Registering the drone only",
-      "Waiting two years"
+      "Registering the drone, which automatically issues the certificate"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The applicant files through IACRA, and after TSA vetting receives a temporary then a permanent remote pilot certificate."
   },
   {
@@ -1135,12 +1122,12 @@
     "s": "Falsification",
     "q": "Falsifying any record or report required under Part 107 is:",
     "c": [
+      "Permitted for minor clerical errors that are later corrected",
+      "Allowed as long as the falsification was not intentional",
       "Prohibited and grounds for certificate action or penalties",
-      "Permitted for minor errors",
-      "Allowed if unintentional",
-      "Only a concern for manned pilots"
+      "Only a concern for manned pilots, not remote pilots"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Making a fraudulent or false record or report is prohibited and can result in suspension, revocation, or penalties."
   },
   {
@@ -1421,10 +1408,10 @@
     "s": "Time",
     "q": "Aviation weather reports and NOTAMs state time in:",
     "c": [
-      "Eastern time",
+      "The aircraft's local time at its current position",
       "Coordinated Universal Time, marked with a Z",
-      "Local time only",
-      "Aircraft local time"
+      "Eastern time, regardless of the station location",
+      "Local time only, set to the reporting station"
     ],
     "a": 1,
     "e": "Aviation uses Coordinated Universal Time, written with a Z, so reports are unambiguous across time zones."
@@ -1707,12 +1694,12 @@
     "s": "Elevation",
     "q": "The Maximum Elevation Figure in a chart quadrangle is found by taking the highest obstacle or terrain and:",
     "c": [
-      "Subtracting the airport elevation",
       "Adding a buffer, then rounding up to the next hundred feet",
-      "Dividing by two",
-      "Converting to nautical miles"
+      "Subtracting the nearest airport's published field elevation",
+      "Converting the height from feet into nautical miles",
+      "Dividing the result by two to allow for a safety margin"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The MEF is the highest terrain or obstacle in the quadrangle plus a buffer, in hundreds of feet MSL."
   },
   {
@@ -1942,9 +1929,9 @@
     "q": "In the Northern Hemisphere, a high-pressure system is generally associated with:",
     "c": [
       "Descending air, fair weather, and lighter winds",
-      "Continuous heavy rain",
-      "Tornado formation",
-      "Rising air and storms"
+      "Continuous heavy rain over a wide area for several days",
+      "Rising air, building clouds, and frequent storms",
+      "Tornado formation along a fast-moving squall line"
     ],
     "a": 0,
     "e": "High pressure brings sinking air and fair weather; low pressure brings clouds and precipitation."
@@ -1980,12 +1967,12 @@
     "s": "Turbulence",
     "q": "Mechanical turbulence near the ground is commonly caused by:",
     "c": [
+      "A temperature inversion acting entirely on its own",
+      "Unusually high visibility on a clear and perfectly calm day",
       "Wind flowing around buildings, terrain, and obstacles",
-      "High visibility",
-      "A temperature inversion alone",
-      "Calm, stable air"
+      "Calm, stable air with very little surface wind"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Air flowing over and around obstructions breaks into eddies, producing mechanical turbulence near the surface."
   },
   {
@@ -1994,9 +1981,9 @@
     "q": "A sea breeze along a coastline on a sunny afternoon generally flows:",
     "c": [
       "From the cooler water toward the warmer land",
-      "Straight down",
-      "From land out to sea",
-      "Only at night"
+      "Straight down from the clouds toward the surface",
+      "Only at night, after the land has fully cooled",
+      "From the warmer land outward toward the open sea"
     ],
     "a": 0,
     "e": "Daytime heating of land draws cooler air in from the water, creating an onshore sea breeze."
@@ -2032,10 +2019,10 @@
     "s": "VLOS",
     "q": "Visual line of sight under Part 107 must be maintained:",
     "c": [
-      "Using binoculars to extend range",
+      "Through the aircraft's onboard camera and video feed",
       "With unaided vision, though corrective lenses are allowed",
-      "Through the aircraft camera feed",
-      "Only at takeoff and landing"
+      "Using binoculars or a spotting scope to extend the visual range farther out",
+      "Only during takeoff and landing, not during cruise"
     ],
     "a": 1,
     "e": "VLOS must be kept with natural vision, with glasses or contacts permitted, but not binoculars or a camera feed."
@@ -2097,12 +2084,12 @@
     "s": "Open-Air Assembly",
     "q": "Sustained flight over an open-air assembly of people requires the aircraft to:",
     "c": [
-      "Fly only at civil twilight",
-      "Weigh over 5 lb",
-      "Stay under 100 ft",
-      "Meet an operational category and broadcast Remote ID"
+      "Meet an operational category and broadcast Remote ID",
+      "Fly only at civil twilight, when fewer people are present below",
+      "Weigh over 5 lb so it can carry the required safety equipment",
+      "Stay under 100 feet above the assembly at all times"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Flight over open-air assemblies requires meeting Category 1 through 3 conditions and broadcasting Remote ID."
   },
   {
@@ -2565,9 +2552,9 @@
     "s": "Payload Drag",
     "q": "Mounting a bulky payload that disturbs airflow will most likely:",
     "c": [
-      "Increase the service ceiling",
-      "Reduce drag and save power",
-      "Improve battery health",
+      "Improve the long-term health of the flight battery",
+      "Reduce drag and noticeably save battery power in cruise",
+      "Increase the service ceiling that the aircraft can safely reach",
       "Add drag, increasing power use and reducing endurance"
     ],
     "a": 3,
@@ -2630,12 +2617,12 @@
     "s": "Endurance Planning",
     "q": "When carrying a payload, a pilot should plan for:",
     "c": [
-      "No change to endurance",
-      "Unlimited hover time",
-      "Longer flight time than usual",
-      "Reduced flight time and a battery reserve for landing"
+      "No change at all to endurance, since the motors compensate",
+      "Reduced flight time and a battery reserve for landing",
+      "Unlimited hover time as long as the wind stays calm",
+      "Longer flight time than usual because of the added mass"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Payload cuts endurance, so plan a shorter mission and keep a battery reserve to land safely."
   },
   {
@@ -2825,12 +2812,12 @@
     "s": "Center of Gravity",
     "q": "Mounting a camera well forward of a drone's center will:",
     "c": [
-      "Have no effect on balance",
-      "Raise the legal weight limit",
-      "Shift the center of gravity and change how it handles",
-      "Improve battery life"
+      "Improve battery life by streamlining the airframe",
+      "Raise the legal maximum takeoff weight for the aircraft",
+      "Have no measurable effect on the aircraft's balance in flight",
+      "Shift the center of gravity and change how it handles"
     ],
-    "a": 2,
+    "a": 3,
     "e": "An off-center payload moves the center of gravity and alters handling."
   },
   {
@@ -2852,9 +2839,9 @@
     "q": "A drone rated to 4 lb is fitted with a 1.5 lb payload, reaching 5 lb. The pilot should:",
     "c": [
       "Treat it as overloaded and expect degraded performance",
-      "Assume performance is unchanged",
-      "Ignore the rating",
-      "Expect longer flight time"
+      "Assume performance is unchanged since 5 lb is still light",
+      "Expect longer flight time from the added battery mass",
+      "Ignore the manufacturer rating, which is only a suggestion"
     ],
     "a": 0,
     "e": "Exceeding the rated weight degrades climb and handling, so stay within the limit."
@@ -3293,12 +3280,12 @@
     "s": "Ceiling",
     "q": "A report shows 'SCT004 BKN008 OVC020'. The ceiling is:",
     "c": [
-      "800 ft, the lowest broken or overcast layer",
-      "400 ft",
-      "There is no ceiling",
-      "2,000 ft"
+      "2,000 ft, the height of the overcast layer above",
+      "There is no ceiling because the layers are broken",
+      "400 ft, the height of the lowest scattered layer",
+      "800 ft, the lowest broken or overcast layer"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The ceiling is the lowest broken or overcast layer, so BKN008 sets it at 800 ft."
   },
   {
@@ -3449,12 +3436,12 @@
     "s": "Special Use",
     "q": "A charted glider operations area tells a Part 107 pilot to:",
     "c": [
+      "Treat the area as Class C airspace requiring authorization",
       "Watch for gliders, which can be quiet and hard to see",
-      "Avoid the area entirely",
-      "Treat it as Class C",
-      "Expect only powered aircraft"
+      "Avoid the entire area, which is closed to all unmanned aircraft",
+      "Expect only powered aircraft to be operating there"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Glider areas warn of quiet, hard-to-see traffic, so stay especially vigilant."
   },
   {
@@ -3475,10 +3462,10 @@
     "s": "Special Use",
     "q": "A blue boundary around a national park or wildlife refuge asks pilots to:",
     "c": [
-      "Obtain a TFR",
+      "Treat the entire area as prohibited airspace at all times",
       "Maintain a higher altitude and avoid disturbing the area",
-      "Treat it as prohibited airspace",
-      "Land and check in"
+      "Obtain a Temporary Flight Restriction from the FAA before entering",
+      "Land inside the boundary and check in with a ranger"
     ],
     "a": 1,
     "e": "These advisory boundaries request higher flight to avoid disturbing wildlife and visitors."
@@ -3982,10 +3969,10 @@
     "s": "Preflight Check",
     "q": "Before takeoff, a pilot should confirm:",
     "c": [
-      "Only that the props spin",
+      "The aircraft's exterior color and paint condition",
       "A solid GPS lock and that the home point is set",
-      "The aircraft's color",
-      "The client's schedule"
+      "The client's schedule for the rest of the day",
+      "Only that the propellers spin freely when the motors arm"
     ],
     "a": 1,
     "e": "Confirming GPS lock and a set home point ensures features like return-to-home will work."
@@ -4502,12 +4489,12 @@
     "s": "Recreational Exception",
     "q": "The limited recreational exception may not be used to:",
     "c": [
-      "Fly in Class G",
-      "Fly under 400 ft",
       "Conduct commercial or compensated flights",
-      "Fly during the day"
+      "Fly during daylight hours in good clear weather",
+      "Fly under 400 feet above the ground at any time",
+      "Fly in uncontrolled Class G airspace below 400 feet"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The recreational exception is for hobby flying only and cannot cover commercial operations."
   },
   {
@@ -4658,12 +4645,12 @@
     "s": "Hazards",
     "q": "Standing lenticular clouds near mountains warn of:",
     "c": [
+      "Fog forming in the valleys below the peaks",
       "Mountain wave activity and turbulence",
-      "Fog forming",
-      "Calm air",
-      "A warm front"
+      "Calm, smooth air on the downwind side of the range",
+      "An approaching warm front with steady rain"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Smooth lens-shaped lenticular clouds mark mountain wave activity and the turbulence around it."
   },
   {
@@ -4840,12 +4827,12 @@
     "s": "Landmarks",
     "q": "Roads, railroads, and rivers on a sectional are useful as:",
     "c": [
-      "Visual landmarks for navigation and position",
-      "Obstacle heights",
-      "Wind indicators",
-      "Airspace boundaries"
+      "Reliable indicators of the surface wind direction",
+      "Indicators of the height of nearby charted obstacles",
+      "Boundaries that mark where airspace classes change",
+      "Visual landmarks for navigation and position"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Linear features like roads and rivers serve as visual checkpoints for navigation."
   },
   {
@@ -4957,12 +4944,12 @@
     "s": "Landmarks",
     "q": "Prominent features like water tanks and stadiums are charted because they:",
     "c": [
+      "Reliably indicate the wind direction at the surface",
+      "Mark the locations of approved aircraft fuel stops",
       "Serve as visual landmarks and may be obstacles",
-      "Show wind direction",
-      "Indicate airspace class",
-      "Mark fuel stops"
+      "Indicate the class of airspace overlying the area"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Distinctive structures help with visual navigation and can also be flight obstacles."
   },
   {
@@ -4983,12 +4970,12 @@
     "s": "Navigation",
     "q": "Converting a true course to a magnetic course requires applying:",
     "c": [
-      "The airport elevation",
-      "The magnetic variation shown by isogonic lines",
-      "The MEF",
-      "The wind speed"
+      "The forecast wind speed and direction along the route",
+      "The airport elevation read from the nearest data block",
+      "The Maximum Elevation Figure for that chart quadrangle",
+      "The magnetic variation shown by isogonic lines"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Magnetic variation, read from isogonic lines, converts between true and magnetic course."
   },
   {
@@ -5269,9 +5256,9 @@
     "s": "LAANC",
     "q": "Through LAANC, a remote pilot can receive authorization to fly up to what altitude?",
     "c": [
-      "Unlimited altitude",
-      "1,200 ft AGL everywhere",
-      "Always 400 ft anywhere",
+      "Always 400 feet AGL, anywhere in controlled airspace",
+      "1,200 feet AGL everywhere within controlled airspace",
+      "Unlimited altitude, as long as it stays clear of clouds",
       "The ceiling shown on the UAS Facility Map grid"
     ],
     "a": 3,
@@ -5474,19 +5461,6 @@
   },
   {
     "b": "Operations",
-    "s": "Visual Observer",
-    "q": "What is the primary role of a visual observer?",
-    "c": [
-      "Replace the remote PIC",
-      "Help keep the aircraft in sight and scan for hazards",
-      "File the flight plan",
-      "Operate the flight controls"
-    ],
-    "a": 1,
-    "e": "A visual observer helps the remote PIC keep visual line of sight and see and avoid hazards."
-  },
-  {
-    "b": "Operations",
     "s": "Hazardous Attitudes",
     "q": "The thought 'the rules do not apply to me' reflects which hazardous attitude?",
     "c": [
@@ -5523,19 +5497,6 @@
     ],
     "a": 1,
     "e": "Crew resource management focuses on clear communication and distributing workload to reduce error."
-  },
-  {
-    "b": "Loading",
-    "s": "Center of Gravity",
-    "q": "Mounting a heavy payload far from the airframe center will do what?",
-    "c": [
-      "Shift the center of gravity and degrade stability",
-      "Have no effect on handling",
-      "Improve range",
-      "Increase battery capacity"
-    ],
-    "a": 0,
-    "e": "An off-center payload shifts the center of gravity, which can degrade stability and control."
   },
   {
     "b": "Loading",
@@ -5783,19 +5744,6 @@
     ],
     "a": 3,
     "e": "MOAs are shown on sectionals with a magenta hatched boundary."
-  },
-  {
-    "b": "Airspace",
-    "s": "Prohibited Area",
-    "q": "What is true of a Prohibited Area such as P-40?",
-    "c": [
-      "Flight is allowed below 400 ft",
-      "Flight is allowed only at night",
-      "Flight is not allowed for national security or welfare",
-      "Flight is allowed with LAANC"
-    ],
-    "a": 2,
-    "e": "Flight within a Prohibited Area is not permitted because of national security or welfare concerns."
   },
   {
     "b": "Airspace",
@@ -6124,19 +6072,6 @@
   },
   {
     "b": "Loading",
-    "s": "Center of Gravity",
-    "q": "What happens when the center of gravity is outside the aircraft's limits?",
-    "c": [
-      "GPS lock improves",
-      "Video resolution increases",
-      "Flight time increases",
-      "The aircraft is harder to control and less stable"
-    ],
-    "a": 3,
-    "e": "A center of gravity outside limits makes the aircraft harder to control and less stable."
-  },
-  {
-    "b": "Loading",
     "s": "Securing Payload",
     "q": "When mounting an external camera or gimbal, what should you do?",
     "c": [
@@ -6254,19 +6189,6 @@
   },
   {
     "b": "Regulations",
-    "s": "Certificate Validity",
-    "q": "What is true about a remote pilot certificate?",
-    "c": [
-      "It expires after 2 years and becomes void",
-      "It does not expire but requires recurrent training to stay current",
-      "It is valid for life with no requirements",
-      "It must be renewed yearly for a fee"
-    ],
-    "a": 1,
-    "e": "The certificate itself does not expire, but you must complete recurrent training every 24 months to keep exercising its privileges."
-  },
-  {
-    "b": "Regulations",
     "s": "Operating Limitations",
     "q": "What must the remote PIC maintain with the aircraft throughout the flight?",
     "c": [
@@ -6293,19 +6215,6 @@
   },
   {
     "b": "Airspace",
-    "s": "NOTAMs",
-    "q": "What is a NOTAM?",
-    "c": [
-      "A weather forecast product",
-      "A notice of time-critical aeronautical information",
-      "A class of airspace",
-      "A chart symbol"
-    ],
-    "a": 1,
-    "e": "A NOTAM, or Notice to Air Missions, provides time-critical information not known early enough to publish on charts."
-  },
-  {
-    "b": "Airspace",
     "s": "Stadium TFR",
     "q": "Near a large sporting event, flight is restricted within what area?",
     "c": [
@@ -6329,19 +6238,6 @@
     ],
     "a": 3,
     "e": "The Washington, DC area is a Special Flight Rules Area where drone flight is heavily restricted or prohibited."
-  },
-  {
-    "b": "Airspace",
-    "s": "UAS Facility Map",
-    "q": "What does a 0 ft grid on the UAS Facility Map mean?",
-    "c": [
-      "You may fly to 400 ft freely",
-      "The area is uncontrolled Class G",
-      "LAANC will not auto-approve; a manual request is required",
-      "Flight is permanently prohibited"
-    ],
-    "a": 2,
-    "e": "A 0 ft grid means LAANC will not automatically authorize flight, so a manual DroneZone request is required."
   },
   {
     "b": "Charts",
@@ -6517,12 +6413,12 @@
     "s": "Go No-Go",
     "q": "When should a go/no-go decision be made?",
     "c": [
-      "Only if the client requests it",
-      "After takeoff",
-      "Only once per month",
-      "Before each flight, based on conditions and readiness"
+      "After takeoff, once the aircraft is already in the air",
+      "Only once per month, covering all flights in that period",
+      "Before each flight, based on conditions and readiness",
+      "Only when the client specifically asks for one to be made"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Make a go/no-go decision before every flight based on weather, aircraft, and pilot readiness."
   },
   {
@@ -6842,12 +6738,12 @@
     "s": "Remote ID",
     "q": "Since September 2023, a drone that requires FAA registration generally must also",
     "c": [
-      "carry a transponder",
-      "be flown only in Class G airspace",
       "broadcast Remote ID information unless flown within a FRIA",
-      "file a flight plan"
+      "file a flight plan with air traffic control before each flight",
+      "be flown only in uncontrolled Class G airspace below 400 feet",
+      "carry a working transponder that reports its position to ATC"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Registered drones must broadcast Remote ID unless operated within an FAA-recognized identification area (FRIA)."
   },
   {
@@ -7219,12 +7115,12 @@
     "s": "Over people",
     "q": "Compared with Category 2, a Category 3 sUAS may NOT",
     "c": [
-      "fly at night",
-      "be registered",
       "operate over open-air assemblies of people",
-      "broadcast Remote ID"
+      "broadcast Remote ID using a standard onboard module",
+      "fly at night, even with the required anti-collision lighting",
+      "be registered with the FAA under the usual process"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Category 3 operations may not be conducted over open-air assemblies of people."
   },
   {
@@ -7271,12 +7167,12 @@
     "s": "Remote ID",
     "q": "The three ways to meet the Remote ID requirement are a standard Remote ID drone, a broadcast module, or",
     "c": [
+      "holding a Category 4 airworthiness certificate for the aircraft",
+      "filing a flight plan with the FAA before each individual flight",
       "operating within an FAA-Recognized Identification Area (FRIA)",
-      "a transponder",
-      "filing a flight plan",
-      "a Category 4 airworthiness certificate"
+      "carrying a working transponder that reports to air traffic control"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Remote ID is met with a standard Remote ID drone, a broadcast module, or by operating within a FRIA."
   },
   {
@@ -7713,12 +7609,12 @@
     "s": "Registration",
     "q": "After registering a drone for Part 107 use, the owner must",
     "c": [
+      "re-register the aircraft with the FAA before each and every flight made",
       "mark it with the registration number, legible and accessible",
-      "carry the registration only at night",
-      "paint it a bright color",
-      "re-register before every flight"
+      "carry the paper registration only when flying at night",
+      "paint the aircraft a bright, highly visible color"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The registration number must be marked on the aircraft, legible and accessible for inspection."
   },
   {
@@ -7726,12 +7622,12 @@
     "s": "Certificate",
     "q": "While exercising the privileges of the certificate, the remote pilot must keep the remote pilot certificate",
     "c": [
-      "at home for safekeeping",
-      "in physical possession or immediately accessible",
-      "on file with the FAA only",
-      "posted at the launch site"
+      "on file with the FAA only, not on the operator",
+      "posted in a visible spot at the launch site",
+      "at home in a safe place for secure long-term storage",
+      "in physical possession or immediately accessible"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The remote pilot certificate must be in the pilot's physical possession or immediately accessible during operations."
   },
   {
@@ -7772,19 +7668,6 @@
     ],
     "a": 2,
     "e": "Cold temperatures reduce a battery's usable capacity, shortening flight time."
-  },
-  {
-    "b": "Loading",
-    "s": "Density altitude",
-    "q": "On a hot day at a high-elevation site, high density altitude will",
-    "c": [
-      "reduce performance and the weight the aircraft can safely carry",
-      "have no effect on an electric drone",
-      "increase the aircraft's payload capacity",
-      "increase maximum altitude"
-    ],
-    "a": 0,
-    "e": "High density altitude reduces performance and the payload an aircraft can safely carry."
   },
   {
     "b": "Loading",
