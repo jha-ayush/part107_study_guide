@@ -602,14 +602,25 @@ def exam_submit():
     missed = []
     for b in BUCKETS:
         items = [{"q_html": q_html(q), "letter": LETTERS[q["a"]],
-                  "answer": q["c"][q["a"]], "e": q["e"]}
+                  "answer": q["c"][q["a"]], "e": q["e"], "acs": q.get("acs")}
                  for q in missed_now if q["b"] == b]
         if items:
             missed.append({"name": b, "qs": items})
+    # ACS tasks to study from this exam, mirroring the FAA Knowledge Test Report.
+    acs_counts = {}
+    for q in missed_now:
+        code = q.get("acs")
+        if code:
+            acs_counts[code] = acs_counts.get(code, 0) + 1
+    acs_summary = sorted(
+        ({"code": c, "title": ACS_TASKS.get(c, c), "n": n}
+         for c, n in acs_counts.items()),
+        key=lambda x: (-x["n"], x["code"]))
     return render_template("exam_result.html", pct=pct, passed=passed, correct=correct,
                            total=total, time_used=mmss(elapsed), exam_pass=EXAM_PASS,
                            experimental=EXAM_EXPERIMENTAL,
-                           pass_color=color_for(pct), by_bucket=by_bucket, missed=missed)
+                           pass_color=color_for(pct), by_bucket=by_bucket, missed=missed,
+                           acs_summary=acs_summary)
 
 
 @app.route("/review")
