@@ -115,6 +115,9 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Added a chart-reading practice filter (/practice?figures=1, linked
+  from the home screen and the cheat sheet legend) that serves only the
+  sectional-figure questions, for focused chart-reading practice.
 - June 2026: Added a personalized ACS study sheet (/studysheet, linked from the
   review screen and home). It groups the questions you have missed by FAA ACS
   task, ordered by miss count, and lists the rules to review under each, in a
