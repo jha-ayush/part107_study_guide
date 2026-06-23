@@ -17,7 +17,7 @@
   <input type="hidden" name="bucket" value="{{ bucket }}">
   <input type="hidden" name="mode" value="{{ mode }}">
   <input type="hidden" name="dbucket" value="{{ drill_bucket or '' }}">
-  <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+  {% if q.fig %}<div class="figbox">{{ figures[q.fig]|safe }}</div>{% endif %}<div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
   <div class="choices">
     {% for c in choices %}
     <label class="choice">
@@ -29,7 +29,7 @@
   <button type="submit" class="btn-primary">Check answer</button>
 </form>
 {% else %}
-  <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+  {% if q.fig %}<div class="figbox">{{ figures[q.fig]|safe }}</div>{% endif %}<div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
   <div class="feedback {{ 'ok' if correct else 'bad' }}">
     <span class="fe">{{ '✅' if correct else '❌' }}</span>{{ 'Correct' if correct else 'Not quite' }}
   </div>
