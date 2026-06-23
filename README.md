@@ -50,7 +50,8 @@ Either way, open http://127.0.0.1:8000.
   experimental, mirroring the real test), 120-minute limit, 70 percent of the
   scored questions to pass. Questions are drawn in FAA ACS topic proportions
   (Operations and Regulations weighted heaviest), with a question palette,
-  previous/next, a by-topic breakdown, and a missed list.
+  previous/next, a by-topic breakdown, and a missed list. After grading, the result breaks your
+  misses down by FAA ACS task, the way the real Knowledge Test Report does.
 - Study list: every missed question grouped by topic, with lifetime accuracy.
 - Progress: an exam history page with a readiness verdict, best score, recent
   average, pass rate, and a score-trend chart with the pass line drawn in.
