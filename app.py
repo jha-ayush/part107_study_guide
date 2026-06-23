@@ -348,7 +348,12 @@ def home():
 @app.route("/practice")
 def practice():
     bucket = request.args.get("bucket", "All")
-    pool = QUESTIONS if bucket == "All" else [q for q in QUESTIONS if q["b"] == bucket]
+    figonly = request.args.get("figures")
+    if figonly:
+        pool = [q for q in QUESTIONS if q.get("fig")]
+        bucket = "All"
+    else:
+        pool = QUESTIONS if bucket == "All" else [q for q in QUESTIONS if q["b"] == bucket]
     if not pool:
         return redirect(url_for("home"))
     q = random.choice(pool)
@@ -356,7 +361,7 @@ def practice():
     random.shuffle(order)
     return render_template("practice.html", answered=False, mode="practice",
                            drill_bucket=None, q={**q, "q_html": q_html(q)},
-                           choices=shuffled(order, q), bucket=bucket)
+                           choices=shuffled(order, q), bucket=bucket, figures=figonly)
 
 
 @app.route("/drill")
@@ -449,6 +454,7 @@ def practice_answer():
     bucket = request.form.get("bucket", "All")
     mode = request.form.get("mode", "practice")
     dbucket = request.form.get("dbucket") or None
+    figures = request.form.get("figures") or None
     chosen = int(request.form.get("choice", -1))
     if not (0 <= qid < len(QUESTIONS)):
         return redirect(url_for("home"))
@@ -459,7 +465,8 @@ def practice_answer():
     choices = [{"idx": i, "letter": LETTERS[i], "text": q["c"][i]} for i in range(len(q["c"]))]
     return render_template("practice.html", answered=True, mode=mode, drill_bucket=dbucket,
                            q={**q, "q_html": q_html(q)},
-                           choices=choices, chosen=chosen, correct=correct, bucket=bucket)
+                           choices=choices, chosen=chosen, correct=correct, bucket=bucket,
+                           figures=figures)
 
 
 def _bucket_index():
