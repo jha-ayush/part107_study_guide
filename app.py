@@ -656,6 +656,32 @@ def review():
                            bucket_names=BUCKETS, active_bucket=active)
 
 
+@app.route("/studysheet")
+def studysheet():
+    """A personalized, printable sheet of weak ACS tasks and the rules to study."""
+    rec = g.record
+    by_task = {}
+    for qid_str, misses in rec["missed"].items():
+        q = QUESTIONS[int(qid_str)]
+        code = q.get("acs") or "Other"
+        t = by_task.get(code)
+        if t is None:
+            t = by_task[code] = {"code": code, "title": ACS_TASKS.get(code, "Other"),
+                                 "misses": 0, "qcount": 0, "rules": [], "_seen": set()}
+        t["misses"] += misses
+        t["qcount"] += 1
+        e = q["e"].strip()
+        if e and e not in t["_seen"]:
+            t["_seen"].add(e)
+            t["rules"].append(e)
+    tasks = sorted(by_task.values(), key=lambda x: (-x["misses"], x["code"]))
+    for t in tasks:
+        t.pop("_seen", None)
+    return render_template("studysheet.html", tasks=tasks,
+                           total_missed=len(rec["missed"]),
+                           generated=time.strftime("%b %d, %Y"))
+
+
 def _nice_date(iso):
     try:
         return time.strftime("%b %d \u00b7 %H:%M", time.strptime(iso, "%Y-%m-%dT%H:%M:%S"))
