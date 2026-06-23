@@ -102,10 +102,22 @@ Process for a new batch:
 - Deduplicate against existing question text (normalized, case-insensitive).
 - Randomize the correct-answer position so answers are not clustered at one
   index, then confirm the answer-index distribution stays roughly even.
+- Balance choice lengths. The correct answer must not be the single longest
+  choice. Distractors should be plausible, clearly incorrect, and comparable in
+  length to the correct answer, so an item tests knowledge rather than letting a
+  test-taker pick the longest option. The real FAA test uses length-balanced
+  choices, so a bank that does not will train the wrong habit.
 - Validate the schema and re-run the app to confirm the home counts, study
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Quality pass. Removed 5 duplicate questions (the bank went from
+  636 to 631). Began a length-balance remediation: an audit found the correct
+  answer was the single longest choice in about 80 percent of items (chance is
+  about 25 percent), which lets a test-taker game the bank by length. The first
+  batch of 18 worst offenders had their distractors rewritten to plausible,
+  clearly incorrect, comparable-length answers so the correct answer is no
+  longer a length giveaway. Remediation continues in further batches.
 - June 2026: Added a batch focused on loading and performance (maximum
   gross weight, weight and density-altitude effects, battery and
   temperature, propeller condition, center-of-gravity distribution) and
