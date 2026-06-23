@@ -46,6 +46,8 @@ These post-2021 and later changes are reflected throughout the bank:
   an FAA-Recognized Identification Area (FRIA).
 - Controlled airspace access is via prior authorization, typically through
   LAANC, bounded by the ceilings on the UAS Facility Maps.
+- Under Part 107, every drone is registered individually regardless of weight;
+  the 0.55 lb (250 g) threshold applies only to the recreational exception.
 
 Not yet incorporated as tested rules: BVLOS under the proposed Part 108, which
 was still in rulemaking as of this review and is therefore treated only as a
@@ -115,6 +117,12 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Currency review against FAA sources. Confirmed the baseline is
+  current (night without waiver, free online recurrent training, Remote ID,
+  operations over people, LAANC) and that FAA-S-ACS-10B is still the operative
+  ACS in 2026. Corrected one registration question that had applied the
+  recreational 0.55 lb threshold to Part 107; under Part 107 all drones are
+  registered regardless of weight.
 - June 2026: Added a chart-reading practice filter (/practice?figures=1, linked
   from the home screen and the cheat sheet legend) that serves only the
   sectional-figure questions, for focused chart-reading practice.
@@ -146,10 +154,9 @@ Process for a new batch:
   Performance), shown next to each question during practice with
   the task title on hover, so a learner can map a question to the ACS task to
   study, the way the FAA Knowledge Test Report points to deficient codes. Note:
-  FAA-S-ACS-10B was marked obsolete in August 2025 pending a refreshed ACS; the
-  topics and the area/task code structure are unchanged, so task-level codes
-  remain valid, but element-level codes (the K-numbers) are deferred until the
-  updated document is published. A few questions filed under one topic test
+  FAA-S-ACS-10B remains the operative Remote Pilot ACS in 2026, with its area
+  and task structure unchanged, so the task-level codes used here are current;
+  element-level codes (the K-numbers) are not tagged. A few questions filed under one topic test
   another area (a speed or altitude limit is a Regulations operating limitation)
   and were coded to their true area. All 548 questions now carry an ACS task
   code, shown during practice with the task title on hover.
