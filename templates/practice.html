@@ -7,7 +7,7 @@
 {% else %}
 <div class="meta">
   <span class="l">{% if mode == 'drill' %}🎯 Drill misses{% elif mode == 'focus' %}🎚️ Focus practice{% else %}✍️ Practice{% endif %}</span>
-  <span class="r">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}</span>
+  <span class="r">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}{% if q.acs %} &middot; <span class="acs" title="{{ acs_tasks[q.acs] }}">{{ q.acs }}</span>{% endif %}</span>
 </div>
 
 {% if not answered %}
