@@ -60,8 +60,10 @@ Either way, open http://127.0.0.1:8000.
   last-minute review (use Cmd or Ctrl + P).
 
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
-bank currently holds 540+ questions. Per-topic mastery badges and a dark mode are
-built in.
+bank currently holds 550+ questions, each tagged with its FAA ACS task code. Some
+chart questions include an original sectional-excerpt figure to read, and the
+cheat sheet carries a visual symbology legend. Per-topic mastery badges and a
+dark mode are built in.
 
 ## Content currency
 
@@ -118,13 +120,17 @@ Open `questions.json`. Each entry:
 
 ```
 { "b": "Weather", "s": "METAR", "q": "Question text",
-  "c": ["A", "B", "C", "D"], "a": 1, "e": "The rule." }
+  "c": ["A", "B", "C", "D"], "a": 1, "e": "The rule.",
+  "acs": "UA.III.A", "fig": "sectional_poc_1" }
 ```
 
 `b` is the bucket (Regulations, Airspace, Charts, Weather, Operations, Loading),
 `s` a subtopic, `c` the four choices, `a` the index of the correct choice (0 to
-3), `e` the one-sentence rule. Restart the server to load changes. The exam size,
-pass mark, and time limit are constants near the top of `app.py`.
+3), `e` the one-sentence rule. `acs` (optional) is the FAA ACS task code shown
+with the question and on the review screen. `fig` (optional) names an entry in the
+`FIGURES` registry in `app.py`, an original SVG sectional excerpt rendered above
+the question. Restart the server to load changes. The exam size, pass mark, and
+time limit are constants near the top of `app.py`.
 
 After editing the multi-file version, regenerate `main.py` if you want the
 single-file build to match, or just edit the one you use.
