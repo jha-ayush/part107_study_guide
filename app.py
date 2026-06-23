@@ -116,6 +116,15 @@ ACS_TASKS = {
     "UA.V.F": "Operations - Maintenance and Inspection Procedures",
 }
 
+# Figure registry for chart-reading questions. A question with a "fig" key
+# renders the matching original SVG sectional excerpt above its text. Several
+# questions can share one figure. These are study aids, not for navigation.
+FIGURES = {
+    "sectional_poc_1": (
+        '<svg viewBox="0 0 660 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Practice sectional chart excerpt"><rect width="660" height="400" fill="#FAF8F2"/><g stroke="#E7E0CF" stroke-width="1"><line x1="0" y1="133" x2="660" y2="133"/><line x1="0" y1="266" x2="660" y2="266"/><line x1="220" y1="0" x2="220" y2="400"/><line x1="440" y1="0" x2="440" y2="400"/></g><text x="556" y="80" font-family="monospace" font-weight="800" font-size="34" fill="#6b6450">2</text><text x="582" y="62" font-family="monospace" font-weight="800" font-size="20" fill="#6b6450">5</text><circle cx="180" cy="212" r="82" fill="none" stroke="#2E5AAC" stroke-width="2" stroke-dasharray="9 6"/><rect x="163" y="116" width="34" height="22" fill="#FAF8F2" stroke="#2E5AAC" stroke-width="1.4" stroke-dasharray="4 3"/><text x="180" y="132" font-family="monospace" font-weight="700" font-size="13" fill="#2E5AAC" text-anchor="middle">25</text><g fill="none" stroke="#2E5AAC" stroke-width="2.4"><circle cx="180" cy="212" r="13"/></g><g stroke="#2E5AAC" stroke-width="2.6" stroke-linecap="round"><line x1="169" y1="212" x2="191" y2="212"/><line x1="173" y1="203" x2="187" y2="221"/></g><circle cx="146" cy="240" r="12" fill="#1c2733"/><text x="146" y="245" font-family="sans-serif" font-weight="700" font-size="14" fill="#fff" text-anchor="middle">1</text><g fill="none" stroke="#B0327D" stroke-width="2.4"><circle cx="516" cy="150" r="13"/></g><g stroke="#B0327D" stroke-width="2.6" stroke-linecap="round"><line x1="505" y1="150" x2="527" y2="150"/><line x1="509" y1="141" x2="523" y2="159"/></g><circle cx="516" cy="182" r="12" fill="#1c2733"/><text x="516" y="187" font-family="sans-serif" font-weight="700" font-size="14" fill="#fff" text-anchor="middle">2</text><path d="M422 322 L430 290 L438 322" fill="none" stroke="#1c2733" stroke-width="2.4"/><circle cx="430" cy="322" r="2.4" fill="#1c2733"/><text x="446" y="312" font-family="monospace" font-weight="700" font-size="13" fill="#1c2733">1549</text><text x="446" y="328" font-family="monospace" font-size="12" fill="#1c2733">(549)</text><circle cx="402" cy="314" r="12" fill="#1c2733"/><text x="402" y="319" font-family="sans-serif" font-weight="700" font-size="14" fill="#fff" text-anchor="middle">3</text><text x="14" y="390" font-family="monospace" font-size="11" fill="#8a6d3b">Practice excerpt, not for navigation</text></svg>'
+    ),
+}
+
 # ---- Per-browser progress store (file-based) --------------------------------
 STORE_FILE = ROOT / "progress_store.json"
 _lock = threading.Lock()
@@ -304,7 +313,7 @@ def soft_count(n):
 def _inject():
     return {"dark": g.record["prefs"].get("dark", False), "user": g.user,
             "icons": BUCKET_ICONS, "mastery": mastery_badge, "soft_count": soft_count,
-            "acs_tasks": ACS_TASKS,
+            "acs_tasks": ACS_TASKS, "figures": FIGURES,
             "csrf_token": session.get("_csrf", "")}
 
 
