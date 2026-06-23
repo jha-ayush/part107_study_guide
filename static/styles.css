@@ -236,3 +236,16 @@ body.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border
 .acsrow .acsn{font-family:var(--mono);font-size:11px;color:var(--muted);}
 .macs{margin-top:7px;font-size:11px;color:var(--muted);font-family:var(--mono);}
 .macs .acs{color:var(--blue);cursor:help;}
+
+/* Sectional chart symbology legend (cheatsheet) */
+.csleg{background:#FAF8F2;border:1px solid #E3DCCB;border-radius:14px;padding:16px 16px 8px;margin:0 0 24px;color:#1c2733;}
+.csleg-note{font-size:12.5px;color:#5c6672;line-height:1.55;margin:0 0 6px;}
+.csleg-note b{color:#1c2733;}
+.csleg-h{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8a6d3b;margin:14px 0 8px;}
+.csleg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:11px 16px;}
+.csleg-item{display:flex;align-items:center;gap:10px;}
+.csleg-sym{flex:0 0 52px;height:36px;background:#fff;border:1px solid #E3DCCB;border-radius:7px;}
+.csleg-sym svg{width:52px;height:36px;display:block;}
+.csleg-txt b{display:block;font-size:12.5px;font-weight:600;line-height:1.2;}
+.csleg-txt span{display:block;font-size:11px;color:#5c6672;line-height:1.3;margin-top:1px;}
+@media print{.csleg{background:#fff;}.csleg-sym{border-color:#ccc;}}
