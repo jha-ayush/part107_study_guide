@@ -54,7 +54,9 @@ Either way, open http://127.0.0.1:8000.
 - Study list: every missed question grouped by topic, with lifetime accuracy.
 - Progress: an exam history page with a readiness verdict, best score, recent
   average, pass rate, and a score-trend chart with the pass line drawn in.
-- Cheat sheet: every distinct rule grouped by topic, print-optimized for
+- Cheat sheet: every distinct rule grouped by topic, plus a visual sectional
+  chart symbology legend (airport, airspace, obstacle, and navigation symbols
+  drawn in chart-accurate blue and magenta), print-optimized for
   last-minute review (use Cmd or Ctrl + P).
 
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
