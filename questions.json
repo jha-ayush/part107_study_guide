@@ -885,19 +885,6 @@
   },
   {
     "b": "Regulations",
-    "s": "Civil Twilight",
-    "q": "Operating during civil twilight, the 30 minutes before sunrise or after sunset, requires:",
-    "c": [
-      "A specific FAA waiver obtained before each individual twilight flight",
-      "Keeping the flight below 100 feet above the ground at all times",
-      "Anti-collision lighting visible for at least 3 statute miles",
-      "No special equipment, since twilight counts as normal daylight flying"
-    ],
-    "a": 2,
-    "e": "Civil twilight and night operations both require anti-collision lighting visible for at least 3 statute miles."
-  },
-  {
-    "b": "Regulations",
     "s": "Physical Condition",
     "q": "Under Part 107, an FAA medical certificate is:",
     "c": [
@@ -2367,19 +2354,6 @@
   },
   {
     "b": "Operations",
-    "s": "Cloud Clearance",
-    "q": "Part 107 requires the aircraft to remain:",
-    "c": [
-      "Clear of clouds only, with no specific distance required",
-      "At least 1,000 ft above the nearest cloud at all times",
-      "500 ft below and 2,000 ft horizontally from clouds",
-      "Below any overcast layer present over the operating area"
-    ],
-    "a": 2,
-    "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud."
-  },
-  {
-    "b": "Operations",
     "s": "Site Selection",
     "q": "Launching a drone from private property generally requires:",
     "c": [
@@ -2601,19 +2575,6 @@
   },
   {
     "b": "Charts",
-    "s": "Airspace Symbols",
-    "q": "On a sectional, a solid magenta line fading into a soft magenta band depicts the edge of:",
-    "c": [
-      "Class D",
-      "Class E starting at 700 ft AGL",
-      "Class B",
-      "A restricted area"
-    ],
-    "a": 1,
-    "e": "The soft magenta vignette marks Class E beginning at 700 ft AGL."
-  },
-  {
-    "b": "Charts",
     "s": "Airport Data",
     "q": "In an airport data block, CT followed by a frequency such as 118.3 indicates the:",
     "c": [
@@ -2676,19 +2637,6 @@
     ],
     "a": 2,
     "e": "VR routes are flown under visual rules, while IR routes are flown by instruments."
-  },
-  {
-    "b": "Charts",
-    "s": "Obstacles",
-    "q": "An obstacle drawn in bold magenta on a sectional warns that it:",
-    "c": [
-      "Is equipped with bright lights for night visibility",
-      "Lies inside the Class B airspace boundary",
-      "Exceeds 1,000 ft AGL and is a serious hazard",
-      "Is currently under active construction"
-    ],
-    "a": 2,
-    "e": "Obstacles taller than 1,000 ft AGL are drawn in bold magenta to flag their height."
   },
   {
     "b": "Charts",
@@ -3498,19 +3446,6 @@
   },
   {
     "b": "Charts",
-    "s": "Elevation",
-    "q": "Before flying near rising terrain, the figure that warns of the highest obstacle or terrain in that quadrangle is the:",
-    "c": [
-      "Maximum Elevation Figure",
-      "Airport elevation",
-      "Pattern altitude",
-      "Magnetic variation"
-    ],
-    "a": 0,
-    "e": "The Maximum Elevation Figure flags the highest terrain or obstacle in the quadrangle."
-  },
-  {
-    "b": "Charts",
     "s": "Airport Data",
     "q": "A small letter L in an airport data block usually indicates:",
     "c": [
@@ -4041,19 +3976,6 @@
     ],
     "a": 3,
     "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly."
-  },
-  {
-    "b": "Operations",
-    "s": "Crew Briefing",
-    "q": "An effective preflight crew briefing covers:",
-    "c": [
-      "The current resale value of the aircraft being used",
-      "Only the lunch plans for the crew that day",
-      "Roles, the flight plan, and emergency procedures",
-      "Nothing at all, in order to save time"
-    ],
-    "a": 2,
-    "e": "Briefing roles, the plan, and emergency procedures keeps the crew coordinated when something goes wrong."
   },
   {
     "b": "Operations",
@@ -5110,19 +5032,6 @@
   },
   {
     "b": "Regulations",
-    "s": "Registration Validity",
-    "q": "How long is a small unmanned aircraft registration under Part 107 valid?",
-    "c": [
-      "2 years",
-      "3 years",
-      "5 years",
-      "1 year"
-    ],
-    "a": 1,
-    "e": "A Part 107 aircraft registration is valid for 3 years and then must be renewed."
-  },
-  {
-    "b": "Regulations",
     "s": "Currency",
     "q": "To stay current, how often must a remote PIC complete recurrent training?",
     "c": [
@@ -5133,19 +5042,6 @@
     ],
     "a": 3,
     "e": "Part 107 currency requires completing the free online recurrent training every 24 calendar months."
-  },
-  {
-    "b": "Regulations",
-    "s": "Accident Reporting",
-    "q": "A reportable sUAS accident must be reported to the FAA within what time?",
-    "c": [
-      "24 hours",
-      "10 calendar days",
-      "48 hours",
-      "30 calendar days"
-    ],
-    "a": 1,
-    "e": "A qualifying sUAS accident must be reported to the FAA within 10 calendar days."
   },
   {
     "b": "Regulations",
@@ -5201,19 +5097,6 @@
   },
   {
     "b": "Airspace",
-    "s": "Class G",
-    "q": "In which class of airspace is ATC authorization NOT required for Part 107 operations?",
-    "c": [
-      "Class D",
-      "Surface-based Class E",
-      "Class G",
-      "Class C"
-    ],
-    "a": 2,
-    "e": "Uncontrolled Class G airspace does not require ATC authorization."
-  },
-  {
-    "b": "Airspace",
     "s": "Authorization",
     "q": "To fly in Class B, C, or D airspace under Part 107, a remote pilot must have what?",
     "c": [
@@ -5250,19 +5133,6 @@
     ],
     "a": 2,
     "e": "Surface-based Class E around an airport is controlled and requires ATC authorization."
-  },
-  {
-    "b": "Airspace",
-    "s": "Restricted Area",
-    "q": "When may a remote pilot operate within an active Restricted Area?",
-    "c": [
-      "Never under any circumstances",
-      "Only with permission from the controlling agency",
-      "Anytime below 400 ft AGL",
-      "Only during daylight"
-    ],
-    "a": 1,
-    "e": "A Restricted Area may be entered only with permission from the controlling agency, as it can be active."
   },
   {
     "b": "Airspace",
@@ -5328,19 +5198,6 @@
     ],
     "a": 2,
     "e": "A segmented blue line depicts Class D airspace."
-  },
-  {
-    "b": "Charts",
-    "s": "Obstacles",
-    "q": "For a charted obstacle, the bold number on top and the number in parentheses below represent what?",
-    "c": [
-      "The radio frequency and the field elevation",
-      "Height in MSL on top and AGL in parentheses",
-      "The distance and the bearing to the obstacle",
-      "The latitude and the longitude of the obstacle"
-    ],
-    "a": 1,
-    "e": "Obstacle heights are charted as MSL on top and AGL in parentheses below."
   },
   {
     "b": "Charts",
@@ -5422,32 +5279,6 @@
   },
   {
     "b": "Operations",
-    "s": "Right-of-Way",
-    "q": "A small UAS must yield the right-of-way to what?",
-    "c": [
-      "Only helicopters",
-      "All manned aircraft",
-      "Only large airliners",
-      "Nothing, drones have priority"
-    ],
-    "a": 1,
-    "e": "A small UAS must always yield the right-of-way to all manned aircraft."
-  },
-  {
-    "b": "Operations",
-    "s": "Hazardous Attitudes",
-    "q": "The thought 'the rules do not apply to me' reflects which hazardous attitude?",
-    "c": [
-      "Anti-authority",
-      "Impulsivity",
-      "Resignation",
-      "Macho"
-    ],
-    "a": 0,
-    "e": "Disregarding rules reflects the anti-authority attitude; the antidote is to follow the rules, they are usually right."
-  },
-  {
-    "b": "Operations",
     "s": "Lost Link",
     "q": "A sound lost-link procedure should cause the aircraft to do what?",
     "c": [
@@ -5487,19 +5318,6 @@
   },
   {
     "b": "Loading",
-    "s": "Battery",
-    "q": "Operating a battery in cold temperatures typically does what?",
-    "c": [
-      "Reduces available capacity and flight time",
-      "Increases capacity",
-      "Has no measurable effect",
-      "Raises resting voltage"
-    ],
-    "a": 0,
-    "e": "Cold temperatures reduce usable battery capacity, shortening flight time."
-  },
-  {
-    "b": "Loading",
     "s": "Voltage Sag",
     "q": "Under heavy current draw, battery voltage sag can cause what?",
     "c": [
@@ -5510,19 +5328,6 @@
     ],
     "a": 3,
     "e": "Heavy current draw causes voltage sag, which can trigger early low-battery cutoffs and loss of power."
-  },
-  {
-    "b": "Loading",
-    "s": "Propellers",
-    "q": "A nicked or cracked propeller should be handled how?",
-    "c": [
-      "Taped over and flown",
-      "Ignored if the nick is small",
-      "Sanded smooth and reused",
-      "Replaced before flight"
-    ],
-    "a": 3,
-    "e": "Damaged propellers cause vibration and can fail in flight, so replace them before flying."
   },
   {
     "b": "Loading",
@@ -5604,19 +5409,6 @@
   },
   {
     "b": "Regulations",
-    "s": "Alcohol & Drugs",
-    "q": "What is the minimum time between consuming alcohol and acting as remote PIC?",
-    "c": [
-      "4 hours",
-      "24 hours",
-      "8 hours",
-      "12 hours"
-    ],
-    "a": 2,
-    "e": "A remote PIC may not fly within 8 hours of consuming alcohol, with a blood alcohol level of 0.04 or more, or while impaired."
-  },
-  {
-    "b": "Regulations",
     "s": "Single Remote PIC",
     "q": "How many small unmanned aircraft may one person operate at the same time under Part 107?",
     "c": [
@@ -5653,19 +5445,6 @@
     ],
     "a": 1,
     "e": "The remote PIC must conduct a preflight inspection to confirm the aircraft is in a condition for safe operation."
-  },
-  {
-    "b": "Regulations",
-    "s": "Documents",
-    "q": "On request by the FAA or law enforcement, what must the remote PIC present?",
-    "c": [
-      "A current FAA medical certificate",
-      "The remote pilot certificate and identification",
-      "Nothing, because drones are exempt from this",
-      "Proof of valid liability insurance for the aircraft"
-    ],
-    "a": 1,
-    "e": "The remote PIC must present the remote pilot certificate and identification when asked by the FAA or law enforcement."
   },
   {
     "b": "Regulations",
@@ -5708,19 +5487,6 @@
   },
   {
     "b": "Airspace",
-    "s": "National Security Area",
-    "q": "What are pilots asked to do regarding a National Security Area (NSA)?",
-    "c": [
-      "Land as soon as possible",
-      "Always climb above 400 ft",
-      "Voluntarily avoid flying in the area",
-      "Contact the nearest tower"
-    ],
-    "a": 2,
-    "e": "Pilots are requested to voluntarily avoid flight within a National Security Area."
-  },
-  {
-    "b": "Airspace",
     "s": "UAS Facility Map",
     "q": "Where do you find the maximum altitude you can request via LAANC for a location?",
     "c": [
@@ -5757,19 +5523,6 @@
     ],
     "a": 3,
     "e": "A Controlled Firing Area suspends its activity when an aircraft is detected approaching, so it is not charted."
-  },
-  {
-    "b": "Airspace",
-    "s": "Yielding",
-    "q": "If a manned aircraft approaches your operating area, what should you do?",
-    "c": [
-      "Continue the mission unchanged",
-      "Hold your altitude and position",
-      "Yield the right-of-way and maneuver clear",
-      "Climb to meet it"
-    ],
-    "a": 2,
-    "e": "A small UAS must yield the right-of-way to manned aircraft and maneuver clear to avoid a collision."
   },
   {
     "b": "Charts",
@@ -5812,19 +5565,6 @@
   },
   {
     "b": "Charts",
-    "s": "Airport Symbols",
-    "q": "On a sectional, what does a blue airport symbol indicate?",
-    "c": [
-      "A permanently closed airport",
-      "A private airstrip",
-      "An airport with an operating control tower",
-      "A heliport only"
-    ],
-    "a": 2,
-    "e": "Blue airport symbols indicate an operating control tower; magenta indicates no control tower."
-  },
-  {
-    "b": "Charts",
     "s": "Elevation",
     "q": "What does the Maximum Elevation Figure (MEF) in a chart quadrangle tell you?",
     "c": [
@@ -5835,19 +5575,6 @@
     ],
     "a": 0,
     "e": "The Maximum Elevation Figure shows the highest known terrain or obstacle in that quadrant, in MSL."
-  },
-  {
-    "b": "Weather",
-    "s": "Standard Atmosphere",
-    "q": "What are standard temperature and pressure at sea level?",
-    "c": [
-      "0 degrees C and 30.00 inHg",
-      "25 degrees C and 29.92 inHg",
-      "15 degrees C and 29.92 inHg",
-      "20 degrees C and 1000 hPa"
-    ],
-    "a": 2,
-    "e": "Standard sea-level conditions are 15 degrees Celsius and 29.92 inches of mercury."
   },
   {
     "b": "Weather",
@@ -5887,19 +5614,6 @@
     ],
     "a": 2,
     "e": "A TAF is a Terminal Aerodrome Forecast covering the area within about 5 statute miles of an airport."
-  },
-  {
-    "b": "Operations",
-    "s": "ADM",
-    "q": "What best describes aeronautical decision making (ADM)?",
-    "c": [
-      "A type of autopilot mode that flies preset waypoints automatically",
-      "A systematic approach to consistently choosing the safest action",
-      "A rule that allows flying only in clear, perfectly calm weather",
-      "A maintenance logging system for recording each component's service life"
-    ],
-    "a": 1,
-    "e": "Aeronautical decision making is a systematic approach to consistently determining the safest course of action."
   },
   {
     "b": "Operations",
@@ -5965,19 +5679,6 @@
     ],
     "a": 0,
     "e": "Overcharging a battery past its rated voltage risks overheating, damage, and fire."
-  },
-  {
-    "b": "Loading",
-    "s": "Battery Health",
-    "q": "How should lithium-polymer batteries be stored for longest life?",
-    "c": [
-      "Fully charged in a warm place",
-      "At a partial storage charge in a cool, dry place",
-      "In direct sunlight",
-      "Fully discharged"
-    ],
-    "a": 1,
-    "e": "Store LiPo batteries at a partial storage charge in a cool, dry location to preserve their life."
   },
   {
     "b": "Loading",
@@ -6124,19 +5825,6 @@
   },
   {
     "b": "Regulations",
-    "s": "Commercial Use",
-    "q": "A pilot flying for a business or for compensation must operate under what?",
-    "c": [
-      "Part 91 only",
-      "The recreational exception",
-      "No rules at all",
-      "Part 107"
-    ],
-    "a": 3,
-    "e": "Any business or for-compensation flight must be conducted under Part 107, not the recreational exception."
-  },
-  {
-    "b": "Regulations",
     "s": "Operating Limitations",
     "q": "What must the remote PIC maintain with the aircraft throughout the flight?",
     "c": [
@@ -6189,19 +5877,6 @@
   },
   {
     "b": "Charts",
-    "s": "Airport Data",
-    "q": "In an airport's data block on a sectional, the elevation is given in what units?",
-    "c": [
-      "Feet above ground level (AGL)",
-      "Nautical miles",
-      "Meters",
-      "Feet above mean sea level (MSL)"
-    ],
-    "a": 3,
-    "e": "Airport elevation in the chart data block is given in feet above mean sea level."
-  },
-  {
-    "b": "Charts",
     "s": "Airways",
     "q": "How are Victor airways depicted on a sectional chart?",
     "c": [
@@ -6238,19 +5913,6 @@
     ],
     "a": 2,
     "e": "Contour lines connect points of equal terrain elevation to show relief."
-  },
-  {
-    "b": "Charts",
-    "s": "Navigation",
-    "q": "What do isogonic lines on an aeronautical chart show?",
-    "c": [
-      "Lines of equal temperature",
-      "Lines of equal pressure",
-      "Lines of equal elevation",
-      "Lines of equal magnetic variation"
-    ],
-    "a": 3,
-    "e": "Isogonic lines connect points of equal magnetic variation between true and magnetic north."
   },
   {
     "b": "Charts",
@@ -6293,19 +5955,6 @@
   },
   {
     "b": "Weather",
-    "s": "Atmosphere",
-    "q": "What is the dewpoint?",
-    "c": [
-      "The pressure altitude read directly from the aircraft barometer",
-      "The altitude at which the air temperature first reaches freezing",
-      "The temperature to which air must cool to become saturated",
-      "The current outside air temperature measured at the surface"
-    ],
-    "a": 2,
-    "e": "The dewpoint is the temperature at which air becomes saturated and moisture can condense."
-  },
-  {
-    "b": "Weather",
     "s": "Convection",
     "q": "What do convective currents on a hot afternoon typically cause?",
     "c": [
@@ -6345,19 +5994,6 @@
   },
   {
     "b": "Operations",
-    "s": "Risk Management",
-    "q": "What does the PAVE checklist help a pilot assess?",
-    "c": [
-      "Pilot, Aircraft, Environment, and External pressures",
-      "Power, Altitude, Velocity, Energy",
-      "Preflight, Arm, Verify, Engage",
-      "Plan, Act, Verify, Execute"
-    ],
-    "a": 0,
-    "e": "PAVE covers the Pilot, Aircraft, enVironment, and External pressures when assessing flight risk."
-  },
-  {
-    "b": "Operations",
     "s": "Go No-Go",
     "q": "When should a go/no-go decision be made?",
     "c": [
@@ -6381,19 +6017,6 @@
     ],
     "a": 0,
     "e": "If you lose visual line of sight you must regain it or begin a safe recovery such as return-to-home."
-  },
-  {
-    "b": "Loading",
-    "s": "Performance",
-    "q": "How does a higher takeoff weight affect power requirements?",
-    "c": [
-      "It reduces power needed",
-      "It increases battery capacity",
-      "It increases the power needed to hover and climb",
-      "It has no effect"
-    ],
-    "a": 2,
-    "e": "A heavier aircraft needs more power to hover and climb, reducing efficiency and endurance."
   },
   {
     "b": "Loading",
@@ -6433,32 +6056,6 @@
     ],
     "a": 0,
     "e": "An unsecured payload can shift in flight, moving the center of gravity and destabilizing the aircraft."
-  },
-  {
-    "b": "Loading",
-    "s": "Battery",
-    "q": "What is a good cold-weather battery practice?",
-    "c": [
-      "Fully discharge them before flight",
-      "Keep batteries warm and expect reduced capacity",
-      "Ignore temperature effects",
-      "Plan for longer flights than usual"
-    ],
-    "a": 1,
-    "e": "In cold weather keep batteries warm and plan for reduced capacity and shorter flights."
-  },
-  {
-    "b": "Loading",
-    "s": "Total Weight",
-    "q": "What does the 55 lb Part 107 weight limit include?",
-    "c": [
-      "Only the airframe, measured before the payload is added",
-      "The aircraft plus payload and everything on board",
-      "Only the battery and the motors, not the airframe itself",
-      "Only the payload that is carried separately from the drone"
-    ],
-    "a": 1,
-    "e": "The under-55-lb limit covers the aircraft plus payload and anything on board at takeoff."
   },
   {
     "b": "Loading",
@@ -6515,19 +6112,6 @@
   {
     "b": "Regulations",
     "s": "Currency",
-    "q": "To keep Part 107 privileges current, a remote pilot must have completed initial or recurrent training within the previous how many calendar months?",
-    "c": [
-      "36 calendar months",
-      "24 calendar months",
-      "48 calendar months",
-      "12 calendar months"
-    ],
-    "a": 1,
-    "e": "Part 107 currency requires completing initial or recurrent training within the previous 24 calendar months."
-  },
-  {
-    "b": "Regulations",
-    "s": "Currency",
     "q": "Since April 2021, how does a Part 107 pilot satisfy the recurrent currency requirement?",
     "c": [
       "By renewing the certificate every 2 years for a fee",
@@ -6567,19 +6151,6 @@
   {
     "b": "Regulations",
     "s": "Accident reporting",
-    "q": "Within how long must a remote PIC report a qualifying accident to the FAA?",
-    "c": [
-      "10 calendar days",
-      "48 hours",
-      "24 hours",
-      "30 calendar days"
-    ],
-    "a": 0,
-    "e": "A qualifying sUAS accident must be reported to the FAA within 10 calendar days."
-  },
-  {
-    "b": "Regulations",
-    "s": "Accident reporting",
     "q": "An sUAS accident must be reported to the FAA if it causes at least serious injury, loss of consciousness, or property damage of more than",
     "c": [
       "$250",
@@ -6589,58 +6160,6 @@
     ],
     "a": 1,
     "e": "Report if there is serious injury, loss of consciousness, or property damage exceeding $500."
-  },
-  {
-    "b": "Regulations",
-    "s": "Certificate",
-    "q": "On request, a remote PIC must present the remote pilot certificate for inspection to",
-    "c": [
-      "the local police only, and not to any federal agency",
-      "the FAA only, and never to any other agency or officer",
-      "the FAA, NTSB, TSA, or any law enforcement officer",
-      "no one, because the certificate is a private personal document"
-    ],
-    "a": 2,
-    "e": "The remote pilot certificate must be presented to the FAA, NTSB, TSA, or law enforcement on request."
-  },
-  {
-    "b": "Regulations",
-    "s": "Supervision",
-    "q": "A person who does not hold a remote pilot certificate may manipulate the controls of an sUAS under Part 107 only if",
-    "c": [
-      "the entire flight is conducted below 100 feet and within visual line of sight",
-      "under the direct supervision of a remote PIC who can immediately take control",
-      "the aircraft weighs under 0.55 lb and is therefore exempt from the registration rules",
-      "they have completed the recreational TRUST test offered to hobby flyers"
-    ],
-    "a": 1,
-    "e": "An uncertificated person may fly only under the direct supervision of a remote PIC who can immediately take control."
-  },
-  {
-    "b": "Regulations",
-    "s": "Alcohol and drugs",
-    "q": "Part 107 prohibits acting as a remote crewmember within how many hours of consuming alcohol?",
-    "c": [
-      "12 hours",
-      "8 hours",
-      "24 hours",
-      "4 hours"
-    ],
-    "a": 1,
-    "e": "No operating within 8 hours of alcohol, while impaired, or with a blood alcohol concentration of 0.04% or greater."
-  },
-  {
-    "b": "Regulations",
-    "s": "Hazardous operations",
-    "q": "Under Part 107, dropping an object from a small unmanned aircraft is",
-    "c": [
-      "permitted only over private land where the owner has given prior consent",
-      "never permitted under any circumstances while the aircraft is in flight",
-      "permitted only after a specific waiver is obtained from the FAA for the drop",
-      "permitted if it does not create an undue hazard to persons or property"
-    ],
-    "a": 3,
-    "e": "Objects may be dropped only if doing so does not create an undue hazard to persons or property."
   },
   {
     "b": "Regulations",
@@ -6710,19 +6229,6 @@
   {
     "b": "Operations",
     "s": "Visual line of sight",
-    "q": "Part 107 requires that the remote PIC or a visual observer",
-    "c": [
-      "track the aircraft on a screen",
-      "monitor an ATC frequency",
-      "keep the aircraft within unaided visual line of sight",
-      "stay within 1 mile of the aircraft"
-    ],
-    "a": 2,
-    "e": "The remote PIC or visual observer must keep the aircraft within unaided visual line of sight."
-  },
-  {
-    "b": "Operations",
-    "s": "Visual line of sight",
     "q": "When maintaining visual line of sight, which visual aid is allowed?",
     "c": [
       "First-person-view goggles",
@@ -6774,19 +6280,6 @@
   },
   {
     "b": "Operations",
-    "s": "Over people",
-    "q": "A Category 1 sUAS for operations over people must weigh",
-    "c": [
-      "exactly 1 lb, measured with the battery and any payload installed",
-      "less than 5 lb and be equipped with a tested deployable parachute",
-      "0.55 lb (250 g) or less with no exposed rotating parts that can lacerate skin",
-      "55 lb or less, the same maximum weight that applies to every Part 107 aircraft"
-    ],
-    "a": 2,
-    "e": "Category 1 covers sUAS of 0.55 lb (250 g) or less with no exposed rotating parts that can lacerate skin."
-  },
-  {
-    "b": "Operations",
     "s": "Over moving vehicles",
     "q": "Sustained flight of an sUAS over a person inside a moving vehicle is allowed only when",
     "c": [
@@ -6813,19 +6306,6 @@
   },
   {
     "b": "Operations",
-    "s": "Hazardous attitudes",
-    "q": "The antidote to the hazardous attitude of invulnerability is",
-    "c": [
-      "\"I can do it.\"",
-      "\"Follow the rules, they are usually right.\"",
-      "\"Not so fast, think first.\"",
-      "\"It could happen to me.\""
-    ],
-    "a": 3,
-    "e": "The antidote to invulnerability is recognizing that 'it could happen to me.'"
-  },
-  {
-    "b": "Operations",
     "s": "CRM",
     "q": "Crew resource management (CRM) for sUAS operations refers to",
     "c": [
@@ -6839,19 +6319,6 @@
   },
   {
     "b": "Operations",
-    "s": "Moving vehicle",
-    "q": "Operating an sUAS from a moving vehicle under Part 107 is permitted",
-    "c": [
-      "only on private roads",
-      "anywhere below 400 feet",
-      "only with ATC approval",
-      "only over a sparsely populated area"
-    ],
-    "a": 3,
-    "e": "Operation from a moving vehicle is allowed only over a sparsely populated area."
-  },
-  {
-    "b": "Operations",
     "s": "Responsibility",
     "q": "Who is directly responsible for, and the final authority over, an sUAS operation conducted under Part 107?",
     "c": [
@@ -6862,45 +6329,6 @@
     ],
     "a": 0,
     "e": "The remote pilot in command is directly responsible for and the final authority over the operation."
-  },
-  {
-    "b": "Airspace",
-    "s": "Authorization",
-    "q": "To operate a Part 107 sUAS in Class C airspace, the remote PIC must",
-    "c": [
-      "stay below 100 feet",
-      "monitor the tower frequency",
-      "file a flight plan",
-      "obtain prior authorization from ATC"
-    ],
-    "a": 3,
-    "e": "Operations in Class B, C, D, or surface Class E airspace require prior authorization from ATC."
-  },
-  {
-    "b": "Airspace",
-    "s": "LAANC",
-    "q": "The Low Altitude Authorization and Notification Capability (LAANC) provides",
-    "c": [
-      "an automatic waiver from the Part 107 operating rules for any flight",
-      "current and forecast weather information tailored for remote pilots",
-      "a simple way to register a drone and renew the registration online each time",
-      "near-real-time authorization to fly in controlled airspace near airports"
-    ],
-    "a": 3,
-    "e": "LAANC gives near-real-time authorization to operate in controlled airspace below charted ceilings."
-  },
-  {
-    "b": "Airspace",
-    "s": "Class G",
-    "q": "A Part 107 operation in Class G (uncontrolled) airspace",
-    "c": [
-      "does not require ATC authorization",
-      "is prohibited",
-      "requires ATC authorization",
-      "requires a waiver"
-    ],
-    "a": 0,
-    "e": "No ATC authorization is required to operate in Class G (uncontrolled) airspace."
   },
   {
     "b": "Airspace",
@@ -6979,19 +6407,6 @@
     ],
     "a": 1,
     "e": "Increased weight generally reduces endurance and maneuverability."
-  },
-  {
-    "b": "Charts",
-    "s": "Airspace symbols",
-    "q": "On a sectional chart, a blue segmented (dashed) circle around an airport depicts",
-    "c": [
-      "Class B airspace",
-      "Class C airspace",
-      "a military operations area",
-      "Class D airspace"
-    ],
-    "a": 3,
-    "e": "A blue dashed circle on a sectional depicts Class D airspace."
   },
   {
     "b": "Regulations",
@@ -7083,19 +6498,6 @@
     ],
     "a": 1,
     "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training)."
-  },
-  {
-    "b": "Operations",
-    "s": "Over people",
-    "q": "For sustained flight over an open-air assembly of people, a Category 1 sUAS must also",
-    "c": [
-      "weigh under 0.25 lb",
-      "fly below 100 feet",
-      "broadcast Remote ID",
-      "carry two visual observers"
-    ],
-    "a": 2,
-    "e": "Category 1 sustained flight over an open-air assembly requires the sUAS to broadcast Remote ID."
   },
   {
     "b": "Regulations",
@@ -7281,45 +6683,6 @@
   },
   {
     "b": "Operations",
-    "s": "Risk management",
-    "q": "The PAVE checklist organizes preflight risk into which categories?",
-    "c": [
-      "Preflight, Approach, Verify, Execute",
-      "Pilot, Aircraft, enVironment, and External pressures",
-      "People, Air, Velocity, Energy",
-      "Power, Altitude, Visibility, Endurance"
-    ],
-    "a": 1,
-    "e": "PAVE categorizes risk into Pilot, Aircraft, enVironment, and External pressures."
-  },
-  {
-    "b": "Operations",
-    "s": "Hazardous attitudes",
-    "q": "The antidote to the hazardous attitude of 'macho' is",
-    "c": [
-      "\"Follow the rules.\"",
-      "\"Not so fast.\"",
-      "\"Taking chances is foolish.\"",
-      "\"It could happen to me.\""
-    ],
-    "a": 2,
-    "e": "The antidote to macho is 'taking chances is foolish.'"
-  },
-  {
-    "b": "Operations",
-    "s": "Hazardous attitudes",
-    "q": "The antidote to the hazardous attitude of 'anti-authority' is",
-    "c": [
-      "\"Nothing bad is going to happen to me.\"",
-      "\"Follow the rules. They are usually right.\"",
-      "\"Do it quickly before the window closes.\"",
-      "\"I can handle it without any outside help.\""
-    ],
-    "a": 1,
-    "e": "The antidote to anti-authority is 'follow the rules, they are usually right.'"
-  },
-  {
-    "b": "Operations",
     "s": "Situational awareness",
     "q": "Near a non-towered airport, monitoring the common traffic advisory frequency (CTAF) helps a remote pilot",
     "c": [
@@ -7356,32 +6719,6 @@
     ],
     "a": 0,
     "e": "A pre-operation crew briefing supports crew resource management and safe coordination."
-  },
-  {
-    "b": "Airspace",
-    "s": "Class B",
-    "q": "To operate a Part 107 sUAS in Class B airspace, the remote PIC must",
-    "c": [
-      "file a flight plan",
-      "obtain prior authorization from ATC",
-      "monitor the tower frequency",
-      "only stay below 200 feet"
-    ],
-    "a": 1,
-    "e": "Operations in Class B airspace require prior authorization from ATC, typically via LAANC."
-  },
-  {
-    "b": "Airspace",
-    "s": "Restricted area",
-    "q": "Flight within an active restricted area is permitted only",
-    "c": [
-      "below 400 feet",
-      "with permission from the controlling agency",
-      "if the drone is under 0.55 lb",
-      "during daylight"
-    ],
-    "a": 1,
-    "e": "A restricted area may be entered only with permission from the using or controlling agency."
   },
   {
     "b": "Airspace",
@@ -7434,45 +6771,6 @@
     ],
     "a": 1,
     "e": "TFRs are published as NOTAMs and available through FAA sources, which should be checked before flight."
-  },
-  {
-    "b": "Charts",
-    "s": "Airspace symbols",
-    "q": "A faded magenta shaded edge around an airport on a sectional indicates Class E airspace beginning at",
-    "c": [
-      "the surface",
-      "18,000 feet MSL",
-      "1,200 feet AGL",
-      "700 feet AGL"
-    ],
-    "a": 3,
-    "e": "A faded magenta vignette marks Class E airspace beginning at 700 feet AGL."
-  },
-  {
-    "b": "Charts",
-    "s": "Airspace symbols",
-    "q": "A faded blue shaded edge on a sectional indicates Class E airspace beginning at",
-    "c": [
-      "the surface",
-      "1,200 feet AGL",
-      "700 feet AGL",
-      "10,000 feet MSL"
-    ],
-    "a": 1,
-    "e": "A faded blue vignette marks Class E airspace beginning at 1,200 feet AGL."
-  },
-  {
-    "b": "Charts",
-    "s": "Terrain",
-    "q": "The large number shown in each quadrant on a sectional chart is the Maximum Elevation Figure, which represents",
-    "c": [
-      "the magnetic variation that pilots apply when navigating within that area",
-      "the highest known terrain or obstacle in that quadrant, in hundreds of feet MSL",
-      "the floor of the overlying Class E airspace measured above the ground",
-      "the published field elevation of the largest charted airport within that quadrant"
-    ],
-    "a": 1,
-    "e": "The Maximum Elevation Figure is the highest known terrain or obstacle in that quadrant, shown in hundreds of feet MSL."
   },
   {
     "b": "Weather",
@@ -7538,19 +6836,6 @@
     ],
     "a": 1,
     "e": "A Part 107 waiver can authorize deviations such as beyond-visual-line-of-sight flight when safety is shown."
-  },
-  {
-    "b": "Regulations",
-    "s": "Registration",
-    "q": "After registering a drone for Part 107 use, the owner must",
-    "c": [
-      "re-register the aircraft with the FAA before each and every flight made",
-      "mark it with the registration number, legible and accessible",
-      "carry the paper registration only when flying at night",
-      "paint the aircraft a bright, highly visible color"
-    ],
-    "a": 1,
-    "e": "The registration number must be marked on the aircraft, legible and accessible for inspection."
   },
   {
     "b": "Regulations",
@@ -7632,19 +6917,6 @@
   },
   {
     "b": "Loading",
-    "s": "Manufacturer limits",
-    "q": "The maximum payload or gross weight a drone can carry is best determined from",
-    "c": [
-      "the FAA registration certificate issued when the aircraft was registered",
-      "the manufacturer's specifications and operating limitations",
-      "a rough guess based on the overall size and weight of the airframe",
-      "the sectional chart covering the area where the flight will take place"
-    ],
-    "a": 1,
-    "e": "Use the manufacturer's specifications and operating limitations to determine the maximum payload or gross weight."
-  },
-  {
-    "b": "Loading",
     "s": "Wind",
     "q": "Flying into a strong headwind increases power demand and",
     "c": [
@@ -7668,19 +6940,6 @@
     ],
     "a": 2,
     "e": "Confirm the battery has enough charge for the planned operation plus a safe reserve."
-  },
-  {
-    "b": "Loading",
-    "s": "Distribution",
-    "q": "An unevenly distributed payload that shifts the center of gravity will",
-    "c": [
-      "improve stability",
-      "make the aircraft harder to control",
-      "increase flight time",
-      "reduce weight"
-    ],
-    "a": 1,
-    "e": "An uneven load that shifts the center of gravity makes the aircraft harder to control."
   },
   {
     "b": "Loading",
@@ -7775,19 +7034,6 @@
   },
   {
     "b": "Weather",
-    "s": "Altimeter",
-    "q": "In a METAR, the entry 'A2992' indicates an altimeter setting of",
-    "c": [
-      "299.2 millibars",
-      "29.92 inches of mercury",
-      "2,992 feet",
-      "29.92 degrees"
-    ],
-    "a": 1,
-    "e": "A2992 indicates an altimeter setting of 29.92 inches of mercury."
-  },
-  {
-    "b": "Weather",
     "s": "Forecasts",
     "q": "A TAF is a",
     "c": [
@@ -7824,58 +7070,6 @@
     ],
     "a": 3,
     "e": "Avoid operating near thunderstorms, which produce turbulence, wind shear, and downbursts."
-  },
-  {
-    "b": "Weather",
-    "s": "Density altitude",
-    "q": "Density altitude is best described as",
-    "c": [
-      "the published field elevation of the nearest airport",
-      "pressure altitude corrected for nonstandard temperature",
-      "the altitude reading shown directly on the altimeter",
-      "the height of the aircraft above the highest charted obstacle"
-    ],
-    "a": 1,
-    "e": "Density altitude is pressure altitude corrected for nonstandard temperature."
-  },
-  {
-    "b": "Weather",
-    "s": "Standard atmosphere",
-    "q": "Standard atmospheric conditions at sea level are",
-    "c": [
-      "15 degrees F and 28.92 inches of mercury",
-      "0 degrees C and 30.00 inches of mercury",
-      "20 degrees C and 29.42 inches of mercury",
-      "15 degrees C and 29.92 inches of mercury"
-    ],
-    "a": 3,
-    "e": "Standard sea-level conditions are 15 degrees Celsius and 29.92 inches of mercury."
-  },
-  {
-    "b": "Weather",
-    "s": "Wind reference",
-    "q": "Wind direction reported in a written report such as a METAR is referenced to",
-    "c": [
-      "the runway heading",
-      "true north",
-      "the pilot's heading",
-      "magnetic north"
-    ],
-    "a": 1,
-    "e": "Wind direction in a METAR is referenced to true north (tower and ATIS use magnetic north)."
-  },
-  {
-    "b": "Operations",
-    "s": "Emergency",
-    "q": "During an in-flight emergency requiring immediate action, the remote PIC may",
-    "c": [
-      "deviate from the operating rules to the extent necessary to meet the emergency",
-      "ignore other aircraft in the area because the emergency takes priority over them",
-      "never deviate from any operating rule, even when safety of flight is at stake",
-      "transfer the remote pilot certificate to a bystander to share responsibility"
-    ],
-    "a": 0,
-    "e": "In an in-flight emergency, the remote PIC may deviate from the operating rules to the extent necessary to meet that emergency."
   },
   {
     "b": "Operations",
