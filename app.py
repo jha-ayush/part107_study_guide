@@ -94,6 +94,17 @@ EXAM_BLUEPRINT = {
 }
 CODE_SUBTOPICS = {"METAR", "TAF", "Winds Aloft"}
 
+# ACS task codes (FAA-S-ACS-10B structure) -> human-readable titles, shown next
+# to a question so a learner can map it to the Airman Certification Standards.
+ACS_TASKS = {
+    "UA.I.A": "Regulations - General",
+    "UA.I.B": "Regulations - Operating Rules",
+    "UA.I.C": "Regulations - Remote Pilot Certification",
+    "UA.I.D": "Regulations - Waivers",
+    "UA.I.E": "Regulations - Operations Over People",
+    "UA.I.F": "Regulations - Remote Identification",
+}
+
 # ---- Per-browser progress store (file-based) --------------------------------
 STORE_FILE = ROOT / "progress_store.json"
 _lock = threading.Lock()
@@ -281,6 +292,7 @@ def soft_count(n):
 def _inject():
     return {"dark": g.record["prefs"].get("dark", False), "user": g.user,
             "icons": BUCKET_ICONS, "mastery": mastery_badge, "soft_count": soft_count,
+            "acs_tasks": ACS_TASKS,
             "csrf_token": session.get("_csrf", "")}
 
 
