@@ -160,10 +160,10 @@
     "s": "LAANC",
     "q": "LAANC gives Part 107 pilots:",
     "c": [
-      "A weather briefing service",
-      "Mandatory insurance coverage",
+      "A standard aviation weather briefing covering the planned route of flight",
+      "Automatic Remote ID broadcasting through the FAA's national network",
       "Near real-time authorization to fly in controlled airspace up to grid altitudes",
-      "Remote ID broadcasting"
+      "Mandatory liability insurance coverage that is required for all Part 107 operations"
     ],
     "a": 2,
     "e": "LAANC grants near-instant authorization up to the maximum altitude shown on the UAS facility grid for that area."
@@ -239,9 +239,9 @@
     "q": "A Military Operations Area (MOA) on a chart indicates:",
     "c": [
       "Active military training airspace where pilots should verify status and use caution",
-      "A type of controlled airport",
-      "Permanently prohibited airspace",
-      "Airspace requiring no awareness for UAS"
+      "Permanently prohibited airspace that no aircraft may ever enter",
+      "Airspace that requires no awareness or coordination from UAS pilots",
+      "A category of controlled airport that always has an operating tower and radar service"
     ],
     "a": 0,
     "e": "MOAs contain military training; not banned for UAS, but you should check activity status and stay vigilant."
@@ -680,12 +680,12 @@
     "s": "Ops Over People",
     "q": "Flying directly over people not part of the operation is:",
     "c": [
+      "Always allowed as long as the aircraft remains below 400 feet above the ground",
       "Governed by operational categories based on injury risk, and may be prohibited",
-      "Allowed if the drone weighs over 5 lb",
-      "Allowed with a verbal warning",
-      "Always allowed under 400 ft"
+      "Allowed after giving the people a clear verbal warning before each pass overhead",
+      "Allowed whenever the aircraft weighs more than 5 lb and carries a parachute"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Operations over people fall under Categories 1 through 4, set by the drone's weight and injury potential."
   },
   {
@@ -719,12 +719,12 @@
     "s": "Preflight",
     "q": "Before each flight, the remote PIC must:",
     "c": [
-      "Only check the battery",
-      "File a flight plan",
-      "Notify local police",
-      "Inspect the aircraft to confirm it is in a condition for safe operation"
+      "Inspect the aircraft to confirm it is in a condition for safe operation",
+      "Verify only the battery charge level and skip the rest of the preflight inspection",
+      "Notify the local police department of the planned flight area",
+      "File a flight plan with the nearest air traffic control facility"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A preflight inspection of the aircraft and systems is required to confirm it is safe to fly."
   },
   {
@@ -875,12 +875,12 @@
     "s": "Waivers",
     "q": "A Part 107 Certificate of Waiver allows a remote pilot to:",
     "c": [
-      "Ignore any Part 107 rule at the pilot's discretion",
-      "Fly without registering the aircraft",
+      "Skip the initial knowledge test as long as another certificated pilot is present",
       "Deviate from certain operating rules when the FAA finds the operation can be conducted safely",
-      "Skip the knowledge test"
+      "Ignore any Part 107 operating rule at the pilot's own discretion during the course of the flight",
+      "Operate the aircraft without registering it or marking it with a registration number"
     ],
-    "a": 2,
+    "a": 1,
     "e": "A waiver permits deviation from specific waivable rules only when the FAA is satisfied the operation can be done safely."
   },
   {
@@ -979,12 +979,12 @@
     "s": "FAA Inspection",
     "q": "When asked by the FAA, the remote PIC must:",
     "c": [
-      "Refer the FAA to the manufacturer",
-      "Present the remote pilot certificate and allow inspection of the aircraft and records",
-      "Provide a written flight plan",
-      "Do nothing without a warrant"
+      "Refer the inspector to the drone manufacturer for any compliance questions",
+      "Decline to cooperate or answer questions until the FAA produces a court-issued warrant",
+      "Provide a written flight plan filed in advance with the local control tower",
+      "Present the remote pilot certificate and allow inspection of the aircraft and records"
     ],
-    "a": 1,
+    "a": 3,
     "e": "On request, the remote PIC must show the certificate and allow FAA inspection of the aircraft and records."
   },
   {
@@ -1018,12 +1018,12 @@
     "s": "Dropping Objects",
     "q": "Dropping an object from a small UAS in flight is:",
     "c": [
-      "Allowed only over water",
-      "Always prohibited",
-      "Allowed only with a waiver",
-      "Allowed if reasonable precautions are taken to avoid injury or damage"
+      "Allowed if reasonable precautions are taken to avoid injury or damage",
+      "Allowed only over open water and well clear of any vessels or swimmers below",
+      "Allowed only after obtaining a specific waiver from the FAA for each operation",
+      "Always prohibited under Part 107 regardless of the precautions that are taken"
     ],
-    "a": 3,
+    "a": 0,
     "e": "You may drop an object as long as reasonable precautions prevent it from creating an undue hazard to people or property."
   },
   {
@@ -1122,12 +1122,12 @@
     "s": "Remote ID",
     "q": "A drone that does not broadcast standard Remote ID on its own can still comply by:",
     "c": [
-      "Flying only at night",
-      "Staying under 200 ft",
-      "Registering twice",
-      "Attaching a Remote ID broadcast module, or flying only within a FRIA"
+      "Registering the same aircraft twice under two different owners",
+      "Flying only at night with anti-collision lighting visible for 3 statute miles",
+      "Attaching a Remote ID broadcast module, or flying only within a FRIA",
+      "Keeping the aircraft below 200 feet above the ground at all times"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Comply via a standard Remote ID drone, a broadcast module, or flying inside a FRIA."
   },
   {
@@ -1265,12 +1265,12 @@
     "s": "Class C",
     "q": "A standard Class C airspace is shaped as:",
     "c": [
+      "A square box about 4 NM on each side centered on the primary airport",
       "An inner surface core near 5 NM and an outer shelf near 10 NM",
-      "A single 10 NM ring",
-      "A square 4 NM box",
-      "Three magenta rings"
+      "A single circular ring with a 10 NM radius extending up from the surface",
+      "Three concentric magenta rings of increasing radius around the airport"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Class C has an inner core to the surface near 5 NM and a raised outer shelf near 10 NM."
   },
   {
@@ -1317,12 +1317,12 @@
     "s": "Restricted Area",
     "q": "A Restricted Area such as R-2503 indicates airspace that:",
     "c": [
-      "Is uncontrolled",
-      "Is reserved for drones",
-      "Is permanently closed to all aircraft",
-      "Contains hazards like artillery or missile testing and may be entered only with permission"
+      "Is permanently closed to every aircraft, military and civil alike, at all altitudes",
+      "Contains hazards like artillery or missile testing and may be entered only with permission",
+      "Is reserved exclusively for unmanned aircraft operating under Part 107 rules",
+      "Is uncontrolled airspace that any aircraft may enter without prior coordination"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Restricted areas contain hazards to flight and may be entered only with permission from the controlling agency."
   },
   {
@@ -1369,12 +1369,12 @@
     "s": "Stadium TFR",
     "q": "The standing sporting-event TFR over large stadiums applies:",
     "c": [
-      "Only during the national anthem",
+      "To manned aircraft only, with no restriction placed on small drones",
+      "Only during the playing of the national anthem and the opening ceremony before kickoff",
       "Within 3 NM up to 3,000 ft AGL, from one hour before to one hour after the event",
-      "Within 1 NM at any altitude",
-      "To manned aircraft only"
+      "Within 1 NM of the stadium at any altitude for the entire duration of the day"
     ],
-    "a": 1,
+    "a": 2,
     "e": "The stadium TFR covers a 3 NM radius to 3,000 ft AGL, starting one hour before and ending one hour after the event."
   },
   {
@@ -1382,12 +1382,12 @@
     "s": "VIP TFR",
     "q": "A TFR protecting the movement of the President:",
     "c": [
-      "Can be ignored by small UAS",
-      "Is published only after the fact",
       "Creates a no-fly area drones may not enter without specific authorization",
-      "Applies only above 10,000 ft"
+      "Applies only to aircraft operating above 10,000 feet mean sea level",
+      "Can be safely ignored by small unmanned aircraft as long as they fly below 400 feet",
+      "Is published only after the protected movement has already taken place"
     ],
-    "a": 2,
+    "a": 0,
     "e": "VIP movement TFRs create restricted airspace that small UAS must not enter without specific authorization."
   },
   {
@@ -1395,12 +1395,12 @@
     "s": "Non-Towered Airport",
     "q": "Operating in Class G near an airport without a control tower, you:",
     "c": [
-      "Must contact the tower",
+      "May fly through the traffic pattern freely as long as you yield to manned aircraft",
+      "Must contact the nearest air traffic control tower for clearance before launch",
       "Need no authorization but must stay clear of the traffic pattern and not interfere",
-      "May fly through the traffic pattern freely",
-      "Need ATC authorization"
+      "Need prior ATC authorization just as you would inside controlled airspace"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Class G needs no authorization, but you must avoid the traffic pattern and never interfere with manned aircraft."
   },
   {
@@ -1460,10 +1460,10 @@
     "s": "Controlled Firing Area",
     "q": "A Controlled Firing Area (CFA) is:",
     "c": [
-      "Marked in solid red",
+      "A type of Class C airspace surrounding certain military training installations",
       "Not charted, because its activity stops whenever an aircraft approaches",
-      "Always active and prohibited",
-      "A type of Class C"
+      "Marked on the sectional in solid red as airspace that is closed to all traffic",
+      "Always active and prohibited to civil aircraft, including small unmanned aircraft"
     ],
     "a": 1,
     "e": "CFAs are not depicted because their activity ceases as soon as an aircraft is detected nearby."
@@ -1486,12 +1486,12 @@
     "s": "NOTAM Source",
     "q": "Current NOTAMs and TFRs are best checked before flight:",
     "c": [
-      "From the drone manufacturer",
       "Through an official FAA source such as a preflight briefing or NOTAM search",
-      "By word of mouth",
-      "The day after the flight"
+      "From the drone manufacturer's customer support line shortly before each planned flight",
+      "By word of mouth from other pilots flying in the same general area",
+      "The day after the flight, once the official records have been updated"
     ],
-    "a": 1,
+    "a": 0,
     "e": "NOTAMs and TFRs change often, so verify them from an official FAA source close to flight time."
   },
   {
@@ -1499,12 +1499,12 @@
     "s": "Class E Surface",
     "q": "A dashed magenta boundary at an airport tells a Part 107 pilot that:",
     "c": [
-      "Class E reaches the surface there and authorization is required",
-      "Flight is prohibited",
-      "The area is Class G",
-      "It is Class B"
+      "The surrounding area is uncontrolled Class G up to 1,200 feet above the ground",
+      "Flight is prohibited within the boundary unless a specific waiver has been issued",
+      "It is Class B airspace requiring a specific clearance before any operation",
+      "Class E reaches the surface there and authorization is required"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A dashed magenta line marks Class E to the surface, which is controlled and requires authorization."
   },
   {
@@ -1564,12 +1564,12 @@
     "s": "Wildlife Areas",
     "q": "Charted wildlife refuges and similar areas remind pilots to:",
     "c": [
-      "Land and report in",
-      "Treat them as Class B",
-      "Always obtain a TFR",
-      "Avoid disturbing wildlife and maintain higher altitudes where requested"
+      "Always obtain a Temporary Flight Restriction before operating nearby",
+      "Treat the area as Class B airspace that requires an ATC clearance to enter",
+      "Avoid disturbing wildlife and maintain higher altitudes where requested",
+      "Land immediately and report their position to the managing federal agency"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Charts request that pilots avoid low flight over wildlife refuges to limit disturbance."
   },
   {
@@ -1642,12 +1642,12 @@
     "s": "Visual Checkpoint",
     "q": "A magenta flag symbol on a sectional chart marks a:",
     "c": [
-      "Seaplane base",
-      "Visual checkpoint used for reporting position or navigation",
-      "Prohibited area",
-      "Wind turbine"
+      "Prohibited area that bars all aircraft from entering it",
+      "Wind turbine farm marked as an obstruction to flight",
+      "Seaplane base where takeoffs and landings on the water are conducted",
+      "Visual checkpoint used for reporting position or navigation"
     ],
-    "a": 1,
+    "a": 3,
     "e": "A magenta flag denotes a visual checkpoint, a prominent landmark pilots use for position reporting."
   },
   {
@@ -1655,12 +1655,12 @@
     "s": "Navigation",
     "q": "On a sectional chart, a VORTAC is shown as:",
     "c": [
+      "A dashed blue square drawn around the navigation facility and its service area",
+      "A small magenta flag placed at the reporting point",
       "A VOR compass rose symbol with added markings for the TACAN component",
-      "A dashed blue square",
-      "A plain magenta circle",
-      "A magenta flag"
+      "A plain magenta circle with no compass rose or added markings"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A VORTAC combines a VOR with military TACAN, drawn as the VOR symbol with extra corner markings."
   },
   {
@@ -2071,10 +2071,10 @@
     "s": "First-Person View",
     "q": "Flying with first-person-view goggles is allowed under Part 107 only if:",
     "c": [
-      "The drone weighs under 250 g",
-      "The pilot flies under 200 ft",
+      "The remote pilot keeps the aircraft below 200 feet above the ground",
+      "The entire flight is conducted at night using anti-collision lighting visible for 3 SM",
       "A visual observer maintains unaided visual line of sight with the aircraft",
-      "The flight is at night"
+      "The aircraft being flown weighs less than 250 grams with its battery"
     ],
     "a": 2,
     "e": "FPV is permitted as long as a visual observer keeps the aircraft within unaided line of sight at all times."
@@ -2149,10 +2149,10 @@
     "s": "Transfer of Control",
     "q": "Handing off control of a small UAS during a flight is:",
     "c": [
-      "Allowed to any bystander",
-      "Allowed only on the ground",
+      "Allowed to any bystander as long as the remote PIC stays within arm's reach",
+      "Never permitted, because only one person may touch the controls per flight",
       "Allowed between certificated remote PICs who coordinate the transfer",
-      "Never permitted"
+      "Allowed only while the aircraft is on the ground and the motors are stopped"
     ],
     "a": 2,
     "e": "Control may pass between qualified pilots if the handoff is coordinated and one PIC stays responsible."
@@ -2357,12 +2357,12 @@
     "s": "Bystander Safety",
     "q": "If uninvolved people enter the operating area during a flight, the remote PIC should:",
     "c": [
+      "Continue the operation as planned since they entered the area voluntarily",
+      "Speed up to finish the planned flight quickly before they move any closer",
       "Maneuver to keep the aircraft from flying over them, or land if needed",
-      "Speed up to finish quickly",
-      "Lower altitude over the people",
-      "Continue as planned"
+      "Descend and hold a low hover directly above the people until they leave"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The remote PIC must avoid flying over people not part of the operation, repositioning or landing as needed."
   },
   {
@@ -2383,12 +2383,12 @@
     "s": "Night Training",
     "q": "To fly at night under the current rules, a remote pilot must:",
     "c": [
-      "Obtain a waiver every flight",
       "Have completed the updated recurrent training covering night operations",
-      "Hold an instrument rating",
-      "Be supervised by a manned pilot"
+      "Be directly supervised by a manned-aircraft pilot during the operation",
+      "Hold an instrument rating in addition to the remote pilot certificate",
+      "Obtain a specific waiver from the FAA before every individual night flight"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Night operations require the lighting plus the updated training that now includes night content."
   },
   {
@@ -2487,12 +2487,12 @@
     "s": "Personal Minimums",
     "q": "Setting personal minimums for wind, visibility, and experience helps a pilot:",
     "c": [
-      "Make consistent go or no-go decisions and avoid pressing into unsafe conditions",
-      "Fly in any weather",
-      "Ignore the regulations",
-      "Skip the preflight assessment"
+      "Legally fly in any weather condition as long as the aircraft stays within line of sight",
+      "Skip the preflight assessment when conditions appear calm and clear",
+      "Disregard the regulations whenever personal experience suggests it is safe",
+      "Make consistent go or no-go decisions and avoid pressing into unsafe conditions"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Personal minimums give a clear line for go or no-go decisions before external pressures push toward an unsafe flight."
   },
   {
@@ -2500,12 +2500,12 @@
     "s": "Total Weight",
     "q": "The total weight that matters for Part 107 limits and performance includes:",
     "c": [
-      "The airframe only",
+      "The airframe by itself, not counting the battery, payload, or mounting hardware",
+      "Only the battery, since it is the single heaviest component on board",
       "The aircraft plus battery, payload, and anything else on board",
-      "The battery only",
-      "The payload only"
+      "Only the payload that is mounted for the specific mission"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Maximum weight covers everything on board, so payload and battery count toward the under-55-lb limit and performance."
   },
   {
@@ -2604,12 +2604,12 @@
     "s": "Maneuverability",
     "q": "Adding weight to a small UAS generally:",
     "c": [
-      "Has no effect on handling",
-      "Improves agility",
       "Reduces maneuverability and lengthens the distance to stop or change direction",
-      "Increases maximum altitude"
+      "Has no measurable effect on how the aircraft handles during flight",
+      "Improves agility and noticeably shortens the distance needed to stop or change direction",
+      "Increases the maximum altitude the aircraft can safely reach"
     ],
-    "a": 2,
+    "a": 0,
     "e": "More weight increases inertia, so the aircraft is slower to respond and needs more room to maneuver."
   },
   {
@@ -2630,10 +2630,10 @@
     "s": "Center of Gravity",
     "q": "A center of gravity that is too far forward tends to make an aircraft:",
     "c": [
-      "Unstable and twitchy",
-      "Unaffected in handling",
+      "Noticeably lighter on the controls and faster in level forward flight",
+      "Unstable and twitchy, overreacting to even small control inputs in flight",
       "More stable but heavier on the controls and harder to maneuver",
-      "Lighter and faster"
+      "Unaffected in handling because the flight controller compensates automatically"
     ],
     "a": 2,
     "e": "A forward center of gravity adds stability but makes the aircraft feel heavy and less responsive to maneuver."
@@ -2721,12 +2721,12 @@
     "s": "Terrain",
     "q": "Contour lines and color tints on a sectional help a pilot judge:",
     "c": [
-      "Magnetic variation",
-      "Wind direction",
-      "Airspace class",
-      "Rising terrain that could reduce clearance above the ground"
+      "Rising terrain that could reduce clearance above the ground",
+      "Magnetic variation between true north and magnetic north across the area",
+      "The class of airspace overlying each section of the charted region",
+      "Prevailing wind direction and speed at the surface during daylight hours"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Contours and tints show terrain relief so you keep clearance above rising ground."
   },
   {
@@ -2734,12 +2734,12 @@
     "s": "Special Use",
     "q": "A Military Training Route labeled VR-1207 is flown:",
     "c": [
-      "Always under IFR",
+      "Always under instrument flight rules regardless of the weather",
+      "Only at altitudes above 18,000 feet within positive control airspace",
       "Under visual flight rules, with the pilot keeping visual references",
-      "Only above 18,000 ft",
-      "Only at night"
+      "Only at night when other military traffic is not operating"
     ],
-    "a": 1,
+    "a": 2,
     "e": "VR routes are flown under visual rules, while IR routes are flown by instruments."
   },
   {
@@ -2773,10 +2773,10 @@
     "s": "Airspace Symbols",
     "q": "Class B floors and ceilings on a sectional are shown as:",
     "c": [
-      "Single AGL values",
-      "Magenta vignettes",
+      "Single values in feet above ground level printed just inside the boundary",
+      "Magenta vignettes that fade outward from the center of the airspace",
       "Pairs of numbers in hundreds of feet MSL along each segment",
-      "Dashed lines only"
+      "Dashed lines only, with the altitudes listed in a separate chart legend"
     ],
     "a": 2,
     "e": "Each Class B segment lists its ceiling over its floor in hundreds of feet MSL."
@@ -2864,12 +2864,12 @@
     "s": "Wind",
     "q": "Planning a flight in steady 20 knot winds, a pilot should expect:",
     "c": [
-      "Higher power use, shorter flight time, and less control margin",
-      "No change in endurance",
-      "Longer flight time",
-      "Better hover stability"
+      "Longer flight time since the wind helps push the aircraft along its route",
+      "Improved hover stability as the steady wind holds the aircraft in place",
+      "No measurable change in endurance because the wind averages out over time",
+      "Higher power use, shorter flight time, and less control margin"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Wind forces constant correction and higher power draw, cutting endurance and margin."
   },
   {
@@ -3150,9 +3150,9 @@
     "s": "Supervision",
     "q": "A learner practicing on the controls under Part 107 must be:",
     "c": [
-      "At least 18",
-      "Already a certificate holder",
-      "Within 100 ft of the pilot",
+      "At least 18 years old and registered as a student with the FAA beforehand",
+      "Already a certificate holder who has passed the initial knowledge test",
+      "Within 100 feet of the supervising pilot and the control station at all times",
       "Directly supervised by a remote PIC able to take control immediately"
     ],
     "a": 3,
@@ -3527,12 +3527,12 @@
     "s": "Airspace Symbols",
     "q": "Class C airspace shelf altitudes on a sectional are shown as:",
     "c": [
-      "Single AGL values",
-      "Magenta numbers giving the ceiling over the floor in hundreds of feet MSL",
-      "Blue shading only",
-      "A dashed magenta line"
+      "Single above-ground-level values printed in blue beside each runway end",
+      "A dashed magenta line drawn around the outer edge of the airspace with no altitudes",
+      "Blue shading whose darkness indicates the relative height of the airspace",
+      "Magenta numbers giving the ceiling over the floor in hundreds of feet MSL"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Class C segments list ceiling over floor in hundreds of feet MSL beside the magenta rings."
   },
   {
@@ -3722,12 +3722,12 @@
     "s": "Time Pressure",
     "q": "Rushing a preflight to meet a deadline most directly increases the risk of:",
     "c": [
-      "Longer battery life",
-      "Missing a problem that should have been caught on the ground",
-      "Smoother air",
-      "Better focus"
+      "Encountering smoother air because the flight begins earlier than planned",
+      "Sharper focus and quicker reactions once the aircraft is in the air",
+      "Achieving longer battery life because the systems warm up more quickly",
+      "Missing a problem that should have been caught on the ground"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Hurrying the preflight lets ground-detectable problems slip through into the flight."
   },
   {
@@ -3774,12 +3774,12 @@
     "s": "Special Use",
     "q": "The difference between a prohibited area and a restricted area is that a prohibited area:",
     "c": [
+      "Permits flight below 400 feet above the ground without any prior coordination",
+      "Applies only to unmanned aircraft and not to any manned traffic",
       "Bars all flight, while a restricted area may be entered with permission",
-      "Applies only to drones",
-      "Allows flight under 400 ft",
-      "Is uncontrolled"
+      "Is uncontrolled airspace that any pilot may enter at any time"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Prohibited areas allow no flight at all, while restricted areas may be entered with permission."
   },
   {
@@ -3787,12 +3787,12 @@
     "s": "TFR",
     "q": "Temporary Flight Restrictions are commonly issued for:",
     "c": [
-      "Drone flights only",
-      "Routine daily traffic",
       "Hazards like wildfires, security like VIP movement, and special events",
-      "Clear-weather days"
+      "Normal daily airport traffic during periods of heavy congestion",
+      "Routine drone operations that do not involve any manned aircraft traffic",
+      "Clear-weather days when visibility and ceilings are well above minimums"
     ],
-    "a": 2,
+    "a": 0,
     "e": "TFRs cover hazards, security needs, and special events, and they apply to drones."
   },
   {
@@ -4099,12 +4099,12 @@
     "s": "Distance Judgment",
     "q": "Because judging an aircraft's altitude and distance is harder far away, a pilot should:",
     "c": [
-      "Rely only on the map view",
-      "Keep the aircraft close enough to see its position and orientation clearly",
-      "Ignore orientation",
-      "Fly it as far as the link allows"
+      "Fly the aircraft out as far as the control link signal will reliably reach",
+      "Ignore orientation and focus solely on keeping the battery level above reserve",
+      "Rely only on the map view in the controller app to judge the aircraft's location",
+      "Keep the aircraft close enough to see its position and orientation clearly"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly."
   },
   {
@@ -4242,12 +4242,12 @@
     "s": "Authorization",
     "q": "Which airspace does NOT require Part 107 authorization for a drone?",
     "c": [
-      "Surface Class E",
-      "Class E that begins at 700 or 1,200 ft AGL, not at the surface",
-      "Class D",
-      "Class C"
+      "Class C airspace surrounding a busier airport that provides radar service",
+      "Class D airspace surrounding an airport with an operating control tower",
+      "Surface Class E established to support an instrument approach",
+      "Class E that begins at 700 or 1,200 ft AGL, not at the surface"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Part 107 needs authorization only for B, C, D, and surface Class E, not for Class E that starts above the ground."
   },
   {
@@ -4255,10 +4255,10 @@
     "s": "Class G Ceiling",
     "q": "The top of Class G airspace is found where:",
     "c": [
-      "Class A begins",
-      "It always reaches 18,000 ft",
+      "Class A airspace begins, at 18,000 feet mean sea level across the country",
+      "The charted floor of the traffic pattern ends, usually near 400 feet AGL",
       "The overlying controlled airspace begins, often 700 or 1,200 ft AGL",
-      "It ends at 400 ft"
+      "It always reaches exactly 18,000 feet regardless of the surrounding airspace"
     ],
     "a": 2,
     "e": "Class G extends up to the base of the overlying controlled airspace, commonly 700 or 1,200 ft AGL."
@@ -4294,12 +4294,12 @@
     "s": "MOA",
     "q": "The status of a Military Operations Area can be checked through:",
     "c": [
-      "The registration database",
       "NOTAMs and the controlling agency, with hours often shown on the chart",
-      "Only by radio with the tower",
-      "The aircraft manual"
+      "Only radio contact with the nearest airport traffic control tower",
+      "The aircraft registration database maintained on the FAA DroneZone website",
+      "The aircraft's flight manual, which lists every active military area"
     ],
-    "a": 1,
+    "a": 0,
     "e": "MOA activity is published via NOTAMs and the controlling agency, with times often listed on the chart."
   },
   {
@@ -4333,12 +4333,12 @@
     "s": "Communication",
     "q": "To operate in authorized controlled airspace, a Part 107 pilot:",
     "c": [
-      "Must monitor 121.5",
-      "Must talk to the tower continuously",
-      "Does not need two-way radio contact with ATC; authorization is handled digitally",
-      "Must file IFR"
+      "Must talk to the control tower continuously throughout the entire operation",
+      "Must file an instrument flight rules plan before entering the airspace",
+      "Must maintain a continuous listening watch on the emergency frequency 121.5 throughout",
+      "Does not need two-way radio contact with ATC; authorization is handled digitally"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Small UAS do not maintain radio contact with ATC; the digital authorization is what grants access."
   },
   {
@@ -5477,12 +5477,12 @@
     "s": "Wind Shear",
     "q": "Why is wind shear hazardous to a small UAS?",
     "c": [
-      "It improves aircraft stability",
-      "It is always visible to the pilot",
-      "It only occurs above 10,000 ft",
-      "It is a sudden change in wind over a short distance that can upset control"
+      "It is a sudden change in wind over a short distance that can upset control",
+      "It steadily improves aircraft stability by smoothing out gusts near the ground",
+      "It only occurs above 10,000 feet, well outside the Part 107 altitude limit",
+      "It is always visible to the pilot as a clear line of clouds or blowing dust"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Wind shear is an abrupt change in wind speed or direction over a short distance and can cause loss of control."
   },
   {
@@ -6153,12 +6153,12 @@
     "s": "Propellers",
     "q": "What can an unbalanced propeller cause?",
     "c": [
-      "Longer flight time",
-      "Better GPS accuracy",
+      "Longer flight time because the blade moves through the air more freely",
       "Vibration that blurs imagery and stresses motors and the airframe",
-      "Improved stability"
+      "Better GPS accuracy from the steadier platform that it creates",
+      "Improved stability and smoother handling in gusty wind"
     ],
-    "a": 2,
+    "a": 1,
     "e": "An unbalanced propeller causes vibration that degrades imagery and stresses the motors and airframe."
   },
   {
@@ -6829,12 +6829,12 @@
     "s": "Supervision",
     "q": "A person who does not hold a remote pilot certificate may manipulate the controls of an sUAS under Part 107 only if",
     "c": [
-      "the aircraft weighs under 0.55 lb",
-      "they have completed the TRUST test",
-      "the flight stays below 100 feet",
-      "under the direct supervision of a remote PIC who can immediately take control"
+      "the entire flight is conducted below 100 feet and within visual line of sight",
+      "under the direct supervision of a remote PIC who can immediately take control",
+      "the aircraft weighs under 0.55 lb and is therefore exempt from the registration rules",
+      "they have completed the recreational TRUST test offered to hobby flyers"
     ],
-    "a": 3,
+    "a": 1,
     "e": "An uncertificated person may fly only under the direct supervision of a remote PIC who can immediately take control."
   },
   {
@@ -6998,12 +6998,12 @@
     "s": "Over people",
     "q": "A Category 1 sUAS for operations over people must weigh",
     "c": [
-      "55 lb or less",
+      "exactly 1 lb, measured with the battery and any payload installed",
+      "less than 5 lb and be equipped with a tested deployable parachute",
       "0.55 lb (250 g) or less with no exposed rotating parts that can lacerate skin",
-      "exactly 1 lb",
-      "less than 5 lb with a parachute"
+      "55 lb or less, the same maximum weight that applies to every Part 107 aircraft"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Category 1 covers sUAS of 0.55 lb (250 g) or less with no exposed rotating parts that can lacerate skin."
   },
   {
@@ -7011,12 +7011,12 @@
     "s": "Over moving vehicles",
     "q": "Sustained flight of an sUAS over a person inside a moving vehicle is allowed only when",
     "c": [
-      "it is daytime",
-      "the speed is under 25 mph",
-      "the vehicle is parked",
-      "the operation meets an over-people category or the occupants are participating"
+      "the remote pilot has notified the occupants and they have verbally given consent",
+      "the operation meets an over-people category or the occupants are participating",
+      "the flight is conducted during daylight and the vehicle is traveling under 25 mph",
+      "the operation takes place in Class G airspace below 400 feet above the ground"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Flight over moving vehicles requires meeting an over-people category or that the occupants are participating in the operation."
   },
   {
@@ -7024,12 +7024,12 @@
     "s": "Preflight",
     "q": "Before each flight, the remote PIC is required to",
     "c": [
-      "obtain a weather briefing from a VO",
-      "file a flight plan with ATC",
-      "assess the operating environment and ensure the aircraft is safe for operation",
-      "log the flight in IACRA"
+      "log the planned flight in IACRA and notify the nearest air traffic control facility",
+      "file a flight plan with air traffic control and receive a clearance before launch",
+      "obtain a standard weather briefing relayed verbally by the visual observer on site",
+      "assess the operating environment and ensure the aircraft is safe for operation"
     ],
-    "a": 2,
+    "a": 3,
     "e": "The remote PIC must assess the operating environment and ensure the sUAS is in a condition for safe operation."
   },
   {
@@ -7323,10 +7323,10 @@
     "s": "Over people",
     "q": "Operations over people may be conducted at night when",
     "c": [
-      "the drone weighs under 0.55 lb",
+      "never, because combining night flight with operations over people is always prohibited",
       "both the over-people category requirements and the night operation requirements are met",
-      "never, night over-people flight is prohibited",
-      "only a waiver is held"
+      "the aircraft weighs less than 0.55 lb and therefore poses very little risk to people below",
+      "a single waiver covering night flight is held, regardless of the over-people category"
     ],
     "a": 1,
     "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training)."
@@ -7466,12 +7466,12 @@
     "s": "Interference",
     "q": "Operating a small unmanned aircraft close to metal structures or high-voltage power lines can",
     "c": [
-      "increase battery life",
+      "have no measurable effect on the aircraft's control link or navigation systems",
+      "improve GPS accuracy by giving the receiver more fixed reference points nearby",
       "cause magnetic or radio interference that degrades control or navigation",
-      "have no effect on the aircraft",
-      "improve GPS accuracy"
+      "increase battery life because the surrounding metal shields the aircraft from wind"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Metal structures and power lines can cause magnetic or radio interference that degrades control or GPS navigation."
   },
   {
@@ -7493,9 +7493,9 @@
     "q": "When a manufacturer provides scheduled maintenance instructions for an sUAS, the operator should",
     "c": [
       "follow them, and otherwise maintain the aircraft so it stays in a condition for safe operation",
-      "send the aircraft to the FAA for inspection",
-      "ignore them after the warranty ends",
-      "only service the aircraft after a crash"
+      "disregard them once the manufacturer's warranty period has fully expired",
+      "send the aircraft to an FAA facility for a scheduled annual inspection each year",
+      "perform maintenance only after the aircraft has been involved in a crash or hard landing event"
     ],
     "a": 0,
     "e": "Follow the manufacturer's maintenance schedule; absent one, maintain the aircraft so it remains in a condition for safe operation."
@@ -7583,10 +7583,10 @@
     "s": "See and avoid",
     "q": "To meet see-and-avoid responsibilities, the remote PIC must",
     "c": [
-      "rely solely on Remote ID",
+      "rely solely on the aircraft's Remote ID broadcast to detect and avoid other traffic",
       "maintain awareness and yield the right of way to all other aircraft",
-      "fly only above 400 feet",
-      "use a transponder"
+      "equip the aircraft with a transponder and squawk the assigned discrete code",
+      "operate only above 400 feet so that manned aircraft remain well below the drone"
     ],
     "a": 1,
     "e": "The remote PIC must maintain awareness and yield the right of way to all other aircraft."
@@ -7713,12 +7713,12 @@
     "s": "Terrain",
     "q": "The large number shown in each quadrant on a sectional chart is the Maximum Elevation Figure, which represents",
     "c": [
-      "the airport elevation",
-      "the magnetic variation",
+      "the magnetic variation that pilots apply when navigating within that area",
       "the highest known terrain or obstacle in that quadrant, in hundreds of feet MSL",
-      "the floor of Class E airspace"
+      "the floor of the overlying Class E airspace measured above the ground",
+      "the published field elevation of the largest charted airport within that quadrant"
     ],
-    "a": 2,
+    "a": 1,
     "e": "The Maximum Elevation Figure is the highest known terrain or obstacle in that quadrant, shown in hundreds of feet MSL."
   },
   {
@@ -7752,12 +7752,12 @@
     "s": "Stability",
     "q": "Unstable air is generally associated with",
     "c": [
-      "steady rain and fog",
-      "no cloud development",
-      "smooth air and poor visibility",
-      "cumuliform clouds, turbulence, showery precipitation, and good visibility"
+      "cumuliform clouds, turbulence, showery precipitation, and good visibility",
+      "stratiform clouds, steady widespread rain, smooth air, and gradually reducing visibility",
+      "clear skies with no cloud development and consistently calm surface winds all day",
+      "persistent fog, low stratus, and very poor visibility with little vertical motion"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Unstable air brings cumuliform clouds, turbulence, showery precipitation, and generally good visibility."
   },
   {
@@ -7973,12 +7973,12 @@
     "s": "Planning",
     "q": "Considering weight and balance before adding a camera or payload helps ensure",
     "c": [
-      "a longer warranty",
-      "faster GPS lock",
-      "the aircraft stays within its weight and center-of-gravity limits",
-      "a lower registration fee"
+      "a longer manufacturer warranty on the airframe and the camera mount",
+      "a lower aircraft registration fee because of the reduced takeoff weight",
+      "a faster GPS lock when the aircraft is first powered on before launch",
+      "the aircraft stays within its weight and center-of-gravity limits"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Checking weight and balance keeps the aircraft within its weight and center-of-gravity limits."
   },
   {
@@ -8065,9 +8065,9 @@
     "q": "Radiation fog most commonly forms",
     "c": [
       "on clear, calm nights with high humidity as the ground cools",
-      "over open ocean",
-      "on windy afternoons",
-      "during thunderstorms"
+      "during thunderstorms as heavy rain saturates the air near the surface",
+      "over the open ocean where warm air moves across a cooler water surface",
+      "on windy afternoons when rising thermals carry moisture quickly aloft"
     ],
     "a": 0,
     "e": "Radiation fog forms on clear, calm nights with high humidity as the ground cools."
@@ -8142,12 +8142,12 @@
     "s": "Emergency",
     "q": "During an in-flight emergency requiring immediate action, the remote PIC may",
     "c": [
-      "never deviate from any rule",
-      "ignore other aircraft",
-      "transfer the certificate to a bystander",
-      "deviate from the operating rules to the extent necessary to meet the emergency"
+      "deviate from the operating rules to the extent necessary to meet the emergency",
+      "ignore other aircraft in the area because the emergency takes priority over them",
+      "never deviate from any operating rule, even when safety of flight is at stake",
+      "transfer the remote pilot certificate to a bystander to share responsibility"
     ],
-    "a": 3,
+    "a": 0,
     "e": "In an in-flight emergency, the remote PIC may deviate from the operating rules to the extent necessary to meet that emergency."
   },
   {
@@ -8168,12 +8168,12 @@
     "s": "Airport operations",
     "q": "Operating a small unmanned aircraft in the vicinity of an airport requires the remote pilot to",
     "c": [
-      "monitor only the weather",
       "not interfere with operations at the airport and give way to manned aircraft",
-      "fly only above 400 feet",
-      "always obtain a waiver"
+      "always obtain a written waiver from the FAA before operating near any airport",
+      "monitor only the airport weather and disregard the other traffic in the pattern",
+      "remain above 400 feet above the ground at all times while near the airport"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Near an airport, the operation must not interfere with airport operations and must give way to manned aircraft."
   },
   {
@@ -8194,12 +8194,12 @@
     "s": "Visual observer",
     "q": "A visual observer used to satisfy see-and-avoid must",
     "c": [
-      "stay in a vehicle",
+      "hold a current remote pilot certificate issued under Part 107 rules",
+      "take over the flight controls whenever the remote pilot loses sight",
       "be able to see the aircraft and communicate its position to the remote PIC",
-      "hold a remote pilot certificate",
-      "operate the controls"
+      "remain seated inside a vehicle that is parked near the launch and recovery area"
     ],
-    "a": 1,
+    "a": 2,
     "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC."
   }
 ]
