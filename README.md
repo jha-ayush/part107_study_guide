@@ -66,7 +66,8 @@ Either way, open http://127.0.0.1:8000.
 Topics are Regulations, Airspace, Charts, Weather, Operations, and Loading. The
 bank currently holds 560+ questions, each tagged with its FAA ACS task code. Some
 chart questions include an original sectional-excerpt figure to read, and the
-cheat sheet carries a visual symbology legend. Per-topic mastery badges and a
+cheat sheet carries a visual symbology legend; you can also practice just the
+chart-reading figures from the home screen. Per-topic mastery badges and a
 dark mode are built in.
 
 ## Content currency
