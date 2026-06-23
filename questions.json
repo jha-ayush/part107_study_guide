@@ -10,7 +10,8 @@
       "No report required"
     ],
     "a": 2,
-    "e": "Report within 10 calendar days if an accident causes serious injury or at least $500 damage to others' property."
+    "e": "Report within 10 calendar days if an accident causes serious injury or at least $500 damage to others' property.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -23,7 +24,8 @@
       "A near-miss with no contact"
     ],
     "a": 1,
-    "e": "Reporting is triggered by serious injury or at least $500 damage to others' property."
+    "e": "Reporting is triggered by serious injury or at least $500 damage to others' property.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -36,7 +38,8 @@
       "Renew the certificate annually with the FAA"
     ],
     "a": 2,
-    "e": "Since 2021 currency is maintained by free online recurrent training every 24 calendar months, with no in-person retest."
+    "e": "Since 2021 currency is maintained by free online recurrent training every 24 calendar months, with no in-person retest.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -49,7 +52,8 @@
       "Over 2 lb only"
     ],
     "a": 1,
-    "e": "Aircraft from 0.55 lb up to under 55 lb must be registered before any Part 107 flight."
+    "e": "Aircraft from 0.55 lb up to under 55 lb must be registered before any Part 107 flight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -62,7 +66,8 @@
       "Only a printed paper copy of the full Part 107 regulations"
     ],
     "a": 1,
-    "e": "The remote PIC must keep their remote pilot certificate and ID readily accessible during all operations."
+    "e": "The remote PIC must keep their remote pilot certificate and ID readily accessible during all operations.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -75,7 +80,8 @@
       "Carry a Mode C transponder like manned aircraft"
     ],
     "a": 1,
-    "e": "Remote ID makes the aircraft broadcast its identity, location, and altitude so it can be identified while airborne."
+    "e": "Remote ID makes the aircraft broadcast its identity, location, and altitude so it can be identified while airborne.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -88,7 +94,8 @@
       "Under direct supervision of a certificated remote PIC who can take control"
     ],
     "a": 3,
-    "e": "A non-certificated person may fly only under the direct supervision of a remote PIC able to immediately take over."
+    "e": "A non-certificated person may fly only under the direct supervision of a remote PIC able to immediately take over.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -101,7 +108,8 @@
       "14"
     ],
     "a": 0,
-    "e": "An applicant must be at least 16 years old to hold a remote pilot certificate."
+    "e": "An applicant must be at least 16 years old to hold a remote pilot certificate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -114,7 +122,8 @@
       "24 hours"
     ],
     "a": 2,
-    "e": "No operation within 8 hours of alcohol, while impaired, or with a blood alcohol content of 0.04% or greater."
+    "e": "No operation within 8 hours of alcohol, while impaired, or with a blood alcohol content of 0.04% or greater.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -829,7 +838,8 @@
       "Operate the aircraft without registering it or marking it with a registration number"
     ],
     "a": 1,
-    "e": "A waiver permits deviation from specific waivable rules only when the FAA is satisfied the operation can be done safely."
+    "e": "A waiver permits deviation from specific waivable rules only when the FAA is satisfied the operation can be done safely.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -842,7 +852,8 @@
       "A medical certificate"
     ],
     "a": 1,
-    "e": "Airspace access is granted by an authorization, while permission to deviate from an operating rule comes from a waiver."
+    "e": "Airspace access is granted by an authorization, while permission to deviate from an operating rule comes from a waiver.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -855,7 +866,8 @@
       "Take over flying the controls whenever the remote pilot becomes busy"
     ],
     "a": 2,
-    "e": "A visual observer keeps the aircraft in sight and stays in communication with the remote PIC to support see-and-avoid."
+    "e": "A visual observer keeps the aircraft in sight and stays in communication with the remote PIC to support see-and-avoid.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -868,7 +880,8 @@
       "Allowed only within one state, under 55 lb total, with no hazardous materials"
     ],
     "a": 3,
-    "e": "Property for hire may be carried only within one state, under 55 lb total, and never hazardous materials."
+    "e": "Property for hire may be carried only within one state, under 55 lb total, and never hazardous materials.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -881,7 +894,8 @@
       "Cargo, but never hazardous materials"
     ],
     "a": 3,
-    "e": "Part 107 prohibits carrying hazardous materials regardless of weight."
+    "e": "Part 107 prohibits carrying hazardous materials regardless of weight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -894,7 +908,8 @@
       "Required only for night flight or operations conducted in controlled airspace near airports"
     ],
     "a": 1,
-    "e": "No medical certificate is required, but you may not fly with a condition that impairs safe operation."
+    "e": "No medical certificate is required, but you may not fly with a condition that impairs safe operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -907,7 +922,8 @@
       "Own an aircraft that is registered with the FAA"
     ],
     "a": 0,
-    "e": "English proficiency in reading, speaking, writing, and understanding is an eligibility requirement for the certificate."
+    "e": "English proficiency in reading, speaking, writing, and understanding is an eligibility requirement for the certificate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -920,7 +936,8 @@
       "Present the remote pilot certificate and allow inspection of the aircraft and records"
     ],
     "a": 3,
-    "e": "On request, the remote PIC must show the certificate and allow FAA inspection of the aircraft and records."
+    "e": "On request, the remote PIC must show the certificate and allow FAA inspection of the aircraft and records.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -933,7 +950,8 @@
       "Broadcast over radio before flight"
     ],
     "a": 1,
-    "e": "The registration number must be displayed on the aircraft's exterior surface and be readable."
+    "e": "The registration number must be displayed on the aircraft's exterior surface and be readable.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -946,7 +964,8 @@
       "5 years"
     ],
     "a": 1,
-    "e": "Small unmanned aircraft registration must be renewed every 3 years."
+    "e": "Small unmanned aircraft registration must be renewed every 3 years.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -959,7 +978,8 @@
       "Always prohibited under Part 107 regardless of the precautions that are taken"
     ],
     "a": 0,
-    "e": "You may drop an object as long as reasonable precautions prevent it from creating an undue hazard to people or property."
+    "e": "You may drop an object as long as reasonable precautions prevent it from creating an undue hazard to people or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -972,7 +992,8 @@
       "The pilot's certificate expiration date and registration number"
     ],
     "a": 0,
-    "e": "A preflight assessment of local airspace, weather, terrain, and obstacles is required before every operation."
+    "e": "A preflight assessment of local airspace, weather, terrain, and obstacles is required before every operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -985,7 +1006,8 @@
       "Does not exempt you from state or local privacy and trespass laws"
     ],
     "a": 3,
-    "e": "Federal Part 107 governs the airspace operation but does not preempt state or local privacy, trespass, and similar laws."
+    "e": "Federal Part 107 governs the airspace operation but does not preempt state or local privacy, trespass, and similar laws.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -998,7 +1020,8 @@
       "A designated remote PIC who is the final authority for that flight"
     ],
     "a": 3,
-    "e": "Each operation must have one remote PIC who is directly responsible for and the final authority over that flight."
+    "e": "Each operation must have one remote PIC who is directly responsible for and the final authority over that flight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -1011,7 +1034,8 @@
       "Recreational flyers, not Part 107 commercial operators"
     ],
     "a": 3,
-    "e": "TRUST satisfies the recreational flyer requirement and is separate from the Part 107 knowledge test."
+    "e": "TRUST satisfies the recreational flyer requirement and is separate from the Part 107 knowledge test.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1024,7 +1048,8 @@
       "Online from home using a webcam while a remote proctor monitors the session live"
     ],
     "a": 0,
-    "e": "The initial knowledge test is proctored at an FAA-approved testing center and requires valid photo identification."
+    "e": "The initial knowledge test is proctored at an FAA-approved testing center and requires valid photo identification.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1037,7 +1062,8 @@
       "Registering the drone, which automatically issues the certificate"
     ],
     "a": 2,
-    "e": "The applicant files through IACRA, and after TSA vetting receives a temporary then a permanent remote pilot certificate."
+    "e": "The applicant files through IACRA, and after TSA vetting receives a temporary then a permanent remote pilot certificate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1050,7 +1076,8 @@
       "Beyond visual line of sight"
     ],
     "a": 0,
-    "e": "Many operating rules are waivable, but the ban on carrying hazardous materials is not."
+    "e": "Many operating rules are waivable, but the ban on carrying hazardous materials is not.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -1063,7 +1090,8 @@
       "Keeping the aircraft below 200 feet above the ground at all times"
     ],
     "a": 2,
-    "e": "Comply via a standard Remote ID drone, a broadcast module, or flying inside a FRIA."
+    "e": "Comply via a standard Remote ID drone, a broadcast module, or flying inside a FRIA.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -1076,7 +1104,8 @@
       "A pilot certification level above the basic remote certificate"
     ],
     "a": 0,
-    "e": "A FRIA is an approved location where aircraft without Remote ID broadcast capability may still be flown."
+    "e": "A FRIA is an approved location where aircraft without Remote ID broadcast capability may still be flown.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -1089,7 +1118,8 @@
       "Each aircraft is registered individually"
     ],
     "a": 3,
-    "e": "Part 107 requires each unmanned aircraft to be registered individually, each with its own registration."
+    "e": "Part 107 requires each unmanned aircraft to be registered individually, each with its own registration.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -1102,7 +1132,8 @@
       "Only a concern for manned pilots, not remote pilots"
     ],
     "a": 2,
-    "e": "Making a fraudulent or false record or report is prohibited and can result in suspension, revocation, or penalties."
+    "e": "Making a fraudulent or false record or report is prohibited and can result in suspension, revocation, or penalties.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1115,7 +1146,8 @@
       "Required every year and renewed before the prior one lapses"
     ],
     "a": 2,
-    "e": "Currency is kept through free online recurrent training every 24 calendar months, with no proctored retest."
+    "e": "Currency is kept through free online recurrent training every 24 calendar months, with no proctored retest.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1128,7 +1160,8 @@
       "Does not expire, but the holder must stay current with recurrent training"
     ],
     "a": 3,
-    "e": "The certificate does not expire, but the pilot must complete recurrent training to remain eligible to operate."
+    "e": "The certificate does not expire, but the pilot must complete recurrent training to remain eligible to operate.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -1141,7 +1174,8 @@
       "A manned-aircraft pilot certificate issued by the FAA after a checkride"
     ],
     "a": 2,
-    "e": "Recreational flying uses the limited recreational exception, which has its own rules separate from Part 107."
+    "e": "Recreational flying uses the limited recreational exception, which has its own rules separate from Part 107.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1154,7 +1188,8 @@
       "The FAA, within 10 calendar days"
     ],
     "a": 3,
-    "e": "A qualifying accident is reported to the FAA within 10 calendar days of the operation."
+    "e": "A qualifying accident is reported to the FAA within 10 calendar days of the operation.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -1167,7 +1202,8 @@
       "A maximum weight of 25 lb"
     ],
     "a": 2,
-    "e": "Among the core limits are 400 ft AGL, 87 knots, and at least 3 statute miles of flight visibility from the control station."
+    "e": "Among the core limits are 400 ft AGL, 87 knots, and at least 3 statute miles of flight visibility from the control station.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -2974,7 +3010,8 @@
       "Must retake the proctored exam"
     ],
     "a": 1,
-    "e": "You must be current on recurrent training to act as remote PIC."
+    "e": "You must be current on recurrent training to act as remote PIC.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -2987,7 +3024,8 @@
       "Posted at the launch site"
     ],
     "a": 1,
-    "e": "The certificate of registration must be available to present on request during operations."
+    "e": "The certificate of registration must be available to present on request during operations.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -3000,7 +3038,8 @@
       "A military veteran or active-duty service member"
     ],
     "a": 2,
-    "e": "An applicant must be in a physical and mental condition to operate a small UAS safely."
+    "e": "An applicant must be in a physical and mental condition to operate a small UAS safely.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -3013,7 +3052,8 @@
       "0.10 percent or greater"
     ],
     "a": 1,
-    "e": "You may not operate at 0.04 percent or more, or within 8 hours of consuming alcohol."
+    "e": "You may not operate at 0.04 percent or more, or within 8 hours of consuming alcohol.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -3026,7 +3066,8 @@
       "Flight plan"
     ],
     "a": 0,
-    "e": "Standard Remote ID broadcasts identity, location, and altitude during flight."
+    "e": "Standard Remote ID broadcasts identity, location, and altitude during flight.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -3039,7 +3080,8 @@
       "Directly supervised by a remote PIC able to take control immediately"
     ],
     "a": 3,
-    "e": "A non-certificated person may fly only under a remote PIC able to take control at once."
+    "e": "A non-certificated person may fly only under a remote PIC able to take control at once.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -3715,7 +3757,8 @@
       "The aircraft manufacturer"
     ],
     "a": 1,
-    "e": "Waiver requests are filed through the FAA DroneZone portal."
+    "e": "Waiver requests are filed through the FAA DroneZone portal.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -3728,7 +3771,8 @@
       "Air traffic control"
     ],
     "a": 0,
-    "e": "The remote PIC is directly responsible for and the final authority over the operation."
+    "e": "The remote PIC is directly responsible for and the final authority over the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -3741,7 +3785,8 @@
       "Manned aircraft systems"
     ],
     "a": 0,
-    "e": "Recurrent training was updated to cover night operations along with the core knowledge areas."
+    "e": "Recurrent training was updated to cover night operations along with the core knowledge areas.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -3754,7 +3799,8 @@
       "A local airport"
     ],
     "a": 2,
-    "e": "Aircraft registration is completed through the FAA DroneZone system."
+    "e": "Aircraft registration is completed through the FAA DroneZone system.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Loading",
@@ -4287,7 +4333,8 @@
       "Part 107"
     ],
     "a": 3,
-    "e": "Any flight for a business or compensation falls under Part 107, not the recreational exception."
+    "e": "Any flight for a business or compensation falls under Part 107, not the recreational exception.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4300,7 +4347,8 @@
       "70 percent"
     ],
     "a": 3,
-    "e": "A score of 70 percent or higher is required to pass the Part 107 knowledge test."
+    "e": "A score of 70 percent or higher is required to pass the Part 107 knowledge test.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4313,7 +4361,8 @@
       "14 calendar days"
     ],
     "a": 3,
-    "e": "After a failed knowledge test, you must wait 14 calendar days before retesting."
+    "e": "After a failed knowledge test, you must wait 14 calendar days before retesting.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4326,7 +4375,8 @@
       "The FAA, NTSB, TSA, or law enforcement"
     ],
     "a": 3,
-    "e": "The certificate must be shown on request to the FAA, NTSB, TSA, or law enforcement."
+    "e": "The certificate must be shown on request to the FAA, NTSB, TSA, or law enforcement.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4339,7 +4389,8 @@
       "Public aircraft operated only by government agencies and police"
     ],
     "a": 0,
-    "e": "Part 107 governs civil small unmanned aircraft that weigh less than 55 lb."
+    "e": "Part 107 governs civil small unmanned aircraft that weigh less than 55 lb.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4352,7 +4403,8 @@
       "A standard state driver's license held by the pilot"
     ],
     "a": 0,
-    "e": "Public aircraft operations can be conducted under a COA rather than Part 107."
+    "e": "Public aircraft operations can be conducted under a COA rather than Part 107.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4365,7 +4417,8 @@
       "Broadcast by radio"
     ],
     "a": 1,
-    "e": "The registration marking must be legible and readable without disassembling the aircraft."
+    "e": "The registration marking must be legible and readable without disassembling the aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -4378,7 +4431,8 @@
       "Denial, suspension, or revocation of the certificate"
     ],
     "a": 3,
-    "e": "Refusing testing or a drug or alcohol conviction can result in denial, suspension, or revocation."
+    "e": "Refusing testing or a drug or alcohol conviction can result in denial, suspension, or revocation.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4391,7 +4445,8 @@
       "Fly in uncontrolled Class G airspace below 400 feet"
     ],
     "a": 0,
-    "e": "The recreational exception is for hobby flying only and cannot cover commercial operations."
+    "e": "The recreational exception is for hobby flying only and cannot cover commercial operations.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4404,7 +4459,8 @@
       "Have a manned rating"
     ],
     "a": 1,
-    "e": "Only a holder of a remote pilot certificate may act as the remote PIC."
+    "e": "Only a holder of a remote pilot certificate may act as the remote PIC.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -4417,7 +4473,8 @@
       "Does not authorize commercial operations"
     ],
     "a": 3,
-    "e": "TRUST covers recreational flying only and does not authorize commercial work."
+    "e": "TRUST covers recreational flying only and does not authorize commercial work.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -4430,7 +4487,8 @@
       "Any required airspace authorization is obtained beforehand"
     ],
     "a": 3,
-    "e": "The remote PIC is responsible for obtaining any required airspace authorization before flying."
+    "e": "The remote PIC is responsible for obtaining any required airspace authorization before flying.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -4443,7 +4501,8 @@
       "Legally fly aircraft that weigh over 55 lb"
     ],
     "a": 0,
-    "e": "Staying current with recurrent training keeps a pilot eligible to exercise remote pilot privileges."
+    "e": "Staying current with recurrent training keeps a pilot eligible to exercise remote pilot privileges.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -4456,7 +4515,8 @@
       "Repaint it"
     ],
     "a": 2,
-    "e": "The aircraft must display its registration number before it is flown."
+    "e": "The aircraft must display its registration number before it is flown.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Weather",
@@ -5041,7 +5101,8 @@
       "Every 24 calendar months"
     ],
     "a": 3,
-    "e": "Part 107 currency requires completing the free online recurrent training every 24 calendar months."
+    "e": "Part 107 currency requires completing the free online recurrent training every 24 calendar months.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -5054,7 +5115,8 @@
       "100 mph (87 knots)"
     ],
     "a": 3,
-    "e": "Part 107 limits groundspeed to 100 mph, which is 87 knots."
+    "e": "Part 107 limits groundspeed to 100 mph, which is 87 knots.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5067,7 +5129,8 @@
       "5 statute miles"
     ],
     "a": 2,
-    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station."
+    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5080,7 +5143,8 @@
       "Communicate with each other at all times"
     ],
     "a": 3,
-    "e": "The remote PIC and visual observer must maintain effective communication throughout the operation."
+    "e": "The remote PIC and visual observer must maintain effective communication throughout the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5093,7 +5157,8 @@
       "Anywhere below 400 ft AGL"
     ],
     "a": 0,
-    "e": "Aircraft without Remote ID must operate within an FAA-Recognized Identification Area."
+    "e": "Aircraft without Remote ID must operate within an FAA-Recognized Identification Area.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Airspace",
@@ -5379,7 +5444,8 @@
       "Allowed up to 100 lb total as long as no hazardous materials are aboard"
     ],
     "a": 2,
-    "e": "Part 107 allows transporting property for compensation within a state as long as the aircraft and payload weigh under 55 lb."
+    "e": "Part 107 allows transporting property for compensation within a state as long as the aircraft and payload weigh under 55 lb.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5392,7 +5458,8 @@
       "Always prohibited under Part 107, regardless of the precautions taken"
     ],
     "a": 0,
-    "e": "Part 107 permits dropping objects provided no undue hazard is created to persons or property."
+    "e": "Part 107 permits dropping objects provided no undue hazard is created to persons or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5405,7 +5472,8 @@
       "Allowed over private land"
     ],
     "a": 1,
-    "e": "Part 107 prohibits careless or reckless operation that could endanger life or property."
+    "e": "Part 107 prohibits careless or reckless operation that could endanger life or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5418,7 +5486,8 @@
       "Up to five"
     ],
     "a": 1,
-    "e": "A remote PIC may operate only one small unmanned aircraft at a time."
+    "e": "A remote PIC may operate only one small unmanned aircraft at a time.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5431,7 +5500,8 @@
       "Never, in any case"
     ],
     "a": 1,
-    "e": "Part 107 permits operating from a moving vehicle only over sparsely populated areas."
+    "e": "Part 107 permits operating from a moving vehicle only over sparsely populated areas.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5444,7 +5514,8 @@
       "File a detailed flight plan with air traffic control before launch"
     ],
     "a": 1,
-    "e": "The remote PIC must conduct a preflight inspection to confirm the aircraft is in a condition for safe operation."
+    "e": "The remote PIC must conduct a preflight inspection to confirm the aircraft is in a condition for safe operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5457,7 +5528,8 @@
       "Only the local airport manager where the drone is normally based"
     ],
     "a": 1,
-    "e": "The remote PIC, owner, or controlling person must make the aircraft available to the FAA for inspection or testing."
+    "e": "The remote PIC, owner, or controlling person must make the aircraft available to the FAA for inspection or testing.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Airspace",
@@ -5769,7 +5841,8 @@
       "Skipping the initial knowledge test required for the remote certificate"
     ],
     "a": 2,
-    "e": "A waiver lets you deviate from certain Part 107 rules when you show the operation can be conducted safely."
+    "e": "A waiver lets you deviate from certain Part 107 rules when you show the operation can be conducted safely.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -5782,7 +5855,8 @@
       "Ten categories"
     ],
     "a": 0,
-    "e": "Operations over people fall into four categories defined by the injury risk the aircraft poses."
+    "e": "Operations over people fall into four categories defined by the injury risk the aircraft poses.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -5795,7 +5869,8 @@
       "A strobe light that is visible for at least 1 statute mile"
     ],
     "a": 2,
-    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles."
+    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5808,7 +5883,8 @@
       "Completing the required training, no waiver needed"
     ],
     "a": 3,
-    "e": "Night operations are allowed after completing the required training and using anti-collision lighting; a waiver is no longer needed."
+    "e": "Night operations are allowed after completing the required training and using anti-collision lighting; a waiver is no longer needed.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5821,7 +5897,8 @@
       "On the controller screen"
     ],
     "a": 2,
-    "e": "The registration number must be legibly marked on the exterior surface of the aircraft."
+    "e": "The registration number must be legibly marked on the exterior surface of the aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -5834,7 +5911,8 @@
       "Continuous radio contact with ATC"
     ],
     "a": 1,
-    "e": "The remote PIC or a visual observer must keep the aircraft within visual line of sight throughout the operation."
+    "e": "The remote PIC or a visual observer must keep the aircraft within visual line of sight throughout the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -6120,7 +6198,8 @@
       "By logging 10 flight hours"
     ],
     "a": 2,
-    "e": "Since April 6, 2021, recurrent currency is met with free online training, not a retest at a testing center."
+    "e": "Since April 6, 2021, recurrent currency is met with free online training, not a retest at a testing center.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -6133,7 +6212,8 @@
       "only if flown in controlled airspace"
     ],
     "a": 2,
-    "e": "Every sUAS operated under Part 107 must be registered, regardless of weight."
+    "e": "Every sUAS operated under Part 107 must be registered, regardless of weight.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -6146,7 +6226,8 @@
       "16 years old"
     ],
     "a": 3,
-    "e": "An applicant for a remote pilot certificate must be at least 16 years old."
+    "e": "An applicant for a remote pilot certificate must be at least 16 years old.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Regulations",
@@ -6159,7 +6240,8 @@
       "$1,000"
     ],
     "a": 1,
-    "e": "Report if there is serious injury, loss of consciousness, or property damage exceeding $500."
+    "e": "Report if there is serious injury, loss of consciousness, or property damage exceeding $500.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -6172,7 +6254,8 @@
       "allowed in Class G airspace"
     ],
     "a": 0,
-    "e": "Part 107 prohibits careless or reckless operation that endangers life or property."
+    "e": "Part 107 prohibits careless or reckless operation that endangers life or property.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Regulations",
@@ -6185,7 +6268,8 @@
       "the pilot has logged at least 100 hours as remote pilot in command"
     ],
     "a": 2,
-    "e": "A waiver is issued when the applicant demonstrates the proposed operation can be conducted safely."
+    "e": "A waiver is issued when the applicant demonstrates the proposed operation can be conducted safely.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -6198,7 +6282,8 @@
       "no action if unintentional"
     ],
     "a": 0,
-    "e": "Falsification, reproduction, or alteration of records is grounds for suspension or revocation of the certificate."
+    "e": "Falsification, reproduction, or alteration of records is grounds for suspension or revocation of the certificate.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Regulations",
@@ -6211,7 +6296,8 @@
       "carry a working transponder that reports its position to ATC"
     ],
     "a": 0,
-    "e": "Registered drones must broadcast Remote ID unless operated within an FAA-recognized identification area (FRIA)."
+    "e": "Registered drones must broadcast Remote ID unless operated within an FAA-recognized identification area (FRIA).",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6419,7 +6505,8 @@
       "Part 61"
     ],
     "a": 2,
-    "e": "14 CFR part 89 establishes the Remote Identification (Remote ID) requirements for unmanned aircraft."
+    "e": "14 CFR part 89 establishes the Remote Identification (Remote ID) requirements for unmanned aircraft.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -6432,7 +6519,8 @@
       "a manufacturer record submitted to the FAA certifying an sUAS meets Category 2 or 3 requirements"
     ],
     "a": 3,
-    "e": "A Declaration of Compliance is a manufacturer record certifying the sUAS meets Category 2 or 3 over-people requirements."
+    "e": "A Declaration of Compliance is a manufacturer record certifying the sUAS meets Category 2 or 3 over-people requirements.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6445,7 +6533,8 @@
       "there is no impact limit"
     ],
     "a": 0,
-    "e": "Category 2 limits transferred impact energy to 11 ft-lb, with no lacerating parts, no safety defects, and a Declaration of Compliance."
+    "e": "Category 2 limits transferred impact energy to 11 ft-lb, with no lacerating parts, no safety defects, and a Declaration of Compliance.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6458,7 +6547,8 @@
       "25 ft-lb of kinetic energy"
     ],
     "a": 3,
-    "e": "Category 3 limits transferred impact energy to 25 ft-lb on impact."
+    "e": "Category 3 limits transferred impact energy to 25 ft-lb on impact.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6484,7 +6574,8 @@
       "have an airworthiness certificate and be operated per its operating limitations"
     ],
     "a": 3,
-    "e": "Category 4 requires an airworthiness certificate issued under part 21 and operation per the aircraft's operating limitations."
+    "e": "Category 4 requires an airworthiness certificate issued under part 21 and operation per the aircraft's operating limitations.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6510,7 +6601,8 @@
       "carrying a working transponder that reports to air traffic control"
     ],
     "a": 2,
-    "e": "Remote ID is met with a standard Remote ID drone, a broadcast module, or by operating within a FRIA."
+    "e": "Remote ID is met with a standard Remote ID drone, a broadcast module, or by operating within a FRIA.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6536,7 +6628,8 @@
       "the remote pilot's certificate number and the date it was issued"
     ],
     "a": 1,
-    "e": "Standard Remote ID also broadcasts the control station location and an emergency status indication."
+    "e": "Standard Remote ID also broadcasts the control station location and an emergency status indication.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -6588,7 +6681,8 @@
       "must pick one category permanently"
     ],
     "a": 2,
-    "e": "A multi-category sUAS may be operated under any over-people category for which it qualifies."
+    "e": "A multi-category sUAS may be operated under any over-people category for which it qualifies.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6835,7 +6929,8 @@
       "Careless or reckless operation"
     ],
     "a": 1,
-    "e": "A Part 107 waiver can authorize deviations such as beyond-visual-line-of-sight flight when safety is shown."
+    "e": "A Part 107 waiver can authorize deviations such as beyond-visual-line-of-sight flight when safety is shown.",
+    "acs": "UA.I.D"
   },
   {
     "b": "Regulations",
@@ -6848,7 +6943,8 @@
       "in physical possession or immediately accessible"
     ],
     "a": 3,
-    "e": "The remote pilot certificate must be in the pilot's physical possession or immediately accessible during operations."
+    "e": "The remote pilot certificate must be in the pilot's physical possession or immediately accessible during operations.",
+    "acs": "UA.I.C"
   },
   {
     "b": "Loading",
