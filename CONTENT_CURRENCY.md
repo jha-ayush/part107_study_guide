@@ -115,6 +115,9 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: The practice exam result now breaks missed questions down by FAA
+  ACS task (a sorted summary plus the task code on each missed card), matching
+  the review screen and the real Knowledge Test Report.
 - June 2026: Added figure-based chart-reading questions. A chart question can
   now reference an original SVG sectional excerpt (the FIGURES registry in
   app.py), rendered above the question in study, practice, and the exam, the
