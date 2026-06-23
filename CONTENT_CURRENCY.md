@@ -136,12 +136,13 @@ Process for a new batch:
 - June 2026: Added figure-based chart-reading questions. A chart question can
   now reference an original SVG sectional excerpt (the FIGURES registry in
   app.py), rendered above the question in study, practice, and the exam, the
-  way the FAA knowledge test shows chart figures. Six scenes are in place (a
+  way the FAA knowledge test shows chart figures. Seven scenes are in place (a
   Class D ring; Class C versus Class E to the surface; reading airspace
   ceilings and floors; special use airspace with a visual checkpoint; Class B
-  shelves; and route and special symbols such as military training routes, a
-  parachute area, and a seaplane base), carrying 19 chart-reading questions;
-  more scenes add the same way.
+  shelves; route and special symbols such as military training routes, a
+  parachute area, and a seaplane base; and identifying the airspace overlying
+  a marked point), carrying 22 chart-reading questions; more scenes add the
+  same way.
 - June 2026: Review and study list now surface ACS codes. Each missed question
   shows its ACS task, and the study list opens with an "FAA ACS tasks to study"
   summary that lists the distinct tasks among missed questions with a count each,
