@@ -1,0 +1,108 @@
+# Content currency
+
+This document records the regulatory baseline the question bank is written to,
+the sources behind it, and the checks used to keep outdated material out. It is
+the reference for anyone adding or reviewing questions.
+
+Last reviewed: June 2026.
+
+## Regulatory baseline
+
+Questions reflect current United States federal rules for small unmanned
+aircraft flown under Part 107:
+
+- 14 CFR part 107, Small Unmanned Aircraft Systems (operating rules, pilot
+  certification, waivers).
+- 14 CFR part 89, Remote Identification of Unmanned Aircraft.
+- 14 CFR parts 47 and 48, aircraft registration and marking.
+- FAA Remote Pilot ACS, FAA-S-ACS-10B (current in 2026), which defines the
+  knowledge areas and tasks tested on the Unmanned Aircraft General (UAG) test.
+- Supporting references: AC 107-2A, the Remote Pilot sUAS Study Guide
+  (FAA-G-8082-22), the Pilot's Handbook of Aeronautical Knowledge, and the
+  Airman Knowledge Testing Supplement (FAA-CT-8080 series).
+
+## Current rules incorporated
+
+These post-2021 and later changes are reflected throughout the bank:
+
+- Recurrent currency is met by free online training within the previous 24
+  calendar months, not a proctored recurrent knowledge test (since April 2021).
+- Night operations are allowed without a waiver when the aircraft has
+  anti-collision lighting visible for at least 3 statute miles and the remote
+  pilot has completed the required training.
+- Operations over people are allowed without a waiver under Categories 1 to 4,
+  each with its own requirements (impact-energy limits of 11 ft-lb for Category
+  2 and 25 ft-lb for Category 3, a Declaration of Compliance for Categories 2
+  and 3, and an airworthiness certificate for Category 4).
+- Operations over moving vehicles are allowed under the same category framework.
+- Remote ID has been required since 2023: a standard Remote ID drone, a
+  broadcast module (operated within visual line of sight), or operation within
+  an FAA-Recognized Identification Area (FRIA).
+- Controlled airspace access is via prior authorization, typically through
+  LAANC, bounded by the ceilings on the UAS Facility Maps.
+
+Not yet incorporated as tested rules: BVLOS under the proposed Part 108, which
+was still in rulemaking as of this review and is therefore treated only as a
+future framework, not current law.
+
+## Exam structure
+
+The exam simulation mirrors the real test: 65 questions presented, 60 scored,
+5 unscored experimental, 120-minute limit, 70 percent of the scored questions to
+pass. The 60 scored questions are drawn in proportions modeled on the ACS
+knowledge-area weighting:
+
+| Topic        | Scored share |
+|--------------|--------------|
+| Operations   | 38%          |
+| Regulations  | 20%          |
+| Airspace     | 16%          |
+| Weather      | 12%          |
+| Loading      | 8%           |
+| Charts       | 6%           |
+
+The weights live in the `EXAM_BLUEPRINT` constant in `app.py` and are safe to
+tune. Sectional chart reading is a skill folded into Airspace in the ACS, so
+Charts carries a small share carved from the Airspace band.
+
+## Currency guardrails
+
+When adding or reviewing questions, none of the following outdated patterns
+should appear (these were audited to zero at the last review):
+
+- A recurrent knowledge test taken at a testing center, or recurrency satisfied
+  by retesting rather than online training.
+- Night flight described as waiver-only, prohibited, or daylight or civil
+  twilight only.
+- Operations over people described as prohibited or waiver-only rather than the
+  Category 1 to 4 framework.
+- Remote ID described as optional, future, or not required.
+- The older $150 test fee (the current fee is about $175; avoid hardcoding fees
+  in questions where possible).
+
+## Adding questions
+
+Each question is an object with this schema:
+
+```
+{ "b": bucket, "s": subtopic, "q": text, "c": [4 choices], "a": correct index 0-3, "e": one-sentence rule }
+```
+
+Buckets are Regulations, Airspace, Charts, Weather, Operations, and Loading.
+Process for a new batch:
+
+- Add in batches of roughly 20 to 40 at a time.
+- Check every fact against the baseline above before adding.
+- Deduplicate against existing question text (normalized, case-insensitive).
+- Randomize the correct-answer position so answers are not clustered at one
+  index, then confirm the answer-index distribution stays roughly even.
+- Validate the schema and re-run the app to confirm the home counts, study
+  modes, and exam still work with the larger bank.
+
+## Recent currency updates
+
+- June 2026: Audited the full bank for pre-2021 content; none found. Added
+  current questions covering operations over people Categories 1 to 4, over
+  people at night, Declaration of Compliance, Part 89 Remote ID specifics, the
+  broadcast module visual-line-of-sight rule, FRIA, and UAS Facility Map
+  ceilings. Updated the exam to the 65/60 ACS-weighted structure.
