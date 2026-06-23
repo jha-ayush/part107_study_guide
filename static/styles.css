@@ -225,3 +225,14 @@ body.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border
 }
 
 .r .acs{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;opacity:.72;cursor:help}
+
+/* ACS tasks to study (review screen) */
+.acssummary{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 16px;background:var(--surface-2);}
+.acssummary-h{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.acsrow{display:flex;align-items:center;gap:10px;padding:4px 0;}
+.acsrow+.acsrow{border-top:1px solid var(--line-2);}
+.acsrow .acscode{font-family:var(--mono);font-size:12px;color:var(--blue);min-width:64px;}
+.acsrow .acstitle{flex:1;font-size:13px;color:var(--ink);}
+.acsrow .acsn{font-family:var(--mono);font-size:11px;color:var(--muted);}
+.macs{margin-top:7px;font-size:11px;color:var(--muted);font-family:var(--mono);}
+.macs .acs{color:var(--blue);cursor:help;}
