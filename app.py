@@ -108,6 +108,12 @@ ACS_TASKS = {
     "UA.III.A": "Weather - Sources of Weather",
     "UA.III.B": "Weather - Effects of Weather on Performance",
     "UA.IV.A": "Loading and Performance",
+    "UA.V.A": "Operations - Radio Communications Procedures",
+    "UA.V.B": "Operations - Airport Operations",
+    "UA.V.C": "Operations - Emergency Procedures",
+    "UA.V.D": "Operations - Aeronautical Decision-Making",
+    "UA.V.E": "Operations - Physiology",
+    "UA.V.F": "Operations - Maintenance and Inspection Procedures",
 }
 
 # ---- Per-browser progress store (file-based) --------------------------------
