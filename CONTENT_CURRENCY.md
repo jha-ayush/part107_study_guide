@@ -111,15 +111,16 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
-- June 2026: Quality pass. Removed 5 duplicate questions (the bank went from
-  636 to 631). Began a length-balance remediation: an audit found the correct
+- June 2026: Quality pass. Removed 6 duplicate questions (the bank went from
+  636 to 630). Began a length-balance remediation: an audit found the correct
   answer was the single longest choice in about 80 percent of items (chance is
   about 25 percent), which lets a test-taker game the bank by length. The
   worst offenders are being rewritten in batches to give plausible, clearly
   incorrect, comparable-length distractors so the correct answer is no longer a
-  length giveaway. Progress so far: 108 items rewritten across four batches,
-  which lowered the correct-is-longest rate from about 80 percent to about 59
-  percent. Remediation continues in further batches toward roughly chance level.
+  length giveaway. Progress so far: 147 items rewritten across five batches,
+  which lowered the correct-is-longest rate from about 80 percent to about 53
+  percent. Remediation continues toward a stopping point near a 20-character gap
+  (about a third of items), where the exploit is gone without padding distractors.
 - June 2026: Added a batch focused on loading and performance (maximum
   gross weight, weight and density-altitude effects, battery and
   temperature, propeller condition, center-of-gravity distribution) and
