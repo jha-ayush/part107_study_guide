@@ -6,6 +6,12 @@ the reference for anyone adding or reviewing questions.
 
 Last reviewed: June 2026.
 
+Display convention: because the bank is constantly evolving, all user-facing
+bank counts (per-topic counts on the home screen, rule counts on the cheat
+sheet) are shown softly, for example "130+", via the `soft_count` helper in
+`app.py`. Counts that are the user's own data (exam scores, missed-question
+counts) are shown exactly.
+
 ## Regulatory baseline
 
 Questions reflect current United States federal rules for small unmanned
