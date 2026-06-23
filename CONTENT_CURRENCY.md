@@ -122,6 +122,9 @@ Process for a new batch:
   clearest of each (the bank went from 610 to 548). Distinct questions that
   merely share answer wording (for example Category 2 vs Category 3 energy
   limits, sea breeze vs land breeze, the per-class line-color set) were kept.
+  The subtopic labels shown under each practice question were also normalized,
+  merging case and synonym variants (for example "Night Ops" and "Night
+  operations") into one consistent label each.
 - June 2026: Quality pass. Removed 26 duplicate questions (the bank went from
   636 to 610). Began a length-balance remediation: an audit found the correct
   answer was the single longest choice in about 80 percent of items (chance is
