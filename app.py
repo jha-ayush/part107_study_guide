@@ -12,6 +12,7 @@ import secrets
 import threading
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 from uuid import uuid4
 
 from flask import (Flask, abort, g, jsonify, redirect, render_template, request,
@@ -76,6 +77,21 @@ EXAM_EXPERIMENTAL = 5 if EXAM_N > 5 else 0
 EXAM_SCORED = EXAM_N - EXAM_EXPERIMENTAL
 EXAM_PASS = 70
 EXAM_MIN = 120
+
+# Target share of the SCORED questions per topic, modeled on the FAA UAS ACS
+# knowledge-area weighting (Operations 35-45%, Regulations 15-25%, Airspace
+# 15-25%, Weather 11-16%, Loading 7-11%). Sectional chart reading is a skill
+# folded into Airspace in the ACS, so Charts is given a small share carved from
+# the Airspace band. These are midpoints and are safe to tune; they need not
+# sum to exactly 1 (they are normalized at apportionment time).
+EXAM_BLUEPRINT = {
+    "Operations": 0.38,
+    "Regulations": 0.20,
+    "Airspace": 0.16,
+    "Weather": 0.12,
+    "Loading": 0.08,
+    "Charts": 0.06,
+}
 CODE_SUBTOPICS = {"METAR", "TAF", "Winds Aloft"}
 
 # ---- Per-browser progress store (file-based) --------------------------------
@@ -390,16 +406,59 @@ def practice_answer():
                            choices=choices, chosen=chosen, correct=correct, bucket=bucket)
 
 
+def _bucket_index():
+    """Map each bucket to the list of question ids it contains."""
+    idx = {}
+    for i, q in enumerate(QUESTIONS):
+        idx.setdefault(q["b"], []).append(i)
+    return idx
+
+
+def _apportion(total, weights):
+    """Split `total` across buckets in proportion to `weights`.
+
+    Uses the largest-remainder method so the parts always sum to `total`
+    exactly, regardless of rounding.
+    """
+    s = sum(weights.values()) or 1
+    raw = {b: total * w / s for b, w in weights.items()}
+    out = {b: int(v) for b, v in raw.items()}
+    remaining = total - sum(out.values())
+    by_frac = sorted(weights, key=lambda b: raw[b] - out[b], reverse=True)
+    for b in by_frac[:remaining]:
+        out[b] += 1
+    return out
+
+
 @app.route("/exam/start")
 def exam_start():
-    qids = random.sample(range(len(QUESTIONS)), EXAM_N)
+    idx = _bucket_index()
+    targets = _apportion(EXAM_SCORED, EXAM_BLUEPRINT)
+    scored, leftovers = [], []
+    for b in BUCKETS:
+        pool = list(idx.get(b, []))
+        random.shuffle(pool)
+        want = min(targets.get(b, 0), len(pool))
+        scored.extend(pool[:want])
+        leftovers.extend(pool[want:])
+    # If caps/rounding left the scored set short, top up from any topic.
+    random.shuffle(leftovers)
+    if len(scored) < EXAM_SCORED:
+        need = EXAM_SCORED - len(scored)
+        scored.extend(leftovers[:need])
+        leftovers = leftovers[need:]
+    # The 5 experimental (unscored) questions come from any topic, so they are
+    # indistinguishable from scored ones during the exam.
+    experimental = leftovers[:EXAM_EXPERIMENTAL]
+    qids = scored + experimental
+    random.shuffle(qids)
     order = {}
     for qid in qids:
         o = list(range(len(QUESTIONS[qid]["c"])))
         random.shuffle(o)
         order[str(qid)] = o
     g.record["exam"] = {"qids": qids, "order": order, "answers": {}, "start": time.time(),
-                        "experimental": random.sample(qids, EXAM_EXPERIMENTAL)}
+                        "experimental": experimental}
     save_record(g.owner, g.record)
     return redirect(url_for("exam_q", n=0))
 
@@ -550,11 +609,28 @@ def history():
                            trend=trend, exam_pass=EXAM_PASS)
 
 
+def _safe_back():
+    """Return the referring page only when GET is valid there, otherwise home.
+
+    Prevents redirecting (via GET) back to a POST-only endpoint such as
+    /practice/answer, which would raise 405 Method Not Allowed.
+    """
+    ref = request.referrer
+    if ref:
+        try:
+            app.url_map.bind(urlparse(ref).netloc or "localhost").match(
+                urlparse(ref).path, method="GET")
+            return ref
+        except Exception:
+            pass
+    return url_for("home")
+
+
 @app.route("/theme/toggle")
 def toggle_theme():
     g.record["prefs"]["dark"] = not g.record["prefs"].get("dark", False)
     save_record(g.owner, g.record)
-    return redirect(request.referrer or url_for("home"))
+    return redirect(_safe_back())
 
 
 @app.route("/progress/reset", methods=["POST"])
