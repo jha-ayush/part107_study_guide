@@ -100,6 +100,17 @@ Process for a new batch:
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Added a batch focused on loading and performance (maximum
+  gross weight, weight and density-altitude effects, battery and
+  temperature, propeller condition, center-of-gravity distribution) and
+  weather reading (METAR sky and wind codes, altimeter, TAF, fog,
+  thunderstorms and microbursts, density altitude, standard atmosphere),
+  plus Operations items on emergency deviation and carriage of property.
+- June 2026: Added a batch of Operations and aeronautical-decision-making
+  scenarios (lost link, interference, IMSAFE, PAVE, hazardous-attitude
+  antidotes, CTAF awareness), airspace items (Class B authorization,
+  restricted and prohibited areas, MOAs, NOTAMs), sectional symbology
+  (Class C and E depictions, Maximum Elevation Figure), and METAR reading.
 
 - June 2026: Audited the full bank for pre-2021 content; none found. Added
   current questions covering operations over people Categories 1 to 4, over
