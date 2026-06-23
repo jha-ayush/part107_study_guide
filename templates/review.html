@@ -21,6 +21,15 @@
   {% endfor %}
 </div>
 
+{% if acs_summary %}
+<div class="acssummary">
+  <div class="acssummary-h">FAA ACS tasks to study{{ ' (this topic)' if active_bucket }}</div>
+  {% for a in acs_summary %}
+  <div class="acsrow"><span class="acscode">{{ a.code }}</span><span class="acstitle">{{ a.title }}</span><span class="acsn">{{ a.n }}</span></div>
+  {% endfor %}
+</div>
+{% endif %}
+
 {% if missed %}
 <div class="btn-row" style="margin-bottom:14px">
   <a class="btn-primary" href="{{ url_for('drill', bucket=active_bucket) }}" style="width:auto;flex:1">🎯 Drill {{ 'these' if active_bucket else 'all' }} missed questions</a>
@@ -36,6 +45,7 @@
     <div class="mq">{{ m.q_html|safe }}{% if m.misses > 1 %} <span style="color:var(--red);font-family:var(--mono);font-size:11px">🔁 missed {{ m.misses }}x</span>{% endif %}</div>
     <div class="ma">✅ {{ m.letter }}. {{ m.answer }}</div>
     <div class="mr">{{ m.e }}</div>
+    {% if m.acs %}<div class="macs">ACS <span class="acs" title="{{ acs_tasks[m.acs] }}">{{ m.acs }}</span> &middot; {{ acs_tasks[m.acs] }}</div>{% endif %}
   </div>
   {% endfor %}
 </div>
