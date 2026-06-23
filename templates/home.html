@@ -22,6 +22,7 @@
 <div class="cards">
   <a class="actioncard" href="{{ url_for('learn') }}"><b><span class="ic">📖</span>Learn the material</b><span>Read through each topic with the answer and rule, no quiz pressure</span></a>
   <a class="actioncard" href="{{ url_for('cheatsheet') }}"><b><span class="ic">🗒️</span>Rules cheat sheet</b><span>Every key rule by topic, printable for last-minute review</span></a>
+  <a class="actioncard" href="{{ url_for('practice', figures=1) }}"><b><span class="ic">🗺️</span>Chart reading</b><span>Practice the sectional-figure questions on their own</span></a>
   <a class="actioncard" href="{{ url_for('exam_start') }}"><b><span class="ic">📝</span>Exam simulation</b><span>{{ exam_n }} questions ({{ exam_scored }} scored), {{ exam_min }} min, {{ exam_pass }}% to pass</span></a>
   {% if to_review %}
   <a class="actioncard" href="{{ url_for('practice', bucket='All') }}"><b><span class="ic">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>
