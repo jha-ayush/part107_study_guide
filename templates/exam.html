@@ -8,7 +8,7 @@
 <form method="post" action="{{ url_for('exam_nav') }}">
   <input type="hidden" name="_csrf" value="{{ csrf_token }}">
   <input type="hidden" name="n" value="{{ n }}">
-  <div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
+  {% if q.fig %}<div class="figbox">{{ figures[q.fig]|safe }}</div>{% endif %}<div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
   <div class="choices">
     {% for c in choices %}
     <label class="choice">
