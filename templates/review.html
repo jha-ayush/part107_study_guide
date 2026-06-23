@@ -33,6 +33,7 @@
 {% if missed %}
 <div class="btn-row" style="margin-bottom:14px">
   <a class="btn-primary" href="{{ url_for('drill', bucket=active_bucket) }}" style="width:auto;flex:1">🎯 Drill {{ 'these' if active_bucket else 'all' }} missed questions</a>
+  <a class="btn" href="{{ url_for('studysheet') }}">📄 ACS study sheet</a>
 </div>
 {% endif %}
 
