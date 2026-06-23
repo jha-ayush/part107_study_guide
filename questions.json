@@ -7955,5 +7955,50 @@
     "a": 0,
     "e": "An anchor symbol marks a seaplane base, an area used by aircraft that operate from water.",
     "acs": "UA.II.B"
+  },
+  {
+    "b": "Charts",
+    "s": "Airspace Symbols",
+    "fig": "sectional_point_airspace",
+    "q": "At marker 1, which lies inside the dashed blue ring around the airport, the airspace is:",
+    "c": [
+      "Class D, up to its charted ceiling",
+      "Class C, with a surface core and an outer shelf",
+      "Class B, from the surface upward",
+      "Class G, uncontrolled airspace"
+    ],
+    "a": 0,
+    "e": "A dashed blue ring marks Class D around a towered airport, from the surface up to the ceiling shown in the dashed box.",
+    "acs": "UA.II.A"
+  },
+  {
+    "b": "Charts",
+    "s": "Airspace Symbols",
+    "fig": "sectional_point_airspace",
+    "q": "Marker 2 sits on the faded side of the magenta boundary. The airspace there is:",
+    "c": [
+      "Class E starting at 700 ft AGL",
+      "Class D around a towered airport",
+      "a Class B surface area",
+      "a prohibited area you must avoid"
+    ],
+    "a": 0,
+    "e": "The faded side of a magenta line is where Class E begins at 700 ft AGL.",
+    "acs": "UA.II.A"
+  },
+  {
+    "b": "Charts",
+    "s": "Airspace Symbols",
+    "fig": "sectional_point_airspace",
+    "q": "Marker 3 is in open country with no ring or shading, so the surface airspace there is:",
+    "c": [
+      "Class G up to 1,200 ft AGL",
+      "Class E down to the surface",
+      "Class C beneath a shelf",
+      "Class B up to 10,000 ft"
+    ],
+    "a": 0,
+    "e": "Open areas with no ring or shading are Class G (uncontrolled) up to 1,200 ft AGL, with Class E above.",
+    "acs": "UA.II.A"
   }
 ]
