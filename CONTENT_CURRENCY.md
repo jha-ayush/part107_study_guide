@@ -107,10 +107,21 @@ Process for a new batch:
   length to the correct answer, so an item tests knowledge rather than letting a
   test-taker pick the longest option. The real FAA test uses length-balanced
   choices, so a bank that does not will train the wrong habit.
+- Avoid duplicates by concept, not just wording. Before adding, check that no
+  existing question tests the same fact with the same answer, even if phrased
+  differently. Two questions that teach the same point are a functional
+  duplicate and should not both be in the bank.
 - Validate the schema and re-run the app to confirm the home counts, study
   modes, and exam still work with the larger bank.
 
 ## Recent currency updates
+- June 2026: Systematic dedup pass. Clustered the bank by answer concept
+  (normalized correct answer within each topic) rather than by question
+  wording, which surfaces duplicates that reworded questions hide. Reviewed
+  every candidate cluster and removed 62 functional duplicates, keeping the
+  clearest of each (the bank went from 610 to 548). Distinct questions that
+  merely share answer wording (for example Category 2 vs Category 3 energy
+  limits, sea breeze vs land breeze, the per-class line-color set) were kept.
 - June 2026: Quality pass. Removed 26 duplicate questions (the bank went from
   636 to 610). Began a length-balance remediation: an audit found the correct
   answer was the single longest choice in about 80 percent of items (chance is
