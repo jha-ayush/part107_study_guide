@@ -849,12 +849,12 @@
     "s": "Weight Distribution",
     "q": "A payload mounted far from the center of a multirotor most likely causes:",
     "c": [
-      "Constant attitude correction, raising power use and wear",
-      "Higher top speed",
-      "Improved efficiency",
-      "Longer flight time"
+      "A higher top speed because the offset weight streamlines the airframe",
+      "Improved efficiency since the motors share the load more evenly",
+      "Longer flight time as the aircraft needs fewer control inputs",
+      "Constant attitude correction, raising power use and wear"
     ],
-    "a": 0,
+    "a": 3,
     "e": "An off-center load forces continuous attitude correction, wasting power and stressing the motors."
   },
   {
@@ -914,12 +914,12 @@
     "s": "Carriage of Property",
     "q": "Transporting another person's property by drone for compensation under Part 107 is:",
     "c": [
-      "Allowed across state lines without limit",
-      "Always prohibited",
-      "Allowed only within one state, under 55 lb total, with no hazardous materials",
-      "Allowed only above 400 ft"
+      "Allowed only above 400 feet so the aircraft stays clear of people below",
+      "Allowed across state lines without any limit on the total takeoff weight",
+      "Always prohibited, because Part 107 does not permit carrying property for hire",
+      "Allowed only within one state, under 55 lb total, with no hazardous materials"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Property for hire may be carried only within one state, under 55 lb total, and never hazardous materials."
   },
   {
@@ -940,12 +940,12 @@
     "s": "Civil Twilight",
     "q": "Operating during civil twilight, the 30 minutes before sunrise or after sunset, requires:",
     "c": [
-      "Flight below 100 ft",
+      "A specific FAA waiver obtained before each individual twilight flight",
+      "Keeping the flight below 100 feet above the ground at all times",
       "Anti-collision lighting visible for at least 3 statute miles",
-      "A waiver in every case",
-      "No special equipment"
+      "No special equipment, since twilight counts as normal daylight flying"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Civil twilight and night operations both require anti-collision lighting visible for at least 3 statute miles."
   },
   {
@@ -1694,12 +1694,12 @@
     "s": "Terrain",
     "q": "The graduated color tints on a sectional chart show:",
     "c": [
-      "Airspace classes",
-      "Weather patterns",
+      "Airspace classes, with each class shown in a different color",
       "Terrain elevation, with higher ground in darker shades",
-      "Population density"
+      "Weather patterns expected across the region during the day",
+      "Population density, with cities shown in the darkest shades"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Elevation tints shade higher terrain in progressively darker colors so pilots can judge ground height at a glance."
   },
   {
@@ -1915,12 +1915,12 @@
     "s": "Fronts",
     "q": "A warm front typically produces:",
     "c": [
-      "Sudden violent thunderstorms only",
-      "Immediate clearing",
-      "Strong downslope winds",
-      "Gradually lowering ceilings, widespread cloud, and steady precipitation"
+      "Sudden violent thunderstorms followed quickly by gusty clearing winds",
+      "Gradually lowering ceilings, widespread cloud, and steady precipitation",
+      "Strong downslope winds and rapidly falling temperatures behind the front",
+      "Immediate clearing with rising ceilings and improving surface visibility"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Warm air rising gently over cooler air gives a warm front its broad cloud, lowering ceilings, and steady precipitation."
   },
   {
@@ -1928,12 +1928,12 @@
     "s": "Inversion",
     "q": "A temperature inversion is a layer where temperature:",
     "c": [
-      "Decreases faster than standard",
-      "Stays exactly constant",
-      "Increases with altitude, often trapping haze and smooth stable air",
-      "Drops below freezing"
+      "Drops below freezing only at the very top of the affected layer",
+      "Decreases with altitude faster than the standard lapse rate does",
+      "Stays exactly constant from the surface up through the entire layer",
+      "Increases with altitude, often trapping haze and smooth stable air"
     ],
-    "a": 2,
+    "a": 3,
     "e": "In an inversion temperature rises with height, creating a stable layer that traps moisture, haze, and pollutants."
   },
   {
@@ -1954,12 +1954,12 @@
     "s": "Microburst",
     "q": "A microburst associated with a thunderstorm produces:",
     "c": [
-      "Calm, stable air",
-      "Improved visibility only",
       "A powerful localized downdraft with dangerous shifting winds",
-      "A steady tailwind"
+      "Improved visibility only, with no effect on the surface wind",
+      "A steady tailwind that helps the aircraft return to the pilot",
+      "Calm, stable air directly beneath the base of the storm cell"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A microburst is an intense, short-lived downdraft whose outflow creates severe and rapidly changing winds."
   },
   {
@@ -2136,12 +2136,12 @@
     "s": "In-Flight Emergency",
     "q": "During an in-flight emergency, the remote PIC may:",
     "c": [
-      "Never deviate from any rule",
-      "Deviate from Part 107 rules to the extent needed to meet the emergency",
-      "Hand the aircraft to a bystander",
-      "Ignore manned traffic"
+      "Ignore manned traffic in the area because the emergency takes priority",
+      "Never deviate from any rule, since the rules apply even during emergencies",
+      "Hand the aircraft to a nearby bystander to share the workload temporarily",
+      "Deviate from Part 107 rules to the extent needed to meet the emergency"
     ],
-    "a": 1,
+    "a": 3,
     "e": "In an in-flight emergency the remote PIC may deviate from any Part 107 rule to the extent required to handle it."
   },
   {
@@ -2539,12 +2539,12 @@
     "s": "Voltage Sag",
     "q": "Under a heavy load or at low charge, battery voltage sag can:",
     "c": [
-      "Increase top speed",
-      "Improve climb rate",
-      "Extend flight time",
-      "Reduce available power and trigger a low-power landing"
+      "Increase the aircraft's top speed by drawing extra current",
+      "Reduce available power and trigger a low-power landing",
+      "Extend total flight time as the pack discharges more slowly",
+      "Improve the climb rate because the motors run cooler then"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Voltage sag lowers available power, which can force a return or landing before the pack is fully empty."
   },
   {
@@ -2786,10 +2786,10 @@
     "s": "Airport Symbols",
     "q": "Larger airports on a sectional are drawn:",
     "c": [
-      "As a single dot",
-      "With a dashed boundary",
+      "With a dashed boundary line showing the edge of the airport property",
+      "As a magenta flag symbol placed at the center of the field",
       "With their actual runway layout rather than a simple circle",
-      "As a magenta flag"
+      "As a single solid dot regardless of how many runways they have"
     ],
     "a": 2,
     "e": "Busier airports are depicted with their true runway pattern instead of a plain circle."
@@ -3163,10 +3163,10 @@
     "s": "LAANC",
     "q": "LAANC authorizations are provided by:",
     "c": [
-      "Mobile phone carriers",
-      "The local airport manager",
+      "The drone manufacturer through the aircraft's companion application",
+      "The local airport manager during published business hours only",
       "FAA-approved companies that process requests in near real time",
-      "The drone manufacturer"
+      "Mobile phone carriers that relay the request to the control tower"
     ],
     "a": 2,
     "e": "LAANC requests are handled by FAA-approved providers that return near-instant authorization."
@@ -3449,12 +3449,12 @@
     "s": "Airport Symbols",
     "q": "A star above an airport symbol indicates the airport has:",
     "c": [
+      "A control tower that is in operation during published daytime hours",
+      "Fuel services only, with no other facilities available on the field",
       "A rotating beacon, typically operating sunset to sunrise",
-      "A control tower",
-      "No runway lighting",
-      "Fuel only"
+      "No runway lighting of any kind available for night operations"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A star marks a rotating beacon, which generally operates from sunset to sunrise."
   },
   {
@@ -3488,12 +3488,12 @@
     "s": "Obstacles",
     "q": "Wind turbines on a sectional chart are shown:",
     "c": [
+      "As small blue circles placed wherever the turbines are located",
       "As obstacle symbols with their height, often in groups",
-      "As blue circles",
-      "Only in the legend",
-      "As magenta flags"
+      "As magenta flag symbols marking each individual turbine tower",
+      "Only in the chart legend rather than on the chart itself"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Wind turbines are charted as obstacles with heights, frequently grouped together."
   },
   {
@@ -3618,9 +3618,9 @@
     "s": "Risk Management",
     "q": "The level of a given risk is best understood as:",
     "c": [
-      "Only how likely it is",
-      "Only how severe it is",
-      "Whether it has happened before",
+      "Whether a similar event has ever happened to that pilot in the past",
+      "Only how severe the outcome would be, regardless of how likely it is",
+      "Only how likely the event is to happen, regardless of how bad it would be",
       "A combination of how likely it is and how severe the outcome would be"
     ],
     "a": 3,
@@ -3683,12 +3683,12 @@
     "s": "Endurance",
     "q": "Planning a battery reserve before flight ensures the pilot can:",
     "c": [
-      "Ignore the wind",
-      "Fly twice as long",
       "Land safely with margin instead of running the pack to empty",
-      "Skip the preflight check"
+      "Skip the preflight inspection since the reserve handles surprises",
+      "Fly roughly twice as long as the battery would otherwise allow",
+      "Ignore the wind entirely because the reserve covers any added power use"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A planned reserve leaves enough power to land safely rather than risking a dead pack aloft."
   },
   {
@@ -3748,9 +3748,9 @@
     "s": "Planning",
     "q": "The best way to determine which airspace overlies your flight site is to:",
     "c": [
-      "Ask a bystander",
-      "Assume it is Class G",
-      "Wait until you are airborne",
+      "Wait until you are airborne and judge the airspace from the altitude",
+      "Ask a nearby bystander whether they have seen any aircraft overhead",
+      "Assume it is uncontrolled Class G unless a tower is clearly visible",
       "Check a current sectional chart or an airspace app before flying"
     ],
     "a": 3,
@@ -3813,12 +3813,12 @@
     "s": "Grid Altitude",
     "q": "If a UAS Facility Map grid shows 200 ft over your site, you may:",
     "c": [
-      "Ignore the grid",
-      "Fly only at night",
-      "Still fly to 400 ft",
-      "Fly only up to 200 ft there under automatic authorization"
+      "Fly only at night, when the published grid altitudes no longer apply",
+      "Fly only up to 200 ft there under automatic authorization",
+      "Still fly up to 400 ft as long as you stay within visual line of sight",
+      "Ignore the grid because facility maps are only advisory for hobby flyers"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The grid ceiling can be below 400 ft, and you must honor that lower authorized altitude."
   },
   {
@@ -4060,9 +4060,9 @@
     "s": "Emergency Response",
     "q": "Flying a drone near a wildfire or active emergency scene:",
     "c": [
-      "Is encouraged for footage",
-      "Requires only a verbal notice",
-      "Is fine above 400 ft",
+      "Is encouraged so the footage can be shared with the emergency responders",
+      "Is fine as long as the aircraft stays above 400 feet over the scene",
+      "Requires only a brief verbal notice to the on-scene incident commander",
       "Is dangerous and prohibited, as it can ground firefighting aircraft"
     ],
     "a": 3,
@@ -4736,12 +4736,12 @@
     "s": "Hazards",
     "q": "Frost is most likely to form when the night is:",
     "c": [
-      "Warm and humid",
+      "Warm and humid with a light breeze moving across the surface",
+      "Stormy, with heavy rain and gusty winds throughout the night",
       "Clear and calm with the surface at or below freezing",
-      "Stormy",
-      "Cloudy and windy"
+      "Cloudy and windy, which keeps the surface temperature from dropping"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Clear, calm nights let the surface cool to freezing, allowing frost to form."
   },
   {
@@ -4931,12 +4931,12 @@
     "s": "Airspace Symbols",
     "q": "To tell whether your site sits under a Class B shelf, read the:",
     "c": [
+      "Compass rose drawn around the nearest navigation aid on the chart",
+      "Airport elevation figure printed next to the primary airport symbol",
       "Floor and ceiling numbers printed along that segment",
-      "Airport elevation",
-      "Compass rose",
-      "Terrain tint"
+      "Terrain tint, which shows how high the ground rises under the shelf"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Each Class B segment lists its floor and ceiling, telling you whether your site is beneath the shelf."
   },
   {
@@ -5035,12 +5035,12 @@
     "s": "Securing Payload",
     "q": "A payload should be secured before flight so that it:",
     "c": [
-      "Increases weight",
-      "Looks neat",
-      "Adds drag",
-      "Cannot shift and change the center of gravity in flight"
+      "Adds aerodynamic drag that slows the aircraft to a safer cruise speed",
+      "Looks neat and presentable in any photographs taken of the aircraft",
+      "Cannot shift and change the center of gravity in flight",
+      "Increases the total takeoff weight to improve stability in gusty wind"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A loose payload can shift in flight, moving the center of gravity and destabilizing the aircraft."
   },
   {
@@ -5113,12 +5113,12 @@
     "s": "Preflight",
     "q": "A test hover just after takeoff lets a pilot confirm:",
     "c": [
+      "The current weather forecast for the remainder of the planned flight",
+      "The class of airspace that overlies the launch site before climbing",
       "The aircraft is balanced and handling normally with its load",
-      "The weather forecast",
-      "The airspace class",
-      "The registration number"
+      "The aircraft registration number is correctly displayed on the airframe"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A brief test hover verifies the load is balanced and the aircraft handles normally before the mission."
   },
   {
@@ -6244,12 +6244,12 @@
     "s": "Waivers",
     "q": "What does a Part 107 Certificate of Waiver allow?",
     "c": [
+      "Flying aircraft of any weight, including those above the 55 lb limit",
+      "Ignoring all airspace authorization rules near controlled airports",
       "Deviating from specific operating rules when safety is demonstrated",
-      "Flying aircraft of any weight",
-      "Skipping the knowledge test",
-      "Ignoring all airspace rules"
+      "Skipping the initial knowledge test required for the remote certificate"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A waiver lets you deviate from certain Part 107 rules when you show the operation can be conducted safely."
   },
   {
@@ -6634,10 +6634,10 @@
     "s": "Propellers",
     "q": "What happens if a propeller is installed in the wrong position or rotation?",
     "c": [
-      "It extends flight time",
-      "It improves efficiency",
+      "It extends total flight time because the motors share the load more evenly",
+      "It only reduces motor noise without affecting how the aircraft handles",
       "It fails to produce proper lift and can cause loss of control",
-      "It only reduces noise"
+      "It improves overall efficiency by balancing thrust across the four arms"
     ],
     "a": 2,
     "e": "A propeller in the wrong position or rotation will not produce proper lift and can cause loss of control."
@@ -6855,12 +6855,12 @@
     "s": "Hazardous operations",
     "q": "Under Part 107, dropping an object from a small unmanned aircraft is",
     "c": [
-      "permitted only with a waiver",
-      "permitted if it does not create an undue hazard to persons or property",
-      "permitted only over private land",
-      "never permitted"
+      "permitted only over private land where the owner has given prior consent",
+      "never permitted under any circumstances while the aircraft is in flight",
+      "permitted only after a specific waiver is obtained from the FAA for the drop",
+      "permitted if it does not create an undue hazard to persons or property"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Objects may be dropped only if doing so does not create an undue hazard to persons or property."
   },
   {
@@ -7102,12 +7102,12 @@
     "s": "LAANC",
     "q": "The Low Altitude Authorization and Notification Capability (LAANC) provides",
     "c": [
-      "a way to register a drone",
-      "near-real-time authorization to fly in controlled airspace near airports",
-      "automatic waiver of Part 107 rules",
-      "weather forecasts for remote pilots"
+      "an automatic waiver from the Part 107 operating rules for any flight",
+      "current and forecast weather information tailored for remote pilots",
+      "a simple way to register a drone and renew the registration online each time",
+      "near-real-time authorization to fly in controlled airspace near airports"
     ],
-    "a": 1,
+    "a": 3,
     "e": "LAANC gives near-real-time authorization to operate in controlled airspace below charted ceilings."
   },
   {
@@ -7649,9 +7649,9 @@
     "q": "When operating near or under a Military Operations Area (MOA), a remote pilot should",
     "c": [
       "exercise caution because military training activity may be present",
-      "assume it is always inactive",
-      "climb above 400 feet",
-      "request a waiver"
+      "request a specific waiver from the FAA before flying anywhere nearby",
+      "climb above 400 feet to stay clear of any low-level military traffic",
+      "assume it is always inactive since most training happens at high altitude"
     ],
     "a": 0,
     "e": "Use caution near a MOA, where military training activity may be present."
@@ -7830,12 +7830,12 @@
     "s": "Performance",
     "q": "Adding weight to a multirotor drone generally requires the aircraft to",
     "c": [
-      "draw more power, reducing endurance and climb performance",
-      "need less battery",
-      "fly faster",
-      "gain more altitude"
+      "fly noticeably faster since the heavier airframe cuts through wind better",
+      "climb to a higher maximum altitude before the motors reach their limit",
+      "use less battery current because the extra mass adds momentum in flight",
+      "draw more power, reducing endurance and climb performance"
     ],
-    "a": 0,
+    "a": 3,
     "e": "More weight requires more power, which reduces endurance and climb performance."
   },
   {
@@ -7895,12 +7895,12 @@
     "s": "Manufacturer limits",
     "q": "The maximum payload or gross weight a drone can carry is best determined from",
     "c": [
-      "the sectional chart",
-      "a guess based on size",
-      "the FAA registration",
-      "the manufacturer's specifications and operating limitations"
+      "the FAA registration certificate issued when the aircraft was registered",
+      "the manufacturer's specifications and operating limitations",
+      "a rough guess based on the overall size and weight of the airframe",
+      "the sectional chart covering the area where the flight will take place"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Use the manufacturer's specifications and operating limitations to determine the maximum payload or gross weight."
   },
   {
@@ -8077,9 +8077,9 @@
     "s": "Thunderstorms",
     "q": "When thunderstorms are present, a remote pilot should",
     "c": [
-      "fly only below 100 feet",
-      "expect calm, smooth air",
-      "fly closer to inspect them",
+      "fly closer to inspect the storm and capture footage of the cloud base",
+      "expect calm, smooth air in the area immediately around the storm cell",
+      "fly only below 100 feet, where the storm's strong winds cannot reach",
       "avoid operating, due to turbulence, wind shear, and downbursts"
     ],
     "a": 3,
