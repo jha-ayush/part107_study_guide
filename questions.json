@@ -7670,5 +7670,65 @@
     "a": 2,
     "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC.",
     "acs": "UA.I.B"
+  },
+  {
+    "b": "Charts",
+    "s": "Airspace Symbols",
+    "fig": "sectional_poc_1",
+    "q": "In the figure, the dashed blue ring around the airport at marker 1 depicts which class of airspace?",
+    "c": [
+      "Class D airspace, around a field with a control tower",
+      "Class C airspace, served by a tower and approach control",
+      "Class B airspace, surrounding a major airport",
+      "Class E surface area, at a field with no tower"
+    ],
+    "a": 0,
+    "e": "A dashed blue line marks Class D airspace, usually a small ring around an airport that has an operating control tower.",
+    "acs": "UA.II.A"
+  },
+  {
+    "b": "Charts",
+    "s": "Airport Symbols",
+    "fig": "sectional_poc_1",
+    "q": "On the figure, the airport at marker 2 is drawn in magenta. That color tells you it:",
+    "c": [
+      "has no operating control tower",
+      "is closed to all small unmanned aircraft",
+      "sits within Class B airspace",
+      "is a private field that is not open to the public"
+    ],
+    "a": 0,
+    "e": "Magenta airport symbols are non-towered; blue symbols mark fields with an operating control tower.",
+    "acs": "UA.II.B"
+  },
+  {
+    "b": "Charts",
+    "s": "Obstacles",
+    "fig": "sectional_poc_1",
+    "q": "The obstacle at marker 3 is labeled 1549 (549). Its top is at:",
+    "c": [
+      "1,549 feet MSL, which is 549 feet above the ground",
+      "549 feet MSL, with the top reaching 1,549 feet AGL",
+      "1,549 feet above the ground at the obstacle base",
+      "1,000 feet, taken as the difference of the two numbers"
+    ],
+    "a": 0,
+    "e": "An obstacle's two numbers are the top height in feet MSL and, in parentheses, the height in feet above ground level.",
+    "acs": "UA.II.B"
+  },
+  {
+    "b": "Charts",
+    "s": "Terrain",
+    "fig": "sectional_poc_1",
+    "q": "The large 2 and small 5 printed in the upper-right quadrant of the figure are a maximum elevation figure. They mean the highest terrain or obstacle in that quadrant is:",
+    "c": [
+      "2,500 feet MSL",
+      "2,500 feet above ground level",
+      "25,000 feet MSL",
+      "250 feet, read as a per-mile gradient"
+    ],
+    "a": 0,
+    "e": "A maximum elevation figure gives the highest terrain or obstacle in that quadrant in thousands and hundreds of feet MSL, so a large 2 and small 5 mean 2,500 feet.",
+    "acs": "UA.II.B"
   }
 ]
