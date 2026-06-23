@@ -263,10 +263,24 @@ def _persist_cookie(resp):
     return resp
 
 
+def soft_count(n):
+    """Round a user-facing count down to a soft figure like '90+'.
+
+    The bank is always growing, so displayed counts are shown softly rather than
+    as exact, soon-to-be-stale numbers. User-specific counts (scores, missed
+    items) are shown exactly and do not use this.
+    """
+    n = int(n)
+    if n < 10:
+        return str(n)
+    step = 10 if n < 200 else 50
+    return f"{(n // step) * step}+"
+
+
 @app.context_processor
 def _inject():
     return {"dark": g.record["prefs"].get("dark", False), "user": g.user,
-            "icons": BUCKET_ICONS, "mastery": mastery_badge,
+            "icons": BUCKET_ICONS, "mastery": mastery_badge, "soft_count": soft_count,
             "csrf_token": session.get("_csrf", "")}
 
 
