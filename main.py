@@ -453,7 +453,8 @@ QUESTIONS_JSON = r'''[
       "40 knots"
     ],
     "a": 0,
-    "e": "G25KT means gusts to 25 knots; 270 is direction and 15 is the steady wind speed."
+    "e": "G25KT means gusts to 25 knots; 270 is direction and 15 is the steady wind speed.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -466,7 +467,8 @@ QUESTIONS_JSON = r'''[
       "Occasional clouds at 1,000 ft"
     ],
     "a": 1,
-    "e": "Sky layer heights in a METAR are AGL in hundreds of feet, so OVC010 is overcast at 1,000 ft AGL."
+    "e": "Sky layer heights in a METAR are AGL in hundreds of feet, so OVC010 is overcast at 1,000 ft AGL.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -479,7 +481,8 @@ QUESTIONS_JSON = r'''[
       "BKN or OVC only"
     ],
     "a": 3,
-    "e": "A ceiling is the lowest broken or overcast layer; FEW and SCT coverage do not count as a ceiling."
+    "e": "A ceiling is the lowest broken or overcast layer; FEW and SCT coverage do not count as a ceiling.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -492,7 +495,8 @@ QUESTIONS_JSON = r'''[
       "Thunderstorm"
     ],
     "a": 3,
-    "e": "TS is the code for thunderstorm, one of the highest-priority hazards on a report."
+    "e": "TS is the code for thunderstorm, one of the highest-priority hazards on a report.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -505,7 +509,8 @@ QUESTIONS_JSON = r'''[
       "Variable direction at 3 knots"
     ],
     "a": 3,
-    "e": "VRB means direction is shifting more than 60 degrees and is reported when speed is 6 knots or less."
+    "e": "VRB means direction is shifting more than 60 degrees and is reported when speed is 6 knots or less.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -518,7 +523,8 @@ QUESTIONS_JSON = r'''[
       "Maximum visibility will be about 1,800 feet"
     ],
     "a": 1,
-    "e": "FM gives a time in UTC after which all preceding forecast conditions are fully superseded."
+    "e": "FM gives a time in UTC after which all preceding forecast conditions are fully superseded.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -531,7 +537,8 @@ QUESTIONS_JSON = r'''[
       "Apply only during a temperature inversion near the surface"
     ],
     "a": 2,
-    "e": "TEMPO marks brief fluctuations, each under an hour, covering less than half the forecast period."
+    "e": "TEMPO marks brief fluctuations, each under an hour, covering less than half the forecast period.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -544,7 +551,8 @@ QUESTIONS_JSON = r'''[
       "True altitude minus indicated altitude"
     ],
     "a": 1,
-    "e": "Density altitude is pressure altitude adjusted for temperature, and it directly governs aircraft performance."
+    "e": "Density altitude is pressure altitude adjusted for temperature, and it directly governs aircraft performance.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -557,7 +565,8 @@ QUESTIONS_JSON = r'''[
       "Severe turbulence"
     ],
     "a": 0,
-    "e": "A small temperature-dewpoint spread means humidity near 100%, so fog or low stratus is likely."
+    "e": "A small temperature-dewpoint spread means humidity near 100%, so fog or low stratus is likely.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -570,7 +579,8 @@ QUESTIONS_JSON = r'''[
       "Higher humidity and minor GPS drift"
     ],
     "a": 1,
-    "e": "Thunderstorms produce extreme turbulence, hail, lightning, and wind shear at once, so avoid them by a wide margin."
+    "e": "Thunderstorms produce extreme turbulence, hail, lightning, and wind shear at once, so avoid them by a wide margin.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -583,7 +593,8 @@ QUESTIONS_JSON = r'''[
       "1 degree C per 1,000 ft"
     ],
     "a": 1,
-    "e": "The standard lapse rate is roughly 2 degrees C per 1,000 ft, and deviation from it changes density altitude."
+    "e": "The standard lapse rate is roughly 2 degrees C per 1,000 ft, and deviation from it changes density altitude.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -596,7 +607,8 @@ QUESTIONS_JSON = r'''[
       "+18 C"
     ],
     "a": 1,
-    "e": "The trailing signed digits are temperature in Celsius, so -04 means minus 4 degrees C at that altitude."
+    "e": "The trailing signed digits are temperature in Celsius, so -04 means minus 4 degrees C at that altitude.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -609,7 +621,8 @@ QUESTIONS_JSON = r'''[
       "The temperature to which air must cool to become saturated"
     ],
     "a": 3,
-    "e": "Dewpoint is the temperature at which air reaches 100% humidity, and cooling below it causes condensation."
+    "e": "Dewpoint is the temperature at which air reaches 100% humidity, and cooling below it causes condensation.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Operations",
@@ -752,7 +765,8 @@ QUESTIONS_JSON = r'''[
       "Improves stability with no downside"
     ],
     "a": 1,
-    "e": "Extra weight demands more power to stay airborne, cutting flight time and degrading climb and handling."
+    "e": "Extra weight demands more power to stay airborne, cutting flight time and degrading climb and handling.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -765,7 +779,8 @@ QUESTIONS_JSON = r'''[
       "Improve handling by lowering the aircraft's overall center of mass"
     ],
     "a": 0,
-    "e": "A center of gravity outside limits degrades stability and control and can make the aircraft unflyable."
+    "e": "A center of gravity outside limits degrades stability and control and can make the aircraft unflyable.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -778,7 +793,8 @@ QUESTIONS_JSON = r'''[
       "Climb faster"
     ],
     "a": 1,
-    "e": "High density altitude means thinner air and less lift, so the aircraft works harder and flies for less time."
+    "e": "High density altitude means thinner air and less lift, so the aircraft works harder and flies for less time.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -791,7 +807,8 @@ QUESTIONS_JSON = r'''[
       "Permanently prevents arming"
     ],
     "a": 1,
-    "e": "Cold slows battery chemistry, lowering usable capacity and shortening flight time."
+    "e": "Cold slows battery chemistry, lowering usable capacity and shortening flight time.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -804,7 +821,8 @@ QUESTIONS_JSON = r'''[
       "25 lb"
     ],
     "a": 2,
-    "e": "Part 107 covers only small unmanned aircraft weighing less than 55 lb including everything on board."
+    "e": "Part 107 covers only small unmanned aircraft weighing less than 55 lb including everything on board.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -817,7 +835,8 @@ QUESTIONS_JSON = r'''[
       "Have no measurable effect on the battery during the flight"
     ],
     "a": 1,
-    "e": "Fighting a headwind makes the motors work harder, draining the battery faster and cutting effective range."
+    "e": "Fighting a headwind makes the motors work harder, draining the battery faster and cutting effective range.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -830,7 +849,8 @@ QUESTIONS_JSON = r'''[
       "Smooth air, layered clouds, and often poorer visibility"
     ],
     "a": 3,
-    "e": "A stable atmosphere resists vertical motion, giving smooth air, stratiform clouds, and often haze."
+    "e": "A stable atmosphere resists vertical motion, giving smooth air, stratiform clouds, and often haze.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -843,7 +863,8 @@ QUESTIONS_JSON = r'''[
       "Constant attitude correction, raising power use and wear"
     ],
     "a": 3,
-    "e": "An off-center load forces continuous attitude correction, wasting power and stressing the motors."
+    "e": "An off-center load forces continuous attitude correction, wasting power and stressing the motors.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -856,7 +877,8 @@ QUESTIONS_JSON = r'''[
       "Extend battery life by spreading the load more evenly"
     ],
     "a": 1,
-    "e": "Overloading past the manufacturer's limit cuts climb capability and can make safe flight impossible."
+    "e": "Overloading past the manufacturer's limit cuts climb capability and can make safe flight impossible.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Regulations",
@@ -1780,7 +1802,8 @@ QUESTIONS_JSON = r'''[
       "12 minutes past 1753 in the local time of the station"
     ],
     "a": 2,
-    "e": "The first two digits are the day of the month and the next four are the time in Coordinated Universal Time."
+    "e": "The first two digits are the day of the month and the next four are the time in Coordinated Universal Time.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1793,7 +1816,8 @@ QUESTIONS_JSON = r'''[
       "Wind speed of 92 knots"
     ],
     "a": 1,
-    "e": "An A followed by four digits is the altimeter setting in inches of mercury, here 29.92."
+    "e": "An A followed by four digits is the altimeter setting in inches of mercury, here 29.92.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1806,7 +1830,8 @@ QUESTIONS_JSON = r'''[
       "Temperature 18 C and dewpoint 12 C"
     ],
     "a": 3,
-    "e": "The slash pair is temperature over dewpoint in Celsius, and a small spread points to possible fog or low cloud."
+    "e": "The slash pair is temperature over dewpoint in Celsius, and a small spread points to possible fog or low cloud.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1819,7 +1844,8 @@ QUESTIONS_JSON = r'''[
       "One half statute mile"
     ],
     "a": 3,
-    "e": "Visibility in a METAR is given in statute miles, so 1/2SM is one half of a statute mile."
+    "e": "Visibility in a METAR is given in statute miles, so 1/2SM is one half of a statute mile.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1832,7 +1858,8 @@ QUESTIONS_JSON = r'''[
       "Brief rain"
     ],
     "a": 2,
-    "e": "BR is the code for mist, a reduction in visibility from suspended water droplets, distinct from FG which is fog."
+    "e": "BR is the code for mist, a reduction in visibility from suspended water droplets, distinct from FG which is fog.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1845,7 +1872,8 @@ QUESTIONS_JSON = r'''[
       "SCT is 3 to 4 eighths of cloud cover and BKN is 5 to 7 eighths"
     ],
     "a": 3,
-    "e": "Scattered is 3 to 4 eighths of sky cover, while broken is 5 to 7 eighths and counts as a ceiling."
+    "e": "Scattered is 3 to 4 eighths of sky cover, while broken is 5 to 7 eighths and counts as a ceiling.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1858,7 +1886,8 @@ QUESTIONS_JSON = r'''[
       "Both are observations"
     ],
     "a": 2,
-    "e": "A METAR is an observation of current conditions, while a TAF forecasts conditions for an airport area."
+    "e": "A METAR is an observation of current conditions, while a TAF forecasts conditions for an airport area.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1871,7 +1900,8 @@ QUESTIONS_JSON = r'''[
       "1 mile"
     ],
     "a": 0,
-    "e": "A TAF applies to roughly a 5 statute mile radius around the airport for its valid period."
+    "e": "A TAF applies to roughly a 5 statute mile radius around the airport for its valid period.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1884,7 +1914,8 @@ QUESTIONS_JSON = r'''[
       "A forecast visibility of about 30 statute miles ahead"
     ],
     "a": 2,
-    "e": "PROB30 marks a 30 percent chance of the associated weather during that part of the forecast."
+    "e": "PROB30 marks a 30 percent chance of the associated weather during that part of the forecast.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1897,7 +1928,8 @@ QUESTIONS_JSON = r'''[
       "Not expected to be forecast at any point in the period"
     ],
     "a": 0,
-    "e": "BECMG marks a gradual change to new conditions that are then expected to persist."
+    "e": "BECMG marks a gradual change to new conditions that are then expected to persist.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -1910,7 +1942,8 @@ QUESTIONS_JSON = r'''[
       "Gusty winds, showers or thunderstorms, and a quick clearing"
     ],
     "a": 3,
-    "e": "Cold fronts lift warm air quickly, often producing gusty winds and showers or thunderstorms followed by clearing."
+    "e": "Cold fronts lift warm air quickly, often producing gusty winds and showers or thunderstorms followed by clearing.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -1923,7 +1956,8 @@ QUESTIONS_JSON = r'''[
       "Immediate clearing with rising ceilings and improving surface visibility"
     ],
     "a": 1,
-    "e": "Warm air rising gently over cooler air gives a warm front its broad cloud, lowering ceilings, and steady precipitation."
+    "e": "Warm air rising gently over cooler air gives a warm front its broad cloud, lowering ceilings, and steady precipitation.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -1936,7 +1970,8 @@ QUESTIONS_JSON = r'''[
       "Increases with altitude, often trapping haze and smooth stable air"
     ],
     "a": 3,
-    "e": "In an inversion temperature rises with height, creating a stable layer that traps moisture, haze, and pollutants."
+    "e": "In an inversion temperature rises with height, creating a stable layer that traps moisture, haze, and pollutants.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -1949,7 +1984,8 @@ QUESTIONS_JSON = r'''[
       "Only affects manned aircraft operating well above 10,000 feet mean sea level"
     ],
     "a": 1,
-    "e": "Wind shear is a rapid change in wind over a short distance that can suddenly destabilize a small aircraft."
+    "e": "Wind shear is a rapid change in wind over a short distance that can suddenly destabilize a small aircraft.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -1962,7 +1998,8 @@ QUESTIONS_JSON = r'''[
       "Calm, stable air directly beneath the base of the storm cell"
     ],
     "a": 0,
-    "e": "A microburst is an intense, short-lived downdraft whose outflow creates severe and rapidly changing winds."
+    "e": "A microburst is an intense, short-lived downdraft whose outflow creates severe and rapidly changing winds.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -1975,7 +2012,8 @@ QUESTIONS_JSON = r'''[
       "Tornado formation along a fast-moving squall line"
     ],
     "a": 0,
-    "e": "High pressure brings sinking air and fair weather; low pressure brings clouds and precipitation."
+    "e": "High pressure brings sinking air and fair weather; low pressure brings clouds and precipitation.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -1988,7 +2026,8 @@ QUESTIONS_JSON = r'''[
       "25 degrees C and 29.92 inches"
     ],
     "a": 1,
-    "e": "The standard atmosphere uses 15 degrees C and 29.92 inches of mercury at sea level as the reference."
+    "e": "The standard atmosphere uses 15 degrees C and 29.92 inches of mercury at sea level as the reference.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -2001,7 +2040,8 @@ QUESTIONS_JSON = r'''[
       "High temperature, high humidity, and high elevation"
     ],
     "a": 3,
-    "e": "Heat, humidity, and altitude all thin the air, raising density altitude and reducing lift and power."
+    "e": "Heat, humidity, and altitude all thin the air, raising density altitude and reducing lift and power.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -2014,7 +2054,8 @@ QUESTIONS_JSON = r'''[
       "Calm, stable air with very little surface wind"
     ],
     "a": 2,
-    "e": "Air flowing over and around obstructions breaks into eddies, producing mechanical turbulence near the surface."
+    "e": "Air flowing over and around obstructions breaks into eddies, producing mechanical turbulence near the surface.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -2027,7 +2068,8 @@ QUESTIONS_JSON = r'''[
       "From the warmer land outward toward the open sea"
     ],
     "a": 0,
-    "e": "Daytime heating of land draws cooler air in from the water, creating an onshore sea breeze."
+    "e": "Daytime heating of land draws cooler air in from the water, creating an onshore sea breeze.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -2040,7 +2082,8 @@ QUESTIONS_JSON = r'''[
       "Reduced battery temperature"
     ],
     "a": 2,
-    "e": "Uneven heating creates rising and sinking columns of air, giving low-altitude flights a bumpy, turbulent ride."
+    "e": "Uneven heating creates rising and sinking columns of air, giving low-altitude flights a bumpy, turbulent ride.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -2053,7 +2096,8 @@ QUESTIONS_JSON = r'''[
       "Ground cools on a clear, calm night"
     ],
     "a": 2,
-    "e": "Advection fog forms as warm moist air moves horizontally over a cooler surface and cools to its dewpoint."
+    "e": "Advection fog forms as warm moist air moves horizontally over a cooler surface and cools to its dewpoint.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Operations",
@@ -2482,7 +2526,8 @@ QUESTIONS_JSON = r'''[
       "Only the payload that is mounted for the specific mission"
     ],
     "a": 2,
-    "e": "Maximum weight covers everything on board, so payload and battery count toward the under-55-lb limit and performance."
+    "e": "Maximum weight covers everything on board, so payload and battery count toward the under-55-lb limit and performance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2495,7 +2540,8 @@ QUESTIONS_JSON = r'''[
       "Lowering air density, which reduces lift and thrust"
     ],
     "a": 3,
-    "e": "Moist air is less dense than dry air, so high humidity raises density altitude and reduces lift and thrust."
+    "e": "Moist air is less dense than dry air, so high humidity raises density altitude and reduces lift and thrust.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2508,7 +2554,8 @@ QUESTIONS_JSON = r'''[
       "Only really matters during the hot summer months"
     ],
     "a": 1,
-    "e": "Battery capacity fades with age and cycles, so an older pack delivers less flight time than when it was new."
+    "e": "Battery capacity fades with age and cycles, so an older pack delivers less flight time than when it was new.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2521,7 +2568,8 @@ QUESTIONS_JSON = r'''[
       "Improve the climb rate because the motors run cooler then"
     ],
     "a": 1,
-    "e": "Voltage sag lowers available power, which can force a return or landing before the pack is fully empty."
+    "e": "Voltage sag lowers available power, which can force a return or landing before the pack is fully empty.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2534,7 +2582,8 @@ QUESTIONS_JSON = r'''[
       "Have no effect at all as long as you stay below 400 feet AGL"
     ],
     "a": 0,
-    "e": "A damaged propeller upsets balance and lift, causing vibration and risking an in-flight failure."
+    "e": "A damaged propeller upsets balance and lift, causing vibration and risking an in-flight failure.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2547,7 +2596,8 @@ QUESTIONS_JSON = r'''[
       "Reduce battery drain to nearly zero because the wind pushes the aircraft home for free"
     ],
     "a": 0,
-    "e": "A tailwind raises groundspeed, so the aircraft covers more ground and needs more room to stop or land accurately."
+    "e": "A tailwind raises groundspeed, so the aircraft covers more ground and needs more room to stop or land accurately.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2560,7 +2610,8 @@ QUESTIONS_JSON = r'''[
       "Lower the density altitude, which makes the motors work noticeably harder"
     ],
     "a": 2,
-    "e": "Gusts force constant correction and higher power use, cutting into the reserve available to handle a problem."
+    "e": "Gusts force constant correction and higher power use, cutting into the reserve available to handle a problem.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2573,7 +2624,8 @@ QUESTIONS_JSON = r'''[
       "Add drag, increasing power use and reducing endurance"
     ],
     "a": 3,
-    "e": "A payload that disrupts airflow adds drag, so the motors work harder and flight time drops."
+    "e": "A payload that disrupts airflow adds drag, so the motors work harder and flight time drops.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2586,7 +2638,8 @@ QUESTIONS_JSON = r'''[
       "Increases the maximum altitude the aircraft can safely reach"
     ],
     "a": 0,
-    "e": "More weight increases inertia, so the aircraft is slower to respond and needs more room to maneuver."
+    "e": "More weight increases inertia, so the aircraft is slower to respond and needs more room to maneuver.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2599,7 +2652,8 @@ QUESTIONS_JSON = r'''[
       "Unable to take off"
     ],
     "a": 2,
-    "e": "An aft center of gravity reduces stability, making the aircraft more sensitive and harder to control."
+    "e": "An aft center of gravity reduces stability, making the aircraft more sensitive and harder to control.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2612,7 +2666,8 @@ QUESTIONS_JSON = r'''[
       "Unaffected in handling because the flight controller compensates automatically"
     ],
     "a": 2,
-    "e": "A forward center of gravity adds stability but makes the aircraft feel heavy and less responsive to maneuver."
+    "e": "A forward center of gravity adds stability but makes the aircraft feel heavy and less responsive to maneuver.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2625,7 +2680,8 @@ QUESTIONS_JSON = r'''[
       "The sectional chart"
     ],
     "a": 0,
-    "e": "The manufacturer's documentation gives the tested weight and balance limits for that specific aircraft."
+    "e": "The manufacturer's documentation gives the tested weight and balance limits for that specific aircraft.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2638,7 +2694,8 @@ QUESTIONS_JSON = r'''[
       "Longer flight time than usual because of the added mass"
     ],
     "a": 1,
-    "e": "Payload cuts endurance, so plan a shorter mission and keep a battery reserve to land safely."
+    "e": "Payload cuts endurance, so plan a shorter mission and keep a battery reserve to land safely.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Charts",
@@ -2781,7 +2838,8 @@ QUESTIONS_JSON = r'''[
       "Carry more payload than it could at sea level"
     ],
     "a": 0,
-    "e": "Heat and altitude thin the air, cutting lift so it climbs and hovers with less margin."
+    "e": "Heat and altitude thin the air, cutting lift so it climbs and hovers with less margin.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2794,7 +2852,8 @@ QUESTIONS_JSON = r'''[
       "Fly with a nearly empty pack"
     ],
     "a": 2,
-    "e": "Cold cuts battery capacity, so keeping packs warm until launch preserves flight time."
+    "e": "Cold cuts battery capacity, so keeping packs warm until launch preserves flight time.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2807,7 +2866,8 @@ QUESTIONS_JSON = r'''[
       "Shift the center of gravity and change how it handles"
     ],
     "a": 3,
-    "e": "An off-center payload moves the center of gravity and alters handling."
+    "e": "An off-center payload moves the center of gravity and alters handling.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2820,7 +2880,8 @@ QUESTIONS_JSON = r'''[
       "Higher power use, shorter flight time, and less control margin"
     ],
     "a": 3,
-    "e": "Wind forces constant correction and higher power draw, cutting endurance and margin."
+    "e": "Wind forces constant correction and higher power draw, cutting endurance and margin.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2833,7 +2894,8 @@ QUESTIONS_JSON = r'''[
       "Ignore the manufacturer rating, which is only a suggestion"
     ],
     "a": 0,
-    "e": "Exceeding the rated weight degrades climb and handling, so stay within the limit."
+    "e": "Exceeding the rated weight degrades climb and handling, so stay within the limit.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2846,7 +2908,8 @@ QUESTIONS_JSON = r'''[
       "Flown until it fails"
     ],
     "a": 1,
-    "e": "A damaged propeller upsets balance and lift, risking vibration and failure, so replace it."
+    "e": "A damaged propeller upsets balance and lift, risking vibration and failure, so replace it.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2859,7 +2922,8 @@ QUESTIONS_JSON = r'''[
       "An estimate from its size"
     ],
     "a": 0,
-    "e": "The manufacturer's specifications give the tested payload and balance limits."
+    "e": "The manufacturer's specifications give the tested payload and balance limits.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2872,7 +2936,8 @@ QUESTIONS_JSON = r'''[
       "Smooth flight, though visibility may be reduced by haze"
     ],
     "a": 3,
-    "e": "Stable air gives smooth flight but often hazy, reduced visibility."
+    "e": "Stable air gives smooth flight but often hazy, reduced visibility.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2885,7 +2950,8 @@ QUESTIONS_JSON = r'''[
       "Improves climb because the thinner air offers less resistance"
     ],
     "a": 0,
-    "e": "Thin air and heavy weight compound, so a loaded aircraft climbs the worst."
+    "e": "Thin air and heavy weight compound, so a loaded aircraft climbs the worst.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2898,7 +2964,8 @@ QUESTIONS_JSON = r'''[
       "Ignore the gusts"
     ],
     "a": 1,
-    "e": "Gusty crosswinds cut control margin, so approach slowly and be ready to go around."
+    "e": "Gusty crosswinds cut control margin, so approach slowly and be ready to go around.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2911,7 +2978,8 @@ QUESTIONS_JSON = r'''[
       "Charged fully and reused"
     ],
     "a": 0,
-    "e": "A swollen pack is damaged and unsafe, so retire it rather than fly it."
+    "e": "A swollen pack is damaged and unsafe, so retire it rather than fly it.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -2924,7 +2992,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft registration rule that applies to the drone"
     ],
     "a": 1,
-    "e": "Added weight raises inertia, so the aircraft accelerates, stops, and responds more slowly."
+    "e": "Added weight raises inertia, so the aircraft accelerates, stops, and responds more slowly.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Weather",
@@ -2937,7 +3006,8 @@ QUESTIONS_JSON = r'''[
       "10 degrees at 9 knots"
     ],
     "a": 0,
-    "e": "The first three digits are wind direction in degrees and the next two are speed in knots."
+    "e": "The first three digits are wind direction in degrees and the next two are speed in knots.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -2950,7 +3020,8 @@ QUESTIONS_JSON = r'''[
       "A required minimum"
     ],
     "a": 1,
-    "e": "RMK begins the remarks section, where extra observed detail is added."
+    "e": "RMK begins the remarks section, where extra observed detail is added.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -2963,7 +3034,8 @@ QUESTIONS_JSON = r'''[
       "Light and variable surface winds"
     ],
     "a": 1,
-    "e": "FG is fog, and at a quarter mile it is a serious hazard to flight."
+    "e": "FG is fog, and at a quarter mile it is a serious hazard to flight.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -2976,7 +3048,8 @@ QUESTIONS_JSON = r'''[
       "A wind shift with temperature and pressure changes"
     ],
     "a": 3,
-    "e": "As a front passes, wind, temperature, and pressure all shift across the boundary."
+    "e": "As a front passes, wind, temperature, and pressure all shift across the boundary.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -2989,7 +3062,8 @@ QUESTIONS_JSON = r'''[
       "Unstable"
     ],
     "a": 0,
-    "e": "Stable air resists rising motion, giving smooth conditions and layered clouds."
+    "e": "Stable air resists rising motion, giving smooth conditions and layered clouds.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3002,7 +3076,8 @@ QUESTIONS_JSON = r'''[
       "Warm dry air sinks into a valley and compresses as it descends downward"
     ],
     "a": 2,
-    "e": "Upslope fog forms as moist air is forced up terrain and cools to saturation."
+    "e": "Upslope fog forms as moist air is forced up terrain and cools to saturation.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3015,7 +3090,8 @@ QUESTIONS_JSON = r'''[
       "Calm with 99 percent humidity"
     ],
     "a": 0,
-    "e": "The code 9900 means winds are light and variable, under about 5 knots."
+    "e": "The code 9900 means winds are light and variable, under about 5 knots.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3028,7 +3104,8 @@ QUESTIONS_JSON = r'''[
       "Stay under 100 ft"
     ],
     "a": 1,
-    "e": "Thunderstorms bring violent turbulence, lightning, and shear, so delay or cancel."
+    "e": "Thunderstorms bring violent turbulence, lightning, and shear, so delay or cancel.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Regulations",
@@ -3203,7 +3280,8 @@ QUESTIONS_JSON = r'''[
       "A broken ceiling"
     ],
     "a": 1,
-    "e": "SKC and CLR both indicate no clouds were detected."
+    "e": "SKC and CLR both indicate no clouds were detected.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3216,7 +3294,8 @@ QUESTIONS_JSON = r'''[
       "Calm wind"
     ],
     "a": 3,
-    "e": "00000KT means the wind is calm."
+    "e": "00000KT means the wind is calm.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3229,7 +3308,8 @@ QUESTIONS_JSON = r'''[
       "1.0 mile"
     ],
     "a": 0,
-    "e": "10SM means visibility of 10 statute miles or greater, the maximum normally reported."
+    "e": "10SM means visibility of 10 statute miles or greater, the maximum normally reported.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3242,7 +3322,8 @@ QUESTIONS_JSON = r'''[
       "Heavy rain"
     ],
     "a": 1,
-    "e": "A minus sign marks light intensity, so -RA is light rain."
+    "e": "A minus sign marks light intensity, so -RA is light rain.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3255,7 +3336,8 @@ QUESTIONS_JSON = r'''[
       "Scattered rain"
     ],
     "a": 0,
-    "e": "A plus sign marks heavy intensity, so +SHRA is heavy rain showers."
+    "e": "A plus sign marks heavy intensity, so +SHRA is heavy rain showers.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3268,7 +3350,8 @@ QUESTIONS_JSON = r'''[
       "5 to 7 eighths"
     ],
     "a": 2,
-    "e": "Few means 1 to 2 eighths of the sky is covered, too little to form a ceiling."
+    "e": "Few means 1 to 2 eighths of the sky is covered, too little to form a ceiling.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3281,7 +3364,8 @@ QUESTIONS_JSON = r'''[
       "800 ft, the lowest broken or overcast layer"
     ],
     "a": 3,
-    "e": "The ceiling is the lowest broken or overcast layer, so BKN008 sets it at 800 ft."
+    "e": "The ceiling is the lowest broken or overcast layer, so BKN008 sets it at 800 ft.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3294,7 +3378,8 @@ QUESTIONS_JSON = r'''[
       "Unstable air with possible turbulence"
     ],
     "a": 3,
-    "e": "Cumulus development signals unstable, rising air and the turbulence that comes with it."
+    "e": "Cumulus development signals unstable, rising air and the turbulence that comes with it.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3307,7 +3392,8 @@ QUESTIONS_JSON = r'''[
       "A front stops moving"
     ],
     "a": 0,
-    "e": "An occluded front occurs as a faster cold front catches and lifts a warm front."
+    "e": "An occluded front occurs as a faster cold front catches and lifts a warm front.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3320,7 +3406,8 @@ QUESTIONS_JSON = r'''[
       "Strong downslope winds and rapidly warming air"
     ],
     "a": 2,
-    "e": "A stationary front barely moves, so its clouds and precipitation can persist for a long time."
+    "e": "A stationary front barely moves, so its clouds and precipitation can persist for a long time.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3333,7 +3420,8 @@ QUESTIONS_JSON = r'''[
       "Visible moisture and temperatures near or below freezing"
     ],
     "a": 3,
-    "e": "Icing needs visible moisture plus temperatures at or below freezing."
+    "e": "Icing needs visible moisture plus temperatures at or below freezing.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3346,7 +3434,8 @@ QUESTIONS_JSON = r'''[
       "Grid north"
     ],
     "a": 1,
-    "e": "METAR and TAF winds are true north, while tower and ATIS winds are magnetic."
+    "e": "METAR and TAF winds are true north, while tower and ATIS winds are magnetic.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -3359,7 +3448,8 @@ QUESTIONS_JSON = r'''[
       "Turns into a thunderstorm"
     ],
     "a": 0,
-    "e": "Daytime heating warms the surface and dissipates radiation fog."
+    "e": "Daytime heating warms the surface and dissipates radiation fog.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -3372,7 +3462,8 @@ QUESTIONS_JSON = r'''[
       "A one-time annual forecast"
     ],
     "a": 1,
-    "e": "TAFs are issued four times a day and typically cover a 24-hour period."
+    "e": "TAFs are issued four times a day and typically cover a 24-hour period.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Charts",
@@ -3844,7 +3935,8 @@ QUESTIONS_JSON = r'''[
       "A higher weight limit"
     ],
     "a": 1,
-    "e": "A center of gravity within limits keeps the aircraft stable and predictable to control."
+    "e": "A center of gravity within limits keeps the aircraft stable and predictable to control.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -3857,7 +3949,8 @@ QUESTIONS_JSON = r'''[
       "Extend its total range because the flight controller switches to a power-saving mode"
     ],
     "a": 2,
-    "e": "Low voltage can force an automatic return or landing, which is why a reserve is planned."
+    "e": "Low voltage can force an automatic return or landing, which is why a reserve is planned.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -3870,7 +3963,8 @@ QUESTIONS_JSON = r'''[
       "Have no effect on endurance since hovering uses very little power"
     ],
     "a": 0,
-    "e": "Hovering demands constant high power, draining the battery and cutting remaining flight time."
+    "e": "Hovering demands constant high power, draining the battery and cutting remaining flight time.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -3883,7 +3977,8 @@ QUESTIONS_JSON = r'''[
       "Allow more room and a gentler approach"
     ],
     "a": 3,
-    "e": "Greater mass means more energy to manage, so heavier aircraft need a gentler, roomier approach."
+    "e": "Greater mass means more energy to manage, so heavier aircraft need a gentler, roomier approach.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Operations",
@@ -4560,7 +4655,8 @@ QUESTIONS_JSON = r'''[
       "Mach 0.6"
     ],
     "a": 0,
-    "e": "An M prefix means a negative value, so M06 is minus 6 degrees Celsius."
+    "e": "An M prefix means a negative value, so M06 is minus 6 degrees Celsius.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -4573,7 +4669,8 @@ QUESTIONS_JSON = r'''[
       "271 degrees at 8 knots"
     ],
     "a": 1,
-    "e": "The first two digits are tens of degrees and the next two are speed, so 2718 is 270 at 18 knots."
+    "e": "The first two digits are tens of degrees and the next two are speed, so 2718 is 270 at 18 knots.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -4586,7 +4683,8 @@ QUESTIONS_JSON = r'''[
       "Plus or minus 6 miles"
     ],
     "a": 2,
-    "e": "P6SM means visibility is forecast to be greater than 6 statute miles."
+    "e": "P6SM means visibility is forecast to be greater than 6 statute miles.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -4599,7 +4697,8 @@ QUESTIONS_JSON = r'''[
       "High winds"
     ],
     "a": 1,
-    "e": "HZ is the code for haze, which reduces visibility."
+    "e": "HZ is the code for haze, which reduces visibility.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -4612,7 +4711,8 @@ QUESTIONS_JSON = r'''[
       "Dust"
     ],
     "a": 1,
-    "e": "DZ is the code for drizzle."
+    "e": "DZ is the code for drizzle.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -4625,7 +4725,8 @@ QUESTIONS_JSON = r'''[
       "Calm and stable air that is smooth to fly in"
     ],
     "a": 0,
-    "e": "Towering cumulus and cumulonimbus mark convective storms with severe turbulence to avoid."
+    "e": "Towering cumulus and cumulonimbus mark convective storms with severe turbulence to avoid.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4638,7 +4739,8 @@ QUESTIONS_JSON = r'''[
       "An approaching warm front with steady rain"
     ],
     "a": 1,
-    "e": "Smooth lens-shaped lenticular clouds mark mountain wave activity and the turbulence around it."
+    "e": "Smooth lens-shaped lenticular clouds mark mountain wave activity and the turbulence around it.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4651,7 +4753,8 @@ QUESTIONS_JSON = r'''[
       "29.92 inches of mercury"
     ],
     "a": 3,
-    "e": "Pressure altitude is height above the standard datum, found by setting the altimeter to 29.92."
+    "e": "Pressure altitude is height above the standard datum, found by setting the altimeter to 29.92.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4664,7 +4767,8 @@ QUESTIONS_JSON = r'''[
       "Pressure altitude"
     ],
     "a": 3,
-    "e": "Under standard temperature, density altitude and pressure altitude are the same."
+    "e": "Under standard temperature, density altitude and pressure altitude are the same.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4677,7 +4781,8 @@ QUESTIONS_JSON = r'''[
       "Only during active coastal storms at night"
     ],
     "a": 0,
-    "e": "At night the land cools faster than the water, so the breeze flows offshore."
+    "e": "At night the land cools faster than the water, so the breeze flows offshore.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4690,7 +4795,8 @@ QUESTIONS_JSON = r'''[
       "Cloudy and windy, which keeps the surface temperature from dropping"
     ],
     "a": 2,
-    "e": "Clear, calm nights let the surface cool to freezing, allowing frost to form."
+    "e": "Clear, calm nights let the surface cool to freezing, allowing frost to form.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4703,7 +4809,8 @@ QUESTIONS_JSON = r'''[
       "Calm high pressure"
     ],
     "a": 1,
-    "e": "Sharp changes in wind near fronts and inversions create low-level wind shear."
+    "e": "Sharp changes in wind near fronts and inversions create low-level wind shear.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4716,7 +4823,8 @@ QUESTIONS_JSON = r'''[
       "Higher cloud bases and lower fog risk"
     ],
     "a": 3,
-    "e": "A wide temperature-dewpoint spread means drier air, higher cloud bases, and less fog risk."
+    "e": "A wide temperature-dewpoint spread means drier air, higher cloud bases, and less fog risk.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4729,7 +4837,8 @@ QUESTIONS_JSON = r'''[
       "Its light weight makes it easier to push off course"
     ],
     "a": 3,
-    "e": "A light small UAS is more easily displaced by gusts than a heavier aircraft, demanding constant correction."
+    "e": "A light small UAS is more easily displaced by gusts than a heavier aircraft, demanding constant correction.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4742,7 +4851,8 @@ QUESTIONS_JSON = r'''[
       "Brings no change in wind direction as it passes over the area"
     ],
     "a": 2,
-    "e": "Cold fronts move faster and lift air more steeply, giving a narrow, intense band of weather."
+    "e": "Cold fronts move faster and lift air more steeply, giving a narrow, intense band of weather.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -4755,7 +4865,8 @@ QUESTIONS_JSON = r'''[
       "Observed at a point in time, usually updated hourly"
     ],
     "a": 3,
-    "e": "A METAR is an observation of current conditions, normally updated about every hour."
+    "e": "A METAR is an observation of current conditions, normally updated about every hour.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Charts",
@@ -4976,7 +5087,8 @@ QUESTIONS_JSON = r'''[
       "Legal weight limit"
     ],
     "a": 1,
-    "e": "Extra weight increases the power required to hover, which drains the battery faster."
+    "e": "Extra weight increases the power required to hover, which drains the battery faster.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -4989,7 +5101,8 @@ QUESTIONS_JSON = r'''[
       "Increases the total takeoff weight to improve stability in gusty wind"
     ],
     "a": 2,
-    "e": "A loose payload can shift in flight, moving the center of gravity and destabilizing the aircraft."
+    "e": "A loose payload can shift in flight, moving the center of gravity and destabilizing the aircraft.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5002,7 +5115,8 @@ QUESTIONS_JSON = r'''[
       "A shifting center of gravity and degraded control"
     ],
     "a": 3,
-    "e": "A payload sliding in flight moves the center of gravity and makes the aircraft harder to control."
+    "e": "A payload sliding in flight moves the center of gravity and makes the aircraft harder to control.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5015,7 +5129,8 @@ QUESTIONS_JSON = r'''[
       "Reduce stability"
     ],
     "a": 2,
-    "e": "Less weight means less power needed, improving climb and lengthening flight time."
+    "e": "Less weight means less power needed, improving climb and lengthening flight time.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5028,7 +5143,8 @@ QUESTIONS_JSON = r'''[
       "A higher safe operating ceiling above the usual altitude limit"
     ],
     "a": 2,
-    "e": "A heavier payload cuts endurance, so plan shorter legs and more battery changes."
+    "e": "A heavier payload cuts endurance, so plan shorter legs and more battery changes.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5041,7 +5157,8 @@ QUESTIONS_JSON = r'''[
       "Assume normal sea-level performance for planning"
     ],
     "a": 2,
-    "e": "High density altitude cuts performance, so confirm a stable hover before flying the mission."
+    "e": "High density altitude cuts performance, so confirm a stable hover before flying the mission.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5054,7 +5171,8 @@ QUESTIONS_JSON = r'''[
       "Have no combined effect"
     ],
     "a": 1,
-    "e": "Payload and wind both raise power demand, so together they cut range and endurance sharply."
+    "e": "Payload and wind both raise power demand, so together they cut range and endurance sharply.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5067,7 +5185,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft registration number is correctly displayed on the airframe"
     ],
     "a": 2,
-    "e": "A brief test hover verifies the load is balanced and the aircraft handles normally before the mission."
+    "e": "A brief test hover verifies the load is balanced and the aircraft handles normally before the mission.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5080,7 +5199,8 @@ QUESTIONS_JSON = r'''[
       "Distributed so the load is centered and balanced"
     ],
     "a": 3,
-    "e": "Centering and balancing the payload keeps the center of gravity within the aircraft's limits."
+    "e": "Centering and balancing the payload keeps the center of gravity within the aircraft's limits.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5093,7 +5213,8 @@ QUESTIONS_JSON = r'''[
       "Leave packs in the cold to save them"
     ],
     "a": 0,
-    "e": "Cold lowers usable capacity, so carry spares and plan for shorter flights."
+    "e": "Cold lowers usable capacity, so carry spares and plan for shorter flights.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5106,7 +5227,8 @@ QUESTIONS_JSON = r'''[
       "Power on"
     ],
     "a": 1,
-    "e": "Too much weight can leave a drone unable to climb out of ground effect into stable flight."
+    "e": "Too much weight can leave a drone unable to climb out of ground effect into stable flight.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5119,7 +5241,8 @@ QUESTIONS_JSON = r'''[
       "Fully charged in a hot car"
     ],
     "a": 0,
-    "e": "Lithium packs last longest stored at a partial charge in a cool, dry location."
+    "e": "Lithium packs last longest stored at a partial charge in a cool, dry location.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Regulations",
@@ -5319,7 +5442,8 @@ QUESTIONS_JSON = r'''[
       "Visibility of 280 at 12"
     ],
     "a": 1,
-    "e": "In a METAR, '28012KT' means the wind is from 280 degrees at 12 knots."
+    "e": "In a METAR, '28012KT' means the wind is from 280 degrees at 12 knots.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -5332,7 +5456,8 @@ QUESTIONS_JSON = r'''[
       "It has no effect on electric aircraft"
     ],
     "a": 0,
-    "e": "High density altitude thins the air, reducing rotor thrust and overall performance."
+    "e": "High density altitude thins the air, reducing rotor thrust and overall performance.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -5345,7 +5470,8 @@ QUESTIONS_JSON = r'''[
       "It is always visible to the pilot as a clear line of clouds or blowing dust"
     ],
     "a": 0,
-    "e": "Wind shear is an abrupt change in wind speed or direction over a short distance and can cause loss of control."
+    "e": "Wind shear is an abrupt change in wind speed or direction over a short distance and can cause loss of control.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -5358,7 +5484,8 @@ QUESTIONS_JSON = r'''[
       "No change in weather"
     ],
     "a": 1,
-    "e": "Cold front passage commonly brings gusty winds, rapid weather changes, and thunderstorms."
+    "e": "Cold front passage commonly brings gusty winds, rapid weather changes, and thunderstorms.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -5371,7 +5498,8 @@ QUESTIONS_JSON = r'''[
       "Frequent thunderstorms"
     ],
     "a": 2,
-    "e": "Stable air tends to produce stratiform clouds, steady conditions, and smooth flying."
+    "e": "Stable air tends to produce stratiform clouds, steady conditions, and smooth flying.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Operations",
@@ -5410,7 +5538,8 @@ QUESTIONS_JSON = r'''[
       "Less than 55 pounds including payload"
     ],
     "a": 3,
-    "e": "A small unmanned aircraft under Part 107 weighs less than 55 pounds including everything on board."
+    "e": "A small unmanned aircraft under Part 107 weighs less than 55 pounds including everything on board.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5423,7 +5552,8 @@ QUESTIONS_JSON = r'''[
       "Premature low-voltage warnings and reduced power"
     ],
     "a": 3,
-    "e": "Heavy current draw causes voltage sag, which can trigger early low-battery cutoffs and loss of power."
+    "e": "Heavy current draw causes voltage sag, which can trigger early low-battery cutoffs and loss of power.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5436,7 +5566,8 @@ QUESTIONS_JSON = r'''[
       "On one side to balance the motor"
     ],
     "a": 0,
-    "e": "Mount payload near the center of gravity and secure it so the CG does not shift in flight."
+    "e": "Mount payload near the center of gravity and secure it so the CG does not shift in flight.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5449,7 +5580,8 @@ QUESTIONS_JSON = r'''[
       "Airframe color"
     ],
     "a": 1,
-    "e": "Total weight and wind are the main drivers of reduced multirotor endurance."
+    "e": "Total weight and wind are the main drivers of reduced multirotor endurance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5462,7 +5594,8 @@ QUESTIONS_JSON = r'''[
       "In 14 CFR Part 107"
     ],
     "a": 0,
-    "e": "Always follow the manufacturer's published weight and payload limits for your specific aircraft."
+    "e": "Always follow the manufacturer's published weight and payload limits for your specific aircraft.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Regulations",
@@ -5690,7 +5823,8 @@ QUESTIONS_JSON = r'''[
       "Stable air with reduced visibility near the surface"
     ],
     "a": 3,
-    "e": "A temperature inversion creates stable air that can trap haze and moisture, reducing visibility near the surface."
+    "e": "A temperature inversion creates stable air that can trap haze and moisture, reducing visibility near the surface.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -5703,7 +5837,8 @@ QUESTIONS_JSON = r'''[
       "Clear, hot, and very dry air right at the surface"
     ],
     "a": 2,
-    "e": "Fog forms when the air cools to near the dewpoint with a small temperature-dewpoint spread and light wind."
+    "e": "Fog forms when the air cools to near the dewpoint with a small temperature-dewpoint spread and light wind.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -5716,7 +5851,8 @@ QUESTIONS_JSON = r'''[
       "Wind direction only, with no information on clouds or visibility"
     ],
     "a": 2,
-    "e": "A TAF is a Terminal Aerodrome Forecast covering the area within about 5 statute miles of an airport."
+    "e": "A TAF is a Terminal Aerodrome Forecast covering the area within about 5 statute miles of an airport.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Operations",
@@ -5768,7 +5904,8 @@ QUESTIONS_JSON = r'''[
       "Puncture it to release the gas"
     ],
     "a": 1,
-    "e": "A swollen LiPo battery is damaged and unsafe, so remove it from service and dispose of it properly."
+    "e": "A swollen LiPo battery is damaged and unsafe, so remove it from service and dispose of it properly.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5781,7 +5918,8 @@ QUESTIONS_JSON = r'''[
       "A safe increase in capacity"
     ],
     "a": 0,
-    "e": "Overcharging a battery past its rated voltage risks overheating, damage, and fire."
+    "e": "Overcharging a battery past its rated voltage risks overheating, damage, and fire.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5794,7 +5932,8 @@ QUESTIONS_JSON = r'''[
       "Improved stability and smoother handling in gusty wind"
     ],
     "a": 1,
-    "e": "An unbalanced propeller causes vibration that degrades imagery and stresses the motors and airframe."
+    "e": "An unbalanced propeller causes vibration that degrades imagery and stresses the motors and airframe.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5807,7 +5946,8 @@ QUESTIONS_JSON = r'''[
       "It increases power demand and reduces control and endurance"
     ],
     "a": 3,
-    "e": "Gusty wind makes the aircraft work harder, increasing power demand while reducing control and endurance."
+    "e": "Gusty wind makes the aircraft work harder, increasing power demand while reducing control and endurance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5820,7 +5960,8 @@ QUESTIONS_JSON = r'''[
       "Lower battery voltage"
     ],
     "a": 1,
-    "e": "Carrying less weight reduces power demand, improving endurance and maneuverability."
+    "e": "Carrying less weight reduces power demand, improving endurance and maneuverability.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5833,7 +5974,8 @@ QUESTIONS_JSON = r'''[
       "Leave it loose for flexibility"
     ],
     "a": 2,
-    "e": "Keep any added camera or gimbal within the rated payload and near the center of gravity, and secure it."
+    "e": "Keep any added camera or gimbal within the rated payload and near the center of gravity, and secure it.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5846,7 +5988,8 @@ QUESTIONS_JSON = r'''[
       "It increases the lift the rotors produce"
     ],
     "a": 0,
-    "e": "High humidity slightly reduces air density, which can modestly reduce performance."
+    "e": "High humidity slightly reduces air density, which can modestly reduce performance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -5859,7 +6002,8 @@ QUESTIONS_JSON = r'''[
       "Its color, which fades as the cells gradually wear out"
     ],
     "a": 2,
-    "e": "Swelling, physical damage, or an inability to hold a charge means a battery should be retired."
+    "e": "Swelling, physical damage, or an inability to hold a charge means a battery should be retired.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Regulations",
@@ -6073,7 +6217,8 @@ QUESTIONS_JSON = r'''[
       "Higher air density"
     ],
     "a": 0,
-    "e": "Surface heating creates rising convective currents that cause low-level turbulence."
+    "e": "Surface heating creates rising convective currents that cause low-level turbulence.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -6086,7 +6231,8 @@ QUESTIONS_JSON = r'''[
       "It improves lift across the rotors, causing an unexpected fast climb"
     ],
     "a": 1,
-    "e": "A microburst is a small, intense downdraft with sudden severe wind shifts that can overpower an aircraft."
+    "e": "A microburst is a small, intense downdraft with sudden severe wind shifts that can overpower an aircraft.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -6099,7 +6245,8 @@ QUESTIONS_JSON = r'''[
       "The troposphere"
     ],
     "a": 3,
-    "e": "Nearly all weather, including clouds and turbulence, occurs in the troposphere."
+    "e": "Nearly all weather, including clouds and turbulence, occurs in the troposphere.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Operations",
@@ -6138,7 +6285,8 @@ QUESTIONS_JSON = r'''[
       "Sharpens GPS accuracy"
     ],
     "a": 0,
-    "e": "Added weight reduces climb rate and the margin available for maneuvering."
+    "e": "Added weight reduces climb rate and the margin available for maneuvering.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6151,7 +6299,8 @@ QUESTIONS_JSON = r'''[
       "It improves overall efficiency by balancing thrust across the four arms"
     ],
     "a": 2,
-    "e": "A propeller in the wrong position or rotation will not produce proper lift and can cause loss of control."
+    "e": "A propeller in the wrong position or rotation will not produce proper lift and can cause loss of control.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6164,7 +6313,8 @@ QUESTIONS_JSON = r'''[
       "It has no real effect on a multirotor with four or more motors"
     ],
     "a": 0,
-    "e": "An unsecured payload can shift in flight, moving the center of gravity and destabilizing the aircraft."
+    "e": "An unsecured payload can shift in flight, moving the center of gravity and destabilizing the aircraft.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6177,7 +6327,8 @@ QUESTIONS_JSON = r'''[
       "A GPS fault"
     ],
     "a": 1,
-    "e": "A rapid voltage drop under load indicates an aging or unhealthy battery that should be checked or retired."
+    "e": "A rapid voltage drop under load indicates an aging or unhealthy battery that should be checked or retired.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6190,7 +6341,8 @@ QUESTIONS_JSON = r'''[
       "It lowers the density altitude around the aircraft in flight"
     ],
     "a": 0,
-    "e": "Combining maximum payload with strong wind sharply reduces endurance and safety margins."
+    "e": "Combining maximum payload with strong wind sharply reduces endurance and safety margins.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6203,7 +6355,8 @@ QUESTIONS_JSON = r'''[
       "Extending control range"
     ],
     "a": 1,
-    "e": "A balanced, centered payload keeps the CG within limits for predictable, stable flight."
+    "e": "A balanced, centered payload keeps the CG within limits for predictable, stable flight.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6216,7 +6369,8 @@ QUESTIONS_JSON = r'''[
       "That the GPS receiver is disabled to save power for the payload"
     ],
     "a": 1,
-    "e": "Before adding payload, confirm it keeps the aircraft within its weight and balance limits."
+    "e": "Before adding payload, confirm it keeps the aircraft within its weight and balance limits.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Regulations",
@@ -6484,7 +6638,8 @@ QUESTIONS_JSON = r'''[
       "5 statute miles"
     ],
     "a": 1,
-    "e": "Minimum flight visibility is 3 statute miles from the control station."
+    "e": "Minimum flight visibility is 3 statute miles from the control station.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -6497,7 +6652,8 @@ QUESTIONS_JSON = r'''[
       "reducing performance because the air is less dense"
     ],
     "a": 3,
-    "e": "High density altitude reduces aircraft performance because the air is less dense."
+    "e": "High density altitude reduces aircraft performance because the air is less dense.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Loading",
@@ -6510,7 +6666,8 @@ QUESTIONS_JSON = r'''[
       "100 knots (115 mph)"
     ],
     "a": 1,
-    "e": "Maximum groundspeed under Part 107 is 87 knots (100 mph)."
+    "e": "Maximum groundspeed under Part 107 is 87 knots (100 mph).",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -6523,7 +6680,8 @@ QUESTIONS_JSON = r'''[
       "has no effect on performance"
     ],
     "a": 1,
-    "e": "Increased weight generally reduces endurance and maneuverability."
+    "e": "Increased weight generally reduces endurance and maneuverability.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Regulations",
@@ -6908,7 +7066,8 @@ QUESTIONS_JSON = r'''[
       "overcast skies with cloud cover at a full 8/8 of the sky"
     ],
     "a": 2,
-    "e": "BKN means broken clouds covering 5/8 to 7/8 of the sky."
+    "e": "BKN means broken clouds covering 5/8 to 7/8 of the sky.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -6921,7 +7080,8 @@ QUESTIONS_JSON = r'''[
       "calm at the surface with gusts to 24 knots"
     ],
     "a": 2,
-    "e": "24015G25KT means wind from 240 degrees at 15 knots, gusting to 25 knots."
+    "e": "24015G25KT means wind from 240 degrees at 15 knots, gusting to 25 knots.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -6934,7 +7094,8 @@ QUESTIONS_JSON = r'''[
       "persistent fog, low stratus, and very poor visibility with little vertical motion"
     ],
     "a": 0,
-    "e": "Unstable air brings cumuliform clouds, turbulence, showery precipitation, and generally good visibility."
+    "e": "Unstable air brings cumuliform clouds, turbulence, showery precipitation, and generally good visibility.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -6947,7 +7108,8 @@ QUESTIONS_JSON = r'''[
       "a very high density altitude near the surface today"
     ],
     "a": 2,
-    "e": "A small temperature-dewpoint spread signals high humidity and possible fog or low ceilings."
+    "e": "A small temperature-dewpoint spread signals high humidity and possible fog or low ceilings.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Regulations",
@@ -6988,7 +7150,8 @@ QUESTIONS_JSON = r'''[
       "75 pounds"
     ],
     "a": 1,
-    "e": "A small unmanned aircraft must weigh less than 55 pounds on takeoff, including everything on board or attached."
+    "e": "A small unmanned aircraft must weigh less than 55 pounds on takeoff, including everything on board or attached.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7001,7 +7164,8 @@ QUESTIONS_JSON = r'''[
       "draw more power, reducing endurance and climb performance"
     ],
     "a": 3,
-    "e": "More weight requires more power, which reduces endurance and climb performance."
+    "e": "More weight requires more power, which reduces endurance and climb performance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7014,7 +7178,8 @@ QUESTIONS_JSON = r'''[
       "increasing its capacity"
     ],
     "a": 2,
-    "e": "Cold temperatures reduce a battery's usable capacity, shortening flight time."
+    "e": "Cold temperatures reduce a battery's usable capacity, shortening flight time.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7027,7 +7192,8 @@ QUESTIONS_JSON = r'''[
       "overstress or damage the structure"
     ],
     "a": 3,
-    "e": "Aggressive maneuvers raise the structural load and can overstress or damage the airframe."
+    "e": "Aggressive maneuvers raise the structural load and can overstress or damage the airframe.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7040,7 +7206,8 @@ QUESTIONS_JSON = r'''[
       "ignored as long as the drone still hovers and responds normally to the control inputs"
     ],
     "a": 0,
-    "e": "A damaged propeller degrades performance and can cause vibration or failure, so it must be replaced before flight."
+    "e": "A damaged propeller degrades performance and can cause vibration or failure, so it must be replaced before flight.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7053,7 +7220,8 @@ QUESTIONS_JSON = r'''[
       "has no effect on battery"
     ],
     "a": 1,
-    "e": "Flying into a strong headwind raises power demand, reducing effective range and endurance."
+    "e": "Flying into a strong headwind raises power demand, reducing effective range and endurance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7066,7 +7234,8 @@ QUESTIONS_JSON = r'''[
       "exactly the hover time"
     ],
     "a": 2,
-    "e": "Confirm the battery has enough charge for the planned operation plus a safe reserve."
+    "e": "Confirm the battery has enough charge for the planned operation plus a safe reserve.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7079,7 +7248,8 @@ QUESTIONS_JSON = r'''[
       "reduces lift and thrust, degrading performance"
     ],
     "a": 3,
-    "e": "Higher temperatures lower air density, reducing lift and thrust and degrading performance."
+    "e": "Higher temperatures lower air density, reducing lift and thrust and degrading performance.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7092,7 +7262,8 @@ QUESTIONS_JSON = r'''[
       "improved stability in wind, since a heavier aircraft resists gusts more effectively"
     ],
     "a": 2,
-    "e": "Exceeding maximum gross weight reduces climb and controllability and can prevent maintaining altitude."
+    "e": "Exceeding maximum gross weight reduces climb and controllability and can prevent maintaining altitude.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Loading",
@@ -7105,7 +7276,8 @@ QUESTIONS_JSON = r'''[
       "the aircraft stays within its weight and center-of-gravity limits"
     ],
     "a": 3,
-    "e": "Checking weight and balance keeps the aircraft within its weight and center-of-gravity limits."
+    "e": "Checking weight and balance keeps the aircraft within its weight and center-of-gravity limits.",
+    "acs": "UA.IV.A"
   },
   {
     "b": "Weather",
@@ -7118,7 +7290,8 @@ QUESTIONS_JSON = r'''[
       "overcast"
     ],
     "a": 2,
-    "e": "SCT means scattered clouds covering 3/8 to 4/8 of the sky."
+    "e": "SCT means scattered clouds covering 3/8 to 4/8 of the sky.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -7131,7 +7304,8 @@ QUESTIONS_JSON = r'''[
       "scattered clouds"
     ],
     "a": 0,
-    "e": "OVC means overcast, with 8/8 sky coverage."
+    "e": "OVC means overcast, with 8/8 sky coverage.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -7144,7 +7318,8 @@ QUESTIONS_JSON = r'''[
       "scattered, 3/8 to 4/8"
     ],
     "a": 2,
-    "e": "FEW means few clouds covering 1/8 to 2/8 of the sky."
+    "e": "FEW means few clouds covering 1/8 to 2/8 of the sky.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -7157,7 +7332,8 @@ QUESTIONS_JSON = r'''[
       "nautical miles"
     ],
     "a": 2,
-    "e": "U.S. METAR visibility is reported in statute miles."
+    "e": "U.S. METAR visibility is reported in statute miles.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -7170,7 +7346,8 @@ QUESTIONS_JSON = r'''[
       "Terminal Aerodrome Forecast for an airport area"
     ],
     "a": 3,
-    "e": "A TAF is a Terminal Aerodrome Forecast covering the area around an airport."
+    "e": "A TAF is a Terminal Aerodrome Forecast covering the area around an airport.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Weather",
@@ -7183,7 +7360,8 @@ QUESTIONS_JSON = r'''[
       "on windy afternoons when rising thermals carry moisture quickly aloft"
     ],
     "a": 0,
-    "e": "Radiation fog forms on clear, calm nights with high humidity as the ground cools."
+    "e": "Radiation fog forms on clear, calm nights with high humidity as the ground cools.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Weather",
@@ -7196,7 +7374,8 @@ QUESTIONS_JSON = r'''[
       "avoid operating, due to turbulence, wind shear, and downbursts"
     ],
     "a": 3,
-    "e": "Avoid operating near thunderstorms, which produce turbulence, wind shear, and downbursts."
+    "e": "Avoid operating near thunderstorms, which produce turbulence, wind shear, and downbursts.",
+    "acs": "UA.III.B"
   },
   {
     "b": "Operations",
@@ -7337,6 +7516,9 @@ ACS_TASKS = {
     "UA.I.D": "Regulations - Waivers",
     "UA.I.E": "Regulations - Operations Over People",
     "UA.I.F": "Regulations - Remote Identification",
+    "UA.III.A": "Weather - Sources of Weather",
+    "UA.III.B": "Weather - Effects of Weather on Performance",
+    "UA.IV.A": "Loading and Performance",
 }
 
 # ---- Per-browser progress store (file-based) --------------------------------
