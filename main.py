@@ -657,7 +657,8 @@ QUESTIONS_JSON = r'''[
       "1 statute mile"
     ],
     "a": 1,
-    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station."
+    "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -670,7 +671,8 @@ QUESTIONS_JSON = r'''[
       "1,000 ft below and 1 mile horizontal"
     ],
     "a": 1,
-    "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud."
+    "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -683,7 +685,8 @@ QUESTIONS_JSON = r'''[
       "Maintain course since the drone is smaller"
     ],
     "a": 0,
-    "e": "A small UAS must always yield the right-of-way to all manned aircraft."
+    "e": "A small UAS must always yield the right-of-way to all manned aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -696,7 +699,8 @@ QUESTIONS_JSON = r'''[
       "Keep the drone within 400 ft horizontally"
     ],
     "a": 0,
-    "e": "The aircraft must stay within unaided visual line of sight of the remote PIC or a visual observer."
+    "e": "The aircraft must stay within unaided visual line of sight of the remote PIC or a visual observer.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -709,7 +713,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft has anti-collision lights visible for 3 SM and the pilot has updated training"
     ],
     "a": 3,
-    "e": "Night flight is allowed with anti-collision lighting visible for at least 3 statute miles plus the updated knowledge."
+    "e": "Night flight is allowed with anti-collision lighting visible for at least 3 statute miles plus the updated knowledge.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -722,7 +727,8 @@ QUESTIONS_JSON = r'''[
       "Allowed whenever the aircraft weighs more than 5 lb and carries a parachute"
     ],
     "a": 1,
-    "e": "Operations over people fall under Categories 1 through 4, set by the drone's weight and injury potential."
+    "e": "Operations over people fall under Categories 1 through 4, set by the drone's weight and injury potential.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -735,7 +741,8 @@ QUESTIONS_JSON = r'''[
       "Is fine if no one is hurt"
     ],
     "a": 2,
-    "e": "Careless or reckless operation that endangers people or property is prohibited and can cost your certificate."
+    "e": "Careless or reckless operation that endangers people or property is prohibited and can cost your certificate.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -748,7 +755,8 @@ QUESTIONS_JSON = r'''[
       "Two if both under 250 g"
     ],
     "a": 1,
-    "e": "A person may not act as remote PIC of more than one small UAS at the same time."
+    "e": "A person may not act as remote PIC of more than one small UAS at the same time.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -761,7 +769,8 @@ QUESTIONS_JSON = r'''[
       "File a flight plan with the nearest air traffic control facility"
     ],
     "a": 0,
-    "e": "A preflight inspection of the aircraft and systems is required to confirm it is safe to fly."
+    "e": "A preflight inspection of the aircraft and systems is required to confirm it is safe to fly.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -774,7 +783,8 @@ QUESTIONS_JSON = r'''[
       "Always prohibited under all circumstances"
     ],
     "a": 0,
-    "e": "Operation from a moving vehicle is allowed only over sparsely populated areas, not over people or congested areas."
+    "e": "Operation from a moving vehicle is allowed only over sparsely populated areas, not over people or congested areas.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Loading",
@@ -2173,7 +2183,8 @@ QUESTIONS_JSON = r'''[
       "Only during takeoff and landing, not during cruise"
     ],
     "a": 1,
-    "e": "VLOS must be kept with natural vision, with glasses or contacts permitted, but not binoculars or a camera feed."
+    "e": "VLOS must be kept with natural vision, with glasses or contacts permitted, but not binoculars or a camera feed.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2186,7 +2197,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft being flown weighs less than 250 grams with its battery"
     ],
     "a": 2,
-    "e": "FPV is permitted as long as a visual observer keeps the aircraft within unaided line of sight at all times."
+    "e": "FPV is permitted as long as a visual observer keeps the aircraft within unaided line of sight at all times.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2199,7 +2211,8 @@ QUESTIONS_JSON = r'''[
       "Stand at least 100 ft apart"
     ],
     "a": 0,
-    "e": "The remote PIC and visual observer must keep effective communication so see-and-avoid responsibilities are coordinated."
+    "e": "The remote PIC and visual observer must keep effective communication so see-and-avoid responsibilities are coordinated.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2212,7 +2225,8 @@ QUESTIONS_JSON = r'''[
       "Weigh 0.55 lb or less and have no parts that can lacerate skin"
     ],
     "a": 3,
-    "e": "Category 1 allows flight over people for aircraft 0.55 lb or lighter with no exposed parts that could lacerate skin."
+    "e": "Category 1 allows flight over people for aircraft 0.55 lb or lighter with no exposed parts that could lacerate skin.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2225,7 +2239,8 @@ QUESTIONS_JSON = r'''[
       "The time of day, since flights over people are permitted only during civil daylight hours"
     ],
     "a": 0,
-    "e": "Operations over people are sorted into Categories 1 through 4 based on weight and the risk of injury."
+    "e": "Operations over people are sorted into Categories 1 through 4 based on weight and the risk of injury.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2238,7 +2253,8 @@ QUESTIONS_JSON = r'''[
       "Stay under 100 feet above the assembly at all times"
     ],
     "a": 0,
-    "e": "Flight over open-air assemblies requires meeting Category 1 through 3 conditions and broadcasting Remote ID."
+    "e": "Flight over open-air assemblies requires meeting Category 1 through 3 conditions and broadcasting Remote ID.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2251,7 +2267,8 @@ QUESTIONS_JSON = r'''[
       "Deviate from Part 107 rules to the extent needed to meet the emergency"
     ],
     "a": 3,
-    "e": "In an in-flight emergency the remote PIC may deviate from any Part 107 rule to the extent required to handle it."
+    "e": "In an in-flight emergency the remote PIC may deviate from any Part 107 rule to the extent required to handle it.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2264,7 +2281,8 @@ QUESTIONS_JSON = r'''[
       "Allowed only while the aircraft is on the ground and the motors are stopped"
     ],
     "a": 2,
-    "e": "Control may pass between qualified pilots if the handoff is coordinated and one PIC stays responsible."
+    "e": "Control may pass between qualified pilots if the handoff is coordinated and one PIC stays responsible.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2277,7 +2295,8 @@ QUESTIONS_JSON = r'''[
       "Impulsivity"
     ],
     "a": 0,
-    "e": "The macho attitude shows up as overconfidence, and its antidote is taking it slow because reckless chances are foolish."
+    "e": "The macho attitude shows up as overconfidence, and its antidote is taking it slow because reckless chances are foolish.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2290,7 +2309,8 @@ QUESTIONS_JSON = r'''[
       "Anti-authority"
     ],
     "a": 3,
-    "e": "The anti-authority attitude resists rules, and its antidote is recognizing that the rules are usually right."
+    "e": "The anti-authority attitude resists rules, and its antidote is recognizing that the rules are usually right.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2303,7 +2323,8 @@ QUESTIONS_JSON = r'''[
       "Macho"
     ],
     "a": 2,
-    "e": "Invulnerability is thinking it cannot happen to you; the antidote is accepting that it can."
+    "e": "Invulnerability is thinking it cannot happen to you; the antidote is accepting that it can.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2316,7 +2337,8 @@ QUESTIONS_JSON = r'''[
       "Impulsivity"
     ],
     "a": 3,
-    "e": "Impulsivity is doing something quickly without analysis, and its antidote is to think first, then act."
+    "e": "Impulsivity is doing something quickly without analysis, and its antidote is to think first, then act.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2329,7 +2351,8 @@ QUESTIONS_JSON = r'''[
       "Macho"
     ],
     "a": 2,
-    "e": "Resignation is giving up a sense of control, and its antidote is recognizing that you can make a difference."
+    "e": "Resignation is giving up a sense of control, and its antidote is recognizing that you can make a difference.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2342,7 +2365,8 @@ QUESTIONS_JSON = r'''[
       "Memorizing the regulations so they can be recited from memory"
     ],
     "a": 2,
-    "e": "ADM is a structured way of evaluating information and risks to consistently make sound flight decisions."
+    "e": "ADM is a structured way of evaluating information and risks to consistently make sound flight decisions.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2355,7 +2379,8 @@ QUESTIONS_JSON = r'''[
       "Power, Altitude, Visibility, Endurance"
     ],
     "a": 0,
-    "e": "PAVE breaks risk into Pilot, Aircraft, enVironment, and External pressures so hazards can be identified before flight."
+    "e": "PAVE breaks risk into Pilot, Aircraft, enVironment, and External pressures so hazards can be identified before flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2368,7 +2393,8 @@ QUESTIONS_JSON = r'''[
       "The pilot's own fitness to fly"
     ],
     "a": 3,
-    "e": "IMSAFE checks Illness, Medication, Stress, Alcohol, Fatigue, and Emotion to judge whether the pilot is fit to fly."
+    "e": "IMSAFE checks Illness, Medication, Stress, Alcohol, Fatigue, and Emotion to judge whether the pilot is fit to fly.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -2381,7 +2407,8 @@ QUESTIONS_JSON = r'''[
       "Effectively using all available people, information, and equipment"
     ],
     "a": 3,
-    "e": "CRM is the effective use of all available resources, people, information, and equipment, to operate safely."
+    "e": "CRM is the effective use of all available resources, people, information, and equipment, to operate safely.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2394,7 +2421,8 @@ QUESTIONS_JSON = r'''[
       "Having no effect on drone operations"
     ],
     "a": 2,
-    "e": "Fatigue slows reaction time and impairs decision making, so a tired pilot should not fly."
+    "e": "Fatigue slows reaction time and impairs decision making, so a tired pilot should not fly.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -2407,7 +2435,8 @@ QUESTIONS_JSON = r'''[
       "Sharpen all senses indefinitely"
     ],
     "a": 2,
-    "e": "Stress can narrow attention and degrade judgment, which is why managing it is part of safe operation."
+    "e": "Stress can narrow attention and degrade judgment, which is why managing it is part of safe operation.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -2420,7 +2449,8 @@ QUESTIONS_JSON = r'''[
       "The weather is perfect"
     ],
     "a": 2,
-    "e": "Planning for a lost link or lost GPS, such as a return-to-home behavior, reduces the chance of a fly-away."
+    "e": "Planning for a lost link or lost GPS, such as a return-to-home behavior, reduces the chance of a fly-away.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -2433,7 +2463,8 @@ QUESTIONS_JSON = r'''[
       "The remote pilot's certificate number and its expiration date"
     ],
     "a": 2,
-    "e": "Verifying the control link, power, and firmware before flight helps prevent in-flight failures."
+    "e": "Verifying the control link, power, and firmware before flight helps prevent in-flight failures.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -2446,7 +2477,8 @@ QUESTIONS_JSON = r'''[
       "Optional for hobby flights"
     ],
     "a": 1,
-    "e": "The remote PIC is responsible for determining the aircraft is in a safe condition before each flight."
+    "e": "The remote PIC is responsible for determining the aircraft is in a safe condition before each flight.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -2459,7 +2491,8 @@ QUESTIONS_JSON = r'''[
       "Brief everyone on roles, the plan, and emergency procedures"
     ],
     "a": 3,
-    "e": "A preflight briefing of roles and emergency procedures keeps the crew coordinated and reduces errors."
+    "e": "A preflight briefing of roles and emergency procedures keeps the crew coordinated and reduces errors.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2472,7 +2505,8 @@ QUESTIONS_JSON = r'''[
       "Descend and hold a low hover directly above the people until they leave"
     ],
     "a": 2,
-    "e": "The remote PIC must avoid flying over people not part of the operation, repositioning or landing as needed."
+    "e": "The remote PIC must avoid flying over people not part of the operation, repositioning or landing as needed.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2485,7 +2519,8 @@ QUESTIONS_JSON = r'''[
       "Face downward toward the ground so that it does not distract other nearby aircraft"
     ],
     "a": 2,
-    "e": "Night flight requires anti-collision lights visible for at least 3 statute miles, flashing to help prevent a collision."
+    "e": "Night flight requires anti-collision lights visible for at least 3 statute miles, flashing to help prevent a collision.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -2498,7 +2533,8 @@ QUESTIONS_JSON = r'''[
       "Obtain a specific waiver from the FAA before every individual night flight"
     ],
     "a": 0,
-    "e": "Night operations require the lighting plus the updated training that now includes night content."
+    "e": "Night operations require the lighting plus the updated training that now includes night content.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2511,7 +2547,8 @@ QUESTIONS_JSON = r'''[
       "Directly participating in the operation, or under a covered structure or inside a stationary covered vehicle"
     ],
     "a": 3,
-    "e": "Without a category, you may fly only over participants or people shielded by a covered structure or stationary covered vehicle."
+    "e": "Without a category, you may fly only over participants or people shielded by a covered structure or stationary covered vehicle.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -2524,7 +2561,8 @@ QUESTIONS_JSON = r'''[
       "At cloud base"
     ],
     "a": 2,
-    "e": "Flight visibility of at least 3 statute miles is judged from the control station location."
+    "e": "Flight visibility of at least 3 statute miles is judged from the control station location.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2537,7 +2575,8 @@ QUESTIONS_JSON = r'''[
       "Permission from the property owner or manager"
     ],
     "a": 3,
-    "e": "Federal rules govern the airspace, but you still need permission to launch from or land on private property."
+    "e": "Federal rules govern the airspace, but you still need permission to launch from or land on private property.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2550,7 +2589,8 @@ QUESTIONS_JSON = r'''[
       "Only weather"
     ],
     "a": 1,
-    "e": "Accidents usually grow from a chain of small errors, and breaking any link in the chain can prevent the outcome."
+    "e": "Accidents usually grow from a chain of small errors, and breaking any link in the chain can prevent the outcome.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -2563,7 +2603,8 @@ QUESTIONS_JSON = r'''[
       "Allowed in Class G"
     ],
     "a": 1,
-    "e": "Careless or reckless operation that endangers life or property is prohibited and can lead to certificate action."
+    "e": "Careless or reckless operation that endangers life or property is prohibited and can lead to certificate action.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -2576,7 +2617,8 @@ QUESTIONS_JSON = r'''[
       "Make consistent go or no-go decisions and avoid pressing into unsafe conditions"
     ],
     "a": 3,
-    "e": "Personal minimums give a clear line for go or no-go decisions before external pressures push toward an unsafe flight."
+    "e": "Personal minimums give a clear line for go or no-go decisions before external pressures push toward an unsafe flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Loading",
@@ -3317,7 +3359,8 @@ QUESTIONS_JSON = r'''[
       "Keep flying by the camera feed"
     ],
     "a": 1,
-    "e": "Losing unaided sight breaks VLOS, so regain it or land."
+    "e": "Losing unaided sight breaks VLOS, so regain it or land.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -3330,7 +3373,8 @@ QUESTIONS_JSON = r'''[
       "Lower the density altitude and make the air easier to fly in"
     ],
     "a": 2,
-    "e": "External pressure can push a pilot past their personal minimums into an unsafe decision."
+    "e": "External pressure can push a pilot past their personal minimums into an unsafe decision.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3343,7 +3387,8 @@ QUESTIONS_JSON = r'''[
       "Fly only under 100 feet until the warning eventually clears itself"
     ],
     "a": 1,
-    "e": "Launching with a known unresolved issue is careless, so address it first."
+    "e": "Launching with a known unresolved issue is careless, so address it first.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Weather",
@@ -3720,7 +3765,8 @@ QUESTIONS_JSON = r'''[
       "Define, Examine, Choose, Init, Drive, Exit"
     ],
     "a": 0,
-    "e": "DECIDE means Detect, Estimate, Choose, Identify, Do, and Evaluate."
+    "e": "DECIDE means Detect, Estimate, Choose, Identify, Do, and Evaluate.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3733,7 +3779,8 @@ QUESTIONS_JSON = r'''[
       "Plan, Prepare, Proceed"
     ],
     "a": 1,
-    "e": "The 3P model is Perceive the hazards, Process the risk, and Perform the response."
+    "e": "The 3P model is Perceive the hazards, Process the risk, and Perform the response.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3746,7 +3793,8 @@ QUESTIONS_JSON = r'''[
       "A combination of how likely it is and how severe the outcome would be"
     ],
     "a": 3,
-    "e": "Risk combines the likelihood of an event with the severity of its outcome."
+    "e": "Risk combines the likelihood of an event with the severity of its outcome.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3759,7 +3807,8 @@ QUESTIONS_JSON = r'''[
       "Continuously scan the sky around the aircraft for other traffic"
     ],
     "a": 3,
-    "e": "Continuous scanning of the surrounding sky is how the crew spots and avoids other aircraft."
+    "e": "Continuous scanning of the surrounding sky is how the crew spots and avoids other aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -3772,7 +3821,8 @@ QUESTIONS_JSON = r'''[
       "The remote pilot's certificate number and date of issue"
     ],
     "a": 1,
-    "e": "Surveying the site for obstacles, people, and airspace lets the pilot plan a safe operation."
+    "e": "Surveying the site for obstacles, people, and airspace lets the pilot plan a safe operation.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3785,7 +3835,8 @@ QUESTIONS_JSON = r'''[
       "At the maximum 400 ft for every flight"
     ],
     "a": 2,
-    "e": "Setting return-to-home above the tallest obstacle prevents a collision during an automatic return."
+    "e": "Setting return-to-home above the tallest obstacle prevents a collision during an automatic return.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -3798,7 +3849,8 @@ QUESTIONS_JSON = r'''[
       "Takes over flying the aircraft whenever the remote pilot is busy"
     ],
     "a": 2,
-    "e": "The visual observer supports see-and-avoid but does not manipulate the controls."
+    "e": "The visual observer supports see-and-avoid but does not manipulate the controls.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3811,7 +3863,8 @@ QUESTIONS_JSON = r'''[
       "Ignore the wind entirely because the reserve covers any added power use"
     ],
     "a": 0,
-    "e": "A planned reserve leaves enough power to land safely rather than risking a dead pack aloft."
+    "e": "A planned reserve leaves enough power to land safely rather than risking a dead pack aloft.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3824,7 +3877,8 @@ QUESTIONS_JSON = r'''[
       "Match the manned aircraft's altitude and follow it at a fixed distance"
     ],
     "a": 0,
-    "e": "Yielding means giving way and remaining well clear, never crossing close in front of or near the aircraft."
+    "e": "Yielding means giving way and remaining well clear, never crossing close in front of or near the aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -3837,7 +3891,8 @@ QUESTIONS_JSON = r'''[
       "I can handle anything"
     ],
     "a": 2,
-    "e": "The antidote to anti-authority is recognizing that the rules are usually there for good reason."
+    "e": "The antidote to anti-authority is recognizing that the rules are usually there for good reason.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -3850,7 +3905,8 @@ QUESTIONS_JSON = r'''[
       "Missing a problem that should have been caught on the ground"
     ],
     "a": 3,
-    "e": "Hurrying the preflight lets ground-detectable problems slip through into the flight."
+    "e": "Hurrying the preflight lets ground-detectable problems slip through into the flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Airspace",
@@ -4087,7 +4143,8 @@ QUESTIONS_JSON = r'''[
       "Do it quickly"
     ],
     "a": 2,
-    "e": "The antidote to macho is recognizing that taking unnecessary chances is foolish."
+    "e": "The antidote to macho is recognizing that taking unnecessary chances is foolish.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4100,7 +4157,8 @@ QUESTIONS_JSON = r'''[
       "Not so fast; think first"
     ],
     "a": 3,
-    "e": "The antidote to impulsivity is to slow down and think before acting."
+    "e": "The antidote to impulsivity is to slow down and think before acting.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4113,7 +4171,8 @@ QUESTIONS_JSON = r'''[
       "It could happen to me"
     ],
     "a": 3,
-    "e": "The antidote to invulnerability is accepting that an accident could happen to you."
+    "e": "The antidote to invulnerability is accepting that an accident could happen to you.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4126,7 +4185,8 @@ QUESTIONS_JSON = r'''[
       "Just hurry up now before the chance slips away"
     ],
     "a": 0,
-    "e": "The antidote to resignation is recognizing you can influence the outcome."
+    "e": "The antidote to resignation is recognizing you can influence the outcome.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4139,7 +4199,8 @@ QUESTIONS_JSON = r'''[
       "Restricted, like flight over people, unless conditions or a category are met"
     ],
     "a": 3,
-    "e": "Flight over moving vehicles is restricted much like flight over people unless the operation meets the rules."
+    "e": "Flight over moving vehicles is restricted much like flight over people unless the operation meets the rules.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -4152,7 +4213,8 @@ QUESTIONS_JSON = r'''[
       "Only that the propellers spin freely when the motors arm"
     ],
     "a": 1,
-    "e": "Confirming GPS lock and a set home point ensures features like return-to-home will work."
+    "e": "Confirming GPS lock and a set home point ensures features like return-to-home will work.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -4165,7 +4227,8 @@ QUESTIONS_JSON = r'''[
       "Increase altitude and wait"
     ],
     "a": 0,
-    "e": "A pilot should be ready to take manual control and land if the aircraft loses GPS."
+    "e": "A pilot should be ready to take manual control and land if the aircraft loses GPS.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -4178,7 +4241,8 @@ QUESTIONS_JSON = r'''[
       "Choose the most appropriate paint color for the drone"
     ],
     "a": 0,
-    "e": "A weather briefing reveals wind, ceilings, visibility, and storms that affect the go decision."
+    "e": "A weather briefing reveals wind, ceilings, visibility, and storms that affect the go decision.",
+    "acs": "UA.III.A"
   },
   {
     "b": "Operations",
@@ -4191,7 +4255,8 @@ QUESTIONS_JSON = r'''[
       "Ignore the change"
     ],
     "a": 1,
-    "e": "When conditions fall below personal minimums, the safe choice is to land and end the flight."
+    "e": "When conditions fall below personal minimums, the safe choice is to land and end the flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4204,7 +4269,8 @@ QUESTIONS_JSON = r'''[
       "Is dangerous and prohibited, as it can ground firefighting aircraft"
     ],
     "a": 3,
-    "e": "Drones near wildfires or emergencies endanger and can ground crewed response aircraft, so do not fly there."
+    "e": "Drones near wildfires or emergencies endanger and can ground crewed response aircraft, so do not fly there.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -4217,7 +4283,8 @@ QUESTIONS_JSON = r'''[
       "Skip the preflight briefing to save time before launch"
     ],
     "a": 2,
-    "e": "Knowing the failsafe response to a lost link or low battery lets the pilot plan for it."
+    "e": "Knowing the failsafe response to a lost link or low battery lets the pilot plan for it.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -4230,7 +4297,8 @@ QUESTIONS_JSON = r'''[
       "Only one is the responsible remote PIC at any moment"
     ],
     "a": 3,
-    "e": "Control may pass between qualified pilots, but only one is the responsible remote PIC at a time."
+    "e": "Control may pass between qualified pilots, but only one is the responsible remote PIC at a time.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -4243,7 +4311,8 @@ QUESTIONS_JSON = r'''[
       "Keep the aircraft close enough to see its position and orientation clearly"
     ],
     "a": 3,
-    "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly."
+    "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -4256,7 +4325,8 @@ QUESTIONS_JSON = r'''[
       "Inside the control station alongside the remote pilot for the whole flight"
     ],
     "a": 1,
-    "e": "Keeping bystanders clear of the launch zone and out from under the aircraft protects them from injury."
+    "e": "Keeping bystanders clear of the launch zone and out from under the aircraft protects them from injury.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4269,7 +4339,8 @@ QUESTIONS_JSON = r'''[
       "Nothing needs to be agreed in advance"
     ],
     "a": 1,
-    "e": "Agreeing on a communication method keeps the remote PIC and observer coordinated in flight."
+    "e": "Agreeing on a communication method keeps the remote PIC and observer coordinated in flight.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4282,7 +4353,8 @@ QUESTIONS_JSON = r'''[
       "Not fly until the doubt is resolved"
     ],
     "a": 3,
-    "e": "When in doubt, do not fly until the safety or legality question is resolved."
+    "e": "When in doubt, do not fly until the safety or legality question is resolved.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -4295,7 +4367,8 @@ QUESTIONS_JSON = r'''[
       "The remote pilot certificate expiration date"
     ],
     "a": 1,
-    "e": "Thin wires and towers are easy to miss, so scan for them before any low maneuvering."
+    "e": "Thin wires and towers are easy to miss, so scan for them before any low maneuvering.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -4308,7 +4381,8 @@ QUESTIONS_JSON = r'''[
       "Good practice, though not required by the rule"
     ],
     "a": 3,
-    "e": "Part 107 does not require a logbook, but accurate records are a useful safety habit."
+    "e": "Part 107 does not require a logbook, but accurate records are a useful safety habit.",
+    "acs": "UA.I.A"
   },
   {
     "b": "Operations",
@@ -4321,7 +4395,8 @@ QUESTIONS_JSON = r'''[
       "The certificate expires"
     ],
     "a": 2,
-    "e": "Sunset marks when civil twilight and night lighting requirements begin to apply."
+    "e": "Sunset marks when civil twilight and night lighting requirements begin to apply.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -5650,7 +5725,8 @@ QUESTIONS_JSON = r'''[
       "Immediately cut power to all motors and drop straight to the ground"
     ],
     "a": 0,
-    "e": "On lost link the aircraft should perform a predictable, preprogrammed safe action like return-to-home or a controlled landing."
+    "e": "On lost link the aircraft should perform a predictable, preprogrammed safe action like return-to-home or a controlled landing.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -5663,7 +5739,8 @@ QUESTIONS_JSON = r'''[
       "Battery life by coordinating the power used by each system"
     ],
     "a": 1,
-    "e": "Crew resource management focuses on clear communication and distributing workload to reduce error."
+    "e": "Crew resource management focuses on clear communication and distributing workload to reduce error.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Loading",
@@ -6012,7 +6089,8 @@ QUESTIONS_JSON = r'''[
       "The rules do not matter"
     ],
     "a": 0,
-    "e": "Believing an accident will not happen to me is the invulnerability attitude; the antidote is that it could happen to me."
+    "e": "Believing an accident will not happen to me is the invulnerability attitude; the antidote is that it could happen to me.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6025,7 +6103,8 @@ QUESTIONS_JSON = r'''[
       "It increases the aircraft's top speed during routine operations"
     ],
     "a": 0,
-    "e": "Personal minimums set safety limits ahead of time so decisions are not driven by pressure in the moment."
+    "e": "Personal minimums set safety limits ahead of time so decisions are not driven by pressure in the moment.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6038,7 +6117,8 @@ QUESTIONS_JSON = r'''[
       "Only announce your presence by radio"
     ],
     "a": 2,
-    "e": "Keep people who are not part of the operation clear of the area unless your operation is specifically approved to fly over people."
+    "e": "Keep people who are not part of the operation clear of the area unless your operation is specifically approved to fly over people.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Loading",
@@ -6415,7 +6495,8 @@ QUESTIONS_JSON = r'''[
       "Only when the client specifically asks for one to be made"
     ],
     "a": 2,
-    "e": "Make a go/no-go decision before every flight based on weather, aircraft, and pilot readiness."
+    "e": "Make a go/no-go decision before every flight based on weather, aircraft, and pilot readiness.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6428,7 +6509,8 @@ QUESTIONS_JSON = r'''[
       "Increase speed and fly around to try to locate it"
     ],
     "a": 0,
-    "e": "If you lose visual line of sight you must regain it or begin a safe recovery such as return-to-home."
+    "e": "If you lose visual line of sight you must regain it or begin a safe recovery such as return-to-home.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Loading",
@@ -6651,7 +6733,8 @@ QUESTIONS_JSON = r'''[
       "only manned aircraft below 500 feet"
     ],
     "a": 1,
-    "e": "Under 14 CFR 107.37, the sUAS must yield the right of way to all other aircraft."
+    "e": "Under 14 CFR 107.37, the sUAS must yield the right of way to all other aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6664,7 +6747,8 @@ QUESTIONS_JSON = r'''[
       "Corrective lenses"
     ],
     "a": 3,
-    "e": "VLOS may be maintained only with corrective lenses, not binoculars or first-person-view goggles."
+    "e": "VLOS may be maintained only with corrective lenses, not binoculars or first-person-view goggles.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6677,7 +6761,8 @@ QUESTIONS_JSON = r'''[
       "two aircraft if both are under 0.55 lb"
     ],
     "a": 1,
-    "e": "A person may not act as remote PIC for more than one small unmanned aircraft at the same time."
+    "e": "A person may not act as remote PIC for more than one small unmanned aircraft at the same time.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6690,7 +6775,8 @@ QUESTIONS_JSON = r'''[
       "1 statute mile"
     ],
     "a": 2,
-    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles."
+    "e": "Night operations require anti-collision lighting visible for at least 3 statute miles.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6703,7 +6789,8 @@ QUESTIONS_JSON = r'''[
       "a second-class medical certificate"
     ],
     "a": 2,
-    "e": "The remote PIC must complete initial or recurrent training that covers night operations."
+    "e": "The remote PIC must complete initial or recurrent training that covers night operations.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -6716,7 +6803,8 @@ QUESTIONS_JSON = r'''[
       "the operation takes place in Class G airspace below 400 feet above the ground"
     ],
     "a": 1,
-    "e": "Flight over moving vehicles requires meeting an over-people category or that the occupants are participating in the operation."
+    "e": "Flight over moving vehicles requires meeting an over-people category or that the occupants are participating in the operation.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -6729,7 +6817,8 @@ QUESTIONS_JSON = r'''[
       "assess the operating environment and ensure the aircraft is safe for operation"
     ],
     "a": 3,
-    "e": "The remote PIC must assess the operating environment and ensure the sUAS is in a condition for safe operation."
+    "e": "The remote PIC must assess the operating environment and ensure the sUAS is in a condition for safe operation.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -6742,7 +6831,8 @@ QUESTIONS_JSON = r'''[
       "the schedule for routine maintenance of the aircraft and batteries"
     ],
     "a": 0,
-    "e": "CRM is the effective use of all available resources to conduct a safe operation."
+    "e": "CRM is the effective use of all available resources to conduct a safe operation.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -6755,7 +6845,8 @@ QUESTIONS_JSON = r'''[
       "The FAA"
     ],
     "a": 0,
-    "e": "The remote pilot in command is directly responsible for and the final authority over the operation."
+    "e": "The remote pilot in command is directly responsible for and the final authority over the operation.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -6908,7 +6999,8 @@ QUESTIONS_JSON = r'''[
       "be registered with the FAA under the usual process"
     ],
     "a": 0,
-    "e": "Category 3 operations may not be conducted over open-air assemblies of people."
+    "e": "Category 3 operations may not be conducted over open-air assemblies of people.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6935,7 +7027,8 @@ QUESTIONS_JSON = r'''[
       "a single waiver covering night flight is held, regardless of the over-people category"
     ],
     "a": 1,
-    "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training)."
+    "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training).",
+    "acs": "UA.I.E"
   },
   {
     "b": "Regulations",
@@ -6962,7 +7055,8 @@ QUESTIONS_JSON = r'''[
       "stay below 100 feet"
     ],
     "a": 1,
-    "e": "A Remote ID broadcast module requires the operation to remain within visual line of sight."
+    "e": "A Remote ID broadcast module requires the operation to remain within visual line of sight.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Regulations",
@@ -6989,7 +7083,8 @@ QUESTIONS_JSON = r'''[
       "is under 0.25 lb and therefore exempt from the registration rules"
     ],
     "a": 0,
-    "e": "Inside a FRIA, a non-broadcasting drone must remain within visual line of sight of the operator."
+    "e": "Inside a FRIA, a non-broadcasting drone must remain within visual line of sight of the operator.",
+    "acs": "UA.I.F"
   },
   {
     "b": "Operations",
@@ -7002,7 +7097,8 @@ QUESTIONS_JSON = r'''[
       "flying in Class G airspace"
     ],
     "a": 2,
-    "e": "The remote PIC may dim anti-collision lighting if a bright light would impair safe operation, using discretion in the interest of safety."
+    "e": "The remote PIC may dim anti-collision lighting if a bright light would impair safe operation, using discretion in the interest of safety.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -7015,7 +7111,8 @@ QUESTIONS_JSON = r'''[
       "ignore the facility map entirely, since it does not apply in uncontrolled Class G airspace at all"
     ],
     "a": 2,
-    "e": "Above the UAS Facility Map ceiling, you must seek further authorization rather than rely on standard LAANC approval."
+    "e": "Above the UAS Facility Map ceiling, you must seek further authorization rather than rely on standard LAANC approval.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Regulations",
@@ -7042,7 +7139,8 @@ QUESTIONS_JSON = r'''[
       "over any gathering once the manufacturer has issued a Declaration of Compliance"
     ],
     "a": 2,
-    "e": "Category 3 may fly over people only within a closed or restricted-access site with notice, or without sustained flight over any person."
+    "e": "Category 3 may fly over people only within a closed or restricted-access site with notice, or without sustained flight over any person.",
+    "acs": "UA.I.E"
   },
   {
     "b": "Operations",
@@ -7055,7 +7153,8 @@ QUESTIONS_JSON = r'''[
       "climb above 400 feet AGL to regain the lost control signal faster"
     ],
     "a": 2,
-    "e": "Knowing the lost-link behavior lets the pilot anticipate the aircraft's response if the control link drops."
+    "e": "Knowing the lost-link behavior lets the pilot anticipate the aircraft's response if the control link drops.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -7068,7 +7167,8 @@ QUESTIONS_JSON = r'''[
       "increase battery life because the surrounding metal shields the aircraft from wind"
     ],
     "a": 2,
-    "e": "Metal structures and power lines can cause magnetic or radio interference that degrades control or GPS navigation."
+    "e": "Metal structures and power lines can cause magnetic or radio interference that degrades control or GPS navigation.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -7081,7 +7181,8 @@ QUESTIONS_JSON = r'''[
       "only the battery level, since the aircraft's software handles all other safety checks"
     ],
     "a": 1,
-    "e": "Preflight includes the aircraft and control link, power, and a survey of the operating area for hazards."
+    "e": "Preflight includes the aircraft and control link, power, and a survey of the operating area for hazards.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -7094,7 +7195,8 @@ QUESTIONS_JSON = r'''[
       "perform maintenance only after the aircraft has been involved in a crash or hard landing event"
     ],
     "a": 0,
-    "e": "Follow the manufacturer's maintenance schedule; absent one, maintain the aircraft so it remains in a condition for safe operation."
+    "e": "Follow the manufacturer's maintenance schedule; absent one, maintain the aircraft so it remains in a condition for safe operation.",
+    "acs": "UA.V.F"
   },
   {
     "b": "Operations",
@@ -7107,7 +7209,8 @@ QUESTIONS_JSON = r'''[
       "degrading performance and decision making"
     ],
     "a": 3,
-    "e": "Fatigue, dehydration, and stress degrade a pilot's performance and decision making, even on the ground."
+    "e": "Fatigue, dehydration, and stress degrade a pilot's performance and decision making, even on the ground.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -7120,7 +7223,8 @@ QUESTIONS_JSON = r'''[
       "the class of airspace and any authorization needed before launching the operation"
     ],
     "a": 0,
-    "e": "IMSAFE is a self-assessment of illness, medication, stress, alcohol, fatigue, and emotion."
+    "e": "IMSAFE is a self-assessment of illness, medication, stress, alcohol, fatigue, and emotion.",
+    "acs": "UA.V.E"
   },
   {
     "b": "Operations",
@@ -7133,7 +7237,8 @@ QUESTIONS_JSON = r'''[
       "register the drone"
     ],
     "a": 0,
-    "e": "Monitoring the CTAF builds awareness of nearby manned traffic at a non-towered airport."
+    "e": "Monitoring the CTAF builds awareness of nearby manned traffic at a non-towered airport.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Operations",
@@ -7146,7 +7251,8 @@ QUESTIONS_JSON = r'''[
       "operate only above 400 feet so that manned aircraft remain well below the drone"
     ],
     "a": 1,
-    "e": "The remote PIC must maintain awareness and yield the right of way to all other aircraft."
+    "e": "The remote PIC must maintain awareness and yield the right of way to all other aircraft.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -7159,7 +7265,8 @@ QUESTIONS_JSON = r'''[
       "Remote ID compliance for the aircraft during the flight"
     ],
     "a": 0,
-    "e": "A pre-operation crew briefing supports crew resource management and safe coordination."
+    "e": "A pre-operation crew briefing supports crew resource management and safe coordination.",
+    "acs": "UA.V.D"
   },
   {
     "b": "Airspace",
@@ -7550,7 +7657,8 @@ QUESTIONS_JSON = r'''[
       "surrender the certificate"
     ],
     "a": 1,
-    "e": "Upon FAA request, the remote PIC must submit a written report describing the emergency deviation."
+    "e": "Upon FAA request, the remote PIC must submit a written report describing the emergency deviation.",
+    "acs": "UA.V.C"
   },
   {
     "b": "Operations",
@@ -7563,7 +7671,8 @@ QUESTIONS_JSON = r'''[
       "remain above 400 feet above the ground at all times while near the airport"
     ],
     "a": 0,
-    "e": "Near an airport, the operation must not interfere with airport operations and must give way to manned aircraft."
+    "e": "Near an airport, the operation must not interfere with airport operations and must give way to manned aircraft.",
+    "acs": "UA.V.B"
   },
   {
     "b": "Operations",
@@ -7576,7 +7685,8 @@ QUESTIONS_JSON = r'''[
       "the total weight stays under 55 lb, no hazardous material is carried, and the operation is within one state"
     ],
     "a": 3,
-    "e": "Carrying property for compensation requires total weight under 55 lb, no hazardous materials, and operation within a single state."
+    "e": "Carrying property for compensation requires total weight under 55 lb, no hazardous materials, and operation within a single state.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Operations",
@@ -7589,7 +7699,8 @@ QUESTIONS_JSON = r'''[
       "remain seated inside a vehicle that is parked near the launch and recovery area"
     ],
     "a": 2,
-    "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC."
+    "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC.",
+    "acs": "UA.I.B"
   }
 ]'''
 TEMPLATES_JSON = r'''{"exam.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"meta\">\n  <span class=\"l\">📝 Exam &middot; question {{ n + 1 }} of {{ total }}</span>\n  <span class=\"r timer {{ 'low' if remaining < 300 }}\"><span class=\"te\">{{ '⚠️' if remaining < 300 else '⏱️' }}</span>{{ remaining_mmss }} left</span>\n</div>\n\n<form method=\"post\" action=\"{{ url_for('exam_nav') }}\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <input type=\"hidden\" name=\"n\" value=\"{{ n }}\">\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <label class=\"choice\">\n      <input type=\"radio\" name=\"choice\" value=\"{{ c.idx }}\" {{ 'checked' if c.idx == saved }}>\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    </label>\n    {% endfor %}\n  </div>\n\n  <div class=\"btn-row\" style=\"margin-bottom:6px\">\n    {% if n > 0 %}<button type=\"submit\" name=\"goto\" value=\"{{ n - 1 }}\">Previous</button>{% endif %}\n    {% if n < total - 1 %}<button type=\"submit\" name=\"goto\" value=\"{{ n + 1 }}\" class=\"btn-primary\" style=\"width:auto;flex:1\">Save and next</button>\n    {% else %}<button type=\"submit\" name=\"finish\" value=\"1\" class=\"btn-primary\" style=\"width:auto;flex:1\">Finish exam</button>{% endif %}\n  </div>\n\n  <div class=\"section-title\">🧭 Question palette</div>\n  <div class=\"palette\">\n    {% for i in range(total) %}\n    <button type=\"submit\" name=\"goto\" value=\"{{ i }}\" class=\"{{ 'answered' if i in answered_set }} {{ 'current' if i == n }}\">{{ i + 1 }}</button>\n    {% endfor %}\n  </div>\n\n  <button type=\"submit\" name=\"finish\" value=\"1\">Finish and grade now</button>\n</form>\n{% endblock %}\n", "home.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"tiles\">\n  <div class=\"tile\"><span class=\"ic\">🎯</span><b>{{ lifetime_pct if lifetime_pct is not none else \"--\" }}{{ \"%\" if lifetime_pct is not none else \"\" }}</b><span>lifetime accuracy</span></div>\n  <div class=\"tile\"><span class=\"ic\">✍️</span><b>{{ total_answered }}</b><span>questions answered</span></div>\n  <div class=\"tile\"><span class=\"ic\">📚</span><b>{{ to_review }}</b><span>on your study list</span></div>\n</div>\n\n{% if not user %}\n<a class=\"actioncard\" href=\"{{ url_for('register') }}\" style=\"border-color:var(--blue);margin-bottom:8px\">\n  <b><span class=\"ic\">☁️</span>Create an account to sync across devices</b>\n  <span>Your current progress moves into the account automatically. Or <span style=\"text-decoration:underline\">sign in</span> if you have one.</span>\n</a>\n{% endif %}\n\n<div class=\"section-title\">Study</div>\n{% if to_review %}\n<a class=\"hero\" href=\"{{ url_for('drill') }}\"><span class=\"ic\">🎯</span><b>Drill your {{ to_review }} missed question{{ 's' if to_review != 1 }}</b><span>Targeted practice on exactly what you keep getting wrong, hardest first</span></a>\n{% else %}\n<a class=\"hero\" href=\"{{ url_for('practice', bucket='All') }}\"><span class=\"ic\">✍️</span><b>Practice all topics</b><span>Instant feedback and the rule behind every answer</span></a>\n{% endif %}\n<div class=\"cards\">\n  <a class=\"actioncard\" href=\"{{ url_for('learn') }}\"><b><span class=\"ic\">📖</span>Learn the material</b><span>Read through each topic with the answer and rule, no quiz pressure</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('cheatsheet') }}\"><b><span class=\"ic\">🗒️</span>Rules cheat sheet</b><span>Every key rule by topic, printable for last-minute review</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('exam_start') }}\"><b><span class=\"ic\">📝</span>Exam simulation</b><span>{{ exam_n }} questions ({{ exam_scored }} scored), {{ exam_min }} min, {{ exam_pass }}% to pass</span></a>\n  {% if to_review %}\n  <a class=\"actioncard\" href=\"{{ url_for('practice', bucket='All') }}\"><b><span class=\"ic\">✍️</span>Practice all topics</b><span>Instant feedback and the rule behind each answer</span></a>\n  {% endif %}\n  <a class=\"actioncard\" href=\"{{ url_for('focus') }}\"><b><span class=\"ic\">🎚️</span>Focus on weak topics</b><span>Practice weighted toward your lowest-scoring and not-yet-seen topics</span></a>\n  <a class=\"actioncard\" href=\"{{ url_for('review') }}\"><b><span class=\"ic\">📊</span>Study list and stats</b><span>Every missed question, grouped by topic</span></a>\n</div>\n\n<div class=\"section-title\">Practice by topic</div>\n<div class=\"bgrid\">\n  {% for b in buckets %}\n  <a class=\"bcard\" href=\"{{ url_for('practice', bucket=b.name) }}\">\n    <div class=\"top-row\">\n      <div class=\"n\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }} ({{ soft_count(b.count) }})</div>\n      {% set m = mastery(b.pct) %}<span class=\"mbadge {{ m.cls }}\">{{ m.emoji }} {{ m.label }}</span>\n    </div>\n    <div class=\"pct\">{{ b.pct if b.pct is not none else \"not started\" }}{{ \"%\" if b.pct is not none else \"\" }}</div>\n    <div class=\"bar\"><i style=\"width:{{ b.pct or 0 }}%;background:{{ b.color }}\"></i></div>\n  </a>\n  {% endfor %}\n</div>\n\n<div class=\"section-title\">Manage</div>\n<div class=\"btn-row\">\n  <a class=\"btn\" href=\"{{ url_for('export_progress') }}\">📤 Export progress</a>\n  <form method=\"post\" action=\"{{ url_for('reset_progress') }}\" onsubmit=\"return confirm('Erase all saved progress on this server for your browser?')\" style=\"display:inline\">\n    <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n    <button type=\"submit\">🗑️ Reset all</button>\n  </form>\n</div>\n{% endblock %}\n", "learn.html": "{% extends \"base.html\" %}\n{% block title %}Learn - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">📖 Learn by topic</div>\n<div class=\"filters\">\n  {% for b in bucket_names %}\n  <a href=\"{{ url_for('learn', bucket=b, n=0) }}\" class=\"{{ 'active' if bucket == b }}\"><span class=\"ic\">{{ icons[b] }}</span>{{ b }}</a>\n  {% endfor %}\n</div>\n\n<div class=\"meta\">\n  <span class=\"l\">{{ icons[bucket] }} {{ bucket }}</span>\n  <span class=\"r\">card {{ n + 1 }} of {{ total }}</span>\n</div>\n\n<div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n<div class=\"choices\">\n  {% for c in choices %}\n  <div class=\"choice {{ 'correct' if c.idx == q.a else 'dim' }}\">\n    <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    {% if c.idx == q.a %}<span class=\"status\">✅</span>{% endif %}\n  </div>\n  {% endfor %}\n</div>\n<div class=\"explain ok\"><span class=\"rl\">📌 the rule</span>{{ q.e }}</div>\n\n<div class=\"btn-row\">\n  {% if n > 0 %}<a class=\"btn\" href=\"{{ url_for('learn', bucket=bucket, n=n-1) }}\">← Previous</a>{% endif %}\n  {% if n < total - 1 %}\n  <a class=\"btn-primary\" href=\"{{ url_for('learn', bucket=bucket, n=n+1) }}\" style=\"width:auto;flex:1\">Next card →</a>\n  {% else %}\n  <a class=\"btn-primary\" href=\"{{ url_for('practice', bucket=bucket) }}\" style=\"width:auto;flex:1\">✍️ Quiz this topic →</a>\n  {% endif %}\n</div>\n<div class=\"center\" style=\"margin-top:12px\"><a href=\"{{ url_for('home') }}\" style=\"font-size:13px;color:var(--muted)\">Back to home</a></div>\n{% endblock %}\n", "review.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"section-title\">📈 Lifetime accuracy by topic</div>\n{% if lifetime %}\n{% for b in lifetime %}\n<div class=\"bdrow\">\n  <span class=\"nm\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }}</span>\n  <span class=\"tr bar\"><i style=\"width:{{ b.pct }}%;background:{{ b.color }}\"></i></span>\n  <span class=\"vl\" style=\"color:{{ b.color }}\">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">📭 No answers logged yet. Start practicing from the home page.</div>\n{% endif %}\n\n<div class=\"section-title\">📚 Study list, every missed question</div>\n<div class=\"filters\">\n  <a href=\"{{ url_for('review') }}\" class=\"{{ 'active' if not active_bucket }}\">All</a>\n  {% for b in bucket_names %}\n  <a href=\"{{ url_for('review', bucket=b) }}\" class=\"{{ 'active' if active_bucket == b }}\"><span class=\"ic\">{{ icons[b] }}</span>{{ b }}</a>\n  {% endfor %}\n</div>\n\n{% if missed %}\n<div class=\"btn-row\" style=\"margin-bottom:14px\">\n  <a class=\"btn-primary\" href=\"{{ url_for('drill', bucket=active_bucket) }}\" style=\"width:auto;flex:1\">🎯 Drill {{ 'these' if active_bucket else 'all' }} missed questions</a>\n</div>\n{% endif %}\n\n{% if missed %}\n{% for grp in missed %}\n<div class=\"mbucket\">\n  <div class=\"mbname\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"countbadge\">{{ grp.qs|length }} to review</span></div>\n  {% for m in grp.qs %}\n  <div class=\"mcard\">\n    <div class=\"mq\">{{ m.q_html|safe }}{% if m.misses > 1 %} <span style=\"color:var(--red);font-family:var(--mono);font-size:11px\">🔁 missed {{ m.misses }}x</span>{% endif %}</div>\n    <div class=\"ma\">✅ {{ m.letter }}. {{ m.answer }}</div>\n    <div class=\"mr\">{{ m.e }}</div>\n  </div>\n  {% endfor %}\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">🎉 Nothing on your study list{{ ' for this topic' if active_bucket }}. Miss a question and it lands here.</div>\n{% endif %}\n{% endblock %}\n", "login.html": "{% extends \"base.html\" %}\n{% block title %}Sign in - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">Sign in</div>\n{% if error %}<div class=\"explain bad\" style=\"margin-bottom:14px\">{{ error }}</div>{% endif %}\n<form method=\"post\" action=\"{{ url_for('login') }}\" class=\"qcard\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <label class=\"flabel\">Email</label>\n  <input type=\"email\" name=\"email\" value=\"{{ email or '' }}\" autocomplete=\"email\" required\n         class=\"field\" style=\"margin-bottom:14px\" placeholder=\"you@example.com\">\n  <label class=\"flabel\">Password</label>\n  <input type=\"password\" name=\"password\" autocomplete=\"current-password\" required\n         class=\"field\" style=\"margin-bottom:18px\">\n  <button type=\"submit\" class=\"btn-primary\">Sign in</button>\n</form>\n<div class=\"center\" style=\"font-size:14px;color:var(--muted)\">No account yet? <a href=\"{{ url_for('register') }}\">Create one</a></div>\n{% endblock %}\n", "exam_result.html": "{% extends \"base.html\" %}\n{% block body %}\n<div class=\"center\" style=\"padding:8px 0 16px\">\n  <div class=\"result-emoji\">{{ '🎉' if passed else '💪' }}</div>\n  <div class=\"bigpct\" style=\"color:{{ pass_color }}\">{{ pct }}%</div>\n  <div style=\"margin:10px 0\"><span class=\"badge {{ 'pass' if passed else 'fail' }}\"><span class=\"be\">{{ '✅' if passed else '❌' }}</span>{{ 'Pass' if passed else 'Did not pass' }}</span></div>\n  <div style=\"font-size:14px;color:var(--muted)\">{{ correct }} of {{ total }} correct &middot; {{ time_used }} used &middot; {{ exam_pass }}% needed</div>\n  {% if experimental %}<div style=\"font-size:12px;color:var(--muted);margin-top:5px\">{{ experimental }} experimental questions were not scored, just like the real exam.</div>{% endif %}\n</div>\n\n<div class=\"btn-row\" style=\"justify-content:center;margin-bottom:8px\">\n  <a class=\"btn\" href=\"{{ url_for('exam_start') }}\">🔄 New exam</a>\n  <a class=\"btn\" href=\"{{ url_for('history') }}\">📈 Progress</a>\n  {% if missed %}<a class=\"btn\" href=\"{{ url_for('drill') }}\">🎯 Drill misses</a>{% endif %}\n  <a class=\"btn\" href=\"{{ url_for('review') }}\">📚 Review study list</a>\n  <a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a>\n</div>\n\n<div class=\"section-title\">📊 By topic</div>\n{% for b in by_bucket %}\n<div class=\"bdrow\">\n  <span class=\"nm\"><span class=\"ic\">{{ icons[b.name] }}</span>{{ b.name }}</span>\n  <span class=\"tr bar\"><i style=\"width:{{ b.pct }}%;background:{{ b.color }}\"></i></span>\n  <span class=\"vl\" style=\"color:{{ b.color }}\">{{ b.c }}/{{ b.n }} ({{ b.pct }}%)</span>\n</div>\n{% endfor %}\n\n{% if missed %}\n<div class=\"section-title\">📌 Missed questions and the rule</div>\n{% for grp in missed %}\n<div class=\"mbucket\">\n  <div class=\"mbname\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"countbadge\">{{ grp.qs|length }} missed</span></div>\n  {% for m in grp.qs %}\n  <div class=\"mcard\">\n    <div class=\"mq\">{{ m.q_html|safe }}</div>\n    <div class=\"ma\">✅ {{ m.letter }}. {{ m.answer }}</div>\n    <div class=\"mr\">{{ m.e }}</div>\n  </div>\n  {% endfor %}\n</div>\n{% endfor %}\n{% else %}\n<div class=\"empty\">🌟 Perfect run. Nothing missed.</div>\n{% endif %}\n{% endblock %}\n", "cheatsheet.html": "{% extends \"base.html\" %}\n{% block title %}Rules cheat sheet - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">🗒️ Rules cheat sheet</div>\n<p class=\"cs-intro\">{{ total }} key rules across all topics. Use your browser's print (Cmd or Ctrl + P) to save or print a clean copy for last-minute review.</p>\n{% for grp in sheet %}\n<div class=\"cs-group\">\n  <div class=\"cs-head\"><span class=\"ic\">{{ icons[grp.name] }}</span>{{ grp.name }} <span class=\"cs-n\">{{ soft_count(grp.count) }}</span></div>\n  <ul class=\"cs-list\">\n    {% for r in grp.rules %}<li>{{ r }}</li>{% endfor %}\n  </ul>\n</div>\n{% endfor %}\n{% endblock %}\n", "history.html": "{% extends \"base.html\" %}\n{% block title %}Exam readiness - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">🎓 Exam readiness</div>\n{% if not taken %}\n<div class=\"empty\">📝 No practice exams logged yet. Take one to see your readiness verdict and score trend.</div>\n<div class=\"center\" style=\"margin-top:10px\"><a class=\"btn-primary\" href=\"{{ url_for('exam_start') }}\" style=\"width:auto;display:inline-block\">Start an exam</a></div>\n{% else %}\n<div class=\"qcard\" style=\"text-align:center\">\n  <span class=\"mbadge {{ verdict.cls }}\" style=\"font-size:12px;padding:5px 12px\">{{ verdict.emoji }} {{ verdict.label }}</span>\n  <p style=\"font-size:14px;color:var(--muted);margin:11px 0 0\">{{ verdict.note }}</p>\n</div>\n\n<div class=\"tiles\">\n  <div class=\"tile\"><span class=\"ic\">🏅</span><b>{{ best }}%</b><span>best score</span></div>\n  <div class=\"tile\"><span class=\"ic\">📊</span><b>{{ avg5 }}%</b><span>recent average</span></div>\n  <div class=\"tile\"><span class=\"ic\">✅</span><b>{{ pass_rate }}%</b><span>pass rate</span></div>\n</div>\n\n<div class=\"section-title\">📈 Score trend &middot; last {{ trend|length }}</div>\n<div class=\"trend\">\n  <div class=\"passline\" style=\"bottom:{{ exam_pass }}%\"><span>{{ exam_pass }}% pass</span></div>\n  {% for s in trend %}\n  <div class=\"tb {{ 'pass' if s.passed else 'fail' }}\" style=\"height:{{ s.pct }}%\" title=\"{{ s.pct }}%\"></div>\n  {% endfor %}\n</div>\n<div class=\"center\" style=\"font-family:var(--mono);font-size:10px;color:var(--muted)\">oldest → newest</div>\n\n<div class=\"section-title\">🗒️ Recent exams</div>\n{% for s in recent %}\n<div class=\"bdrow\">\n  <span class=\"nm\" style=\"width:auto;flex:1\">{{ s.when }}</span>\n  <span class=\"vl\" style=\"width:auto;color:var(--muted)\">{{ s.correct }}/{{ s.total }}</span>\n  <span class=\"vl\" style=\"color:{{ '#1F8A5B' if s.passed else '#C23B3B' }}\">{{ s.pct }}%</span>\n  <span class=\"badge {{ 'pass' if s.passed else 'fail' }}\" style=\"font-size:10px;padding:3px 9px\">{{ '✅' if s.passed else '❌' }} {{ 'Pass' if s.passed else 'Fail' }}</span>\n</div>\n{% endfor %}\n\n<div class=\"btn-row\" style=\"justify-content:center;margin-top:16px\">\n  <a class=\"btn\" href=\"{{ url_for('exam_start') }}\">🔄 New exam</a>\n  <a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a>\n</div>\n{% endif %}\n{% endblock %}\n", "register.html": "{% extends \"base.html\" %}\n{% block title %}Create account - Part 107 Ground School{% endblock %}\n{% block body %}\n<div class=\"section-title\">Create an account</div>\n<p style=\"font-size:14px;color:var(--muted);margin-bottom:14px\">Sign in with your email so your progress follows you across devices. If you have been practicing already, that progress moves into your account automatically.</p>\n{% if error %}<div class=\"explain bad\" style=\"margin-bottom:14px\">{{ error }}</div>{% endif %}\n<form method=\"post\" action=\"{{ url_for('register') }}\" class=\"qcard\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <label class=\"flabel\">Email</label>\n  <input type=\"email\" name=\"email\" value=\"{{ email or '' }}\" autocomplete=\"email\" required\n         class=\"field\" style=\"margin-bottom:14px\" placeholder=\"you@example.com\">\n  <label class=\"flabel\">Password (at least 6 characters)</label>\n  <input type=\"password\" name=\"password\" autocomplete=\"new-password\" required\n         class=\"field\" style=\"margin-bottom:18px\">\n  <button type=\"submit\" class=\"btn-primary\">Create account</button>\n</form>\n<div class=\"center\" style=\"font-size:14px;color:var(--muted)\">Already have an account? <a href=\"{{ url_for('login') }}\">Sign in</a></div>\n{% endblock %}\n", "base.html": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">\n<meta name=\"theme-color\" content=\"{{ '#1E2731' if dark else '#EAEFF3' }}\">\n<title>{% block title %}Part 107 Ground School{% endblock %}</title>\n<link rel=\"icon\" type=\"image/svg+xml\" href=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMDI4NEM3Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMEQ5NDg4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIgZmlsbD0idXJsKCNnKSIvPjxnIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxsaW5lIHgxPSIxNiIgeTE9IjE2IiB4Mj0iOCIgeTI9IjgiLz48bGluZSB4MT0iMTYiIHkxPSIxNiIgeDI9IjI0IiB5Mj0iOCIvPjxsaW5lIHgxPSIxNiIgeTE9IjE2IiB4Mj0iOCIgeTI9IjI0Ii8+PGxpbmUgeDE9IjE2IiB5MT0iMTYiIHgyPSIyNCIgeTI9IjI0Ii8+PC9nPjxnIGZpbGw9IiNmZmYiPjxjaXJjbGUgY3g9IjgiIGN5PSI4IiByPSIzIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSI4IiByPSIzIi8+PGNpcmNsZSBjeD0iOCIgY3k9IjI0IiByPSIzIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMyIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjMuNCIvPjwvZz48L3N2Zz4=\">\n<style>\n:root{\n  --paper:#EAEFF3; --surface:#FFFFFF; --surface-2:#F3F6F9; --ink:#16212C; --muted:#5A6A77;\n  --line:#D8E0E7; --line-2:#E7ECF1; --blue:#0284C7; --magenta:#0D9488; --green:#1F8A5B;\n  --green-bg:#E3F2EA; --red:#C23B3B; --red-bg:#F7E9E9; --amber:#B97C0C;\n  --shadow-sm:0 1px 2px rgba(22,33,44,.06), 0 1px 1px rgba(22,33,44,.04);\n  --shadow-md:0 2px 4px rgba(22,33,44,.05), 0 8px 20px -6px rgba(22,33,44,.12);\n  --shadow-lg:0 10px 36px -8px rgba(22,33,44,.18);\n  --shadow-pop:0 4px 10px rgba(22,33,44,.07), 0 16px 34px -8px rgba(2,132,199,.20);\n  --ring:rgba(2,132,199,.38);\n  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;\n  --sans:system-ui,-apple-system,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif;\n}\nbody.dark{\n  --paper:#1E2731; --surface:#27323D; --surface-2:#2F3B47; --ink:#E7EDF2; --muted:#9DAAB6;\n  --line:#3A4853; --line-2:#2F3B4700; --green-bg:#173E2C; --red-bg:#3A2222;\n  --blue:#38BDF8; --magenta:#2DD4BF;\n  --shadow-sm:0 1px 2px rgba(0,0,0,.35);\n  --shadow-md:0 2px 6px rgba(0,0,0,.4), 0 10px 26px -8px rgba(0,0,0,.5);\n  --shadow-lg:0 16px 44px -10px rgba(0,0,0,.6);\n  --shadow-pop:0 4px 10px rgba(0,0,0,.4), 0 18px 40px -10px rgba(56,189,248,.34);\n  --ring:rgba(56,189,248,.5);\n}\n*{box-sizing:border-box;margin:0;padding:0;}\nbody{\n  font-family:var(--sans);color:var(--ink);line-height:1.55;padding:0 16px 56px;\n  -webkit-font-smoothing:antialiased;min-height:100vh;\n  background:\n    radial-gradient(1100px 560px at 82% -12%, rgba(2,132,199,.07), transparent 60%),\n    radial-gradient(820px 480px at -12% 6%, rgba(13,148,136,.06), transparent 55%),\n    var(--paper);\n  background-attachment:fixed;\n}\nbody.dark{\n  background:\n    radial-gradient(1100px 560px at 82% -12%, rgba(56,189,248,.12), transparent 60%),\n    radial-gradient(820px 480px at -12% 4%, rgba(45,212,191,.10), transparent 55%),\n    var(--paper);\n  background-attachment:fixed;\n}\na{color:inherit;}\n.wrap{max-width:680px;margin:0 auto;}\n\n/* header */\nheader.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:22px 0 16px;border-bottom:1px solid var(--line);margin-bottom:24px;flex-wrap:wrap;}\n.brand a{text-decoration:none;}\n.brand-link{display:flex;align-items:center;gap:11px;}\n.brand .logo{flex:0 0 auto;width:40px;height:40px;border-radius:11px;overflow:hidden;display:block;box-shadow:var(--shadow-sm);}\n.brand .logo svg{display:block;width:40px;height:40px;}\n.brand h1{font-size:21px;font-weight:760;letter-spacing:-.02em;}\n.brand .tag{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--magenta);margin-top:3px;}\n.top nav{display:flex;gap:13px;font-size:13px;font-family:var(--mono);align-items:center;}\n.top nav a{color:var(--muted);text-decoration:none;transition:color .15s ease;}\n.top nav a:hover{color:var(--ink);}\n.user-chip{color:var(--ink);max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}\n.linkbtn{border:none;background:none;padding:0;color:var(--muted);font-family:var(--mono);font-size:13px;cursor:pointer;transition:color .15s ease;}\n.linkbtn:hover{color:var(--ink);box-shadow:none;transform:none;}\n\n/* theme toggle icon */\n.theme-toggle{display:inline-grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:9px;background:var(--surface);color:var(--muted);box-shadow:var(--shadow-sm);transition:transform .16s ease, box-shadow .16s ease, color .15s ease, border-color .15s ease;}\n.theme-toggle:hover{color:var(--ink);border-color:var(--blue);transform:translateY(-1px);box-shadow:var(--shadow-md);}\n.theme-toggle svg{display:block;}\n\n/* surfaces with depth */\n.tiles{display:flex;gap:12px;margin-bottom:22px;flex-wrap:wrap;}\n.tile{flex:1;min-width:120px;background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:16px 16px 15px;box-shadow:var(--shadow-md);position:relative;overflow:hidden;}\n.tile::before{content:\"\";position:absolute;left:0;top:0;height:3px;width:100%;background:linear-gradient(90deg,var(--blue),var(--magenta));opacity:.85;}\n.tile b{display:block;font-family:var(--mono);font-size:31px;line-height:1;font-weight:700;letter-spacing:-.02em;color:var(--ink);}\n.tile span{display:block;margin-top:7px;font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);}\n.section-title{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin:30px 0 13px;display:flex;align-items:center;gap:9px;}\n.section-title::before{content:\"\";flex:0 0 auto;width:3px;height:13px;border-radius:2px;background:linear-gradient(180deg,var(--blue),var(--magenta));}\n.section-title::after{content:\"\";flex:1;height:1px;background:var(--line);}\n.cards{display:flex;flex-direction:column;gap:11px;}\n.actioncard{position:relative;display:block;background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:15px 42px 15px 70px;text-decoration:none;color:inherit;box-shadow:var(--shadow-md);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;}\n.actioncard:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);border-color:var(--blue);}\n.actioncard b{font-size:15.5px;font-weight:680;letter-spacing:-.01em;color:var(--ink);}\n.actioncard > span{display:block;font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.45;}\n.actioncard .ic{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:42px;height:42px;margin:0;border-radius:12px;display:grid;place-items:center;font-size:20px;line-height:1;font-style:normal;background:linear-gradient(155deg,rgba(2,132,199,.14),rgba(13,148,136,.12));border:1px solid var(--line-2);box-shadow:var(--shadow-sm);}\nbody.dark .actioncard .ic{background:linear-gradient(155deg,rgba(56,189,248,.20),rgba(45,212,191,.16));border-color:var(--line);}\n.actioncard::after{content:\"›\";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-size:23px;line-height:1;color:var(--muted);opacity:.5;transition:transform .18s ease, opacity .18s ease, color .18s ease;}\n.actioncard:hover::after{transform:translateY(-50%) translateX(3px);opacity:1;color:var(--blue);}\n.hero{position:relative;display:block;border-radius:16px;padding:21px 48px 21px 78px;margin-bottom:11px;text-decoration:none;color:#fff;background:linear-gradient(145deg,#0EA5E9,#0284C7 52%,#0D9488);border:1px solid #0284C7;box-shadow:var(--shadow-lg);transition:transform .18s ease, box-shadow .18s ease;}\n.hero:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);}\n.hero b{display:block;font-size:18px;font-weight:700;letter-spacing:-.01em;color:#fff;line-height:1.2;}\n.hero > span{display:block;font-size:13px;color:rgba(255,255,255,.86);margin-top:4px;line-height:1.45;}\n.hero .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:46px;height:46px;margin:0;border-radius:13px;display:grid;place-items:center;font-size:23px;line-height:1;font-style:normal;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.32);}\n.hero::after{content:\"›\";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:26px;line-height:1;color:rgba(255,255,255,.92);transition:transform .18s ease;}\n.hero:hover::after{transform:translateY(-50%) translateX(3px);}\n.bgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;}\n.bcard{background:linear-gradient(180deg,var(--surface),var(--surface-2));border:1px solid var(--line);border-radius:14px;padding:14px 15px;text-decoration:none;color:inherit;box-shadow:var(--shadow-md);transition:transform .18s ease, box-shadow .18s ease, border-color .18s ease;}\n.bcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-pop);border-color:var(--blue);}\n.bcard .n{font-family:var(--mono);font-size:11px;color:var(--magenta);text-transform:uppercase;letter-spacing:.06em;}\n.bcard .pct{font-family:var(--mono);font-size:13px;color:var(--muted);}\n.bar{height:6px;background:var(--line);border-radius:4px;margin-top:9px;overflow:hidden;box-shadow:inset 0 1px 2px rgba(0,0,0,.10);}\n.bar > i{display:block;height:6px;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--magenta));}\n\n/* practice + exam */\n.meta{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;margin-bottom:14px;}\n.meta .l{color:var(--muted);}\n.meta .r{color:var(--blue);letter-spacing:.05em;}\n.qcard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:16px;box-shadow:var(--shadow-lg);}\n.qtext{font-size:16px;line-height:1.6;}\n.code{font-family:var(--mono);font-size:13px;background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:2px 6px;}\n.choices{display:flex;flex-direction:column;gap:9px;margin:0 0 16px;}\n.choice{display:flex;align-items:flex-start;gap:11px;padding:13px 15px;border:1px solid var(--line);border-radius:11px;background:var(--surface);font-size:15px;cursor:pointer;box-shadow:var(--shadow-sm);transition:transform .14s ease, box-shadow .14s ease, border-color .14s ease;}\n.choice:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);border-color:var(--blue);}\n.choice input{margin-top:3px;accent-color:var(--blue);}\n.choice .cl{font-family:var(--mono);font-size:13px;opacity:.55;}\n.choice.correct{background:var(--green-bg);border-color:var(--green);}\n.choice.wrong{background:var(--red-bg);border-color:var(--red);}\n.choice.dim{opacity:.55;}\n.explain{border-radius:11px;padding:13px 15px;margin-bottom:16px;font-size:14px;line-height:1.6;box-shadow:var(--shadow-sm);}\n.explain.ok{background:var(--green-bg);border:1px solid var(--green);}\n.explain.bad{background:var(--red-bg);border:1px solid var(--red);}\n.explain .rl{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.7;display:block;margin-bottom:4px;}\n\n/* buttons */\nbutton,.btn{font-family:var(--sans);font-size:15px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:11px 16px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:var(--shadow-sm);transition:transform .16s ease, box-shadow .16s ease, border-color .16s ease;}\nbutton:hover,.btn:hover{border-color:var(--blue);transform:translateY(-1px);box-shadow:var(--shadow-md);}\n.btn-primary{background:linear-gradient(165deg,#0EA5E9,#0284C7);color:#fff;border-color:#0284C7;font-weight:600;width:100%;text-align:center;box-shadow:var(--shadow-md);}\n.btn-primary:hover{box-shadow:var(--shadow-pop);border-color:#0284C7;}\nbody.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border-color:#0369A1;color:#fff;}\n.btn-row{display:flex;gap:8px;flex-wrap:wrap;}\n:focus-visible{outline:2px solid var(--ring);outline-offset:2px;}\n\n/* results */\n.bigpct{font-family:var(--mono);font-size:54px;font-weight:700;line-height:1;text-align:center;letter-spacing:-.02em;}\n.badge{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 13px;border-radius:999px;box-shadow:var(--shadow-sm);}\n.badge.pass{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}\n.badge.fail{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.center{text-align:center;}\n.bdrow{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:14px;}\n.bdrow .nm{width:110px;flex-shrink:0;}\n.bdrow .tr{flex:1;}\n.bdrow .vl{font-family:var(--mono);font-size:12px;width:84px;text-align:right;flex-shrink:0;}\n.palette{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:14px 0;}\n.palette button{padding:0;height:36px;font-family:var(--mono);font-size:12px;border-radius:8px;}\n.palette button.answered{background:var(--blue);color:#fff;border-color:var(--blue);}\n.palette button.current{outline:2px solid var(--magenta);outline-offset:1px;}\n\n/* review */\n.mbucket{margin-bottom:16px;}\n.mbname{font-family:var(--mono);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--magenta);margin-bottom:8px;}\n.mbname span{color:var(--muted);}\n.mcard{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--magenta);border-radius:0 11px 11px 0;padding:11px 14px;margin-bottom:10px;box-shadow:var(--shadow-sm);}\n.mcard .mq{font-size:14px;margin-bottom:5px;}\n.mcard .ma{font-size:13.5px;color:var(--green);margin-bottom:3px;}\n.mcard .mr{font-size:13px;color:var(--muted);}\n.empty{text-align:center;color:var(--green);padding:18px 0;font-size:14px;}\n.timer{font-family:var(--mono);font-weight:700;}\n.timer.low{color:var(--red);}\n.filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}\n.filters a{font-family:var(--mono);font-size:12px;padding:6px 12px;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--muted);background:var(--surface);box-shadow:var(--shadow-sm);transition:transform .14s ease, border-color .14s ease, color .14s ease;}\n.filters a:hover{transform:translateY(-1px);border-color:var(--blue);color:var(--ink);}\n.filters a.active{background:var(--blue);color:#fff;border-color:var(--blue);}\n.note{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:28px;padding-top:14px;border-top:1px solid var(--line);}\n\n/* form fields */\n.field{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font-size:15px;box-shadow:var(--shadow-sm);transition:border-color .15s ease, box-shadow .15s ease;}\n.field:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px var(--ring);}\n.flabel{display:block;font-size:13px;color:var(--muted);margin-bottom:5px;}\n\n/* gentle load reveal */\n@keyframes rise{from{opacity:0;transform:translateY(9px);}to{opacity:1;transform:none;}}\n@media(prefers-reduced-motion:no-preference){\n  .tile,.actioncard,.bcard,.qcard,.meta,.mbucket,.bigpct,.badge{animation:rise .38s cubic-bezier(.2,.7,.3,1) both;}\n  .tile:nth-child(2),.actioncard:nth-child(2),.bcard:nth-child(2){animation-delay:.05s;}\n  .tile:nth-child(3),.actioncard:nth-child(3),.bcard:nth-child(3){animation-delay:.10s;}\n  .actioncard:nth-child(4),.bcard:nth-child(4){animation-delay:.14s;}\n}\n@media(max-width:480px){.palette{grid-template-columns:repeat(6,1fr);}.bgrid{grid-template-columns:1fr;}.user-chip{max-width:90px;}}\n\n/* icons, emojis, badges */\n.nav-ic{font-size:13px;margin-right:1px;}\n.tile{position:relative;}\n.tile .ic{position:absolute;top:13px;right:14px;font-size:17px;opacity:.9;line-height:1;}\n.bcard .ic{font-style:normal;margin-right:5px;}\n.bcard .n .ic{margin-right:5px;}\n.mbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;border:1px solid var(--line);box-shadow:var(--shadow-sm);white-space:nowrap;}\n.mbadge.m-new{background:var(--surface-2);color:var(--muted);}\n.mbadge.m-master{background:rgba(185,124,12,.14);color:var(--amber);border-color:rgba(185,124,12,.45);}\n.mbadge.m-strong{background:var(--green-bg);color:var(--green);border-color:var(--green);}\n.mbadge.m-learn{background:rgba(43,92,158,.12);color:var(--blue);border-color:rgba(43,92,158,.4);}\n.mbadge.m-focus{background:var(--red-bg);color:var(--red);border-color:var(--red);}\n.bcard .top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}\n.countbadge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.countbadge.ok{background:var(--green-bg);color:var(--green);border-color:var(--green);}\n.result-emoji{font-size:46px;line-height:1;margin-bottom:6px;}\n.badge .be{font-size:13px;margin-right:2px;}\n.choice .status{margin-left:auto;font-size:15px;align-self:center;}\n.feedback{display:flex;align-items:center;gap:9px;font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:11px 15px;border-radius:11px;margin-bottom:14px;box-shadow:var(--shadow-sm);}\n.feedback .fe{font-size:18px;}\n.feedback.ok{background:var(--green-bg);color:var(--green);border:1px solid var(--green);}\n.feedback.bad{background:var(--red-bg);color:var(--red);border:1px solid var(--red);}\n.bdrow .nm .ic{margin-right:5px;}\n.mbname .ic{margin-right:4px;}\n.filters a .ic{margin-right:3px;}\n.timer .te{margin-right:3px;}\n\n/* exam trend chart */\n.trend{position:relative;display:flex;align-items:flex-end;gap:6px;height:124px;padding-top:6px;border-bottom:1px solid var(--line);margin-bottom:8px;}\n.trend .tb{flex:1;min-width:7px;border-radius:5px 5px 0 0;box-shadow:var(--shadow-sm);}\n.trend .tb.pass{background:linear-gradient(180deg,#34b277,#1F8A5B);}\n.trend .tb.fail{background:linear-gradient(180deg,#db6060,#C23B3B);}\n.trend .passline{position:absolute;left:0;right:0;border-top:1px dashed var(--muted);opacity:.65;pointer-events:none;}\n.trend .passline span{position:absolute;right:0;top:-8px;font-family:var(--mono);font-size:9px;color:var(--muted);background:var(--paper);padding:0 4px;}\n\n/* cheat sheet */\n.cs-intro{font-size:14px;color:var(--muted);margin-bottom:18px;}\n.cs-group{margin-bottom:22px;}\n.cs-head{font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--magenta);border-bottom:1px solid var(--line);padding-bottom:6px;margin-bottom:9px;display:flex;align-items:center;gap:7px;}\n.cs-head .cs-n{margin-left:auto;color:var(--muted);font-size:11px;}\n.cs-list{list-style:none;display:flex;flex-direction:column;gap:7px;}\n.cs-list li{font-size:14px;line-height:1.5;padding-left:18px;position:relative;}\n.cs-list li::before{content:\"\\203A\";position:absolute;left:4px;color:var(--blue);font-weight:700;}\n\n/* print-friendly output (Cmd/Ctrl + P) */\n@media print{\n  body{background:#fff;color:#000;padding:0;}\n  header.top,.note{display:none !important;}\n  .section-title::after{display:none;}\n  .cs-head{color:#000;border-color:#000;}\n  .cs-list li::before{color:#000;}\n  a{color:#000;text-decoration:none;}\n  .qcard,.actioncard,.tile,.bcard{box-shadow:none;}\n}\n\n.r .acs{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82em;opacity:.72;cursor:help}\n\n</style>\n</head>\n<body class=\"{{ 'dark' if dark else '' }}\">\n<div class=\"wrap\">\n  <header class=\"top\">\n    <div class=\"brand\">\n      <a href=\"{{ url_for('home') }}\" class=\"brand-link\">\n        <span class=\"logo\" aria-hidden=\"true\">\n          <svg viewBox=\"0 0 32 32\" width=\"40\" height=\"40\"><defs><linearGradient id=\"logoGrad\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\"><stop offset=\"0\" stop-color=\"#0284C7\"/><stop offset=\"1\" stop-color=\"#0D9488\"/></linearGradient></defs><rect width=\"32\" height=\"32\" rx=\"8\" fill=\"url(#logoGrad)\"/><g stroke=\"#fff\" stroke-width=\"2\" stroke-linecap=\"round\"><line x1=\"16\" y1=\"16\" x2=\"8\" y2=\"8\"/><line x1=\"16\" y1=\"16\" x2=\"24\" y2=\"8\"/><line x1=\"16\" y1=\"16\" x2=\"8\" y2=\"24\"/><line x1=\"16\" y1=\"16\" x2=\"24\" y2=\"24\"/></g><g fill=\"#fff\"><circle cx=\"8\" cy=\"8\" r=\"3\"/><circle cx=\"24\" cy=\"8\" r=\"3\"/><circle cx=\"8\" cy=\"24\" r=\"3\"/><circle cx=\"24\" cy=\"24\" r=\"3\"/><circle cx=\"16\" cy=\"16\" r=\"3.4\"/></g></svg>\n        </span>\n        <span class=\"brand-text\">\n          <h1>Part 107 Ground School</h1>\n          <div class=\"tag\">FAA prep</div>\n        </span>\n      </a>\n    </div>\n    <nav>\n      <a href=\"{{ url_for('home') }}\"><span class=\"nav-ic\">🏠</span> Home</a>\n      <a href=\"{{ url_for('review') }}\"><span class=\"nav-ic\">📚</span> Study list</a>\n      <a href=\"{{ url_for('history') }}\"><span class=\"nav-ic\">📈</span> Progress</a>\n      <a class=\"theme-toggle\" href=\"{{ url_for('toggle_theme') }}\"\n         aria-label=\"{{ 'Switch to light mode' if dark else 'Switch to dark mode' }}\"\n         title=\"{{ 'Light mode' if dark else 'Dark mode' }}\">\n        {% if dark %}\n        <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41\"/></svg>\n        {% else %}\n        <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z\"/></svg>\n        {% endif %}\n      </a>\n      {% if user %}\n      <span class=\"user-chip\" title=\"{{ user.email }}\">{{ user.email }}</span>\n      <form method=\"post\" action=\"{{ url_for('logout') }}\" style=\"display:inline;margin:0\">\n        <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n        <button type=\"submit\" class=\"linkbtn\">Sign out</button>\n      </form>\n      {% else %}\n      <a href=\"{{ url_for('login') }}\">Sign in</a>\n      {% endif %}\n    </nav>\n  </header>\n  {% block body %}{% endblock %}\n  <div class=\"note\">{% if user %}Signed in as {{ user.email }}. Progress syncs to your account across devices.{% else %}Progress saves on this server for this browser. Sign in to sync across devices.{% endif %}</div>\n</div>\n</body>\n</html>\n", "practice.html": "{% extends \"base.html\" %}\n{% block body %}\n{% if drill_empty %}\n<div class=\"section-title\">🎯 Drill misses</div>\n<div class=\"empty\">🎉 No missed questions{{ ' in this topic' if drill_bucket }} to drill right now. Miss some in practice or the exam and they will collect here for focused drilling.</div>\n<div class=\"center\" style=\"margin-top:8px\"><a class=\"btn\" href=\"{{ url_for('home') }}\">🏠 Home</a> <a class=\"btn\" href=\"{{ url_for('practice', bucket='All') }}\">✍️ Practice all</a></div>\n{% else %}\n<div class=\"meta\">\n  <span class=\"l\">{% if mode == 'drill' %}🎯 Drill misses{% elif mode == 'focus' %}🎚️ Focus practice{% else %}✍️ Practice{% endif %}</span>\n  <span class=\"r\">{{ icons[q.b] }} {{ q.b }} &middot; {{ q.s }}{% if q.acs %} &middot; <span class=\"acs\" title=\"{{ acs_tasks[q.acs] }}\">{{ q.acs }}</span>{% endif %}</span>\n</div>\n\n{% if not answered %}\n<form method=\"post\" action=\"{{ url_for('practice_answer') }}\">\n  <input type=\"hidden\" name=\"_csrf\" value=\"{{ csrf_token }}\">\n  <input type=\"hidden\" name=\"qid\" value=\"{{ q.id }}\">\n  <input type=\"hidden\" name=\"bucket\" value=\"{{ bucket }}\">\n  <input type=\"hidden\" name=\"mode\" value=\"{{ mode }}\">\n  <input type=\"hidden\" name=\"dbucket\" value=\"{{ drill_bucket or '' }}\">\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <label class=\"choice\">\n      <input type=\"radio\" name=\"choice\" value=\"{{ c.idx }}\" required>\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n    </label>\n    {% endfor %}\n  </div>\n  <button type=\"submit\" class=\"btn-primary\">Check answer</button>\n</form>\n{% else %}\n  <div class=\"qcard\"><p class=\"qtext\">{{ q.q_html|safe }}</p></div>\n  <div class=\"feedback {{ 'ok' if correct else 'bad' }}\">\n    <span class=\"fe\">{{ '✅' if correct else '❌' }}</span>{{ 'Correct' if correct else 'Not quite' }}\n  </div>\n  <div class=\"choices\">\n    {% for c in choices %}\n    <div class=\"choice {{ 'correct' if c.idx == q.a else ('wrong' if c.idx == chosen else 'dim') }}\">\n      <span class=\"cl\">{{ c.letter }}</span><span>{{ c.text }}</span>\n      {% if c.idx == q.a %}<span class=\"status\">✅</span>{% elif c.idx == chosen %}<span class=\"status\">❌</span>{% endif %}\n    </div>\n    {% endfor %}\n  </div>\n  <div class=\"explain {{ 'ok' if correct else 'bad' }}\">\n    <span class=\"rl\">{{ '✅ correct &middot; the rule'|safe if correct else '📌 the rule'|safe }}</span>{{ q.e }}\n  </div>\n  <a class=\"btn-primary\" href=\"{% if mode == 'drill' %}{{ url_for('drill', bucket=drill_bucket) }}{% elif mode == 'focus' %}{{ url_for('focus') }}{% else %}{{ url_for('practice', bucket=bucket) }}{% endif %}\">{% if mode == 'drill' %}🎯 Next missed{% elif mode == 'focus' %}🎚️ Next focus{% else %}Next question{% endif %}</a>\n  <div class=\"center\" style=\"margin-top:12px\"><a href=\"{{ url_for('home') }}\" style=\"font-size:13px;color:var(--muted)\">Back to home</a></div>\n{% endif %}\n{% endif %}\n{% endblock %}\n"}'''
@@ -7683,6 +7794,12 @@ ACS_TASKS = {
     "UA.III.A": "Weather - Sources of Weather",
     "UA.III.B": "Weather - Effects of Weather on Performance",
     "UA.IV.A": "Loading and Performance",
+    "UA.V.A": "Operations - Radio Communications Procedures",
+    "UA.V.B": "Operations - Airport Operations",
+    "UA.V.C": "Operations - Emergency Procedures",
+    "UA.V.D": "Operations - Aeronautical Decision-Making",
+    "UA.V.E": "Operations - Physiology",
+    "UA.V.F": "Operations - Maintenance and Inspection Procedures",
 }
 
 # ---- Per-browser progress store (file-based) --------------------------------
