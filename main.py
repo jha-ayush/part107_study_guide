@@ -167,7 +167,8 @@ QUESTIONS_JSON = r'''[
       "Class G"
     ],
     "a": 3,
-    "e": "Class G is uncontrolled; controlled airspace (B, C, D, and surface E) requires prior ATC authorization."
+    "e": "Class G is uncontrolled; controlled airspace (B, C, D, and surface E) requires prior ATC authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -180,7 +181,8 @@ QUESTIONS_JSON = r'''[
       "Notify the tower by radio before flight"
     ],
     "a": 0,
-    "e": "Operating in controlled airspace requires prior ATC authorization, fastest through LAANC."
+    "e": "Operating in controlled airspace requires prior ATC authorization, fastest through LAANC.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -193,7 +195,8 @@ QUESTIONS_JSON = r'''[
       "Mandatory liability insurance coverage that is required for all Part 107 operations"
     ],
     "a": 2,
-    "e": "LAANC grants near-instant authorization up to the maximum altitude shown on the UAS facility grid for that area."
+    "e": "LAANC grants near-instant authorization up to the maximum altitude shown on the UAS facility grid for that area.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -206,7 +209,8 @@ QUESTIONS_JSON = r'''[
       "Only applies above 700 ft"
     ],
     "a": 0,
-    "e": "A Class E surface area is controlled airspace, so it needs authorization just like B, C, and D surface areas."
+    "e": "A Class E surface area is controlled airspace, so it needs authorization just like B, C, and D surface areas.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -219,7 +223,8 @@ QUESTIONS_JSON = r'''[
       "May not enter the restricted area without specific authorization"
     ],
     "a": 3,
-    "e": "TFRs apply to UAS exactly as to manned aircraft, so entry requires specific FAA authorization."
+    "e": "TFRs apply to UAS exactly as to manned aircraft, so entry requires specific FAA authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -232,7 +237,8 @@ QUESTIONS_JSON = r'''[
       "Local traffic ordinances"
     ],
     "a": 2,
-    "e": "NOTAMs flag temporary conditions such as TFRs, closures, and hazards not printed on charts."
+    "e": "NOTAMs flag temporary conditions such as TFRs, closures, and hazards not printed on charts.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -245,7 +251,8 @@ QUESTIONS_JSON = r'''[
       "100 knots"
     ],
     "a": 1,
-    "e": "Part 107 caps groundspeed at 87 knots, which is 100 mph."
+    "e": "Part 107 caps groundspeed at 87 knots, which is 100 mph.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -258,7 +265,8 @@ QUESTIONS_JSON = r'''[
       "No automatic LAANC authorization; a manual request is required"
     ],
     "a": 3,
-    "e": "A grid value of 0 means no automatic authorization, so you must request it manually through FAA DroneZone."
+    "e": "A grid value of 0 means no automatic authorization, so you must request it manually through FAA DroneZone.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -271,7 +279,8 @@ QUESTIONS_JSON = r'''[
       "A category of controlled airport that always has an operating tower and radar service"
     ],
     "a": 0,
-    "e": "MOAs contain military training; not banned for UAS, but you should check activity status and stay vigilant."
+    "e": "MOAs contain military training; not banned for UAS, but you should check activity status and stay vigilant.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -284,7 +293,8 @@ QUESTIONS_JSON = r'''[
       "Permitted on weekends"
     ],
     "a": 1,
-    "e": "Prohibited areas are closed to all aircraft including small UAS, with no authorization available."
+    "e": "Prohibited areas are closed to all aircraft including small UAS, with no authorization available.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -297,7 +307,8 @@ QUESTIONS_JSON = r'''[
       "Dashed magenta circle"
     ],
     "a": 0,
-    "e": "Dashed blue lines enclose Class D airspace around airports with an operating control tower."
+    "e": "Dashed blue lines enclose Class D airspace around airports with an operating control tower.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -310,7 +321,8 @@ QUESTIONS_JSON = r'''[
       "Airport advisory area"
     ],
     "a": 0,
-    "e": "Dashed magenta lines depict Class E airspace that extends down to the surface, not just to 700 ft AGL."
+    "e": "Dashed magenta lines depict Class E airspace that extends down to the surface, not just to 700 ft AGL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -323,7 +335,8 @@ QUESTIONS_JSON = r'''[
       "Dashed magenta square"
     ],
     "a": 2,
-    "e": "Two solid magenta rings depict Class C airspace around busier airports served by approach control."
+    "e": "Two solid magenta rings depict Class C airspace around busier airports served by approach control.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -336,7 +349,8 @@ QUESTIONS_JSON = r'''[
       "Distance to the nearest airport"
     ],
     "a": 2,
-    "e": "The parenthetical number is height above ground (AGL); the top number 1549 is the MSL elevation of the top."
+    "e": "The parenthetical number is height above ground (AGL); the top number 1549 is the MSL elevation of the top.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -349,7 +363,8 @@ QUESTIONS_JSON = r'''[
       "Surface"
     ],
     "a": 3,
-    "e": "SFC means the airspace floor begins at ground level rather than a fixed altitude MSL."
+    "e": "SFC means the airspace floor begins at ground level rather than a fixed altitude MSL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -362,7 +377,8 @@ QUESTIONS_JSON = r'''[
       "Is on military property"
     ],
     "a": 2,
-    "e": "Obstacles taller than 1,000 ft AGL are printed in magenta as a visual flag for extreme height."
+    "e": "Obstacles taller than 1,000 ft AGL are printed in magenta as a visual flag for extreme height.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -375,7 +391,8 @@ QUESTIONS_JSON = r'''[
       "Hundreds of feet MSL"
     ],
     "a": 3,
-    "e": "Sectional altitude labels are hundreds of feet MSL, so 118 is 11,800 ft and 40 is 4,000 ft."
+    "e": "Sectional altitude labels are hundreds of feet MSL, so 118 is 11,800 ft and 40 is 4,000 ft.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -388,7 +405,8 @@ QUESTIONS_JSON = r'''[
       "Radio signal strength"
     ],
     "a": 1,
-    "e": "Isogonic lines show where the angle between magnetic and true north (variation) is identical."
+    "e": "Isogonic lines show where the angle between magnetic and true north (variation) is identical.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -401,7 +419,8 @@ QUESTIONS_JSON = r'''[
       "VFR cruising altitude"
     ],
     "a": 2,
-    "e": "The MEF is the highest known terrain or obstacle in that quadrangle plus a safety buffer, in hundreds of feet."
+    "e": "The MEF is the highest known terrain or obstacle in that quadrangle plus a safety buffer, in hundreds of feet.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -414,7 +433,8 @@ QUESTIONS_JSON = r'''[
       "Under VFR with visual references required"
     ],
     "a": 2,
-    "e": "IR routes are flown by instruments (IFR); VR routes require the pilot to keep visual references."
+    "e": "IR routes are flown by instruments (IFR); VR routes require the pilot to keep visual references.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -427,7 +447,8 @@ QUESTIONS_JSON = r'''[
       "Solid blue lines forming shelves, often with blue shading"
     ],
     "a": 3,
-    "e": "Solid blue lines and shading show the upside-down wedding-cake shelf structure of Class B airspace."
+    "e": "Solid blue lines and shading show the upside-down wedding-cake shelf structure of Class B airspace.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -440,7 +461,8 @@ QUESTIONS_JSON = r'''[
       "A solid blue diamond placed at the station's location"
     ],
     "a": 0,
-    "e": "VORs are drawn as a compass rose with a central open circle and an identifying name flag."
+    "e": "VORs are drawn as a compass rose with a central open circle and an identifying name flag.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Weather",
@@ -1269,7 +1291,8 @@ QUESTIONS_JSON = r'''[
       "Is open to drones below 400 ft without authorization"
     ],
     "a": 0,
-    "e": "Class B is controlled airspace, so any operation inside it requires prior ATC authorization."
+    "e": "Class B is controlled airspace, so any operation inside it requires prior ATC authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1282,7 +1305,8 @@ QUESTIONS_JSON = r'''[
       "2,500 ft above the airport elevation"
     ],
     "a": 3,
-    "e": "Class D normally reaches roughly 2,500 ft above the airport and exists only while the control tower is operating."
+    "e": "Class D normally reaches roughly 2,500 ft above the airport and exists only while the control tower is operating.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1295,7 +1319,8 @@ QUESTIONS_JSON = r'''[
       "Three concentric magenta rings of increasing radius around the airport"
     ],
     "a": 1,
-    "e": "Class C has an inner core to the surface near 5 NM and a raised outer shelf near 10 NM."
+    "e": "Class C has an inner core to the surface near 5 NM and a raised outer shelf near 10 NM.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1308,7 +1333,8 @@ QUESTIONS_JSON = r'''[
       "700 or 1,200 ft AGL"
     ],
     "a": 3,
-    "e": "Class E usually starts at 1,200 ft AGL, dropping to 700 ft AGL beneath the magenta vignette near airports."
+    "e": "Class E usually starts at 1,200 ft AGL, dropping to 700 ft AGL beneath the magenta vignette near airports.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1321,7 +1347,8 @@ QUESTIONS_JSON = r'''[
       "10,000 ft MSL"
     ],
     "a": 1,
-    "e": "Class A runs from 18,000 ft MSL up to FL600, far above any Part 107 operation."
+    "e": "Class A runs from 18,000 ft MSL up to FL600, far above any Part 107 operation.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1334,7 +1361,8 @@ QUESTIONS_JSON = r'''[
       "Controlled airspace that requires ATC authorization to enter"
     ],
     "a": 2,
-    "e": "Class G is uncontrolled, so flight there needs no ATC authorization, though all other Part 107 rules still apply."
+    "e": "Class G is uncontrolled, so flight there needs no ATC authorization, though all other Part 107 rules still apply.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1347,7 +1375,8 @@ QUESTIONS_JSON = r'''[
       "Is uncontrolled airspace that any aircraft may enter without prior coordination"
     ],
     "a": 1,
-    "e": "Restricted areas contain hazards to flight and may be entered only with permission from the controlling agency."
+    "e": "Restricted areas contain hazards to flight and may be entered only with permission from the controlling agency.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1360,7 +1389,8 @@ QUESTIONS_JSON = r'''[
       "Inside Class B only"
     ],
     "a": 0,
-    "e": "Warning areas extend outward from the coast over international waters and contain activity hazardous to aircraft."
+    "e": "Warning areas extend outward from the coast over international waters and contain activity hazardous to aircraft.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1373,7 +1403,8 @@ QUESTIONS_JSON = r'''[
       "Live weapons testing conducted by the military at scheduled times"
     ],
     "a": 0,
-    "e": "Alert areas warn of heavy training or unusual activity, where all pilots share responsibility for vigilance."
+    "e": "Alert areas warn of heavy training or unusual activity, where all pilots share responsibility for vigilance.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1386,7 +1417,8 @@ QUESTIONS_JSON = r'''[
       "Treat it as prohibited airspace"
     ],
     "a": 2,
-    "e": "Pilots are requested to voluntarily avoid an NSA, and flight there can be temporarily prohibited by NOTAM."
+    "e": "Pilots are requested to voluntarily avoid an NSA, and flight there can be temporarily prohibited by NOTAM.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1399,7 +1431,8 @@ QUESTIONS_JSON = r'''[
       "Within 1 NM of the stadium at any altitude for the entire duration of the day"
     ],
     "a": 2,
-    "e": "The stadium TFR covers a 3 NM radius to 3,000 ft AGL, starting one hour before and ending one hour after the event."
+    "e": "The stadium TFR covers a 3 NM radius to 3,000 ft AGL, starting one hour before and ending one hour after the event.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1412,7 +1445,8 @@ QUESTIONS_JSON = r'''[
       "Is published only after the protected movement has already taken place"
     ],
     "a": 0,
-    "e": "VIP movement TFRs create restricted airspace that small UAS must not enter without specific authorization."
+    "e": "VIP movement TFRs create restricted airspace that small UAS must not enter without specific authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1425,7 +1459,8 @@ QUESTIONS_JSON = r'''[
       "Need prior ATC authorization just as you would inside controlled airspace"
     ],
     "a": 2,
-    "e": "Class G needs no authorization, but you must avoid the traffic pattern and never interfere with manned aircraft."
+    "e": "Class G needs no authorization, but you must avoid the traffic pattern and never interfere with manned aircraft.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1438,7 +1473,8 @@ QUESTIONS_JSON = r'''[
       "The FAA DroneZone portal"
     ],
     "a": 3,
-    "e": "If LAANC cannot approve a request automatically, authorization is requested manually through FAA DroneZone."
+    "e": "If LAANC cannot approve a request automatically, authorization is requested manually through FAA DroneZone.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1451,7 +1487,8 @@ QUESTIONS_JSON = r'''[
       "The maximum altitude for automatic LAANC authorization there"
     ],
     "a": 3,
-    "e": "The grid value is the ceiling up to which LAANC will automatically approve operations in that square."
+    "e": "The grid value is the ceiling up to which LAANC will automatically approve operations in that square.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1464,7 +1501,8 @@ QUESTIONS_JSON = r'''[
       "Airport diagram only"
     ],
     "a": 0,
-    "e": "The VFR sectional shows airspace, obstacles, and terrain at the scale a small UAS operation needs."
+    "e": "The VFR sectional shows airspace, obstacles, and terrain at the scale a small UAS operation needs.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1477,7 +1515,8 @@ QUESTIONS_JSON = r'''[
       "Local time only, set to the reporting station"
     ],
     "a": 1,
-    "e": "Aviation uses Coordinated Universal Time, written with a Z, so reports are unambiguous across time zones."
+    "e": "Aviation uses Coordinated Universal Time, written with a Z, so reports are unambiguous across time zones.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1490,7 +1529,8 @@ QUESTIONS_JSON = r'''[
       "Always active and prohibited to civil aircraft, including small unmanned aircraft"
     ],
     "a": 1,
-    "e": "CFAs are not depicted because their activity ceases as soon as an aircraft is detected nearby."
+    "e": "CFAs are not depicted because their activity ceases as soon as an aircraft is detected nearby.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1503,7 +1543,8 @@ QUESTIONS_JSON = r'''[
       "Need a waiver instead"
     ],
     "a": 0,
-    "e": "Any entry into controlled airspace, even briefly, requires prior authorization."
+    "e": "Any entry into controlled airspace, even briefly, requires prior authorization.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1516,7 +1557,8 @@ QUESTIONS_JSON = r'''[
       "The day after the flight, once the official records have been updated"
     ],
     "a": 0,
-    "e": "NOTAMs and TFRs change often, so verify them from an official FAA source close to flight time."
+    "e": "NOTAMs and TFRs change often, so verify them from an official FAA source close to flight time.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1529,7 +1571,8 @@ QUESTIONS_JSON = r'''[
       "Class E reaches the surface there and authorization is required"
     ],
     "a": 3,
-    "e": "A dashed magenta line marks Class E to the surface, which is controlled and requires authorization."
+    "e": "A dashed magenta line marks Class E to the surface, which is controlled and requires authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1542,7 +1585,8 @@ QUESTIONS_JSON = r'''[
       "Does not need a transponder, but does need the authorization"
     ],
     "a": 3,
-    "e": "Small UAS are not required to carry transponders, but they still need ATC authorization to enter Class C."
+    "e": "Small UAS are not required to carry transponders, but they still need ATC authorization to enter Class C.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -1555,7 +1599,8 @@ QUESTIONS_JSON = r'''[
       "The same as any Class G"
     ],
     "a": 1,
-    "e": "The DC Flight Restricted Zone bars drone flight without special authorization."
+    "e": "The DC Flight Restricted Zone bars drone flight without special authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1568,7 +1613,8 @@ QUESTIONS_JSON = r'''[
       "Is 40 NM wide"
     ],
     "a": 2,
-    "e": "The top number is the ceiling in hundreds of feet MSL, and SFC means it starts at the surface."
+    "e": "The top number is the ceiling in hundreds of feet MSL, and SFC means it starts at the surface.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1581,7 +1627,8 @@ QUESTIONS_JSON = r'''[
       "Open to drones below 400 feet above the ground at any time"
     ],
     "a": 1,
-    "e": "Prohibited areas are closed to all aircraft including small UAS, and no authorization is available."
+    "e": "Prohibited areas are closed to all aircraft including small UAS, and no authorization is available.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1594,7 +1641,8 @@ QUESTIONS_JSON = r'''[
       "Land immediately and report their position to the managing federal agency"
     ],
     "a": 2,
-    "e": "Charts request that pilots avoid low flight over wildlife refuges to limit disturbance."
+    "e": "Charts request that pilots avoid low flight over wildlife refuges to limit disturbance.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -1607,7 +1655,8 @@ QUESTIONS_JSON = r'''[
       "Hold position and altitude"
     ],
     "a": 1,
-    "e": "Small UAS always yield the right of way to manned aircraft, regardless of airspace class."
+    "e": "Small UAS always yield the right of way to manned aircraft, regardless of airspace class.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Charts",
@@ -1620,7 +1669,8 @@ QUESTIONS_JSON = r'''[
       "Is private"
     ],
     "a": 0,
-    "e": "Blue airport symbols have an operating control tower, while magenta airports do not."
+    "e": "Blue airport symbols have an operating control tower, while magenta airports do not.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1633,7 +1683,8 @@ QUESTIONS_JSON = r'''[
       "Privately owned"
     ],
     "a": 1,
-    "e": "Radiating lines or a star at an obstacle symbol mean it is equipped with obstruction lighting."
+    "e": "Radiating lines or a star at an obstacle symbol mean it is equipped with obstruction lighting.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1646,7 +1697,8 @@ QUESTIONS_JSON = r'''[
       "A group of obstacles"
     ],
     "a": 3,
-    "e": "A joined pair of obstacle symbols depicts a group of obstructions close together."
+    "e": "A joined pair of obstacle symbols depicts a group of obstructions close together.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1659,7 +1711,8 @@ QUESTIONS_JSON = r'''[
       "Elevation in feet above mean sea level"
     ],
     "a": 3,
-    "e": "The airport data block lists field elevation in feet MSL along with runway and frequency information."
+    "e": "The airport data block lists field elevation in feet MSL along with runway and frequency information.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1672,7 +1725,8 @@ QUESTIONS_JSON = r'''[
       "Visual checkpoint used for reporting position or navigation"
     ],
     "a": 3,
-    "e": "A magenta flag denotes a visual checkpoint, a prominent landmark pilots use for position reporting."
+    "e": "A magenta flag denotes a visual checkpoint, a prominent landmark pilots use for position reporting.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -1685,7 +1739,8 @@ QUESTIONS_JSON = r'''[
       "A plain magenta circle with no compass rose or added markings"
     ],
     "a": 2,
-    "e": "A VORTAC combines a VOR with military TACAN, drawn as the VOR symbol with extra corner markings."
+    "e": "A VORTAC combines a VOR with military TACAN, drawn as the VOR symbol with extra corner markings.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -1698,7 +1753,8 @@ QUESTIONS_JSON = r'''[
       "Magnetic north"
     ],
     "a": 3,
-    "e": "The VOR compass rose is aligned to magnetic north, which is why charts also show magnetic variation."
+    "e": "The VOR compass rose is aligned to magnetic north, which is why charts also show magnetic variation.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -1711,7 +1767,8 @@ QUESTIONS_JSON = r'''[
       "Victor airways used by other aircraft"
     ],
     "a": 3,
-    "e": "Victor airways are charted routes between VORs, and knowing them helps anticipate where manned traffic flies."
+    "e": "Victor airways are charted routes between VORs, and knowing them helps anticipate where manned traffic flies.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -1724,7 +1781,8 @@ QUESTIONS_JSON = r'''[
       "Population density, with cities shown in the darkest shades"
     ],
     "a": 1,
-    "e": "Elevation tints shade higher terrain in progressively darker colors so pilots can judge ground height at a glance."
+    "e": "Elevation tints shade higher terrain in progressively darker colors so pilots can judge ground height at a glance.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1737,7 +1795,8 @@ QUESTIONS_JSON = r'''[
       "Nowhere; it must be memorized"
     ],
     "a": 2,
-    "e": "Special use airspace details such as altitudes and times are listed in a tabulation block on the chart margin."
+    "e": "Special use airspace details such as altitudes and times are listed in a tabulation block on the chart margin.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -1750,7 +1809,8 @@ QUESTIONS_JSON = r'''[
       "A line with small tower symbols where it is a known hazard"
     ],
     "a": 3,
-    "e": "Charted power lines and their support towers warn of wires that are a serious hazard to low-altitude flight."
+    "e": "Charted power lines and their support towers warn of wires that are a serious hazard to low-altitude flight.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1763,7 +1823,8 @@ QUESTIONS_JSON = r'''[
       "Dividing the result by two to allow for a safety margin"
     ],
     "a": 0,
-    "e": "The MEF is the highest terrain or obstacle in the quadrangle plus a buffer, in hundreds of feet MSL."
+    "e": "The MEF is the highest terrain or obstacle in the quadrangle plus a buffer, in hundreds of feet MSL.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1776,7 +1837,8 @@ QUESTIONS_JSON = r'''[
       "Closed permanently and no longer available for landing"
     ],
     "a": 2,
-    "e": "An R marks a private airport that requires prior permission, so it is not available for general public use."
+    "e": "An R marks a private airport that requires prior permission, so it is not available for general public use.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -1789,7 +1851,8 @@ QUESTIONS_JSON = r'''[
       "Height of the top above mean sea level"
     ],
     "a": 3,
-    "e": "The top figure is the top of the obstacle in feet MSL, while the parenthetical figure is its height above ground."
+    "e": "The top figure is the top of the obstacle in feet MSL, while the parenthetical figure is its height above ground.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Weather",
@@ -2708,7 +2771,8 @@ QUESTIONS_JSON = r'''[
       "Pattern altitude"
     ],
     "a": 0,
-    "e": "CT with a frequency is the control tower frequency for that airport."
+    "e": "CT with a frequency is the control tower frequency for that airport.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -2721,7 +2785,8 @@ QUESTIONS_JSON = r'''[
       "The airport is closed"
     ],
     "a": 2,
-    "e": "Tick marks around the airport circle show fuel services are available."
+    "e": "Tick marks around the airport circle show fuel services are available.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -2734,7 +2799,8 @@ QUESTIONS_JSON = r'''[
       "As the radio frequency used by the airport control tower"
     ],
     "a": 0,
-    "e": "Runway length appears in hundreds of feet, so 53 is roughly 5,300 ft."
+    "e": "Runway length appears in hundreds of feet, so 53 is roughly 5,300 ft.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -2747,7 +2813,8 @@ QUESTIONS_JSON = r'''[
       "Prevailing wind direction and speed at the surface during daylight hours"
     ],
     "a": 0,
-    "e": "Contours and tints show terrain relief so you keep clearance above rising ground."
+    "e": "Contours and tints show terrain relief so you keep clearance above rising ground.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -2760,7 +2827,8 @@ QUESTIONS_JSON = r'''[
       "Only at night when other military traffic is not operating"
     ],
     "a": 2,
-    "e": "VR routes are flown under visual rules, while IR routes are flown by instruments."
+    "e": "VR routes are flown under visual rules, while IR routes are flown by instruments.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -2773,7 +2841,8 @@ QUESTIONS_JSON = r'''[
       "Pressure and density altitude"
     ],
     "a": 2,
-    "e": "Variation is the angle between true and magnetic north, shown by isogonic lines."
+    "e": "Variation is the angle between true and magnetic north, shown by isogonic lines.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -2786,7 +2855,8 @@ QUESTIONS_JSON = r'''[
       "Dashed lines only, with the altitudes listed in a separate chart legend"
     ],
     "a": 2,
-    "e": "Each Class B segment lists its ceiling over its floor in hundreds of feet MSL."
+    "e": "Each Class B segment lists its ceiling over its floor in hundreds of feet MSL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -2799,7 +2869,8 @@ QUESTIONS_JSON = r'''[
       "As a single solid dot regardless of how many runways they have"
     ],
     "a": 2,
-    "e": "Busier airports are depicted with their true runway pattern instead of a plain circle."
+    "e": "Busier airports are depicted with their true runway pattern instead of a plain circle.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -2812,7 +2883,8 @@ QUESTIONS_JSON = r'''[
       "In the airport data block next to the primary airport symbol"
     ],
     "a": 0,
-    "e": "Restricted area details are listed in a tabulation along the chart margin."
+    "e": "Restricted area details are listed in a tabulation along the chart margin.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -2825,7 +2897,8 @@ QUESTIONS_JSON = r'''[
       "No symbol at all"
     ],
     "a": 0,
-    "e": "Unverified obstacles use a dashed symbol to show their position or height is uncertain."
+    "e": "Unverified obstacles use a dashed symbol to show their position or height is uncertain.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Loading",
@@ -3202,7 +3275,8 @@ QUESTIONS_JSON = r'''[
       "Mobile phone carriers that relay the request to the control tower"
     ],
     "a": 2,
-    "e": "LAANC requests are handled by FAA-approved providers that return near-instant authorization."
+    "e": "LAANC requests are handled by FAA-approved providers that return near-instant authorization.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -3215,7 +3289,8 @@ QUESTIONS_JSON = r'''[
       "Fly only at its edges"
     ],
     "a": 2,
-    "e": "TFRs apply to drones, so do not enter without specific authorization."
+    "e": "TFRs apply to drones, so do not enter without specific authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -3228,7 +3303,8 @@ QUESTIONS_JSON = r'''[
       "Needs no ATC authorization"
     ],
     "a": 3,
-    "e": "Class G is uncontrolled, so no ATC authorization is needed, though all other rules apply."
+    "e": "Class G is uncontrolled, so no ATC authorization is needed, though all other rules apply.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Operations",
@@ -3476,7 +3552,8 @@ QUESTIONS_JSON = r'''[
       "Heliport"
     ],
     "a": 1,
-    "e": "An anchor denotes a seaplane base where water landings occur."
+    "e": "An anchor denotes a seaplane base where water landings occur.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -3489,7 +3566,8 @@ QUESTIONS_JSON = r'''[
       "Heliport"
     ],
     "a": 3,
-    "e": "A circled H marks a heliport."
+    "e": "A circled H marks a heliport.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -3502,7 +3580,8 @@ QUESTIONS_JSON = r'''[
       "No runway lighting of any kind available for night operations"
     ],
     "a": 2,
-    "e": "A star marks a rotating beacon, which generally operates from sunset to sunrise."
+    "e": "A star marks a rotating beacon, which generally operates from sunset to sunrise.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -3515,7 +3594,8 @@ QUESTIONS_JSON = r'''[
       "A balloon launch site"
     ],
     "a": 2,
-    "e": "The parachute symbol marks an area of regular parachute jumping activity."
+    "e": "The parachute symbol marks an area of regular parachute jumping activity.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -3528,7 +3608,8 @@ QUESTIONS_JSON = r'''[
       "Expect only powered aircraft to be operating there"
     ],
     "a": 1,
-    "e": "Glider areas warn of quiet, hard-to-see traffic, so stay especially vigilant."
+    "e": "Glider areas warn of quiet, hard-to-see traffic, so stay especially vigilant.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -3541,7 +3622,8 @@ QUESTIONS_JSON = r'''[
       "Only in the chart legend rather than on the chart itself"
     ],
     "a": 1,
-    "e": "Wind turbines are charted as obstacles with heights, frequently grouped together."
+    "e": "Wind turbines are charted as obstacles with heights, frequently grouped together.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -3554,7 +3636,8 @@ QUESTIONS_JSON = r'''[
       "Land inside the boundary and check in with a ranger"
     ],
     "a": 1,
-    "e": "These advisory boundaries request higher flight to avoid disturbing wildlife and visitors."
+    "e": "These advisory boundaries request higher flight to avoid disturbing wildlife and visitors.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -3567,7 +3650,8 @@ QUESTIONS_JSON = r'''[
       "A blue hatched boundary"
     ],
     "a": 3,
-    "e": "A blue hatched border outlines restricted and prohibited areas."
+    "e": "A blue hatched border outlines restricted and prohibited areas.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -3580,7 +3664,8 @@ QUESTIONS_JSON = r'''[
       "Magenta numbers giving the ceiling over the floor in hundreds of feet MSL"
     ],
     "a": 3,
-    "e": "Class C segments list ceiling over floor in hundreds of feet MSL beside the magenta rings."
+    "e": "Class C segments list ceiling over floor in hundreds of feet MSL beside the magenta rings.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -3593,7 +3678,8 @@ QUESTIONS_JSON = r'''[
       "Mark restricted areas"
     ],
     "a": 1,
-    "e": "The latitude and longitude grid lets a pilot locate an exact position."
+    "e": "The latitude and longitude grid lets a pilot locate an exact position.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -3606,7 +3692,8 @@ QUESTIONS_JSON = r'''[
       "A towered airport, which would instead be charted in blue"
     ],
     "a": 2,
-    "e": "Magenta means no control tower, and the extensions depict the actual runways."
+    "e": "Magenta means no control tower, and the extensions depict the actual runways.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -3619,7 +3706,8 @@ QUESTIONS_JSON = r'''[
       "Low fuel only"
     ],
     "a": 2,
-    "e": "An L in the data block indicates runway lighting is available, sometimes with limits."
+    "e": "An L in the data block indicates runway lighting is available, sometimes with limits.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Operations",
@@ -3775,7 +3863,8 @@ QUESTIONS_JSON = r'''[
       "1,200 ft AGL"
     ],
     "a": 0,
-    "e": "Class B reaches the surface in its core, with shelves stepping up farther out."
+    "e": "Class B reaches the surface in its core, with shelves stepping up farther out.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -3788,7 +3877,8 @@ QUESTIONS_JSON = r'''[
       "Check a current sectional chart or an airspace app before flying"
     ],
     "a": 3,
-    "e": "Checking a current sectional or airspace tool before flight tells you exactly what airspace applies."
+    "e": "Checking a current sectional or airspace tool before flight tells you exactly what airspace applies.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -3801,7 +3891,8 @@ QUESTIONS_JSON = r'''[
       "A dashed magenta line, which requires authorization"
     ],
     "a": 3,
-    "e": "A dashed magenta boundary marks Class E to the surface, which is controlled and needs authorization."
+    "e": "A dashed magenta boundary marks Class E to the surface, which is controlled and needs authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -3814,7 +3905,8 @@ QUESTIONS_JSON = r'''[
       "Is uncontrolled airspace that any pilot may enter at any time"
     ],
     "a": 2,
-    "e": "Prohibited areas allow no flight at all, while restricted areas may be entered with permission."
+    "e": "Prohibited areas allow no flight at all, while restricted areas may be entered with permission.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -3827,7 +3919,8 @@ QUESTIONS_JSON = r'''[
       "Clear-weather days when visibility and ceilings are well above minimums"
     ],
     "a": 0,
-    "e": "TFRs cover hazards, security needs, and special events, and they apply to drones."
+    "e": "TFRs cover hazards, security needs, and special events, and they apply to drones.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -3840,7 +3933,8 @@ QUESTIONS_JSON = r'''[
       "Only available during business hours"
     ],
     "a": 2,
-    "e": "LAANC processes requests automatically around the clock through approved providers."
+    "e": "LAANC processes requests automatically around the clock through approved providers.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -3853,7 +3947,8 @@ QUESTIONS_JSON = r'''[
       "Ignore the grid because facility maps are only advisory for hobby flyers"
     ],
     "a": 1,
-    "e": "The grid ceiling can be below 400 ft, and you must honor that lower authorized altitude."
+    "e": "The grid ceiling can be below 400 ft, and you must honor that lower authorized altitude.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -3866,7 +3961,8 @@ QUESTIONS_JSON = r'''[
       "Allows flight over people"
     ],
     "a": 2,
-    "e": "Authorization only grants airspace access; every other Part 107 limit still applies."
+    "e": "Authorization only grants airspace access; every other Part 107 limit still applies.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Regulations",
@@ -4238,7 +4334,8 @@ QUESTIONS_JSON = r'''[
       "10,000 ft MSL across the entire charted area"
     ],
     "a": 0,
-    "e": "Class C generally tops out around 4,000 ft above the airport elevation."
+    "e": "Class C generally tops out around 4,000 ft above the airport elevation.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4251,7 +4348,8 @@ QUESTIONS_JSON = r'''[
       "Becomes Class B"
     ],
     "a": 2,
-    "e": "Class D depends on an operating tower, so it reverts to Class E or G when the tower closes."
+    "e": "Class D depends on an operating tower, so it reverts to Class E or G when the tower closes.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4264,7 +4362,8 @@ QUESTIONS_JSON = r'''[
       "18,000 ft MSL"
     ],
     "a": 0,
-    "e": "Where not otherwise designated, en route Class E begins at 14,500 ft MSL."
+    "e": "Where not otherwise designated, en route Class E begins at 14,500 ft MSL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4277,7 +4376,8 @@ QUESTIONS_JSON = r'''[
       "Class E that begins at 700 or 1,200 ft AGL, not at the surface"
     ],
     "a": 3,
-    "e": "Part 107 needs authorization only for B, C, D, and surface Class E, not for Class E that starts above the ground."
+    "e": "Part 107 needs authorization only for B, C, D, and surface Class E, not for Class E that starts above the ground.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -4290,7 +4390,8 @@ QUESTIONS_JSON = r'''[
       "It always reaches exactly 18,000 feet regardless of the surrounding airspace"
     ],
     "a": 2,
-    "e": "Class G extends up to the base of the overlying controlled airspace, commonly 700 or 1,200 ft AGL."
+    "e": "Class G extends up to the base of the overlying controlled airspace, commonly 700 or 1,200 ft AGL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4303,7 +4404,8 @@ QUESTIONS_JSON = r'''[
       "Gives near-instant authorization, while DroneZone handles manual or further-out requests"
     ],
     "a": 3,
-    "e": "LAANC returns near-instant authorization up to grid limits, while DroneZone handles manual and special requests."
+    "e": "LAANC returns near-instant authorization up to grid limits, while DroneZone handles manual and special requests.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -4316,7 +4418,8 @@ QUESTIONS_JSON = r'''[
       "Do nothing at all if the transit is brief"
     ],
     "a": 0,
-    "e": "An active restricted area may be entered only with permission from its controlling agency."
+    "e": "An active restricted area may be entered only with permission from its controlling agency.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4329,7 +4432,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft's flight manual, which lists every active military area"
     ],
     "a": 0,
-    "e": "MOA activity is published via NOTAMs and the controlling agency, with times often listed on the chart."
+    "e": "MOA activity is published via NOTAMs and the controlling agency, with times often listed on the chart.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4342,7 +4446,8 @@ QUESTIONS_JSON = r'''[
       "Still requires authorization"
     ],
     "a": 3,
-    "e": "Controlled airspace requires authorization at any altitude, even very low operations."
+    "e": "Controlled airspace requires authorization at any altitude, even very low operations.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -4355,7 +4460,8 @@ QUESTIONS_JSON = r'''[
       "Prohibited by National Park Service rules"
     ],
     "a": 3,
-    "e": "The National Park Service prohibits launching and landing drones within park boundaries."
+    "e": "The National Park Service prohibits launching and landing drones within park boundaries.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4368,7 +4474,8 @@ QUESTIONS_JSON = r'''[
       "Does not need two-way radio contact with ATC; authorization is handled digitally"
     ],
     "a": 3,
-    "e": "Small UAS do not maintain radio contact with ATC; the digital authorization is what grants access."
+    "e": "Small UAS do not maintain radio contact with ATC; the digital authorization is what grants access.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -4381,7 +4488,8 @@ QUESTIONS_JSON = r'''[
       "A surface analysis weather chart for the day"
     ],
     "a": 2,
-    "e": "Airspace changes over time, so always reference the current edition of the sectional."
+    "e": "Airspace changes over time, so always reference the current edition of the sectional.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4394,7 +4502,8 @@ QUESTIONS_JSON = r'''[
       "Ends automatically at 400 feet above the ground for small drones"
     ],
     "a": 1,
-    "e": "Disaster-relief TFRs apply to drones, so do not enter without specific authorization."
+    "e": "Disaster-relief TFRs apply to drones, so do not enter without specific authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4407,7 +4516,8 @@ QUESTIONS_JSON = r'''[
       "Only with a specific waiver granted in advance by the FAA"
     ],
     "a": 2,
-    "e": "Class B access comes through LAANC where it is supported, or through DroneZone otherwise."
+    "e": "Class B access comes through LAANC where it is supported, or through DroneZone otherwise.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4420,7 +4530,8 @@ QUESTIONS_JSON = r'''[
       "Only during playoff games and major championship events"
     ],
     "a": 1,
-    "e": "The stadium TFR applies during the event window, from one hour before to one hour after."
+    "e": "The stadium TFR applies during the event window, from one hour before to one hour after.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -4433,7 +4544,8 @@ QUESTIONS_JSON = r'''[
       "The remote pilot's responsibility"
     ],
     "a": 3,
-    "e": "The remote pilot is responsible for knowing the aircraft's position relative to airspace boundaries."
+    "e": "The remote pilot is responsible for knowing the aircraft's position relative to airspace boundaries.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -4446,7 +4558,8 @@ QUESTIONS_JSON = r'''[
       "Treat it as uncontrolled Class G and fly without authorization"
     ],
     "a": 1,
-    "e": "Restricted areas may be active, so check status and obtain permission before operating inside."
+    "e": "Restricted areas may be active, so check status and obtain permission before operating inside.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Regulations",
@@ -4879,7 +4992,8 @@ QUESTIONS_JSON = r'''[
       "A magenta circle of dots"
     ],
     "a": 3,
-    "e": "An NDB is drawn as a circle made of small magenta dots."
+    "e": "An NDB is drawn as a circle made of small magenta dots.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4892,7 +5006,8 @@ QUESTIONS_JSON = r'''[
       "1:24,000"
     ],
     "a": 1,
-    "e": "Sectional charts are drawn at a scale of 1 to 500,000."
+    "e": "Sectional charts are drawn at a scale of 1 to 500,000.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4905,7 +5020,8 @@ QUESTIONS_JSON = r'''[
       "World aeronautical chart at a small scale"
     ],
     "a": 0,
-    "e": "A Terminal Area Chart shows Class B areas at a larger scale than the sectional for more detail."
+    "e": "A Terminal Area Chart shows Class B areas at a larger scale than the sectional for more detail.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4918,7 +5034,8 @@ QUESTIONS_JSON = r'''[
       "CT followed by the frequency in the airport data"
     ],
     "a": 3,
-    "e": "The airport data block lists the tower frequency after the letters CT."
+    "e": "The airport data block lists the tower frequency after the letters CT.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -4931,7 +5048,8 @@ QUESTIONS_JSON = r'''[
       "Visual landmarks for navigation and position"
     ],
     "a": 3,
-    "e": "Linear features like roads and rivers serve as visual checkpoints for navigation."
+    "e": "Linear features like roads and rivers serve as visual checkpoints for navigation.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4944,7 +5062,8 @@ QUESTIONS_JSON = r'''[
       "Magenta"
     ],
     "a": 2,
-    "e": "Populated areas are shaded yellow so they stand out as landmarks."
+    "e": "Populated areas are shaded yellow so they stand out as landmarks.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4957,7 +5076,8 @@ QUESTIONS_JSON = r'''[
       "The margin tabulation only"
     ],
     "a": 1,
-    "e": "The chart legend defines every symbol used on the sectional."
+    "e": "The chart legend defines every symbol used on the sectional.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4970,7 +5090,8 @@ QUESTIONS_JSON = r'''[
       "Time zone boundary"
     ],
     "a": 3,
-    "e": "A time zone boundary is charted where local time changes by an hour."
+    "e": "A time zone boundary is charted where local time changes by an hour.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4983,7 +5104,8 @@ QUESTIONS_JSON = r'''[
       "Class E starting at 700 ft AGL, not at the surface"
     ],
     "a": 3,
-    "e": "The vignette marks Class E from 700 ft AGL, while a dashed magenta line marks Class E to the surface."
+    "e": "The vignette marks Class E from 700 ft AGL, while a dashed magenta line marks Class E to the surface.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -4996,7 +5118,8 @@ QUESTIONS_JSON = r'''[
       "Terrain tint, which shows how high the ground rises under the shelf"
     ],
     "a": 2,
-    "e": "Each Class B segment lists its floor and ceiling, telling you whether your site is beneath the shelf."
+    "e": "Each Class B segment lists its floor and ceiling, telling you whether your site is beneath the shelf.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5009,7 +5132,8 @@ QUESTIONS_JSON = r'''[
       "Nowhere on the chart; it must be requested by radio"
     ],
     "a": 1,
-    "e": "The margin tabulation lists each special use area's altitudes, times, and controlling agency."
+    "e": "The margin tabulation lists each special use area's altitudes, times, and controlling agency.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5022,7 +5146,8 @@ QUESTIONS_JSON = r'''[
       "The tallest obstacle in the group"
     ],
     "a": 3,
-    "e": "A grouped obstacle symbol lists the height of the tallest obstacle in the cluster."
+    "e": "A grouped obstacle symbol lists the height of the tallest obstacle in the cluster.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -5035,7 +5160,8 @@ QUESTIONS_JSON = r'''[
       "Entering a precise location into a flight planning app"
     ],
     "a": 3,
-    "e": "The latitude and longitude grid lets a pilot enter an exact site location into planning tools."
+    "e": "The latitude and longitude grid lets a pilot enter an exact site location into planning tools.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5048,7 +5174,8 @@ QUESTIONS_JSON = r'''[
       "Indicate the class of airspace overlying the area"
     ],
     "a": 2,
-    "e": "Distinctive structures help with visual navigation and can also be flight obstacles."
+    "e": "Distinctive structures help with visual navigation and can also be flight obstacles.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5061,7 +5188,8 @@ QUESTIONS_JSON = r'''[
       "2,700 ft MSL"
     ],
     "a": 3,
-    "e": "The MEF is in hundreds of feet MSL, so 27 means 2,700 ft."
+    "e": "The MEF is in hundreds of feet MSL, so 27 means 2,700 ft.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -5074,7 +5202,8 @@ QUESTIONS_JSON = r'''[
       "The magnetic variation shown by isogonic lines"
     ],
     "a": 3,
-    "e": "Magnetic variation, read from isogonic lines, converts between true and magnetic course."
+    "e": "Magnetic variation, read from isogonic lines, converts between true and magnetic course.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Loading",
@@ -5325,7 +5454,8 @@ QUESTIONS_JSON = r'''[
       "An instrument rating"
     ],
     "a": 0,
-    "e": "Operations in controlled airspace such as Class B, C, and D require prior ATC authorization."
+    "e": "Operations in controlled airspace such as Class B, C, and D require prior ATC authorization.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -5338,7 +5468,8 @@ QUESTIONS_JSON = r'''[
       "The ceiling shown on the UAS Facility Map grid"
     ],
     "a": 3,
-    "e": "LAANC grants near-real-time authorization up to the grid ceiling on the UAS Facility Map."
+    "e": "LAANC grants near-real-time authorization up to the grid ceiling on the UAS Facility Map.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -5351,7 +5482,8 @@ QUESTIONS_JSON = r'''[
       "No authorization since Class E is uncontrolled"
     ],
     "a": 2,
-    "e": "Surface-based Class E around an airport is controlled and requires ATC authorization."
+    "e": "Surface-based Class E around an airport is controlled and requires ATC authorization.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -5364,7 +5496,8 @@ QUESTIONS_JSON = r'''[
       "Only the sectional chart"
     ],
     "a": 1,
-    "e": "Active TFRs are published through FAA NOTAMs and at tfr.faa.gov and must be checked before flight."
+    "e": "Active TFRs are published through FAA NOTAMs and at tfr.faa.gov and must be checked before flight.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -5377,7 +5510,8 @@ QUESTIONS_JSON = r'''[
       "Ignore it because drones are exempt"
     ],
     "a": 0,
-    "e": "Verify the area's status and stay clear unless the controlling agency authorizes entry."
+    "e": "Verify the area's status and stay clear unless the controlling agency authorizes entry.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5390,7 +5524,8 @@ QUESTIONS_JSON = r'''[
       "Class D"
     ],
     "a": 1,
-    "e": "Solid blue lines on a sectional depict Class B airspace boundaries."
+    "e": "Solid blue lines on a sectional depict Class B airspace boundaries.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5403,7 +5538,8 @@ QUESTIONS_JSON = r'''[
       "Class C"
     ],
     "a": 3,
-    "e": "Solid magenta lines on a sectional depict Class C airspace."
+    "e": "Solid magenta lines on a sectional depict Class C airspace.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5416,7 +5552,8 @@ QUESTIONS_JSON = r'''[
       "Class E surface"
     ],
     "a": 2,
-    "e": "A segmented blue line depicts Class D airspace."
+    "e": "A segmented blue line depicts Class D airspace.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5429,7 +5566,8 @@ QUESTIONS_JSON = r'''[
       "Diagonally across the chart"
     ],
     "a": 1,
-    "e": "Parallels of latitude run east-west and measure how far north or south a point lies."
+    "e": "Parallels of latitude run east-west and measure how far north or south a point lies.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Weather",
@@ -5706,7 +5844,8 @@ QUESTIONS_JSON = r'''[
       "A magenta hatched (brushed) boundary"
     ],
     "a": 3,
-    "e": "MOAs are shown on sectionals with a magenta hatched boundary."
+    "e": "MOAs are shown on sectionals with a magenta hatched boundary.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -5719,7 +5858,8 @@ QUESTIONS_JSON = r'''[
       "Only directly over airports"
     ],
     "a": 0,
-    "e": "Warning Areas begin 3 nautical miles off the U.S. coast and may contain hazards to flight."
+    "e": "Warning Areas begin 3 nautical miles off the U.S. coast and may contain hazards to flight.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -5732,7 +5872,8 @@ QUESTIONS_JSON = r'''[
       "The aircraft manual"
     ],
     "a": 2,
-    "e": "UAS Facility Maps show the maximum altitudes available for LAANC authorization in each grid."
+    "e": "UAS Facility Maps show the maximum altitudes available for LAANC authorization in each grid.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -5745,7 +5886,8 @@ QUESTIONS_JSON = r'''[
       "LAANC for near-real-time and DroneZone for manual requests"
     ],
     "a": 3,
-    "e": "Authorization is obtained through LAANC for near-real-time requests or the FAA DroneZone portal for manual requests."
+    "e": "Authorization is obtained through LAANC for near-real-time requests or the FAA DroneZone portal for manual requests.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -5758,7 +5900,8 @@ QUESTIONS_JSON = r'''[
       "Activities stop when an aircraft is detected approaching"
     ],
     "a": 3,
-    "e": "A Controlled Firing Area suspends its activity when an aircraft is detected approaching, so it is not charted."
+    "e": "A Controlled Firing Area suspends its activity when an aircraft is detected approaching, so it is not charted.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5771,7 +5914,8 @@ QUESTIONS_JSON = r'''[
       "Class B airspace"
     ],
     "a": 1,
-    "e": "A faded magenta vignette marks Class E airspace that begins at 700 ft AGL."
+    "e": "A faded magenta vignette marks Class E airspace that begins at 700 ft AGL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5784,7 +5928,8 @@ QUESTIONS_JSON = r'''[
       "Class E airspace beginning at 1,200 ft AGL"
     ],
     "a": 3,
-    "e": "A faded blue vignette marks Class E airspace that begins at 1,200 ft AGL."
+    "e": "A faded blue vignette marks Class E airspace that begins at 1,200 ft AGL.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5797,7 +5942,8 @@ QUESTIONS_JSON = r'''[
       "One nautical mile"
     ],
     "a": 3,
-    "e": "One minute of latitude equals one nautical mile, which is useful for measuring distance on a sectional."
+    "e": "One minute of latitude equals one nautical mile, which is useful for measuring distance on a sectional.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -5810,7 +5956,8 @@ QUESTIONS_JSON = r'''[
       "The height of the lowest cloud base reported in the area"
     ],
     "a": 0,
-    "e": "The Maximum Elevation Figure shows the highest known terrain or obstacle in that quadrant, in MSL."
+    "e": "The Maximum Elevation Figure shows the highest known terrain or obstacle in that quadrant, in MSL.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Weather",
@@ -6100,7 +6247,8 @@ QUESTIONS_JSON = r'''[
       "They are never updated"
     ],
     "a": 2,
-    "e": "VFR sectional charts are generally updated on a 56-day cycle, so always use a current chart."
+    "e": "VFR sectional charts are generally updated on a 56-day cycle, so always use a current chart.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -6113,7 +6261,8 @@ QUESTIONS_JSON = r'''[
       "1 NM only"
     ],
     "a": 2,
-    "e": "A standing stadium TFR restricts flight within 3 NM and below 3,000 ft AGL from one hour before to one hour after large sporting events."
+    "e": "A standing stadium TFR restricts flight within 3 NM and below 3,000 ft AGL from one hour before to one hour after large sporting events.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -6126,7 +6275,8 @@ QUESTIONS_JSON = r'''[
       "A Special Flight Rules Area with strict restrictions"
     ],
     "a": 3,
-    "e": "The Washington, DC area is a Special Flight Rules Area where drone flight is heavily restricted or prohibited."
+    "e": "The Washington, DC area is a Special Flight Rules Area where drone flight is heavily restricted or prohibited.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -6139,7 +6289,8 @@ QUESTIONS_JSON = r'''[
       "Green dashed lines"
     ],
     "a": 1,
-    "e": "Victor airways are charted as light blue lines marking low-altitude federal airways."
+    "e": "Victor airways are charted as light blue lines marking low-altitude federal airways.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -6152,7 +6303,8 @@ QUESTIONS_JSON = r'''[
       "A blue star"
     ],
     "a": 0,
-    "e": "Visual checkpoints are marked with a magenta flag symbol on sectionals."
+    "e": "Visual checkpoints are marked with a magenta flag symbol on sectionals.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -6165,7 +6317,8 @@ QUESTIONS_JSON = r'''[
       "Federal airways"
     ],
     "a": 2,
-    "e": "Contour lines connect points of equal terrain elevation to show relief."
+    "e": "Contour lines connect points of equal terrain elevation to show relief.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Charts",
@@ -6178,7 +6331,8 @@ QUESTIONS_JSON = r'''[
       "Automatically plotting a flight route between two airports"
     ],
     "a": 1,
-    "e": "The legend explains the symbols, colors, and abbreviations used on the sectional chart."
+    "e": "The legend explains the symbols, colors, and abbreviations used on the sectional chart.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -6191,7 +6345,8 @@ QUESTIONS_JSON = r'''[
       "As green bands"
     ],
     "a": 0,
-    "e": "Cities and towns appear as yellow-tinted areas, which helps identify congested areas to avoid."
+    "e": "Cities and towns appear as yellow-tinted areas, which helps identify congested areas to avoid.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Charts",
@@ -6204,7 +6359,8 @@ QUESTIONS_JSON = r'''[
       "Lines of longitude (meridians)"
     ],
     "a": 3,
-    "e": "Meridians of longitude run true north-south and indicate true north on the chart."
+    "e": "Meridians of longitude run true north-south and indicate true north on the chart.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Weather",
@@ -6612,7 +6768,8 @@ QUESTIONS_JSON = r'''[
       "400 feet AGL, or within 400 feet of a structure"
     ],
     "a": 3,
-    "e": "Maximum altitude is 400 feet AGL, or within 400 feet of a structure if operating higher."
+    "e": "Maximum altitude is 400 feet AGL, or within 400 feet of a structure if operating higher.",
+    "acs": "UA.I.B"
   },
   {
     "b": "Airspace",
@@ -6625,7 +6782,8 @@ QUESTIONS_JSON = r'''[
       "allowed below 200 feet"
     ],
     "a": 2,
-    "e": "A TFR restricts or prohibits flight, including sUAS operations, within the defined area."
+    "e": "A TFR restricts or prohibits flight, including sUAS operations, within the defined area.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Weather",
@@ -7014,7 +7172,8 @@ QUESTIONS_JSON = r'''[
       "not allowed"
     ],
     "a": 3,
-    "e": "Flight within a prohibited area is not allowed."
+    "e": "Flight within a prohibited area is not allowed.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -7027,7 +7186,8 @@ QUESTIONS_JSON = r'''[
       "assume it is always inactive since most training happens at high altitude"
     ],
     "a": 0,
-    "e": "Use caution near a MOA, where military training activity may be present."
+    "e": "Use caution near a MOA, where military training activity may be present.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Airspace",
@@ -7040,7 +7200,8 @@ QUESTIONS_JSON = r'''[
       "time-critical aeronautical information not known far enough in advance to publicize otherwise"
     ],
     "a": 3,
-    "e": "A NOTAM gives time-critical aeronautical information not known far enough in advance to publicize by other means."
+    "e": "A NOTAM gives time-critical aeronautical information not known far enough in advance to publicize by other means.",
+    "acs": "UA.II.B"
   },
   {
     "b": "Airspace",
@@ -7053,7 +7214,8 @@ QUESTIONS_JSON = r'''[
       "asking a visual observer"
     ],
     "a": 1,
-    "e": "TFRs are published as NOTAMs and available through FAA sources, which should be checked before flight."
+    "e": "TFRs are published as NOTAMs and available through FAA sources, which should be checked before flight.",
+    "acs": "UA.II.A"
   },
   {
     "b": "Weather",
@@ -7516,6 +7678,8 @@ ACS_TASKS = {
     "UA.I.D": "Regulations - Waivers",
     "UA.I.E": "Regulations - Operations Over People",
     "UA.I.F": "Regulations - Remote Identification",
+    "UA.II.A": "Airspace - Classification",
+    "UA.II.B": "Airspace - Operational Requirements",
     "UA.III.A": "Weather - Sources of Weather",
     "UA.III.B": "Weather - Effects of Weather on Performance",
     "UA.IV.A": "Loading and Performance",
