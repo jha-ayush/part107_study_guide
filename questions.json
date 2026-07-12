@@ -8672,5 +8672,341 @@
     "e": "At near-maximum weight the motors have little spare thrust, so a strong gust can exceed what they can deliver.",
     "b": "Loading",
     "acs": "UA.IV.A"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "On a sectional, a Class C segment is labeled '48' over '13'. This tells you the airspace:",
+    "c": [
+      "ceiling 4,800 ft MSL, floor 1,300 ft MSL",
+      "ceiling 48,000 ft MSL, floor 1,300 ft MSL",
+      "surface up to 4,813 ft above the ground",
+      "active 48 hours over a 13-day period"
+    ],
+    "a": 0,
+    "e": "Class C shelf numbers are hundreds of feet MSL: the top number is the ceiling and the bottom is the floor.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A Class B segment on a sectional reads '100' over '70'. The floor of that segment is:",
+    "c": [
+      "7,000 ft MSL",
+      "700 ft AGL",
+      "70,000 ft MSL",
+      "the surface"
+    ],
+    "a": 0,
+    "e": "Class B altitudes are hundreds of feet MSL, so 100 over 70 means a 10,000 ft MSL ceiling and a 7,000 ft MSL floor.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A towered airport shows a boxed number '[25]' on the sectional. This is the:",
+    "c": [
+      "Class D ceiling, 2,500 ft MSL",
+      "Class D floor, 2,500 ft AGL",
+      "field elevation of 25 ft",
+      "runway length, hundreds of feet"
+    ],
+    "a": 0,
+    "e": "A boxed number by a towered field is the Class D ceiling in hundreds of feet MSL, so [25] means surface up to 2,500 ft MSL.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "On a sectional, Class C airspace is drawn with:",
+    "c": [
+      "solid magenta circles",
+      "dashed magenta boundary lines",
+      "solid blue circles",
+      "a faded magenta vignette"
+    ],
+    "a": 0,
+    "e": "Class C appears as solid magenta rings; Class B uses solid blue rings.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A dashed magenta line around an airport on a sectional marks:",
+    "c": [
+      "surface-based Class E airspace",
+      "the outer Class B airspace boundary",
+      "Class D airspace",
+      "a restricted area"
+    ],
+    "a": 0,
+    "e": "A dashed magenta line shows Class E airspace down to the surface, usually at a non-towered field with an instrument approach.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A dashed blue line around a towered airport on a sectional marks the boundary of:",
+    "c": [
+      "Class D airspace",
+      "surface Class E airspace",
+      "a warning area",
+      "Class G airspace"
+    ],
+    "a": 0,
+    "e": "A dashed blue line depicts Class D airspace surrounding a towered airport.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A fuzzy, faded magenta edge on a sectional (a magenta vignette) means Class E begins at:",
+    "c": [
+      "700 ft AGL",
+      "the surface",
+      "1,200 ft AGL",
+      "18,000 ft MSL"
+    ],
+    "a": 0,
+    "e": "The faded magenta vignette marks where the Class E floor drops to 700 ft AGL; below it is Class G.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A faded blue edge (a blue vignette) on a sectional indicates that Class E airspace begins at:",
+    "c": [
+      "1,200 ft AGL",
+      "the surface",
+      "700 ft AGL",
+      "60,000 ft MSL"
+    ],
+    "a": 0,
+    "e": "The faded blue vignette marks the common Class E floor of 1,200 ft AGL, with Class G below it.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "On a sectional, an airport shown in blue rather than magenta indicates the field:",
+    "c": [
+      "has an operating control tower",
+      "has no operating control tower at all",
+      "is permanently closed",
+      "is military only"
+    ],
+    "a": 0,
+    "e": "Blue airport symbols have an operating control tower; magenta symbols are non-towered fields.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "On a sectional, Class B and Class C are shown, respectively, as:",
+    "c": [
+      "solid blue rings and solid magenta rings",
+      "dashed blue rings and dashed magenta rings",
+      "two different shades of green",
+      "identical black outlines"
+    ],
+    "a": 0,
+    "e": "Class B is solid blue rings and Class C is solid magenta rings, an easy way to tell them apart.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Under a Shelf",
+    "acs": "UA.II.A",
+    "q": "You plan to fly at 350 ft AGL beneath the outer shelf of Class C, whose floor there is 1,300 ft MSL. That spot is:",
+    "c": [
+      "below the Class C shelf, not within it",
+      "inside Class C, requiring authorization first",
+      "inside Class B airspace",
+      "a prohibited area"
+    ],
+    "a": 0,
+    "e": "Below the shelf's floor you are not in the Class C; you are in the airspace underneath, though still check for nearby surface areas.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class E Floor",
+    "acs": "UA.II.A",
+    "q": "At a site far from any airport, the Class E floor is 700 ft AGL. Flying at 350 ft AGL, you are in:",
+    "c": [
+      "Class G, needing no ATC authorization",
+      "Class E, needing prior ATC authorization",
+      "Class B airspace",
+      "Class D airspace"
+    ],
+    "a": 0,
+    "e": "Below a 700 ft AGL Class E floor the airspace is uncontrolled Class G, where Part 107 needs no ATC authorization.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class E Surface",
+    "acs": "UA.II.A",
+    "q": "To operate inside surface-based Class E airspace at a non-towered airport, a Part 107 pilot must:",
+    "c": [
+      "get airspace authorization first",
+      "do nothing, since it is uncontrolled",
+      "file a manned flight plan",
+      "stay above 400 ft AGL"
+    ],
+    "a": 0,
+    "e": "Surface Class E is controlled airspace, so authorization (often via LAANC) is required before operating there.",
+    "b": "Airspace"
+  },
+  {
+    "s": "VIP TFR",
+    "acs": "UA.II.A",
+    "q": "A Presidential (VIP) TFR typically has:",
+    "c": [
+      "a 10 NM inner ring and a 30 NM outer ring",
+      "a single 1 NM ring with no outer ring at all",
+      "no size limit at all",
+      "a 100 NM inner ring"
+    ],
+    "a": 0,
+    "e": "VIP TFRs generally set a 10 NM inner ring where flight is essentially prohibited and a 30 NM outer ring with restrictions.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Restricted Area",
+    "acs": "UA.II.A",
+    "q": "Before flying near a charted Restricted Area, a remote pilot should:",
+    "c": [
+      "check NOTAMs to see if it is active",
+      "assume it is always cold and inactive",
+      "enter it to save time",
+      "ignore it below 400 ft"
+    ],
+    "a": 0,
+    "e": "Restricted areas are active only at certain times; check NOTAMs or the controlling agency to learn the status before flying.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Under a Shelf",
+    "acs": "UA.II.A",
+    "q": "Flying at 300 ft AGL well away from any airport, beneath a Class E floor at 1,200 ft AGL, you are in:",
+    "c": [
+      "Class G airspace",
+      "Class E airspace",
+      "Class C airspace",
+      "a military operations area"
+    ],
+    "a": 0,
+    "e": "Beneath the 1,200 ft AGL Class E floor the airspace is Class G, where no ATC authorization is required.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Warning Area",
+    "acs": "UA.II.A",
+    "q": "A Warning Area is charted:",
+    "c": [
+      "over international waters offshore",
+      "only directly over major cities and towns",
+      "inside every Class B",
+      "along interstate highways"
+    ],
+    "a": 0,
+    "e": "Warning Areas lie beyond 3 NM from the coast over international waters and warn of activity hazardous to aircraft.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Authorization",
+    "acs": "UA.II.A",
+    "q": "Airspace authorization (for example through LAANC) is generally required to fly in the surface area of:",
+    "c": [
+      "Class B, C, D, or surface Class E",
+      "any uncontrolled Class G airspace only",
+      "Class A airways",
+      "every airway"
+    ],
+    "a": 0,
+    "e": "Controlled airspace down to the surface, Class B, C, D, and surface Class E, requires authorization before Part 107 flight.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class D Tower Closed",
+    "acs": "UA.II.A",
+    "q": "When the tower at a Class D airport closes for the night, the airspace usually:",
+    "c": [
+      "reverts to Class E or G",
+      "stays Class D even with no tower running",
+      "becomes Class B airspace",
+      "closes to all flight"
+    ],
+    "a": 0,
+    "e": "With the tower closed, Class D typically becomes Class E or G as noted in the chart supplement, changing the requirements.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Sectional Currency",
+    "acs": "UA.II.A",
+    "q": "Airspace boundaries and floors should always be confirmed using a:",
+    "c": [
+      "current sectional or official app",
+      "a years-old paper sectional chart copy",
+      "a highway road map",
+      "weather radar image"
+    ],
+    "a": 0,
+    "e": "Airspace changes over time, so verify boundaries and floors on a current sectional or an official aeronautical app.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class E Floor",
+    "acs": "UA.II.A",
+    "q": "The faded magenta and faded blue edges on a sectional both mark the floor of:",
+    "c": [
+      "Class E, at 700 or 1,200 ft AGL",
+      "a Class B airspace surface boundary",
+      "Class A airspace",
+      "a prohibited area"
+    ],
+    "a": 0,
+    "e": "Both vignettes mark where Class E begins: magenta at 700 ft AGL and blue at 1,200 ft AGL, with Class G below.",
+    "b": "Airspace"
+  },
+  {
+    "s": "MOA",
+    "acs": "UA.II.A",
+    "q": "Planning to fly under a Military Operations Area, a remote pilot should:",
+    "c": [
+      "check whether the MOA is active",
+      "assume it is always hot and active",
+      "request a manned clearance",
+      "avoid all charts"
+    ],
+    "a": 0,
+    "e": "MOAs have scheduled active times; check NOTAMs or Flight Service so you know whether military activity is underway.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class C",
+    "acs": "UA.II.A",
+    "q": "To enter the surface area of Class C airspace under Part 107, you must first:",
+    "c": [
+      "obtain airspace authorization",
+      "only monitor the tower frequency",
+      "squawk code 1200",
+      "climb above 400 ft AGL"
+    ],
+    "a": 0,
+    "e": "Class C is controlled airspace; Part 107 requires prior authorization, commonly obtained through LAANC.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Chart Reading",
+    "acs": "UA.II.B",
+    "q": "A magenta airport symbol with 'RP' notes on a sectional is a field that is:",
+    "c": [
+      "non-towered with right traffic noted",
+      "a fully towered field open around the clock",
+      "closed permanently",
+      "restricted to military"
+    ],
+    "a": 0,
+    "e": "Magenta symbols are non-towered fields; RP indicates right-hand traffic patterns for the noted runways.",
+    "b": "Airspace"
   }
 ]
