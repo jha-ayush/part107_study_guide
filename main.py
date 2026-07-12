@@ -10925,4 +10925,6 @@ def logout():
 
 if __name__ == "__main__":
     print("Part 107 Ground School running at http://127.0.0.1:8000")
-    app.run(host="127.0.0.1", port=8000, debug=True)
+    # Debug is off by default; set FLASK_DEBUG=1 for auto-reload and the debugger.
+    debug = os.environ.get("FLASK_DEBUG", "").strip().lower() in ("1", "true", "yes", "on")
+    app.run(host="127.0.0.1", port=8000, debug=debug)
