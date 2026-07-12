@@ -8336,5 +8336,341 @@
     "a": 0,
     "e": "The spread is about 18F; dividing by 4.4F per 1,000 ft puts the convective cloud base near 4,000 ft AGL.",
     "b": "Weather"
+  },
+  {
+    "s": "Load Factor",
+    "q": "As a multirotor flies a steeper, faster banked turn, the load on the motors and airframe:",
+    "c": [
+      "increases",
+      "decreases",
+      "stays exactly the same",
+      "falls to zero"
+    ],
+    "a": 0,
+    "e": "Steeper and faster maneuvers raise the load factor, so the motors and structure carry more load.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Load Factor",
+    "q": "In a coordinated level turn, the load factor is greatest at which bank angle?",
+    "c": [
+      "60 degrees",
+      "15 degrees",
+      "30 degrees",
+      "wings level"
+    ],
+    "a": 0,
+    "e": "Load factor rises with bank angle; a 60-degree bank in level flight is about 2 Gs, far more than shallow turns.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Load Factor",
+    "q": "Pulling out of a fast descent or snapping through a hard turn raises the load factor, which:",
+    "c": [
+      "demands more power and stresses the frame",
+      "actually lowers the power the motors must produce",
+      "has no effect on the motors",
+      "cools the battery pack"
+    ],
+    "a": 0,
+    "e": "A higher load factor means the aircraft effectively weighs more for that moment, needing more thrust and stressing the airframe.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Load Factor",
+    "q": "Repeated aggressive, high-load maneuvers will tend to:",
+    "c": [
+      "drain the battery faster and stress motors",
+      "noticeably extend the total available flight time",
+      "cool the motors down",
+      "have no real cost"
+    ],
+    "a": 0,
+    "e": "High-load maneuvers pull more current and add mechanical stress, cutting flight time and wearing components.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Ground Effect",
+    "q": "Hovering within about one rotor span of the ground, in ground effect, generally:",
+    "c": [
+      "uses less power than a high hover",
+      "requires far more power than a high hover",
+      "is impossible to do safely",
+      "eliminates all lift"
+    ],
+    "a": 0,
+    "e": "Close to the surface the rotors work more efficiently, so a hover in ground effect uses less power than one up high.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Ground Effect",
+    "q": "As a multirotor climbs up out of ground effect, the pilot should expect it to:",
+    "c": [
+      "need more power to hold the climb",
+      "suddenly gain extra free lift for the climb",
+      "become noticeably lighter",
+      "ignore the wind entirely"
+    ],
+    "a": 0,
+    "e": "Leaving ground effect increases induced drag, so more power is needed to keep climbing.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Descent",
+    "q": "Descending straight down too quickly, a multirotor can settle into its own downwash and:",
+    "c": [
+      "lose lift and be hard to arrest",
+      "gain extra lift and climb faster",
+      "become far more stable",
+      "recharge its own battery"
+    ],
+    "a": 0,
+    "e": "A rapid vertical descent into the rotors' own turbulent wake (settling with power) causes a loss of lift that is hard to stop.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Descent",
+    "q": "The best way to break out of settling with power during a fast vertical descent is to:",
+    "c": [
+      "move forward into undisturbed air",
+      "descend even faster to push through it",
+      "add ballast payload",
+      "simply hover in place"
+    ],
+    "a": 0,
+    "e": "Moving forward or sideways carries the aircraft out of its descending column of disturbed air and restores lift.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Descent",
+    "q": "To avoid settling with power, a multirotor should avoid:",
+    "c": [
+      "rapid straight-down descents",
+      "any forward flight whatsoever",
+      "climbing at all",
+      "hovering in ground effect"
+    ],
+    "a": 0,
+    "e": "Settling with power comes from fast vertical descents with little horizontal movement, so add forward speed when descending.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Descent",
+    "q": "During an automated vertical descent to land, a sudden wobble and increased sink can mean the aircraft is:",
+    "c": [
+      "descending into its own rotor wash",
+      "gaining extra free lift from the ground",
+      "overheating the GPS receiver",
+      "too light to land"
+    ],
+    "a": 0,
+    "e": "A wobble and rapid sink on vertical descent can signal settling with power; nudging the aircraft laterally usually recovers it.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Weight and Balance",
+    "q": "In weight and balance, the moment of a payload equals:",
+    "c": [
+      "its weight times its arm from the reference",
+      "its weight minus the total empty aircraft weight",
+      "its arm divided by its weight",
+      "battery voltage times its weight"
+    ],
+    "a": 0,
+    "e": "Moment is weight multiplied by the arm (distance) from the reference point; moments determine the center of gravity.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Center of Gravity",
+    "q": "The center-of-gravity envelope published by the manufacturer defines:",
+    "c": [
+      "the allowable range for the balance point",
+      "the maximum permitted total flight time in minutes",
+      "the legal registration weight",
+      "the radio frequency band"
+    ],
+    "a": 0,
+    "e": "The CG envelope is the allowable range within which the balance point must stay for safe, controllable flight.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Weight Distribution",
+    "q": "If the load is not centered, a multirotor holds its position by:",
+    "c": [
+      "tilting and running some motors harder",
+      "shutting down the lower-side motors entirely",
+      "spinning all motors faster",
+      "ignoring the imbalance"
+    ],
+    "a": 0,
+    "e": "An off-center load forces a constant tilt and makes some motors work harder, wasting power and adding wear.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Battery Reserve",
+    "q": "A sound battery-reserve practice is to plan the flight so you land with:",
+    "c": [
+      "a reserve above the return-to-home level",
+      "just barely enough to reach the landing zone",
+      "zero percent remaining",
+      "only enough for takeoff"
+    ],
+    "a": 0,
+    "e": "Always keep a margin above the return-to-home or auto-land threshold to cover wind, distance, and voltage sag.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Endurance",
+    "q": "A pack rated 100 Wh feeding motors that draw about 300 W in hover gives a rough hover time of:",
+    "c": [
+      "about 20 minutes",
+      "about 2 hours",
+      "about 5 minutes",
+      "about 45 minutes"
+    ],
+    "a": 0,
+    "e": "Roughly, 100 watt-hours divided by 300 watts is about a third of an hour, near 20 minutes before any reserve.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Thrust Margin",
+    "q": "Carrying near-maximum payload leaves the motors with:",
+    "c": [
+      "little extra thrust for gusts or climbs",
+      "far more reserve thrust than an empty aircraft",
+      "cooler motor temperatures",
+      "an unlimited climb rate"
+    ],
+    "a": 0,
+    "e": "Near maximum weight the thrust margin is small, so gusts or a needed climb can outrun the motors' remaining power.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Wind",
+    "q": "To track straight across the ground in a crosswind, a multirotor must:",
+    "c": [
+      "crab, angling into the wind",
+      "fly sideways downwind",
+      "point straight at the target only",
+      "stop and hover"
+    ],
+    "a": 0,
+    "e": "The aircraft must angle into the wind (crab) so its ground track stays straight despite the drift.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Wind",
+    "q": "Turning downwind, a pilot may perceive the aircraft speeding up because:",
+    "c": [
+      "groundspeed increases with the tailwind",
+      "the electric motors suddenly produce more power",
+      "the air is thinner downwind",
+      "the battery surges"
+    ],
+    "a": 0,
+    "e": "A tailwind raises groundspeed, which can look like acceleration and lead to overshooting the intended point.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Wind",
+    "q": "Planning an out-and-back flight in wind, it is usually smart to head out:",
+    "c": [
+      "upwind first, returning with a tailwind",
+      "downwind first so you reach it much sooner",
+      "only when the wind is calm",
+      "whichever way is closer"
+    ],
+    "a": 0,
+    "e": "Flying out into the wind means the return leg, flown on a lower battery, has a helpful tailwind.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Wind",
+    "q": "When winds are strong, a pilot should add extra:",
+    "c": [
+      "battery reserve for higher power use",
+      "extra payload weight to add stability",
+      "altitude beyond 400 ft AGL",
+      "speed beyond the limit"
+    ],
+    "a": 0,
+    "e": "Wind raises power demand, especially into a headwind, so plan a larger battery reserve.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Propellers",
+    "q": "Compared with the stock propellers, larger or higher-pitch propellers generally:",
+    "c": [
+      "change thrust and current draw",
+      "are always a completely safe upgrade",
+      "reduce the aircraft weight",
+      "have no effect on the motors"
+    ],
+    "a": 0,
+    "e": "Non-stock propellers change the load on the motors and speed controllers and can alter flight time, so follow the maker's specs.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Performance",
+    "q": "Warmer, less dense air on a hot day means a multirotor's propellers produce:",
+    "c": [
+      "less thrust for the same motor speed",
+      "noticeably more thrust for the same speed",
+      "the same thrust as a cold day",
+      "zero thrust at all"
+    ],
+    "a": 0,
+    "e": "Less dense air gives each propeller less to push against, so thrust drops for a given motor speed, hurting performance.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Performance",
+    "q": "Adding payload up to the aircraft's limit will reduce its:",
+    "c": [
+      "climb rate and thrust margin",
+      "maximum total takeoff weight rating",
+      "propeller count",
+      "radio range"
+    ],
+    "a": 0,
+    "e": "More weight leaves less spare thrust, cutting climb rate and the margin available for maneuvers and gusts.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
+  },
+  {
+    "s": "Gusts",
+    "q": "Flying near maximum weight in gusty wind is risky because a gust can:",
+    "c": [
+      "demand thrust the motors cannot spare",
+      "momentarily make the whole drone lighter",
+      "improve overall stability",
+      "recharge the battery pack"
+    ],
+    "a": 0,
+    "e": "At near-maximum weight the motors have little spare thrust, so a strong gust can exceed what they can deliver.",
+    "b": "Loading",
+    "acs": "UA.IV.A"
   }
 ]
