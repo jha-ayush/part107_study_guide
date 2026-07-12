@@ -252,7 +252,7 @@ body.dark .btn-primary{background:linear-gradient(165deg,#0EA5E9,#0369A1);border
 
 /* Chart-reading figure (practice/learn/exam) */
 .figbox{background:#FAF8F2;border:1px solid #E3DCCB;border-radius:12px;padding:10px;margin:0 0 14px;}
-.figbox svg{display:block;width:100%;height:auto;}
+.figbox svg{display:block;width:100%;height:auto;aspect-ratio:660/400;}
 
 /* Personalized ACS study sheet */
 .ss-task{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 12px;}
