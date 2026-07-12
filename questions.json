@@ -9008,5 +9008,341 @@
     "a": 0,
     "e": "Magenta symbols are non-towered fields; RP indicates right-hand traffic patterns for the noted runways.",
     "b": "Airspace"
+  },
+  {
+    "s": "Vision",
+    "acs": "UA.V.E",
+    "q": "The most effective way to scan for other aircraft is to:",
+    "c": [
+      "move the eyes in small, overlapping segments",
+      "sweep the whole sky in one continuous fast motion",
+      "stare at one fixed point",
+      "glance up only occasionally"
+    ],
+    "a": 0,
+    "e": "A slow, systematic scan in small segments lets the eyes detect motion and traffic far better than a single fast sweep.",
+    "b": "Operations"
+  },
+  {
+    "s": "Night Vision",
+    "acs": "UA.V.E",
+    "q": "To see an object best at night, a pilot should:",
+    "c": [
+      "look slightly to the side of it",
+      "stare directly and steadily at it",
+      "keep one eye closed",
+      "shine a bright white light"
+    ],
+    "a": 0,
+    "e": "Central vision is weak in the dark, so off-center viewing (looking slightly to the side) reveals dim objects better.",
+    "b": "Operations"
+  },
+  {
+    "s": "Night Vision",
+    "acs": "UA.V.E",
+    "q": "Adapting the eyes to darkness for good night vision takes about:",
+    "c": [
+      "30 minutes",
+      "a few seconds",
+      "about 2 minutes",
+      "several days"
+    ],
+    "a": 0,
+    "e": "Full dark adaptation takes roughly 30 minutes, and exposure to bright white light quickly undoes it.",
+    "b": "Operations"
+  },
+  {
+    "s": "Vision",
+    "acs": "UA.V.E",
+    "q": "With nothing to focus on, such as a clear empty sky, the eyes tend to:",
+    "c": [
+      "relax and focus only a short distance away",
+      "automatically stay focused sharply at infinity",
+      "see distant traffic more clearly",
+      "become far more sensitive"
+    ],
+    "a": 0,
+    "e": "Empty-field myopia relaxes the eyes to a short focus, so deliberately focus on distant objects when scanning open sky.",
+    "b": "Operations"
+  },
+  {
+    "s": "Hyperventilation",
+    "acs": "UA.V.E",
+    "q": "Rapid, shallow breathing brought on by stress can cause hyperventilation, best relieved by:",
+    "c": [
+      "slowing the breathing rate",
+      "breathing even faster",
+      "holding the breath for a full minute",
+      "drinking coffee"
+    ],
+    "a": 0,
+    "e": "Hyperventilation comes from over-breathing; consciously slowing the breathing restores the balance and relieves symptoms.",
+    "b": "Operations"
+  },
+  {
+    "s": "Dehydration",
+    "acs": "UA.V.E",
+    "q": "Dehydration during a long operation in the sun most likely causes:",
+    "c": [
+      "fatigue and reduced concentration",
+      "much sharper focus and quicker reflexes",
+      "stronger night vision",
+      "faster reflexes"
+    ],
+    "a": 0,
+    "e": "Dehydration brings fatigue, headache, and reduced concentration, so drink water and take breaks on long, hot flights.",
+    "b": "Operations"
+  },
+  {
+    "s": "Fatigue",
+    "acs": "UA.V.E",
+    "q": "Acute fatigue, unlike chronic fatigue, is usually corrected by:",
+    "c": [
+      "a good rest or night's sleep",
+      "simply pushing straight through it",
+      "more caffeine only",
+      "ignoring it"
+    ],
+    "a": 0,
+    "e": "Acute fatigue is short-term and relieved by rest and sleep, while chronic fatigue builds over time and needs real recovery.",
+    "b": "Operations"
+  },
+  {
+    "s": "Attention",
+    "acs": "UA.V.E",
+    "q": "Fixating on the camera feed during flight can lead to:",
+    "c": [
+      "losing track of the aircraft and surroundings",
+      "greatly improved overall situational awareness",
+      "improved traffic scanning",
+      "longer battery life"
+    ],
+    "a": 0,
+    "e": "Channelized attention on the camera can cause a loss of aircraft position and airspace awareness; keep scanning outside.",
+    "b": "Operations"
+  },
+  {
+    "s": "Vision",
+    "acs": "UA.V.E",
+    "q": "Because it takes time to see and react to other traffic, a pilot should:",
+    "c": [
+      "scan continuously, not just once",
+      "rely only on the sound of engines",
+      "look only at takeoff",
+      "assume the sky is clear"
+    ],
+    "a": 0,
+    "e": "Detecting and reacting to traffic takes time, so scan the sky continuously rather than only once or by sound.",
+    "b": "Operations"
+  },
+  {
+    "s": "Night Vision",
+    "acs": "UA.V.E",
+    "q": "At night a pilot's sense of the drone's position is reduced, so they should:",
+    "c": [
+      "rely more on lights and known references",
+      "fly much faster to compensate for the dark",
+      "skip the preflight check",
+      "ignore the anti-collision light"
+    ],
+    "a": 0,
+    "e": "With poor depth cues at night, use the anti-collision light and known ground references to keep track of the aircraft.",
+    "b": "Operations"
+  },
+  {
+    "s": "Traffic Pattern",
+    "acs": "UA.V.B",
+    "q": "Standard airport traffic patterns for manned aircraft use:",
+    "c": [
+      "left turns unless noted otherwise",
+      "right-hand turns at all airports always",
+      "no set direction",
+      "vertical climbs only"
+    ],
+    "a": 0,
+    "e": "Traffic patterns are flown with left turns unless a right pattern is charted, so anticipate manned traffic turning left.",
+    "b": "Operations"
+  },
+  {
+    "s": "Non-Towered Airport",
+    "acs": "UA.V.B",
+    "q": "Operating near a non-towered airport, a remote pilot should:",
+    "c": [
+      "monitor CTAF and stay clear of traffic",
+      "broadcast a continuous mayday call on 121.5",
+      "enter the active runway",
+      "climb into the pattern"
+    ],
+    "a": 0,
+    "e": "Monitor the common traffic advisory frequency for position reports and keep well clear of the manned traffic flow.",
+    "b": "Operations"
+  },
+  {
+    "s": "Airport Operations",
+    "acs": "UA.V.B",
+    "q": "Near an airport, a small unmanned aircraft must:",
+    "c": [
+      "not interfere with manned operations",
+      "always keep the right of way over them",
+      "fly in the traffic pattern",
+      "land on the runway"
+    ],
+    "a": 0,
+    "e": "A drone must never interfere with airport traffic and must yield to manned aircraft at all times.",
+    "b": "Operations"
+  },
+  {
+    "s": "See and Avoid",
+    "acs": "UA.V.B",
+    "q": "Manned aircraft are most concentrated:",
+    "c": [
+      "near airports and in the pattern",
+      "only far out over the open ocean waters",
+      "above 10,000 ft only",
+      "inside restricted areas"
+    ],
+    "a": 0,
+    "e": "Manned traffic gathers around airports and in the traffic pattern, so use extra vigilance when operating nearby.",
+    "b": "Operations"
+  },
+  {
+    "s": "Right-of-Way",
+    "acs": "UA.V.B",
+    "q": "If a crop duster or helicopter is working near your low-altitude site, you should:",
+    "c": [
+      "yield and keep well clear of it",
+      "assume that it can always see you",
+      "race it to the spot",
+      "hold your altitude"
+    ],
+    "a": 0,
+    "e": "Yield and stay well clear; low-working manned aircraft may not see a small drone, so separation is your responsibility.",
+    "b": "Operations"
+  },
+  {
+    "s": "Task Saturation",
+    "acs": "UA.V.D",
+    "q": "When too many tasks pile up at once (task saturation), the best response is to:",
+    "c": [
+      "shed nonessential tasks and fly the aircraft",
+      "try to speed absolutely everything up at once",
+      "add more tasks",
+      "stop scanning"
+    ],
+    "a": 0,
+    "e": "Under task saturation, drop nonessential tasks and prioritize controlling the aircraft to keep the flight safe.",
+    "b": "Operations"
+  },
+  {
+    "s": "CRM",
+    "acs": "UA.V.D",
+    "q": "During takeoff, landing, and other critical moments, the crew should:",
+    "c": [
+      "avoid nonessential conversation",
+      "chat freely about anything at all",
+      "check social media",
+      "split their attention"
+    ],
+    "a": 0,
+    "e": "Keeping communication sterile during critical phases prevents distraction and keeps attention on the operation.",
+    "b": "Operations"
+  },
+  {
+    "s": "Distraction",
+    "acs": "UA.V.D",
+    "q": "To limit distraction in flight, camera and app settings are best adjusted:",
+    "c": [
+      "on the ground before launch",
+      "while hovering right over people",
+      "during a fast descent",
+      "mid-turn at low altitude"
+    ],
+    "a": 0,
+    "e": "Set up shots and settings on the ground so attention stays on flying once airborne.",
+    "b": "Operations"
+  },
+  {
+    "s": "Situational Awareness",
+    "acs": "UA.V.D",
+    "q": "Maintaining situational awareness means continuously tracking:",
+    "c": [
+      "the aircraft, airspace, and nearby people",
+      "only the remaining battery level in percent",
+      "just the camera image",
+      "yesterday's weather"
+    ],
+    "a": 0,
+    "e": "Situational awareness is an ongoing picture of the aircraft, the airspace, obstacles, and people around the operation.",
+    "b": "Operations"
+  },
+  {
+    "s": "External Pressure",
+    "acs": "UA.V.D",
+    "q": "Continuing a flight into worsening conditions just to finish the job is an example of:",
+    "c": [
+      "get-there-itis, a dangerous pressure",
+      "careful and thorough preflight planning",
+      "good airmanship",
+      "a required procedure"
+    ],
+    "a": 0,
+    "e": "Get-there-itis is the pressure to complete a mission despite mounting risk; recognize it and be willing to stop.",
+    "b": "Operations"
+  },
+  {
+    "s": "Automation",
+    "acs": "UA.V.D",
+    "q": "Return-to-home and GPS position hold are helpful, but a pilot should:",
+    "c": [
+      "be ready to take manual control",
+      "trust them completely at all times",
+      "never watch the aircraft",
+      "disable all failsafes"
+    ],
+    "a": 0,
+    "e": "Automation can fail or behave unexpectedly, so stay ready to fly manually and keep watching the aircraft.",
+    "b": "Operations"
+  },
+  {
+    "s": "Emergency",
+    "acs": "UA.V.D",
+    "q": "If the aircraft suddenly behaves unexpectedly, the pilot's first priority is to:",
+    "c": [
+      "keep control and move away from people",
+      "immediately land on the nearest busy road",
+      "post about it online",
+      "speed up and climb"
+    ],
+    "a": 0,
+    "e": "Fly the aircraft first: maintain control and increase distance from people while working the problem.",
+    "b": "Operations"
+  },
+  {
+    "s": "Resource Management",
+    "acs": "UA.V.D",
+    "q": "Using checklists, apps, and a visual observer to manage workload is:",
+    "c": [
+      "good resource management",
+      "strictly against the Part 107 rules",
+      "a waste of time",
+      "only for big crews"
+    ],
+    "a": 0,
+    "e": "Drawing on checklists, tools, and crew is sound single-pilot resource management that lowers workload and risk.",
+    "b": "Operations"
+  },
+  {
+    "s": "Error Chain",
+    "acs": "UA.V.D",
+    "q": "Recognizing that small mistakes can link into an accident, a pilot should:",
+    "c": [
+      "break the chain by fixing errors early",
+      "only start worrying after landing safely",
+      "ignore minor slips",
+      "assume luck will hold"
+    ],
+    "a": 0,
+    "e": "Most accidents come from a chain of small errors; catching and fixing one link early prevents the outcome.",
+    "b": "Operations"
   }
 ]
