@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="meta"><span class="l">🎯 Mock exams</span><span class="r">{{ mocks|length }} tests</span></div>
+
+<p style="color:var(--muted);font-size:14px;margin:2px 0 14px">
+Five full-length practice tests, each {{ exam_n }} questions ({{ exam_scored }} scored plus {{ exam_n - exam_scored }} unscored),
+{{ exam_min }} minutes, {{ exam_pass }}% to pass. Weighted to the FAA ACS topics like the real exam. Each mock is a fixed,
+distinct set you can retake, and a live timer counts down just like the testing center.</p>
+
+{% for mk in mocks %}
+<a class="actioncard" href="{{ url_for('mock_start', mid=mk.id) }}"
+   onclick="return confirm('Start {{ mk.title }}? The {{ exam_min }}-minute timer begins now.')"
+   style="margin-bottom:8px">
+  <b><span class="ic">📝</span>{{ mk.title }}</b>
+  <span>{% if mk.best is not none %}Best score {{ mk.best }}%
+    <span class="badge {{ 'pass' if mk.passed else 'fail' }}" style="font-size:11px;padding:1px 7px;margin-left:4px">{{ 'PASS' if mk.passed else 'RETRY' }}</span>
+    &middot; tap to retake{% else %}Not attempted yet &middot; tap to start{% endif %}</span>
+</a>
+{% endfor %}
+
+<div class="btn-row" style="margin-top:14px"><a class="btn" href="{{ url_for('home') }}">🏠 Home</a></div>
+{% endblock %}
