@@ -8000,5 +8000,341 @@
     "a": 0,
     "e": "Open areas with no ring or shading are Class G (uncontrolled) up to 1,200 ft AGL, with Class E above.",
     "acs": "UA.II.A"
+  },
+  {
+    "s": "METAR",
+    "acs": "UA.III.A",
+    "q": "A METAR reads: KAPA 141953Z 30012KT 10SM FEW070 SCT250 24/09 A3005. The ceiling at this station is:",
+    "c": [
+      "no ceiling is reported",
+      "a broken layer at 7,000 ft overhead",
+      "an overcast at 25,000 ft",
+      "a ceiling at 1,200 ft AGL"
+    ],
+    "a": 0,
+    "e": "A ceiling is the lowest broken or overcast layer; with only FEW and SCT reported here, there is no ceiling.",
+    "b": "Weather"
+  },
+  {
+    "s": "METAR",
+    "acs": "UA.III.A",
+    "q": "In the METAR KDEN 121853Z 09018G28KT 10SM BKN035 OVC060 12/04 A2992, the wind and altimeter are:",
+    "c": [
+      "wind 090 at 18 gusting 28 kt, altimeter 29.92",
+      "wind 090 at 28 knots steady, altimeter 29.92 inches",
+      "wind 900 at 18 kt, altimeter 2,992 ft",
+      "wind 090 at 18 kt, pressure 992 mb"
+    ],
+    "a": 0,
+    "e": "09018G28KT is wind from 090 true at 18 knots gusting 28, and A2992 is an altimeter setting of 29.92 inches of mercury.",
+    "b": "Weather"
+  },
+  {
+    "s": "METAR",
+    "acs": "UA.III.A",
+    "q": "In a METAR, the present-weather code '-SHRA' indicates:",
+    "c": [
+      "light rain showers",
+      "heavy continuous rain",
+      "light snow showers",
+      "freezing rain"
+    ],
+    "a": 0,
+    "e": "The minus sign means light, SH means showers, and RA means rain, so -SHRA is light rain showers.",
+    "b": "Weather"
+  },
+  {
+    "s": "METAR",
+    "acs": "UA.III.B",
+    "q": "A METAR shows 15/14 with 1SM BR. The small temperature-dewpoint spread indicates:",
+    "c": [
+      "air near saturation (fog likely)",
+      "unusually dry air aloft",
+      "a strong low-level temperature inversion",
+      "high density altitude conditions"
+    ],
+    "a": 0,
+    "e": "When temperature and dewpoint are within a few degrees, the air is near saturation and fog or mist is likely.",
+    "b": "Weather"
+  },
+  {
+    "s": "METAR",
+    "acs": "UA.III.A",
+    "q": "A METAR ends with the group 'A3012'. This is:",
+    "c": [
+      "an altimeter setting, 30.12 inHg",
+      "a pressure altitude reading of 3,012 ft",
+      "a temperature of 30.12 degrees C",
+      "a visibility of 3,012 meters"
+    ],
+    "a": 0,
+    "e": "The A prefix reports the altimeter setting in inches of mercury, so A3012 is 30.12 inHg.",
+    "b": "Weather"
+  },
+  {
+    "s": "TAF",
+    "acs": "UA.III.A",
+    "q": "A TAF includes 'TEMPO 2022 5SM BR'. Between 2000Z and 2200Z you should expect:",
+    "c": [
+      "brief periods of 5 SM in mist",
+      "a permanent change to visibility 5 SM",
+      "5 SM only after 2200Z",
+      "clearing to 5 SM by 2000Z"
+    ],
+    "a": 0,
+    "e": "TEMPO marks temporary fluctuations expected to last less than an hour each within the stated window.",
+    "b": "Weather"
+  },
+  {
+    "s": "TAF",
+    "acs": "UA.III.A",
+    "q": "A TAF line 'FM1500 31015G25KT 3SM' tells you that from 1500Z:",
+    "c": [
+      "those conditions begin and persist from 1500Z",
+      "those conditions may briefly appear near 1500Z",
+      "those conditions ended at 1500Z",
+      "a 30 percent chance applies after 1500Z"
+    ],
+    "a": 0,
+    "e": "FM (from) marks a rapid, lasting change; the new conditions begin at that time and continue until the next change.",
+    "b": "Weather"
+  },
+  {
+    "s": "TAF",
+    "acs": "UA.III.A",
+    "q": "In a TAF, 'PROB40 2124 1SM TSRA' means during 2100 to 2400Z there is:",
+    "c": [
+      "a 40% chance of 1 SM in thunderstorm rain",
+      "a guaranteed period of heavy thunderstorms",
+      "a 40% improvement in the visibility",
+      "thunderstorms ending by 2100Z"
+    ],
+    "a": 0,
+    "e": "PROB40 states a 40 percent probability of the listed conditions, here 1 SM visibility in thunderstorms and rain.",
+    "b": "Weather"
+  },
+  {
+    "s": "Thunderstorms",
+    "acs": "UA.III.B",
+    "q": "The three stages of a thunderstorm's life cycle, in order, are:",
+    "c": [
+      "cumulus, mature, dissipating",
+      "mature, cumulus, dissipating",
+      "forming, peak, collapse",
+      "building, anvil, outflow"
+    ],
+    "a": 0,
+    "e": "A thunderstorm grows through the cumulus (updraft) stage, the mature (updraft and downdraft) stage, then the dissipating stage.",
+    "b": "Weather"
+  },
+  {
+    "s": "Thunderstorms",
+    "acs": "UA.III.B",
+    "q": "A thunderstorm is most hazardous during which stage, when updrafts and downdrafts coexist?",
+    "c": [
+      "the mature stage",
+      "the cumulus stage",
+      "the dissipating stage",
+      "the anvil stage"
+    ],
+    "a": 0,
+    "e": "The mature stage has the strongest turbulence, wind shear, hail, and lightning as updrafts and downdrafts occur together.",
+    "b": "Weather"
+  },
+  {
+    "s": "Thunderstorms",
+    "acs": "UA.III.B",
+    "q": "The sudden wind shift and gusty surface winds felt just before a thunderstorm arrives come from:",
+    "c": [
+      "cold downdraft outflow ahead of the storm",
+      "warm updraft air feeding into the storm base",
+      "a low-level temperature inversion lifting",
+      "the anvil cloud blowing downwind"
+    ],
+    "a": 0,
+    "e": "Cold downdraft air spreads out ahead of the storm as a gust front, causing an abrupt wind shift and strong gusts.",
+    "b": "Weather"
+  },
+  {
+    "s": "Hazards",
+    "acs": "UA.III.B",
+    "q": "Embedded thunderstorms are especially dangerous because they are:",
+    "c": [
+      "hidden inside other cloud layers",
+      "always accompanied by large damaging hail",
+      "found only in mountainous terrain",
+      "weaker than isolated storms"
+    ],
+    "a": 0,
+    "e": "Embedded thunderstorms are concealed within surrounding cloud layers, so they are hard to see and avoid.",
+    "b": "Weather"
+  },
+  {
+    "s": "Stability",
+    "acs": "UA.III.B",
+    "q": "Unstable air most often brings:",
+    "c": [
+      "showery precipitation and good visibility",
+      "steady, widespread light drizzle and haze",
+      "smooth, stable flying conditions all day",
+      "a strong low-level temperature inversion"
+    ],
+    "a": 0,
+    "e": "Unstable air produces cumuliform clouds, showery precipitation, good visibility, and turbulence.",
+    "b": "Weather"
+  },
+  {
+    "s": "Stability",
+    "acs": "UA.III.B",
+    "q": "A stable air mass most commonly brings:",
+    "c": [
+      "poor visibility with haze or fog",
+      "strong gusty winds and heavy turbulence",
+      "towering cumulus buildups",
+      "brief heavy showers"
+    ],
+    "a": 0,
+    "e": "Stable air resists vertical motion, giving stratiform clouds, steady precipitation, smooth air, and poor visibility.",
+    "b": "Weather"
+  },
+  {
+    "s": "Density Altitude",
+    "acs": "UA.III.B",
+    "q": "On a hot, humid afternoon at a high-elevation field, a multirotor will most likely:",
+    "c": [
+      "make less lift and climb sluggishly",
+      "climb noticeably faster than a cool day",
+      "hover with no performance change",
+      "gain endurance in the warm air"
+    ],
+    "a": 0,
+    "e": "Hot, high, and humid conditions raise density altitude, thinning the air so props make less lift and motors work harder.",
+    "b": "Weather"
+  },
+  {
+    "s": "Density Altitude",
+    "acs": "UA.III.B",
+    "q": "Which change would most increase density altitude on the flight line?",
+    "c": [
+      "a rise in temperature and humidity",
+      "a sharp drop in outside temperature",
+      "a fall in field elevation",
+      "a rise in station pressure"
+    ],
+    "a": 0,
+    "e": "Higher temperature, higher humidity, and higher elevation all raise density altitude and reduce performance.",
+    "b": "Weather"
+  },
+  {
+    "s": "Weather Sources",
+    "acs": "UA.III.A",
+    "q": "An automated station broadcasting continuous local weather to pilots is an:",
+    "c": [
+      "AWOS or ASOS",
+      "AIRMET or SIGMET",
+      "area forecast",
+      "winds aloft table"
+    ],
+    "a": 0,
+    "e": "AWOS and ASOS are automated surface observing systems that broadcast current local weather continuously.",
+    "b": "Weather"
+  },
+  {
+    "s": "Weather Sources",
+    "acs": "UA.III.A",
+    "q": "At a towered airport, ATIS provides:",
+    "c": [
+      "a recorded airport and weather loop",
+      "live two-way radio control from the tower",
+      "a 30-hour area forecast",
+      "regional NOTAMs only"
+    ],
+    "a": 0,
+    "e": "ATIS is a continuous recorded broadcast of current airport and weather information, updated as conditions change.",
+    "b": "Weather"
+  },
+  {
+    "s": "Weather Sources",
+    "acs": "UA.III.A",
+    "q": "The best official source for a full preflight weather briefing is:",
+    "c": [
+      "Flight Service or aviationweather.gov",
+      "any consumer television weather channel",
+      "a friend at the field",
+      "yesterday's forecast"
+    ],
+    "a": 0,
+    "e": "Flight Service (1-800-WX-BRIEF) and aviationweather.gov provide official aviation weather for preflight planning.",
+    "b": "Weather"
+  },
+  {
+    "s": "Pressure Systems",
+    "acs": "UA.III.B",
+    "q": "In the Northern Hemisphere, surface wind around a low-pressure area flows:",
+    "c": [
+      "counterclockwise and inward",
+      "clockwise and spiraling outward",
+      "straight toward the center",
+      "outward in all directions"
+    ],
+    "a": 0,
+    "e": "Around a Northern Hemisphere low, surface wind spirals counterclockwise and inward toward the center.",
+    "b": "Weather"
+  },
+  {
+    "s": "Pressure Systems",
+    "acs": "UA.III.B",
+    "q": "Surface wind is usually slower and angled toward low pressure compared with wind aloft, mainly because of:",
+    "c": [
+      "surface friction",
+      "the Coriolis force alone",
+      "the jet stream overhead",
+      "frontal lifting"
+    ],
+    "a": 0,
+    "e": "Friction near the ground slows the wind and shifts it toward lower pressure, an effect that fades with height.",
+    "b": "Weather"
+  },
+  {
+    "s": "Hazards",
+    "acs": "UA.III.B",
+    "q": "Frost forming overnight on a multirotor's arms and propellers can:",
+    "c": [
+      "disrupt airflow and reduce lift",
+      "add helpful weight for stability",
+      "improve grip on the propellers",
+      "have no effect on flight"
+    ],
+    "a": 0,
+    "e": "Frost roughens the surfaces and disrupts smooth airflow over the props, reducing lift much as it does on a wing.",
+    "b": "Weather"
+  },
+  {
+    "s": "Inversion",
+    "acs": "UA.III.B",
+    "q": "A ground-based temperature inversion at night often produces:",
+    "c": [
+      "smooth air below with wind shear on top",
+      "strong turbulence through the whole layer",
+      "towering cumulus clouds",
+      "heavy showery precipitation"
+    ],
+    "a": 0,
+    "e": "An inversion is very stable, giving smooth air and trapped haze below, but wind shear can occur at the top of the layer.",
+    "b": "Weather"
+  },
+  {
+    "s": "Clouds",
+    "acs": "UA.III.B",
+    "q": "With a surface temperature of 77F and a dewpoint of 59F, the convective cloud base is roughly:",
+    "c": [
+      "about 4,000 ft AGL",
+      "about 500 ft AGL",
+      "about 12,000 ft AGL",
+      "right at the surface"
+    ],
+    "a": 0,
+    "e": "The spread is about 18F; dividing by 4.4F per 1,000 ft puts the convective cloud base near 4,000 ft AGL.",
+    "b": "Weather"
   }
 ]
