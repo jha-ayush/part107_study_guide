@@ -601,8 +601,10 @@ def exam_submit():
     pct = round(correct / total * 100) if total else 0
     passed = pct >= EXAM_PASS
     elapsed = time.time() - exam["start"]
+    mock_id = exam.get("mock")
     g.record["sessions"].append({"date": time.strftime("%Y-%m-%dT%H:%M:%S"),
-                                 "mode": "exam", "pct": pct, "correct": correct,
+                                 "mode": ("mock" + str(mock_id)) if mock_id is not None else "exam",
+                                 "pct": pct, "correct": correct,
                                  "total": total, "passed": passed})
     g.record["sessions"] = g.record["sessions"][-50:]
     g.record["exam"] = None
@@ -636,7 +638,83 @@ def exam_submit():
                            total=total, time_used=mmss(elapsed), exam_pass=EXAM_PASS,
                            experimental=EXAM_EXPERIMENTAL,
                            pass_color=color_for(pct), by_bucket=by_bucket, missed=missed,
-                           acs_summary=acs_summary)
+                           acs_summary=acs_summary, mock_id=mock_id,
+                           mock_title=(MOCK_EXAMS[mock_id]["title"]
+                                       if mock_id is not None and mock_id < len(MOCK_EXAMS) else None))
+
+
+# ---- Mock exams: five fixed, distinct, repeatable full-length practice tests ----
+def _build_mocks():
+    """Assemble five fixed mock exams from the bank.
+
+    Each mock mirrors the real test: EXAM_SCORED scored questions apportioned by
+    EXAM_BLUEPRINT plus EXAM_EXPERIMENTAL unscored ones. A fixed seed keeps the
+    sets stable and repeatable, and questions are drawn without repeat across
+    mocks where the pool allows, so the five are largely distinct.
+    """
+    rng = random.Random(20260107)
+    targets = _apportion(EXAM_SCORED, EXAM_BLUEPRINT)
+    idx = _bucket_index()
+    queues = {b: rng.sample(idx.get(b, []), len(idx.get(b, []))) for b in BUCKETS}
+    allq = rng.sample(range(len(QUESTIONS)), len(QUESTIONS))
+    mocks = []
+    for m in range(5):
+        used, scored = set(), []
+        for b in BUCKETS:
+            q, want, got = queues.get(b, []), targets.get(b, 0), 0
+            while got < want and q:
+                qid = q.pop(0)
+                if qid not in used:
+                    scored.append(qid); used.add(qid); got += 1
+        i = 0
+        while len(scored) < EXAM_SCORED and i < len(allq):
+            qid = allq[i]; i += 1
+            if qid not in used:
+                scored.append(qid); used.add(qid)
+        scored = scored[:EXAM_SCORED]
+        experimental = []
+        while len(experimental) < EXAM_EXPERIMENTAL and i < len(allq):
+            qid = allq[i]; i += 1
+            if qid not in used:
+                experimental.append(qid); used.add(qid)
+        qids = scored + experimental
+        order = {str(qid): rng.sample(range(len(QUESTIONS[qid]["c"])),
+                                      len(QUESTIONS[qid]["c"])) for qid in qids}
+        mocks.append({"title": "Mock Exam " + str(m + 1), "qids": qids,
+                      "experimental": experimental, "order": order})
+    return mocks
+
+
+MOCK_EXAMS = _build_mocks()
+
+
+@app.route("/mocks")
+def mocks():
+    best = {}
+    for sn in g.record.get("sessions", []):
+        mode = sn.get("mode", "")
+        if mode.startswith("mock") and mode[4:].isdigit():
+            mid = int(mode[4:])
+            if sn.get("pct", -1) > best.get(mid, -1):
+                best[mid] = sn["pct"]
+    items = [{"id": i, "title": MOCK_EXAMS[i]["title"], "best": best.get(i),
+              "passed": best.get(i, -1) >= EXAM_PASS}
+             for i in range(len(MOCK_EXAMS))]
+    return render_template("mocks.html", mocks=items, exam_n=EXAM_N,
+                           exam_scored=EXAM_SCORED, exam_min=EXAM_MIN, exam_pass=EXAM_PASS)
+
+
+@app.route("/mock/<int:mid>/start")
+def mock_start(mid):
+    if mid < 0 or mid >= len(MOCK_EXAMS):
+        return redirect(url_for("mocks"))
+    mk = MOCK_EXAMS[mid]
+    g.record["exam"] = {"qids": list(mk["qids"]),
+                        "order": {k: list(v) for k, v in mk["order"].items()},
+                        "answers": {}, "start": time.time(),
+                        "experimental": list(mk["experimental"]), "mock": mid}
+    save_record(g.owner, g.record)
+    return redirect(url_for("exam_q", n=0))
 
 
 @app.route("/review")
