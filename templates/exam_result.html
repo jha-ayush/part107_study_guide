@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
+{% if mock_title %}<div class="section-title" style="text-align:center;margin-top:4px">{{ mock_title }}</div>{% endif %}
 <div class="center" style="padding:8px 0 16px">
   <div class="result-emoji">{{ '🎉' if passed else '💪' }}</div>
   <div class="bigpct" style="color:{{ pass_color }}">{{ pct }}%</div>
@@ -9,7 +10,7 @@
 </div>
 
 <div class="btn-row" style="justify-content:center;margin-bottom:8px">
-  <a class="btn" href="{{ url_for('exam_start') }}">🔄 New exam</a>
+  {% if mock_id is not none %}<a class="btn" href="{{ url_for('mock_start', mid=mock_id) }}">🔄 Retake this mock</a><a class="btn" href="{{ url_for('mocks') }}">🎯 All mocks</a>{% else %}<a class="btn" href="{{ url_for('exam_start') }}">🔄 New exam</a>{% endif %}
   <a class="btn" href="{{ url_for('history') }}">📈 Progress</a>
   {% if missed %}<a class="btn" href="{{ url_for('drill') }}">🎯 Drill misses</a>{% endif %}
   <a class="btn" href="{{ url_for('review') }}">📚 Review study list</a>
