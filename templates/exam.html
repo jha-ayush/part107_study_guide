@@ -2,10 +2,10 @@
 {% block body %}
 <div class="meta">
   <span class="l">📝 Exam &middot; question {{ n + 1 }} of {{ total }}</span>
-  <span class="r timer {{ 'low' if remaining < 300 }}"><span class="te">{{ '⚠️' if remaining < 300 else '⏱️' }}</span>{{ remaining_mmss }} left</span>
+  <span class="r timer {{ 'low' if remaining < 300 }}" id="exam-timer" data-remaining="{{ remaining }}"><span class="te">{{ '⚠️' if remaining < 300 else '⏱️' }}</span><span id="exam-timer-text">{{ remaining_mmss }} left</span></span>
 </div>
 
-<form method="post" action="{{ url_for('exam_nav') }}">
+<form method="post" action="{{ url_for('exam_nav') }}" id="exam-form">
   <input type="hidden" name="_csrf" value="{{ csrf_token }}">
   <input type="hidden" name="n" value="{{ n }}">
   {% if q.fig %}<div class="figbox">{{ figures[q.fig]|safe }}</div>{% endif %}<div class="qcard"><p class="qtext">{{ q.q_html|safe }}</p></div>
@@ -33,4 +33,32 @@
 
   <button type="submit" name="finish" value="1">Finish and grade now</button>
 </form>
+
+<script>
+/* Live exam countdown. Presentation only: the server independently enforces the
+   time limit (exam_q redirects to grading once time is up), so the exam still
+   works and stays enforced with JavaScript disabled. */
+(function(){
+  var el=document.getElementById('exam-timer'),
+      txt=document.getElementById('exam-timer-text'),
+      form=document.getElementById('exam-form');
+  if(!el||!txt||!form) return;
+  var left=parseInt(el.getAttribute('data-remaining'),10)||0, done=false;
+  function pad(n){return (n<10?'0':'')+n;}
+  function tick(){
+    if(done) return;
+    if(left<=0){
+      done=true;
+      var f=document.createElement('input');
+      f.type='hidden'; f.name='finish'; f.value='1';
+      form.appendChild(f); form.submit(); return;
+    }
+    var h=Math.floor(left/3600), m=Math.floor((left%3600)/60), s=left%60;
+    txt.firstChild.nodeValue=(h>0?h+':'+pad(m):''+m)+':'+pad(s)+' left';
+    if(left<300) el.classList.add('low');
+    left--; setTimeout(tick,1000);
+  }
+  tick();
+})();
+</script>
 {% endblock %}
