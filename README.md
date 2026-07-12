@@ -1,9 +1,11 @@
 # Part 107 Ground School
 
 A FAA Part 107 knowledge-test prep app, built as a server-rendered Python
-(Flask) web app. All logic runs in Python: page rendering, answer checking,
-scoring, the exam timer, accounts, and progress tracking. There is no
-client-side application JavaScript.
+(Flask) web app. Almost all logic runs in Python: page rendering, answer
+checking, scoring, accounts, and progress tracking. The one piece of client-side
+JavaScript is a small, self-contained exam countdown timer for the live tick; the
+time limit is still enforced on the server, so the exam works and stays enforced
+with JavaScript disabled.
 
 It ships in two equivalent forms:
 
@@ -52,6 +54,11 @@ Either way, open http://127.0.0.1:8000.
   (Operations and Regulations weighted heaviest), with a question palette,
   previous/next, a by-topic breakdown, and a missed list. After grading, the result breaks your
   misses down by FAA ACS task, the way the real Knowledge Test Report does.
+- Mock exams: five fixed, distinct, repeatable full-length practice tests, each
+  the same 65-question, 120-minute, 70-percent format as the exam simulation and
+  weighted to the same ACS proportions. A live timer counts down like the testing
+  center, each mock tracks your best score, and the result screen matches the exam
+  simulation: score, pass or fail, by-topic breakdown, and ACS tasks to study.
 - Study list: every missed question grouped by topic, with lifetime accuracy.
 - Progress: an exam history page with a readiness verdict, best score, recent
   average, pass rate, and a score-trend chart with the pass line drawn in.
@@ -96,8 +103,10 @@ read from the `FLASK_SECRET_KEY` environment variable, falling back to a local
 All POST forms (sign in, register, sign out, answer, exam navigation, reset) are
 protected against cross-site request forgery with a per-session token.
 
-The exam timer is enforced on the server. The remaining time is shown each time
-a page loads; since there is no JavaScript, it does not tick live between loads.
+The exam and mock timers are enforced on the server: once time is up, the next
+page load grades the test. A small self-contained script also ticks the countdown
+live and auto-submits at zero, but it is presentation only. With JavaScript
+disabled, the server still shows and enforces the remaining time on each load.
 
 ## Project structure
 
@@ -111,8 +120,8 @@ part107_study_guide/
   run-local.sh           one-command local run
   templates/             Jinja templates
     base.html  home.html  learn.html  practice.html  exam.html
-    exam_result.html  review.html  history.html  cheatsheet.html
-    studysheet.html
+    exam_result.html  mocks.html  review.html  history.html
+    cheatsheet.html  studysheet.html
     login.html  register.html
   static/
     styles.css           styling
