@@ -9344,5 +9344,341 @@
     "a": 0,
     "e": "Most accidents come from a chain of small errors; catching and fixing one link early prevents the outcome.",
     "b": "Operations"
+  },
+  {
+    "s": "Altitude Limit",
+    "acs": "UA.I.B",
+    "q": "You are inspecting a 200-ft tower. Under Part 107 you may legally climb to about:",
+    "c": [
+      "600 ft AGL, within 400 ft of the tower",
+      "400 ft AGL and no higher than that at all",
+      "900 ft AGL anywhere nearby",
+      "1,000 ft AGL over the tower"
+    ],
+    "a": 0,
+    "e": "Within 400 ft of a structure you may fly up to 400 ft above its top, so a 200-ft tower allows about 600 ft AGL.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Altitude Limit",
+    "acs": "UA.I.B",
+    "q": "The exception that lets a drone exceed 400 ft AGL applies only when the aircraft:",
+    "c": [
+      "stays within 400 ft of a structure",
+      "is flown out over open farmland fields",
+      "is flown after sunset",
+      "carries no payload"
+    ],
+    "a": 0,
+    "e": "You may exceed 400 ft AGL only within a 400-ft lateral distance of a structure, remaining within 400 ft of its uppermost limit.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Altitude Limit",
+    "acs": "UA.I.B",
+    "q": "The Part 107 400-ft altitude limit is normally measured:",
+    "c": [
+      "above the ground below the aircraft",
+      "measured from the nearest airport elevation",
+      "from mean sea level",
+      "from the operator's height"
+    ],
+    "a": 0,
+    "e": "The 400-ft ceiling is above ground level, measured from the surface below, except near a structure where it is measured from the structure.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Civil Twilight",
+    "acs": "UA.I.B",
+    "q": "Civil twilight for Part 107 in the lower 48 states runs from about:",
+    "c": [
+      "30 min before sunrise to 30 min after sunset",
+      "1 hour after sunrise to 1 hour before sunset",
+      "noon to midnight",
+      "sunrise to sunset only"
+    ],
+    "a": 0,
+    "e": "Civil twilight is roughly the 30 minutes before official sunrise and the 30 minutes after official sunset.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Civil Twilight",
+    "acs": "UA.I.B",
+    "q": "Anti-collision lighting is required for Part 107 operations at night and during:",
+    "c": [
+      "civil twilight",
+      "clear daylight",
+      "calm winds",
+      "high visibility"
+    ],
+    "a": 0,
+    "e": "Operations at night and in civil twilight require anti-collision lighting; daylight operations do not.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Night Lighting",
+    "acs": "UA.I.B",
+    "q": "The anti-collision lighting required for night operations must be visible for at least:",
+    "c": [
+      "3 statute miles",
+      "300 feet",
+      "1 statute mile",
+      "10 statute miles"
+    ],
+    "a": 0,
+    "e": "The required anti-collision lighting must be visible for at least 3 statute miles and flash at a rate that helps avoid a collision.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Change of Address",
+    "acs": "UA.I.A",
+    "q": "After moving, a remote pilot must report a permanent mailing address change to the FAA within:",
+    "c": [
+      "30 days",
+      "24 hours",
+      "2 years",
+      "10 days"
+    ],
+    "a": 0,
+    "e": "A certificate holder must notify the FAA of a permanent mailing address change within 30 days to keep exercising privileges.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Accident Reporting",
+    "acs": "UA.I.C",
+    "q": "For the $500 accident-reporting threshold, the damage counted is:",
+    "c": [
+      "damage to property other than the aircraft",
+      "only damage to the drone aircraft, nothing else",
+      "only injuries, never property",
+      "controller damage only"
+    ],
+    "a": 0,
+    "e": "The report is required at $500 or more of damage to property other than the small unmanned aircraft, or for a serious injury.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Physical Condition",
+    "acs": "UA.I.A",
+    "q": "Part 107 requires no FAA medical certificate, but a remote pilot may not fly if they:",
+    "c": [
+      "have a condition that impairs safe flight",
+      "recently skipped a full breakfast that morning",
+      "wear corrective lenses",
+      "are over age 60"
+    ],
+    "a": 0,
+    "e": "Under 107.17 you may not operate if you know or have reason to know of a physical or mental condition that would interfere with safe operation.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Eligibility",
+    "acs": "UA.I.A",
+    "q": "Before being issued a remote pilot certificate, an applicant must pass:",
+    "c": [
+      "a TSA security background check",
+      "a full manned-aircraft flight checkride",
+      "a flight physical exam",
+      "a vision-only screening"
+    ],
+    "a": 0,
+    "e": "Applicants must be vetted by the TSA (a security background check) in addition to passing the knowledge test.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "Which core Part 107 rule can be waived if you show it can be done safely?",
+    "c": [
+      "the visual-line-of-sight requirement",
+      "the ban on careless or reckless operation",
+      "the Remote ID requirement",
+      "the registration requirement"
+    ],
+    "a": 0,
+    "e": "Visual line of sight (107.31) is among the waivable rules; registration, Remote ID, and careless operation are not waivable.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "A drone that cannot broadcast Remote ID and has no module:",
+    "c": [
+      "must be flown only within a FRIA",
+      "can apply for a Remote ID waiver instead",
+      "may fly anywhere below 400 ft",
+      "is exempt from all rules"
+    ],
+    "a": 0,
+    "e": "The Remote ID requirement cannot be waived; such a drone may only operate within an FAA-Recognized Identification Area (FRIA).",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "The FAA will grant a Part 107 waiver only if the applicant shows the operation can be conducted with:",
+    "c": [
+      "an equivalent level of safety",
+      "the absolute lowest possible cost",
+      "no paperwork at all",
+      "a manned chase plane"
+    ],
+    "a": 0,
+    "e": "A waiver is issued only when the proposed operation can be conducted safely, at an equivalent level of safety to the rule.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "A Certificate of Waiver issued by the FAA:",
+    "c": [
+      "may include specific conditions and limits",
+      "applies to every drone pilot in the nation",
+      "removes all Part 107 rules",
+      "never expires or changes"
+    ],
+    "a": 0,
+    "e": "A waiver authorizes deviation from specific rules and typically comes with conditions and limitations the pilot must follow.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "A Part 107 Certificate of Waiver authorizes:",
+    "c": [
+      "only the specific operation it describes",
+      "unlimited future flights anywhere, anytime",
+      "any operation the pilot wants",
+      "all pilots at that airport"
+    ],
+    "a": 0,
+    "e": "A waiver is specific to the operation described in the application and does not grant blanket permission for other flights.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Knowledge Test",
+    "acs": "UA.I.A",
+    "q": "The Part 107 initial aeronautical knowledge test consists of:",
+    "c": [
+      "60 multiple-choice questions",
+      "a live in-person flight demonstration",
+      "200 essay questions",
+      "25 true-or-false questions"
+    ],
+    "a": 0,
+    "e": "The initial knowledge test has 60 multiple-choice questions, and a score of 70 percent is required to pass.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Applicability",
+    "acs": "UA.I.B",
+    "q": "Flying a small drone entirely indoors is:",
+    "c": [
+      "generally outside FAA Part 107 rules",
+      "still strictly capped at the 400 ft AGL limit",
+      "a Remote ID violation",
+      "allowed only with a waiver"
+    ],
+    "a": 0,
+    "e": "Part 107 governs operations in the outdoor National Airspace System, so fully indoor flight is generally not subject to it.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Preflight",
+    "acs": "UA.I.B",
+    "q": "The preflight familiarization required by 107.49 includes assessing:",
+    "c": [
+      "local weather, airspace, and the site",
+      "only the battery charge and nothing else",
+      "the client's schedule",
+      "the aircraft color scheme"
+    ],
+    "a": 0,
+    "e": "Before flight the remote PIC must assess the operating area, weather, airspace, hazards, aircraft condition, and crew readiness.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Registration",
+    "acs": "UA.I.F",
+    "q": "Under Part 107, registration is required for a small unmanned aircraft:",
+    "c": [
+      "regardless of its weight",
+      "only above 55 lb",
+      "only if flown for pay",
+      "only in controlled airspace"
+    ],
+    "a": 0,
+    "e": "Every drone flown under Part 107 must be registered regardless of weight; the 0.55 lb threshold applies to recreational flyers.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Registration",
+    "acs": "UA.I.F",
+    "q": "You fly three different drones commercially. Under Part 107 you must:",
+    "c": [
+      "register each aircraft separately",
+      "register just one of them",
+      "use a single number for all three",
+      "skip registration entirely"
+    ],
+    "a": 0,
+    "e": "Part 107 registration is per aircraft, so each drone is registered individually and carries its own registration number.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Accident Reporting",
+    "acs": "UA.I.C",
+    "q": "A reportable Part 107 accident is filed with the FAA through:",
+    "c": [
+      "the FAA DroneZone website",
+      "a local police report",
+      "the aircraft manufacturer",
+      "a social media post"
+    ],
+    "a": 0,
+    "e": "Reportable accidents are submitted to the FAA, for example through the FAA DroneZone site, within 10 calendar days.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "To fly a pipeline survey beyond visual line of sight, a remote pilot needs:",
+    "c": [
+      "a Part 107 waiver for that operation",
+      "nothing more than a basic certificate",
+      "only a visual observer",
+      "a recreational TRUST pass"
+    ],
+    "a": 0,
+    "e": "Beyond-visual-line-of-sight flight deviates from 107.31, so it requires an approved Part 107 waiver for that operation.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.D",
+    "q": "To conduct sustained flight directly over a crowd at an outdoor concert, a remote pilot needs:",
+    "c": [
+      "an over-people category or a waiver",
+      "only a very bright anti-collision light",
+      "just the client's permission",
+      "nothing, if under 400 ft"
+    ],
+    "a": 0,
+    "e": "Sustained flight over people not involved requires meeting an approved over-people category or holding a waiver.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Certificate",
+    "acs": "UA.I.A",
+    "q": "A remote pilot certificate obtained under Part 107:",
+    "c": [
+      "stays valid but needs recurrent training",
+      "must be renewed by re-taking the initial test",
+      "expires exactly two years after issue",
+      "converts to a manned license"
+    ],
+    "a": 0,
+    "e": "The certificate itself does not expire, but the holder must complete recurrent training every 24 calendar months to keep exercising privileges.",
+    "b": "Regulations"
   }
 ]
