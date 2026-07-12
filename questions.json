@@ -9680,5 +9680,341 @@
     "a": 0,
     "e": "The certificate itself does not expire, but the holder must complete recurrent training every 24 calendar months to keep exercising privileges.",
     "b": "Regulations"
+  },
+  {
+    "s": "Scale",
+    "q": "On a VFR sectional (1:500,000), one inch on the chart equals about:",
+    "c": [
+      "6.9 nautical miles",
+      "1 nautical mile",
+      "70 nautical miles",
+      "half a nautical mile"
+    ],
+    "a": 0,
+    "e": "At 1:500,000, one inch represents 500,000 inches on the ground, which is about 6.9 nautical miles.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Scale",
+    "q": "One degree of latitude on a sectional chart equals:",
+    "c": [
+      "60 nautical miles",
+      "6 nautical miles",
+      "1 nautical mile",
+      "600 nautical miles"
+    ],
+    "a": 0,
+    "e": "Each degree of latitude spans 60 minutes, and since one minute equals one nautical mile, a degree is 60 nautical miles.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Scale",
+    "q": "The easiest built-in way to measure distance on a sectional is to use:",
+    "c": [
+      "the latitude scale on the side",
+      "the color of the surrounding terrain",
+      "the airport data block",
+      "the chart's title panel"
+    ],
+    "a": 0,
+    "e": "One minute of latitude equals one nautical mile, so the latitude scale along the chart edge works as a distance ruler.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Coordinates",
+    "q": "On the globe, latitude and longitude are measured, respectively:",
+    "c": [
+      "N/S of the equator, E/W of the prime meridian",
+      "E/W of the equator and N/S of the poles instead",
+      "only in statute miles",
+      "by terrain color only"
+    ],
+    "a": 0,
+    "e": "Latitude is measured north or south of the equator, and longitude east or west of the prime meridian.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Coordinates",
+    "q": "Across the continental United States, lines of longitude have values that:",
+    "c": [
+      "increase toward the west",
+      "increase toward the east",
+      "stay the same everywhere",
+      "are measured in feet"
+    ],
+    "a": 0,
+    "e": "In the continental US, longitude increases going westward, for example from about 75 degrees W to 120 degrees W.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Coordinates",
+    "q": "The small tick marks along the latitude and longitude lines on a sectional are spaced:",
+    "c": [
+      "one minute apart",
+      "one degree apart",
+      "one mile apart",
+      "ten minutes apart"
+    ],
+    "a": 0,
+    "e": "The ticks are spaced at one-minute intervals, and one minute of latitude conveniently equals one nautical mile.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "In a sectional airport data block, a number such as 1204 alone usually gives the:",
+    "c": [
+      "field elevation in feet MSL",
+      "the traffic pattern altitude",
+      "runway heading",
+      "tower frequency"
+    ],
+    "a": 0,
+    "e": "The standalone number in a data block is the field elevation in feet above mean sea level.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "In an airport data block, a runway length shown as 72 means the longest runway is:",
+    "c": [
+      "7,200 feet long",
+      "72 feet long",
+      "72 nautical miles",
+      "720 feet long"
+    ],
+    "a": 0,
+    "e": "Runway length in a data block is given in hundreds of feet, so 72 means 7,200 feet.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "On a sectional, a common traffic advisory frequency is marked with:",
+    "c": [
+      "a circled letter C",
+      "a circled letter H",
+      "a bold star",
+      "a magenta flag"
+    ],
+    "a": 0,
+    "e": "A solid dot with a circled C next to a frequency identifies the CTAF used for self-announced position reports.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "A frequency of 122.8 listed at a non-towered airport is typically the:",
+    "c": [
+      "UNICOM advisory frequency",
+      "the main ATC clearance frequency",
+      "emergency frequency",
+      "weather-only frequency"
+    ],
+    "a": 0,
+    "e": "122.8 is a common UNICOM frequency at non-towered airports, used for advisories and often as the CTAF.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "In an airport data block, 'RP' followed by runway numbers indicates:",
+    "c": [
+      "right traffic for those runways",
+      "a required parachute jumping area",
+      "a restricted airport",
+      "a private helipad"
+    ],
+    "a": 0,
+    "e": "RP means a right-hand traffic pattern is in use for the listed runways, opposite the standard left pattern.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "An asterisk before the letter L (\"*L\") in an airport data block means the runway lighting is:",
+    "c": [
+      "limited, part-time, or pilot-controlled",
+      "always much brighter than normal lighting",
+      "never available",
+      "laser-based"
+    ],
+    "a": 0,
+    "e": "The asterisk shows lighting limitations such as part-time or pilot-controlled operation; check the chart supplement.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Obstacles",
+    "q": "On a sectional, the highest obstacle on that chart is printed:",
+    "c": [
+      "in bold, larger numbers",
+      "in tiny faded gray-colored text",
+      "in green ink",
+      "without any height"
+    ],
+    "a": 0,
+    "e": "The single highest charted obstacle is shown in bold, oversized numbers to draw the pilot's attention.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Obstacles",
+    "q": "Obstacles less than 1,000 ft AGL and those 1,000 ft AGL or higher are shown with:",
+    "c": [
+      "different obstruction symbols",
+      "exactly the same symbol always",
+      "no symbol at all",
+      "only a dashed line"
+    ],
+    "a": 0,
+    "e": "Charts use one symbol for obstacles under 1,000 ft AGL and a taller, different symbol for those 1,000 ft AGL and above.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Navigation",
+    "q": "On a sectional, a VOR's frequency and identifier are printed:",
+    "c": [
+      "in a box near the compass rose",
+      "inside the nearest airport symbol",
+      "along the nearest airway",
+      "on the chart cover only"
+    ],
+    "a": 0,
+    "e": "Each VOR shows its name, frequency, and Morse identifier in a small box beside its compass rose.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Navigation",
+    "q": "A runway numbered 09 is aligned to a magnetic heading of about:",
+    "c": [
+      "090 degrees",
+      "900 degrees",
+      "9 degrees",
+      "190 degrees"
+    ],
+    "a": 0,
+    "e": "Runway numbers are the magnetic heading with the last digit dropped, so runway 09 points to about 090 degrees.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Time",
+    "q": "A chart note or report gives a time of 1800Z. In Eastern Standard Time (UTC minus 5), that is:",
+    "c": [
+      "1300 local",
+      "2300 local",
+      "0600 local",
+      "1800 local"
+    ],
+    "a": 0,
+    "e": "Zulu time is UTC, so subtract five hours for Eastern Standard Time: 1800Z becomes 1300 local.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Terrain",
+    "q": "On a sectional's graduated color tints, the highest terrain is shown by:",
+    "c": [
+      "the darkest tint",
+      "the lightest tint",
+      "a blue tint",
+      "no color at all"
+    ],
+    "a": 0,
+    "e": "Terrain tints darken as elevation rises, so the darkest browns mark the highest ground on the chart.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Navigation",
+    "q": "A line on a sectional along which magnetic variation is zero is called:",
+    "c": [
+      "an agonic line",
+      "an isogonic line",
+      "a Victor airway",
+      "a parallel"
+    ],
+    "a": 0,
+    "e": "An agonic line connects points of zero magnetic variation, where magnetic north and true north align.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Scale",
+    "q": "Distances on aeronautical sectional charts are normally expressed in:",
+    "c": [
+      "nautical miles",
+      "metric kilometers",
+      "feet",
+      "city blocks"
+    ],
+    "a": 0,
+    "e": "Aeronautical charts and navigation use nautical miles, matching one minute of latitude to one nautical mile.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Navigation",
+    "q": "To measure the length of a planned leg on a sectional, a pilot commonly uses:",
+    "c": [
+      "a plotter against the latitude scale",
+      "the nearest airport's radio frequency box",
+      "the terrain color key",
+      "the chart's border notes"
+    ],
+    "a": 0,
+    "e": "A plotter or ruler compared to the latitude scale (one minute equals one nautical mile) gives the leg distance.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Coordinates",
+    "q": "Latitude and longitude on a sectional are labeled in:",
+    "c": [
+      "degrees and minutes",
+      "statute miles and yards",
+      "feet and inches",
+      "hours and seconds"
+    ],
+    "a": 0,
+    "e": "Coordinates are given in degrees and minutes (and sometimes seconds), letting a pilot pinpoint a location.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "Manned aircraft near a small airport usually fly a traffic pattern at about:",
+    "c": [
+      "1,000 ft AGL",
+      "50 ft AGL",
+      "10,000 ft AGL",
+      "400 ft MSL"
+    ],
+    "a": 0,
+    "e": "Typical light-aircraft patterns are near 1,000 ft AGL, so a drone pilot should stay well clear of that altitude near airports.",
+    "acs": "UA.II.B",
+    "b": "Charts"
+  },
+  {
+    "s": "Airport Data",
+    "q": "A sectional airport data block generally lists the airport name, its elevation, and the:",
+    "c": [
+      "common traffic or tower frequency",
+      "the current local weather forecast",
+      "the pilot's home address",
+      "fuel prices"
+    ],
+    "a": 0,
+    "e": "The data block packs the airport name, field elevation, lighting, longest runway, and the CTAF or tower frequency.",
+    "acs": "UA.II.B",
+    "b": "Charts"
   }
 ]
