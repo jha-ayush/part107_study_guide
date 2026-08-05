@@ -28,10 +28,10 @@ QUESTIONS_JSON = r'''[
     "s": "Accident Reporting",
     "q": "A Part 107 flight causes $600 of damage to a third party's property. Within how many days must you report it to the FAA?",
     "c": [
+      "No report required",
       "30 days",
-      "24 hours",
       "10 calendar days",
-      "No report required"
+      "24 hours"
     ],
     "a": 2,
     "e": "Report within 10 calendar days if an accident causes serious injury or at least $500 damage to others' property.",
@@ -42,12 +42,12 @@ QUESTIONS_JSON = r'''[
     "s": "Accident Reporting",
     "q": "Which outcome requires an FAA accident report under Part 107?",
     "c": [
+      "$200 damage to the drone itself",
       "A minor scratch to the operator",
       "A bystander is knocked unconscious",
-      "$200 damage to the drone itself",
       "A near-miss with no contact"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Reporting is triggered by serious injury or at least $500 damage to others' property.",
     "acs": "UA.I.A"
   },
@@ -56,10 +56,10 @@ QUESTIONS_JSON = r'''[
     "s": "Currency",
     "q": "To keep a remote pilot certificate current, the pilot must:",
     "c": [
-      "Log 100 flight hours per year",
+      "Renew the certificate annually with the FAA",
       "Retake the entire proctored knowledge exam in person every 2 years",
       "Complete free online recurrent training every 24 calendar months",
-      "Renew the certificate annually with the FAA"
+      "Log 100 flight hours per year"
     ],
     "a": 2,
     "e": "Since 2021 currency is maintained by free online recurrent training every 24 calendar months, with no in-person retest.",
@@ -72,8 +72,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "any weight, including under 250 g",
       "0.55 lb (250 g) or more",
-      "over 5 lb only",
-      "over 2 lb only"
+      "over 2 lb only",
+      "over 5 lb only"
     ],
     "a": 1,
     "e": "Under the recreational exception, registration is required at 0.55 lb (250 g) or more; under Part 107 every drone is registered regardless of weight.",
@@ -84,10 +84,10 @@ QUESTIONS_JSON = r'''[
     "s": "Documents",
     "q": "During a Part 107 operation, the remote PIC must have available for inspection:",
     "c": [
-      "Only the drone's original purchase receipt from the seller",
-      "Their remote pilot certificate and photo identification",
       "Nothing, since a registered drone is automatically exempt from this",
-      "Only a printed paper copy of the full Part 107 regulations"
+      "Their remote pilot certificate and photo identification",
+      "Only a printed paper copy of the full Part 107 regulations",
+      "Only the drone's original purchase receipt from the seller"
     ],
     "a": 1,
     "e": "The remote PIC must keep their remote pilot certificate and ID readily accessible during all operations.",
@@ -98,10 +98,10 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "Remote ID requires most drones flown under Part 107 to:",
     "c": [
-      "File a flight plan before each flight",
+      "Carry a Mode C transponder like manned aircraft",
       "Broadcast identity, location, and altitude during flight",
-      "Be painted with the registration number",
-      "Carry a Mode C transponder like manned aircraft"
+      "File a flight plan before each flight",
+      "Be painted with the registration number"
     ],
     "a": 1,
     "e": "Remote ID makes the aircraft broadcast its identity, location, and altitude so it can be identified while airborne.",
@@ -112,12 +112,12 @@ QUESTIONS_JSON = r'''[
     "s": "Supervision",
     "q": "A person without a remote pilot certificate may manipulate the controls only if:",
     "c": [
-      "They have passed the recreational TRUST test offered to hobby flyers",
-      "They are over 18 years old and have read the aircraft's flight manual",
       "The drone weighs under 250 grams and is therefore exempt from registration",
-      "Under direct supervision of a certificated remote PIC who can take control"
+      "They are over 18 years old and have read the aircraft's flight manual",
+      "Under direct supervision of a certificated remote PIC who can take control",
+      "They have passed the recreational TRUST test offered to hobby flyers"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A non-certificated person may fly only under the direct supervision of a remote PIC able to immediately take over.",
     "acs": "UA.I.B"
   },
@@ -126,12 +126,12 @@ QUESTIONS_JSON = r'''[
     "s": "Eligibility",
     "q": "The minimum age to be issued a remote pilot certificate is:",
     "c": [
-      "16",
       "18",
+      "16",
       "21",
       "14"
     ],
-    "a": 0,
+    "a": 1,
     "e": "An applicant must be at least 16 years old to hold a remote pilot certificate.",
     "acs": "UA.I.C"
   },
@@ -140,12 +140,12 @@ QUESTIONS_JSON = r'''[
     "s": "Alcohol & Drugs",
     "q": "Part 107 prohibits operating a small UAS within how many hours of consuming alcohol?",
     "c": [
-      "4 hours",
-      "12 hours",
       "8 hours",
+      "12 hours",
+      "4 hours",
       "24 hours"
     ],
-    "a": 2,
+    "a": 0,
     "e": "No operation within 8 hours of alcohol, while impaired, or with a blood alcohol content of 0.04% or greater.",
     "acs": "UA.I.B"
   },
@@ -154,9 +154,9 @@ QUESTIONS_JSON = r'''[
     "s": "Class G",
     "q": "In which airspace class may a Part 107 pilot operate without ATC authorization?",
     "c": [
-      "Class D",
       "Class B",
       "Class C",
+      "Class D",
       "Class G"
     ],
     "a": 3,
@@ -168,12 +168,12 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization",
     "q": "To fly in Class C airspace under Part 107, a remote pilot must:",
     "c": [
-      "Obtain prior ATC authorization, usually via LAANC",
-      "Simply stay below 200 ft",
+      "Notify the tower by radio before flight",
       "File an IFR flight plan",
-      "Notify the tower by radio before flight"
+      "Obtain prior ATC authorization, usually via LAANC",
+      "Simply stay below 200 ft"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Operating in controlled airspace requires prior ATC authorization, fastest through LAANC.",
     "acs": "UA.II.B"
   },
@@ -182,8 +182,8 @@ QUESTIONS_JSON = r'''[
     "s": "LAANC",
     "q": "LAANC gives Part 107 pilots:",
     "c": [
-      "A standard aviation weather briefing covering the planned route of flight",
       "Automatic Remote ID broadcasting through the FAA's national network",
+      "A standard aviation weather briefing covering the planned route of flight",
       "Near real-time authorization to fly in controlled airspace up to grid altitudes",
       "Mandatory liability insurance coverage that is required for all Part 107 operations"
     ],
@@ -196,12 +196,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class E Surface",
     "q": "Class E airspace extending to the surface (dashed magenta line) for Part 107:",
     "c": [
+      "Only applies above 700 ft",
       "Requires ATC authorization before operating",
-      "Restricts manned aircraft only",
       "Is uncontrolled and needs no authorization",
-      "Only applies above 700 ft"
+      "Restricts manned aircraft only"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A Class E surface area is controlled airspace, so it needs authorization just like B, C, and D surface areas.",
     "acs": "UA.II.A"
   },
@@ -210,12 +210,12 @@ QUESTIONS_JSON = r'''[
     "s": "TFR",
     "q": "A Temporary Flight Restriction over a stadium during a major game means a Part 107 pilot:",
     "c": [
-      "May fly inside it during the hours when no game is being played",
-      "May fly inside it freely as long as the aircraft stays under 400 ft",
       "Is exempt from the restriction because the drone weighs so little",
-      "May not enter the restricted area without specific authorization"
+      "May not enter the restricted area without specific authorization",
+      "May fly inside it during the hours when no game is being played",
+      "May fly inside it freely as long as the aircraft stays under 400 ft"
     ],
-    "a": 3,
+    "a": 1,
     "e": "TFRs apply to UAS exactly as to manned aircraft, so entry requires specific FAA authorization.",
     "acs": "UA.II.A"
   },
@@ -226,10 +226,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "The drone's battery state",
       "The pilot's certificate expiration",
-      "Temporary hazards, TFRs, and airspace changes",
-      "Local traffic ordinances"
+      "Local traffic ordinances",
+      "Temporary hazards, TFRs, and airspace changes"
     ],
-    "a": 2,
+    "a": 3,
     "e": "NOTAMs flag temporary conditions such as TFRs, closures, and hazards not printed on charts.",
     "acs": "UA.II.B"
   },
@@ -238,12 +238,12 @@ QUESTIONS_JSON = r'''[
     "s": "Speed Limit",
     "q": "The maximum groundspeed of a small UAS under Part 107 is:",
     "c": [
-      "No limit applies",
       "87 knots (100 mph)",
+      "100 knots",
       "55 knots",
-      "100 knots"
+      "No limit applies"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Part 107 caps groundspeed at 87 knots, which is 100 mph.",
     "acs": "UA.I.B"
   },
@@ -252,12 +252,12 @@ QUESTIONS_JSON = r'''[
     "s": "Grid Values",
     "q": "A UAS Facility Map shows a grid value of 0 over part of a Class D area. This means:",
     "c": [
-      "You may fly up to 400 feet there without any further authorization",
       "Flight is permanently banned in that grid under all circumstances",
-      "The area has reverted to uncontrolled Class G airspace for drones",
-      "No automatic LAANC authorization; a manual request is required"
+      "No automatic LAANC authorization; a manual request is required",
+      "You may fly up to 400 feet there without any further authorization",
+      "The area has reverted to uncontrolled Class G airspace for drones"
     ],
-    "a": 3,
+    "a": 1,
     "e": "A grid value of 0 means no automatic authorization, so you must request it manually through FAA DroneZone.",
     "acs": "UA.II.B"
   },
@@ -266,12 +266,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A Military Operations Area (MOA) on a chart indicates:",
     "c": [
+      "A category of controlled airport that always has an operating tower and radar service",
       "Active military training airspace where pilots should verify status and use caution",
-      "Permanently prohibited airspace that no aircraft may ever enter",
       "Airspace that requires no awareness or coordination from UAS pilots",
-      "A category of controlled airport that always has an operating tower and radar service"
+      "Permanently prohibited airspace that no aircraft may ever enter"
     ],
-    "a": 0,
+    "a": 1,
     "e": "MOAs contain military training; not banned for UAS, but you should check activity status and stay vigilant.",
     "acs": "UA.II.A"
   },
@@ -281,11 +281,11 @@ QUESTIONS_JSON = r'''[
     "q": "Flight in a Prohibited Area such as P-56 over the National Mall is:",
     "c": [
       "Permitted with a LAANC authorization request",
-      "Not permitted under any circumstances",
+      "Permitted on weekends",
       "Permitted below 400 ft",
-      "Permitted on weekends"
+      "Not permitted under any circumstances"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Prohibited areas are closed to all aircraft including small UAS, with no authorization available.",
     "acs": "UA.II.A"
   },
@@ -294,12 +294,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "What symbol on a sectional chart indicates Class D airspace?",
     "c": [
-      "Dashed blue circle or square",
-      "Solid blue circle",
       "Solid magenta concentric circles",
-      "Dashed magenta circle"
+      "Solid blue circle",
+      "Dashed magenta circle",
+      "Dashed blue circle or square"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Dashed blue lines enclose Class D airspace around airports with an operating control tower.",
     "acs": "UA.II.A"
   },
@@ -308,12 +308,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "A dashed magenta line around an airport on a sectional chart indicates:",
     "c": [
-      "Class E airspace to the surface",
-      "Class C inner ring",
       "Class D airspace",
+      "Class C inner ring",
+      "Class E airspace to the surface",
       "Airport advisory area"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Dashed magenta lines depict Class E airspace that extends down to the surface, not just to 700 ft AGL.",
     "acs": "UA.II.A"
   },
@@ -323,11 +323,11 @@ QUESTIONS_JSON = r'''[
     "q": "Class C airspace is depicted on a sectional chart as:",
     "c": [
       "Solid blue square",
-      "Dashed blue concentric circles",
       "Solid magenta concentric circles",
+      "Dashed blue concentric circles",
       "Dashed magenta square"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Two solid magenta rings depict Class C airspace around busier airports served by approach control.",
     "acs": "UA.II.A"
   },
@@ -336,12 +336,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "A sectional chart obstacle reads 1549 (549). The parenthetical value is the:",
     "c": [
-      "MSL elevation",
-      "Lighting frequency",
       "AGL height of the obstacle",
-      "Distance to the nearest airport"
+      "Lighting frequency",
+      "Distance to the nearest airport",
+      "MSL elevation"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The parenthetical number is height above ground (AGL); the top number 1549 is the MSL elevation of the top.",
     "acs": "UA.II.B"
   },
@@ -350,9 +350,9 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Notation",
     "q": "In a sectional airspace label like SFC to 4000, SFC means:",
     "c": [
+      "Sector Flight Ceiling",
       "Secondary Frequency Channel",
       "Standard Flight Corridor",
-      "Sector Flight Ceiling",
       "Surface"
     ],
     "a": 3,
@@ -364,10 +364,10 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "An obstacle symbol printed in magenta rather than blue indicates the structure:",
     "c": [
-      "Is in Class C airspace",
       "Has aviation lighting",
+      "Is on military property",
       "Exceeds 1,000 ft AGL",
-      "Is on military property"
+      "Is in Class C airspace"
     ],
     "a": 2,
     "e": "Obstacles taller than 1,000 ft AGL are printed in magenta as a visual flag for extreme height.",
@@ -378,12 +378,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Notation",
     "q": "Airspace altitude labels like 118 over 40 on a sectional chart are in:",
     "c": [
-      "Feet AGL",
       "Nautical miles",
-      "Flight levels",
-      "Hundreds of feet MSL"
+      "Feet AGL",
+      "Hundreds of feet MSL",
+      "Flight levels"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Sectional altitude labels are hundreds of feet MSL, so 118 is 11,800 ft and 40 is 4,000 ft.",
     "acs": "UA.II.A"
   },
@@ -392,12 +392,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "Isogonic lines on a sectional chart connect points of equal:",
     "c": [
-      "Barometric pressure",
       "Magnetic variation from true north",
-      "Terrain elevation",
-      "Radio signal strength"
+      "Radio signal strength",
+      "Barometric pressure",
+      "Terrain elevation"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Isogonic lines show where the angle between magnetic and true north (variation) is identical.",
     "acs": "UA.II.A"
   },
@@ -407,11 +407,11 @@ QUESTIONS_JSON = r'''[
     "q": "The bold number inside each lat/lon quadrangle on a sectional chart is the:",
     "c": [
       "Minimum IFR altitude",
-      "Traffic pattern altitude",
       "Maximum Elevation Figure (MEF)",
-      "VFR cruising altitude"
+      "VFR cruising altitude",
+      "Traffic pattern altitude"
     ],
-    "a": 2,
+    "a": 1,
     "e": "The MEF is the highest known terrain or obstacle in that quadrangle plus a safety buffer, in hundreds of feet.",
     "acs": "UA.II.B"
   },
@@ -420,12 +420,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A Military Training Route labeled IR-201 is flown:",
     "c": [
+      "Under IFR regardless of weather",
       "Only on weekends",
       "Only above 10,000 ft MSL",
-      "Under IFR regardless of weather",
       "Under VFR with visual references required"
     ],
-    "a": 2,
+    "a": 0,
     "e": "IR routes are flown by instruments (IFR); VR routes require the pilot to keep visual references.",
     "acs": "UA.II.A"
   },
@@ -434,8 +434,8 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "Class B airspace on a sectional chart is depicted as:",
     "c": [
-      "Dashed blue circles drawn around each nearby airport",
       "Solid magenta concentric circles centered on the primary airport",
+      "Dashed blue circles drawn around each nearby airport",
       "Dashed magenta lines surrounding the airport boundary",
       "Solid blue lines forming shelves, often with blue shading"
     ],
@@ -448,12 +448,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "A VOR station on a sectional chart appears as:",
     "c": [
+      "A magenta triangle pointing toward the nearest airport",
       "A compass rose with a central circle and name flag",
       "A small blue hexagon with the frequency printed inside",
-      "A magenta triangle pointing toward the nearest airport",
       "A solid blue diamond placed at the station's location"
     ],
-    "a": 0,
+    "a": 1,
     "e": "VORs are drawn as a compass rose with a central open circle and an identifying name flag.",
     "acs": "UA.II.A"
   },
@@ -462,12 +462,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "A METAR reports wind as '27015G25KT'. The gust speed is:",
     "c": [
+      "15 knots",
       "25 knots",
       "27 knots",
-      "15 knots",
       "40 knots"
     ],
-    "a": 0,
+    "a": 1,
     "e": "G25KT means gusts to 25 knots; 270 is direction and 15 is the steady wind speed.",
     "acs": "UA.III.A"
   },
@@ -477,11 +477,11 @@ QUESTIONS_JSON = r'''[
     "q": "In a METAR, 'OVC010' means:",
     "c": [
       "Overcast with 10-mile visibility",
-      "Overcast at 1,000 ft AGL",
+      "Occasional clouds at 1,000 ft",
       "Overcast at 10,000 ft MSL",
-      "Occasional clouds at 1,000 ft"
+      "Overcast at 1,000 ft AGL"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Sky layer heights in a METAR are AGL in hundreds of feet, so OVC010 is overcast at 1,000 ft AGL.",
     "acs": "UA.III.A"
   },
@@ -491,11 +491,11 @@ QUESTIONS_JSON = r'''[
     "q": "Which sky condition constitutes a ceiling?",
     "c": [
       "Any layer below 3,000 ft AGL",
+      "BKN or OVC only",
       "FEW at any altitude",
-      "SCT at any altitude",
-      "BKN or OVC only"
+      "SCT at any altitude"
     ],
-    "a": 3,
+    "a": 1,
     "e": "A ceiling is the lowest broken or overcast layer; FEW and SCT coverage do not count as a ceiling.",
     "acs": "UA.III.A"
   },
@@ -504,9 +504,9 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "The code 'TS' in a METAR present-weather field means:",
     "c": [
-      "Tropical storm advisory",
-      "Towering stratus",
       "Temporary snow",
+      "Towering stratus",
+      "Tropical storm advisory",
       "Thunderstorm"
     ],
     "a": 3,
@@ -518,12 +518,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "A METAR reports wind as 'VRB03KT'. This means:",
     "c": [
-      "Vertical shear at 3 knots",
+      "Variable direction at 3 knots",
       "Very turbulent 3-knot winds",
       "Visibility cut by 3-knot gusts",
-      "Variable direction at 3 knots"
+      "Vertical shear at 3 knots"
     ],
-    "a": 3,
+    "a": 0,
     "e": "VRB means direction is shifting more than 60 degrees and is reported when speed is 6 knots or less.",
     "acs": "UA.III.A"
   },
@@ -532,12 +532,12 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "In a TAF, 'FM1800' followed by new conditions means:",
     "c": [
-      "From 1800 in the local time of the reporting station",
-      "From 1800 UTC, all prior conditions are replaced",
+      "Maximum visibility will be about 1,800 feet",
       "Fog and mist are expected after 1800 Zulu time",
-      "Maximum visibility will be about 1,800 feet"
+      "From 1800 in the local time of the reporting station",
+      "From 1800 UTC, all prior conditions are replaced"
     ],
-    "a": 1,
+    "a": 3,
     "e": "FM gives a time in UTC after which all preceding forecast conditions are fully superseded.",
     "acs": "UA.III.A"
   },
@@ -546,10 +546,10 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "'TEMPO' in a TAF indicates conditions that:",
     "c": [
-      "Persist for more than half of the forecast period overall",
+      "Apply only during a temperature inversion near the surface",
       "Are permanent for the entire valid period covered by the forecast",
       "Last under 60 minutes each and total less than half the period",
-      "Apply only during a temperature inversion near the surface"
+      "Persist for more than half of the forecast period overall"
     ],
     "a": 2,
     "e": "TEMPO marks brief fluctuations, each under an hour, covering less than half the forecast period.",
@@ -562,8 +562,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Indicated altitude corrected for temperature only",
       "Pressure altitude corrected for non-standard temperature",
-      "MSL altitude minus terrain elevation",
-      "True altitude minus indicated altitude"
+      "True altitude minus indicated altitude",
+      "MSL altitude minus terrain elevation"
     ],
     "a": 1,
     "e": "Density altitude is pressure altitude adjusted for temperature, and it directly governs aircraft performance.",
@@ -576,8 +576,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Fog or low cloud formation",
       "Thunderstorm development",
-      "Icing above 10,000 ft",
-      "Severe turbulence"
+      "Severe turbulence",
+      "Icing above 10,000 ft"
     ],
     "a": 0,
     "e": "A small temperature-dewpoint spread means humidity near 100%, so fog or low stratus is likely.",
@@ -588,9 +588,9 @@ QUESTIONS_JSON = r'''[
     "s": "Hazards",
     "q": "The primary hazards near a thunderstorm include:",
     "c": [
-      "Reduced radio reception only",
-      "Severe turbulence, lightning, hail, and violent wind shear",
       "Slightly reduced visibility with only light, harmless turbulence",
+      "Severe turbulence, lightning, hail, and violent wind shear",
+      "Reduced radio reception only",
       "Higher humidity and minor GPS drift"
     ],
     "a": 1,
@@ -602,10 +602,10 @@ QUESTIONS_JSON = r'''[
     "s": "Atmosphere",
     "q": "The standard temperature lapse rate in the troposphere is about:",
     "c": [
-      "4 degrees C per 1,000 ft",
+      "1 degree C per 1,000 ft",
       "2 degrees C per 1,000 ft",
       "2 degrees F per 1,000 ft",
-      "1 degree C per 1,000 ft"
+      "4 degrees C per 1,000 ft"
     ],
     "a": 1,
     "e": "The standard lapse rate is roughly 2 degrees C per 1,000 ft, and deviation from it changes density altitude.",
@@ -617,11 +617,11 @@ QUESTIONS_JSON = r'''[
     "q": "A winds aloft forecast at 6,000 ft shows '2318-04'. The temperature is:",
     "c": [
       "-18 C",
-      "-4 C",
+      "+18 C",
       "+23 C",
-      "+18 C"
+      "-4 C"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The trailing signed digits are temperature in Celsius, so -04 means minus 4 degrees C at that altitude.",
     "acs": "UA.III.A"
   },
@@ -631,11 +631,11 @@ QUESTIONS_JSON = r'''[
     "q": "The dewpoint temperature is:",
     "c": [
       "The average of daily high and low",
-      "The temperature at 500 ft AGL",
       "The exact temperature at which ice crystals begin to form aloft",
-      "The temperature to which air must cool to become saturated"
+      "The temperature to which air must cool to become saturated",
+      "The temperature at 500 ft AGL"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Dewpoint is the temperature at which air reaches 100% humidity, and cooling below it causes condensation.",
     "acs": "UA.III.B"
   },
@@ -644,12 +644,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visibility",
     "q": "The minimum flight visibility for Part 107 operations is:",
     "c": [
-      "3 nautical miles",
       "3 statute miles",
-      "5 statute miles",
-      "1 statute mile"
+      "3 nautical miles",
+      "1 statute mile",
+      "5 statute miles"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station.",
     "acs": "UA.I.B"
   },
@@ -658,10 +658,10 @@ QUESTIONS_JSON = r'''[
     "s": "Cloud Clearance",
     "q": "Part 107 cloud clearance requirements are:",
     "c": [
-      "500 ft above and 1,000 ft below",
+      "1,000 ft below and 1 mile horizontal",
       "500 ft below and 2,000 ft horizontal from clouds",
       "Clear of clouds only",
-      "1,000 ft below and 1 mile horizontal"
+      "500 ft above and 1,000 ft below"
     ],
     "a": 1,
     "e": "You must stay at least 500 ft below and 2,000 ft horizontally from any cloud.",
@@ -672,12 +672,12 @@ QUESTIONS_JSON = r'''[
     "s": "Right-of-Way",
     "q": "When a manned aircraft approaches, the remote pilot must:",
     "c": [
-      "Yield the right-of-way and maneuver to avoid it",
-      "Hold altitude and broadcast a warning",
+      "Maintain course since the drone is smaller",
       "Climb above the manned aircraft",
-      "Maintain course since the drone is smaller"
+      "Yield the right-of-way and maneuver to avoid it",
+      "Hold altitude and broadcast a warning"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A small UAS must always yield the right-of-way to all manned aircraft.",
     "acs": "UA.I.B"
   },
@@ -687,9 +687,9 @@ QUESTIONS_JSON = r'''[
     "q": "Part 107 requires the remote PIC or visual observer to:",
     "c": [
       "Maintain unaided visual line of sight with the aircraft",
-      "Stay within 1 mile of launch",
       "Use FPV goggles at all times",
-      "Keep the drone within 400 ft horizontally"
+      "Keep the drone within 400 ft horizontally",
+      "Stay within 1 mile of launch"
     ],
     "a": 0,
     "e": "The aircraft must stay within unaided visual line of sight of the remote PIC or a visual observer.",
@@ -700,9 +700,9 @@ QUESTIONS_JSON = r'''[
     "s": "Night Operations",
     "q": "Under current Part 107 rules, night operations are permitted when:",
     "c": [
+      "Never, because operating a small unmanned aircraft at night is prohibited under Part 107",
       "A specific Part 107 waiver is obtained from the FAA for every individual night flight",
       "The flight remains under 100 feet above the ground and stays within 500 feet of the control station",
-      "Never, because operating a small unmanned aircraft at night is prohibited under Part 107",
       "The aircraft has anti-collision lights visible for 3 SM and the pilot has updated training"
     ],
     "a": 3,
@@ -715,11 +715,11 @@ QUESTIONS_JSON = r'''[
     "q": "Flying directly over people not part of the operation is:",
     "c": [
       "Always allowed as long as the aircraft remains below 400 feet above the ground",
+      "Allowed whenever the aircraft weighs more than 5 lb and carries a parachute",
       "Governed by operational categories based on injury risk, and may be prohibited",
-      "Allowed after giving the people a clear verbal warning before each pass overhead",
-      "Allowed whenever the aircraft weighs more than 5 lb and carries a parachute"
+      "Allowed after giving the people a clear verbal warning before each pass overhead"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Operations over people fall under Categories 1 through 4, set by the drone's weight and injury potential.",
     "acs": "UA.I.E"
   },
@@ -728,8 +728,8 @@ QUESTIONS_JSON = r'''[
     "s": "Careless Operation",
     "q": "Operating a small UAS in a careless or reckless manner:",
     "c": [
-      "Applies only to large manned aircraft, never drones",
       "Is allowed in Class G",
+      "Applies only to large manned aircraft, never drones",
       "Is prohibited and can lead to certificate action",
       "Is fine if no one is hurt"
     ],
@@ -742,12 +742,12 @@ QUESTIONS_JSON = r'''[
     "s": "One Aircraft",
     "q": "A remote pilot in command may operate, at one time:",
     "c": [
-      "Up to three at once",
-      "Only one small UAS",
       "Unlimited with a waiver",
-      "Two if both under 250 g"
+      "Two if both under 250 g",
+      "Up to three at once",
+      "Only one small UAS"
     ],
-    "a": 1,
+    "a": 3,
     "e": "A person may not act as remote PIC of more than one small UAS at the same time.",
     "acs": "UA.I.B"
   },
@@ -756,12 +756,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "Before each flight, the remote PIC must:",
     "c": [
-      "Inspect the aircraft to confirm it is in a condition for safe operation",
       "Verify only the battery charge level and skip the rest of the preflight inspection",
-      "Notify the local police department of the planned flight area",
-      "File a flight plan with the nearest air traffic control facility"
+      "Inspect the aircraft to confirm it is in a condition for safe operation",
+      "File a flight plan with the nearest air traffic control facility",
+      "Notify the local police department of the planned flight area"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A preflight inspection of the aircraft and systems is required to confirm it is safe to fly.",
     "acs": "UA.V.F"
   },
@@ -770,12 +770,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over Vehicles",
     "q": "Operating a small UAS from a moving vehicle under Part 107 is:",
     "c": [
+      "Always prohibited under all circumstances",
       "Permitted only over sparsely populated areas",
       "Permitted only during nighttime operations",
-      "Permitted anywhere as long as you keep it in sight",
-      "Always prohibited under all circumstances"
+      "Permitted anywhere as long as you keep it in sight"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Operation from a moving vehicle is allowed only over sparsely populated areas, not over people or congested areas.",
     "acs": "UA.I.B"
   },
@@ -784,12 +784,12 @@ QUESTIONS_JSON = r'''[
     "s": "Payload",
     "q": "Adding payload to a small UAS generally:",
     "c": [
+      "Improves stability with no downside",
       "Has no effect under 55 lb",
       "Reduces battery endurance and maneuverability",
-      "Increases maximum altitude",
-      "Improves stability with no downside"
+      "Increases maximum altitude"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Extra weight demands more power to stay airborne, cutting flight time and degrading climb and handling.",
     "acs": "UA.IV.A"
   },
@@ -798,12 +798,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "A payload that shifts the center of gravity out of limits will:",
     "c": [
-      "Make the aircraft harder to control and possibly unstable",
-      "Increase battery life by spreading the load across the airframe",
       "Have no aerodynamic effect as long as it stays under 55 lb total",
-      "Improve handling by lowering the aircraft's overall center of mass"
+      "Improve handling by lowering the aircraft's overall center of mass",
+      "Make the aircraft harder to control and possibly unstable",
+      "Increase battery life by spreading the load across the airframe"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A center of gravity outside limits degrades stability and control and can make the aircraft unflyable.",
     "acs": "UA.IV.A"
   },
@@ -813,11 +813,11 @@ QUESTIONS_JSON = r'''[
     "q": "On a hot day at high elevation, a multirotor UAS will:",
     "c": [
       "Be unaffected because it is electric",
-      "Produce less lift and need more power to hover",
+      "Climb faster",
       "Hover more efficiently in warm air",
-      "Climb faster"
+      "Produce less lift and need more power to hover"
     ],
-    "a": 1,
+    "a": 3,
     "e": "High density altitude means thinner air and less lift, so the aircraft works harder and flies for less time.",
     "acs": "UA.IV.A"
   },
@@ -826,12 +826,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery",
     "q": "Operating lithium-polymer batteries in cold temperatures usually:",
     "c": [
-      "Has no effect",
-      "Reduces available capacity and flight time",
       "Increases capacity",
-      "Permanently prevents the motors from arming at all"
+      "Permanently prevents the motors from arming at all",
+      "Reduces available capacity and flight time",
+      "Has no effect"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Cold slows battery chemistry, lowering usable capacity and shortening flight time.",
     "acs": "UA.IV.A"
   },
@@ -842,10 +842,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "100 lb",
       "No limit",
-      "Less than 55 lb",
-      "25 lb"
+      "25 lb",
+      "Less than 55 lb"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Part 107 covers only small unmanned aircraft weighing less than 55 lb including everything on board.",
     "acs": "UA.IV.A"
   },
@@ -854,9 +854,9 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "Flying into a strong headwind will:",
     "c": [
-      "Improve the GPS accuracy of the aircraft",
-      "Increase power demand and reduce range and endurance",
       "Increase total flight time over the ground",
+      "Increase power demand and reduce range and endurance",
+      "Improve the GPS accuracy of the aircraft",
       "Have no measurable effect on the battery during the flight"
     ],
     "a": 1,
@@ -868,12 +868,12 @@ QUESTIONS_JSON = r'''[
     "s": "Stability",
     "q": "Stable atmospheric conditions are usually associated with:",
     "c": [
+      "Smooth air, layered clouds, and often poorer visibility",
       "Severe wind shear",
-      "Strong turbulence, gusty winds, and towering cumulus clouds",
       "Rapidly building thunderstorms",
-      "Smooth air, layered clouds, and often poorer visibility"
+      "Strong turbulence, gusty winds, and towering cumulus clouds"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A stable atmosphere resists vertical motion, giving smooth air, stratiform clouds, and often haze.",
     "acs": "UA.IV.A"
   },
@@ -883,11 +883,11 @@ QUESTIONS_JSON = r'''[
     "q": "A payload mounted far from the center of a multirotor most likely causes:",
     "c": [
       "A higher top speed because the offset weight streamlines the airframe",
+      "Constant attitude correction, raising power use and wear",
       "Improved efficiency since the motors share the load more evenly",
-      "Longer flight time as the aircraft needs fewer control inputs",
-      "Constant attitude correction, raising power use and wear"
+      "Longer flight time as the aircraft needs fewer control inputs"
     ],
-    "a": 3,
+    "a": 1,
     "e": "An off-center load forces continuous attitude correction, wasting power and stressing the motors.",
     "acs": "UA.IV.A"
   },
@@ -896,12 +896,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maximum Weight",
     "q": "Exceeding the manufacturer's maximum takeoff weight is likely to:",
     "c": [
+      "Improve wind resistance by giving the aircraft more mass",
       "Raise the service ceiling the aircraft can safely reach",
       "Degrade climb performance and may prevent safe flight",
-      "Improve wind resistance by giving the aircraft more mass",
       "Extend battery life by spreading the load more evenly"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Overloading past the manufacturer's limit cuts climb capability and can make safe flight impossible.",
     "acs": "UA.IV.A"
   },
@@ -911,11 +911,11 @@ QUESTIONS_JSON = r'''[
     "q": "A Part 107 Certificate of Waiver allows a remote pilot to:",
     "c": [
       "Skip the initial knowledge test as long as another certificated pilot is present",
-      "Deviate from certain operating rules when the FAA finds the operation can be conducted safely",
       "Ignore any Part 107 operating rule at the pilot's own discretion during the course of the flight",
+      "Deviate from certain operating rules when the FAA finds the operation can be conducted safely",
       "Operate the aircraft without registering it or marking it with a registration number"
     ],
-    "a": 1,
+    "a": 2,
     "e": "A waiver permits deviation from specific waivable rules only when the FAA is satisfied the operation can be done safely.",
     "acs": "UA.I.D"
   },
@@ -924,10 +924,10 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization vs Waiver",
     "q": "Entering controlled airspace needs an airspace authorization. To deviate from an operating rule such as flying beyond visual line of sight, you need:",
     "c": [
-      "A second authorization",
+      "A medical certificate",
       "A waiver",
-      "A TFR",
-      "A medical certificate"
+      "A second authorization",
+      "A TFR"
     ],
     "a": 1,
     "e": "Airspace access is granted by an authorization, while permission to deviate from an operating rule comes from a waiver.",
@@ -938,12 +938,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visual Observer",
     "q": "If an operation uses a visual observer, that person must:",
     "c": [
-      "Remain at least 1 statute mile away from the aircraft at all times",
-      "Hold a separate remote pilot certificate issued under Part 107 of the regulations",
       "Be able to see the aircraft and stay in communication with the remote PIC",
-      "Take over flying the controls whenever the remote pilot becomes busy"
+      "Take over flying the controls whenever the remote pilot becomes busy",
+      "Remain at least 1 statute mile away from the aircraft at all times",
+      "Hold a separate remote pilot certificate issued under Part 107 of the regulations"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A visual observer keeps the aircraft in sight and stays in communication with the remote PIC to support see-and-avoid.",
     "acs": "UA.I.B"
   },
@@ -952,9 +952,9 @@ QUESTIONS_JSON = r'''[
     "s": "Carriage of Property",
     "q": "Transporting another person's property by drone for compensation under Part 107 is:",
     "c": [
+      "Always prohibited, because Part 107 does not permit carrying property for hire",
       "Allowed only above 400 feet so the aircraft stays clear of people below",
       "Allowed across state lines without any limit on the total takeoff weight",
-      "Always prohibited, because Part 107 does not permit carrying property for hire",
       "Allowed only within one state, under 55 lb total, with no hazardous materials"
     ],
     "a": 3,
@@ -967,11 +967,11 @@ QUESTIONS_JSON = r'''[
     "q": "A small UAS operated under Part 107 may carry:",
     "c": [
       "Hazardous materials if under 5 lb",
+      "Cargo, but never hazardous materials",
       "Any cargo without restriction",
-      "Hazardous materials with a waiver only",
-      "Cargo, but never hazardous materials"
+      "Hazardous materials with a waiver only"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Part 107 prohibits carrying hazardous materials regardless of weight.",
     "acs": "UA.I.B"
   },
@@ -994,12 +994,12 @@ QUESTIONS_JSON = r'''[
     "s": "English Requirement",
     "q": "To be eligible for a remote pilot certificate, an applicant must:",
     "c": [
-      "Be able to read, speak, write, and understand English",
+      "Own an aircraft that is registered with the FAA",
       "Already hold a private pilot certificate",
       "Be a United States citizen or lawful permanent resident",
-      "Own an aircraft that is registered with the FAA"
+      "Be able to read, speak, write, and understand English"
     ],
-    "a": 0,
+    "a": 3,
     "e": "English proficiency in reading, speaking, writing, and understanding is an eligibility requirement for the certificate.",
     "acs": "UA.I.C"
   },
@@ -1009,8 +1009,8 @@ QUESTIONS_JSON = r'''[
     "q": "When asked by the FAA, the remote PIC must:",
     "c": [
       "Refer the inspector to the drone manufacturer for any compliance questions",
-      "Decline to cooperate or answer questions until the FAA produces a court-issued warrant",
       "Provide a written flight plan filed in advance with the local control tower",
+      "Decline to cooperate or answer questions until the FAA produces a court-issued warrant",
       "Present the remote pilot certificate and allow inspection of the aircraft and records"
     ],
     "a": 3,
@@ -1022,12 +1022,12 @@ QUESTIONS_JSON = r'''[
     "s": "Registration Marking",
     "q": "The registration number issued to a small unmanned aircraft must be:",
     "c": [
-      "Kept only in the pilot's records",
-      "Marked on the exterior of the aircraft and legible",
       "Painted in red letters at least 3 inches tall",
-      "Broadcast over radio before flight"
+      "Broadcast over radio before flight",
+      "Kept only in the pilot's records",
+      "Marked on the exterior of the aircraft and legible"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The registration number must be displayed on the aircraft's exterior surface and be readable.",
     "acs": "UA.I.B"
   },
@@ -1038,8 +1038,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "The life of the aircraft",
       "3 years",
-      "1 year",
-      "5 years"
+      "5 years",
+      "1 year"
     ],
     "a": 1,
     "e": "Small unmanned aircraft registration must be renewed every 3 years.",
@@ -1051,9 +1051,9 @@ QUESTIONS_JSON = r'''[
     "q": "Dropping an object from a small UAS in flight is:",
     "c": [
       "Allowed if reasonable precautions are taken to avoid injury or damage",
-      "Allowed only over open water and well clear of any vessels or swimmers below",
+      "Always prohibited under Part 107 regardless of the precautions that are taken",
       "Allowed only after obtaining a specific waiver from the FAA for each operation",
-      "Always prohibited under Part 107 regardless of the precautions that are taken"
+      "Allowed only over open water and well clear of any vessels or swimmers below"
     ],
     "a": 0,
     "e": "You may drop an object as long as reasonable precautions prevent it from creating an undue hazard to people or property.",
@@ -1064,12 +1064,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "Before each Part 107 flight, the remote PIC must assess:",
     "c": [
-      "The operating environment, including airspace, weather, and obstacles",
+      "The pilot's certificate expiration date and registration number",
       "Only the battery charge level, since the aircraft software checks everything else",
-      "The current resale value of the aircraft and its installed payload",
-      "The pilot's certificate expiration date and registration number"
+      "The operating environment, including airspace, weather, and obstacles",
+      "The current resale value of the aircraft and its installed payload"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A preflight assessment of local airspace, weather, terrain, and obstacles is required before every operation.",
     "acs": "UA.I.B"
   },
@@ -1078,12 +1078,12 @@ QUESTIONS_JSON = r'''[
     "s": "Other Laws",
     "q": "Complying with Part 107:",
     "c": [
-      "Means you do not have to be aware of any local rules",
-      "Replaces the need to get permission from the landowner first",
       "Overrides all conflicting state and local laws automatically in every case",
-      "Does not exempt you from state or local privacy and trespass laws"
+      "Does not exempt you from state or local privacy and trespass laws",
+      "Means you do not have to be aware of any local rules",
+      "Replaces the need to get permission from the landowner first"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Federal Part 107 governs the airspace operation but does not preempt state or local privacy, trespass, and similar laws.",
     "acs": "UA.I.A"
   },
@@ -1092,12 +1092,12 @@ QUESTIONS_JSON = r'''[
     "s": "Single Remote PIC",
     "q": "For every Part 107 operation there must be:",
     "c": [
-      "At least two certificated remote pilots present at the control station",
-      "A licensed aircraft mechanic on site for the duration of the flight",
       "An air traffic controller assigned to monitor the entire operation",
-      "A designated remote PIC who is the final authority for that flight"
+      "A designated remote PIC who is the final authority for that flight",
+      "A licensed aircraft mechanic on site for the duration of the flight",
+      "At least two certificated remote pilots present at the control station"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Each operation must have one remote PIC who is directly responsible for and the final authority over that flight.",
     "acs": "UA.I.B"
   },
@@ -1106,9 +1106,9 @@ QUESTIONS_JSON = r'''[
     "s": "TRUST",
     "q": "The TRUST test is intended for:",
     "c": [
+      "Air traffic controllers who manage drone traffic near airports",
       "All Part 107 applicants, in place of the knowledge test",
       "Manned aircraft pilots seeking an additional drone rating",
-      "Air traffic controllers who manage drone traffic near airports",
       "Recreational flyers, not Part 107 commercial operators"
     ],
     "a": 3,
@@ -1120,12 +1120,12 @@ QUESTIONS_JSON = r'''[
     "s": "Knowledge Test",
     "q": "The Part 107 initial knowledge test is taken:",
     "c": [
+      "Online from home using a webcam while a remote proctor monitors the session live",
       "At an FAA-approved testing center with government-issued photo identification",
-      "By mail, by returning a completed answer sheet to the FAA within sixty days",
       "At any towered airport after scheduling an appointment with the control tower staff",
-      "Online from home using a webcam while a remote proctor monitors the session live"
+      "By mail, by returning a completed answer sheet to the FAA within sixty days"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The initial knowledge test is proctored at an FAA-approved testing center and requires valid photo identification.",
     "acs": "UA.I.C"
   },
@@ -1134,10 +1134,10 @@ QUESTIONS_JSON = r'''[
     "s": "Certificate Application",
     "q": "After passing the knowledge test, an applicant obtains the certificate by:",
     "c": [
-      "Waiting two years for the FAA to mail it automatically",
       "Paying a one-time fee directly to the drone manufacturer",
+      "Registering the drone, which automatically issues the certificate",
       "Applying through IACRA and completing TSA security vetting",
-      "Registering the drone, which automatically issues the certificate"
+      "Waiting two years for the FAA to mail it automatically"
     ],
     "a": 2,
     "e": "The applicant files through IACRA, and after TSA vetting receives a temporary then a permanent remote pilot certificate.",
@@ -1150,8 +1150,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "The prohibition on carrying hazardous materials",
       "Flight over people",
-      "Operation of the control station from a moving vehicle",
-      "Beyond visual line of sight"
+      "Beyond visual line of sight",
+      "Operation of the control station from a moving vehicle"
     ],
     "a": 0,
     "e": "Many operating rules are waivable, but the ban on carrying hazardous materials is not.",
@@ -1162,12 +1162,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "A drone that does not broadcast standard Remote ID on its own can still comply by:",
     "c": [
-      "Registering the same aircraft twice under two different owners",
-      "Flying only at night with anti-collision lighting visible for 3 statute miles",
+      "Keeping the aircraft below 200 feet above the ground at all times",
       "Attaching a Remote ID broadcast module, or flying only within a FRIA",
-      "Keeping the aircraft below 200 feet above the ground at all times"
+      "Registering the same aircraft twice under two different owners",
+      "Flying only at night with anti-collision lighting visible for 3 statute miles"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Comply via a standard Remote ID drone, a broadcast module, or flying inside a FRIA.",
     "acs": "UA.I.F"
   },
@@ -1177,8 +1177,8 @@ QUESTIONS_JSON = r'''[
     "q": "A FAA-Recognized Identification Area (FRIA) is:",
     "c": [
       "A defined area where drones without Remote ID may be flown",
-      "A permanent no-fly zone closed to all unmanned aircraft",
       "A type of controlled airspace requiring ATC authorization",
+      "A permanent no-fly zone closed to all unmanned aircraft",
       "A pilot certification level above the basic remote certificate"
     ],
     "a": 0,
@@ -1190,8 +1190,8 @@ QUESTIONS_JSON = r'''[
     "s": "Registration Scope",
     "q": "Under Part 107, registration is handled so that:",
     "c": [
-      "Registration is not required",
       "One number covers an entire fleet",
+      "Registration is not required",
       "Only the pilot is registered",
       "Each aircraft is registered individually"
     ],
@@ -1204,12 +1204,12 @@ QUESTIONS_JSON = r'''[
     "s": "Falsification",
     "q": "Falsifying any record or report required under Part 107 is:",
     "c": [
-      "Permitted for minor clerical errors that are later corrected",
-      "Allowed as long as the falsification was not intentional",
       "Prohibited and grounds for certificate action or penalties",
-      "Only a concern for manned pilots, not remote pilots"
+      "Permitted for minor clerical errors that are later corrected",
+      "Only a concern for manned pilots, not remote pilots",
+      "Allowed as long as the falsification was not intentional"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Making a fraudulent or false record or report is prohibited and can result in suspension, revocation, or penalties.",
     "acs": "UA.I.A"
   },
@@ -1220,10 +1220,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Required only for pilots who intend to fly at night or over people",
       "A paid in-person exam taken at an FAA-approved testing center",
-      "Completed online for free, with no proctored retest",
-      "Required every year and renewed before the prior one lapses"
+      "Required every year and renewed before the prior one lapses",
+      "Completed online for free, with no proctored retest"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Currency is kept through free online recurrent training every 24 calendar months, with no proctored retest.",
     "acs": "UA.I.C"
   },
@@ -1232,12 +1232,12 @@ QUESTIONS_JSON = r'''[
     "s": "Certificate Validity",
     "q": "A remote pilot certificate itself:",
     "c": [
-      "Must be renewed every year by submitting a new application to the FAA",
-      "Is valid for life with no further requirements once it is issued",
       "Expires every 2 years and must be reissued only after a proctored retest at a center",
-      "Does not expire, but the holder must stay current with recurrent training"
+      "Must be renewed every year by submitting a new application to the FAA",
+      "Does not expire, but the holder must stay current with recurrent training",
+      "Is valid for life with no further requirements once it is issued"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The certificate does not expire, but the pilot must complete recurrent training to remain eligible to operate.",
     "acs": "UA.I.C"
   },
@@ -1246,10 +1246,10 @@ QUESTIONS_JSON = r'''[
     "s": "Recreational Exception",
     "q": "A person flying purely for recreation may instead operate under:",
     "c": [
-      "No rules at all, since recreation is completely exempt from oversight",
       "Part 107 rules only, with no recreational option available to anyone",
+      "A manned-aircraft pilot certificate issued by the FAA after a checkride",
       "The recreational flyer exception, with its own separate rules",
-      "A manned-aircraft pilot certificate issued by the FAA after a checkride"
+      "No rules at all, since recreation is completely exempt from oversight"
     ],
     "a": 2,
     "e": "Recreational flying uses the limited recreational exception, which has its own rules separate from Part 107.",
@@ -1260,12 +1260,12 @@ QUESTIONS_JSON = r'''[
     "s": "Accident Reporting",
     "q": "A reportable Part 107 accident must be reported to:",
     "c": [
-      "No one",
       "The manufacturer",
-      "The local police department only, in person",
-      "The FAA, within 10 calendar days"
+      "The FAA, within 10 calendar days",
+      "No one",
+      "The local police department only, in person"
     ],
-    "a": 3,
+    "a": 1,
     "e": "A qualifying accident is reported to the FAA within 10 calendar days of the operation.",
     "acs": "UA.I.A"
   },
@@ -1274,12 +1274,12 @@ QUESTIONS_JSON = r'''[
     "s": "Operating Limitations",
     "q": "Core Part 107 operating limits include a maximum altitude of 400 ft AGL, a maximum groundspeed of 87 knots, and:",
     "c": [
-      "A maximum flight time of 30 minutes",
-      "A minimum altitude of 100 ft",
       "A minimum flight visibility of 3 statute miles",
-      "A maximum weight of 25 lb"
+      "A maximum flight time of 30 minutes",
+      "A maximum weight of 25 lb",
+      "A minimum altitude of 100 ft"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Among the core limits are 400 ft AGL, 87 knots, and at least 3 statute miles of flight visibility from the control station.",
     "acs": "UA.I.B"
   },
@@ -1288,12 +1288,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class B",
     "q": "Class B airspace surrounds the busiest airports, and for a Part 107 pilot it:",
     "c": [
-      "Requires ATC authorization before any operation",
       "Is uncontrolled",
-      "Allows flight only at night",
-      "Is open to drones below 400 ft without authorization"
+      "Is open to drones below 400 ft without authorization",
+      "Requires ATC authorization before any operation",
+      "Allows flight only at night"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Class B is controlled airspace, so any operation inside it requires prior ATC authorization.",
     "acs": "UA.II.A"
   },
@@ -1316,12 +1316,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class C",
     "q": "A standard Class C airspace is shaped as:",
     "c": [
+      "Three concentric magenta rings of increasing radius around the airport",
       "A square box about 4 NM on each side centered on the primary airport",
-      "An inner surface core near 5 NM and an outer shelf near 10 NM",
       "A single circular ring with a 10 NM radius extending up from the surface",
-      "Three concentric magenta rings of increasing radius around the airport"
+      "An inner surface core near 5 NM and an outer shelf near 10 NM"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Class C has an inner core to the surface near 5 NM and a raised outer shelf near 10 NM.",
     "acs": "UA.II.A"
   },
@@ -1344,9 +1344,9 @@ QUESTIONS_JSON = r'''[
     "s": "Class A",
     "q": "Class A airspace begins at:",
     "c": [
-      "The surface at major airports",
-      "18,000 ft MSL",
       "14,500 ft MSL",
+      "18,000 ft MSL",
+      "The surface at major airports",
       "10,000 ft MSL"
     ],
     "a": 1,
@@ -1359,11 +1359,11 @@ QUESTIONS_JSON = r'''[
     "q": "Class G airspace is:",
     "c": [
       "Controlled airspace that always begins at 1,200 ft above the ground",
-      "Airspace that is restricted to manned aircraft only",
       "Uncontrolled airspace where Part 107 needs no ATC authorization",
-      "Controlled airspace that requires ATC authorization to enter"
+      "Controlled airspace that requires ATC authorization to enter",
+      "Airspace that is restricted to manned aircraft only"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Class G is uncontrolled, so flight there needs no ATC authorization, though all other Part 107 rules still apply.",
     "acs": "UA.II.A"
   },
@@ -1373,11 +1373,11 @@ QUESTIONS_JSON = r'''[
     "q": "A Restricted Area such as R-2503 indicates airspace that:",
     "c": [
       "Is permanently closed to every aircraft, military and civil alike, at all altitudes",
+      "Is uncontrolled airspace that any aircraft may enter without prior coordination",
       "Contains hazards like artillery or missile testing and may be entered only with permission",
-      "Is reserved exclusively for unmanned aircraft operating under Part 107 rules",
-      "Is uncontrolled airspace that any aircraft may enter without prior coordination"
+      "Is reserved exclusively for unmanned aircraft operating under Part 107 rules"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Restricted areas contain hazards to flight and may be entered only with permission from the controlling agency.",
     "acs": "UA.II.A"
   },
@@ -1386,12 +1386,12 @@ QUESTIONS_JSON = r'''[
     "s": "Warning Area",
     "q": "A Warning Area is generally located:",
     "c": [
-      "Over open water, starting 3 NM off the coast",
       "At smaller airports that have no control towers",
-      "Over major cities",
-      "Inside Class B only"
+      "Over open water, starting 3 NM off the coast",
+      "Inside Class B only",
+      "Over major cities"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Warning areas extend outward from the coast over international waters and contain activity hazardous to aircraft.",
     "acs": "UA.II.A"
   },
@@ -1400,12 +1400,12 @@ QUESTIONS_JSON = r'''[
     "s": "Alert Area",
     "q": "An Alert Area on a sectional chart warns of:",
     "c": [
-      "A high volume of pilot training or unusual aerial activity",
-      "A noise-sensitive zone where engine power should be reduced",
       "A permanent flight ban that applies to all aircraft at all times",
-      "Live weapons testing conducted by the military at scheduled times"
+      "Live weapons testing conducted by the military at scheduled times",
+      "A noise-sensitive zone where engine power should be reduced",
+      "A high volume of pilot training or unusual aerial activity"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Alert areas warn of heavy training or unusual activity, where all pilots share responsibility for vigilance.",
     "acs": "UA.II.A"
   },
@@ -1414,12 +1414,12 @@ QUESTIONS_JSON = r'''[
     "s": "National Security Area",
     "q": "A National Security Area (NSA) asks pilots to:",
     "c": [
-      "File a flight plan",
       "Obtain a waiver in every case",
       "Voluntarily avoid flying in the area",
-      "Treat it as prohibited airspace"
+      "Treat it as prohibited airspace",
+      "File a flight plan"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Pilots are requested to voluntarily avoid an NSA, and flight there can be temporarily prohibited by NOTAM.",
     "acs": "UA.II.A"
   },
@@ -1442,12 +1442,12 @@ QUESTIONS_JSON = r'''[
     "s": "VIP TFR",
     "q": "A TFR protecting the movement of the President:",
     "c": [
-      "Creates a no-fly area drones may not enter without specific authorization",
-      "Applies only to aircraft operating above 10,000 feet mean sea level",
       "Can be safely ignored by small unmanned aircraft as long as they fly below 400 feet",
-      "Is published only after the protected movement has already taken place"
+      "Applies only to aircraft operating above 10,000 feet mean sea level",
+      "Is published only after the protected movement has already taken place",
+      "Creates a no-fly area drones may not enter without specific authorization"
     ],
-    "a": 0,
+    "a": 3,
     "e": "VIP movement TFRs create restricted airspace that small UAS must not enter without specific authorization.",
     "acs": "UA.II.A"
   },
@@ -1456,12 +1456,12 @@ QUESTIONS_JSON = r'''[
     "s": "Non-Towered Airport",
     "q": "Operating in Class G near an airport without a control tower, you:",
     "c": [
-      "May fly through the traffic pattern freely as long as you yield to manned aircraft",
-      "Must contact the nearest air traffic control tower for clearance before launch",
       "Need no authorization but must stay clear of the traffic pattern and not interfere",
-      "Need prior ATC authorization just as you would inside controlled airspace"
+      "Must contact the nearest air traffic control tower for clearance before launch",
+      "Need prior ATC authorization just as you would inside controlled airspace",
+      "May fly through the traffic pattern freely as long as you yield to manned aircraft"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Class G needs no authorization, but you must avoid the traffic pattern and never interfere with manned aircraft.",
     "acs": "UA.II.B"
   },
@@ -1470,9 +1470,9 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization Source",
     "q": "When automatic LAANC is not available, airspace authorization is requested through:",
     "c": [
-      "The drone manufacturer",
-      "A flight service station by phone",
       "The local police department",
+      "A flight service station by phone",
+      "The drone manufacturer",
       "The FAA DroneZone portal"
     ],
     "a": 3,
@@ -1484,12 +1484,12 @@ QUESTIONS_JSON = r'''[
     "s": "UAS Facility Map",
     "q": "The altitude printed in a UAS Facility Map grid square is:",
     "c": [
-      "A mandatory minimum altitude that drones must climb to before flying",
-      "The floor of the overlying Class E airspace in that grid square",
       "The airport elevation measured at the center of the nearest field",
-      "The maximum altitude for automatic LAANC authorization there"
+      "The maximum altitude for automatic LAANC authorization there",
+      "A mandatory minimum altitude that drones must climb to before flying",
+      "The floor of the overlying Class E airspace in that grid square"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The grid value is the ceiling up to which LAANC will automatically approve operations in that square.",
     "acs": "UA.II.B"
   },
@@ -1498,12 +1498,12 @@ QUESTIONS_JSON = r'''[
     "s": "Sectional Chart",
     "q": "For planning a Part 107 flight, the most appropriate chart is the:",
     "c": [
-      "VFR sectional chart",
+      "Airport diagram only",
       "IFR high-altitude en route chart",
       "Surface analysis chart",
-      "Airport diagram only"
+      "VFR sectional chart"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The VFR sectional shows airspace, obstacles, and terrain at the scale a small UAS operation needs.",
     "acs": "UA.II.A"
   },
@@ -1514,8 +1514,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "The aircraft's local time at its current position",
       "Coordinated Universal Time, marked with a Z",
-      "Eastern time, regardless of the station location",
-      "Local time only, set to the reporting station"
+      "Local time only, set to the reporting station",
+      "Eastern time, regardless of the station location"
     ],
     "a": 1,
     "e": "Aviation uses Coordinated Universal Time, written with a Z, so reports are unambiguous across time zones.",
@@ -1527,11 +1527,11 @@ QUESTIONS_JSON = r'''[
     "q": "A Controlled Firing Area (CFA) is:",
     "c": [
       "A type of Class C airspace surrounding certain military training installations",
-      "Not charted, because its activity stops whenever an aircraft approaches",
       "Marked on the sectional in solid red as airspace that is closed to all traffic",
-      "Always active and prohibited to civil aircraft, including small unmanned aircraft"
+      "Always active and prohibited to civil aircraft, including small unmanned aircraft",
+      "Not charted, because its activity stops whenever an aircraft approaches"
     ],
-    "a": 1,
+    "a": 3,
     "e": "CFAs are not depicted because their activity ceases as soon as an aircraft is detected nearby.",
     "acs": "UA.II.A"
   },
@@ -1540,12 +1540,12 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization Scope",
     "q": "If your planned path clips a corner of Class D airspace, you:",
     "c": [
-      "Still need authorization for that airspace",
-      "Only need to stay under 200 ft",
       "May pass through briefly without authorization",
-      "Need a waiver instead"
+      "Need a waiver instead",
+      "Still need authorization for that airspace",
+      "Only need to stay under 200 ft"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Any entry into controlled airspace, even briefly, requires prior authorization.",
     "acs": "UA.II.B"
   },
@@ -1554,12 +1554,12 @@ QUESTIONS_JSON = r'''[
     "s": "NOTAM",
     "q": "Current NOTAMs and TFRs are best checked before flight:",
     "c": [
-      "Through an official FAA source such as a preflight briefing or NOTAM search",
-      "From the drone manufacturer's customer support line shortly before each planned flight",
       "By word of mouth from other pilots flying in the same general area",
-      "The day after the flight, once the official records have been updated"
+      "The day after the flight, once the official records have been updated",
+      "From the drone manufacturer's customer support line shortly before each planned flight",
+      "Through an official FAA source such as a preflight briefing or NOTAM search"
     ],
-    "a": 0,
+    "a": 3,
     "e": "NOTAMs and TFRs change often, so verify them from an official FAA source close to flight time.",
     "acs": "UA.II.B"
   },
@@ -1568,9 +1568,9 @@ QUESTIONS_JSON = r'''[
     "s": "Class E Surface",
     "q": "A dashed magenta boundary at an airport tells a Part 107 pilot that:",
     "c": [
+      "It is Class B airspace requiring a specific clearance before any operation",
       "The surrounding area is uncontrolled Class G up to 1,200 feet above the ground",
       "Flight is prohibited within the boundary unless a specific waiver has been issued",
-      "It is Class B airspace requiring a specific clearance before any operation",
       "Class E reaches the surface there and authorization is required"
     ],
     "a": 3,
@@ -1583,11 +1583,11 @@ QUESTIONS_JSON = r'''[
     "q": "A small UAS operating in authorized Class C airspace:",
     "c": [
       "Must file an IFR flight plan before entering the airspace",
-      "Must squawk 7500 on the transponder for the duration of the flight",
+      "Does not need a transponder, but does need the authorization",
       "Must carry a Mode C transponder and reply to interrogations",
-      "Does not need a transponder, but does need the authorization"
+      "Must squawk 7500 on the transponder for the duration of the flight"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Small UAS are not required to carry transponders, but they still need ATC authorization to enter Class C.",
     "acs": "UA.II.B"
   },
@@ -1597,11 +1597,11 @@ QUESTIONS_JSON = r'''[
     "q": "Drone flight in the inner Flight Restricted Zone of the Washington, DC area is:",
     "c": [
       "Allowed only at night",
+      "The same as any Class G",
       "Effectively closed without special approval",
-      "Completely unrestricted anywhere under 400 ft",
-      "The same as any Class G"
+      "Completely unrestricted anywhere under 400 ft"
     ],
-    "a": 1,
+    "a": 2,
     "e": "The DC Flight Restricted Zone bars drone flight without special authorization.",
     "acs": "UA.II.A"
   },
@@ -1610,12 +1610,12 @@ QUESTIONS_JSON = r'''[
     "s": "Floor and Ceiling",
     "q": "On a sectional, an airspace tag reading 40 over SFC means the airspace:",
     "c": [
-      "Requires a 40-knot minimum speed at all times",
-      "Tops out at 400 ft",
       "Extends from the surface up to 4,000 ft MSL",
-      "Is 40 NM wide"
+      "Tops out at 400 ft",
+      "Is 40 NM wide",
+      "Requires a 40-knot minimum speed at all times"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The top number is the ceiling in hundreds of feet MSL, and SFC means it starts at the surface.",
     "acs": "UA.II.A"
   },
@@ -1624,12 +1624,12 @@ QUESTIONS_JSON = r'''[
     "s": "Prohibited Area",
     "q": "A Prohibited Area, such as the one over the White House, is:",
     "c": [
-      "Open to flight once a LAANC authorization has been obtained",
       "Closed to all aircraft, with no authorization available",
       "A military training area that is active only during daytime hours",
+      "Open to flight once a LAANC authorization has been obtained",
       "Open to drones below 400 feet above the ground at any time"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Prohibited areas are closed to all aircraft including small UAS, and no authorization is available.",
     "acs": "UA.II.A"
   },
@@ -1638,12 +1638,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wildlife Areas",
     "q": "Charted wildlife refuges and similar areas remind pilots to:",
     "c": [
-      "Always obtain a Temporary Flight Restriction before operating nearby",
       "Treat the area as Class B airspace that requires an ATC clearance to enter",
-      "Avoid disturbing wildlife and maintain higher altitudes where requested",
-      "Land immediately and report their position to the managing federal agency"
+      "Always obtain a Temporary Flight Restriction before operating nearby",
+      "Land immediately and report their position to the managing federal agency",
+      "Avoid disturbing wildlife and maintain higher altitudes where requested"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Charts request that pilots avoid low flight over wildlife refuges to limit disturbance.",
     "acs": "UA.II.A"
   },
@@ -1652,12 +1652,12 @@ QUESTIONS_JSON = r'''[
     "s": "Yielding",
     "q": "When a manned aircraft is operating nearby in any airspace, the remote pilot must:",
     "c": [
-      "Continue if below 400 ft",
       "Yield the right of way and maneuver clear",
+      "Continue if below 400 ft",
       "Climb to be more visible",
       "Simply hold its current position and altitude"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Small UAS always yield the right of way to manned aircraft, regardless of airspace class.",
     "acs": "UA.I.B"
   },
@@ -1666,12 +1666,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "On a sectional chart, an airport shown in blue rather than magenta indicates it:",
     "c": [
+      "Is private",
       "Has an operating control tower",
-      "Is closed",
       "Has no runway lighting",
-      "Is private"
+      "Is closed"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Blue airport symbols have an operating control tower, while magenta airports do not.",
     "acs": "UA.II.B"
   },
@@ -1680,12 +1680,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "An obstacle drawn with a small star or radiating lines at its top indicates the obstacle is:",
     "c": [
-      "Temporary",
       "Lighted",
       "Under construction",
+      "Temporary",
       "Privately owned"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Radiating lines or a star at an obstacle symbol mean it is equipped with obstruction lighting.",
     "acs": "UA.II.B"
   },
@@ -1696,10 +1696,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "A power plant",
       "An airport",
-      "A single very tall tower",
-      "A group of obstacles"
+      "A group of obstacles",
+      "A single very tall tower"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A joined pair of obstacle symbols depicts a group of obstructions close together.",
     "acs": "UA.II.B"
   },
@@ -1708,12 +1708,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "In an airport data block on a sectional, the number that gives field elevation is the:",
     "c": [
-      "Traffic pattern altitude",
-      "Tower frequency",
       "Runway heading",
-      "Elevation in feet above mean sea level"
+      "Elevation in feet above mean sea level",
+      "Tower frequency",
+      "Traffic pattern altitude"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The airport data block lists field elevation in feet MSL along with runway and frequency information.",
     "acs": "UA.II.B"
   },
@@ -1722,12 +1722,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visual Checkpoint",
     "q": "A magenta flag symbol on a sectional chart marks a:",
     "c": [
-      "Prohibited area that bars all aircraft from entering it",
-      "Wind turbine farm marked as an obstruction to flight",
       "Seaplane base where takeoffs and landings on the water are conducted",
-      "Visual checkpoint used for reporting position or navigation"
+      "Prohibited area that bars all aircraft from entering it",
+      "Visual checkpoint used for reporting position or navigation",
+      "Wind turbine farm marked as an obstruction to flight"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A magenta flag denotes a visual checkpoint, a prominent landmark pilots use for position reporting.",
     "acs": "UA.II.A"
   },
@@ -1736,12 +1736,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "On a sectional chart, a VORTAC is shown as:",
     "c": [
-      "A dashed blue square drawn around the navigation facility and its service area",
       "A small magenta flag placed at the reporting point",
-      "A VOR compass rose symbol with added markings for the TACAN component",
-      "A plain magenta circle with no compass rose or added markings"
+      "A dashed blue square drawn around the navigation facility and its service area",
+      "A plain magenta circle with no compass rose or added markings",
+      "A VOR compass rose symbol with added markings for the TACAN component"
     ],
-    "a": 2,
+    "a": 3,
     "e": "A VORTAC combines a VOR with military TACAN, drawn as the VOR symbol with extra corner markings.",
     "acs": "UA.II.A"
   },
@@ -1751,11 +1751,11 @@ QUESTIONS_JSON = r'''[
     "q": "The compass rose drawn around a VOR on a sectional is oriented to:",
     "c": [
       "True north",
-      "Grid north",
       "The nearest runway",
-      "Magnetic north"
+      "Magnetic north",
+      "Grid north"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The VOR compass rose is aligned to magnetic north, which is why charts also show magnetic variation.",
     "acs": "UA.II.A"
   },
@@ -1766,10 +1766,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "State boundaries",
       "The outer edges of nearby restricted areas",
-      "Power lines",
-      "Victor airways used by other aircraft"
+      "Victor airways used by other aircraft",
+      "Power lines"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Victor airways are charted routes between VORs, and knowing them helps anticipate where manned traffic flies.",
     "acs": "UA.II.A"
   },
@@ -1779,11 +1779,11 @@ QUESTIONS_JSON = r'''[
     "q": "The graduated color tints on a sectional chart show:",
     "c": [
       "Airspace classes, with each class shown in a different color",
+      "Population density, with cities shown in the darkest shades",
       "Terrain elevation, with higher ground in darker shades",
-      "Weather patterns expected across the region during the day",
-      "Population density, with cities shown in the darkest shades"
+      "Weather patterns expected across the region during the day"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Elevation tints shade higher terrain in progressively darker colors so pilots can judge ground height at a glance.",
     "acs": "UA.II.B"
   },
@@ -1792,12 +1792,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "Detailed information about restricted and prohibited areas on a sectional is found:",
     "c": [
-      "On a separate weather chart",
       "Only in the legend",
       "In a tabulation along the chart border",
-      "Nowhere; it must be memorized"
+      "Nowhere; it must be memorized",
+      "On a separate weather chart"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Special use airspace details such as altitudes and times are listed in a tabulation block on the chart margin.",
     "acs": "UA.II.A"
   },
@@ -1806,12 +1806,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "A power transmission line that may be a hazard to low flight is charted as:",
     "c": [
-      "A solid blue band running along the full length of the wires",
+      "A line with small tower symbols where it is a known hazard",
       "A dashed magenta circle centered on the midpoint of the line",
       "A magenta flag symbol placed at each end of the transmission line",
-      "A line with small tower symbols where it is a known hazard"
+      "A solid blue band running along the full length of the wires"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Charted power lines and their support towers warn of wires that are a serious hazard to low-altitude flight.",
     "acs": "UA.II.B"
   },
@@ -1820,12 +1820,12 @@ QUESTIONS_JSON = r'''[
     "s": "Elevation",
     "q": "The Maximum Elevation Figure in a chart quadrangle is found by taking the highest obstacle or terrain and:",
     "c": [
-      "Adding a buffer, then rounding up to the next hundred feet",
       "Subtracting the nearest airport's published field elevation",
       "Converting the height from feet into nautical miles",
+      "Adding a buffer, then rounding up to the next hundred feet",
       "Dividing the result by two to allow for a safety margin"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The MEF is the highest terrain or obstacle in the quadrangle plus a buffer, in hundreds of feet MSL.",
     "acs": "UA.II.B"
   },
@@ -1834,12 +1834,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "A small letter R inside an airport symbol indicates the airport is:",
     "c": [
-      "A military base restricted to government aircraft only",
       "A seaplane base usable only by float-equipped aircraft",
       "Private, with restricted or prior-permission use",
-      "Closed permanently and no longer available for landing"
+      "Closed permanently and no longer available for landing",
+      "A military base restricted to government aircraft only"
     ],
-    "a": 2,
+    "a": 1,
     "e": "An R marks a private airport that requires prior permission, so it is not available for general public use.",
     "acs": "UA.II.B"
   },
@@ -1849,11 +1849,11 @@ QUESTIONS_JSON = r'''[
     "q": "When two numbers are printed at an obstacle, such as 2049 with 449 below in parentheses, the top number is the:",
     "c": [
       "The straight-line distance to the nearest airport",
-      "Obstacle lighting code",
       "Height above ground",
-      "Height of the top above mean sea level"
+      "Height of the top above mean sea level",
+      "Obstacle lighting code"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The top figure is the top of the obstacle in feet MSL, while the parenthetical figure is its height above ground.",
     "acs": "UA.II.B"
   },
@@ -1862,12 +1862,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In the METAR group 'KDEN 121753Z', the 121753Z means the report was taken on:",
     "c": [
-      "December 17th at the reporting station",
-      "The 12th of the month at 1753 local clock time",
       "The 12th day at 1753 Coordinated Universal Time",
+      "The 12th of the month at 1753 local clock time",
+      "December 17th at the reporting station",
       "12 minutes past 1753 in the local time of the station"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The first two digits are the day of the month and the next four are the time in Coordinated Universal Time.",
     "acs": "UA.III.A"
   },
@@ -1877,11 +1877,11 @@ QUESTIONS_JSON = r'''[
     "q": "In a METAR, the group 'A2992' is the:",
     "c": [
       "A ground visibility of exactly 29.92 statute miles",
-      "Altimeter setting of 29.92 inches of mercury",
       "Temperature of 29 degrees",
-      "Wind speed of 92 knots"
+      "Wind speed of 92 knots",
+      "Altimeter setting of 29.92 inches of mercury"
     ],
-    "a": 1,
+    "a": 3,
     "e": "An A followed by four digits is the altimeter setting in inches of mercury, here 29.92.",
     "acs": "UA.III.A"
   },
@@ -1890,9 +1890,9 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR the group '18/12' reports the:",
     "c": [
-      "Wind 180 at 12",
       "Visibility 18 and 12",
       "Time 1812",
+      "Wind 180 at 12",
       "Temperature 18 C and dewpoint 12 C"
     ],
     "a": 3,
@@ -1906,10 +1906,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "12 miles",
       "One or two miles",
-      "Half a nautical mile",
-      "One half statute mile"
+      "One half statute mile",
+      "Half a nautical mile"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Visibility in a METAR is given in statute miles, so 1/2SM is one half of a statute mile.",
     "acs": "UA.III.A"
   },
@@ -1918,12 +1918,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR present-weather field, 'BR' stands for:",
     "c": [
-      "Breezy",
-      "Broken clouds",
       "Mist",
-      "Brief rain"
+      "Broken clouds",
+      "Brief rain",
+      "Breezy"
     ],
-    "a": 2,
+    "a": 0,
     "e": "BR is the code for mist, a reduction in visibility from suspended water droplets, distinct from FG which is fog.",
     "acs": "UA.III.A"
   },
@@ -1933,11 +1933,11 @@ QUESTIONS_JSON = r'''[
     "q": "On a weather report, the difference between SCT and BKN is that:",
     "c": [
       "SCT always reports clouds higher than BKN does at the same site",
-      "They mean the same thing and are used interchangeably in reports",
+      "SCT is 3 to 4 eighths of cloud cover and BKN is 5 to 7 eighths",
       "BKN means no clouds at all while SCT means a fully overcast sky",
-      "SCT is 3 to 4 eighths of cloud cover and BKN is 5 to 7 eighths"
+      "They mean the same thing and are used interchangeably in reports"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Scattered is 3 to 4 eighths of sky cover, while broken is 5 to 7 eighths and counts as a ceiling.",
     "acs": "UA.III.A"
   },
@@ -1946,12 +1946,12 @@ QUESTIONS_JSON = r'''[
     "s": "Reports",
     "q": "The main difference between a METAR and a TAF is that:",
     "c": [
-      "Both are forecasts",
-      "A METAR is always a forecast, while a TAF is the observed weather",
       "A METAR reports observed conditions, while a TAF is a forecast",
-      "Both are observations"
+      "A METAR is always a forecast, while a TAF is the observed weather",
+      "Both are observations",
+      "Both are forecasts"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A METAR is an observation of current conditions, while a TAF forecasts conditions for an airport area.",
     "acs": "UA.III.A"
   },
@@ -1961,9 +1961,9 @@ QUESTIONS_JSON = r'''[
     "q": "A TAF typically forecasts conditions for an area around an airport of about:",
     "c": [
       "5 statute miles",
+      "1 mile",
       "50 miles",
-      "The whole state",
-      "1 mile"
+      "The whole state"
     ],
     "a": 0,
     "e": "A TAF applies to roughly a 5 statute mile radius around the airport for its valid period.",
@@ -1974,10 +1974,10 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "In a TAF, 'PROB30' indicates:",
     "c": [
-      "Conditions that will last for about 30 minutes",
       "A steady wind of about 30 knots at the surface",
+      "A forecast visibility of about 30 statute miles ahead",
       "A 30 percent probability of the stated conditions",
-      "A forecast visibility of about 30 statute miles ahead"
+      "Conditions that will last for about 30 minutes"
     ],
     "a": 2,
     "e": "PROB30 marks a 30 percent chance of the associated weather during that part of the forecast.",
@@ -1988,12 +1988,12 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "In a TAF, 'BECMG' is used when conditions are:",
     "c": [
-      "Gradually changing over a period to a new steady state",
       "Improving instantly the moment the change begins",
       "Brief, lasting under an hour within the forecast",
+      "Gradually changing over a period to a new steady state",
       "Not expected to be forecast at any point in the period"
     ],
-    "a": 0,
+    "a": 2,
     "e": "BECMG marks a gradual change to new conditions that are then expected to persist.",
     "acs": "UA.III.A"
   },
@@ -2002,9 +2002,9 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "A fast-moving cold front is most likely to bring:",
     "c": [
-      "Gradually lowering ceilings and steady rain spread over a full day",
       "Long periods of light, steady, widespread drizzle",
       "No noticeable change in the weather at all",
+      "Gradually lowering ceilings and steady rain spread over a full day",
       "Gusty winds, showers or thunderstorms, and a quick clearing"
     ],
     "a": 3,
@@ -2017,11 +2017,11 @@ QUESTIONS_JSON = r'''[
     "q": "A warm front typically produces:",
     "c": [
       "Sudden violent thunderstorms followed quickly by gusty clearing winds",
+      "Immediate clearing with rising ceilings and improving surface visibility",
       "Gradually lowering ceilings, widespread cloud, and steady precipitation",
-      "Strong downslope winds and rapidly falling temperatures behind the front",
-      "Immediate clearing with rising ceilings and improving surface visibility"
+      "Strong downslope winds and rapidly falling temperatures behind the front"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Warm air rising gently over cooler air gives a warm front its broad cloud, lowering ceilings, and steady precipitation.",
     "acs": "UA.III.B"
   },
@@ -2031,11 +2031,11 @@ QUESTIONS_JSON = r'''[
     "q": "A temperature inversion is a layer where temperature:",
     "c": [
       "Drops below freezing only at the very top of the affected layer",
-      "Decreases with altitude faster than the standard lapse rate does",
+      "Increases with altitude, often trapping haze and smooth stable air",
       "Stays exactly constant from the surface up through the entire layer",
-      "Increases with altitude, often trapping haze and smooth stable air"
+      "Decreases with altitude faster than the standard lapse rate does"
     ],
-    "a": 3,
+    "a": 1,
     "e": "In an inversion temperature rises with height, creating a stable layer that traps moisture, haze, and pollutants.",
     "acs": "UA.III.B"
   },
@@ -2044,12 +2044,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind Shear",
     "q": "Low-level wind shear is dangerous to a small UAS because it:",
     "c": [
-      "Has no measurable effect on multirotor aircraft near the ground",
       "Causes sudden changes in wind speed or direction that can upset control",
       "Improves battery life by reducing the power the motors must draw",
-      "Only affects manned aircraft operating well above 10,000 feet mean sea level"
+      "Only affects manned aircraft operating well above 10,000 feet mean sea level",
+      "Has no measurable effect on multirotor aircraft near the ground"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Wind shear is a rapid change in wind over a short distance that can suddenly destabilize a small aircraft.",
     "acs": "UA.III.B"
   },
@@ -2058,12 +2058,12 @@ QUESTIONS_JSON = r'''[
     "s": "Microburst",
     "q": "A microburst associated with a thunderstorm produces:",
     "c": [
-      "A powerful localized downdraft with dangerous shifting winds",
-      "Improved visibility only, with no effect on the surface wind",
       "A steady tailwind that helps the aircraft return to the pilot",
-      "Calm, stable air directly beneath the base of the storm cell"
+      "Calm, stable air directly beneath the base of the storm cell",
+      "A powerful localized downdraft with dangerous shifting winds",
+      "Improved visibility only, with no effect on the surface wind"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A microburst is an intense, short-lived downdraft whose outflow creates severe and rapidly changing winds.",
     "acs": "UA.III.B"
   },
@@ -2072,12 +2072,12 @@ QUESTIONS_JSON = r'''[
     "s": "Pressure Systems",
     "q": "In the Northern Hemisphere, a high-pressure system is generally associated with:",
     "c": [
+      "Tornado formation along a fast-moving squall line",
       "Descending air, fair weather, and lighter winds",
-      "Continuous heavy rain over a wide area for several days",
       "Rising air, building clouds, and frequent storms",
-      "Tornado formation along a fast-moving squall line"
+      "Continuous heavy rain over a wide area for several days"
     ],
-    "a": 0,
+    "a": 1,
     "e": "High pressure brings sinking air and fair weather; low pressure brings clouds and precipitation.",
     "acs": "UA.III.B"
   },
@@ -2086,12 +2086,12 @@ QUESTIONS_JSON = r'''[
     "s": "Standard Atmosphere",
     "q": "Standard sea-level conditions are:",
     "c": [
-      "20 degrees C and 28.00 inches",
       "15 degrees C and 29.92 inches of mercury",
       "0 degrees C and 30.00 inches",
+      "20 degrees C and 28.00 inches",
       "25 degrees C and 29.92 inches"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The standard atmosphere uses 15 degrees C and 29.92 inches of mercury at sea level as the reference.",
     "acs": "UA.III.B"
   },
@@ -2100,9 +2100,9 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "Density altitude increases, hurting performance, when conditions are:",
     "c": [
-      "Low elevation paired with cool, dry air at the surface",
       "Cold, dry air at a low-elevation field",
       "Cold and humid with a steady surface breeze",
+      "Low elevation paired with cool, dry air at the surface",
       "High temperature, high humidity, and high elevation"
     ],
     "a": 3,
@@ -2114,10 +2114,10 @@ QUESTIONS_JSON = r'''[
     "s": "Turbulence",
     "q": "Mechanical turbulence near the ground is commonly caused by:",
     "c": [
+      "Calm, stable air with very little surface wind",
       "A temperature inversion acting entirely on its own",
-      "Unusually high visibility on a clear and perfectly calm day",
       "Wind flowing around buildings, terrain, and obstacles",
-      "Calm, stable air with very little surface wind"
+      "Unusually high visibility on a clear and perfectly calm day"
     ],
     "a": 2,
     "e": "Air flowing over and around obstructions breaks into eddies, producing mechanical turbulence near the surface.",
@@ -2129,8 +2129,8 @@ QUESTIONS_JSON = r'''[
     "q": "A sea breeze along a coastline on a sunny afternoon generally flows:",
     "c": [
       "From the cooler water toward the warmer land",
-      "Straight down from the clouds toward the surface",
       "Only at night, after the land has fully cooled",
+      "Straight down from the clouds toward the surface",
       "From the warmer land outward toward the open sea"
     ],
     "a": 0,
@@ -2142,10 +2142,10 @@ QUESTIONS_JSON = r'''[
     "s": "Convection",
     "q": "On a hot day, convective currents over different surfaces tend to cause:",
     "c": [
-      "Stable layered clouds only",
       "Perfectly smooth air",
+      "Reduced battery temperature",
       "Bumpy, turbulent air at low altitude",
-      "Reduced battery temperature"
+      "Stable layered clouds only"
     ],
     "a": 2,
     "e": "Uneven heating creates rising and sinking columns of air, giving low-altitude flights a bumpy, turbulent ride.",
@@ -2157,11 +2157,11 @@ QUESTIONS_JSON = r'''[
     "q": "Advection fog forms when:",
     "c": [
       "Strong winds mix dry air down",
-      "A cold front passes quickly",
       "Warm, moist air moves over a cooler surface",
+      "A cold front passes quickly",
       "Ground cools on a clear, calm night"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Advection fog forms as warm moist air moves horizontally over a cooler surface and cools to its dewpoint.",
     "acs": "UA.III.B"
   },
@@ -2170,12 +2170,12 @@ QUESTIONS_JSON = r'''[
     "s": "VLOS",
     "q": "Visual line of sight under Part 107 must be maintained:",
     "c": [
-      "Through the aircraft's onboard camera and video feed",
       "With unaided vision, though corrective lenses are allowed",
       "Using binoculars or a spotting scope to extend the visual range farther out",
-      "Only during takeoff and landing, not during cruise"
+      "Only during takeoff and landing, not during cruise",
+      "Through the aircraft's onboard camera and video feed"
     ],
-    "a": 1,
+    "a": 0,
     "e": "VLOS must be kept with natural vision, with glasses or contacts permitted, but not binoculars or a camera feed.",
     "acs": "UA.I.B"
   },
@@ -2184,12 +2184,12 @@ QUESTIONS_JSON = r'''[
     "s": "First-Person View",
     "q": "Flying with first-person-view goggles is allowed under Part 107 only if:",
     "c": [
-      "The remote pilot keeps the aircraft below 200 feet above the ground",
       "The entire flight is conducted at night using anti-collision lighting visible for 3 SM",
-      "A visual observer maintains unaided visual line of sight with the aircraft",
-      "The aircraft being flown weighs less than 250 grams with its battery"
+      "The aircraft being flown weighs less than 250 grams with its battery",
+      "The remote pilot keeps the aircraft below 200 feet above the ground",
+      "A visual observer maintains unaided visual line of sight with the aircraft"
     ],
-    "a": 2,
+    "a": 3,
     "e": "FPV is permitted as long as a visual observer keeps the aircraft within unaided line of sight at all times.",
     "acs": "UA.I.B"
   },
@@ -2198,12 +2198,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visual Observer",
     "q": "When a visual observer is used, the remote PIC and observer must:",
     "c": [
+      "Stand at least 100 ft apart",
       "Maintain effective communication at all times",
       "Always use two entirely separate control stations",
-      "Each fly a different aircraft",
-      "Stand at least 100 ft apart"
+      "Each fly a different aircraft"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The remote PIC and visual observer must keep effective communication so see-and-avoid responsibilities are coordinated.",
     "acs": "UA.I.B"
   },
@@ -2212,12 +2212,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People Cat 1",
     "q": "Category 1 operations over people generally require the aircraft to:",
     "c": [
-      "Carry a current airworthiness certificate issued under part 21",
-      "Carry a deployable parachute system tested by an accredited lab",
       "Weigh under 55 lb, the same limit that applies to all Part 107 flights",
-      "Weigh 0.55 lb or less and have no parts that can lacerate skin"
+      "Weigh 0.55 lb or less and have no parts that can lacerate skin",
+      "Carry a current airworthiness certificate issued under part 21",
+      "Carry a deployable parachute system tested by an accredited lab"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Category 1 allows flight over people for aircraft 0.55 lb or lighter with no exposed parts that could lacerate skin.",
     "acs": "UA.I.E"
   },
@@ -2226,12 +2226,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People",
     "q": "Whether you may fly over people not involved in the operation depends on:",
     "c": [
-      "The operational category, which is based on the aircraft and its injury potential",
       "The color and visibility of the aircraft against the sky during the operation",
-      "The total number of flight hours the remote pilot has logged as pilot in command",
-      "The time of day, since flights over people are permitted only during civil daylight hours"
+      "The time of day, since flights over people are permitted only during civil daylight hours",
+      "The operational category, which is based on the aircraft and its injury potential",
+      "The total number of flight hours the remote pilot has logged as pilot in command"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Operations over people are sorted into Categories 1 through 4 based on weight and the risk of injury.",
     "acs": "UA.I.E"
   },
@@ -2240,12 +2240,12 @@ QUESTIONS_JSON = r'''[
     "s": "Open-Air Assembly",
     "q": "Sustained flight over an open-air assembly of people requires the aircraft to:",
     "c": [
-      "Meet an operational category and broadcast Remote ID",
       "Fly only at civil twilight, when fewer people are present below",
-      "Weigh over 5 lb so it can carry the required safety equipment",
-      "Stay under 100 feet above the assembly at all times"
+      "Meet an operational category and broadcast Remote ID",
+      "Stay under 100 feet above the assembly at all times",
+      "Weigh over 5 lb so it can carry the required safety equipment"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Flight over open-air assemblies requires meeting Category 1 through 3 conditions and broadcasting Remote ID.",
     "acs": "UA.I.E"
   },
@@ -2254,12 +2254,12 @@ QUESTIONS_JSON = r'''[
     "s": "In-Flight Emergency",
     "q": "During an in-flight emergency, the remote PIC may:",
     "c": [
-      "Ignore manned traffic in the area because the emergency takes priority",
       "Never deviate from any rule, since the rules apply even during emergencies",
       "Hand the aircraft to a nearby bystander to share the workload temporarily",
-      "Deviate from Part 107 rules to the extent needed to meet the emergency"
+      "Deviate from Part 107 rules to the extent needed to meet the emergency",
+      "Ignore manned traffic in the area because the emergency takes priority"
     ],
-    "a": 3,
+    "a": 2,
     "e": "In an in-flight emergency the remote PIC may deviate from any Part 107 rule to the extent required to handle it.",
     "acs": "UA.I.B"
   },
@@ -2268,12 +2268,12 @@ QUESTIONS_JSON = r'''[
     "s": "Transfer of Control",
     "q": "Handing off control of a small UAS during a flight is:",
     "c": [
-      "Allowed to any bystander as long as the remote PIC stays within arm's reach",
       "Never permitted, because only one person may touch the controls per flight",
       "Allowed between certificated remote PICs who coordinate the transfer",
+      "Allowed to any bystander as long as the remote PIC stays within arm's reach",
       "Allowed only while the aircraft is on the ground and the motors are stopped"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Control may pass between qualified pilots if the handoff is coordinated and one PIC stays responsible.",
     "acs": "UA.I.B"
   },
@@ -2282,12 +2282,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "The thought I can do anything is an example of which hazardous attitude?",
     "c": [
+      "Resignation",
       "Macho",
       "Anti-authority",
-      "Resignation",
       "Impulsivity"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The macho attitude shows up as overconfidence, and its antidote is taking it slow because reckless chances are foolish.",
     "acs": "UA.V.D"
   },
@@ -2296,12 +2296,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "A pilot who thinks rules are for other people is showing:",
     "c": [
-      "Invulnerability",
+      "Anti-authority",
       "Resignation",
       "Macho",
-      "Anti-authority"
+      "Invulnerability"
     ],
-    "a": 3,
+    "a": 0,
     "e": "The anti-authority attitude resists rules, and its antidote is recognizing that the rules are usually right.",
     "acs": "UA.V.D"
   },
@@ -2325,11 +2325,11 @@ QUESTIONS_JSON = r'''[
     "q": "Acting on the first idea that comes to mind without thinking is:",
     "c": [
       "Resignation",
+      "Impulsivity",
       "Macho",
-      "Anti-authority",
-      "Impulsivity"
+      "Anti-authority"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Impulsivity is doing something quickly without analysis, and its antidote is to think first, then act.",
     "acs": "UA.V.D"
   },
@@ -2338,12 +2338,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "Feeling that what happens is out of your hands reflects:",
     "c": [
-      "Anti-authority",
       "Invulnerability",
-      "Resignation",
-      "Macho"
+      "Anti-authority",
+      "Macho",
+      "Resignation"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Resignation is giving up a sense of control, and its antidote is recognizing that you can make a difference.",
     "acs": "UA.V.D"
   },
@@ -2352,8 +2352,8 @@ QUESTIONS_JSON = r'''[
     "s": "ADM",
     "q": "Aeronautical decision making (ADM) is best described as:",
     "c": [
-      "Reacting to problems only after they actually occur during the flight itself",
       "Following the most experienced pilot's advice without question",
+      "Reacting to problems only after they actually occur during the flight itself",
       "A systematic approach to consistently choosing the best course of action",
       "Memorizing the regulations so they can be recited from memory"
     ],
@@ -2366,12 +2366,12 @@ QUESTIONS_JSON = r'''[
     "s": "Risk Management",
     "q": "The PAVE checklist helps a pilot assess risk in the categories of:",
     "c": [
-      "Pilot, Aircraft, enVironment, and External pressures",
       "Preflight, Approach, Verify, Execute",
+      "Power, Altitude, Visibility, Endurance",
       "People, Area, Visibility, Equipment",
-      "Power, Altitude, Visibility, Endurance"
+      "Pilot, Aircraft, enVironment, and External pressures"
     ],
-    "a": 0,
+    "a": 3,
     "e": "PAVE breaks risk into Pilot, Aircraft, enVironment, and External pressures so hazards can be identified before flight.",
     "acs": "UA.V.D"
   },
@@ -2380,12 +2380,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fitness to Fly",
     "q": "The IMSAFE checklist is used to evaluate:",
     "c": [
-      "The airspace authorization",
       "The aircraft's mechanical condition",
-      "The weather forecast",
-      "The pilot's own fitness to fly"
+      "The pilot's own fitness to fly",
+      "The airspace authorization",
+      "The weather forecast"
     ],
-    "a": 3,
+    "a": 1,
     "e": "IMSAFE checks Illness, Medication, Stress, Alcohol, Fatigue, and Emotion to judge whether the pilot is fit to fly.",
     "acs": "UA.V.E"
   },
@@ -2394,12 +2394,12 @@ QUESTIONS_JSON = r'''[
     "s": "CRM",
     "q": "Crew resource management for a Part 107 crew mainly involves:",
     "c": [
-      "Letting the single most senior person present decide absolutely everything",
-      "Avoiding any communication during flight",
       "Assigning all tasks to the visual observer",
-      "Effectively using all available people, information, and equipment"
+      "Effectively using all available people, information, and equipment",
+      "Letting the single most senior person present decide absolutely everything",
+      "Avoiding any communication during flight"
     ],
-    "a": 3,
+    "a": 1,
     "e": "CRM is the effective use of all available resources, people, information, and equipment, to operate safely.",
     "acs": "UA.V.D"
   },
@@ -2408,12 +2408,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fatigue",
     "q": "Fatigue affects a remote pilot by:",
     "c": [
-      "Only mattering for manned pilots",
-      "Improving focus over long flights",
+      "Having no effect on drone operations",
       "Slowing reaction time and degrading judgment",
-      "Having no effect on drone operations"
+      "Only mattering for manned pilots",
+      "Improving focus over long flights"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Fatigue slows reaction time and impairs decision making, so a tired pilot should not fly.",
     "acs": "UA.V.E"
   },
@@ -2422,10 +2422,10 @@ QUESTIONS_JSON = r'''[
     "s": "Stress",
     "q": "High stress during an operation is likely to:",
     "c": [
+      "Sharpen all senses indefinitely",
       "Have no effect if the pilot is certificated",
-      "Only affect new pilots",
       "Narrow attention and impair decision making",
-      "Sharpen all senses indefinitely"
+      "Only affect new pilots"
     ],
     "a": 2,
     "e": "Stress can narrow attention and degrade judgment, which is why managing it is part of safe operation.",
@@ -2436,12 +2436,12 @@ QUESTIONS_JSON = r'''[
     "s": "Lost Link",
     "q": "A sound preflight plan should include what to do if:",
     "c": [
-      "The battery happens to already be fully charged",
-      "A bystander asks a question",
       "The control link or GPS is lost during flight",
-      "The weather is perfect"
+      "The weather is perfect",
+      "The battery happens to already be fully charged",
+      "A bystander asks a question"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Planning for a lost link or lost GPS, such as a return-to-home behavior, reduces the chance of a fly-away.",
     "acs": "UA.V.C"
   },
@@ -2450,12 +2450,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "A preflight check of the control station should confirm:",
     "c": [
+      "A solid control link, sufficient battery, and current firmware",
       "Only that the propellers spin freely when the motors are armed",
       "The current resale value of the aircraft on the used market",
-      "A solid control link, sufficient battery, and current firmware",
       "The remote pilot's certificate number and its expiration date"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Verifying the control link, power, and firmware before flight helps prevent in-flight failures.",
     "acs": "UA.V.F"
   },
@@ -2464,12 +2464,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maintenance",
     "q": "Keeping a small UAS in a condition for safe operation is:",
     "c": [
-      "Only the manufacturer's concern",
       "The responsibility of the remote PIC",
+      "Only the manufacturer's concern",
       "Required only for aircraft over 5 lb",
       "Optional for hobby flights"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The remote PIC is responsible for determining the aircraft is in a safe condition before each flight.",
     "acs": "UA.V.F"
   },
@@ -2478,12 +2478,12 @@ QUESTIONS_JSON = r'''[
     "s": "Crew Briefing",
     "q": "Before a multi-person operation, the remote PIC should:",
     "c": [
-      "Wait until well after the launch to begin assigning any roles",
-      "Keep the plan private to avoid confusion",
       "Assign all decisions to the observer",
-      "Brief everyone on roles, the plan, and emergency procedures"
+      "Brief everyone on roles, the plan, and emergency procedures",
+      "Wait until well after the launch to begin assigning any roles",
+      "Keep the plan private to avoid confusion"
     ],
-    "a": 3,
+    "a": 1,
     "e": "A preflight briefing of roles and emergency procedures keeps the crew coordinated and reduces errors.",
     "acs": "UA.V.D"
   },
@@ -2492,10 +2492,10 @@ QUESTIONS_JSON = r'''[
     "s": "Bystander Safety",
     "q": "If uninvolved people enter the operating area during a flight, the remote PIC should:",
     "c": [
+      "Descend and hold a low hover directly above the people until they leave",
       "Continue the operation as planned since they entered the area voluntarily",
-      "Speed up to finish the planned flight quickly before they move any closer",
       "Maneuver to keep the aircraft from flying over them, or land if needed",
-      "Descend and hold a low hover directly above the people until they leave"
+      "Speed up to finish the planned flight quickly before they move any closer"
     ],
     "a": 2,
     "e": "The remote PIC must avoid flying over people not part of the operation, repositioning or landing as needed.",
@@ -2507,11 +2507,11 @@ QUESTIONS_JSON = r'''[
     "q": "For night operations, the required anti-collision lighting must:",
     "c": [
       "Be a steady white light mounted so that it is visible only from directly above the aircraft",
-      "Be visible for at least 1 statute mile and remain steadily illuminated throughout the flight",
       "Be visible for at least 3 statute miles and flash at a rate to prevent collision",
-      "Face downward toward the ground so that it does not distract other nearby aircraft"
+      "Face downward toward the ground so that it does not distract other nearby aircraft",
+      "Be visible for at least 1 statute mile and remain steadily illuminated throughout the flight"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Night flight requires anti-collision lights visible for at least 3 statute miles, flashing to help prevent a collision.",
     "acs": "UA.II.B"
   },
@@ -2520,12 +2520,12 @@ QUESTIONS_JSON = r'''[
     "s": "Night Training",
     "q": "To fly at night under the current rules, a remote pilot must:",
     "c": [
-      "Have completed the updated recurrent training covering night operations",
-      "Be directly supervised by a manned-aircraft pilot during the operation",
+      "Obtain a specific waiver from the FAA before every individual night flight",
       "Hold an instrument rating in addition to the remote pilot certificate",
-      "Obtain a specific waiver from the FAA before every individual night flight"
+      "Have completed the updated recurrent training covering night operations",
+      "Be directly supervised by a manned-aircraft pilot during the operation"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Night operations require the lighting plus the updated training that now includes night content.",
     "acs": "UA.I.B"
   },
@@ -2534,12 +2534,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People",
     "q": "Without meeting a special category, a remote pilot may fly over a person who is:",
     "c": [
+      "Directly participating in the operation, or under a covered structure or inside a stationary covered vehicle",
       "Any bystander on the ground, provided the aircraft remains below 400 feet and within the pilot's visual line of sight",
-      "A spectator at a sporting event or concert as long as the flight is brief and stays overhead",
       "Anyone who has given the remote pilot clear verbal consent to be overflown during the operation",
-      "Directly participating in the operation, or under a covered structure or inside a stationary covered vehicle"
+      "A spectator at a sporting event or concert as long as the flight is brief and stays overhead"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Without a category, you may fly only over participants or people shielded by a covered structure or stationary covered vehicle.",
     "acs": "UA.I.E"
   },
@@ -2548,12 +2548,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visibility Reference",
     "q": "The minimum 3 statute miles of visibility under Part 107 is measured:",
     "c": [
-      "From the highest obstacle",
-      "At the destination airport",
       "From the control station",
+      "At the destination airport",
+      "From the highest obstacle",
       "At cloud base"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Flight visibility of at least 3 statute miles is judged from the control station location.",
     "acs": "UA.I.B"
   },
@@ -2562,12 +2562,12 @@ QUESTIONS_JSON = r'''[
     "s": "Site Selection",
     "q": "Launching a drone from private property generally requires:",
     "c": [
-      "An airspace authorization",
       "A TFR",
+      "Permission from the property owner or manager",
       "Nothing, since the airspace is federal",
-      "Permission from the property owner or manager"
+      "An airspace authorization"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Federal rules govern the airspace, but you still need permission to launch from or land on private property.",
     "acs": "UA.V.D"
   },
@@ -2576,12 +2576,12 @@ QUESTIONS_JSON = r'''[
     "s": "Error Chain",
     "q": "Most accidents result from:",
     "c": [
-      "Pure bad luck that simply cannot be managed at all ever",
-      "A chain of small errors rather than a single cause",
       "Always a single mechanical failure",
-      "Only weather"
+      "Only weather",
+      "A chain of small errors rather than a single cause",
+      "Pure bad luck that simply cannot be managed at all ever"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Accidents usually grow from a chain of small errors, and breaking any link in the chain can prevent the outcome.",
     "acs": "UA.V.D"
   },
@@ -2590,12 +2590,12 @@ QUESTIONS_JSON = r'''[
     "s": "Careless Operation",
     "q": "Operating a small UAS so as to endanger people or property is:",
     "c": [
-      "Allowed if no one is hurt",
       "Prohibited as careless or reckless operation",
+      "Allowed in Class G",
       "Only an issue for manned aircraft",
-      "Allowed in Class G"
+      "Allowed if no one is hurt"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Careless or reckless operation that endangers life or property is prohibited and can lead to certificate action.",
     "acs": "UA.I.B"
   },
@@ -2604,12 +2604,12 @@ QUESTIONS_JSON = r'''[
     "s": "Personal Minimums",
     "q": "Setting personal minimums for wind, visibility, and experience helps a pilot:",
     "c": [
-      "Legally fly in any weather condition as long as the aircraft stays within line of sight",
+      "Make consistent go or no-go decisions and avoid pressing into unsafe conditions",
       "Skip the preflight assessment when conditions appear calm and clear",
       "Disregard the regulations whenever personal experience suggests it is safe",
-      "Make consistent go or no-go decisions and avoid pressing into unsafe conditions"
+      "Legally fly in any weather condition as long as the aircraft stays within line of sight"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Personal minimums give a clear line for go or no-go decisions before external pressures push toward an unsafe flight.",
     "acs": "UA.V.D"
   },
@@ -2618,12 +2618,12 @@ QUESTIONS_JSON = r'''[
     "s": "Total Weight",
     "q": "The total weight that matters for Part 107 limits and performance includes:",
     "c": [
-      "The airframe by itself, not counting the battery, payload, or mounting hardware",
       "Only the battery, since it is the single heaviest component on board",
       "The aircraft plus battery, payload, and anything else on board",
+      "The airframe by itself, not counting the battery, payload, or mounting hardware",
       "Only the payload that is mounted for the specific mission"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Maximum weight covers everything on board, so payload and battery count toward the under-55-lb limit and performance.",
     "acs": "UA.IV.A"
   },
@@ -2632,12 +2632,12 @@ QUESTIONS_JSON = r'''[
     "s": "Humidity",
     "q": "High humidity affects multirotor performance by:",
     "c": [
-      "Increasing lift",
       "Having no effect",
       "Cooling the motors and giving them noticeably more power",
-      "Lowering air density, which reduces lift and thrust"
+      "Lowering air density, which reduces lift and thrust",
+      "Increasing lift"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Moist air is less dense than dry air, so high humidity raises density altitude and reduces lift and thrust.",
     "acs": "UA.IV.A"
   },
@@ -2646,10 +2646,10 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Health",
     "q": "As a lithium battery ages through many charge cycles, its capacity:",
     "c": [
-      "Stays exactly constant for its whole life",
-      "Gradually decreases, shortening flight time",
       "Slowly increases the more it is used",
-      "Only really matters during the hot summer months"
+      "Gradually decreases, shortening flight time",
+      "Only really matters during the hot summer months",
+      "Stays exactly constant for its whole life"
     ],
     "a": 1,
     "e": "Battery capacity fades with age and cycles, so an older pack delivers less flight time than when it was new.",
@@ -2660,12 +2660,12 @@ QUESTIONS_JSON = r'''[
     "s": "Voltage Sag",
     "q": "Under a heavy load or at low charge, battery voltage sag can:",
     "c": [
-      "Increase the aircraft's top speed by drawing extra current",
-      "Reduce available power and trigger a low-power landing",
       "Extend total flight time as the pack discharges more slowly",
-      "Improve the climb rate because the motors run cooler then"
+      "Improve the climb rate because the motors run cooler then",
+      "Reduce available power and trigger a low-power landing",
+      "Increase the aircraft's top speed by drawing extra current"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Voltage sag lowers available power, which can force a return or landing before the pack is fully empty.",
     "acs": "UA.IV.A"
   },
@@ -2674,12 +2674,12 @@ QUESTIONS_JSON = r'''[
     "s": "Propellers",
     "q": "Operating with a chipped or damaged propeller is likely to:",
     "c": [
-      "Cause vibration and reduced lift, and may lead to failure",
-      "Increase battery life because the lighter blade draws less power",
       "Improve efficiency by letting air pass more smoothly over it",
+      "Increase battery life because the lighter blade draws less power",
+      "Cause vibration and reduced lift, and may lead to failure",
       "Have no effect at all as long as you stay below 400 feet AGL"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A damaged propeller upsets balance and lift, causing vibration and risking an in-flight failure.",
     "acs": "UA.IV.A"
   },
@@ -2688,12 +2688,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "A strong tailwind while the aircraft is returning will:",
     "c": [
+      "Have no effect on the approach as long as the aircraft stays within visual line of sight",
       "Increase groundspeed and can lengthen the distance needed to stop or descend on target",
       "Slow the aircraft over the ground and shorten the distance needed for the approach",
-      "Have no effect on the approach as long as the aircraft stays within visual line of sight",
       "Reduce battery drain to nearly zero because the wind pushes the aircraft home for free"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A tailwind raises groundspeed, so the aircraft covers more ground and needs more room to stop or land accurately.",
     "acs": "UA.IV.A"
   },
@@ -2702,10 +2702,10 @@ QUESTIONS_JSON = r'''[
     "s": "Gusts",
     "q": "Gusty wind conditions reduce a small UAS pilot's safety margin because they:",
     "c": [
-      "Improve GPS accuracy because the receiver locks onto more satellites",
+      "Lower the density altitude, which makes the motors work noticeably harder",
       "Make the aircraft easier to fly by holding it steady against the breeze",
       "Demand more control input and power, leaving less margin for error",
-      "Lower the density altitude, which makes the motors work noticeably harder"
+      "Improve GPS accuracy because the receiver locks onto more satellites"
     ],
     "a": 2,
     "e": "Gusts force constant correction and higher power use, cutting into the reserve available to handle a problem.",
@@ -2716,12 +2716,12 @@ QUESTIONS_JSON = r'''[
     "s": "Payload Drag",
     "q": "Mounting a bulky payload that disturbs airflow will most likely:",
     "c": [
+      "Add drag, increasing power use and reducing endurance",
       "Improve the long-term health of the flight battery",
       "Reduce drag and noticeably save battery power in cruise",
-      "Increase the service ceiling that the aircraft can safely reach",
-      "Add drag, increasing power use and reducing endurance"
+      "Increase the service ceiling that the aircraft can safely reach"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A payload that disrupts airflow adds drag, so the motors work harder and flight time drops.",
     "acs": "UA.IV.A"
   },
@@ -2731,9 +2731,9 @@ QUESTIONS_JSON = r'''[
     "q": "Adding weight to a small UAS generally:",
     "c": [
       "Reduces maneuverability and lengthens the distance to stop or change direction",
-      "Has no measurable effect on how the aircraft handles during flight",
+      "Increases the maximum altitude the aircraft can safely reach",
       "Improves agility and noticeably shortens the distance needed to stop or change direction",
-      "Increases the maximum altitude the aircraft can safely reach"
+      "Has no measurable effect on how the aircraft handles during flight"
     ],
     "a": 0,
     "e": "More weight increases inertia, so the aircraft is slower to respond and needs more room to maneuver.",
@@ -2745,9 +2745,9 @@ QUESTIONS_JSON = r'''[
     "q": "A center of gravity that is too far aft tends to make an aircraft:",
     "c": [
       "Immune to wind",
-      "More stable but slower",
+      "Unable to take off",
       "Less stable and harder to control",
-      "Unable to take off"
+      "More stable but slower"
     ],
     "a": 2,
     "e": "An aft center of gravity reduces stability, making the aircraft more sensitive and harder to control.",
@@ -2758,12 +2758,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "A center of gravity that is too far forward tends to make an aircraft:",
     "c": [
+      "More stable but heavier on the controls and harder to maneuver",
       "Noticeably lighter on the controls and faster in level forward flight",
       "Unstable and twitchy, overreacting to even small control inputs in flight",
-      "More stable but heavier on the controls and harder to maneuver",
       "Unaffected in handling because the flight controller compensates automatically"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A forward center of gravity adds stability but makes the aircraft feel heavy and less responsive to maneuver.",
     "acs": "UA.IV.A"
   },
@@ -2772,12 +2772,12 @@ QUESTIONS_JSON = r'''[
     "s": "Manufacturer Limits",
     "q": "The best source for a specific drone's maximum payload and balance limits is:",
     "c": [
-      "The manufacturer's operating documentation",
-      "A general public internet discussion forum thread",
       "Another pilot's guess",
-      "The sectional chart"
+      "The sectional chart",
+      "A general public internet discussion forum thread",
+      "The manufacturer's operating documentation"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The manufacturer's documentation gives the tested weight and balance limits for that specific aircraft.",
     "acs": "UA.IV.A"
   },
@@ -2786,12 +2786,12 @@ QUESTIONS_JSON = r'''[
     "s": "Endurance Planning",
     "q": "When carrying a payload, a pilot should plan for:",
     "c": [
+      "Longer flight time than usual because of the added mass",
       "No change at all to endurance, since the motors compensate",
       "Reduced flight time and a battery reserve for landing",
-      "Unlimited hover time as long as the wind stays calm",
-      "Longer flight time than usual because of the added mass"
+      "Unlimited hover time as long as the wind stays calm"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Payload cuts endurance, so plan a shorter mission and keep a battery reserve to land safely.",
     "acs": "UA.IV.A"
   },
@@ -2800,12 +2800,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "In an airport data block, CT followed by a frequency such as 118.3 indicates the:",
     "c": [
+      "Field elevation",
       "Control tower frequency",
       "Runway length",
-      "Field elevation",
       "Pattern altitude"
     ],
-    "a": 0,
+    "a": 1,
     "e": "CT with a frequency is the control tower frequency for that airport.",
     "acs": "UA.II.B"
   },
@@ -2816,10 +2816,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "A military field",
       "A seaplane base",
-      "Fuel is available",
-      "The airport is closed"
+      "The airport is closed",
+      "Fuel is available"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Tick marks around the airport circle show fuel services are available.",
     "acs": "UA.II.B"
   },
@@ -2830,8 +2830,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "In hundreds of feet, so 53 means about 5,300 ft",
       "In nautical miles measured from end to end of the runway",
-      "As a magnetic heading pointing along the main runway",
-      "As the radio frequency used by the airport control tower"
+      "As the radio frequency used by the airport control tower",
+      "As a magnetic heading pointing along the main runway"
     ],
     "a": 0,
     "e": "Runway length appears in hundreds of feet, so 53 is roughly 5,300 ft.",
@@ -2842,12 +2842,12 @@ QUESTIONS_JSON = r'''[
     "s": "Terrain",
     "q": "Contour lines and color tints on a sectional help a pilot judge:",
     "c": [
-      "Rising terrain that could reduce clearance above the ground",
-      "Magnetic variation between true north and magnetic north across the area",
       "The class of airspace overlying each section of the charted region",
-      "Prevailing wind direction and speed at the surface during daylight hours"
+      "Rising terrain that could reduce clearance above the ground",
+      "Prevailing wind direction and speed at the surface during daylight hours",
+      "Magnetic variation between true north and magnetic north across the area"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Contours and tints show terrain relief so you keep clearance above rising ground.",
     "acs": "UA.II.B"
   },
@@ -2856,8 +2856,8 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A Military Training Route labeled VR-1207 is flown:",
     "c": [
-      "Always under instrument flight rules regardless of the weather",
       "Only at altitudes above 18,000 feet within positive control airspace",
+      "Always under instrument flight rules regardless of the weather",
       "Under visual flight rules, with the pilot keeping visual references",
       "Only at night when other military traffic is not operating"
     ],
@@ -2871,11 +2871,11 @@ QUESTIONS_JSON = r'''[
     "q": "Magnetic variation is the difference between:",
     "c": [
       "Indicated and true altitude",
+      "Pressure and density altitude",
       "Two VOR radials",
-      "True north and magnetic north",
-      "Pressure and density altitude"
+      "True north and magnetic north"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Variation is the angle between true and magnetic north, shown by isogonic lines.",
     "acs": "UA.II.A"
   },
@@ -2886,10 +2886,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Single values in feet above ground level printed just inside the boundary",
       "Magenta vignettes that fade outward from the center of the airspace",
-      "Pairs of numbers in hundreds of feet MSL along each segment",
-      "Dashed lines only, with the altitudes listed in a separate chart legend"
+      "Dashed lines only, with the altitudes listed in a separate chart legend",
+      "Pairs of numbers in hundreds of feet MSL along each segment"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Each Class B segment lists its ceiling over its floor in hundreds of feet MSL.",
     "acs": "UA.II.A"
   },
@@ -2898,12 +2898,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "Larger airports on a sectional are drawn:",
     "c": [
-      "With a dashed boundary line showing the edge of the airport property",
-      "As a magenta flag symbol placed at the center of the field",
+      "As a single solid dot regardless of how many runways they have",
       "With their actual runway layout rather than a simple circle",
-      "As a single solid dot regardless of how many runways they have"
+      "With a dashed boundary line showing the edge of the airport property",
+      "As a magenta flag symbol placed at the center of the field"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Busier airports are depicted with their true runway pattern instead of a plain circle.",
     "acs": "UA.II.B"
   },
@@ -2912,12 +2912,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "The times and altitudes of a charted restricted area are found:",
     "c": [
+      "On the compass rose drawn around the nearest navigation aid",
       "In the special use airspace tabulation in the chart margin",
       "In the terrain shading that surrounds the restricted area",
-      "On the compass rose drawn around the nearest navigation aid",
       "In the airport data block next to the primary airport symbol"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Restricted area details are listed in a tabulation along the chart margin.",
     "acs": "UA.II.A"
   },
@@ -2926,12 +2926,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "An obstacle that is reported but not yet verified is charted with:",
     "c": [
+      "A bold red circle",
       "A dashed symbol",
       "A magenta flag",
-      "A bold red circle",
       "No symbol at all"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Unverified obstacles use a dashed symbol to show their position or height is uncertain.",
     "acs": "UA.II.B"
   },
@@ -2940,12 +2940,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Compared with a cool sea-level day, a hot day at high elevation makes a multirotor:",
     "c": [
-      "Climb more slowly and hover with less margin",
       "Climb faster because the warmer air is less dense",
       "Use less battery thanks to the reduced air resistance",
-      "Carry more payload than it could at sea level"
+      "Carry more payload than it could at sea level",
+      "Climb more slowly and hover with less margin"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Heat and altitude thin the air, cutting lift so it climbs and hovers with less margin.",
     "acs": "UA.IV.A"
   },
@@ -2954,12 +2954,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery",
     "q": "A practical way to protect flight time in cold weather is to:",
     "c": [
-      "Add extra payload",
-      "Warm up the propellers thoroughly before takeoff",
       "Keep batteries warm until just before launch",
-      "Fly with a nearly empty pack"
+      "Fly with a nearly empty pack",
+      "Add extra payload",
+      "Warm up the propellers thoroughly before takeoff"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Cold cuts battery capacity, so keeping packs warm until launch preserves flight time.",
     "acs": "UA.IV.A"
   },
@@ -2968,12 +2968,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "Mounting a camera well forward of a drone's center will:",
     "c": [
-      "Improve battery life by streamlining the airframe",
-      "Raise the legal maximum takeoff weight for the aircraft",
+      "Shift the center of gravity and change how it handles",
       "Have no measurable effect on the aircraft's balance in flight",
-      "Shift the center of gravity and change how it handles"
+      "Improve battery life by streamlining the airframe",
+      "Raise the legal maximum takeoff weight for the aircraft"
     ],
-    "a": 3,
+    "a": 0,
     "e": "An off-center payload moves the center of gravity and alters handling.",
     "acs": "UA.IV.A"
   },
@@ -2982,12 +2982,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "Planning a flight in steady 20 knot winds, a pilot should expect:",
     "c": [
-      "Longer flight time since the wind helps push the aircraft along its route",
       "Improved hover stability as the steady wind holds the aircraft in place",
-      "No measurable change in endurance because the wind averages out over time",
-      "Higher power use, shorter flight time, and less control margin"
+      "Longer flight time since the wind helps push the aircraft along its route",
+      "Higher power use, shorter flight time, and less control margin",
+      "No measurable change in endurance because the wind averages out over time"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Wind forces constant correction and higher power draw, cutting endurance and margin.",
     "acs": "UA.IV.A"
   },
@@ -2997,9 +2997,9 @@ QUESTIONS_JSON = r'''[
     "q": "A drone rated to 4 lb is fitted with a 1.5 lb payload, reaching 5 lb. The pilot should:",
     "c": [
       "Treat it as overloaded and expect degraded performance",
-      "Assume performance is unchanged since 5 lb is still light",
+      "Ignore the manufacturer rating, which is only a suggestion",
       "Expect longer flight time from the added battery mass",
-      "Ignore the manufacturer rating, which is only a suggestion"
+      "Assume performance is unchanged since 5 lb is still light"
     ],
     "a": 0,
     "e": "Exceeding the rated weight degrades climb and handling, so stay within the limit.",
@@ -3010,10 +3010,10 @@ QUESTIONS_JSON = r'''[
     "s": "Propellers",
     "q": "A nicked or bent propeller found during preflight should be:",
     "c": [
-      "Ignored below 400 ft",
+      "Flown until it fails",
       "Replaced before flight",
-      "Sanded smooth and reused indefinitely",
-      "Flown until it fails"
+      "Ignored below 400 ft",
+      "Sanded smooth and reused indefinitely"
     ],
     "a": 1,
     "e": "A damaged propeller upsets balance and lift, risking vibration and failure, so replace it.",
@@ -3024,12 +3024,12 @@ QUESTIONS_JSON = r'''[
     "s": "Manufacturer Limits",
     "q": "The most reliable source for a drone's maximum payload is:",
     "c": [
+      "Another pilot's advice",
       "The manufacturer's specifications",
       "Trial and error in flight",
-      "Another pilot's advice",
       "An estimate from its size"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The manufacturer's specifications give the tested payload and balance limits.",
     "acs": "UA.IV.A"
   },
@@ -3040,10 +3040,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Strong turbulence with rapid up and down drafts throughout",
       "Building cumulus clouds and developing afternoon thunderstorms",
-      "Frequent wind shear and sharp gusts close to the surface",
-      "Smooth flight, though visibility may be reduced by haze"
+      "Smooth flight, though visibility may be reduced by haze",
+      "Frequent wind shear and sharp gusts close to the surface"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Stable air gives smooth flight but often hazy, reduced visibility.",
     "acs": "UA.IV.A"
   },
@@ -3052,12 +3052,12 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "High density altitude is worst for a heavily loaded drone because it:",
     "c": [
-      "Adds reduced lift to the extra weight, hurting climb most",
-      "Only affects empty aircraft that are flying without any payload",
       "Has no effect on multirotors, which rely on direct motor thrust",
-      "Improves climb because the thinner air offers less resistance"
+      "Improves climb because the thinner air offers less resistance",
+      "Adds reduced lift to the extra weight, hurting climb most",
+      "Only affects empty aircraft that are flying without any payload"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Thin air and heavy weight compound, so a loaded aircraft climbs the worst.",
     "acs": "UA.IV.A"
   },
@@ -3066,10 +3066,10 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "On final approach in a gusty crosswind, the pilot should:",
     "c": [
-      "Add extra payload weight for more hover stability",
-      "Slow down and be ready to abort the landing",
       "Descend as fast as possible",
-      "Ignore the gusts"
+      "Slow down and be ready to abort the landing",
+      "Ignore the gusts",
+      "Add extra payload weight for more hover stability"
     ],
     "a": 1,
     "e": "Gusty crosswinds cut control margin, so approach slowly and be ready to go around.",
@@ -3081,8 +3081,8 @@ QUESTIONS_JSON = r'''[
     "q": "A lithium battery that has puffed or swollen should be:",
     "c": [
       "Removed from service and not flown",
-      "Flown until empty",
       "Stored at full charge",
+      "Flown until empty",
       "Charged fully and reused"
     ],
     "a": 0,
@@ -3095,11 +3095,11 @@ QUESTIONS_JSON = r'''[
     "q": "Loading a drone near its maximum weight most affects:",
     "c": [
       "The visual line of sight rule for the operation",
-      "Acceleration, stopping distance, and responsiveness",
       "Only the outward appearance of the aircraft",
+      "Acceleration, stopping distance, and responsiveness",
       "The aircraft registration rule that applies to the drone"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Added weight raises inertia, so the aircraft accelerates, stops, and responds more slowly.",
     "acs": "UA.IV.A"
   },
@@ -3108,12 +3108,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, the group '09010KT' means wind from:",
     "c": [
-      "090 degrees at 10 knots",
       "090 at 100 knots",
-      "9 degrees at 10 knots",
-      "10 degrees at 9 knots"
+      "10 degrees at 9 knots",
+      "090 degrees at 10 knots",
+      "9 degrees at 10 knots"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The first three digits are wind direction in degrees and the next two are speed in knots.",
     "acs": "UA.III.A"
   },
@@ -3122,12 +3122,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, the group 'RMK' introduces:",
     "c": [
-      "The forecast section",
-      "Remarks with additional detail",
+      "A required minimum",
       "A runway marking",
-      "A required minimum"
+      "Remarks with additional detail",
+      "The forecast section"
     ],
-    "a": 1,
+    "a": 2,
     "e": "RMK begins the remarks section, where extra observed detail is added.",
     "acs": "UA.III.A"
   },
@@ -3136,10 +3136,10 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "A METAR reporting 'FG' with '1/4SM' visibility indicates:",
     "c": [
-      "A gust front moving through the area",
-      "Fog severely reducing visibility",
       "A few scattered clouds overhead",
-      "Light and variable surface winds"
+      "Fog severely reducing visibility",
+      "Light and variable surface winds",
+      "A gust front moving through the area"
     ],
     "a": 1,
     "e": "FG is fog, and at a quarter mile it is a serious hazard to flight.",
@@ -3150,12 +3150,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "The passage of a front is typically marked by:",
     "c": [
+      "A wind shift with temperature and pressure changes",
       "A guaranteed clearing of all clouds within a few minutes",
       "Only a temperature rise, with no change in wind or pressure",
-      "No noticeable change at all in the surface conditions",
-      "A wind shift with temperature and pressure changes"
+      "No noticeable change at all in the surface conditions"
     ],
-    "a": 3,
+    "a": 0,
     "e": "As a front passes, wind, temperature, and pressure all shift across the boundary.",
     "acs": "UA.III.B"
   },
@@ -3165,9 +3165,9 @@ QUESTIONS_JSON = r'''[
     "q": "Air that resists vertical motion is described as:",
     "c": [
       "Stable",
-      "Saturated",
       "Convective",
-      "Unstable"
+      "Unstable",
+      "Saturated"
     ],
     "a": 0,
     "e": "Stable air resists rising motion, giving smooth conditions and layered clouds.",
@@ -3178,10 +3178,10 @@ QUESTIONS_JSON = r'''[
     "s": "Fog",
     "q": "Upslope fog forms when:",
     "c": [
-      "Surface winds die away at night over a calm body of open water",
       "A fast-moving cold front passes through and drops the temperature",
+      "Warm dry air sinks into a valley and compresses as it descends downward",
       "Moist air is pushed up rising terrain and cools to its dewpoint",
-      "Warm dry air sinks into a valley and compresses as it descends downward"
+      "Surface winds die away at night over a calm body of open water"
     ],
     "a": 2,
     "e": "Upslope fog forms as moist air is forced up terrain and cools to saturation.",
@@ -3192,12 +3192,12 @@ QUESTIONS_JSON = r'''[
     "s": "Winds Aloft",
     "q": "A winds aloft entry of '9900' means:",
     "c": [
-      "Light and variable winds",
       "99 knots from north",
       "Winds from 990 degrees",
-      "Calm with 99 percent humidity"
+      "Calm with 99 percent humidity",
+      "Light and variable winds"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The code 9900 means winds are light and variable, under about 5 knots.",
     "acs": "UA.III.A"
   },
@@ -3206,12 +3206,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazards",
     "q": "With thunderstorms forecast in your flight window, the safest choice is to:",
     "c": [
-      "Fly quickly before they arrive",
       "Delay or cancel the flight",
-      "Fly downwind of the cell",
-      "Stay under 100 ft"
+      "Stay under 100 ft",
+      "Fly quickly before they arrive",
+      "Fly downwind of the cell"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Thunderstorms bring violent turbulence, lightning, and shear, so delay or cancel.",
     "acs": "UA.III.B"
   },
@@ -3220,10 +3220,10 @@ QUESTIONS_JSON = r'''[
     "s": "Currency",
     "q": "A remote pilot whose recurrent training has lapsed:",
     "c": [
-      "Loses the certificate forever",
+      "Must retake the full proctored knowledge exam again",
       "May not act as remote PIC until it is completed",
       "May fly for 6 more months",
-      "Must retake the full proctored knowledge exam again"
+      "Loses the certificate forever"
     ],
     "a": 1,
     "e": "You must be current on recurrent training to act as remote PIC.",
@@ -3234,12 +3234,12 @@ QUESTIONS_JSON = r'''[
     "s": "Registration",
     "q": "Proof of registration during a Part 107 flight must be:",
     "c": [
-      "Carried only at night",
       "Available to present on request",
-      "Mailed to the FAA beforehand",
-      "Posted at the launch site"
+      "Posted at the launch site",
+      "Carried only at night",
+      "Mailed to the FAA beforehand"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The certificate of registration must be available to present on request during operations.",
     "acs": "UA.I.B"
   },
@@ -3248,12 +3248,12 @@ QUESTIONS_JSON = r'''[
     "s": "Eligibility",
     "q": "Beyond being at least 16 and English-proficient, an applicant must be:",
     "c": [
+      "Physically and mentally able to operate safely",
       "The registered owner of the aircraft to be operated",
       "A licensed automobile driver in the state of residence",
-      "Physically and mentally able to operate safely",
       "A military veteran or active-duty service member"
     ],
-    "a": 2,
+    "a": 0,
     "e": "An applicant must be in a physical and mental condition to operate a small UAS safely.",
     "acs": "UA.I.C"
   },
@@ -3263,11 +3263,11 @@ QUESTIONS_JSON = r'''[
     "q": "Part 107 prohibits operating with a blood alcohol content of:",
     "c": [
       "0.08 percent or greater",
-      "0.04 percent or greater",
       "Any detectable amount",
+      "0.04 percent or greater",
       "0.10 percent or greater"
     ],
-    "a": 1,
+    "a": 2,
     "e": "You may not operate at 0.04 percent or more, or within 8 hours of consuming alcohol.",
     "acs": "UA.I.B"
   },
@@ -3276,12 +3276,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "Standard Remote ID broadcasts the aircraft's identity along with its:",
     "c": [
-      "Location and altitude",
-      "Owner's home address",
+      "Flight plan",
       "Battery level",
-      "Flight plan"
+      "Owner's home address",
+      "Location and altitude"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Standard Remote ID broadcasts identity, location, and altitude during flight.",
     "acs": "UA.I.F"
   },
@@ -3290,12 +3290,12 @@ QUESTIONS_JSON = r'''[
     "s": "Supervision",
     "q": "A learner practicing on the controls under Part 107 must be:",
     "c": [
-      "At least 18 years old and registered as a student with the FAA beforehand",
-      "Already a certificate holder who has passed the initial knowledge test",
       "Within 100 feet of the supervising pilot and the control station at all times",
-      "Directly supervised by a remote PIC able to take control immediately"
+      "Already a certificate holder who has passed the initial knowledge test",
+      "Directly supervised by a remote PIC able to take control immediately",
+      "At least 18 years old and registered as a student with the FAA beforehand"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A non-certificated person may fly only under a remote PIC able to take control at once.",
     "acs": "UA.I.B"
   },
@@ -3305,11 +3305,11 @@ QUESTIONS_JSON = r'''[
     "q": "LAANC authorizations are provided by:",
     "c": [
       "The drone manufacturer through the aircraft's companion application",
-      "The local airport manager during published business hours only",
       "FAA-approved companies that process requests in near real time",
+      "The local airport manager during published business hours only",
       "Mobile phone carriers that relay the request to the control tower"
     ],
-    "a": 2,
+    "a": 1,
     "e": "LAANC requests are handled by FAA-approved providers that return near-instant authorization.",
     "acs": "UA.II.B"
   },
@@ -3319,11 +3319,11 @@ QUESTIONS_JSON = r'''[
     "q": "You learn a firefighting TFR now covers your planned site. You should:",
     "c": [
       "Fly below 400 ft through it",
+      "Fly only at its edges",
       "Proceed, since drones are exempt",
-      "Stay out unless specifically authorized",
-      "Fly only at its edges"
+      "Stay out unless specifically authorized"
     ],
-    "a": 2,
+    "a": 3,
     "e": "TFRs apply to drones, so do not enter without specific authorization.",
     "acs": "UA.II.A"
   },
@@ -3332,9 +3332,9 @@ QUESTIONS_JSON = r'''[
     "s": "Class G",
     "q": "To fly at 350 ft AGL in Class G airspace away from any airport, a pilot:",
     "c": [
+      "Needs a waiver",
       "Must notify the nearest tower",
       "Needs LAANC authorization",
-      "Needs a waiver",
       "Needs no ATC authorization"
     ],
     "a": 3,
@@ -3360,12 +3360,12 @@ QUESTIONS_JSON = r'''[
     "s": "Risk Management",
     "q": "External pressure, such as a waiting client, is dangerous because it can:",
     "c": [
-      "Reduce fatigue because the pilot works faster under a deadline",
       "Improve focus by giving the pilot a clear deadline to work toward",
-      "Push a pilot to fly in conditions they would otherwise avoid",
-      "Lower the density altitude and make the air easier to fly in"
+      "Reduce fatigue because the pilot works faster under a deadline",
+      "Lower the density altitude and make the air easier to fly in",
+      "Push a pilot to fly in conditions they would otherwise avoid"
     ],
-    "a": 2,
+    "a": 3,
     "e": "External pressure can push a pilot past their personal minimums into an unsafe decision.",
     "acs": "UA.V.D"
   },
@@ -3374,10 +3374,10 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "If a firmware warning appears during preflight, the pilot should:",
     "c": [
-      "Ignore it and fly, since firmware warnings are usually harmless",
-      "Resolve it before flying rather than launch with a known issue",
       "Pull the battery, then continue the flight once it restarts cleanly",
-      "Fly only under 100 feet until the warning eventually clears itself"
+      "Resolve it before flying rather than launch with a known issue",
+      "Fly only under 100 feet until the warning eventually clears itself",
+      "Ignore it and fly, since firmware warnings are usually harmless"
     ],
     "a": 1,
     "e": "Launching with a known unresolved issue is careless, so address it first.",
@@ -3388,12 +3388,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, the sky condition 'SKC' or 'CLR' means:",
     "c": [
-      "Scattered clouds",
       "No clouds observed",
       "Obscured sky",
+      "Scattered clouds",
       "A broken ceiling"
     ],
-    "a": 1,
+    "a": 0,
     "e": "SKC and CLR both indicate no clouds were detected.",
     "acs": "UA.III.A"
   },
@@ -3403,11 +3403,11 @@ QUESTIONS_JSON = r'''[
     "q": "A METAR wind group of '00000KT' indicates:",
     "c": [
       "Missing data",
-      "Wind from the north at 0 gusts",
       "A 100 knot wind",
-      "Calm wind"
+      "Calm wind",
+      "Wind from the north at 0 gusts"
     ],
-    "a": 3,
+    "a": 2,
     "e": "00000KT means the wind is calm.",
     "acs": "UA.III.A"
   },
@@ -3416,12 +3416,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "A METAR visibility group of '10SM' means visibility is:",
     "c": [
+      "10 meters",
       "10 statute miles or more",
       "Exactly 10 nautical miles",
-      "10 meters",
       "1.0 mile"
     ],
-    "a": 0,
+    "a": 1,
     "e": "10SM means visibility of 10 statute miles or greater, the maximum normally reported.",
     "acs": "UA.III.A"
   },
@@ -3431,11 +3431,11 @@ QUESTIONS_JSON = r'''[
     "q": "In a METAR, the present weather '-RA' indicates:",
     "c": [
       "Recent rain",
-      "Light rain",
       "No rain",
-      "Heavy rain"
+      "Heavy rain",
+      "Light rain"
     ],
-    "a": 1,
+    "a": 3,
     "e": "A minus sign marks light intensity, so -RA is light rain.",
     "acs": "UA.III.A"
   },
@@ -3445,8 +3445,8 @@ QUESTIONS_JSON = r'''[
     "q": "In a METAR, '+SHRA' indicates:",
     "c": [
       "Heavy rain showers",
-      "Snow showers",
       "Light showers",
+      "Snow showers",
       "Scattered rain"
     ],
     "a": 0,
@@ -3458,12 +3458,12 @@ QUESTIONS_JSON = r'''[
     "s": "Sky Cover",
     "q": "A sky cover report of 'FEW' represents:",
     "c": [
-      "No clouds",
-      "Complete overcast",
       "1 to 2 eighths of cloud cover",
-      "5 to 7 eighths"
+      "5 to 7 eighths",
+      "No clouds",
+      "Complete overcast"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Few means 1 to 2 eighths of the sky is covered, too little to form a ceiling.",
     "acs": "UA.III.A"
   },
@@ -3472,12 +3472,12 @@ QUESTIONS_JSON = r'''[
     "s": "Ceiling",
     "q": "A report shows 'SCT004 BKN008 OVC020'. The ceiling is:",
     "c": [
-      "2,000 ft, the height of the overcast layer above",
       "There is no ceiling because the layers are broken",
-      "400 ft, the height of the lowest scattered layer",
-      "800 ft, the lowest broken or overcast layer"
+      "800 ft, the lowest broken or overcast layer",
+      "2,000 ft, the height of the overcast layer above",
+      "400 ft, the height of the lowest scattered layer"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The ceiling is the lowest broken or overcast layer, so BKN008 sets it at 800 ft.",
     "acs": "UA.III.B"
   },
@@ -3487,11 +3487,11 @@ QUESTIONS_JSON = r'''[
     "q": "Puffy cumulus clouds building upward are a sign of:",
     "c": [
       "Calm high pressure",
+      "Unstable air with possible turbulence",
       "Stable, smooth air",
-      "A temperature inversion",
-      "Unstable air with possible turbulence"
+      "A temperature inversion"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Cumulus development signals unstable, rising air and the turbulence that comes with it.",
     "acs": "UA.III.B"
   },
@@ -3500,12 +3500,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "An occluded front forms when:",
     "c": [
+      "A front stops moving",
       "A cold front overtakes a warm front",
-      "High pressure builds",
       "Two warm fronts merge",
-      "A front stops moving"
+      "High pressure builds"
     ],
-    "a": 0,
+    "a": 1,
     "e": "An occluded front occurs as a faster cold front catches and lifts a warm front.",
     "acs": "UA.III.B"
   },
@@ -3514,10 +3514,10 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "A stationary front is likely to bring:",
     "c": [
-      "No noticeable change in the weather at the surface",
       "A rapid and complete clearing of the sky within a few hours",
+      "Strong downslope winds and rapidly warming air",
       "Prolonged clouds and precipitation as it lingers",
-      "Strong downslope winds and rapidly warming air"
+      "No noticeable change in the weather at the surface"
     ],
     "a": 2,
     "e": "A stationary front barely moves, so its clouds and precipitation can persist for a long time.",
@@ -3528,12 +3528,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazards",
     "q": "Structural icing is a risk when there is:",
     "c": [
-      "A warm, humid afternoon with light and variable surface winds",
+      "Visible moisture and temperatures near or below freezing",
       "High pressure with clear skies and warm surface temperatures",
-      "Dry air at any temperature, including well below freezing",
-      "Visible moisture and temperatures near or below freezing"
+      "A warm, humid afternoon with light and variable surface winds",
+      "Dry air at any temperature, including well below freezing"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Icing needs visible moisture plus temperatures at or below freezing.",
     "acs": "UA.III.B"
   },
@@ -3543,11 +3543,11 @@ QUESTIONS_JSON = r'''[
     "q": "Wind direction in a METAR or TAF is referenced to:",
     "c": [
       "The nearest runway",
-      "True north",
+      "Grid north",
       "Magnetic north",
-      "Grid north"
+      "True north"
     ],
-    "a": 1,
+    "a": 3,
     "e": "METAR and TAF winds are true north, while tower and ATIS winds are magnetic.",
     "acs": "UA.III.A"
   },
@@ -3556,12 +3556,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fog",
     "q": "Radiation fog that formed overnight usually:",
     "c": [
-      "Burns off as the sun heats the ground",
       "Thickens through the afternoon",
-      "Lasts for several days",
-      "Turns into a thunderstorm"
+      "Turns into a thunderstorm",
+      "Burns off as the sun heats the ground",
+      "Lasts for several days"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Daytime heating warms the surface and dissipates radiation fog.",
     "acs": "UA.III.B"
   },
@@ -3570,12 +3570,12 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "A standard TAF is normally:",
     "c": [
-      "Valid only for the surface",
-      "Issued every 6 hours and valid for about 24 hours",
       "Issued every single hour and valid for only 2 hours",
-      "A one-time annual forecast"
+      "A one-time annual forecast",
+      "Valid only for the surface",
+      "Issued every 6 hours and valid for about 24 hours"
     ],
-    "a": 1,
+    "a": 3,
     "e": "TAFs are issued four times a day and typically cover a 24-hour period.",
     "acs": "UA.III.A"
   },
@@ -3584,12 +3584,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "An anchor symbol on a sectional chart marks a:",
     "c": [
+      "Heliport",
       "Military field",
       "Seaplane base",
-      "Closed airport",
-      "Heliport"
+      "Closed airport"
     ],
-    "a": 1,
+    "a": 2,
     "e": "An anchor denotes a seaplane base where water landings occur.",
     "acs": "UA.II.B"
   },
@@ -3598,12 +3598,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "A circled letter H on a sectional chart marks a:",
     "c": [
+      "Heliport",
       "Hospital only",
       "Hazard area",
-      "High obstacle",
-      "Heliport"
+      "High obstacle"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A circled H marks a heliport.",
     "acs": "UA.II.B"
   },
@@ -3612,10 +3612,10 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "A star above an airport symbol indicates the airport has:",
     "c": [
+      "No runway lighting of any kind available for night operations",
       "A control tower that is in operation during published daytime hours",
-      "Fuel services only, with no other facilities available on the field",
       "A rotating beacon, typically operating sunset to sunrise",
-      "No runway lighting of any kind available for night operations"
+      "Fuel services only, with no other facilities available on the field"
     ],
     "a": 2,
     "e": "A star marks a rotating beacon, which generally operates from sunset to sunrise.",
@@ -3626,10 +3626,10 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A parachute symbol on a sectional chart warns of:",
     "c": [
-      "A noise-sensitive area",
+      "A balloon launch site",
       "A glider tow",
       "A parachute jumping area",
-      "A balloon launch site"
+      "A noise-sensitive area"
     ],
     "a": 2,
     "e": "The parachute symbol marks an area of regular parachute jumping activity.",
@@ -3640,12 +3640,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A charted glider operations area tells a Part 107 pilot to:",
     "c": [
-      "Treat the area as Class C airspace requiring authorization",
-      "Watch for gliders, which can be quiet and hard to see",
+      "Expect only powered aircraft to be operating there",
       "Avoid the entire area, which is closed to all unmanned aircraft",
-      "Expect only powered aircraft to be operating there"
+      "Treat the area as Class C airspace requiring authorization",
+      "Watch for gliders, which can be quiet and hard to see"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Glider areas warn of quiet, hard-to-see traffic, so stay especially vigilant.",
     "acs": "UA.II.A"
   },
@@ -3655,11 +3655,11 @@ QUESTIONS_JSON = r'''[
     "q": "Wind turbines on a sectional chart are shown:",
     "c": [
       "As small blue circles placed wherever the turbines are located",
-      "As obstacle symbols with their height, often in groups",
       "As magenta flag symbols marking each individual turbine tower",
+      "As obstacle symbols with their height, often in groups",
       "Only in the chart legend rather than on the chart itself"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Wind turbines are charted as obstacles with heights, frequently grouped together.",
     "acs": "UA.II.B"
   },
@@ -3668,12 +3668,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A blue boundary around a national park or wildlife refuge asks pilots to:",
     "c": [
-      "Treat the entire area as prohibited airspace at all times",
       "Maintain a higher altitude and avoid disturbing the area",
-      "Obtain a Temporary Flight Restriction from the FAA before entering",
-      "Land inside the boundary and check in with a ranger"
+      "Land inside the boundary and check in with a ranger",
+      "Treat the entire area as prohibited airspace at all times",
+      "Obtain a Temporary Flight Restriction from the FAA before entering"
     ],
-    "a": 1,
+    "a": 0,
     "e": "These advisory boundaries request higher flight to avoid disturbing wildlife and visitors.",
     "acs": "UA.II.A"
   },
@@ -3682,8 +3682,8 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "Restricted and prohibited areas on a sectional are outlined with:",
     "c": [
-      "A dashed green line",
       "A row of dots",
+      "A dashed green line",
       "A solid magenta line",
       "A blue hatched boundary"
     ],
@@ -3696,9 +3696,9 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "Class C airspace shelf altitudes on a sectional are shown as:",
     "c": [
-      "Single above-ground-level values printed in blue beside each runway end",
-      "A dashed magenta line drawn around the outer edge of the airspace with no altitudes",
       "Blue shading whose darkness indicates the relative height of the airspace",
+      "A dashed magenta line drawn around the outer edge of the airspace with no altitudes",
+      "Single above-ground-level values printed in blue beside each runway end",
       "Magenta numbers giving the ceiling over the floor in hundreds of feet MSL"
     ],
     "a": 3,
@@ -3711,11 +3711,11 @@ QUESTIONS_JSON = r'''[
     "q": "Latitude and longitude lines on a sectional are used to:",
     "c": [
       "Show each of the different airspace classes",
-      "Pinpoint a precise position on the chart",
       "Indicate wind direction",
-      "Mark restricted areas"
+      "Mark restricted areas",
+      "Pinpoint a precise position on the chart"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The latitude and longitude grid lets a pilot locate an exact position.",
     "acs": "UA.II.A"
   },
@@ -3724,12 +3724,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Symbols",
     "q": "A magenta airport symbol with small extensions usually shows:",
     "c": [
-      "A heliport intended only for helicopter operations and landings",
-      "A closed airfield that is no longer available for any landings",
       "A non-towered airport drawn with its runway layout",
-      "A towered airport, which would instead be charted in blue"
+      "A towered airport, which would instead be charted in blue",
+      "A heliport intended only for helicopter operations and landings",
+      "A closed airfield that is no longer available for any landings"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Magenta means no control tower, and the extensions depict the actual runways.",
     "acs": "UA.II.B"
   },
@@ -3738,10 +3738,10 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "A small letter L in an airport data block usually indicates:",
     "c": [
-      "A left traffic pattern",
       "The airport is large",
+      "Low fuel only",
       "Runway lighting is available",
-      "Low fuel only"
+      "A left traffic pattern"
     ],
     "a": 2,
     "e": "An L in the data block indicates runway lighting is available, sometimes with limits.",
@@ -3752,12 +3752,12 @@ QUESTIONS_JSON = r'''[
     "s": "ADM",
     "q": "The DECIDE model is a decision tool standing for:",
     "c": [
-      "Detect, Estimate, Choose, Identify, Do, Evaluate",
       "Detect, Engage, Climb, Inspect, Descend, Exit",
       "Decide, Execute, Confirm, Inspect, Deploy, End",
-      "Define, Examine, Choose, Init, Drive, Exit"
+      "Define, Examine, Choose, Init, Drive, Exit",
+      "Detect, Estimate, Choose, Identify, Do, Evaluate"
     ],
-    "a": 0,
+    "a": 3,
     "e": "DECIDE means Detect, Estimate, Choose, Identify, Do, and Evaluate.",
     "acs": "UA.V.D"
   },
@@ -3767,11 +3767,11 @@ QUESTIONS_JSON = r'''[
     "q": "The 3P risk model stands for:",
     "c": [
       "Pilot, Payload, Power",
-      "Perceive, Process, Perform",
       "Predict, Protect, Persist",
-      "Plan, Prepare, Proceed"
+      "Plan, Prepare, Proceed",
+      "Perceive, Process, Perform"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The 3P model is Perceive the hazards, Process the risk, and Perform the response.",
     "acs": "UA.V.D"
   },
@@ -3781,11 +3781,11 @@ QUESTIONS_JSON = r'''[
     "q": "The level of a given risk is best understood as:",
     "c": [
       "Whether a similar event has ever happened to that pilot in the past",
-      "Only how severe the outcome would be, regardless of how likely it is",
+      "A combination of how likely it is and how severe the outcome would be",
       "Only how likely the event is to happen, regardless of how bad it would be",
-      "A combination of how likely it is and how severe the outcome would be"
+      "Only how severe the outcome would be, regardless of how likely it is"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Risk combines the likelihood of an event with the severity of its outcome.",
     "acs": "UA.V.D"
   },
@@ -3794,12 +3794,12 @@ QUESTIONS_JSON = r'''[
     "s": "See and Avoid",
     "q": "To meet see-and-avoid responsibilities, the remote PIC or observer should:",
     "c": [
-      "Look up once before launch and then focus on the control screen",
-      "Watch only the control screen, where all nearby traffic appears",
       "Rely on the drone's onboard sensors alone to detect other aircraft",
-      "Continuously scan the sky around the aircraft for other traffic"
+      "Watch only the control screen, where all nearby traffic appears",
+      "Continuously scan the sky around the aircraft for other traffic",
+      "Look up once before launch and then focus on the control screen"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Continuous scanning of the surrounding sky is how the crew spots and avoids other aircraft.",
     "acs": "UA.I.B"
   },
@@ -3808,12 +3808,12 @@ QUESTIONS_JSON = r'''[
     "s": "Site Survey",
     "q": "A preflight site survey should identify:",
     "c": [
-      "Only the wind speed, since nothing else affects the flight",
       "Obstacles, people, and the airspace before the flight begins",
       "The aircraft's current resale value on the used equipment market",
+      "Only the wind speed, since nothing else affects the flight",
       "The remote pilot's certificate number and date of issue"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Surveying the site for obstacles, people, and airspace lets the pilot plan a safe operation.",
     "acs": "UA.V.D"
   },
@@ -3822,12 +3822,12 @@ QUESTIONS_JSON = r'''[
     "s": "Lost Link",
     "q": "A drone's return-to-home altitude should be set:",
     "c": [
-      "Below 50 ft so the return stays quick",
-      "Right at ground level so that the descent stays short",
       "Above the tallest obstacle along the return path",
+      "Right at ground level so that the descent stays short",
+      "Below 50 ft so the return stays quick",
       "At the maximum 400 ft for every flight"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Setting return-to-home above the tallest obstacle prevents a collision during an automatic return.",
     "acs": "UA.V.C"
   },
@@ -3836,12 +3836,12 @@ QUESTIONS_JSON = r'''[
     "s": "Crew Roles",
     "q": "A visual observer in a Part 107 operation:",
     "c": [
+      "Watches the aircraft and reports, but does not operate the controls",
       "Must hold a separate remote pilot certificate of their own",
       "Files the airspace authorization request with the FAA before launch",
-      "Watches the aircraft and reports, but does not operate the controls",
       "Takes over flying the aircraft whenever the remote pilot is busy"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The visual observer supports see-and-avoid but does not manipulate the controls.",
     "acs": "UA.V.D"
   },
@@ -3850,12 +3850,12 @@ QUESTIONS_JSON = r'''[
     "s": "Endurance",
     "q": "Planning a battery reserve before flight ensures the pilot can:",
     "c": [
+      "Ignore the wind entirely because the reserve covers any added power use",
       "Land safely with margin instead of running the pack to empty",
-      "Skip the preflight inspection since the reserve handles surprises",
       "Fly roughly twice as long as the battery would otherwise allow",
-      "Ignore the wind entirely because the reserve covers any added power use"
+      "Skip the preflight inspection since the reserve handles surprises"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A planned reserve leaves enough power to land safely rather than risking a dead pack aloft.",
     "acs": "UA.V.D"
   },
@@ -3864,12 +3864,12 @@ QUESTIONS_JSON = r'''[
     "s": "Right-of-Way",
     "q": "Yielding to a manned aircraft means the remote pilot must:",
     "c": [
+      "Match the manned aircraft's altitude and follow it at a fixed distance",
       "Give way and stay well clear, not pass close ahead, above, or below",
-      "Climb above the manned aircraft to pass safely over the top of it",
       "Maintain the current heading and speed and let the other aircraft adjust",
-      "Match the manned aircraft's altitude and follow it at a fixed distance"
+      "Climb above the manned aircraft to pass safely over the top of it"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Yielding means giving way and remaining well clear, never crossing close in front of or near the aircraft.",
     "acs": "UA.I.B"
   },
@@ -3878,10 +3878,10 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "The antidote to the anti-authority attitude is to remind yourself:",
     "c": [
-      "Do it quickly",
       "It surely will not ever happen to me at all",
+      "I can handle anything",
       "Follow the rules; they are usually right",
-      "I can handle anything"
+      "Do it quickly"
     ],
     "a": 2,
     "e": "The antidote to anti-authority is recognizing that the rules are usually there for good reason.",
@@ -3892,12 +3892,12 @@ QUESTIONS_JSON = r'''[
     "s": "Time Pressure",
     "q": "Rushing a preflight to meet a deadline most directly increases the risk of:",
     "c": [
-      "Encountering smoother air because the flight begins earlier than planned",
       "Sharper focus and quicker reactions once the aircraft is in the air",
       "Achieving longer battery life because the systems warm up more quickly",
-      "Missing a problem that should have been caught on the ground"
+      "Missing a problem that should have been caught on the ground",
+      "Encountering smoother air because the flight begins earlier than planned"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Hurrying the preflight lets ground-detectable problems slip through into the flight.",
     "acs": "UA.V.D"
   },
@@ -3906,12 +3906,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class B",
     "q": "In the core of Class B airspace, near the primary airport, the floor is usually:",
     "c": [
-      "At the surface",
-      "700 ft AGL",
       "10,000 ft MSL",
-      "1,200 ft AGL"
+      "700 ft AGL",
+      "1,200 ft AGL",
+      "At the surface"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Class B reaches the surface in its core, with shelves stepping up farther out.",
     "acs": "UA.II.A"
   },
@@ -3920,12 +3920,12 @@ QUESTIONS_JSON = r'''[
     "s": "Planning",
     "q": "The best way to determine which airspace overlies your flight site is to:",
     "c": [
-      "Wait until you are airborne and judge the airspace from the altitude",
       "Ask a nearby bystander whether they have seen any aircraft overhead",
-      "Assume it is uncontrolled Class G unless a tower is clearly visible",
-      "Check a current sectional chart or an airspace app before flying"
+      "Wait until you are airborne and judge the airspace from the altitude",
+      "Check a current sectional chart or an airspace app before flying",
+      "Assume it is uncontrolled Class G unless a tower is clearly visible"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Checking a current sectional or airspace tool before flight tells you exactly what airspace applies.",
     "acs": "UA.II.A"
   },
@@ -3934,12 +3934,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class E Surface",
     "q": "A non-towered airport with an instrument approach may have Class E to the surface, charted as:",
     "c": [
-      "A solid blue circle surrounding the entire airport area",
+      "A dashed magenta line, which requires authorization",
       "No marking at all, since Class E is never shown on charts",
       "A magenta flag symbol placed at the center of the airport",
-      "A dashed magenta line, which requires authorization"
+      "A solid blue circle surrounding the entire airport area"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A dashed magenta boundary marks Class E to the surface, which is controlled and needs authorization.",
     "acs": "UA.II.A"
   },
@@ -3948,12 +3948,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "The difference between a prohibited area and a restricted area is that a prohibited area:",
     "c": [
-      "Permits flight below 400 feet above the ground without any prior coordination",
+      "Is uncontrolled airspace that any pilot may enter at any time",
       "Applies only to unmanned aircraft and not to any manned traffic",
-      "Bars all flight, while a restricted area may be entered with permission",
-      "Is uncontrolled airspace that any pilot may enter at any time"
+      "Permits flight below 400 feet above the ground without any prior coordination",
+      "Bars all flight, while a restricted area may be entered with permission"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Prohibited areas allow no flight at all, while restricted areas may be entered with permission.",
     "acs": "UA.II.A"
   },
@@ -3962,12 +3962,12 @@ QUESTIONS_JSON = r'''[
     "s": "TFR",
     "q": "Temporary Flight Restrictions are commonly issued for:",
     "c": [
-      "Hazards like wildfires, security like VIP movement, and special events",
-      "Normal daily airport traffic during periods of heavy congestion",
+      "Clear-weather days when visibility and ceilings are well above minimums",
       "Routine drone operations that do not involve any manned aircraft traffic",
-      "Clear-weather days when visibility and ceilings are well above minimums"
+      "Hazards like wildfires, security like VIP movement, and special events",
+      "Normal daily airport traffic during periods of heavy congestion"
     ],
-    "a": 0,
+    "a": 2,
     "e": "TFRs cover hazards, security needs, and special events, and they apply to drones.",
     "acs": "UA.II.A"
   },
@@ -3976,12 +3976,12 @@ QUESTIONS_JSON = r'''[
     "s": "LAANC",
     "q": "Automatic LAANC authorization is:",
     "c": [
+      "Available at any time through approved apps",
       "Issued by phone only",
       "Limited to weekends",
-      "Available at any time through approved apps",
       "Only available during business hours"
     ],
-    "a": 2,
+    "a": 0,
     "e": "LAANC processes requests automatically around the clock through approved providers.",
     "acs": "UA.II.B"
   },
@@ -3990,12 +3990,12 @@ QUESTIONS_JSON = r'''[
     "s": "Grid Altitude",
     "q": "If a UAS Facility Map grid shows 200 ft over your site, you may:",
     "c": [
-      "Fly only at night, when the published grid altitudes no longer apply",
       "Fly only up to 200 ft there under automatic authorization",
       "Still fly up to 400 ft as long as you stay within visual line of sight",
-      "Ignore the grid because facility maps are only advisory for hobby flyers"
+      "Ignore the grid because facility maps are only advisory for hobby flyers",
+      "Fly only at night, when the published grid altitudes no longer apply"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The grid ceiling can be below 400 ft, and you must honor that lower authorized altitude.",
     "acs": "UA.II.B"
   },
@@ -4004,12 +4004,12 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization",
     "q": "Receiving an airspace authorization to enter Class D:",
     "c": [
-      "Lets you exceed 400 ft AGL",
       "Removes the visual line of sight rule",
       "Does not exempt you from the other Part 107 rules",
+      "Lets you exceed 400 ft AGL",
       "Allows flight over people"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Authorization only grants airspace access; every other Part 107 limit still applies.",
     "acs": "UA.II.B"
   },
@@ -4018,12 +4018,12 @@ QUESTIONS_JSON = r'''[
     "s": "Waivers",
     "q": "A request for a Part 107 waiver is submitted through:",
     "c": [
-      "A local flight school",
       "The FAA DroneZone portal",
-      "The control tower",
-      "The aircraft manufacturer"
+      "A local flight school",
+      "The aircraft manufacturer",
+      "The control tower"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Waiver requests are filed through the FAA DroneZone portal.",
     "acs": "UA.I.D"
   },
@@ -4032,12 +4032,12 @@ QUESTIONS_JSON = r'''[
     "s": "Responsibility",
     "q": "Ultimate responsibility for the safety of a Part 107 operation rests with:",
     "c": [
-      "The remote pilot in command",
-      "The client",
       "The aircraft manufacturer",
+      "The client",
+      "The remote pilot in command",
       "Air traffic control"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The remote PIC is directly responsible for and the final authority over the operation.",
     "acs": "UA.I.B"
   },
@@ -4046,12 +4046,12 @@ QUESTIONS_JSON = r'''[
     "s": "Currency",
     "q": "The updated Part 107 recurrent training now includes content on:",
     "c": [
-      "Night operations",
-      "International flight",
       "Seaplane ratings",
-      "Manned aircraft systems"
+      "Manned aircraft systems",
+      "International flight",
+      "Night operations"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Recurrent training was updated to cover night operations along with the core knowledge areas.",
     "acs": "UA.I.C"
   },
@@ -4060,12 +4060,12 @@ QUESTIONS_JSON = r'''[
     "s": "Registration",
     "q": "Registering a small unmanned aircraft for Part 107 is completed through:",
     "c": [
-      "The manufacturer's website",
       "A state motor vehicle office",
-      "The FAA DroneZone system",
-      "A local airport"
+      "The manufacturer's website",
+      "A local airport",
+      "The FAA DroneZone system"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Aircraft registration is completed through the FAA DroneZone system.",
     "acs": "UA.I.B"
   },
@@ -4074,12 +4074,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "Keeping the center of gravity within the manufacturer's limits gives:",
     "c": [
-      "Longer battery life",
       "Predictable, stable handling",
-      "Faster acceleration only",
-      "A higher weight limit"
+      "A higher weight limit",
+      "Longer battery life",
+      "Faster acceleration only"
     ],
-    "a": 1,
+    "a": 0,
     "e": "A center of gravity within limits keeps the aircraft stable and predictable to control.",
     "acs": "UA.IV.A"
   },
@@ -4088,8 +4088,8 @@ QUESTIONS_JSON = r'''[
     "s": "Battery",
     "q": "As battery voltage drops late in a flight, the aircraft may:",
     "c": [
-      "Climb faster and more efficiently as the lighter battery reduces the total weight",
       "Gain power as the remaining cells discharge and deliver a brief surge of current",
+      "Climb faster and more efficiently as the lighter battery reduces the total weight",
       "Trigger an automatic return or landing, so a reserve should be planned",
       "Extend its total range because the flight controller switches to a power-saving mode"
     ],
@@ -4102,12 +4102,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Hovering a multirotor is power-intensive, so a long hover will:",
     "c": [
-      "Use significant battery and shorten the remaining flight time",
       "Cool the motors because the aircraft is not moving through the air",
       "Slowly recharge the battery using the spinning rotor blades",
-      "Have no effect on endurance since hovering uses very little power"
+      "Have no effect on endurance since hovering uses very little power",
+      "Use significant battery and shorten the remaining flight time"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Hovering demands constant high power, draining the battery and cutting remaining flight time.",
     "acs": "UA.IV.A"
   },
@@ -4116,12 +4116,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maneuverability",
     "q": "A heavier aircraft carries more energy, so on descent and landing the pilot should:",
     "c": [
-      "Add more payload",
       "Descend as fast as possible",
-      "Cut power abruptly",
-      "Allow more room and a gentler approach"
+      "Allow more room and a gentler approach",
+      "Add more payload",
+      "Cut power abruptly"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Greater mass means more energy to manage, so heavier aircraft need a gentler, roomier approach.",
     "acs": "UA.IV.A"
   },
@@ -4130,12 +4130,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "The antidote to the macho attitude is to tell yourself:",
     "c": [
+      "Taking chances is foolish",
       "Follow the rules",
       "It cannot happen to me",
-      "Taking chances is foolish",
       "Do it quickly"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The antidote to macho is recognizing that taking unnecessary chances is foolish.",
     "acs": "UA.V.D"
   },
@@ -4144,12 +4144,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "The antidote to impulsivity is to tell yourself:",
     "c": [
-      "I am helpless",
       "It will not happen to me",
+      "Not so fast; think first",
       "Rules are for others",
-      "Not so fast; think first"
+      "I am helpless"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The antidote to impulsivity is to slow down and think before acting.",
     "acs": "UA.V.D"
   },
@@ -4158,12 +4158,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "The antidote to invulnerability is to tell yourself:",
     "c": [
-      "Taking chances is foolish",
+      "It could happen to me",
       "Do it now",
-      "I cannot make a difference",
-      "It could happen to me"
+      "Taking chances is foolish",
+      "I cannot make a difference"
     ],
-    "a": 3,
+    "a": 0,
     "e": "The antidote to invulnerability is accepting that an accident could happen to you.",
     "acs": "UA.V.D"
   },
@@ -4172,12 +4172,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "The antidote to resignation is to tell yourself:",
     "c": [
-      "I am not helpless; I can make a difference",
-      "It cannot ever happen to me out here",
       "The rules are really meant for others",
-      "Just hurry up now before the chance slips away"
+      "It cannot ever happen to me out here",
+      "Just hurry up now before the chance slips away",
+      "I am not helpless; I can make a difference"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The antidote to resignation is recognizing you can influence the outcome.",
     "acs": "UA.V.D"
   },
@@ -4186,12 +4186,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over Vehicles",
     "q": "Flying a drone directly over a moving vehicle is:",
     "c": [
-      "Never restricted, because the occupants are fully shielded by the vehicle body",
+      "Restricted, like flight over people, unless conditions or a category are met",
       "Always allowed below 400 feet as long as the vehicle is on a public road",
       "Allowed whenever the vehicle is stopped at a traffic light or stop sign",
-      "Restricted, like flight over people, unless conditions or a category are met"
+      "Never restricted, because the occupants are fully shielded by the vehicle body"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Flight over moving vehicles is restricted much like flight over people unless the operation meets the rules.",
     "acs": "UA.I.E"
   },
@@ -4201,11 +4201,11 @@ QUESTIONS_JSON = r'''[
     "q": "Before takeoff, a pilot should confirm:",
     "c": [
       "The aircraft's exterior color and paint condition",
-      "A solid GPS lock and that the home point is set",
       "The client's schedule for the rest of the day",
-      "Only that the propellers spin freely when the motors arm"
+      "Only that the propellers spin freely when the motors arm",
+      "A solid GPS lock and that the home point is set"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Confirming GPS lock and a set home point ensures features like return-to-home will work.",
     "acs": "UA.V.F"
   },
@@ -4214,12 +4214,12 @@ QUESTIONS_JSON = r'''[
     "s": "Loss of GPS",
     "q": "If GPS is lost in flight, the pilot should be prepared to:",
     "c": [
-      "Fly the aircraft manually and land safely",
-      "Hand off to a bystander",
       "Let it drift until GPS returns",
+      "Hand off to a bystander",
+      "Fly the aircraft manually and land safely",
       "Increase altitude and wait"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A pilot should be ready to take manual control and land if the aircraft loses GPS.",
     "acs": "UA.V.C"
   },
@@ -4229,9 +4229,9 @@ QUESTIONS_JSON = r'''[
     "q": "Obtaining a weather briefing before flight helps a pilot:",
     "c": [
       "Anticipate hazards like wind, ceilings, and storms",
+      "Choose the most appropriate paint color for the drone",
       "Skip the on-site preflight survey entirely",
-      "Avoid having to register the aircraft",
-      "Choose the most appropriate paint color for the drone"
+      "Avoid having to register the aircraft"
     ],
     "a": 0,
     "e": "A weather briefing reveals wind, ceilings, visibility, and storms that affect the go decision.",
@@ -4243,11 +4243,11 @@ QUESTIONS_JSON = r'''[
     "q": "If conditions deteriorate below a pilot's personal minimums in flight, the right action is to:",
     "c": [
       "Climb to 400 ft",
-      "End the flight and land",
       "Continue and finish quickly",
-      "Ignore the change"
+      "Ignore the change",
+      "End the flight and land"
     ],
-    "a": 1,
+    "a": 3,
     "e": "When conditions fall below personal minimums, the safe choice is to land and end the flight.",
     "acs": "UA.V.D"
   },
@@ -4256,12 +4256,12 @@ QUESTIONS_JSON = r'''[
     "s": "Emergency Response",
     "q": "Flying a drone near a wildfire or active emergency scene:",
     "c": [
-      "Is encouraged so the footage can be shared with the emergency responders",
       "Is fine as long as the aircraft stays above 400 feet over the scene",
-      "Requires only a brief verbal notice to the on-scene incident commander",
-      "Is dangerous and prohibited, as it can ground firefighting aircraft"
+      "Is encouraged so the footage can be shared with the emergency responders",
+      "Is dangerous and prohibited, as it can ground firefighting aircraft",
+      "Requires only a brief verbal notice to the on-scene incident commander"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Drones near wildfires or emergencies endanger and can ground crewed response aircraft, so do not fly there.",
     "acs": "UA.V.C"
   },
@@ -4270,12 +4270,12 @@ QUESTIONS_JSON = r'''[
     "s": "Failsafe",
     "q": "Before flying, a pilot should know the aircraft's failsafe behavior so they can:",
     "c": [
+      "Predict what it does on a lost link or low battery",
       "Operate the aircraft without performing a preflight check",
       "Safely exceed the published maximum takeoff weight limit",
-      "Predict what it does on a lost link or low battery",
       "Skip the preflight briefing to save time before launch"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Knowing the failsafe response to a lost link or low battery lets the pilot plan for it.",
     "acs": "UA.V.C"
   },
@@ -4285,11 +4285,11 @@ QUESTIONS_JSON = r'''[
     "q": "During a coordinated transfer of control between two remote pilots:",
     "c": [
       "Neither pilot is responsible during the handoff itself",
+      "Only one is the responsible remote PIC at any moment",
       "Both pilots are the responsible remote PIC at the same time",
-      "A nearby bystander temporarily becomes the remote PIC",
-      "Only one is the responsible remote PIC at any moment"
+      "A nearby bystander temporarily becomes the remote PIC"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Control may pass between qualified pilots, but only one is the responsible remote PIC at a time.",
     "acs": "UA.I.B"
   },
@@ -4298,12 +4298,12 @@ QUESTIONS_JSON = r'''[
     "s": "Distance Judgment",
     "q": "Because judging an aircraft's altitude and distance is harder far away, a pilot should:",
     "c": [
-      "Fly the aircraft out as far as the control link signal will reliably reach",
+      "Keep the aircraft close enough to see its position and orientation clearly",
       "Ignore orientation and focus solely on keeping the battery level above reserve",
       "Rely only on the map view in the controller app to judge the aircraft's location",
-      "Keep the aircraft close enough to see its position and orientation clearly"
+      "Fly the aircraft out as far as the control link signal will reliably reach"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Position and attitude are hard to judge at range, so keep the aircraft close enough to see clearly.",
     "acs": "UA.I.B"
   },
@@ -4312,12 +4312,12 @@ QUESTIONS_JSON = r'''[
     "s": "Bystander Safety",
     "q": "A safe operation keeps uninvolved people:",
     "c": [
-      "Directly below the aircraft so they get the best possible view",
       "Clear of the launch and landing zone and out from under the aircraft",
+      "Inside the control station alongside the remote pilot for the whole flight",
       "Holding the aircraft steady during launch and recovery each time",
-      "Inside the control station alongside the remote pilot for the whole flight"
+      "Directly below the aircraft so they get the best possible view"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Keeping bystanders clear of the launch zone and out from under the aircraft protects them from injury.",
     "acs": "UA.V.D"
   },
@@ -4326,9 +4326,9 @@ QUESTIONS_JSON = r'''[
     "s": "Communication",
     "q": "For a multi-person operation, the crew should agree on:",
     "c": [
-      "The color scheme and overall styling of the aircraft",
-      "A clear method to communicate during the flight",
       "Who gets to keep the footage afterward",
+      "A clear method to communicate during the flight",
+      "The color scheme and overall styling of the aircraft",
       "Nothing needs to be agreed in advance"
     ],
     "a": 1,
@@ -4340,12 +4340,12 @@ QUESTIONS_JSON = r'''[
     "s": "ADM",
     "q": "When a pilot is unsure whether a flight is safe or legal, the best choice is to:",
     "c": [
-      "Fly and find out",
+      "Not fly until the doubt is resolved",
       "Fly only briefly",
-      "Ask a bystander to decide",
-      "Not fly until the doubt is resolved"
+      "Fly and find out",
+      "Ask a bystander to decide"
     ],
-    "a": 3,
+    "a": 0,
     "e": "When in doubt, do not fly until the safety or legality question is resolved.",
     "acs": "UA.V.D"
   },
@@ -4354,12 +4354,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacle Awareness",
     "q": "Before maneuvering at low altitude, a pilot should scan for:",
     "c": [
-      "Only the battery level shown on the controller",
-      "Wires, poles, and towers that are hard to see",
       "The amount of cloud cover overhead only",
-      "The remote pilot certificate expiration date"
+      "The remote pilot certificate expiration date",
+      "Only the battery level shown on the controller",
+      "Wires, poles, and towers that are hard to see"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Thin wires and towers are easy to miss, so scan for them before any low maneuvering.",
     "acs": "UA.II.B"
   },
@@ -4369,11 +4369,11 @@ QUESTIONS_JSON = r'''[
     "q": "Keeping a flight log under Part 107 is:",
     "c": [
       "Required only at night",
+      "Good practice, though not required by the rule",
       "Prohibited",
-      "Strictly required by the rule before every flight",
-      "Good practice, though not required by the rule"
+      "Strictly required by the rule before every flight"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Part 107 does not require a logbook, but accurate records are a useful safety habit.",
     "acs": "UA.I.A"
   },
@@ -4382,12 +4382,12 @@ QUESTIONS_JSON = r'''[
     "s": "Daylight Awareness",
     "q": "Knowing the local sunset time matters because it determines when:",
     "c": [
-      "The aircraft must be registered",
-      "The battery must be charged",
+      "The certificate expires",
       "Anti-collision lighting and night rules apply",
-      "The certificate expires"
+      "The battery must be charged",
+      "The aircraft must be registered"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Sunset marks when civil twilight and night lighting requirements begin to apply.",
     "acs": "UA.I.B"
   },
@@ -4396,12 +4396,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class C",
     "q": "The top of Class C airspace is typically:",
     "c": [
+      "10,000 ft MSL across the entire charted area",
       "About 4,000 ft above the airport elevation",
       "700 ft AGL, matching the floor of Class E nearby",
-      "18,000 ft MSL, the altitude where Class A airspace begins",
-      "10,000 ft MSL across the entire charted area"
+      "18,000 ft MSL, the altitude where Class A airspace begins"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Class C generally tops out around 4,000 ft above the airport elevation.",
     "acs": "UA.II.A"
   },
@@ -4410,12 +4410,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class D",
     "q": "When the control tower at a Class D airport closes for the night, the airspace usually:",
     "c": [
-      "Becomes prohibited",
       "Stays Class D",
-      "Reverts to Class E or Class G",
-      "Becomes Class B"
+      "Becomes Class B",
+      "Becomes prohibited",
+      "Reverts to Class E or Class G"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Class D depends on an operating tower, so it reverts to Class E or G when the tower closes.",
     "acs": "UA.II.A"
   },
@@ -4424,12 +4424,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class E",
     "q": "Far from airports, en route Class E airspace often begins at:",
     "c": [
-      "14,500 ft MSL",
       "700 ft AGL",
-      "The surface",
-      "18,000 ft MSL"
+      "18,000 ft MSL",
+      "14,500 ft MSL",
+      "The surface"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Where not otherwise designated, en route Class E begins at 14,500 ft MSL.",
     "acs": "UA.II.A"
   },
@@ -4438,9 +4438,9 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization",
     "q": "Which airspace does NOT require Part 107 authorization for a drone?",
     "c": [
+      "Surface Class E established to support an instrument approach",
       "Class C airspace surrounding a busier airport that provides radar service",
       "Class D airspace surrounding an airport with an operating control tower",
-      "Surface Class E established to support an instrument approach",
       "Class E that begins at 700 or 1,200 ft AGL, not at the surface"
     ],
     "a": 3,
@@ -4452,12 +4452,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class G Ceiling",
     "q": "The top of Class G airspace is found where:",
     "c": [
-      "Class A airspace begins, at 18,000 feet mean sea level across the country",
       "The charted floor of the traffic pattern ends, usually near 400 feet AGL",
       "The overlying controlled airspace begins, often 700 or 1,200 ft AGL",
-      "It always reaches exactly 18,000 feet regardless of the surrounding airspace"
+      "It always reaches exactly 18,000 feet regardless of the surrounding airspace",
+      "Class A airspace begins, at 18,000 feet mean sea level across the country"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Class G extends up to the base of the overlying controlled airspace, commonly 700 or 1,200 ft AGL.",
     "acs": "UA.II.A"
   },
@@ -4466,12 +4466,12 @@ QUESTIONS_JSON = r'''[
     "s": "LAANC vs DroneZone",
     "q": "LAANC and FAA DroneZone differ in that LAANC:",
     "c": [
-      "Is available only for night operations that require anti-collision lighting and extra training",
       "Provides authorization only for manned aircraft operating in controlled airspace near airports",
-      "Replaces the aircraft registration requirement for drones flown under Part 107 rules",
-      "Gives near-instant authorization, while DroneZone handles manual or further-out requests"
+      "Is available only for night operations that require anti-collision lighting and extra training",
+      "Gives near-instant authorization, while DroneZone handles manual or further-out requests",
+      "Replaces the aircraft registration requirement for drones flown under Part 107 rules"
     ],
-    "a": 3,
+    "a": 2,
     "e": "LAANC returns near-instant authorization up to grid limits, while DroneZone handles manual and special requests.",
     "acs": "UA.II.B"
   },
@@ -4481,9 +4481,9 @@ QUESTIONS_JSON = r'''[
     "q": "To operate inside an active Restricted Area, a pilot must:",
     "c": [
       "Obtain permission from the controlling agency",
-      "File a Temporary Flight Restriction beforehand",
       "Simply stay under 400 ft above the ground",
-      "Do nothing at all if the transit is brief"
+      "Do nothing at all if the transit is brief",
+      "File a Temporary Flight Restriction beforehand"
     ],
     "a": 0,
     "e": "An active restricted area may be entered only with permission from its controlling agency.",
@@ -4494,12 +4494,12 @@ QUESTIONS_JSON = r'''[
     "s": "MOA",
     "q": "The status of a Military Operations Area can be checked through:",
     "c": [
+      "The aircraft's flight manual, which lists every active military area",
       "NOTAMs and the controlling agency, with hours often shown on the chart",
       "Only radio contact with the nearest airport traffic control tower",
-      "The aircraft registration database maintained on the FAA DroneZone website",
-      "The aircraft's flight manual, which lists every active military area"
+      "The aircraft registration database maintained on the FAA DroneZone website"
     ],
-    "a": 0,
+    "a": 1,
     "e": "MOA activity is published via NOTAMs and the controlling agency, with times often listed on the chart.",
     "acs": "UA.II.A"
   },
@@ -4508,12 +4508,12 @@ QUESTIONS_JSON = r'''[
     "s": "Low Altitude",
     "q": "Operating at only 100 ft AGL inside Class D airspace:",
     "c": [
-      "Requires a waiver",
       "Is automatically allowed",
       "Needs no authorization because it is low",
-      "Still requires authorization"
+      "Still requires authorization",
+      "Requires a waiver"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Controlled airspace requires authorization at any altitude, even very low operations.",
     "acs": "UA.II.B"
   },
@@ -4522,12 +4522,12 @@ QUESTIONS_JSON = r'''[
     "s": "National Parks",
     "q": "Launching or landing a drone within a US National Park is generally:",
     "c": [
-      "Allowed once a LAANC authorization is obtained",
       "Treated exactly the same as Class G airspace",
       "Allowed provided you remain below 400 ft above ground",
-      "Prohibited by National Park Service rules"
+      "Prohibited by National Park Service rules",
+      "Allowed once a LAANC authorization is obtained"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The National Park Service prohibits launching and landing drones within park boundaries.",
     "acs": "UA.II.A"
   },
@@ -4536,12 +4536,12 @@ QUESTIONS_JSON = r'''[
     "s": "Communication",
     "q": "To operate in authorized controlled airspace, a Part 107 pilot:",
     "c": [
-      "Must talk to the control tower continuously throughout the entire operation",
-      "Must file an instrument flight rules plan before entering the airspace",
+      "Does not need two-way radio contact with ATC; authorization is handled digitally",
       "Must maintain a continuous listening watch on the emergency frequency 121.5 throughout",
-      "Does not need two-way radio contact with ATC; authorization is handled digitally"
+      "Must file an instrument flight rules plan before entering the airspace",
+      "Must talk to the control tower continuously throughout the entire operation"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Small UAS do not maintain radio contact with ATC; the digital authorization is what grants access.",
     "acs": "UA.II.B"
   },
@@ -4551,11 +4551,11 @@ QUESTIONS_JSON = r'''[
     "q": "When checking airspace, a pilot should always use:",
     "c": [
       "A standard highway road map of the area",
-      "Whatever old chart happens to be on hand",
       "The current edition of the sectional chart",
+      "Whatever old chart happens to be on hand",
       "A surface analysis weather chart for the day"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Airspace changes over time, so always reference the current edition of the sectional.",
     "acs": "UA.II.A"
   },
@@ -4564,12 +4564,12 @@ QUESTIONS_JSON = r'''[
     "s": "TFR",
     "q": "A disaster-relief TFR over a flooded area:",
     "c": [
+      "Ends automatically at 400 feet above the ground for small drones",
       "Applies only to helicopters and other manned rescue aircraft",
-      "Restricts drone flight there without specific authorization",
       "Can be safely ignored by drones that stay within visual line of sight",
-      "Ends automatically at 400 feet above the ground for small drones"
+      "Restricts drone flight there without specific authorization"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Disaster-relief TFRs apply to drones, so do not enter without specific authorization.",
     "acs": "UA.II.A"
   },
@@ -4578,12 +4578,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class B",
     "q": "Authorization to fly a drone in Class B airspace is usually obtained:",
     "c": [
+      "Only with a specific waiver granted in advance by the FAA",
       "By calling the primary airport's control tower before takeoff",
       "Automatically, as long as the flight stays below 400 feet AGL",
-      "Through LAANC where available, or DroneZone otherwise",
-      "Only with a specific waiver granted in advance by the FAA"
+      "Through LAANC where available, or DroneZone otherwise"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Class B access comes through LAANC where it is supported, or through DroneZone otherwise.",
     "acs": "UA.II.A"
   },
@@ -4592,12 +4592,12 @@ QUESTIONS_JSON = r'''[
     "s": "Stadium TFR",
     "q": "The standing stadium TFR is in effect:",
     "c": [
-      "Only at night, regardless of when events are scheduled",
-      "Only during the event window defined by the NOTAM",
+      "Only during playoff games and major championship events",
       "All day every day, whether or not an event is happening",
-      "Only during playoff games and major championship events"
+      "Only during the event window defined by the NOTAM",
+      "Only at night, regardless of when events are scheduled"
     ],
-    "a": 1,
+    "a": 2,
     "e": "The stadium TFR applies during the event window, from one hour before to one hour after.",
     "acs": "UA.II.A"
   },
@@ -4620,12 +4620,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "A pilot planning near a charted restricted area should first:",
     "c": [
-      "Assume it is always inactive outside of normal business hours",
       "Check whether it is active and get permission if needed",
-      "Fly through it quickly to spend as little time inside as possible",
-      "Treat it as uncontrolled Class G and fly without authorization"
+      "Treat it as uncontrolled Class G and fly without authorization",
+      "Assume it is always inactive outside of normal business hours",
+      "Fly through it quickly to spend as little time inside as possible"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Restricted areas may be active, so check status and obtain permission before operating inside.",
     "acs": "UA.II.A"
   },
@@ -4634,12 +4634,12 @@ QUESTIONS_JSON = r'''[
     "s": "Commercial Use",
     "q": "Flying a drone to take photos you will sell must be done under:",
     "c": [
-      "The recreational exception",
-      "No rules",
       "A manned pilot certificate",
-      "Part 107"
+      "No rules",
+      "Part 107",
+      "The recreational exception"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Any flight for a business or compensation falls under Part 107, not the recreational exception.",
     "acs": "UA.I.A"
   },
@@ -4648,9 +4648,9 @@ QUESTIONS_JSON = r'''[
     "s": "Knowledge Test",
     "q": "The passing score on the Part 107 knowledge test is:",
     "c": [
-      "60 percent",
       "100 percent",
       "80 percent",
+      "60 percent",
       "70 percent"
     ],
     "a": 3,
@@ -4662,8 +4662,8 @@ QUESTIONS_JSON = r'''[
     "s": "Knowledge Test",
     "q": "If you fail the Part 107 knowledge test, you must wait before retaking it:",
     "c": [
-      "24 hours",
       "30 days",
+      "24 hours",
       "6 months",
       "14 calendar days"
     ],
@@ -4676,9 +4676,9 @@ QUESTIONS_JSON = r'''[
     "s": "Inspection",
     "q": "The remote pilot certificate must be presented for inspection on request by:",
     "c": [
-      "Any bystander",
       "Only the FAA",
       "The original aircraft seller or its dealer",
+      "Any bystander",
       "The FAA, NTSB, TSA, or law enforcement"
     ],
     "a": 3,
@@ -4690,12 +4690,12 @@ QUESTIONS_JSON = r'''[
     "s": "Applicability",
     "q": "Part 107 applies to:",
     "c": [
-      "Civil small unmanned aircraft weighing less than 55 lb",
       "All aircraft over 55 lb, including manned general aviation planes",
+      "Public aircraft operated only by government agencies and police",
       "Manned aircraft only, flown by certificated private pilots",
-      "Public aircraft operated only by government agencies and police"
+      "Civil small unmanned aircraft weighing less than 55 lb"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Part 107 governs civil small unmanned aircraft that weigh less than 55 lb.",
     "acs": "UA.I.A"
   },
@@ -4705,9 +4705,9 @@ QUESTIONS_JSON = r'''[
     "q": "A government agency flying a drone may instead operate under:",
     "c": [
       "A Certificate of Waiver or Authorization (COA)",
-      "A manned-aircraft type rating held by the operator",
+      "A standard state driver's license held by the pilot",
       "No rules at all, since government flights are exempt",
-      "A standard state driver's license held by the pilot"
+      "A manned-aircraft type rating held by the operator"
     ],
     "a": 0,
     "e": "Public aircraft operations can be conducted under a COA rather than Part 107.",
@@ -4719,11 +4719,11 @@ QUESTIONS_JSON = r'''[
     "q": "The registration number marked on a drone must be:",
     "c": [
       "Hidden inside the body",
-      "Legible and readable without tools",
+      "Broadcast by radio",
       "Painted only in red",
-      "Broadcast by radio"
+      "Legible and readable without tools"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The registration marking must be legible and readable without disassembling the aircraft.",
     "acs": "UA.I.B"
   },
@@ -4732,12 +4732,12 @@ QUESTIONS_JSON = r'''[
     "s": "Drug and Alcohol",
     "q": "Refusing a drug or alcohol test, or a related conviction, can lead to:",
     "c": [
-      "No consequences, since these tests do not apply to remote pilots",
       "A longer permitted flight time as a one-time administrative penalty",
-      "A written warning only, with no effect on the remote certificate",
-      "Denial, suspension, or revocation of the certificate"
+      "Denial, suspension, or revocation of the certificate",
+      "No consequences, since these tests do not apply to remote pilots",
+      "A written warning only, with no effect on the remote certificate"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Refusing testing or a drug or alcohol conviction can result in denial, suspension, or revocation.",
     "acs": "UA.I.C"
   },
@@ -4746,12 +4746,12 @@ QUESTIONS_JSON = r'''[
     "s": "Recreational Exception",
     "q": "The limited recreational exception may not be used to:",
     "c": [
+      "Fly in uncontrolled Class G airspace below 400 feet",
       "Conduct commercial or compensated flights",
       "Fly during daylight hours in good clear weather",
-      "Fly under 400 feet above the ground at any time",
-      "Fly in uncontrolled Class G airspace below 400 feet"
+      "Fly under 400 feet above the ground at any time"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The recreational exception is for hobby flying only and cannot cover commercial operations.",
     "acs": "UA.I.A"
   },
@@ -4760,12 +4760,12 @@ QUESTIONS_JSON = r'''[
     "s": "Pilot in Command",
     "q": "To act as the remote pilot in command, a person must:",
     "c": [
+      "Be over 21",
       "Own the aircraft",
       "Hold a remote pilot certificate",
-      "Be over 21",
       "Have a manned rating"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Only a holder of a remote pilot certificate may act as the remote PIC.",
     "acs": "UA.I.B"
   },
@@ -4774,12 +4774,12 @@ QUESTIONS_JSON = r'''[
     "s": "TRUST",
     "q": "The TRUST certificate:",
     "c": [
-      "Replaces Part 107",
       "Allows unrestricted flight directly over people",
-      "Expires every year",
-      "Does not authorize commercial operations"
+      "Does not authorize commercial operations",
+      "Replaces Part 107",
+      "Expires every year"
     ],
-    "a": 3,
+    "a": 1,
     "e": "TRUST covers recreational flying only and does not authorize commercial work.",
     "acs": "UA.I.A"
   },
@@ -4788,12 +4788,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Compliance",
     "q": "For each flight, the remote PIC must ensure:",
     "c": [
-      "The aircraft is the newest model currently available from the manufacturer",
-      "The flight is recorded on video from start to finish",
       "A bystander is present to watch the aircraft take off",
-      "Any required airspace authorization is obtained beforehand"
+      "The flight is recorded on video from start to finish",
+      "Any required airspace authorization is obtained beforehand",
+      "The aircraft is the newest model currently available from the manufacturer"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The remote PIC is responsible for obtaining any required airspace authorization before flying.",
     "acs": "UA.I.B"
   },
@@ -4802,12 +4802,12 @@ QUESTIONS_JSON = r'''[
     "s": "Currency",
     "q": "Completing recurrent training every 24 calendar months lets a pilot:",
     "c": [
-      "Continue exercising remote pilot privileges",
-      "Skip the airspace authorization rules entirely",
+      "Legally fly aircraft that weigh over 55 lb",
       "Avoid having to register the aircraft at all",
-      "Legally fly aircraft that weigh over 55 lb"
+      "Continue exercising remote pilot privileges",
+      "Skip the airspace authorization rules entirely"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Staying current with recurrent training keeps a pilot eligible to exercise remote pilot privileges.",
     "acs": "UA.I.C"
   },
@@ -4817,11 +4817,11 @@ QUESTIONS_JSON = r'''[
     "q": "Before a registered drone's first flight under Part 107, the owner must:",
     "c": [
       "File a flight plan",
-      "Notify the local airport",
       "Mark it with the registration number",
-      "Repaint it"
+      "Repaint it",
+      "Notify the local airport"
     ],
-    "a": 2,
+    "a": 1,
     "e": "The aircraft must display its registration number before it is flown.",
     "acs": "UA.I.B"
   },
@@ -4830,12 +4830,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, a temperature group of 'M06' means:",
     "c": [
-      "Minus 6 degrees Celsius",
-      "6 statute miles",
       "6 degrees above standard",
+      "6 statute miles",
+      "Minus 6 degrees Celsius",
       "Mach 0.6"
     ],
-    "a": 0,
+    "a": 2,
     "e": "An M prefix means a negative value, so M06 is minus 6 degrees Celsius.",
     "acs": "UA.III.A"
   },
@@ -4844,12 +4844,12 @@ QUESTIONS_JSON = r'''[
     "s": "Winds Aloft",
     "q": "A winds aloft entry of '2718' means wind from:",
     "c": [
-      "2,700 ft at 18 knots",
       "270 degrees at 18 knots",
-      "27 degrees at 18 knots",
-      "271 degrees at 8 knots"
+      "271 degrees at 8 knots",
+      "2,700 ft at 18 knots",
+      "27 degrees at 18 knots"
     ],
-    "a": 1,
+    "a": 0,
     "e": "The first two digits are tens of degrees and the next two are speed, so 2718 is 270 at 18 knots.",
     "acs": "UA.III.A"
   },
@@ -4858,12 +4858,12 @@ QUESTIONS_JSON = r'''[
     "s": "TAF",
     "q": "A visibility group of 'P6SM' in a forecast means visibility:",
     "c": [
+      "Plus or minus 6 miles",
       "Exactly 6 nautical miles",
       "6 meters",
-      "Greater than 6 statute miles",
-      "Plus or minus 6 miles"
+      "Greater than 6 statute miles"
     ],
-    "a": 2,
+    "a": 3,
     "e": "P6SM means visibility is forecast to be greater than 6 statute miles.",
     "acs": "UA.III.A"
   },
@@ -4873,11 +4873,11 @@ QUESTIONS_JSON = r'''[
     "q": "In a METAR, the present weather code 'HZ' indicates:",
     "c": [
       "Hail",
-      "Haze",
       "Hazardous icing",
-      "High winds"
+      "High winds",
+      "Haze"
     ],
-    "a": 1,
+    "a": 3,
     "e": "HZ is the code for haze, which reduces visibility.",
     "acs": "UA.III.A"
   },
@@ -4886,12 +4886,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, the code 'DZ' indicates:",
     "c": [
-      "A drop zone",
-      "Drizzle",
       "Daytime",
-      "Dust"
+      "Dust",
+      "Drizzle",
+      "A drop zone"
     ],
-    "a": 1,
+    "a": 2,
     "e": "DZ is the code for drizzle.",
     "acs": "UA.III.A"
   },
@@ -4900,12 +4900,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazards",
     "q": "Towering cumulus or a cumulonimbus cloud signals:",
     "c": [
-      "A developing or active thunderstorm to avoid",
       "Light and variable winds near the surface",
       "Steadily improving visibility in the area",
+      "A developing or active thunderstorm to avoid",
       "Calm and stable air that is smooth to fly in"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Towering cumulus and cumulonimbus mark convective storms with severe turbulence to avoid.",
     "acs": "UA.III.B"
   },
@@ -4914,12 +4914,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazards",
     "q": "Standing lenticular clouds near mountains warn of:",
     "c": [
-      "Fog forming in the valleys below the peaks",
-      "Mountain wave activity and turbulence",
       "Calm, smooth air on the downwind side of the range",
-      "An approaching warm front with steady rain"
+      "An approaching warm front with steady rain",
+      "Mountain wave activity and turbulence",
+      "Fog forming in the valleys below the peaks"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Smooth lens-shaped lenticular clouds mark mountain wave activity and the turbulence around it.",
     "acs": "UA.III.B"
   },
@@ -4942,9 +4942,9 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "On a standard day, density altitude equals:",
     "c": [
-      "True altitude minus 1,000 ft",
       "Zero",
       "Indicated altitude plus 1,000 ft",
+      "True altitude minus 1,000 ft",
       "Pressure altitude"
     ],
     "a": 3,
@@ -4956,12 +4956,12 @@ QUESTIONS_JSON = r'''[
     "s": "Local Winds",
     "q": "A land breeze at night along a coast flows:",
     "c": [
-      "From the cooling land out toward the warmer water",
       "Straight up from the surface toward the cloud layer above",
+      "From the cooling land out toward the warmer water",
       "From the water inland toward the land",
       "Only during active coastal storms at night"
     ],
-    "a": 0,
+    "a": 1,
     "e": "At night the land cools faster than the water, so the breeze flows offshore.",
     "acs": "UA.III.B"
   },
@@ -4971,11 +4971,11 @@ QUESTIONS_JSON = r'''[
     "q": "Frost is most likely to form when the night is:",
     "c": [
       "Warm and humid with a light breeze moving across the surface",
-      "Stormy, with heavy rain and gusty winds throughout the night",
       "Clear and calm with the surface at or below freezing",
-      "Cloudy and windy, which keeps the surface temperature from dropping"
+      "Cloudy and windy, which keeps the surface temperature from dropping",
+      "Stormy, with heavy rain and gusty winds throughout the night"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Clear, calm nights let the surface cool to freezing, allowing frost to form.",
     "acs": "UA.III.B"
   },
@@ -4984,12 +4984,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind Shear",
     "q": "Wind shear is commonly encountered near:",
     "c": [
+      "Only above 10,000 ft",
       "Only over open water",
       "Fronts and temperature inversions",
-      "Only above 10,000 ft",
       "Calm high pressure"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Sharp changes in wind near fronts and inversions create low-level wind shear.",
     "acs": "UA.III.B"
   },
@@ -4998,12 +4998,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fog",
     "q": "A large temperature and dewpoint spread generally means:",
     "c": [
-      "Imminent fog",
       "Guaranteed thunderstorms",
       "Freezing rain",
-      "Higher cloud bases and lower fog risk"
+      "Higher cloud bases and lower fog risk",
+      "Imminent fog"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A wide temperature-dewpoint spread means drier air, higher cloud bases, and less fog risk.",
     "acs": "UA.III.B"
   },
@@ -5012,12 +5012,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "Gusty surface winds are especially challenging for a small UAS because:",
     "c": [
-      "It is immune to wind",
-      "Wind improves its battery",
       "Gusts only ever affect the larger manned aircraft nearby",
-      "Its light weight makes it easier to push off course"
+      "It is immune to wind",
+      "Its light weight makes it easier to push off course",
+      "Wind improves its battery"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A light small UAS is more easily displaced by gusts than a heavier aircraft, demanding constant correction.",
     "acs": "UA.III.B"
   },
@@ -5026,12 +5026,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "Compared with a warm front, a cold front typically:",
     "c": [
-      "Moves more slowly and brings steady, widespread, light rain",
-      "Forms only at night and dissipates shortly after sunrise each day",
+      "Brings no change in wind direction as it passes over the area",
       "Moves faster and produces a sharper, briefer band of weather",
-      "Brings no change in wind direction as it passes over the area"
+      "Forms only at night and dissipates shortly after sunrise each day",
+      "Moves more slowly and brings steady, widespread, light rain"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Cold fronts move faster and lift air more steeply, giving a narrow, intense band of weather.",
     "acs": "UA.III.B"
   },
@@ -5040,12 +5040,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "A METAR is best described as a report that is:",
     "c": [
-      "A multi-day forecast of the conditions expected ahead",
       "Issued once per year for each reporting airport",
       "Valid only above 1,000 feet over the reporting station",
-      "Observed at a point in time, usually updated hourly"
+      "Observed at a point in time, usually updated hourly",
+      "A multi-day forecast of the conditions expected ahead"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A METAR is an observation of current conditions, normally updated about every hour.",
     "acs": "UA.III.A"
   },
@@ -5054,9 +5054,9 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "A non-directional beacon (NDB) on a sectional is shown as:",
     "c": [
-      "A solid blue square",
-      "A blue hexagon",
       "A magenta flag",
+      "A blue hexagon",
+      "A solid blue square",
       "A magenta circle of dots"
     ],
     "a": 3,
@@ -5069,11 +5069,11 @@ QUESTIONS_JSON = r'''[
     "q": "A VFR sectional chart uses a scale of:",
     "c": [
       "1:1,000,000",
-      "1:500,000",
       "1:100,000",
-      "1:24,000"
+      "1:24,000",
+      "1:500,000"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Sectional charts are drawn at a scale of 1 to 500,000.",
     "acs": "UA.II.A"
   },
@@ -5082,12 +5082,12 @@ QUESTIONS_JSON = r'''[
     "s": "Chart Types",
     "q": "For the detail around a busy Class B airport, the better chart is the:",
     "c": [
-      "Terminal Area Chart, drawn at a larger scale",
-      "Surface analysis chart issued each morning",
       "IFR low-altitude en route chart for the area",
-      "World aeronautical chart at a small scale"
+      "World aeronautical chart at a small scale",
+      "Surface analysis chart issued each morning",
+      "Terminal Area Chart, drawn at a larger scale"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A Terminal Area Chart shows Class B areas at a larger scale than the sectional for more detail.",
     "acs": "UA.II.A"
   },
@@ -5096,12 +5096,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "To find an airport's control tower frequency on a sectional, look for:",
     "c": [
-      "The terrain tint, which is darkest over the highest ground nearby",
       "The compass rose drawn around the nearest navigation aid on the chart",
       "The Maximum Elevation Figure printed in each quadrangle of the chart",
-      "CT followed by the frequency in the airport data"
+      "CT followed by the frequency in the airport data",
+      "The terrain tint, which is darkest over the highest ground nearby"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The airport data block lists the tower frequency after the letters CT.",
     "acs": "UA.II.B"
   },
@@ -5110,12 +5110,12 @@ QUESTIONS_JSON = r'''[
     "s": "Landmarks",
     "q": "Roads, railroads, and rivers on a sectional are useful as:",
     "c": [
-      "Reliable indicators of the surface wind direction",
-      "Indicators of the height of nearby charted obstacles",
       "Boundaries that mark where airspace classes change",
-      "Visual landmarks for navigation and position"
+      "Visual landmarks for navigation and position",
+      "Reliable indicators of the surface wind direction",
+      "Indicators of the height of nearby charted obstacles"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Linear features like roads and rivers serve as visual checkpoints for navigation.",
     "acs": "UA.II.A"
   },
@@ -5124,12 +5124,12 @@ QUESTIONS_JSON = r'''[
     "s": "Landmarks",
     "q": "Cities and large towns on a sectional are typically shown in:",
     "c": [
-      "Blue",
-      "Green",
       "Yellow",
-      "Magenta"
+      "Green",
+      "Magenta",
+      "Blue"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Populated areas are shaded yellow so they stand out as landmarks.",
     "acs": "UA.II.A"
   },
@@ -5138,10 +5138,10 @@ QUESTIONS_JSON = r'''[
     "s": "Legend",
     "q": "The meaning of an unfamiliar symbol on a sectional is found in:",
     "c": [
-      "The compass rose",
+      "The margin tabulation only",
       "The chart legend",
-      "The airport data block",
-      "The margin tabulation only"
+      "The compass rose",
+      "The airport data block"
     ],
     "a": 1,
     "e": "The chart legend defines every symbol used on the sectional.",
@@ -5152,12 +5152,12 @@ QUESTIONS_JSON = r'''[
     "s": "Boundaries",
     "q": "A dashed line separating two parts of a sectional with a one-hour time difference marks a:",
     "c": [
-      "State line only",
-      "Restricted area",
+      "Time zone boundary",
       "Magnetic variation line",
-      "Time zone boundary"
+      "Restricted area",
+      "State line only"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A time zone boundary is charted where local time changes by an hour.",
     "acs": "UA.II.A"
   },
@@ -5166,12 +5166,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "A soft magenta vignette differs from a dashed magenta line in that the vignette marks:",
     "c": [
-      "A restricted area that is closed during published hours",
       "Class E that begins right at the surface of the airport",
+      "Class E starting at 700 ft AGL, not at the surface",
       "Class B airspace requiring a clearance before entry",
-      "Class E starting at 700 ft AGL, not at the surface"
+      "A restricted area that is closed during published hours"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The vignette marks Class E from 700 ft AGL, while a dashed magenta line marks Class E to the surface.",
     "acs": "UA.II.A"
   },
@@ -5180,12 +5180,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "To tell whether your site sits under a Class B shelf, read the:",
     "c": [
-      "Compass rose drawn around the nearest navigation aid on the chart",
-      "Airport elevation figure printed next to the primary airport symbol",
+      "Terrain tint, which shows how high the ground rises under the shelf",
       "Floor and ceiling numbers printed along that segment",
-      "Terrain tint, which shows how high the ground rises under the shelf"
+      "Airport elevation figure printed next to the primary airport symbol",
+      "Compass rose drawn around the nearest navigation aid on the chart"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Each Class B segment lists its floor and ceiling, telling you whether your site is beneath the shelf.",
     "acs": "UA.II.A"
   },
@@ -5194,10 +5194,10 @@ QUESTIONS_JSON = r'''[
     "s": "Special Use",
     "q": "The controlling agency for a charted restricted area is listed:",
     "c": [
-      "On the compass rose drawn near the navigation aids",
+      "Nowhere on the chart; it must be requested by radio",
       "In the special use airspace tabulation on the chart",
-      "In the airport data block next to the nearest airport",
-      "Nowhere on the chart; it must be requested by radio"
+      "On the compass rose drawn near the navigation aids",
+      "In the airport data block next to the nearest airport"
     ],
     "a": 1,
     "e": "The margin tabulation lists each special use area's altitudes, times, and controlling agency.",
@@ -5208,12 +5208,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "For a charted group of obstacles, the printed height refers to:",
     "c": [
-      "The shortest one",
-      "The average height",
       "The nearest airport",
-      "The tallest obstacle in the group"
+      "The shortest one",
+      "The tallest obstacle in the group",
+      "The average height"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A grouped obstacle symbol lists the height of the tallest obstacle in the cluster.",
     "acs": "UA.II.B"
   },
@@ -5222,12 +5222,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "Reading latitude and longitude off a sectional is useful for:",
     "c": [
-      "Judging the height of the cloud base above the terrain",
       "Finding the control tower frequency for the nearest airport",
       "Measuring the surface wind speed across the charted area",
-      "Entering a precise location into a flight planning app"
+      "Entering a precise location into a flight planning app",
+      "Judging the height of the cloud base above the terrain"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The latitude and longitude grid lets a pilot enter an exact site location into planning tools.",
     "acs": "UA.II.A"
   },
@@ -5237,9 +5237,9 @@ QUESTIONS_JSON = r'''[
     "q": "Prominent features like water tanks and stadiums are charted because they:",
     "c": [
       "Reliably indicate the wind direction at the surface",
-      "Mark the locations of approved aircraft fuel stops",
+      "Indicate the class of airspace overlying the area",
       "Serve as visual landmarks and may be obstacles",
-      "Indicate the class of airspace overlying the area"
+      "Mark the locations of approved aircraft fuel stops"
     ],
     "a": 2,
     "e": "Distinctive structures help with visual navigation and can also be flight obstacles.",
@@ -5250,12 +5250,12 @@ QUESTIONS_JSON = r'''[
     "s": "Elevation",
     "q": "A Maximum Elevation Figure printed as '27' represents:",
     "c": [
-      "270 ft MSL",
-      "27 nautical miles",
       "27 ft AGL",
-      "2,700 ft MSL"
+      "2,700 ft MSL",
+      "27 nautical miles",
+      "270 ft MSL"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The MEF is in hundreds of feet MSL, so 27 means 2,700 ft.",
     "acs": "UA.II.B"
   },
@@ -5264,12 +5264,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "Converting a true course to a magnetic course requires applying:",
     "c": [
-      "The forecast wind speed and direction along the route",
       "The airport elevation read from the nearest data block",
+      "The magnetic variation shown by isogonic lines",
       "The Maximum Elevation Figure for that chart quadrangle",
-      "The magnetic variation shown by isogonic lines"
+      "The forecast wind speed and direction along the route"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Magnetic variation, read from isogonic lines, converts between true and magnetic course.",
     "acs": "UA.II.A"
   },
@@ -5278,12 +5278,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Adding payload to a multirotor raises the:",
     "c": [
-      "Battery capacity",
       "Power needed just to hover",
+      "Battery capacity",
       "Maximum altitude",
       "Legal weight limit"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Extra weight increases the power required to hover, which drains the battery faster.",
     "acs": "UA.IV.A"
   },
@@ -5292,12 +5292,12 @@ QUESTIONS_JSON = r'''[
     "s": "Securing Payload",
     "q": "A payload should be secured before flight so that it:",
     "c": [
-      "Adds aerodynamic drag that slows the aircraft to a safer cruise speed",
-      "Looks neat and presentable in any photographs taken of the aircraft",
       "Cannot shift and change the center of gravity in flight",
-      "Increases the total takeoff weight to improve stability in gusty wind"
+      "Looks neat and presentable in any photographs taken of the aircraft",
+      "Increases the total takeoff weight to improve stability in gusty wind",
+      "Adds aerodynamic drag that slows the aircraft to a safer cruise speed"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A loose payload can shift in flight, moving the center of gravity and destabilizing the aircraft.",
     "acs": "UA.IV.A"
   },
@@ -5306,12 +5306,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "If a payload comes loose and slides during flight, the likely result is:",
     "c": [
+      "A shifting center of gravity and degraded control",
       "Improved efficiency from the lower overall center of mass",
-      "Longer flight time because the motors share the load evenly",
       "A higher top speed as the load redistributes toward the rear",
-      "A shifting center of gravity and degraded control"
+      "Longer flight time because the motors share the load evenly"
     ],
-    "a": 3,
+    "a": 0,
     "e": "A payload sliding in flight moves the center of gravity and makes the aircraft harder to control.",
     "acs": "UA.IV.A"
   },
@@ -5320,12 +5320,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Removing unnecessary payload before a flight will generally:",
     "c": [
-      "Have no effect",
-      "Noticeably shorten the total flight time",
       "Improve climb and extend flight time",
-      "Reduce stability"
+      "Reduce stability",
+      "Have no effect",
+      "Noticeably shorten the total flight time"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Less weight means less power needed, improving climb and lengthening flight time.",
     "acs": "UA.IV.A"
   },
@@ -5335,11 +5335,11 @@ QUESTIONS_JSON = r'''[
     "q": "Fitting a heavier camera means a pilot should plan for:",
     "c": [
       "Longer endurance because the extra mass smooths out the flight",
-      "No change in planning, since the flight controller compensates",
       "Shorter flight time and more frequent battery swaps",
-      "A higher safe operating ceiling above the usual altitude limit"
+      "A higher safe operating ceiling above the usual altitude limit",
+      "No change in planning, since the flight controller compensates"
     ],
-    "a": 2,
+    "a": 1,
     "e": "A heavier payload cuts endurance, so plan shorter legs and more battery changes.",
     "acs": "UA.IV.A"
   },
@@ -5349,11 +5349,11 @@ QUESTIONS_JSON = r'''[
     "q": "At a high-elevation site on a warm day, a good practice is to:",
     "c": [
       "Add the maximum payload to improve overall stability",
-      "Skip the preflight check to launch before it warms up",
       "Test a hover before committing to the full mission",
-      "Assume normal sea-level performance for planning"
+      "Assume normal sea-level performance for planning",
+      "Skip the preflight check to launch before it warms up"
     ],
-    "a": 2,
+    "a": 1,
     "e": "High density altitude cuts performance, so confirm a stable hover before flying the mission.",
     "acs": "UA.IV.A"
   },
@@ -5363,11 +5363,11 @@ QUESTIONS_JSON = r'''[
     "q": "Flying with both a payload and strong wind will:",
     "c": [
       "Improve hover efficiency",
-      "Drain the battery faster and reduce range",
       "Extend the range",
-      "Have no real combined effect on the flight at all"
+      "Have no real combined effect on the flight at all",
+      "Drain the battery faster and reduce range"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Payload and wind both raise power demand, so together they cut range and endurance sharply.",
     "acs": "UA.IV.A"
   },
@@ -5391,8 +5391,8 @@ QUESTIONS_JSON = r'''[
     "q": "To keep the center of gravity within limits, payload should be:",
     "c": [
       "Placed wherever convenient",
-      "Hung from one arm",
       "Mounted as far forward as possible",
+      "Hung from one arm",
       "Distributed so the load is centered and balanced"
     ],
     "a": 3,
@@ -5418,12 +5418,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "An overloaded drone may be unable to:",
     "c": [
-      "Display its battery level",
       "Climb out of ground effect",
       "Connect to the controller",
+      "Display its battery level",
       "Power on"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Too much weight can leave a drone unable to climb out of ground effect into stable flight.",
     "acs": "UA.IV.A"
   },
@@ -5432,12 +5432,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery",
     "q": "The best way to store lithium batteries between flights is:",
     "c": [
+      "Fully charged in a hot car",
       "At a partial charge in a cool, dry place",
-      "In direct sunlight",
       "Fully depleted for weeks",
-      "Fully charged in a hot car"
+      "In direct sunlight"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Lithium packs last longest stored at a partial charge in a cool, dry location.",
     "acs": "UA.IV.A"
   },
@@ -5446,12 +5446,12 @@ QUESTIONS_JSON = r'''[
     "s": "Currency",
     "q": "To stay current, how often must a remote PIC complete recurrent training?",
     "c": [
-      "Every 12 calendar months",
       "Every 6 months",
       "Only once after the initial test",
-      "Every 24 calendar months"
+      "Every 24 calendar months",
+      "Every 12 calendar months"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Part 107 currency requires completing the free online recurrent training every 24 calendar months.",
     "acs": "UA.I.C"
   },
@@ -5460,12 +5460,12 @@ QUESTIONS_JSON = r'''[
     "s": "Operating Limitations",
     "q": "What is the maximum groundspeed allowed for a small UAS under Part 107?",
     "c": [
-      "87 mph",
       "100 knots",
-      "120 mph",
-      "100 mph (87 knots)"
+      "100 mph (87 knots)",
+      "87 mph",
+      "120 mph"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Part 107 limits groundspeed to 100 mph, which is 87 knots.",
     "acs": "UA.I.B"
   },
@@ -5474,10 +5474,10 @@ QUESTIONS_JSON = r'''[
     "s": "Operating Limitations",
     "q": "What is the minimum flight visibility from the control station under Part 107?",
     "c": [
-      "3 nautical miles",
+      "5 statute miles",
       "1 statute mile",
       "3 statute miles",
-      "5 statute miles"
+      "3 nautical miles"
     ],
     "a": 2,
     "e": "Part 107 requires at least 3 statute miles of flight visibility from the control station.",
@@ -5489,11 +5489,11 @@ QUESTIONS_JSON = r'''[
     "q": "When a visual observer is used, the remote PIC and VO must be able to do what?",
     "c": [
       "Both wear FPV goggles",
-      "Stay at least one mile apart",
+      "Communicate with each other at all times",
       "Each hold a separate certificate",
-      "Communicate with each other at all times"
+      "Stay at least one mile apart"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The remote PIC and visual observer must maintain effective communication throughout the operation.",
     "acs": "UA.I.B"
   },
@@ -5502,12 +5502,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "A drone without Remote ID capability may generally only be flown where?",
     "c": [
+      "Anywhere below 400 ft AGL",
       "Within an FAA-Recognized Identification Area (FRIA)",
       "Only over private property",
-      "Within 5 miles of the operator's home",
-      "Anywhere below 400 ft AGL"
+      "Within 5 miles of the operator's home"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Aircraft without Remote ID must operate within an FAA-Recognized Identification Area.",
     "acs": "UA.I.F"
   },
@@ -5517,9 +5517,9 @@ QUESTIONS_JSON = r'''[
     "q": "To fly in Class B, C, or D airspace under Part 107, a remote pilot must have what?",
     "c": [
       "Prior ATC authorization",
+      "An instrument rating",
       "A Mode C transponder",
-      "Nothing below 400 ft",
-      "An instrument rating"
+      "Nothing below 400 ft"
     ],
     "a": 0,
     "e": "Operations in controlled airspace such as Class B, C, and D require prior ATC authorization.",
@@ -5530,12 +5530,12 @@ QUESTIONS_JSON = r'''[
     "s": "LAANC",
     "q": "Through LAANC, a remote pilot can receive authorization to fly up to what altitude?",
     "c": [
-      "Always 400 feet AGL, anywhere in controlled airspace",
-      "1,200 feet AGL everywhere within controlled airspace",
       "Unlimited altitude, as long as it stays clear of clouds",
-      "The ceiling shown on the UAS Facility Map grid"
+      "1,200 feet AGL everywhere within controlled airspace",
+      "The ceiling shown on the UAS Facility Map grid",
+      "Always 400 feet AGL, anywhere in controlled airspace"
     ],
-    "a": 3,
+    "a": 2,
     "e": "LAANC grants near-real-time authorization up to the grid ceiling on the UAS Facility Map.",
     "acs": "UA.II.B"
   },
@@ -5544,12 +5544,12 @@ QUESTIONS_JSON = r'''[
     "s": "Class E Surface",
     "q": "Operating in surface-based Class E airspace around an airport requires what?",
     "c": [
-      "Only a transponder",
       "A filed flight plan",
       "ATC authorization",
+      "Only a transponder",
       "No authorization since Class E is uncontrolled"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Surface-based Class E around an airport is controlled and requires ATC authorization.",
     "acs": "UA.II.A"
   },
@@ -5558,12 +5558,12 @@ QUESTIONS_JSON = r'''[
     "s": "TFR",
     "q": "Where should a remote pilot check for active Temporary Flight Restrictions?",
     "c": [
-      "TFRs do not apply to drones",
-      "FAA NOTAMs and tfr.faa.gov",
+      "Only the sectional chart",
       "The aircraft maintenance manual",
-      "Only the sectional chart"
+      "FAA NOTAMs and tfr.faa.gov",
+      "TFRs do not apply to drones"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Active TFRs are published through FAA NOTAMs and at tfr.faa.gov and must be checked before flight.",
     "acs": "UA.II.A"
   },
@@ -5572,12 +5572,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Flight Rules",
     "q": "Before flying, a remote pilot learns of a Restricted Area along the route. What is the best action?",
     "c": [
-      "Confirm its status and avoid it unless authorized",
-      "Fly through it below 400 ft",
       "Fly through it at night",
-      "Ignore it because drones are exempt"
+      "Confirm its status and avoid it unless authorized",
+      "Ignore it because drones are exempt",
+      "Fly through it below 400 ft"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Verify the area's status and stay clear unless the controlling agency authorizes entry.",
     "acs": "UA.II.A"
   },
@@ -5586,12 +5586,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "On a sectional chart, a solid blue line around an airport depicts what airspace?",
     "c": [
-      "Class C",
-      "Class B",
       "Class E surface",
-      "Class D"
+      "Class D",
+      "Class B",
+      "Class C"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Solid blue lines on a sectional depict Class B airspace boundaries.",
     "acs": "UA.II.A"
   },
@@ -5600,12 +5600,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "On a sectional chart, a solid magenta line around an airport depicts what airspace?",
     "c": [
-      "Class G",
-      "Class D",
+      "Class C",
       "Class B",
-      "Class C"
+      "Class D",
+      "Class G"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Solid magenta lines on a sectional depict Class C airspace.",
     "acs": "UA.II.A"
   },
@@ -5614,12 +5614,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "On a sectional chart, a segmented (dashed) blue line around an airport depicts what airspace?",
     "c": [
-      "Class C",
       "Class B",
-      "Class D",
-      "Class E surface"
+      "Class E surface",
+      "Class C",
+      "Class D"
     ],
-    "a": 2,
+    "a": 3,
     "e": "A segmented blue line depicts Class D airspace.",
     "acs": "UA.II.A"
   },
@@ -5628,12 +5628,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "Lines of latitude (parallels) on a sectional chart run in what direction?",
     "c": [
-      "North to south, measuring east or west",
       "East to west, measuring position north or south",
-      "They show magnetic variation",
-      "Diagonally across the chart"
+      "North to south, measuring east or west",
+      "Diagonally across the chart",
+      "They show magnetic variation"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Parallels of latitude run east-west and measure how far north or south a point lies.",
     "acs": "UA.II.A"
   },
@@ -5643,11 +5643,11 @@ QUESTIONS_JSON = r'''[
     "q": "In a METAR reporting '28012KT', what is being described?",
     "c": [
       "Altimeter setting 280",
+      "Visibility of 280 at 12",
       "Wind from 280 degrees at 12 knots",
-      "Temperature 28 dewpoint 12",
-      "Visibility of 280 at 12"
+      "Temperature 28 dewpoint 12"
     ],
-    "a": 1,
+    "a": 2,
     "e": "In a METAR, '28012KT' means the wind is from 280 degrees at 12 knots.",
     "acs": "UA.III.A"
   },
@@ -5656,12 +5656,12 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "How does high density altitude affect a small multirotor?",
     "c": [
+      "It has no effect on electric aircraft",
       "It reduces rotor thrust and degrades performance",
       "It improves climb performance",
-      "It increases battery capacity",
-      "It has no effect on electric aircraft"
+      "It increases battery capacity"
     ],
-    "a": 0,
+    "a": 1,
     "e": "High density altitude thins the air, reducing rotor thrust and overall performance.",
     "acs": "UA.III.B"
   },
@@ -5670,12 +5670,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind Shear",
     "q": "Why is wind shear hazardous to a small UAS?",
     "c": [
-      "It is a sudden change in wind over a short distance that can upset control",
       "It steadily improves aircraft stability by smoothing out gusts near the ground",
       "It only occurs above 10,000 feet, well outside the Part 107 altitude limit",
-      "It is always visible to the pilot as a clear line of clouds or blowing dust"
+      "It is always visible to the pilot as a clear line of clouds or blowing dust",
+      "It is a sudden change in wind over a short distance that can upset control"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Wind shear is an abrupt change in wind speed or direction over a short distance and can cause loss of control.",
     "acs": "UA.III.B"
   },
@@ -5684,12 +5684,12 @@ QUESTIONS_JSON = r'''[
     "s": "Fronts",
     "q": "The passage of a cold front is most often associated with what?",
     "c": [
-      "Days of steady light rain",
       "Gusty winds and a risk of thunderstorms",
-      "Guaranteed clearing and calm winds",
-      "No change in weather"
+      "No change in weather",
+      "Days of steady light rain",
+      "Guaranteed clearing and calm winds"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Cold front passage commonly brings gusty winds, rapid weather changes, and thunderstorms.",
     "acs": "UA.III.B"
   },
@@ -5698,12 +5698,12 @@ QUESTIONS_JSON = r'''[
     "s": "Stability",
     "q": "A stable atmosphere is generally indicated by what?",
     "c": [
-      "Towering cumulus and turbulence",
-      "Gusty winds and excellent visibility",
       "Stratiform clouds and smooth air",
+      "Gusty winds and excellent visibility",
+      "Towering cumulus and turbulence",
       "Frequent thunderstorms"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Stable air tends to produce stratiform clouds, steady conditions, and smooth flying.",
     "acs": "UA.III.B"
   },
@@ -5712,12 +5712,12 @@ QUESTIONS_JSON = r'''[
     "s": "Lost Link",
     "q": "A sound lost-link procedure should cause the aircraft to do what?",
     "c": [
-      "Perform a predictable action such as return-to-home or land",
       "Hand control to the nearest bystander on the ground",
+      "Perform a predictable action such as return-to-home or land",
       "Continue the planned mission on its own until the battery dies",
       "Immediately cut power to all motors and drop straight to the ground"
     ],
-    "a": 0,
+    "a": 1,
     "e": "On lost link the aircraft should perform a predictable, preprogrammed safe action like return-to-home or a controlled landing.",
     "acs": "UA.V.C"
   },
@@ -5728,8 +5728,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Maximum aircraft speed during the cruise portion of flight",
       "Communication and workload sharing among the crew",
-      "Camera resolution by stabilizing the aircraft in the air",
-      "Battery life by coordinating the power used by each system"
+      "Battery life by coordinating the power used by each system",
+      "Camera resolution by stabilizing the aircraft in the air"
     ],
     "a": 1,
     "e": "Crew resource management focuses on clear communication and distributing workload to reduce error.",
@@ -5740,12 +5740,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maximum Weight",
     "q": "Part 107 applies to small unmanned aircraft weighing how much?",
     "c": [
-      "Less than a full 100 pounds in total weight",
-      "Less than 25 pounds",
       "Less than 10 pounds",
-      "Less than 55 pounds including payload"
+      "Less than 25 pounds",
+      "Less than 55 pounds including payload",
+      "Less than a full 100 pounds in total weight"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A small unmanned aircraft under Part 107 weighs less than 55 pounds including everything on board.",
     "acs": "UA.IV.A"
   },
@@ -5754,9 +5754,9 @@ QUESTIONS_JSON = r'''[
     "s": "Voltage Sag",
     "q": "Under heavy current draw, battery voltage sag can cause what?",
     "c": [
-      "Longer total flight time because the pack runs cooler",
-      "A higher payload capacity for the remainder of the flight",
       "A stronger and faster GPS lock when the aircraft powers on",
+      "A higher payload capacity for the remainder of the flight",
+      "Longer total flight time because the pack runs cooler",
       "Premature low-voltage warnings and reduced power"
     ],
     "a": 3,
@@ -5768,12 +5768,12 @@ QUESTIONS_JSON = r'''[
     "s": "Weight Distribution",
     "q": "For the best handling, how should payload be mounted?",
     "c": [
-      "Centered near the CG and firmly secured",
       "Loosely so it can move freely",
-      "As far forward as possible",
-      "On one side to balance the motor"
+      "Centered near the CG and firmly secured",
+      "On one side to balance the motor",
+      "As far forward as possible"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Mount payload near the center of gravity and secure it so the CG does not shift in flight.",
     "acs": "UA.IV.A"
   },
@@ -5782,12 +5782,12 @@ QUESTIONS_JSON = r'''[
     "s": "Endurance",
     "q": "What are the biggest factors reducing an electric multirotor's flight time?",
     "c": [
-      "Camera megapixels",
       "Excess weight and headwinds",
+      "Airframe color",
       "Number of GPS satellites",
-      "Airframe color"
+      "Camera megapixels"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Total weight and wind are the main drivers of reduced multirotor endurance.",
     "acs": "UA.IV.A"
   },
@@ -5796,12 +5796,12 @@ QUESTIONS_JSON = r'''[
     "s": "Manufacturer Limits",
     "q": "Where is the maximum payload weight for your aircraft found?",
     "c": [
-      "In the manufacturer's published limits",
-      "In the METAR",
       "Printed on the sectional aeronautical chart",
+      "In the METAR",
+      "In the manufacturer's published limits",
       "In 14 CFR Part 107"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Always follow the manufacturer's published weight and payload limits for your specific aircraft.",
     "acs": "UA.IV.A"
   },
@@ -5810,12 +5810,12 @@ QUESTIONS_JSON = r'''[
     "s": "Carriage of Property",
     "q": "Under Part 107, carrying property for compensation is treated how?",
     "c": [
-      "Prohibited in all cases, since Part 107 does not allow carrying property",
       "Allowed only across state lines as interstate commerce under the rules",
       "Permitted within a state, with aircraft and payload under 55 lb",
-      "Allowed up to 100 lb total as long as no hazardous materials are aboard"
+      "Allowed up to 100 lb total as long as no hazardous materials are aboard",
+      "Prohibited in all cases, since Part 107 does not allow carrying property"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Part 107 allows transporting property for compensation within a state as long as the aircraft and payload weigh under 55 lb.",
     "acs": "UA.I.B"
   },
@@ -5824,12 +5824,12 @@ QUESTIONS_JSON = r'''[
     "s": "Dropping Objects",
     "q": "Dropping or dispensing an object from a small UAS is handled how under Part 107?",
     "c": [
-      "Permitted if it creates no undue hazard to persons or property",
       "Allowed only at night with anti-collision lighting on the aircraft",
       "Allowed only over open water that is clear of vessels and swimmers",
+      "Permitted if it creates no undue hazard to persons or property",
       "Always prohibited under Part 107, regardless of the precautions taken"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Part 107 permits dropping objects provided no undue hazard is created to persons or property.",
     "acs": "UA.I.B"
   },
@@ -5838,10 +5838,10 @@ QUESTIONS_JSON = r'''[
     "s": "Careless Operation",
     "q": "Operating a small UAS in a careless or reckless manner is what under Part 107?",
     "c": [
-      "Allowed with any waiver",
+      "Allowed over private land",
       "Prohibited",
       "Allowed below 100 ft AGL",
-      "Allowed over private land"
+      "Allowed with any waiver"
     ],
     "a": 1,
     "e": "Part 107 prohibits careless or reckless operation that could endanger life or property.",
@@ -5853,11 +5853,11 @@ QUESTIONS_JSON = r'''[
     "q": "How many small unmanned aircraft may one person operate at the same time under Part 107?",
     "c": [
       "Up to three",
+      "Up to five",
       "One",
-      "Unlimited with a waiver",
-      "Up to five"
+      "Unlimited with a waiver"
     ],
-    "a": 1,
+    "a": 2,
     "e": "A remote PIC may operate only one small unmanned aircraft at a time.",
     "acs": "UA.I.B"
   },
@@ -5867,11 +5867,11 @@ QUESTIONS_JSON = r'''[
     "q": "Operating a small UAS from a moving vehicle is allowed only under what condition?",
     "c": [
       "Only on private roads",
+      "Never, in any case",
       "Only over a sparsely populated area",
-      "Anywhere below 400 ft AGL",
-      "Never, in any case"
+      "Anywhere below 400 ft AGL"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Part 107 permits operating from a moving vehicle only over sparsely populated areas.",
     "acs": "UA.I.B"
   },
@@ -5880,10 +5880,10 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "What must the remote PIC do before each flight regarding the aircraft?",
     "c": [
-      "Inspect it only once per week, regardless of how often it flies",
-      "Inspect it to ensure it is in a condition for safe operation",
       "Notify the local police department of the planned flight in advance",
-      "File a detailed flight plan with air traffic control before launch"
+      "Inspect it to ensure it is in a condition for safe operation",
+      "File a detailed flight plan with air traffic control before launch",
+      "Inspect it only once per week, regardless of how often it flies"
     ],
     "a": 1,
     "e": "The remote PIC must conduct a preflight inspection to confirm the aircraft is in a condition for safe operation.",
@@ -5894,12 +5894,12 @@ QUESTIONS_JSON = r'''[
     "s": "FAA Inspection",
     "q": "Who must make a small UAS available to the FAA for inspection or testing on request?",
     "c": [
-      "No one, because the FAA cannot inspect privately owned drones",
-      "The remote PIC, owner, or person manipulating the controls",
       "Only the manufacturer that originally built and sold the aircraft",
-      "Only the local airport manager where the drone is normally based"
+      "Only the local airport manager where the drone is normally based",
+      "No one, because the FAA cannot inspect privately owned drones",
+      "The remote PIC, owner, or person manipulating the controls"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The remote PIC, owner, or controlling person must make the aircraft available to the FAA for inspection or testing.",
     "acs": "UA.I.A"
   },
@@ -5908,12 +5908,12 @@ QUESTIONS_JSON = r'''[
     "s": "MOA",
     "q": "How is a Military Operations Area (MOA) depicted on a sectional chart?",
     "c": [
-      "A solid blue line",
       "A solid green tint",
-      "A segmented, dashed blue boundary line",
-      "A magenta hatched (brushed) boundary"
+      "A magenta hatched (brushed) boundary",
+      "A solid blue line",
+      "A segmented, dashed blue boundary line"
     ],
-    "a": 3,
+    "a": 1,
     "e": "MOAs are shown on sectionals with a magenta hatched boundary.",
     "acs": "UA.II.A"
   },
@@ -5922,12 +5922,12 @@ QUESTIONS_JSON = r'''[
     "s": "Warning Area",
     "q": "Where is a Warning Area located?",
     "c": [
-      "Beginning 3 NM outward from the U.S. coast",
+      "Only directly over airports",
       "Only over mountainous terrain",
-      "Over the center of the country",
-      "Only directly over airports"
+      "Beginning 3 NM outward from the U.S. coast",
+      "Over the center of the country"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Warning Areas begin 3 nautical miles off the U.S. coast and may contain hazards to flight.",
     "acs": "UA.II.A"
   },
@@ -5936,12 +5936,12 @@ QUESTIONS_JSON = r'''[
     "s": "UAS Facility Map",
     "q": "Where do you find the maximum altitude you can request via LAANC for a location?",
     "c": [
-      "The chart legend only",
       "The METAR",
-      "The UAS Facility Maps (UASFM)",
-      "The aircraft manual"
+      "The aircraft manual",
+      "The chart legend only",
+      "The UAS Facility Maps (UASFM)"
     ],
-    "a": 2,
+    "a": 3,
     "e": "UAS Facility Maps show the maximum altitudes available for LAANC authorization in each grid.",
     "acs": "UA.II.B"
   },
@@ -5950,12 +5950,12 @@ QUESTIONS_JSON = r'''[
     "s": "Authorization Source",
     "q": "What are the two FAA channels for airspace authorization?",
     "c": [
-      "The drone manufacturer and the Federal Communications Commission",
       "ATIS for recorded conditions and AWOS for automated weather",
       "A phone call and an email sent directly to the control tower",
-      "LAANC for near-real-time and DroneZone for manual requests"
+      "LAANC for near-real-time and DroneZone for manual requests",
+      "The drone manufacturer and the Federal Communications Commission"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Authorization is obtained through LAANC for near-real-time requests or the FAA DroneZone portal for manual requests.",
     "acs": "UA.II.B"
   },
@@ -5964,8 +5964,8 @@ QUESTIONS_JSON = r'''[
     "s": "Controlled Firing Area",
     "q": "How does a Controlled Firing Area differ from other special use airspace?",
     "c": [
-      "It is always active and closed to all civil aircraft at all times",
       "It is charted in solid blue rather than the usual hatched lines",
+      "It is always active and closed to all civil aircraft at all times",
       "It requires a LAANC authorization before any drone may enter",
       "Activities stop when an aircraft is detected approaching"
     ],
@@ -5978,12 +5978,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "A faded magenta band (vignette) around an airport on a sectional indicates what?",
     "c": [
-      "Class E airspace beginning right at the surface",
-      "Class E airspace beginning at 700 ft AGL",
+      "Class B airspace",
       "Class D airspace",
-      "Class B airspace"
+      "Class E airspace beginning at 700 ft AGL",
+      "Class E airspace beginning right at the surface"
     ],
-    "a": 1,
+    "a": 2,
     "e": "A faded magenta vignette marks Class E airspace that begins at 700 ft AGL.",
     "acs": "UA.II.A"
   },
@@ -5992,12 +5992,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airspace Symbols",
     "q": "A faded blue band (vignette) on a sectional indicates what?",
     "c": [
-      "Class E airspace beginning at the surface",
       "Class A airspace at and above 18,000 ft",
-      "Class C airspace surrounding a busy primary airport",
-      "Class E airspace beginning at 1,200 ft AGL"
+      "Class E airspace beginning at the surface",
+      "Class E airspace beginning at 1,200 ft AGL",
+      "Class C airspace surrounding a busy primary airport"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A faded blue vignette marks Class E airspace that begins at 1,200 ft AGL.",
     "acs": "UA.II.A"
   },
@@ -6006,12 +6006,12 @@ QUESTIONS_JSON = r'''[
     "s": "Scale",
     "q": "On a sectional chart, one minute of latitude equals what distance?",
     "c": [
-      "Ten nautical miles",
       "One statute mile",
-      "One kilometer",
-      "One nautical mile"
+      "One nautical mile",
+      "Ten nautical miles",
+      "One kilometer"
     ],
-    "a": 3,
+    "a": 1,
     "e": "One minute of latitude equals one nautical mile, which is useful for measuring distance on a sectional.",
     "acs": "UA.II.A"
   },
@@ -6020,12 +6020,12 @@ QUESTIONS_JSON = r'''[
     "s": "Elevation",
     "q": "What does the Maximum Elevation Figure (MEF) in a chart quadrangle tell you?",
     "c": [
-      "The highest terrain or obstacle in that quadrant in MSL",
+      "The height of the lowest cloud base reported in the area",
       "The magnetic variation to apply when navigating by compass",
       "The field elevation of the primary airport in that quadrant",
-      "The height of the lowest cloud base reported in the area"
+      "The highest terrain or obstacle in that quadrant in MSL"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The Maximum Elevation Figure shows the highest known terrain or obstacle in that quadrant, in MSL.",
     "acs": "UA.II.B"
   },
@@ -6034,12 +6034,12 @@ QUESTIONS_JSON = r'''[
     "s": "Inversion",
     "q": "What is a likely effect of a temperature inversion?",
     "c": [
-      "Greatly improved visibility",
       "Strong vertical updrafts",
-      "Severe turbulence and widespread heavy thunderstorms",
-      "Stable air with reduced visibility near the surface"
+      "Stable air with reduced visibility near the surface",
+      "Greatly improved visibility",
+      "Severe turbulence and widespread heavy thunderstorms"
     ],
-    "a": 3,
+    "a": 1,
     "e": "A temperature inversion creates stable air that can trap haze and moisture, reducing visibility near the surface.",
     "acs": "UA.III.B"
   },
@@ -6048,8 +6048,8 @@ QUESTIONS_JSON = r'''[
     "s": "Fog",
     "q": "Fog is most likely to form under which conditions?",
     "c": [
-      "Large spread with strong, steady surface wind",
       "Rapidly rising pressure with gusty winds",
+      "Large spread with strong, steady surface wind",
       "Small temperature-dewpoint spread and light wind",
       "Clear, hot, and very dry air right at the surface"
     ],
@@ -6064,10 +6064,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "The entire country in a single combined national outlook",
       "Pilot-reported turbulence collected from aircraft in the area",
-      "Conditions within about 5 statute miles of an airport",
-      "Wind direction only, with no information on clouds or visibility"
+      "Wind direction only, with no information on clouds or visibility",
+      "Conditions within about 5 statute miles of an airport"
     ],
-    "a": 2,
+    "a": 3,
     "e": "A TAF is a Terminal Aerodrome Forecast covering the area within about 5 statute miles of an airport.",
     "acs": "UA.III.A"
   },
@@ -6076,12 +6076,12 @@ QUESTIONS_JSON = r'''[
     "s": "Hazardous Attitudes",
     "q": "Which thought reflects the hazardous attitude of invulnerability?",
     "c": [
-      "It will not happen to me",
-      "I can handle anything",
+      "The rules do not matter",
       "I must act now",
-      "The rules do not matter"
+      "I can handle anything",
+      "It will not happen to me"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Believing an accident will not happen to me is the invulnerability attitude; the antidote is that it could happen to me.",
     "acs": "UA.V.D"
   },
@@ -6090,12 +6090,12 @@ QUESTIONS_JSON = r'''[
     "s": "Personal Minimums",
     "q": "How does a personal minimums checklist help a remote pilot?",
     "c": [
-      "It sets safety limits in advance to resist in-the-moment pressure",
       "It logs every maintenance action performed on the aircraft over its service life",
-      "It replaces the preflight inspection on familiar flights",
-      "It increases the aircraft's top speed during routine operations"
+      "It increases the aircraft's top speed during routine operations",
+      "It sets safety limits in advance to resist in-the-moment pressure",
+      "It replaces the preflight inspection on familiar flights"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Personal minimums set safety limits ahead of time so decisions are not driven by pressure in the moment.",
     "acs": "UA.V.D"
   },
@@ -6104,10 +6104,10 @@ QUESTIONS_JSON = r'''[
     "s": "Bystander Safety",
     "q": "What is the safest practice regarding nonparticipating people during a flight?",
     "c": [
-      "Fly directly over them for coverage",
+      "Only announce your presence by radio",
       "Fly over them only at night",
       "Keep them clear of the operating area",
-      "Only announce your presence by radio"
+      "Fly directly over them for coverage"
     ],
     "a": 2,
     "e": "Keep people who are not part of the operation clear of the area unless your operation is specifically approved to fly over people.",
@@ -6118,12 +6118,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Health",
     "q": "What should be done with a swollen lithium-polymer battery?",
     "c": [
-      "Keep on flying it until it finally fails completely",
       "Remove it from service and dispose of it safely",
       "Fully charge it and reuse it",
+      "Keep on flying it until it finally fails completely",
       "Puncture it to release the gas"
     ],
-    "a": 1,
+    "a": 0,
     "e": "A swollen LiPo battery is damaged and unsafe, so remove it from service and dispose of it properly.",
     "acs": "UA.IV.A"
   },
@@ -6132,12 +6132,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery",
     "q": "What can charging a battery beyond its rated voltage cause?",
     "c": [
-      "Overheating, damage, or fire",
       "Longer flight time",
       "No effect at all",
-      "A safe increase in capacity"
+      "A safe increase in capacity",
+      "Overheating, damage, or fire"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Overcharging a battery past its rated voltage risks overheating, damage, and fire.",
     "acs": "UA.IV.A"
   },
@@ -6147,11 +6147,11 @@ QUESTIONS_JSON = r'''[
     "q": "What can an unbalanced propeller cause?",
     "c": [
       "Longer flight time because the blade moves through the air more freely",
-      "Vibration that blurs imagery and stresses motors and the airframe",
+      "Improved stability and smoother handling in gusty wind",
       "Better GPS accuracy from the steadier platform that it creates",
-      "Improved stability and smoother handling in gusty wind"
+      "Vibration that blurs imagery and stresses motors and the airframe"
     ],
-    "a": 1,
+    "a": 3,
     "e": "An unbalanced propeller causes vibration that degrades imagery and stresses the motors and airframe.",
     "acs": "UA.IV.A"
   },
@@ -6160,12 +6160,12 @@ QUESTIONS_JSON = r'''[
     "s": "Gusts",
     "q": "How does flying in gusty wind affect the aircraft?",
     "c": [
-      "It improves stability by holding the airframe steady in the air",
+      "It increases power demand and reduces control and endurance",
       "It increases the battery's usable capacity for that flight",
-      "It raises the maximum payload the aircraft can safely carry",
-      "It increases power demand and reduces control and endurance"
+      "It improves stability by holding the airframe steady in the air",
+      "It raises the maximum payload the aircraft can safely carry"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Gusty wind makes the aircraft work harder, increasing power demand while reducing control and endurance.",
     "acs": "UA.IV.A"
   },
@@ -6176,8 +6176,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Increased power draw",
       "Improved endurance and maneuverability",
-      "Reduced stability",
-      "A permanently lower resting battery voltage"
+      "A permanently lower resting battery voltage",
+      "Reduced stability"
     ],
     "a": 1,
     "e": "Carrying less weight reduces power demand, improving endurance and maneuverability.",
@@ -6188,12 +6188,12 @@ QUESTIONS_JSON = r'''[
     "s": "Securing Payload",
     "q": "When mounting an external camera or gimbal, what should you do?",
     "c": [
-      "Exceed the rated payload for better footage",
-      "Mount it as far from center as possible",
       "Stay within the rated payload and keep the CG centered",
-      "Leave it loose for flexibility"
+      "Mount it as far from center as possible",
+      "Leave it loose for flexibility",
+      "Exceed the rated payload for better footage"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Keep any added camera or gimbal within the rated payload and near the center of gravity, and secure it.",
     "acs": "UA.IV.A"
   },
@@ -6202,12 +6202,12 @@ QUESTIONS_JSON = r'''[
     "s": "Humidity",
     "q": "How does high humidity affect aircraft performance?",
     "c": [
-      "It slightly lowers air density and performance",
-      "It cannot have any measurable effect on performance",
+      "It increases the lift the rotors produce",
       "It improves the battery's power output",
-      "It increases the lift the rotors produce"
+      "It cannot have any measurable effect on performance",
+      "It slightly lowers air density and performance"
     ],
-    "a": 0,
+    "a": 3,
     "e": "High humidity slightly reduces air density, which can modestly reduce performance.",
     "acs": "UA.IV.A"
   },
@@ -6216,12 +6216,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Health",
     "q": "What is a reliable sign a battery should be retired from service?",
     "c": [
-      "Its age in days alone, regardless of how it has performed",
-      "Its brand name, since some brands are rated for fewer cycles",
       "Swelling, physical damage, or failure to hold a charge",
+      "Its brand name, since some brands are rated for fewer cycles",
+      "Its age in days alone, regardless of how it has performed",
       "Its color, which fades as the cells gradually wear out"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Swelling, physical damage, or an inability to hold a charge means a battery should be retired.",
     "acs": "UA.IV.A"
   },
@@ -6230,8 +6230,8 @@ QUESTIONS_JSON = r'''[
     "s": "Waivers",
     "q": "What does a Part 107 Certificate of Waiver allow?",
     "c": [
-      "Flying aircraft of any weight, including those above the 55 lb limit",
       "Ignoring all airspace authorization rules near controlled airports",
+      "Flying aircraft of any weight, including those above the 55 lb limit",
       "Deviating from specific operating rules when safety is demonstrated",
       "Skipping the initial knowledge test required for the remote certificate"
     ],
@@ -6244,12 +6244,12 @@ QUESTIONS_JSON = r'''[
     "s": "Ops Over People",
     "q": "Part 107 operations over people are divided into how many categories?",
     "c": [
-      "Four categories based on injury risk",
-      "Two categories",
       "None, it is banned outright",
-      "Ten categories"
+      "Ten categories",
+      "Four categories based on injury risk",
+      "Two categories"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Operations over people fall into four categories defined by the injury risk the aircraft poses.",
     "acs": "UA.I.E"
   },
@@ -6258,12 +6258,12 @@ QUESTIONS_JSON = r'''[
     "s": "Night Operations",
     "q": "To operate at night under Part 107, the aircraft must have what?",
     "c": [
-      "No special equipment beyond what daytime operations require",
-      "Landing lights only, pointed downward toward the takeoff area",
       "Anti-collision lighting visible for at least 3 statute miles",
-      "A strobe light that is visible for at least 1 statute mile"
+      "A strobe light that is visible for at least 1 statute mile",
+      "Landing lights only, pointed downward toward the takeoff area",
+      "No special equipment beyond what daytime operations require"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Night operations require anti-collision lighting visible for at least 3 statute miles.",
     "acs": "UA.I.B"
   },
@@ -6272,12 +6272,12 @@ QUESTIONS_JSON = r'''[
     "s": "Night Training",
     "q": "Since the 2021 rule update, what is required to fly at night?",
     "c": [
-      "Two visual observers",
       "An instrument rating",
-      "A separate night waiver in all cases",
-      "Completing the required training, no waiver needed"
+      "Two visual observers",
+      "Completing the required training, no waiver needed",
+      "A separate night waiver in all cases"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Night operations are allowed after completing the required training and using anti-collision lighting; a waiver is no longer needed.",
     "acs": "UA.I.B"
   },
@@ -6286,12 +6286,12 @@ QUESTIONS_JSON = r'''[
     "s": "Registration Marking",
     "q": "Where must the aircraft registration number be displayed?",
     "c": [
-      "Only stored on a phone",
       "Filed only with the local police department",
-      "On the exterior surface of the aircraft",
-      "On the controller screen"
+      "Only stored on a phone",
+      "On the controller screen",
+      "On the exterior surface of the aircraft"
     ],
-    "a": 2,
+    "a": 3,
     "e": "The registration number must be legibly marked on the exterior surface of the aircraft.",
     "acs": "UA.I.B"
   },
@@ -6300,12 +6300,12 @@ QUESTIONS_JSON = r'''[
     "s": "Operating Limitations",
     "q": "What must the remote PIC maintain with the aircraft throughout the flight?",
     "c": [
-      "A filed IFR flight plan",
-      "Visual line of sight",
       "A chase vehicle",
-      "Continuous radio contact with ATC"
+      "Continuous radio contact with ATC",
+      "Visual line of sight",
+      "A filed IFR flight plan"
     ],
-    "a": 1,
+    "a": 2,
     "e": "The remote PIC or a visual observer must keep the aircraft within visual line of sight throughout the operation.",
     "acs": "UA.I.B"
   },
@@ -6315,11 +6315,11 @@ QUESTIONS_JSON = r'''[
     "q": "On what cycle are VFR sectional charts generally updated?",
     "c": [
       "Every 10 years",
+      "They are never updated",
       "Every day",
-      "About every 56 days",
-      "They are never updated"
+      "About every 56 days"
     ],
-    "a": 2,
+    "a": 3,
     "e": "VFR sectional charts are generally updated on a 56-day cycle, so always use a current chart.",
     "acs": "UA.II.A"
   },
@@ -6328,12 +6328,12 @@ QUESTIONS_JSON = r'''[
     "s": "Stadium TFR",
     "q": "Near a large sporting event, flight is restricted within what area?",
     "c": [
-      "10 NM only",
-      "There is no restriction for drones",
       "3 NM and below 3,000 ft AGL around the stadium",
+      "There is no restriction for drones",
+      "10 NM only",
       "1 NM only"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A standing stadium TFR restricts flight within 3 NM and below 3,000 ft AGL from one hour before to one hour after large sporting events.",
     "acs": "UA.II.A"
   },
@@ -6342,12 +6342,12 @@ QUESTIONS_JSON = r'''[
     "s": "Special Flight Rules",
     "q": "How is the Washington, DC area classified for UAS operations?",
     "c": [
+      "A Special Flight Rules Area with strict restrictions",
       "Unrestricted airspace below 400 feet above the ground at all times",
-      "A standard Military Operations Area with published hours",
       "Open Class G airspace just like most rural areas of the country",
-      "A Special Flight Rules Area with strict restrictions"
+      "A standard Military Operations Area with published hours"
     ],
-    "a": 3,
+    "a": 0,
     "e": "The Washington, DC area is a Special Flight Rules Area where drone flight is heavily restricted or prohibited.",
     "acs": "UA.II.A"
   },
@@ -6357,11 +6357,11 @@ QUESTIONS_JSON = r'''[
     "q": "How are Victor airways depicted on a sectional chart?",
     "c": [
       "Magenta hatched bands",
-      "Light blue lines",
       "Solid red lines",
-      "Green dashed lines"
+      "Green dashed lines",
+      "Light blue lines"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Victor airways are charted as light blue lines marking low-altitude federal airways.",
     "acs": "UA.II.A"
   },
@@ -6370,12 +6370,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visual Checkpoint",
     "q": "How is a visual checkpoint shown on a sectional chart?",
     "c": [
-      "A magenta flag symbol",
+      "A blue star",
       "A green square",
-      "A red circle",
-      "A blue star"
+      "A magenta flag symbol",
+      "A red circle"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Visual checkpoints are marked with a magenta flag symbol on sectionals.",
     "acs": "UA.II.A"
   },
@@ -6385,11 +6385,11 @@ QUESTIONS_JSON = r'''[
     "q": "What do contour lines on a sectional chart represent?",
     "c": [
       "Airspace boundaries",
-      "Wind direction",
       "Lines of equal terrain elevation",
+      "Wind direction",
       "Federal airways"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Contour lines connect points of equal terrain elevation to show relief.",
     "acs": "UA.II.B"
   },
@@ -6399,11 +6399,11 @@ QUESTIONS_JSON = r'''[
     "q": "What is the chart legend used for?",
     "c": [
       "Getting the current weather conditions for the charted region",
-      "Interpreting the chart's symbols, colors, and abbreviations",
       "Finding the exact publication and expiration date of the chart",
-      "Automatically plotting a flight route between two airports"
+      "Automatically plotting a flight route between two airports",
+      "Interpreting the chart's symbols, colors, and abbreviations"
     ],
-    "a": 1,
+    "a": 3,
     "e": "The legend explains the symbols, colors, and abbreviations used on the sectional chart.",
     "acs": "UA.II.A"
   },
@@ -6414,8 +6414,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "As yellow-tinted areas",
       "As red X marks",
-      "As blue circles",
-      "As green bands"
+      "As green bands",
+      "As blue circles"
     ],
     "a": 0,
     "e": "Cities and towns appear as yellow-tinted areas, which helps identify congested areas to avoid.",
@@ -6426,12 +6426,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "Which chart lines run true north and south?",
     "c": [
-      "Isogonic magnetic variation lines",
+      "Lines of longitude (meridians)",
       "Contour lines",
       "Victor airways",
-      "Lines of longitude (meridians)"
+      "Isogonic magnetic variation lines"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Meridians of longitude run true north-south and indicate true north on the chart.",
     "acs": "UA.II.A"
   },
@@ -6440,12 +6440,12 @@ QUESTIONS_JSON = r'''[
     "s": "Convection",
     "q": "What do convective currents on a hot afternoon typically cause?",
     "c": [
-      "Low-level turbulence and bumpy air",
       "Smooth, stable air",
+      "Low-level turbulence and bumpy air",
       "Widespread fog",
       "Noticeably higher surface air density"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Surface heating creates rising convective currents that cause low-level turbulence.",
     "acs": "UA.III.B"
   },
@@ -6468,12 +6468,12 @@ QUESTIONS_JSON = r'''[
     "s": "Atmosphere",
     "q": "In which atmospheric layer does nearly all weather occur?",
     "c": [
-      "The exosphere",
-      "The stratosphere",
+      "The troposphere",
       "The mesosphere",
-      "The troposphere"
+      "The exosphere",
+      "The stratosphere"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Nearly all weather, including clouds and turbulence, occurs in the troposphere.",
     "acs": "UA.III.B"
   },
@@ -6482,12 +6482,12 @@ QUESTIONS_JSON = r'''[
     "s": "Go No-Go",
     "q": "When should a go/no-go decision be made?",
     "c": [
-      "After takeoff, once the aircraft is already in the air",
-      "Only once per month, covering all flights in that period",
       "Before each flight, based on conditions and readiness",
-      "Only when the client specifically asks for one to be made"
+      "Only when the client specifically asks for one to be made",
+      "Only once per month, covering all flights in that period",
+      "After takeoff, once the aircraft is already in the air"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Make a go/no-go decision before every flight based on weather, aircraft, and pilot readiness.",
     "acs": "UA.V.D"
   },
@@ -6496,12 +6496,12 @@ QUESTIONS_JSON = r'''[
     "s": "VLOS",
     "q": "If you lose visual line of sight of the aircraft, what should you do?",
     "c": [
-      "Regain it or execute a safe recovery such as return-to-home",
       "Ignore it entirely as long as the battery still shows a full charge",
+      "Regain it or execute a safe recovery such as return-to-home",
       "Keep flying normally using only the onboard video feed",
       "Increase speed and fly around to try to locate it"
     ],
-    "a": 0,
+    "a": 1,
     "e": "If you lose visual line of sight you must regain it or begin a safe recovery such as return-to-home.",
     "acs": "UA.I.B"
   },
@@ -6524,12 +6524,12 @@ QUESTIONS_JSON = r'''[
     "s": "Propellers",
     "q": "What happens if a propeller is installed in the wrong position or rotation?",
     "c": [
-      "It extends total flight time because the motors share the load more evenly",
       "It only reduces motor noise without affecting how the aircraft handles",
       "It fails to produce proper lift and can cause loss of control",
+      "It extends total flight time because the motors share the load more evenly",
       "It improves overall efficiency by balancing thrust across the four arms"
     ],
-    "a": 2,
+    "a": 1,
     "e": "A propeller in the wrong position or rotation will not produce proper lift and can cause loss of control.",
     "acs": "UA.IV.A"
   },
@@ -6539,9 +6539,9 @@ QUESTIONS_JSON = r'''[
     "q": "Why does securing a payload matter in flight?",
     "c": [
       "A shifting load moves the CG and destabilizes the aircraft",
-      "A secured load improves handling by adding useful extra weight",
+      "It has no real effect on a multirotor with four or more motors",
       "A fixed load increases battery life by smoothing the airflow",
-      "It has no real effect on a multirotor with four or more motors"
+      "A secured load improves handling by adding useful extra weight"
     ],
     "a": 0,
     "e": "An unsecured payload can shift in flight, moving the center of gravity and destabilizing the aircraft.",
@@ -6552,12 +6552,12 @@ QUESTIONS_JSON = r'''[
     "s": "Voltage Sag",
     "q": "What does a battery voltage that drops quickly under throttle indicate?",
     "c": [
+      "A GPS fault",
       "A propeller imbalance",
-      "An aging or unhealthy battery",
       "A fully healthy battery",
-      "A GPS fault"
+      "An aging or unhealthy battery"
     ],
-    "a": 1,
+    "a": 3,
     "e": "A rapid voltage drop under load indicates an aging or unhealthy battery that should be checked or retired.",
     "acs": "UA.IV.A"
   },
@@ -6566,12 +6566,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "What is the effect of flying at maximum payload in strong wind?",
     "c": [
-      "It significantly reduces endurance and safety margins",
-      "It improves stability because the extra weight resists gusts",
+      "It lowers the density altitude around the aircraft in flight",
       "It increases total flight time by smoothing out the airflow",
-      "It lowers the density altitude around the aircraft in flight"
+      "It improves stability because the extra weight resists gusts",
+      "It significantly reduces endurance and safety margins"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Combining maximum payload with strong wind sharply reduces endurance and safety margins.",
     "acs": "UA.IV.A"
   },
@@ -6580,12 +6580,12 @@ QUESTIONS_JSON = r'''[
     "s": "Stability",
     "q": "What does a balanced, centered payload help with?",
     "c": [
-      "Increasing top speed only",
-      "Maintaining predictable, stable flight",
       "Improving camera zoom",
-      "Extending control range"
+      "Extending control range",
+      "Increasing top speed only",
+      "Maintaining predictable, stable flight"
     ],
-    "a": 1,
+    "a": 3,
     "e": "A balanced, centered payload keeps the CG within limits for predictable, stable flight.",
     "acs": "UA.IV.A"
   },
@@ -6594,12 +6594,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "What should you confirm before adding any payload?",
     "c": [
-      "That the propellers have been removed before the payload goes on",
-      "That it keeps the aircraft within weight and balance limits",
       "That the battery has been removed and replaced with a fresh one",
-      "That the GPS receiver is disabled to save power for the payload"
+      "That the GPS receiver is disabled to save power for the payload",
+      "That the propellers have been removed before the payload goes on",
+      "That it keeps the aircraft within weight and balance limits"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Before adding payload, confirm it keeps the aircraft within its weight and balance limits.",
     "acs": "UA.IV.A"
   },
@@ -6608,12 +6608,12 @@ QUESTIONS_JSON = r'''[
     "s": "Currency",
     "q": "Since April 2021, how does a Part 107 pilot satisfy the recurrent currency requirement?",
     "c": [
-      "By renewing the certificate every 2 years for a fee",
-      "By passing a recurrent knowledge test at a testing center",
       "By completing free online recurrent training",
-      "By logging 10 flight hours"
+      "By logging 10 flight hours",
+      "By renewing the certificate every 2 years for a fee",
+      "By passing a recurrent knowledge test at a testing center"
     ],
-    "a": 2,
+    "a": 0,
     "e": "Since April 6, 2021, recurrent currency is met with free online training, not a retest at a testing center.",
     "acs": "UA.I.C"
   },
@@ -6622,12 +6622,12 @@ QUESTIONS_JSON = r'''[
     "s": "Registration",
     "q": "A small unmanned aircraft flown under Part 107 must be registered with the FAA",
     "c": [
-      "only if it weighs more than 0.55 lb",
+      "only if flown in controlled airspace",
       "only if it carries a camera",
-      "individually, regardless of its weight",
-      "only if flown in controlled airspace"
+      "only if it weighs more than 0.55 lb",
+      "individually, regardless of its weight"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Every sUAS operated under Part 107 must be registered, regardless of weight.",
     "acs": "UA.I.B"
   },
@@ -6636,12 +6636,12 @@ QUESTIONS_JSON = r'''[
     "s": "Eligibility",
     "q": "What is the minimum age to be eligible for a remote pilot certificate with an sUAS rating?",
     "c": [
-      "14 years old",
-      "17 years old",
       "18 years old",
-      "16 years old"
+      "17 years old",
+      "16 years old",
+      "14 years old"
     ],
-    "a": 3,
+    "a": 2,
     "e": "An applicant for a remote pilot certificate must be at least 16 years old.",
     "acs": "UA.I.C"
   },
@@ -6650,12 +6650,12 @@ QUESTIONS_JSON = r'''[
     "s": "Accident Reporting",
     "q": "An sUAS accident must be reported to the FAA if it causes at least serious injury, loss of consciousness, or property damage of more than",
     "c": [
-      "$250",
       "$500",
       "$2,500",
-      "$1,000"
+      "$1,000",
+      "$250"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Report if there is serious injury, loss of consciousness, or property damage exceeding $500.",
     "acs": "UA.I.A"
   },
@@ -6664,12 +6664,12 @@ QUESTIONS_JSON = r'''[
     "s": "Careless Operation",
     "q": "Operating a small unmanned aircraft in a careless or reckless manner so as to endanger life or property is",
     "c": [
-      "prohibited under Part 107",
-      "allowed below 100 feet",
       "allowed with a visual observer",
-      "allowed in Class G airspace"
+      "prohibited under Part 107",
+      "allowed in Class G airspace",
+      "allowed below 100 feet"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Part 107 prohibits careless or reckless operation that endangers life or property.",
     "acs": "UA.I.B"
   },
@@ -6678,12 +6678,12 @@ QUESTIONS_JSON = r'''[
     "s": "Waivers",
     "q": "The FAA will issue a Certificate of Waiver for a Part 107 operation when the applicant shows that",
     "c": [
-      "the operation will generate revenue for a registered commercial business",
-      "the drone weighs under 0.55 lb and is exempt from registration rules",
       "the operation can be conducted safely under the terms of the waiver",
+      "the drone weighs under 0.55 lb and is exempt from registration rules",
+      "the operation will generate revenue for a registered commercial business",
       "the pilot has logged at least 100 hours as remote pilot in command"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A waiver is issued when the applicant demonstrates the proposed operation can be conducted safely.",
     "acs": "UA.I.D"
   },
@@ -6692,12 +6692,12 @@ QUESTIONS_JSON = r'''[
     "s": "Falsification",
     "q": "Falsifying or altering a record or report required under Part 107 is grounds for",
     "c": [
-      "suspension or revocation of the certificate",
       "a verbal warning only",
+      "suspension or revocation of the certificate",
       "a $50 fine",
       "no action at all if it was truly unintentional"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Falsification, reproduction, or alteration of records is grounds for suspension or revocation of the certificate.",
     "acs": "UA.I.A"
   },
@@ -6706,12 +6706,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "Since September 2023, a drone that requires FAA registration generally must also",
     "c": [
-      "broadcast Remote ID information unless flown within a FRIA",
+      "carry a working transponder that reports its position to ATC",
       "file a flight plan with air traffic control before each flight",
       "be flown only in uncontrolled Class G airspace below 400 feet",
-      "carry a working transponder that reports its position to ATC"
+      "broadcast Remote ID information unless flown within a FRIA"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Registered drones must broadcast Remote ID unless operated within an FAA-recognized identification area (FRIA).",
     "acs": "UA.I.F"
   },
@@ -6721,11 +6721,11 @@ QUESTIONS_JSON = r'''[
     "q": "Under Part 107, a small unmanned aircraft must yield the right of way to",
     "c": [
       "no other aircraft when in Class G",
-      "all other aircraft",
       "only aircraft in controlled airspace",
+      "all other aircraft",
       "only manned aircraft below 500 feet"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Under 14 CFR 107.37, the sUAS must yield the right of way to all other aircraft.",
     "acs": "UA.I.B"
   },
@@ -6734,12 +6734,12 @@ QUESTIONS_JSON = r'''[
     "s": "VLOS",
     "q": "When maintaining visual line of sight, which visual aid is allowed?",
     "c": [
+      "Corrective lenses",
       "First-person-view goggles",
-      "A spotting scope",
       "Binoculars",
-      "Corrective lenses"
+      "A spotting scope"
     ],
-    "a": 3,
+    "a": 0,
     "e": "VLOS may be maintained only with corrective lenses, not binoculars or first-person-view goggles.",
     "acs": "UA.I.B"
   },
@@ -6748,12 +6748,12 @@ QUESTIONS_JSON = r'''[
     "s": "CRM",
     "q": "Under Part 107, one person acting as remote PIC may operate",
     "c": [
-      "any number with a visual observer",
       "only one small unmanned aircraft at a time",
       "up to three aircraft at once",
+      "any number with a visual observer",
       "two aircraft if both are under 0.55 lb"
     ],
-    "a": 1,
+    "a": 0,
     "e": "A person may not act as remote PIC for more than one small unmanned aircraft at the same time.",
     "acs": "UA.V.D"
   },
@@ -6762,12 +6762,12 @@ QUESTIONS_JSON = r'''[
     "s": "Night Operations",
     "q": "To fly at night under Part 107 without a waiver, the aircraft must have anti-collision lighting visible for at least",
     "c": [
-      "5 statute miles",
-      "10 statute miles",
+      "1 statute mile",
       "3 statute miles",
-      "1 statute mile"
+      "10 statute miles",
+      "5 statute miles"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Night operations require anti-collision lighting visible for at least 3 statute miles.",
     "acs": "UA.I.B"
   },
@@ -6776,12 +6776,12 @@ QUESTIONS_JSON = r'''[
     "s": "Night Operations",
     "q": "In addition to anti-collision lighting, night operations under Part 107 require the remote PIC to have",
     "c": [
-      "filed a NOTAM",
       "a night-operations waiver",
-      "completed training that covers night operations",
-      "a second-class medical certificate"
+      "filed a NOTAM",
+      "a second-class medical certificate",
+      "completed training that covers night operations"
     ],
-    "a": 2,
+    "a": 3,
     "e": "The remote PIC must complete initial or recurrent training that covers night operations.",
     "acs": "UA.I.B"
   },
@@ -6790,12 +6790,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over Vehicles",
     "q": "Sustained flight of an sUAS over a person inside a moving vehicle is allowed only when",
     "c": [
-      "the remote pilot has notified the occupants and they have verbally given consent",
       "the operation meets an over-people category or the occupants are participating",
-      "the flight is conducted during daylight and the vehicle is traveling under 25 mph",
-      "the operation takes place in Class G airspace below 400 feet above the ground"
+      "the operation takes place in Class G airspace below 400 feet above the ground",
+      "the remote pilot has notified the occupants and they have verbally given consent",
+      "the flight is conducted during daylight and the vehicle is traveling under 25 mph"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Flight over moving vehicles requires meeting an over-people category or that the occupants are participating in the operation.",
     "acs": "UA.I.E"
   },
@@ -6804,12 +6804,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "Before each flight, the remote PIC is required to",
     "c": [
-      "log the planned flight in IACRA and notify the nearest air traffic control facility",
-      "file a flight plan with air traffic control and receive a clearance before launch",
       "obtain a standard weather briefing relayed verbally by the visual observer on site",
-      "assess the operating environment and ensure the aircraft is safe for operation"
+      "log the planned flight in IACRA and notify the nearest air traffic control facility",
+      "assess the operating environment and ensure the aircraft is safe for operation",
+      "file a flight plan with air traffic control and receive a clearance before launch"
     ],
-    "a": 3,
+    "a": 2,
     "e": "The remote PIC must assess the operating environment and ensure the sUAS is in a condition for safe operation.",
     "acs": "UA.V.F"
   },
@@ -6818,12 +6818,12 @@ QUESTIONS_JSON = r'''[
     "s": "CRM",
     "q": "Crew resource management (CRM) for sUAS operations refers to",
     "c": [
-      "the effective use of all available resources, human and otherwise",
       "the process of coordinating directly with air traffic control",
       "the practice of managing the battery charge and discharge cycles",
-      "the schedule for routine maintenance of the aircraft and batteries"
+      "the schedule for routine maintenance of the aircraft and batteries",
+      "the effective use of all available resources, human and otherwise"
     ],
-    "a": 0,
+    "a": 3,
     "e": "CRM is the effective use of all available resources to conduct a safe operation.",
     "acs": "UA.V.D"
   },
@@ -6832,12 +6832,12 @@ QUESTIONS_JSON = r'''[
     "s": "Responsibility",
     "q": "Who is directly responsible for, and the final authority over, an sUAS operation conducted under Part 107?",
     "c": [
-      "The remote pilot in command",
-      "The visual observer",
+      "The FAA",
       "The aircraft manufacturer",
-      "The FAA"
+      "The visual observer",
+      "The remote pilot in command"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The remote pilot in command is directly responsible for and the final authority over the operation.",
     "acs": "UA.I.B"
   },
@@ -6846,12 +6846,12 @@ QUESTIONS_JSON = r'''[
     "s": "Altitude",
     "q": "The maximum altitude for a small unmanned aircraft under Part 107 is",
     "c": [
-      "200 feet AGL anywhere outside of controlled airspace",
-      "500 feet AGL as long as the aircraft stays in sight",
       "1,000 feet MSL when operating in uncontrolled airspace",
-      "400 feet AGL, or within 400 feet of a structure"
+      "500 feet AGL as long as the aircraft stays in sight",
+      "400 feet AGL, or within 400 feet of a structure",
+      "200 feet AGL anywhere outside of controlled airspace"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Maximum altitude is 400 feet AGL, or within 400 feet of a structure if operating higher.",
     "acs": "UA.I.B"
   },
@@ -6861,11 +6861,11 @@ QUESTIONS_JSON = r'''[
     "q": "A temporary flight restriction (TFR) in the area where you plan to fly means that sUAS operations are",
     "c": [
       "allowed with a visual observer",
-      "unaffected",
       "restricted or prohibited within the TFR",
+      "unaffected",
       "allowed below 200 feet"
     ],
-    "a": 2,
+    "a": 1,
     "e": "A TFR restricts or prohibits flight, including sUAS operations, within the defined area.",
     "acs": "UA.II.A"
   },
@@ -6874,12 +6874,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visibility",
     "q": "The minimum flight visibility for a Part 107 operation, as observed from the control station, is",
     "c": [
+      "5 statute miles",
       "1 statute mile",
-      "3 statute miles",
       "1 nautical mile",
-      "5 statute miles"
+      "3 statute miles"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Minimum flight visibility is 3 statute miles from the control station.",
     "acs": "UA.III.B"
   },
@@ -6888,12 +6888,12 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "High density altitude (hot, high, and humid conditions) affects sUAS performance by",
     "c": [
-      "improving lift and thrust",
       "having absolutely no effect at all on electric drones",
-      "increasing maximum altitude",
-      "reducing performance because the air is less dense"
+      "improving lift and thrust",
+      "reducing performance because the air is less dense",
+      "increasing maximum altitude"
     ],
-    "a": 3,
+    "a": 2,
     "e": "High density altitude reduces aircraft performance because the air is less dense.",
     "acs": "UA.III.B"
   },
@@ -6902,12 +6902,12 @@ QUESTIONS_JSON = r'''[
     "s": "Speed Limit",
     "q": "The maximum groundspeed allowed for a small unmanned aircraft under Part 107 is",
     "c": [
-      "57 knots (65 mph)",
-      "87 knots (100 mph)",
+      "100 knots (115 mph)",
       "120 knots (138 mph)",
-      "100 knots (115 mph)"
+      "87 knots (100 mph)",
+      "57 knots (65 mph)"
     ],
-    "a": 1,
+    "a": 2,
     "e": "Maximum groundspeed under Part 107 is 87 knots (100 mph).",
     "acs": "UA.IV.A"
   },
@@ -6916,12 +6916,12 @@ QUESTIONS_JSON = r'''[
     "s": "Weight",
     "q": "Adding payload weight to a small unmanned aircraft generally",
     "c": [
-      "increases maximum altitude",
       "reduces flight time and maneuverability",
-      "increases flight time",
-      "has no effect on performance"
+      "has no effect on performance",
+      "increases maximum altitude",
+      "increases flight time"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Increased weight generally reduces endurance and maneuverability.",
     "acs": "UA.IV.A"
   },
@@ -6930,12 +6930,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "Which part of 14 CFR establishes the Remote Identification requirements for unmanned aircraft?",
     "c": [
-      "Part 91",
-      "Part 47",
       "Part 89",
-      "Part 61"
+      "Part 91",
+      "Part 61",
+      "Part 47"
     ],
-    "a": 2,
+    "a": 0,
     "e": "14 CFR part 89 establishes the Remote Identification (Remote ID) requirements for unmanned aircraft.",
     "acs": "UA.I.F"
   },
@@ -6986,12 +6986,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People",
     "q": "Compared with Category 2, a Category 3 sUAS may NOT",
     "c": [
-      "operate over open-air assemblies of people",
-      "broadcast Remote ID using a standard onboard module",
       "fly at night, even with the required anti-collision lighting",
-      "be registered with the FAA under the usual process"
+      "be registered with the FAA under the usual process",
+      "broadcast Remote ID using a standard onboard module",
+      "operate over open-air assemblies of people"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Category 3 operations may not be conducted over open-air assemblies of people.",
     "acs": "UA.I.E"
   },
@@ -7000,12 +7000,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People",
     "q": "To qualify for Category 4 operations over people, a small unmanned aircraft must",
     "c": [
-      "carry a deployable parachute system that has been tested and approved by an accredited laboratory",
-      "weigh less than 0.55 lb so that it falls below the registration threshold entirely",
+      "have an airworthiness certificate and be operated per its operating limitations",
       "be flown only at night while displaying anti-collision lighting visible for 3 statute miles",
-      "have an airworthiness certificate and be operated per its operating limitations"
+      "weigh less than 0.55 lb so that it falls below the registration threshold entirely",
+      "carry a deployable parachute system that has been tested and approved by an accredited laboratory"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Category 4 requires an airworthiness certificate issued under part 21 and operation per the aircraft's operating limitations.",
     "acs": "UA.I.E"
   },
@@ -7015,11 +7015,11 @@ QUESTIONS_JSON = r'''[
     "q": "Operations over people may be conducted at night when",
     "c": [
       "never, because combining night flight with operations over people is always prohibited",
-      "both the over-people category requirements and the night operation requirements are met",
+      "a single waiver covering night flight is held, regardless of the over-people category",
       "the aircraft weighs less than 0.55 lb and therefore poses very little risk to people below",
-      "a single waiver covering night flight is held, regardless of the over-people category"
+      "both the over-people category requirements and the night operation requirements are met"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Over-people operations at night require meeting both the category requirements and the night requirements (anti-collision lighting plus training).",
     "acs": "UA.I.E"
   },
@@ -7028,12 +7028,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "The three ways to meet the Remote ID requirement are a standard Remote ID drone, a broadcast module, or",
     "c": [
-      "holding a Category 4 airworthiness certificate for the aircraft",
       "filing a flight plan with the FAA before each individual flight",
       "operating within an FAA-Recognized Identification Area (FRIA)",
+      "holding a Category 4 airworthiness certificate for the aircraft",
       "carrying a working transponder that reports to air traffic control"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Remote ID is met with a standard Remote ID drone, a broadcast module, or by operating within a FRIA.",
     "acs": "UA.I.F"
   },
@@ -7043,11 +7043,11 @@ QUESTIONS_JSON = r'''[
     "q": "When using a Remote ID broadcast module, the remote pilot must",
     "c": [
       "use two completely separate control stations always",
-      "keep the aircraft within visual line of sight",
       "fly only in Class G airspace",
-      "stay below 100 feet"
+      "stay below 100 feet",
+      "keep the aircraft within visual line of sight"
     ],
-    "a": 1,
+    "a": 3,
     "e": "A Remote ID broadcast module requires the operation to remain within visual line of sight.",
     "acs": "UA.I.F"
   },
@@ -7056,12 +7056,12 @@ QUESTIONS_JSON = r'''[
     "s": "Remote ID",
     "q": "In addition to its identity, location, altitude, velocity, and a time mark, a standard Remote ID drone broadcasts",
     "c": [
-      "the destination airport identifier entered into the flight plan",
       "the control station location and an emergency status indication",
       "the battery temperature and the remaining charge of each onboard cell",
+      "the destination airport identifier entered into the flight plan",
       "the remote pilot's certificate number and the date it was issued"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Standard Remote ID also broadcasts the control station location and an emergency status indication.",
     "acs": "UA.I.F"
   },
@@ -7070,12 +7070,12 @@ QUESTIONS_JSON = r'''[
     "s": "FRIA",
     "q": "Within an FAA-Recognized Identification Area (FRIA), a drone that does not broadcast Remote ID may be flown only if it",
     "c": [
+      "is under 0.25 lb and therefore exempt from the registration rules",
       "remains within visual line of sight of the operator",
-      "carries a working transponder that reports its position to ATC",
       "stays below 50 feet above the ground for the entire flight",
-      "is under 0.25 lb and therefore exempt from the registration rules"
+      "carries a working transponder that reports its position to ATC"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Inside a FRIA, a non-broadcasting drone must remain within visual line of sight of the operator.",
     "acs": "UA.I.F"
   },
@@ -7084,12 +7084,12 @@ QUESTIONS_JSON = r'''[
     "s": "Night Operations",
     "q": "The remote PIC may reduce the intensity of the required anti-collision lighting when",
     "c": [
-      "the battery is low",
-      "a visual observer is present",
       "it is in the interest of safety to do so",
-      "flying in Class G airspace"
+      "a visual observer is present",
+      "flying in Class G airspace",
+      "the battery is low"
     ],
-    "a": 2,
+    "a": 0,
     "e": "The remote PIC may dim anti-collision lighting if a bright light would impair safe operation, using discretion in the interest of safety.",
     "acs": "UA.I.B"
   },
@@ -7099,11 +7099,11 @@ QUESTIONS_JSON = r'''[
     "q": "A UAS Facility Map shows a 100-foot ceiling for your area, but a structural inspection requires 150 feet. You should",
     "c": [
       "reduce the inspection to 100 feet and accept that you can never request anything more",
-      "fly at 150 feet under a standard LAANC approval, which always covers inspection work",
       "request further authorization, because LAANC will not approve above the charted ceiling",
-      "ignore the facility map entirely, since it does not apply in uncontrolled Class G airspace at all"
+      "ignore the facility map entirely, since it does not apply in uncontrolled Class G airspace at all",
+      "fly at 150 feet under a standard LAANC approval, which always covers inspection work"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Above the UAS Facility Map ceiling, you must seek further authorization rather than rely on standard LAANC approval.",
     "acs": "UA.II.B"
   },
@@ -7112,12 +7112,12 @@ QUESTIONS_JSON = r'''[
     "s": "Over People",
     "q": "An sUAS that meets the requirements of more than one operations-over-people category",
     "c": [
-      "must be separately re-registered for each and every category",
-      "is prohibited from flying over people",
+      "must pick one category permanently",
       "may be operated under any category for which it qualifies",
-      "must pick one category permanently"
+      "is prohibited from flying over people",
+      "must be separately re-registered for each and every category"
     ],
-    "a": 2,
+    "a": 1,
     "e": "A multi-category sUAS may be operated under any over-people category for which it qualifies.",
     "acs": "UA.I.E"
   },
@@ -7141,11 +7141,11 @@ QUESTIONS_JSON = r'''[
     "q": "Knowing a small unmanned aircraft's programmed lost-link behavior before flight is important because it lets the remote PIC",
     "c": [
       "fly beyond visual line of sight as long as the link is automatic",
-      "skip the preflight check since the aircraft will recover on its own",
       "anticipate how the aircraft will act if the control link is lost",
+      "skip the preflight check since the aircraft will recover on its own",
       "climb above 400 feet AGL to regain the lost control signal faster"
     ],
-    "a": 2,
+    "a": 1,
     "e": "Knowing the lost-link behavior lets the pilot anticipate the aircraft's response if the control link drops.",
     "acs": "UA.V.C"
   },
@@ -7155,9 +7155,9 @@ QUESTIONS_JSON = r'''[
     "q": "Operating a small unmanned aircraft close to metal structures or high-voltage power lines can",
     "c": [
       "have no measurable effect on the aircraft's control link or navigation systems",
-      "improve GPS accuracy by giving the receiver more fixed reference points nearby",
+      "increase battery life because the surrounding metal shields the aircraft from wind",
       "cause magnetic or radio interference that degrades control or navigation",
-      "increase battery life because the surrounding metal shields the aircraft from wind"
+      "improve GPS accuracy by giving the receiver more fixed reference points nearby"
     ],
     "a": 2,
     "e": "Metal structures and power lines can cause magnetic or radio interference that degrades control or GPS navigation.",
@@ -7168,12 +7168,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "A thorough preflight check for a Part 107 operation should include",
     "c": [
-      "a current medical examination of the remote pilot completed within the last 24 months",
       "the aircraft and control link, power, and a survey of the operating area for hazards",
+      "a current medical examination of the remote pilot completed within the last 24 months",
       "filing a flight plan with air traffic control and receiving a clearance before launch",
       "only the battery level, since the aircraft's software handles all other safety checks"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Preflight includes the aircraft and control link, power, and a survey of the operating area for hazards.",
     "acs": "UA.V.F"
   },
@@ -7182,12 +7182,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maintenance",
     "q": "When a manufacturer provides scheduled maintenance instructions for an sUAS, the operator should",
     "c": [
-      "follow them, and otherwise maintain the aircraft so it stays in a condition for safe operation",
       "disregard them once the manufacturer's warranty period has fully expired",
-      "send the aircraft to an FAA facility for a scheduled annual inspection each year",
-      "perform maintenance only after the aircraft has been involved in a crash or hard landing event"
+      "perform maintenance only after the aircraft has been involved in a crash or hard landing event",
+      "follow them, and otherwise maintain the aircraft so it stays in a condition for safe operation",
+      "send the aircraft to an FAA facility for a scheduled annual inspection each year"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Follow the manufacturer's maintenance schedule; absent one, maintain the aircraft so it remains in a condition for safe operation.",
     "acs": "UA.V.F"
   },
@@ -7196,12 +7196,12 @@ QUESTIONS_JSON = r'''[
     "s": "Human factors",
     "q": "Fatigue, dehydration, and stress affect a remote pilot by",
     "c": [
-      "having no effect on a ground-based pilot",
-      "improving reaction time",
       "only mattering at night",
-      "degrading performance and decision making"
+      "degrading performance and decision making",
+      "improving reaction time",
+      "having no effect on a ground-based pilot"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Fatigue, dehydration, and stress degrade a pilot's performance and decision making, even on the ground.",
     "acs": "UA.V.E"
   },
@@ -7211,8 +7211,8 @@ QUESTIONS_JSON = r'''[
     "q": "The IMSAFE checklist is used by a pilot to assess",
     "c": [
       "personal fitness for flight: illness, medication, stress, alcohol, fatigue, and emotion",
-      "current and forecast weather, including wind, visibility, and cloud ceilings at the site",
       "the aircraft's airworthiness, including the propellers, battery, and control link before flight",
+      "current and forecast weather, including wind, visibility, and cloud ceilings at the site",
       "the class of airspace and any authorization needed before launching the operation"
     ],
     "a": 0,
@@ -7225,9 +7225,9 @@ QUESTIONS_JSON = r'''[
     "q": "Near a non-towered airport, monitoring the common traffic advisory frequency (CTAF) helps a remote pilot",
     "c": [
       "stay aware of nearby manned aircraft operations",
-      "automatically obtain a full airspace authorization",
       "extend flight time",
-      "register the drone"
+      "register the drone",
+      "automatically obtain a full airspace authorization"
     ],
     "a": 0,
     "e": "Monitoring the CTAF builds awareness of nearby manned traffic at a non-towered airport.",
@@ -7238,10 +7238,10 @@ QUESTIONS_JSON = r'''[
     "s": "See and Avoid",
     "q": "To meet see-and-avoid responsibilities, the remote PIC must",
     "c": [
-      "rely solely on the aircraft's Remote ID broadcast to detect and avoid other traffic",
+      "operate only above 400 feet so that manned aircraft remain well below the drone",
       "maintain awareness and yield the right of way to all other aircraft",
       "equip the aircraft with a transponder and squawk the assigned discrete code",
-      "operate only above 400 feet so that manned aircraft remain well below the drone"
+      "rely solely on the aircraft's Remote ID broadcast to detect and avoid other traffic"
     ],
     "a": 1,
     "e": "The remote PIC must maintain awareness and yield the right of way to all other aircraft.",
@@ -7252,12 +7252,12 @@ QUESTIONS_JSON = r'''[
     "s": "Crew Briefing",
     "q": "Before a crewed operation, briefing the visual observer and any crew on roles and emergency procedures primarily supports",
     "c": [
-      "crew resource management and safe coordination",
-      "weather forecasting for the planned operating area",
       "registration of the aircraft with the FAA before flight",
-      "Remote ID compliance for the aircraft during the flight"
+      "weather forecasting for the planned operating area",
+      "Remote ID compliance for the aircraft during the flight",
+      "crew resource management and safe coordination"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A pre-operation crew briefing supports crew resource management and safe coordination.",
     "acs": "UA.V.D"
   },
@@ -7266,12 +7266,12 @@ QUESTIONS_JSON = r'''[
     "s": "Prohibited Area",
     "q": "Operations within a prohibited area are",
     "c": [
-      "allowed with a visual observer",
-      "allowed with a waiver",
       "allowed below 100 feet",
-      "not allowed"
+      "not allowed",
+      "allowed with a waiver",
+      "allowed with a visual observer"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Flight within a prohibited area is not allowed.",
     "acs": "UA.II.A"
   },
@@ -7280,12 +7280,12 @@ QUESTIONS_JSON = r'''[
     "s": "MOA",
     "q": "When operating near or under a Military Operations Area (MOA), a remote pilot should",
     "c": [
+      "assume it is always inactive since most training happens at high altitude",
       "exercise caution because military training activity may be present",
       "request a specific waiver from the FAA before flying anywhere nearby",
-      "climb above 400 feet to stay clear of any low-level military traffic",
-      "assume it is always inactive since most training happens at high altitude"
+      "climb above 400 feet to stay clear of any low-level military traffic"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Use caution near a MOA, where military training activity may be present.",
     "acs": "UA.II.A"
   },
@@ -7294,9 +7294,9 @@ QUESTIONS_JSON = r'''[
     "s": "NOTAM",
     "q": "A NOTAM (Notice to Air Missions) provides",
     "c": [
+      "the maintenance history and current airworthiness status of an individual registered aircraft",
       "a permanent record of long-term airspace redesigns printed on each new sectional chart",
       "a detailed aviation weather forecast covering wind, visibility, and cloud layers for the next 24 hours",
-      "the maintenance history and current airworthiness status of an individual registered aircraft",
       "time-critical aeronautical information not known far enough in advance to publicize otherwise"
     ],
     "a": 3,
@@ -7308,12 +7308,12 @@ QUESTIONS_JSON = r'''[
     "s": "TFR",
     "q": "Before flying, a remote pilot can learn about temporary flight restrictions (TFRs) by",
     "c": [
-      "reading the aircraft manual",
       "checking NOTAMs and FAA sources",
-      "calling the aircraft manufacturer",
-      "asking a visual observer"
+      "reading the aircraft manual",
+      "asking a visual observer",
+      "calling the aircraft manufacturer"
     ],
-    "a": 1,
+    "a": 0,
     "e": "TFRs are published as NOTAMs and available through FAA sources, which should be checked before flight.",
     "acs": "UA.II.A"
   },
@@ -7322,8 +7322,8 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, the code 'BKN' reports a sky condition of",
     "c": [
-      "a few clouds covering 1/8 to 2/8 of the sky overhead",
       "clear skies reported when no clouds are detected at all",
+      "a few clouds covering 1/8 to 2/8 of the sky overhead",
       "broken clouds covering 5/8 to 7/8 of the sky",
       "overcast skies with cloud cover at a full 8/8 of the sky"
     ],
@@ -7336,12 +7336,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, '24015G25KT' means the wind is",
     "c": [
-      "from 150 degrees at a steady 24 knots",
-      "variable in direction at a steady speed of 25 knots",
       "from 240 degrees at 15 knots gusting to 25 knots",
-      "calm at the surface with gusts to 24 knots"
+      "from 150 degrees at a steady 24 knots",
+      "calm at the surface with gusts to 24 knots",
+      "variable in direction at a steady speed of 25 knots"
     ],
-    "a": 2,
+    "a": 0,
     "e": "24015G25KT means wind from 240 degrees at 15 knots, gusting to 25 knots.",
     "acs": "UA.III.A"
   },
@@ -7350,12 +7350,12 @@ QUESTIONS_JSON = r'''[
     "s": "Stability",
     "q": "Unstable air is generally associated with",
     "c": [
-      "cumuliform clouds, turbulence, showery precipitation, and good visibility",
       "stratiform clouds, steady widespread rain, smooth air, and gradually reducing visibility",
-      "clear skies with no cloud development and consistently calm surface winds all day",
-      "persistent fog, low stratus, and very poor visibility with little vertical motion"
+      "cumuliform clouds, turbulence, showery precipitation, and good visibility",
+      "persistent fog, low stratus, and very poor visibility with little vertical motion",
+      "clear skies with no cloud development and consistently calm surface winds all day"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Unstable air brings cumuliform clouds, turbulence, showery precipitation, and generally good visibility.",
     "acs": "UA.III.B"
   },
@@ -7365,11 +7365,11 @@ QUESTIONS_JSON = r'''[
     "q": "A small temperature-dewpoint spread indicates",
     "c": [
       "dry air with only high clouds above",
-      "strong and gusty winds across the area",
       "high humidity with possible fog or low clouds",
+      "strong and gusty winds across the area",
       "a very high density altitude near the surface today"
     ],
-    "a": 2,
+    "a": 1,
     "e": "A small temperature-dewpoint spread signals high humidity and possible fog or low ceilings.",
     "acs": "UA.III.B"
   },
@@ -7378,10 +7378,10 @@ QUESTIONS_JSON = r'''[
     "s": "Waivers",
     "q": "Which operation could be authorized by a Part 107 waiver?",
     "c": [
-      "Falsifying records",
+      "Careless or reckless operation",
       "Flight beyond visual line of sight",
       "Operating an aircraft over 55 pounds under Part 107",
-      "Careless or reckless operation"
+      "Falsifying records"
     ],
     "a": 1,
     "e": "A Part 107 waiver can authorize deviations such as beyond-visual-line-of-sight flight when safety is shown.",
@@ -7393,11 +7393,11 @@ QUESTIONS_JSON = r'''[
     "q": "While exercising the privileges of the certificate, the remote pilot must keep the remote pilot certificate",
     "c": [
       "on file with the FAA only, not on the operator",
-      "posted in a visible spot at the launch site",
+      "in physical possession or immediately accessible",
       "at home in a safe place for secure long-term storage",
-      "in physical possession or immediately accessible"
+      "posted in a visible spot at the launch site"
     ],
-    "a": 3,
+    "a": 1,
     "e": "The remote pilot certificate must be in the pilot's physical possession or immediately accessible during operations.",
     "acs": "UA.I.C"
   },
@@ -7406,12 +7406,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maximum Weight",
     "q": "To be operated under Part 107, a small unmanned aircraft must weigh, including everything on board or attached, less than",
     "c": [
-      "100 pounds",
-      "55 pounds",
       "25 pounds",
-      "75 pounds"
+      "75 pounds",
+      "55 pounds",
+      "100 pounds"
     ],
-    "a": 1,
+    "a": 2,
     "e": "A small unmanned aircraft must weigh less than 55 pounds on takeoff, including everything on board or attached.",
     "acs": "UA.IV.A"
   },
@@ -7420,8 +7420,8 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Adding weight to a multirotor drone generally requires the aircraft to",
     "c": [
-      "fly noticeably faster since the heavier airframe cuts through wind better",
       "climb to a higher maximum altitude before the motors reach their limit",
+      "fly noticeably faster since the heavier airframe cuts through wind better",
       "use less battery current because the extra mass adds momentum in flight",
       "draw more power, reducing endurance and climb performance"
     ],
@@ -7434,12 +7434,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery",
     "q": "Operating in cold temperatures typically affects a drone's battery by",
     "c": [
+      "increasing its capacity",
       "eliminating the need to charge",
       "having no effect",
-      "reducing its usable capacity and flight time",
-      "increasing its capacity"
+      "reducing its usable capacity and flight time"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Cold temperatures reduce a battery's usable capacity, shortening flight time.",
     "acs": "UA.IV.A"
   },
@@ -7448,9 +7448,9 @@ QUESTIONS_JSON = r'''[
     "s": "Structural",
     "q": "Abrupt, aggressive maneuvers increase the load on the airframe and can",
     "c": [
-      "improve battery life",
-      "reduce weight",
       "increase visibility",
+      "reduce weight",
+      "improve battery life",
       "overstress or damage the structure"
     ],
     "a": 3,
@@ -7462,12 +7462,12 @@ QUESTIONS_JSON = r'''[
     "s": "Propellers",
     "q": "A nicked or cracked propeller should be",
     "c": [
-      "replaced before flight, because it degrades performance and can cause vibration or failure",
-      "taped over and reused for the rest of the flying season to avoid the replacement cost",
       "kept in service until it visibly fails, since minor surface damage rarely affects performance",
+      "taped over and reused for the rest of the flying season to avoid the replacement cost",
+      "replaced before flight, because it degrades performance and can cause vibration or failure",
       "ignored as long as the drone still hovers and responds normally to the control inputs"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A damaged propeller degrades performance and can cause vibration or failure, so it must be replaced before flight.",
     "acs": "UA.IV.A"
   },
@@ -7476,12 +7476,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "Flying into a strong headwind increases power demand and",
     "c": [
-      "increases range",
-      "reduces effective range and endurance",
+      "has no effect on battery",
       "increases groundspeed",
-      "has no effect on battery"
+      "increases range",
+      "reduces effective range and endurance"
     ],
-    "a": 1,
+    "a": 3,
     "e": "Flying into a strong headwind raises power demand, reducing effective range and endurance.",
     "acs": "UA.IV.A"
   },
@@ -7492,10 +7492,10 @@ QUESTIONS_JSON = r'''[
     "c": [
       "the first minute of flight only",
       "the manufacturer's warranty period",
-      "the planned operation plus a safe reserve",
-      "exactly the hover time"
+      "exactly the hover time",
+      "the planned operation plus a safe reserve"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Confirm the battery has enough charge for the planned operation plus a safe reserve.",
     "acs": "UA.IV.A"
   },
@@ -7504,12 +7504,12 @@ QUESTIONS_JSON = r'''[
     "s": "Temperature",
     "q": "As air temperature rises, air density decreases, which",
     "c": [
-      "improves lift and thrust",
-      "increases payload capacity",
       "has no real measurable effect at all on rotorcraft",
-      "reduces lift and thrust, degrading performance"
+      "reduces lift and thrust, degrading performance",
+      "increases payload capacity",
+      "improves lift and thrust"
     ],
-    "a": 3,
+    "a": 1,
     "e": "Higher temperatures lower air density, reducing lift and thrust and degrading performance.",
     "acs": "UA.IV.A"
   },
@@ -7518,12 +7518,12 @@ QUESTIONS_JSON = r'''[
     "s": "Exceeding limits",
     "q": "Loading a drone beyond its maximum gross weight can result in",
     "c": [
-      "longer flight time, because the added mass helps the aircraft glide more efficiently",
       "a faster rate of climb, as the motors automatically compensate for the extra load",
-      "reduced climb, poor controllability, and inability to maintain altitude",
-      "improved stability in wind, since a heavier aircraft resists gusts more effectively"
+      "improved stability in wind, since a heavier aircraft resists gusts more effectively",
+      "longer flight time, because the added mass helps the aircraft glide more efficiently",
+      "reduced climb, poor controllability, and inability to maintain altitude"
     ],
-    "a": 2,
+    "a": 3,
     "e": "Exceeding maximum gross weight reduces climb and controllability and can prevent maintaining altitude.",
     "acs": "UA.IV.A"
   },
@@ -7532,12 +7532,12 @@ QUESTIONS_JSON = r'''[
     "s": "Planning",
     "q": "Considering weight and balance before adding a camera or payload helps ensure",
     "c": [
-      "a longer manufacturer warranty on the airframe and the camera mount",
-      "a lower aircraft registration fee because of the reduced takeoff weight",
       "a faster GPS lock when the aircraft is first powered on before launch",
-      "the aircraft stays within its weight and center-of-gravity limits"
+      "a lower aircraft registration fee because of the reduced takeoff weight",
+      "the aircraft stays within its weight and center-of-gravity limits",
+      "a longer manufacturer warranty on the airframe and the camera mount"
     ],
-    "a": 3,
+    "a": 2,
     "e": "Checking weight and balance keeps the aircraft within its weight and center-of-gravity limits.",
     "acs": "UA.IV.A"
   },
@@ -7546,12 +7546,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, 'SCT' reports a sky condition of",
     "c": [
-      "clear",
       "a broken cloud layer, 5/8 to 7/8 coverage",
       "scattered clouds, 3/8 to 4/8 coverage",
+      "clear",
       "overcast"
     ],
-    "a": 2,
+    "a": 1,
     "e": "SCT means scattered clouds covering 3/8 to 4/8 of the sky.",
     "acs": "UA.III.A"
   },
@@ -7560,12 +7560,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, 'OVC' reports a sky condition of",
     "c": [
+      "scattered clouds",
       "overcast, 8/8 coverage",
       "clear skies",
-      "few clouds",
-      "scattered clouds"
+      "few clouds"
     ],
-    "a": 0,
+    "a": 1,
     "e": "OVC means overcast, with 8/8 sky coverage.",
     "acs": "UA.III.A"
   },
@@ -7574,12 +7574,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "In a METAR, 'FEW' reports a sky condition of",
     "c": [
-      "broken",
-      "overcast",
       "few clouds, 1/8 to 2/8 coverage",
+      "overcast",
+      "broken",
       "scattered, 3/8 to 4/8"
     ],
-    "a": 2,
+    "a": 0,
     "e": "FEW means few clouds covering 1/8 to 2/8 of the sky.",
     "acs": "UA.III.A"
   },
@@ -7588,12 +7588,12 @@ QUESTIONS_JSON = r'''[
     "s": "METAR",
     "q": "Visibility in a U.S. METAR is reported in",
     "c": [
-      "kilometers",
-      "feet",
+      "nautical miles",
       "statute miles",
-      "nautical miles"
+      "feet",
+      "kilometers"
     ],
-    "a": 2,
+    "a": 1,
     "e": "U.S. METAR visibility is reported in statute miles.",
     "acs": "UA.III.A"
   },
@@ -7602,12 +7602,12 @@ QUESTIONS_JSON = r'''[
     "s": "Forecasts",
     "q": "A TAF is a",
     "c": [
-      "Temporary Altitude Filing made before takeoff",
       "Total Airspace Figure printed on the sectional",
-      "Turbulence Advisory Flag shown on weather charts",
-      "Terminal Aerodrome Forecast for an airport area"
+      "Temporary Altitude Filing made before takeoff",
+      "Terminal Aerodrome Forecast for an airport area",
+      "Turbulence Advisory Flag shown on weather charts"
     ],
-    "a": 3,
+    "a": 2,
     "e": "A TAF is a Terminal Aerodrome Forecast covering the area around an airport.",
     "acs": "UA.III.A"
   },
@@ -7617,8 +7617,8 @@ QUESTIONS_JSON = r'''[
     "q": "Radiation fog most commonly forms",
     "c": [
       "on clear, calm nights with high humidity as the ground cools",
-      "during thunderstorms as heavy rain saturates the air near the surface",
       "over the open ocean where warm air moves across a cooler water surface",
+      "during thunderstorms as heavy rain saturates the air near the surface",
       "on windy afternoons when rising thermals carry moisture quickly aloft"
     ],
     "a": 0,
@@ -7631,8 +7631,8 @@ QUESTIONS_JSON = r'''[
     "q": "When thunderstorms are present, a remote pilot should",
     "c": [
       "fly closer to inspect the storm and capture footage of the cloud base",
-      "expect calm, smooth air in the area immediately around the storm cell",
       "fly only below 100 feet, where the storm's strong winds cannot reach",
+      "expect calm, smooth air in the area immediately around the storm cell",
       "avoid operating, due to turbulence, wind shear, and downbursts"
     ],
     "a": 3,
@@ -7644,12 +7644,12 @@ QUESTIONS_JSON = r'''[
     "s": "Emergency",
     "q": "After deviating from a rule to handle an in-flight emergency, the remote PIC must, upon FAA request,",
     "c": [
-      "retake the entire proctored knowledge test",
       "submit a written report of the deviation",
       "pay a fine",
+      "retake the entire proctored knowledge test",
       "surrender the certificate"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Upon FAA request, the remote PIC must submit a written report describing the emergency deviation.",
     "acs": "UA.V.C"
   },
@@ -7658,12 +7658,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport operations",
     "q": "Operating a small unmanned aircraft in the vicinity of an airport requires the remote pilot to",
     "c": [
-      "not interfere with operations at the airport and give way to manned aircraft",
+      "remain above 400 feet above the ground at all times while near the airport",
       "always obtain a written waiver from the FAA before operating near any airport",
       "monitor only the airport weather and disregard the other traffic in the pattern",
-      "remain above 400 feet above the ground at all times while near the airport"
+      "not interfere with operations at the airport and give way to manned aircraft"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Near an airport, the operation must not interfere with airport operations and must give way to manned aircraft.",
     "acs": "UA.V.B"
   },
@@ -7672,12 +7672,12 @@ QUESTIONS_JSON = r'''[
     "s": "Carriage of Property",
     "q": "Carrying property for compensation under Part 107 is allowed only if",
     "c": [
+      "the total weight stays under 55 lb, no hazardous material is carried, and the operation is within one state",
       "the delivery is flown at night under a waiver, with anti-collision lighting and the payload fully sealed for transport",
       "the flight crosses state lines so that it qualifies as interstate commerce under federal rules",
-      "the aircraft weighs more than 55 lb and the operator holds an exemption issued under part 91",
-      "the total weight stays under 55 lb, no hazardous material is carried, and the operation is within one state"
+      "the aircraft weighs more than 55 lb and the operator holds an exemption issued under part 91"
     ],
-    "a": 3,
+    "a": 0,
     "e": "Carrying property for compensation requires total weight under 55 lb, no hazardous materials, and operation within a single state.",
     "acs": "UA.I.B"
   },
@@ -7686,12 +7686,12 @@ QUESTIONS_JSON = r'''[
     "s": "Visual Observer",
     "q": "A visual observer used to satisfy see-and-avoid must",
     "c": [
-      "hold a current remote pilot certificate issued under Part 107 rules",
-      "take over the flight controls whenever the remote pilot loses sight",
       "be able to see the aircraft and communicate its position to the remote PIC",
+      "take over the flight controls whenever the remote pilot loses sight",
+      "hold a current remote pilot certificate issued under Part 107 rules",
       "remain seated inside a vehicle that is parked near the launch and recovery area"
     ],
-    "a": 2,
+    "a": 0,
     "e": "A visual observer must be able to see the aircraft and communicate its position and any hazards to the remote PIC.",
     "acs": "UA.I.B"
   },
@@ -7702,9 +7702,9 @@ QUESTIONS_JSON = r'''[
     "q": "In the figure, the dashed blue ring around the airport at marker 1 depicts which class of airspace?",
     "c": [
       "Class D airspace, around a field with a control tower",
-      "Class C airspace, served by a tower and approach control",
       "Class B airspace, surrounding a major airport",
-      "Class E surface area, at a field with no tower"
+      "Class E surface area, at a field with no tower",
+      "Class C airspace, served by a tower and approach control"
     ],
     "a": 0,
     "e": "A dashed blue line marks Class D airspace, usually a small ring around an airport that has an operating control tower.",
@@ -7717,9 +7717,9 @@ QUESTIONS_JSON = r'''[
     "q": "On the figure, the airport at marker 2 is drawn in magenta. That color tells you it:",
     "c": [
       "has no operating control tower",
-      "is closed to all small unmanned aircraft",
+      "is a private field that is not open to the public",
       "sits within Class B airspace",
-      "is a private field that is not open to the public"
+      "is closed to all small unmanned aircraft"
     ],
     "a": 0,
     "e": "Magenta airport symbols are non-towered; blue symbols mark fields with an operating control tower.",
@@ -7731,12 +7731,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_poc_1",
     "q": "The obstacle at marker 3 is labeled 1549 (549). Its top is at:",
     "c": [
+      "1,000 feet, taken as the difference of the two numbers",
       "1,549 feet MSL, which is 549 feet above the ground",
       "549 feet MSL, with the top reaching 1,549 feet AGL",
-      "1,549 feet above the ground at the obstacle base",
-      "1,000 feet, taken as the difference of the two numbers"
+      "1,549 feet above the ground at the obstacle base"
     ],
-    "a": 0,
+    "a": 1,
     "e": "An obstacle's two numbers are the top height in feet MSL and, in parentheses, the height in feet above ground level.",
     "acs": "UA.II.B"
   },
@@ -7746,12 +7746,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_poc_1",
     "q": "The large 2 and small 5 printed in the upper-right quadrant of the figure are a maximum elevation figure. They mean the highest terrain or obstacle in that quadrant is:",
     "c": [
-      "2,500 feet MSL",
-      "2,500 feet above ground level",
       "25,000 feet MSL",
-      "250 feet, read as a per-mile gradient"
+      "2,500 feet above ground level",
+      "250 feet, read as a per-mile gradient",
+      "2,500 feet MSL"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A maximum elevation figure gives the highest terrain or obstacle in that quadrant in thousands and hundreds of feet MSL, so a large 2 and small 5 mean 2,500 feet.",
     "acs": "UA.II.B"
   },
@@ -7761,12 +7761,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_class_c",
     "q": "In the figure, the two solid magenta circles around the airport at marker 1 depict which class of airspace?",
     "c": [
+      "Class E to the surface, shown as a dashed magenta ring",
       "Class C, shown as solid magenta rings",
       "Class B, shown as solid blue rings",
-      "Class D, shown as a dashed blue ring",
-      "Class E to the surface, shown as a dashed magenta ring"
+      "Class D, shown as a dashed blue ring"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Class C airspace is drawn with solid magenta lines, usually an inner surface core and an outer shelf.",
     "acs": "UA.II.A"
   },
@@ -7776,12 +7776,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_class_c",
     "q": "The dashed magenta ring around the airport at marker 2 indicates:",
     "c": [
-      "Class E airspace that starts at the surface",
+      "the lateral limits of a military operations area",
       "Class C airspace around a towered field",
-      "a restricted area with a controlling agency",
-      "the lateral limits of a military operations area"
+      "Class E airspace that starts at the surface",
+      "a restricted area with a controlling agency"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A dashed magenta line marks Class E airspace that begins at the surface, often around a non-towered field with an instrument approach.",
     "acs": "UA.II.A"
   },
@@ -7791,12 +7791,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_class_c",
     "q": "The airport inside the Class C airspace at marker 1 is drawn in blue, which tells you it:",
     "c": [
-      "has an operating control tower",
       "has no weather reporting available",
       "lies beneath a shelf of Class B airspace",
-      "is limited to operations during daylight only"
+      "is limited to operations during daylight only",
+      "has an operating control tower"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Blue airport symbols mark fields with an operating control tower; Class C airports are always towered.",
     "acs": "UA.II.B"
   },
@@ -7806,12 +7806,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_ceilfloor",
     "q": "On the figure, the airspace at marker 1 is labeled 55 over 12. Its ceiling and floor are:",
     "c": [
+      "a ceiling of 12,000 ft over a floor of 5,500 ft",
       "5,500 ft MSL ceiling and 1,200 ft MSL floor",
-      "55,000 ft and 12,000 ft, read in tens of thousands",
       "5,500 ft AGL ceiling and 1,200 ft AGL floor",
-      "a ceiling of 12,000 ft over a floor of 5,500 ft"
+      "55,000 ft and 12,000 ft, read in tens of thousands"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Stacked airspace numbers are hundreds of feet MSL: the top is the ceiling and the bottom the floor, so 55 over 12 is 5,500 over 1,200.",
     "acs": "UA.II.A"
   },
@@ -7822,9 +7822,9 @@ QUESTIONS_JSON = r'''[
     "q": "In the 100 over SFC label at marker 2, SFC means the airspace:",
     "c": [
       "extends down to the surface",
-      "is closed below 10,000 ft MSL",
       "has a floor at 100 ft above ground",
-      "is a special flight rules corridor"
+      "is a special flight rules corridor",
+      "is closed below 10,000 ft MSL"
     ],
     "a": 0,
     "e": "SFC means surface; the airspace reaches from the ground up to the ceiling shown above it.",
@@ -7836,12 +7836,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_ceilfloor",
     "q": "The faded magenta line at marker 3, with no floor figure printed, tells you Class E airspace there begins at:",
     "c": [
-      "700 ft AGL",
-      "the surface",
+      "18,000 ft MSL",
       "1,200 ft AGL",
-      "18,000 ft MSL"
+      "the surface",
+      "700 ft AGL"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A faded magenta line with no floor figure marks Class E starting at 700 ft AGL; a printed magenta number would show a different (higher) floor in MSL.",
     "acs": "UA.II.A"
   },
@@ -7851,12 +7851,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_sua",
     "q": "The blue hatched boundary labeled R-2501 at marker 1 on the figure is:",
     "c": [
-      "a restricted area",
       "a military operations area, or MOA",
+      "a restricted area",
       "a temporary flight restriction zone",
       "the lateral edge of Class B airspace"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A blue hatched boundary marks special use airspace such as a prohibited or restricted area; the R prefix means restricted.",
     "acs": "UA.II.A"
   },
@@ -7866,12 +7866,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_sua",
     "q": "Operating inside the restricted area at marker 1 while it is active generally requires:",
     "c": [
+      "staying below 400 ft above ground level",
       "permission from the controlling agency",
-      "no action, since Part 107 is always exempt",
       "only a current weather briefing on file",
-      "staying below 400 ft above ground level"
+      "no action, since Part 107 is always exempt"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Restricted areas can be hazardous when active; entering one generally requires permission from the using or controlling agency.",
     "acs": "UA.II.B"
   },
@@ -7881,12 +7881,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_sua",
     "q": "The magenta flag symbol at marker 2 on the figure marks:",
     "c": [
+      "an airport offering fuel and services",
       "a VFR visual checkpoint",
       "a parachute jumping area",
-      "a seaplane base on the water",
-      "an airport offering fuel and services"
+      "a seaplane base on the water"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A flag symbol marks a VFR visual checkpoint, a prominent landmark used to report position or aid navigation.",
     "acs": "UA.II.A"
   },
@@ -7896,12 +7896,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_class_b",
     "q": "The concentric solid blue circles around the airport at marker 1 depict which class of airspace?",
     "c": [
+      "a restricted area marked by a blue hatched line",
       "Class B, shown as solid blue rings",
       "Class C, shown as solid magenta rings",
-      "Class D, shown as a dashed blue ring",
-      "a restricted area marked by a blue hatched line"
+      "Class D, shown as a dashed blue ring"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Class B airspace is drawn with solid blue lines, often several rings shaped like an upside-down wedding cake.",
     "acs": "UA.II.A"
   },
@@ -7911,12 +7911,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_class_b",
     "q": "The 100 over 30 label at marker 2 gives that Class B shelf's ceiling and floor as:",
     "c": [
-      "10,000 ft MSL ceiling and 3,000 ft MSL floor",
       "1,000 ft and 300 ft, read in hundreds of feet",
+      "10,000 ft MSL ceiling and 3,000 ft MSL floor",
       "10,000 ft AGL ceiling and 3,000 ft AGL floor",
       "a floor of 10,000 ft below a 3,000 ft ceiling"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Stacked numbers are hundreds of feet MSL, so 100 over 30 is a shelf from 3,000 up to 10,000 ft MSL.",
     "acs": "UA.II.A"
   },
@@ -7926,12 +7926,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_class_b",
     "q": "To fly a small drone inside the Class B airspace at marker 1, a Part 107 pilot must first:",
     "c": [
-      "get airspace authorization from ATC",
+      "squawk a discrete transponder code",
       "file a flight plan with Flight Service",
-      "simply stay below 400 ft above ground",
-      "squawk a discrete transponder code"
+      "get airspace authorization from ATC",
+      "simply stay below 400 ft above ground"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Operations in controlled airspace such as Class B require prior ATC authorization, usually through LAANC or DroneZone.",
     "acs": "UA.II.B"
   },
@@ -7942,9 +7942,9 @@ QUESTIONS_JSON = r'''[
     "q": "The grey line labeled VR1234 at marker 1 on the figure is:",
     "c": [
       "a military training route",
-      "the boundary of a restricted area",
       "a published visual flight rules route",
-      "a low-frequency airway for navigation"
+      "a low-frequency airway for navigation",
+      "the boundary of a restricted area"
     ],
     "a": 0,
     "e": "Lines labeled VR or IR with a number are military training routes, where high-speed military traffic may operate.",
@@ -7956,12 +7956,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_symbols",
     "q": "The parachute symbol at marker 2 marks an area where you should expect:",
     "c": [
+      "seaplane traffic out on the water",
       "parachute jumping activity",
-      "frequent hot air balloon launches",
       "glider towing operations only",
-      "seaplane traffic out on the water"
+      "frequent hot air balloon launches"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A parachute symbol marks a parachute jumping area; expect jumpers and jump aircraft nearby.",
     "acs": "UA.II.A"
   },
@@ -7972,9 +7972,9 @@ QUESTIONS_JSON = r'''[
     "q": "The magenta anchor symbol at marker 3 indicates:",
     "c": [
       "a seaplane base",
-      "a parachute landing zone",
       "a heliport for rotorcraft",
-      "a private grass airstrip"
+      "a private grass airstrip",
+      "a parachute landing zone"
     ],
     "a": 0,
     "e": "An anchor symbol marks a seaplane base, an area used by aircraft that operate from water.",
@@ -7987,9 +7987,9 @@ QUESTIONS_JSON = r'''[
     "q": "At marker 1, which lies inside the dashed blue ring around the airport, the airspace is:",
     "c": [
       "Class D, up to its charted ceiling",
+      "Class G, uncontrolled airspace",
       "Class C, with a surface core and an outer shelf",
-      "Class B, from the surface upward",
-      "Class G, uncontrolled airspace"
+      "Class B, from the surface upward"
     ],
     "a": 0,
     "e": "A dashed blue ring marks Class D around a towered airport, from the surface up to the ceiling shown in the dashed box.",
@@ -8001,12 +8001,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_point_airspace",
     "q": "Marker 2 sits on the faded side of the magenta boundary. The airspace there is:",
     "c": [
-      "Class E starting at 700 ft AGL",
-      "Class D around a towered airport",
       "a Class B surface area",
+      "Class D around a towered airport",
+      "Class E starting at 700 ft AGL",
       "a prohibited area you must avoid"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The faded side of a magenta line is where Class E begins at 700 ft AGL.",
     "acs": "UA.II.A"
   },
@@ -8016,12 +8016,12 @@ QUESTIONS_JSON = r'''[
     "fig": "sectional_point_airspace",
     "q": "Marker 3 is in open country with no ring or shading, so the surface airspace there is:",
     "c": [
-      "Class G up to 1,200 ft AGL",
       "Class E down to the surface",
-      "Class C beneath a shelf",
-      "Class B up to 10,000 ft"
+      "Class G up to 1,200 ft AGL",
+      "Class B up to 10,000 ft",
+      "Class C beneath a shelf"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Open areas with no ring or shading are Class G (uncontrolled) up to 1,200 ft AGL, with Class E above.",
     "acs": "UA.II.A"
   },
@@ -8030,12 +8030,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "A METAR reads: KAPA 141953Z 30012KT 10SM FEW070 SCT250 24/09 A3005. The ceiling at this station is:",
     "c": [
-      "no ceiling is reported",
-      "a broken layer at 7,000 ft overhead",
       "an overcast at 25,000 ft",
-      "a ceiling at 1,200 ft AGL"
+      "a ceiling at 1,200 ft AGL",
+      "a broken layer at 7,000 ft overhead",
+      "no ceiling is reported"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A ceiling is the lowest broken or overcast layer; with only FEW and SCT reported here, there is no ceiling.",
     "b": "Weather"
   },
@@ -8044,12 +8044,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "In the METAR KDEN 121853Z 09018G28KT 10SM BKN035 OVC060 12/04 A2992, the wind and altimeter are:",
     "c": [
-      "wind 090 at 18 gusting 28 kt, altimeter 29.92",
       "wind 090 at 28 knots steady, altimeter 29.92 inches",
+      "wind 090 at 18 gusting 28 kt, altimeter 29.92",
       "wind 900 at 18 kt, altimeter 2,992 ft",
       "wind 090 at 18 kt, pressure 992 mb"
     ],
-    "a": 0,
+    "a": 1,
     "e": "09018G28KT is wind from 090 true at 18 knots gusting 28, and A2992 is an altimeter setting of 29.92 inches of mercury.",
     "b": "Weather"
   },
@@ -8058,12 +8058,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "In a METAR, the present-weather code '-SHRA' indicates:",
     "c": [
+      "light snow showers",
       "light rain showers",
       "heavy continuous rain",
-      "light snow showers",
       "freezing rain"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The minus sign means light, SH means showers, and RA means rain, so -SHRA is light rain showers.",
     "b": "Weather"
   },
@@ -8072,12 +8072,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "A METAR shows 15/14 with 1SM BR. The small temperature-dewpoint spread indicates:",
     "c": [
-      "air near saturation (fog likely)",
-      "unusually dry air aloft",
+      "high density altitude conditions",
       "a strong low-level temperature inversion",
-      "high density altitude conditions"
+      "air near saturation (fog likely)",
+      "unusually dry air aloft"
     ],
-    "a": 0,
+    "a": 2,
     "e": "When temperature and dewpoint are within a few degrees, the air is near saturation and fog or mist is likely.",
     "b": "Weather"
   },
@@ -8086,12 +8086,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "A METAR ends with the group 'A3012'. This is:",
     "c": [
-      "an altimeter setting, 30.12 inHg",
       "a pressure altitude reading of 3,012 ft",
-      "a temperature of 30.12 degrees C",
-      "a visibility of 3,012 meters"
+      "an altimeter setting, 30.12 inHg",
+      "a visibility of 3,012 meters",
+      "a temperature of 30.12 degrees C"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The A prefix reports the altimeter setting in inches of mercury, so A3012 is 30.12 inHg.",
     "b": "Weather"
   },
@@ -8100,12 +8100,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "A TAF includes 'TEMPO 2022 5SM BR'. Between 2000Z and 2200Z you should expect:",
     "c": [
-      "brief periods of 5 SM in mist",
+      "clearing to 5 SM by 2000Z",
       "a permanent change to visibility 5 SM",
-      "5 SM only after 2200Z",
-      "clearing to 5 SM by 2000Z"
+      "brief periods of 5 SM in mist",
+      "5 SM only after 2200Z"
     ],
-    "a": 0,
+    "a": 2,
     "e": "TEMPO marks temporary fluctuations expected to last less than an hour each within the stated window.",
     "b": "Weather"
   },
@@ -8115,9 +8115,9 @@ QUESTIONS_JSON = r'''[
     "q": "A TAF line 'FM1500 31015G25KT 3SM' tells you that from 1500Z:",
     "c": [
       "those conditions begin and persist from 1500Z",
+      "a 30 percent chance applies after 1500Z",
       "those conditions may briefly appear near 1500Z",
-      "those conditions ended at 1500Z",
-      "a 30 percent chance applies after 1500Z"
+      "those conditions ended at 1500Z"
     ],
     "a": 0,
     "e": "FM (from) marks a rapid, lasting change; the new conditions begin at that time and continue until the next change.",
@@ -8129,9 +8129,9 @@ QUESTIONS_JSON = r'''[
     "q": "In a TAF, 'PROB40 2124 1SM TSRA' means during 2100 to 2400Z there is:",
     "c": [
       "a 40% chance of 1 SM in thunderstorm rain",
-      "a guaranteed period of heavy thunderstorms",
       "a 40% improvement in the visibility",
-      "thunderstorms ending by 2100Z"
+      "thunderstorms ending by 2100Z",
+      "a guaranteed period of heavy thunderstorms"
     ],
     "a": 0,
     "e": "PROB40 states a 40 percent probability of the listed conditions, here 1 SM visibility in thunderstorms and rain.",
@@ -8142,12 +8142,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "The three stages of a thunderstorm's life cycle, in order, are:",
     "c": [
-      "cumulus, mature, dissipating",
+      "building, anvil, outflow",
       "mature, cumulus, dissipating",
       "forming, peak, collapse",
-      "building, anvil, outflow"
+      "cumulus, mature, dissipating"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A thunderstorm grows through the cumulus (updraft) stage, the mature (updraft and downdraft) stage, then the dissipating stage.",
     "b": "Weather"
   },
@@ -8156,12 +8156,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "A thunderstorm is most hazardous during which stage, when updrafts and downdrafts coexist?",
     "c": [
-      "the mature stage",
-      "the cumulus stage",
       "the dissipating stage",
-      "the anvil stage"
+      "the anvil stage",
+      "the cumulus stage",
+      "the mature stage"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The mature stage has the strongest turbulence, wind shear, hail, and lightning as updrafts and downdrafts occur together.",
     "b": "Weather"
   },
@@ -8170,12 +8170,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "The sudden wind shift and gusty surface winds felt just before a thunderstorm arrives come from:",
     "c": [
-      "cold downdraft outflow ahead of the storm",
-      "warm updraft air feeding into the storm base",
       "a low-level temperature inversion lifting",
-      "the anvil cloud blowing downwind"
+      "cold downdraft outflow ahead of the storm",
+      "the anvil cloud blowing downwind",
+      "warm updraft air feeding into the storm base"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Cold downdraft air spreads out ahead of the storm as a gust front, causing an abrupt wind shift and strong gusts.",
     "b": "Weather"
   },
@@ -8185,9 +8185,9 @@ QUESTIONS_JSON = r'''[
     "q": "Embedded thunderstorms are especially dangerous because they are:",
     "c": [
       "hidden inside other cloud layers",
+      "weaker than isolated storms",
       "always accompanied by large damaging hail",
-      "found only in mountainous terrain",
-      "weaker than isolated storms"
+      "found only in mountainous terrain"
     ],
     "a": 0,
     "e": "Embedded thunderstorms are concealed within surrounding cloud layers, so they are hard to see and avoid.",
@@ -8198,12 +8198,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "Unstable air most often brings:",
     "c": [
-      "showery precipitation and good visibility",
-      "steady, widespread light drizzle and haze",
       "smooth, stable flying conditions all day",
-      "a strong low-level temperature inversion"
+      "steady, widespread light drizzle and haze",
+      "a strong low-level temperature inversion",
+      "showery precipitation and good visibility"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Unstable air produces cumuliform clouds, showery precipitation, good visibility, and turbulence.",
     "b": "Weather"
   },
@@ -8212,12 +8212,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "A stable air mass most commonly brings:",
     "c": [
-      "poor visibility with haze or fog",
-      "strong gusty winds and heavy turbulence",
+      "brief heavy showers",
       "towering cumulus buildups",
-      "brief heavy showers"
+      "strong gusty winds and heavy turbulence",
+      "poor visibility with haze or fog"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Stable air resists vertical motion, giving stratiform clouds, steady precipitation, smooth air, and poor visibility.",
     "b": "Weather"
   },
@@ -8226,12 +8226,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "On a hot, humid afternoon at a high-elevation field, a multirotor will most likely:",
     "c": [
-      "make less lift and climb sluggishly",
       "climb noticeably faster than a cool day",
-      "hover with no performance change",
-      "gain endurance in the warm air"
+      "gain endurance in the warm air",
+      "make less lift and climb sluggishly",
+      "hover with no performance change"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Hot, high, and humid conditions raise density altitude, thinning the air so props make less lift and motors work harder.",
     "b": "Weather"
   },
@@ -8241,9 +8241,9 @@ QUESTIONS_JSON = r'''[
     "q": "Which change would most increase density altitude on the flight line?",
     "c": [
       "a rise in temperature and humidity",
-      "a sharp drop in outside temperature",
+      "a rise in station pressure",
       "a fall in field elevation",
-      "a rise in station pressure"
+      "a sharp drop in outside temperature"
     ],
     "a": 0,
     "e": "Higher temperature, higher humidity, and higher elevation all raise density altitude and reduce performance.",
@@ -8254,12 +8254,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "An automated station broadcasting continuous local weather to pilots is an:",
     "c": [
-      "AWOS or ASOS",
-      "AIRMET or SIGMET",
       "area forecast",
-      "winds aloft table"
+      "AWOS or ASOS",
+      "winds aloft table",
+      "AIRMET or SIGMET"
     ],
-    "a": 0,
+    "a": 1,
     "e": "AWOS and ASOS are automated surface observing systems that broadcast current local weather continuously.",
     "b": "Weather"
   },
@@ -8268,12 +8268,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "At a towered airport, ATIS provides:",
     "c": [
-      "a recorded airport and weather loop",
-      "live two-way radio control from the tower",
       "a 30-hour area forecast",
-      "regional NOTAMs only"
+      "a recorded airport and weather loop",
+      "regional NOTAMs only",
+      "live two-way radio control from the tower"
     ],
-    "a": 0,
+    "a": 1,
     "e": "ATIS is a continuous recorded broadcast of current airport and weather information, updated as conditions change.",
     "b": "Weather"
   },
@@ -8282,12 +8282,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.A",
     "q": "The best official source for a full preflight weather briefing is:",
     "c": [
+      "yesterday's forecast",
       "Flight Service or aviationweather.gov",
-      "any consumer television weather channel",
       "a friend at the field",
-      "yesterday's forecast"
+      "any consumer television weather channel"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Flight Service (1-800-WX-BRIEF) and aviationweather.gov provide official aviation weather for preflight planning.",
     "b": "Weather"
   },
@@ -8298,8 +8298,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "counterclockwise and inward",
       "clockwise and spiraling outward",
-      "straight toward the center",
-      "outward in all directions"
+      "outward in all directions",
+      "straight toward the center"
     ],
     "a": 0,
     "e": "Around a Northern Hemisphere low, surface wind spirals counterclockwise and inward toward the center.",
@@ -8311,9 +8311,9 @@ QUESTIONS_JSON = r'''[
     "q": "Surface wind is usually slower and angled toward low pressure compared with wind aloft, mainly because of:",
     "c": [
       "surface friction",
-      "the Coriolis force alone",
       "the jet stream overhead",
-      "frontal lifting"
+      "frontal lifting",
+      "the Coriolis force alone"
     ],
     "a": 0,
     "e": "Friction near the ground slows the wind and shifts it toward lower pressure, an effect that fades with height.",
@@ -8324,12 +8324,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "Frost forming overnight on a multirotor's arms and propellers can:",
     "c": [
-      "disrupt airflow and reduce lift",
-      "add helpful weight for stability",
       "improve grip on the propellers",
-      "have no effect on flight"
+      "add helpful weight for stability",
+      "have no effect on flight",
+      "disrupt airflow and reduce lift"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Frost roughens the surfaces and disrupts smooth airflow over the props, reducing lift much as it does on a wing.",
     "b": "Weather"
   },
@@ -8338,12 +8338,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.III.B",
     "q": "A ground-based temperature inversion at night often produces:",
     "c": [
-      "smooth air below with wind shear on top",
-      "strong turbulence through the whole layer",
       "towering cumulus clouds",
-      "heavy showery precipitation"
+      "heavy showery precipitation",
+      "strong turbulence through the whole layer",
+      "smooth air below with wind shear on top"
     ],
-    "a": 0,
+    "a": 3,
     "e": "An inversion is very stable, giving smooth air and trapped haze below, but wind shear can occur at the top of the layer.",
     "b": "Weather"
   },
@@ -8353,9 +8353,9 @@ QUESTIONS_JSON = r'''[
     "q": "With a surface temperature of 77F and a dewpoint of 59F, the convective cloud base is roughly:",
     "c": [
       "about 4,000 ft AGL",
-      "about 500 ft AGL",
+      "right at the surface",
       "about 12,000 ft AGL",
-      "right at the surface"
+      "about 500 ft AGL"
     ],
     "a": 0,
     "e": "The spread is about 18F; dividing by 4.4F per 1,000 ft puts the convective cloud base near 4,000 ft AGL.",
@@ -8365,12 +8365,12 @@ QUESTIONS_JSON = r'''[
     "s": "Load Factor",
     "q": "As a multirotor flies a steeper, faster banked turn, the load on the motors and airframe:",
     "c": [
+      "falls to zero",
       "increases",
-      "decreases",
       "stays exactly the same",
-      "falls to zero"
+      "decreases"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Steeper and faster maneuvers raise the load factor, so the motors and structure carry more load.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8379,12 +8379,12 @@ QUESTIONS_JSON = r'''[
     "s": "Load Factor",
     "q": "In a coordinated level turn, the load factor is greatest at which bank angle?",
     "c": [
-      "60 degrees",
-      "15 degrees",
       "30 degrees",
+      "15 degrees",
+      "60 degrees",
       "wings level"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Load factor rises with bank angle; a 60-degree bank in level flight is about 2 Gs, far more than shallow turns.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8407,12 +8407,12 @@ QUESTIONS_JSON = r'''[
     "s": "Load Factor",
     "q": "Repeated aggressive, high-load maneuvers will tend to:",
     "c": [
-      "drain the battery faster and stress motors",
+      "have no real cost",
       "noticeably extend the total available flight time",
-      "cool the motors down",
-      "have no real cost"
+      "drain the battery faster and stress motors",
+      "cool the motors down"
     ],
-    "a": 0,
+    "a": 2,
     "e": "High-load maneuvers pull more current and add mechanical stress, cutting flight time and wearing components.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8421,12 +8421,12 @@ QUESTIONS_JSON = r'''[
     "s": "Ground Effect",
     "q": "Hovering within about one rotor span of the ground, in ground effect, generally:",
     "c": [
-      "uses less power than a high hover",
       "requires far more power than a high hover",
       "is impossible to do safely",
-      "eliminates all lift"
+      "eliminates all lift",
+      "uses less power than a high hover"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Close to the surface the rotors work more efficiently, so a hover in ground effect uses less power than one up high.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8449,12 +8449,12 @@ QUESTIONS_JSON = r'''[
     "s": "Descent",
     "q": "Descending straight down too quickly, a multirotor can settle into its own downwash and:",
     "c": [
-      "lose lift and be hard to arrest",
       "gain extra lift and climb faster",
+      "recharge its own battery",
       "become far more stable",
-      "recharge its own battery"
+      "lose lift and be hard to arrest"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A rapid vertical descent into the rotors' own turbulent wake (settling with power) causes a loss of lift that is hard to stop.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8463,12 +8463,12 @@ QUESTIONS_JSON = r'''[
     "s": "Descent",
     "q": "The best way to break out of settling with power during a fast vertical descent is to:",
     "c": [
-      "move forward into undisturbed air",
       "descend even faster to push through it",
       "add ballast payload",
+      "move forward into undisturbed air",
       "simply hover in place"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Moving forward or sideways carries the aircraft out of its descending column of disturbed air and restores lift.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8479,8 +8479,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "rapid straight-down descents",
       "any forward flight whatsoever",
-      "climbing at all",
-      "hovering in ground effect"
+      "hovering in ground effect",
+      "climbing at all"
     ],
     "a": 0,
     "e": "Settling with power comes from fast vertical descents with little horizontal movement, so add forward speed when descending.",
@@ -8491,12 +8491,12 @@ QUESTIONS_JSON = r'''[
     "s": "Descent",
     "q": "During an automated vertical descent to land, a sudden wobble and increased sink can mean the aircraft is:",
     "c": [
-      "descending into its own rotor wash",
-      "gaining extra free lift from the ground",
       "overheating the GPS receiver",
+      "gaining extra free lift from the ground",
+      "descending into its own rotor wash",
       "too light to land"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A wobble and rapid sink on vertical descent can signal settling with power; nudging the aircraft laterally usually recovers it.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8505,12 +8505,12 @@ QUESTIONS_JSON = r'''[
     "s": "Weight and Balance",
     "q": "In weight and balance, the moment of a payload equals:",
     "c": [
-      "its weight times its arm from the reference",
-      "its weight minus the total empty aircraft weight",
       "its arm divided by its weight",
-      "battery voltage times its weight"
+      "its weight minus the total empty aircraft weight",
+      "battery voltage times its weight",
+      "its weight times its arm from the reference"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Moment is weight multiplied by the arm (distance) from the reference point; moments determine the center of gravity.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8519,12 +8519,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "The center-of-gravity envelope published by the manufacturer defines:",
     "c": [
-      "the allowable range for the balance point",
-      "the maximum permitted total flight time in minutes",
       "the legal registration weight",
+      "the maximum permitted total flight time in minutes",
+      "the allowable range for the balance point",
       "the radio frequency band"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The CG envelope is the allowable range within which the balance point must stay for safe, controllable flight.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8533,12 +8533,12 @@ QUESTIONS_JSON = r'''[
     "s": "Weight Distribution",
     "q": "If the load is not centered, a multirotor holds its position by:",
     "c": [
-      "tilting and running some motors harder",
       "shutting down the lower-side motors entirely",
+      "tilting and running some motors harder",
       "spinning all motors faster",
       "ignoring the imbalance"
     ],
-    "a": 0,
+    "a": 1,
     "e": "An off-center load forces a constant tilt and makes some motors work harder, wasting power and adding wear.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8548,9 +8548,9 @@ QUESTIONS_JSON = r'''[
     "q": "A sound battery-reserve practice is to plan the flight so you land with:",
     "c": [
       "a reserve above the return-to-home level",
+      "only enough for takeoff",
       "just barely enough to reach the landing zone",
-      "zero percent remaining",
-      "only enough for takeoff"
+      "zero percent remaining"
     ],
     "a": 0,
     "e": "Always keep a margin above the return-to-home or auto-land threshold to cover wind, distance, and voltage sag.",
@@ -8561,12 +8561,12 @@ QUESTIONS_JSON = r'''[
     "s": "Endurance",
     "q": "A pack rated 100 Wh feeding motors that draw about 300 W in hover gives a rough hover time of:",
     "c": [
-      "about 20 minutes",
+      "about 45 minutes",
       "about 2 hours",
-      "about 5 minutes",
-      "about 45 minutes"
+      "about 20 minutes",
+      "about 5 minutes"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Roughly, 100 watt-hours divided by 300 watts is about a third of an hour, near 20 minutes before any reserve.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8575,12 +8575,12 @@ QUESTIONS_JSON = r'''[
     "s": "Thrust Margin",
     "q": "Carrying near-maximum payload leaves the motors with:",
     "c": [
-      "little extra thrust for gusts or climbs",
       "far more reserve thrust than an empty aircraft",
+      "an unlimited climb rate",
       "cooler motor temperatures",
-      "an unlimited climb rate"
+      "little extra thrust for gusts or climbs"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Near maximum weight the thrust margin is small, so gusts or a needed climb can outrun the motors' remaining power.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8590,8 +8590,8 @@ QUESTIONS_JSON = r'''[
     "q": "To track straight across the ground in a crosswind, a multirotor must:",
     "c": [
       "crab, angling into the wind",
-      "fly sideways downwind",
       "point straight at the target only",
+      "fly sideways downwind",
       "stop and hover"
     ],
     "a": 0,
@@ -8603,12 +8603,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "Turning downwind, a pilot may perceive the aircraft speeding up because:",
     "c": [
-      "groundspeed increases with the tailwind",
       "the electric motors suddenly produce more power",
+      "groundspeed increases with the tailwind",
       "the air is thinner downwind",
       "the battery surges"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A tailwind raises groundspeed, which can look like acceleration and lead to overshooting the intended point.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8617,12 +8617,12 @@ QUESTIONS_JSON = r'''[
     "s": "Wind",
     "q": "Planning an out-and-back flight in wind, it is usually smart to head out:",
     "c": [
-      "upwind first, returning with a tailwind",
       "downwind first so you reach it much sooner",
-      "only when the wind is calm",
-      "whichever way is closer"
+      "whichever way is closer",
+      "upwind first, returning with a tailwind",
+      "only when the wind is calm"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Flying out into the wind means the return leg, flown on a lower battery, has a helpful tailwind.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8633,8 +8633,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "battery reserve for higher power use",
       "extra payload weight to add stability",
-      "altitude beyond 400 ft AGL",
-      "speed beyond the limit"
+      "speed beyond the limit",
+      "altitude beyond 400 ft AGL"
     ],
     "a": 0,
     "e": "Wind raises power demand, especially into a headwind, so plan a larger battery reserve.",
@@ -8645,12 +8645,12 @@ QUESTIONS_JSON = r'''[
     "s": "Propellers",
     "q": "Compared with the stock propellers, larger or higher-pitch propellers generally:",
     "c": [
-      "change thrust and current draw",
       "are always a completely safe upgrade",
       "reduce the aircraft weight",
+      "change thrust and current draw",
       "have no effect on the motors"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Non-stock propellers change the load on the motors and speed controllers and can alter flight time, so follow the maker's specs.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8659,12 +8659,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Warmer, less dense air on a hot day means a multirotor's propellers produce:",
     "c": [
-      "less thrust for the same motor speed",
       "noticeably more thrust for the same speed",
-      "the same thrust as a cold day",
-      "zero thrust at all"
+      "less thrust for the same motor speed",
+      "zero thrust at all",
+      "the same thrust as a cold day"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Less dense air gives each propeller less to push against, so thrust drops for a given motor speed, hurting performance.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8673,12 +8673,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Adding payload up to the aircraft's limit will reduce its:",
     "c": [
-      "climb rate and thrust margin",
-      "maximum total takeoff weight rating",
+      "radio range",
       "propeller count",
-      "radio range"
+      "climb rate and thrust margin",
+      "maximum total takeoff weight rating"
     ],
-    "a": 0,
+    "a": 2,
     "e": "More weight leaves less spare thrust, cutting climb rate and the margin available for maneuvers and gusts.",
     "b": "Loading",
     "acs": "UA.IV.A"
@@ -8688,8 +8688,8 @@ QUESTIONS_JSON = r'''[
     "q": "Flying near maximum weight in gusty wind is risky because a gust can:",
     "c": [
       "demand thrust the motors cannot spare",
-      "momentarily make the whole drone lighter",
       "improve overall stability",
+      "momentarily make the whole drone lighter",
       "recharge the battery pack"
     ],
     "a": 0,
@@ -8717,9 +8717,9 @@ QUESTIONS_JSON = r'''[
     "q": "A Class B segment on a sectional reads '100' over '70'. The floor of that segment is:",
     "c": [
       "7,000 ft MSL",
-      "700 ft AGL",
       "70,000 ft MSL",
-      "the surface"
+      "the surface",
+      "700 ft AGL"
     ],
     "a": 0,
     "e": "Class B altitudes are hundreds of feet MSL, so 100 over 70 means a 10,000 ft MSL ceiling and a 7,000 ft MSL floor.",
@@ -8730,12 +8730,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "A towered airport shows a boxed number '[25]' on the sectional. This is the:",
     "c": [
-      "Class D ceiling, 2,500 ft MSL",
       "Class D floor, 2,500 ft AGL",
+      "Class D ceiling, 2,500 ft MSL",
       "field elevation of 25 ft",
       "runway length, hundreds of feet"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A boxed number by a towered field is the Class D ceiling in hundreds of feet MSL, so [25] means surface up to 2,500 ft MSL.",
     "b": "Airspace"
   },
@@ -8758,12 +8758,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "A dashed magenta line around an airport on a sectional marks:",
     "c": [
+      "Class D airspace",
       "surface-based Class E airspace",
       "the outer Class B airspace boundary",
-      "Class D airspace",
       "a restricted area"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A dashed magenta line shows Class E airspace down to the surface, usually at a non-towered field with an instrument approach.",
     "b": "Airspace"
   },
@@ -8772,12 +8772,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "A dashed blue line around a towered airport on a sectional marks the boundary of:",
     "c": [
-      "Class D airspace",
       "surface Class E airspace",
-      "a warning area",
-      "Class G airspace"
+      "Class G airspace",
+      "Class D airspace",
+      "a warning area"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A dashed blue line depicts Class D airspace surrounding a towered airport.",
     "b": "Airspace"
   },
@@ -8786,12 +8786,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "A fuzzy, faded magenta edge on a sectional (a magenta vignette) means Class E begins at:",
     "c": [
-      "700 ft AGL",
       "the surface",
       "1,200 ft AGL",
+      "700 ft AGL",
       "18,000 ft MSL"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The faded magenta vignette marks where the Class E floor drops to 700 ft AGL; below it is Class G.",
     "b": "Airspace"
   },
@@ -8800,12 +8800,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "A faded blue edge (a blue vignette) on a sectional indicates that Class E airspace begins at:",
     "c": [
-      "1,200 ft AGL",
+      "60,000 ft MSL",
       "the surface",
-      "700 ft AGL",
-      "60,000 ft MSL"
+      "1,200 ft AGL",
+      "700 ft AGL"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The faded blue vignette marks the common Class E floor of 1,200 ft AGL, with Class G below it.",
     "b": "Airspace"
   },
@@ -8814,12 +8814,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "On a sectional, an airport shown in blue rather than magenta indicates the field:",
     "c": [
-      "has an operating control tower",
+      "is military only",
       "has no operating control tower at all",
-      "is permanently closed",
-      "is military only"
+      "has an operating control tower",
+      "is permanently closed"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Blue airport symbols have an operating control tower; magenta symbols are non-towered fields.",
     "b": "Airspace"
   },
@@ -8828,12 +8828,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "On a sectional, Class B and Class C are shown, respectively, as:",
     "c": [
-      "solid blue rings and solid magenta rings",
       "dashed blue rings and dashed magenta rings",
-      "two different shades of green",
-      "identical black outlines"
+      "identical black outlines",
+      "solid blue rings and solid magenta rings",
+      "two different shades of green"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Class B is solid blue rings and Class C is solid magenta rings, an easy way to tell them apart.",
     "b": "Airspace"
   },
@@ -8842,12 +8842,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "You plan to fly at 350 ft AGL beneath the outer shelf of Class C, whose floor there is 1,300 ft MSL. That spot is:",
     "c": [
-      "below the Class C shelf, not within it",
       "inside Class C, requiring authorization first",
+      "a prohibited area",
       "inside Class B airspace",
-      "a prohibited area"
+      "below the Class C shelf, not within it"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Below the shelf's floor you are not in the Class C; you are in the airspace underneath, though still check for nearby surface areas.",
     "b": "Airspace"
   },
@@ -8856,12 +8856,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "At a site far from any airport, the Class E floor is 700 ft AGL. Flying at 350 ft AGL, you are in:",
     "c": [
-      "Class G, needing no ATC authorization",
       "Class E, needing prior ATC authorization",
+      "Class D airspace",
       "Class B airspace",
-      "Class D airspace"
+      "Class G, needing no ATC authorization"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Below a 700 ft AGL Class E floor the airspace is uncontrolled Class G, where Part 107 needs no ATC authorization.",
     "b": "Airspace"
   },
@@ -8870,12 +8870,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "To operate inside surface-based Class E airspace at a non-towered airport, a Part 107 pilot must:",
     "c": [
-      "get airspace authorization first",
+      "stay above 400 ft AGL",
       "do nothing, since it is uncontrolled",
-      "file a manned flight plan",
-      "stay above 400 ft AGL"
+      "get airspace authorization first",
+      "file a manned flight plan"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Surface Class E is controlled airspace, so authorization (often via LAANC) is required before operating there.",
     "b": "Airspace"
   },
@@ -8884,12 +8884,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A Presidential (VIP) TFR typically has:",
     "c": [
-      "a 10 NM inner ring and a 30 NM outer ring",
       "a single 1 NM ring with no outer ring at all",
       "no size limit at all",
-      "a 100 NM inner ring"
+      "a 100 NM inner ring",
+      "a 10 NM inner ring and a 30 NM outer ring"
     ],
-    "a": 0,
+    "a": 3,
     "e": "VIP TFRs generally set a 10 NM inner ring where flight is essentially prohibited and a 30 NM outer ring with restrictions.",
     "b": "Airspace"
   },
@@ -8899,9 +8899,9 @@ QUESTIONS_JSON = r'''[
     "q": "Before flying near a charted Restricted Area, a remote pilot should:",
     "c": [
       "check NOTAMs to see if it is active",
-      "assume it is always cold and inactive",
       "enter it to save time",
-      "ignore it below 400 ft"
+      "ignore it below 400 ft",
+      "assume it is always cold and inactive"
     ],
     "a": 0,
     "e": "Restricted areas are active only at certain times; check NOTAMs or the controlling agency to learn the status before flying.",
@@ -8914,8 +8914,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "Class G airspace",
       "Class E airspace",
-      "Class C airspace",
-      "a military operations area"
+      "a military operations area",
+      "Class C airspace"
     ],
     "a": 0,
     "e": "Beneath the 1,200 ft AGL Class E floor the airspace is Class G, where no ATC authorization is required.",
@@ -8926,12 +8926,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A Warning Area is charted:",
     "c": [
-      "over international waters offshore",
-      "only directly over major cities and towns",
       "inside every Class B",
-      "along interstate highways"
+      "over international waters offshore",
+      "along interstate highways",
+      "only directly over major cities and towns"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Warning Areas lie beyond 3 NM from the coast over international waters and warn of activity hazardous to aircraft.",
     "b": "Airspace"
   },
@@ -8941,9 +8941,9 @@ QUESTIONS_JSON = r'''[
     "q": "Airspace authorization (for example through LAANC) is generally required to fly in the surface area of:",
     "c": [
       "Class B, C, D, or surface Class E",
-      "any uncontrolled Class G airspace only",
+      "every airway",
       "Class A airways",
-      "every airway"
+      "any uncontrolled Class G airspace only"
     ],
     "a": 0,
     "e": "Controlled airspace down to the surface, Class B, C, D, and surface Class E, requires authorization before Part 107 flight.",
@@ -8954,12 +8954,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "When the tower at a Class D airport closes for the night, the airspace usually:",
     "c": [
-      "reverts to Class E or G",
-      "stays Class D even with no tower running",
       "becomes Class B airspace",
+      "stays Class D even with no tower running",
+      "reverts to Class E or G",
       "closes to all flight"
     ],
-    "a": 0,
+    "a": 2,
     "e": "With the tower closed, Class D typically becomes Class E or G as noted in the chart supplement, changing the requirements.",
     "b": "Airspace"
   },
@@ -8969,9 +8969,9 @@ QUESTIONS_JSON = r'''[
     "q": "Airspace boundaries and floors should always be confirmed using a:",
     "c": [
       "current sectional or official app",
-      "a years-old paper sectional chart copy",
+      "weather radar image",
       "a highway road map",
-      "weather radar image"
+      "a years-old paper sectional chart copy"
     ],
     "a": 0,
     "e": "Airspace changes over time, so verify boundaries and floors on a current sectional or an official aeronautical app.",
@@ -8982,12 +8982,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "The faded magenta and faded blue edges on a sectional both mark the floor of:",
     "c": [
-      "Class E, at 700 or 1,200 ft AGL",
+      "a prohibited area",
       "a Class B airspace surface boundary",
       "Class A airspace",
-      "a prohibited area"
+      "Class E, at 700 or 1,200 ft AGL"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Both vignettes mark where Class E begins: magenta at 700 ft AGL and blue at 1,200 ft AGL, with Class G below.",
     "b": "Airspace"
   },
@@ -8996,12 +8996,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Planning to fly under a Military Operations Area, a remote pilot should:",
     "c": [
-      "check whether the MOA is active",
       "assume it is always hot and active",
+      "check whether the MOA is active",
       "request a manned clearance",
       "avoid all charts"
     ],
-    "a": 0,
+    "a": 1,
     "e": "MOAs have scheduled active times; check NOTAMs or Flight Service so you know whether military activity is underway.",
     "b": "Airspace"
   },
@@ -9012,8 +9012,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "obtain airspace authorization",
       "only monitor the tower frequency",
-      "squawk code 1200",
-      "climb above 400 ft AGL"
+      "climb above 400 ft AGL",
+      "squawk code 1200"
     ],
     "a": 0,
     "e": "Class C is controlled airspace; Part 107 requires prior authorization, commonly obtained through LAANC.",
@@ -9024,12 +9024,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "A magenta airport symbol with 'RP' notes on a sectional is a field that is:",
     "c": [
-      "non-towered with right traffic noted",
       "a fully towered field open around the clock",
+      "restricted to military",
       "closed permanently",
-      "restricted to military"
+      "non-towered with right traffic noted"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Magenta symbols are non-towered fields; RP indicates right-hand traffic patterns for the noted runways.",
     "b": "Airspace"
   },
@@ -9039,8 +9039,8 @@ QUESTIONS_JSON = r'''[
     "q": "The most effective way to scan for other aircraft is to:",
     "c": [
       "move the eyes in small, overlapping segments",
-      "sweep the whole sky in one continuous fast motion",
       "stare at one fixed point",
+      "sweep the whole sky in one continuous fast motion",
       "glance up only occasionally"
     ],
     "a": 0,
@@ -9052,12 +9052,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "To see an object best at night, a pilot should:",
     "c": [
-      "look slightly to the side of it",
       "stare directly and steadily at it",
+      "look slightly to the side of it",
       "keep one eye closed",
       "shine a bright white light"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Central vision is weak in the dark, so off-center viewing (looking slightly to the side) reveals dim objects better.",
     "b": "Operations"
   },
@@ -9067,8 +9067,8 @@ QUESTIONS_JSON = r'''[
     "q": "Adapting the eyes to darkness for good night vision takes about:",
     "c": [
       "30 minutes",
-      "a few seconds",
       "about 2 minutes",
+      "a few seconds",
       "several days"
     ],
     "a": 0,
@@ -9081,8 +9081,8 @@ QUESTIONS_JSON = r'''[
     "q": "With nothing to focus on, such as a clear empty sky, the eyes tend to:",
     "c": [
       "relax and focus only a short distance away",
-      "automatically stay focused sharply at infinity",
       "see distant traffic more clearly",
+      "automatically stay focused sharply at infinity",
       "become far more sensitive"
     ],
     "a": 0,
@@ -9094,12 +9094,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "Rapid, shallow breathing brought on by stress can cause hyperventilation, best relieved by:",
     "c": [
-      "slowing the breathing rate",
+      "drinking coffee",
       "breathing even faster",
       "holding the breath for a full minute",
-      "drinking coffee"
+      "slowing the breathing rate"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Hyperventilation comes from over-breathing; consciously slowing the breathing restores the balance and relieves symptoms.",
     "b": "Operations"
   },
@@ -9108,12 +9108,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "Dehydration during a long operation in the sun most likely causes:",
     "c": [
-      "fatigue and reduced concentration",
       "much sharper focus and quicker reflexes",
       "stronger night vision",
+      "fatigue and reduced concentration",
       "faster reflexes"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Dehydration brings fatigue, headache, and reduced concentration, so drink water and take breaks on long, hot flights.",
     "b": "Operations"
   },
@@ -9122,12 +9122,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "Acute fatigue, unlike chronic fatigue, is usually corrected by:",
     "c": [
-      "a good rest or night's sleep",
+      "ignoring it",
       "simply pushing straight through it",
-      "more caffeine only",
-      "ignoring it"
+      "a good rest or night's sleep",
+      "more caffeine only"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Acute fatigue is short-term and relieved by rest and sleep, while chronic fatigue builds over time and needs real recovery.",
     "b": "Operations"
   },
@@ -9136,12 +9136,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "Fixating on the camera feed during flight can lead to:",
     "c": [
-      "losing track of the aircraft and surroundings",
       "greatly improved overall situational awareness",
+      "losing track of the aircraft and surroundings",
       "improved traffic scanning",
       "longer battery life"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Channelized attention on the camera can cause a loss of aircraft position and airspace awareness; keep scanning outside.",
     "b": "Operations"
   },
@@ -9150,12 +9150,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "Because it takes time to see and react to other traffic, a pilot should:",
     "c": [
-      "scan continuously, not just once",
       "rely only on the sound of engines",
+      "scan continuously, not just once",
       "look only at takeoff",
       "assume the sky is clear"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Detecting and reacting to traffic takes time, so scan the sky continuously rather than only once or by sound.",
     "b": "Operations"
   },
@@ -9164,12 +9164,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.E",
     "q": "At night a pilot's sense of the drone's position is reduced, so they should:",
     "c": [
-      "rely more on lights and known references",
+      "ignore the anti-collision light",
       "fly much faster to compensate for the dark",
       "skip the preflight check",
-      "ignore the anti-collision light"
+      "rely more on lights and known references"
     ],
-    "a": 0,
+    "a": 3,
     "e": "With poor depth cues at night, use the anti-collision light and known ground references to keep track of the aircraft.",
     "b": "Operations"
   },
@@ -9178,12 +9178,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.B",
     "q": "Standard airport traffic patterns for manned aircraft use:",
     "c": [
-      "left turns unless noted otherwise",
       "right-hand turns at all airports always",
       "no set direction",
+      "left turns unless noted otherwise",
       "vertical climbs only"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Traffic patterns are flown with left turns unless a right pattern is charted, so anticipate manned traffic turning left.",
     "b": "Operations"
   },
@@ -9193,9 +9193,9 @@ QUESTIONS_JSON = r'''[
     "q": "Operating near a non-towered airport, a remote pilot should:",
     "c": [
       "monitor CTAF and stay clear of traffic",
-      "broadcast a continuous mayday call on 121.5",
       "enter the active runway",
-      "climb into the pattern"
+      "climb into the pattern",
+      "broadcast a continuous mayday call on 121.5"
     ],
     "a": 0,
     "e": "Monitor the common traffic advisory frequency for position reports and keep well clear of the manned traffic flow.",
@@ -9206,12 +9206,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.B",
     "q": "Near an airport, a small unmanned aircraft must:",
     "c": [
-      "not interfere with manned operations",
-      "always keep the right of way over them",
       "fly in the traffic pattern",
-      "land on the runway"
+      "not interfere with manned operations",
+      "land on the runway",
+      "always keep the right of way over them"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A drone must never interfere with airport traffic and must yield to manned aircraft at all times.",
     "b": "Operations"
   },
@@ -9220,12 +9220,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.B",
     "q": "Manned aircraft are most concentrated:",
     "c": [
-      "near airports and in the pattern",
-      "only far out over the open ocean waters",
       "above 10,000 ft only",
-      "inside restricted areas"
+      "near airports and in the pattern",
+      "inside restricted areas",
+      "only far out over the open ocean waters"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Manned traffic gathers around airports and in the traffic pattern, so use extra vigilance when operating nearby.",
     "b": "Operations"
   },
@@ -9235,9 +9235,9 @@ QUESTIONS_JSON = r'''[
     "q": "If a crop duster or helicopter is working near your low-altitude site, you should:",
     "c": [
       "yield and keep well clear of it",
-      "assume that it can always see you",
+      "hold your altitude",
       "race it to the spot",
-      "hold your altitude"
+      "assume that it can always see you"
     ],
     "a": 0,
     "e": "Yield and stay well clear; low-working manned aircraft may not see a small drone, so separation is your responsibility.",
@@ -9248,12 +9248,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "When too many tasks pile up at once (task saturation), the best response is to:",
     "c": [
-      "shed nonessential tasks and fly the aircraft",
-      "try to speed absolutely everything up at once",
       "add more tasks",
-      "stop scanning"
+      "stop scanning",
+      "shed nonessential tasks and fly the aircraft",
+      "try to speed absolutely everything up at once"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Under task saturation, drop nonessential tasks and prioritize controlling the aircraft to keep the flight safe.",
     "b": "Operations"
   },
@@ -9262,12 +9262,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "During takeoff, landing, and other critical moments, the crew should:",
     "c": [
-      "avoid nonessential conversation",
-      "chat freely about anything at all",
       "check social media",
+      "chat freely about anything at all",
+      "avoid nonessential conversation",
       "split their attention"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Keeping communication sterile during critical phases prevents distraction and keeps attention on the operation.",
     "b": "Operations"
   },
@@ -9276,12 +9276,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "To limit distraction in flight, camera and app settings are best adjusted:",
     "c": [
-      "on the ground before launch",
       "while hovering right over people",
-      "during a fast descent",
-      "mid-turn at low altitude"
+      "on the ground before launch",
+      "mid-turn at low altitude",
+      "during a fast descent"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Set up shots and settings on the ground so attention stays on flying once airborne.",
     "b": "Operations"
   },
@@ -9290,12 +9290,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "Maintaining situational awareness means continuously tracking:",
     "c": [
+      "just the camera image",
       "the aircraft, airspace, and nearby people",
       "only the remaining battery level in percent",
-      "just the camera image",
       "yesterday's weather"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Situational awareness is an ongoing picture of the aircraft, the airspace, obstacles, and people around the operation.",
     "b": "Operations"
   },
@@ -9332,12 +9332,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "If the aircraft suddenly behaves unexpectedly, the pilot's first priority is to:",
     "c": [
+      "post about it online",
       "keep control and move away from people",
       "immediately land on the nearest busy road",
-      "post about it online",
       "speed up and climb"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Fly the aircraft first: maintain control and increase distance from people while working the problem.",
     "b": "Operations"
   },
@@ -9346,12 +9346,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "Using checklists, apps, and a visual observer to manage workload is:",
     "c": [
+      "only for big crews",
       "good resource management",
       "strictly against the Part 107 rules",
-      "a waste of time",
-      "only for big crews"
+      "a waste of time"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Drawing on checklists, tools, and crew is sound single-pilot resource management that lowers workload and risk.",
     "b": "Operations"
   },
@@ -9360,12 +9360,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.V.D",
     "q": "Recognizing that small mistakes can link into an accident, a pilot should:",
     "c": [
+      "ignore minor slips",
       "break the chain by fixing errors early",
       "only start worrying after landing safely",
-      "ignore minor slips",
       "assume luck will hold"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Most accidents come from a chain of small errors; catching and fixing one link early prevents the outcome.",
     "b": "Operations"
   },
@@ -9374,12 +9374,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "You are inspecting a 200-ft tower. Under Part 107 you may legally climb to about:",
     "c": [
-      "600 ft AGL, within 400 ft of the tower",
       "400 ft AGL and no higher than that at all",
-      "900 ft AGL anywhere nearby",
-      "1,000 ft AGL over the tower"
+      "600 ft AGL, within 400 ft of the tower",
+      "1,000 ft AGL over the tower",
+      "900 ft AGL anywhere nearby"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Within 400 ft of a structure you may fly up to 400 ft above its top, so a 200-ft tower allows about 600 ft AGL.",
     "b": "Regulations"
   },
@@ -9388,12 +9388,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The exception that lets a drone exceed 400 ft AGL applies only when the aircraft:",
     "c": [
+      "carries no payload",
       "stays within 400 ft of a structure",
-      "is flown out over open farmland fields",
       "is flown after sunset",
-      "carries no payload"
+      "is flown out over open farmland fields"
     ],
-    "a": 0,
+    "a": 1,
     "e": "You may exceed 400 ft AGL only within a 400-ft lateral distance of a structure, remaining within 400 ft of its uppermost limit.",
     "b": "Regulations"
   },
@@ -9402,12 +9402,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The Part 107 400-ft altitude limit is normally measured:",
     "c": [
-      "above the ground below the aircraft",
-      "measured from the nearest airport elevation",
       "from mean sea level",
-      "from the operator's height"
+      "measured from the nearest airport elevation",
+      "from the operator's height",
+      "above the ground below the aircraft"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The 400-ft ceiling is above ground level, measured from the surface below, except near a structure where it is measured from the structure.",
     "b": "Regulations"
   },
@@ -9416,12 +9416,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Civil twilight for Part 107 in the lower 48 states runs from about:",
     "c": [
-      "30 min before sunrise to 30 min after sunset",
       "1 hour after sunrise to 1 hour before sunset",
-      "noon to midnight",
-      "sunrise to sunset only"
+      "sunrise to sunset only",
+      "30 min before sunrise to 30 min after sunset",
+      "noon to midnight"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Civil twilight is roughly the 30 minutes before official sunrise and the 30 minutes after official sunset.",
     "b": "Regulations"
   },
@@ -9430,12 +9430,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Anti-collision lighting is required for Part 107 operations at night and during:",
     "c": [
+      "calm winds",
       "civil twilight",
       "clear daylight",
-      "calm winds",
       "high visibility"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Operations at night and in civil twilight require anti-collision lighting; daylight operations do not.",
     "b": "Regulations"
   },
@@ -9444,12 +9444,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The anti-collision lighting required for night operations must be visible for at least:",
     "c": [
-      "3 statute miles",
-      "300 feet",
       "1 statute mile",
-      "10 statute miles"
+      "10 statute miles",
+      "300 feet",
+      "3 statute miles"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The required anti-collision lighting must be visible for at least 3 statute miles and flash at a rate that helps avoid a collision.",
     "b": "Regulations"
   },
@@ -9458,12 +9458,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "After moving, a remote pilot must report a permanent mailing address change to the FAA within:",
     "c": [
-      "30 days",
-      "24 hours",
       "2 years",
-      "10 days"
+      "30 days",
+      "10 days",
+      "24 hours"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A certificate holder must notify the FAA of a permanent mailing address change within 30 days to keep exercising privileges.",
     "b": "Regulations"
   },
@@ -9472,12 +9472,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.C",
     "q": "For the $500 accident-reporting threshold, the damage counted is:",
     "c": [
-      "damage to property other than the aircraft",
-      "only damage to the drone aircraft, nothing else",
       "only injuries, never property",
-      "controller damage only"
+      "controller damage only",
+      "only damage to the drone aircraft, nothing else",
+      "damage to property other than the aircraft"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The report is required at $500 or more of damage to property other than the small unmanned aircraft, or for a serious injury.",
     "b": "Regulations"
   },
@@ -9487,9 +9487,9 @@ QUESTIONS_JSON = r'''[
     "q": "Part 107 requires no FAA medical certificate, but a remote pilot may not fly if they:",
     "c": [
       "have a condition that impairs safe flight",
+      "are over age 60",
       "recently skipped a full breakfast that morning",
-      "wear corrective lenses",
-      "are over age 60"
+      "wear corrective lenses"
     ],
     "a": 0,
     "e": "Under 107.17 you may not operate if you know or have reason to know of a physical or mental condition that would interfere with safe operation.",
@@ -9500,12 +9500,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "Before being issued a remote pilot certificate, an applicant must pass:",
     "c": [
-      "a TSA security background check",
-      "a full manned-aircraft flight checkride",
       "a flight physical exam",
-      "a vision-only screening"
+      "a vision-only screening",
+      "a TSA security background check",
+      "a full manned-aircraft flight checkride"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Applicants must be vetted by the TSA (a security background check) in addition to passing the knowledge test.",
     "b": "Regulations"
   },
@@ -9514,12 +9514,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "Which core Part 107 rule can be waived if you show it can be done safely?",
     "c": [
-      "the visual-line-of-sight requirement",
       "the ban on careless or reckless operation",
-      "the Remote ID requirement",
-      "the registration requirement"
+      "the registration requirement",
+      "the visual-line-of-sight requirement",
+      "the Remote ID requirement"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Visual line of sight (107.31) is among the waivable rules; registration, Remote ID, and careless operation are not waivable.",
     "b": "Regulations"
   },
@@ -9528,12 +9528,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "A drone that cannot broadcast Remote ID and has no module:",
     "c": [
-      "must be flown only within a FRIA",
-      "can apply for a Remote ID waiver instead",
       "may fly anywhere below 400 ft",
-      "is exempt from all rules"
+      "must be flown only within a FRIA",
+      "is exempt from all rules",
+      "can apply for a Remote ID waiver instead"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The Remote ID requirement cannot be waived; such a drone may only operate within an FAA-Recognized Identification Area (FRIA).",
     "b": "Regulations"
   },
@@ -9542,12 +9542,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "The FAA will grant a Part 107 waiver only if the applicant shows the operation can be conducted with:",
     "c": [
-      "an equivalent level of safety",
       "the absolute lowest possible cost",
-      "no paperwork at all",
-      "a manned chase plane"
+      "an equivalent level of safety",
+      "a manned chase plane",
+      "no paperwork at all"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A waiver is issued only when the proposed operation can be conducted safely, at an equivalent level of safety to the rule.",
     "b": "Regulations"
   },
@@ -9557,9 +9557,9 @@ QUESTIONS_JSON = r'''[
     "q": "A Certificate of Waiver issued by the FAA:",
     "c": [
       "may include specific conditions and limits",
-      "applies to every drone pilot in the nation",
       "removes all Part 107 rules",
-      "never expires or changes"
+      "never expires or changes",
+      "applies to every drone pilot in the nation"
     ],
     "a": 0,
     "e": "A waiver authorizes deviation from specific rules and typically comes with conditions and limitations the pilot must follow.",
@@ -9570,12 +9570,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "A Part 107 Certificate of Waiver authorizes:",
     "c": [
-      "only the specific operation it describes",
+      "all pilots at that airport",
       "unlimited future flights anywhere, anytime",
       "any operation the pilot wants",
-      "all pilots at that airport"
+      "only the specific operation it describes"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A waiver is specific to the operation described in the application and does not grant blanket permission for other flights.",
     "b": "Regulations"
   },
@@ -9586,8 +9586,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "60 multiple-choice questions",
       "a live in-person flight demonstration",
-      "200 essay questions",
-      "25 true-or-false questions"
+      "25 true-or-false questions",
+      "200 essay questions"
     ],
     "a": 0,
     "e": "The initial knowledge test has 60 multiple-choice questions, and a score of 70 percent is required to pass.",
@@ -9598,12 +9598,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Flying a small drone entirely indoors is:",
     "c": [
-      "generally outside FAA Part 107 rules",
+      "allowed only with a waiver",
       "still strictly capped at the 400 ft AGL limit",
       "a Remote ID violation",
-      "allowed only with a waiver"
+      "generally outside FAA Part 107 rules"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Part 107 governs operations in the outdoor National Airspace System, so fully indoor flight is generally not subject to it.",
     "b": "Regulations"
   },
@@ -9612,12 +9612,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The preflight familiarization required by 107.49 includes assessing:",
     "c": [
+      "the aircraft color scheme",
       "local weather, airspace, and the site",
       "only the battery charge and nothing else",
-      "the client's schedule",
-      "the aircraft color scheme"
+      "the client's schedule"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Before flight the remote PIC must assess the operating area, weather, airspace, hazards, aircraft condition, and crew readiness.",
     "b": "Regulations"
   },
@@ -9626,12 +9626,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "Under Part 107, registration is required for a small unmanned aircraft:",
     "c": [
-      "regardless of its weight",
-      "only above 55 lb",
       "only if flown for pay",
-      "only in controlled airspace"
+      "regardless of its weight",
+      "only in controlled airspace",
+      "only above 55 lb"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Every drone flown under Part 107 must be registered regardless of weight; the 0.55 lb threshold applies to recreational flyers.",
     "b": "Regulations"
   },
@@ -9641,8 +9641,8 @@ QUESTIONS_JSON = r'''[
     "q": "You fly three different drones commercially. Under Part 107 you must:",
     "c": [
       "register each aircraft separately",
-      "register just one of them",
       "use a single number for all three",
+      "register just one of them",
       "skip registration entirely"
     ],
     "a": 0,
@@ -9668,12 +9668,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "To fly a pipeline survey beyond visual line of sight, a remote pilot needs:",
     "c": [
-      "a Part 107 waiver for that operation",
+      "a recreational TRUST pass",
       "nothing more than a basic certificate",
-      "only a visual observer",
-      "a recreational TRUST pass"
+      "a Part 107 waiver for that operation",
+      "only a visual observer"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Beyond-visual-line-of-sight flight deviates from 107.31, so it requires an approved Part 107 waiver for that operation.",
     "b": "Regulations"
   },
@@ -9683,9 +9683,9 @@ QUESTIONS_JSON = r'''[
     "q": "To conduct sustained flight directly over a crowd at an outdoor concert, a remote pilot needs:",
     "c": [
       "an over-people category or a waiver",
-      "only a very bright anti-collision light",
       "just the client's permission",
-      "nothing, if under 400 ft"
+      "nothing, if under 400 ft",
+      "only a very bright anti-collision light"
     ],
     "a": 0,
     "e": "Sustained flight over people not involved requires meeting an approved over-people category or holding a waiver.",
@@ -9696,12 +9696,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "A remote pilot certificate obtained under Part 107:",
     "c": [
-      "stays valid but needs recurrent training",
-      "must be renewed by re-taking the initial test",
       "expires exactly two years after issue",
+      "must be renewed by re-taking the initial test",
+      "stays valid but needs recurrent training",
       "converts to a manned license"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The certificate itself does not expire, but the holder must complete recurrent training every 24 calendar months to keep exercising privileges.",
     "b": "Regulations"
   },
@@ -9710,9 +9710,9 @@ QUESTIONS_JSON = r'''[
     "q": "On a VFR sectional (1:500,000), one inch on the chart equals about:",
     "c": [
       "6.9 nautical miles",
-      "1 nautical mile",
+      "half a nautical mile",
       "70 nautical miles",
-      "half a nautical mile"
+      "1 nautical mile"
     ],
     "a": 0,
     "e": "At 1:500,000, one inch represents 500,000 inches on the ground, which is about 6.9 nautical miles.",
@@ -9724,8 +9724,8 @@ QUESTIONS_JSON = r'''[
     "q": "One degree of latitude on a sectional chart equals:",
     "c": [
       "60 nautical miles",
-      "6 nautical miles",
       "1 nautical mile",
+      "6 nautical miles",
       "600 nautical miles"
     ],
     "a": 0,
@@ -9737,12 +9737,12 @@ QUESTIONS_JSON = r'''[
     "s": "Scale",
     "q": "The easiest built-in way to measure distance on a sectional is to use:",
     "c": [
-      "the latitude scale on the side",
-      "the color of the surrounding terrain",
       "the airport data block",
-      "the chart's title panel"
+      "the latitude scale on the side",
+      "the chart's title panel",
+      "the color of the surrounding terrain"
     ],
-    "a": 0,
+    "a": 1,
     "e": "One minute of latitude equals one nautical mile, so the latitude scale along the chart edge works as a distance ruler.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9751,12 +9751,12 @@ QUESTIONS_JSON = r'''[
     "s": "Coordinates",
     "q": "On the globe, latitude and longitude are measured, respectively:",
     "c": [
-      "N/S of the equator, E/W of the prime meridian",
+      "by terrain color only",
       "E/W of the equator and N/S of the poles instead",
-      "only in statute miles",
-      "by terrain color only"
+      "N/S of the equator, E/W of the prime meridian",
+      "only in statute miles"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Latitude is measured north or south of the equator, and longitude east or west of the prime meridian.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9765,12 +9765,12 @@ QUESTIONS_JSON = r'''[
     "s": "Coordinates",
     "q": "Across the continental United States, lines of longitude have values that:",
     "c": [
+      "stay the same everywhere",
       "increase toward the west",
       "increase toward the east",
-      "stay the same everywhere",
       "are measured in feet"
     ],
-    "a": 0,
+    "a": 1,
     "e": "In the continental US, longitude increases going westward, for example from about 75 degrees W to 120 degrees W.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9780,9 +9780,9 @@ QUESTIONS_JSON = r'''[
     "q": "The small tick marks along the latitude and longitude lines on a sectional are spaced:",
     "c": [
       "one minute apart",
+      "ten minutes apart",
       "one degree apart",
-      "one mile apart",
-      "ten minutes apart"
+      "one mile apart"
     ],
     "a": 0,
     "e": "The ticks are spaced at one-minute intervals, and one minute of latitude conveniently equals one nautical mile.",
@@ -9793,12 +9793,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "In a sectional airport data block, a number such as 1204 alone usually gives the:",
     "c": [
-      "field elevation in feet MSL",
       "the traffic pattern altitude",
+      "tower frequency",
       "runway heading",
-      "tower frequency"
+      "field elevation in feet MSL"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The standalone number in a data block is the field elevation in feet above mean sea level.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9807,12 +9807,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "In an airport data block, a runway length shown as 72 means the longest runway is:",
     "c": [
-      "7,200 feet long",
       "72 feet long",
-      "72 nautical miles",
-      "720 feet long"
+      "7,200 feet long",
+      "720 feet long",
+      "72 nautical miles"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Runway length in a data block is given in hundreds of feet, so 72 means 7,200 feet.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9823,8 +9823,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "a circled letter C",
       "a circled letter H",
-      "a bold star",
-      "a magenta flag"
+      "a magenta flag",
+      "a bold star"
     ],
     "a": 0,
     "e": "A solid dot with a circled C next to a frequency identifies the CTAF used for self-announced position reports.",
@@ -9835,12 +9835,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "A frequency of 122.8 listed at a non-towered airport is typically the:",
     "c": [
-      "UNICOM advisory frequency",
       "the main ATC clearance frequency",
+      "weather-only frequency",
       "emergency frequency",
-      "weather-only frequency"
+      "UNICOM advisory frequency"
     ],
-    "a": 0,
+    "a": 3,
     "e": "122.8 is a common UNICOM frequency at non-towered airports, used for advisories and often as the CTAF.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9850,9 +9850,9 @@ QUESTIONS_JSON = r'''[
     "q": "In an airport data block, 'RP' followed by runway numbers indicates:",
     "c": [
       "right traffic for those runways",
-      "a required parachute jumping area",
+      "a private helipad",
       "a restricted airport",
-      "a private helipad"
+      "a required parachute jumping area"
     ],
     "a": 0,
     "e": "RP means a right-hand traffic pattern is in use for the listed runways, opposite the standard left pattern.",
@@ -9863,12 +9863,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "An asterisk before the letter L (\"*L\") in an airport data block means the runway lighting is:",
     "c": [
-      "limited, part-time, or pilot-controlled",
-      "always much brighter than normal lighting",
       "never available",
-      "laser-based"
+      "laser-based",
+      "always much brighter than normal lighting",
+      "limited, part-time, or pilot-controlled"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The asterisk shows lighting limitations such as part-time or pilot-controlled operation; check the chart supplement.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9891,12 +9891,12 @@ QUESTIONS_JSON = r'''[
     "s": "Obstacles",
     "q": "Obstacles less than 1,000 ft AGL and those 1,000 ft AGL or higher are shown with:",
     "c": [
-      "different obstruction symbols",
       "exactly the same symbol always",
+      "different obstruction symbols",
       "no symbol at all",
       "only a dashed line"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Charts use one symbol for obstacles under 1,000 ft AGL and a taller, different symbol for those 1,000 ft AGL and above.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9905,12 +9905,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "On a sectional, a VOR's frequency and identifier are printed:",
     "c": [
-      "in a box near the compass rose",
       "inside the nearest airport symbol",
-      "along the nearest airway",
-      "on the chart cover only"
+      "in a box near the compass rose",
+      "on the chart cover only",
+      "along the nearest airway"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Each VOR shows its name, frequency, and Morse identifier in a small box beside its compass rose.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9933,12 +9933,12 @@ QUESTIONS_JSON = r'''[
     "s": "Time",
     "q": "A chart note or report gives a time of 1800Z. In Eastern Standard Time (UTC minus 5), that is:",
     "c": [
-      "1300 local",
-      "2300 local",
       "0600 local",
+      "2300 local",
+      "1300 local",
       "1800 local"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Zulu time is UTC, so subtract five hours for Eastern Standard Time: 1800Z becomes 1300 local.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9947,12 +9947,12 @@ QUESTIONS_JSON = r'''[
     "s": "Terrain",
     "q": "On a sectional's graduated color tints, the highest terrain is shown by:",
     "c": [
+      "no color at all",
       "the darkest tint",
       "the lightest tint",
-      "a blue tint",
-      "no color at all"
+      "a blue tint"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Terrain tints darken as elevation rises, so the darkest browns mark the highest ground on the chart.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9961,12 +9961,12 @@ QUESTIONS_JSON = r'''[
     "s": "Navigation",
     "q": "A line on a sectional along which magnetic variation is zero is called:",
     "c": [
-      "an agonic line",
       "an isogonic line",
       "a Victor airway",
-      "a parallel"
+      "a parallel",
+      "an agonic line"
     ],
-    "a": 0,
+    "a": 3,
     "e": "An agonic line connects points of zero magnetic variation, where magnetic north and true north align.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9975,12 +9975,12 @@ QUESTIONS_JSON = r'''[
     "s": "Scale",
     "q": "Distances on aeronautical sectional charts are normally expressed in:",
     "c": [
-      "nautical miles",
       "metric kilometers",
       "feet",
-      "city blocks"
+      "city blocks",
+      "nautical miles"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Aeronautical charts and navigation use nautical miles, matching one minute of latitude to one nautical mile.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -9990,9 +9990,9 @@ QUESTIONS_JSON = r'''[
     "q": "To measure the length of a planned leg on a sectional, a pilot commonly uses:",
     "c": [
       "a plotter against the latitude scale",
-      "the nearest airport's radio frequency box",
       "the terrain color key",
-      "the chart's border notes"
+      "the chart's border notes",
+      "the nearest airport's radio frequency box"
     ],
     "a": 0,
     "e": "A plotter or ruler compared to the latitude scale (one minute equals one nautical mile) gives the leg distance.",
@@ -10004,8 +10004,8 @@ QUESTIONS_JSON = r'''[
     "q": "Latitude and longitude on a sectional are labeled in:",
     "c": [
       "degrees and minutes",
-      "statute miles and yards",
       "feet and inches",
+      "statute miles and yards",
       "hours and seconds"
     ],
     "a": 0,
@@ -10017,12 +10017,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "Manned aircraft near a small airport usually fly a traffic pattern at about:",
     "c": [
-      "1,000 ft AGL",
+      "400 ft MSL",
       "50 ft AGL",
-      "10,000 ft AGL",
-      "400 ft MSL"
+      "1,000 ft AGL",
+      "10,000 ft AGL"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Typical light-aircraft patterns are near 1,000 ft AGL, so a drone pilot should stay well clear of that altitude near airports.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -10031,12 +10031,12 @@ QUESTIONS_JSON = r'''[
     "s": "Airport Data",
     "q": "A sectional airport data block generally lists the airport name, its elevation, and the:",
     "c": [
-      "common traffic or tower frequency",
-      "the current local weather forecast",
       "the pilot's home address",
+      "the current local weather forecast",
+      "common traffic or tower frequency",
       "fuel prices"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The data block packs the airport name, field elevation, lighting, longest runway, and the CTAF or tower frequency.",
     "acs": "UA.II.B",
     "b": "Charts"
@@ -10046,12 +10046,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "A standard Remote ID drone broadcasts the control station location, while a broadcast module instead sends the:",
     "c": [
+      "manufacturer's address",
       "take-off location",
       "landing location",
-      "home airport location",
-      "manufacturer's address"
+      "home airport location"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A broadcast module transmits the take-off location, whereas standard Remote ID transmits the control station location.",
     "b": "Regulations"
   },
@@ -10060,12 +10060,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "Remote ID meets its requirement by:",
     "c": [
-      "broadcasting over radio, no internet needed",
-      "streaming continuously over a cellular network",
       "emailing a flight log",
-      "calling ATC by phone"
+      "calling ATC by phone",
+      "streaming continuously over a cellular network",
+      "broadcasting over radio, no internet needed"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Remote ID is a local radio broadcast (such as Bluetooth or Wi-Fi); it does not need an internet or cellular connection.",
     "b": "Regulations"
   },
@@ -10074,12 +10074,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "Remote ID must broadcast during which part of the flight?",
     "c": [
-      "from take-off to shutdown",
       "only during the take-off roll",
+      "from take-off to shutdown",
       "only when above 400 ft",
       "only near airports"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The broadcast must run for the entire operation, from take-off until the aircraft shuts down.",
     "b": "Regulations"
   },
@@ -10088,12 +10088,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "The Remote ID rule applies to a drone that:",
     "c": [
-      "is required to be registered",
-      "weighs under 250 grams and nothing more",
       "is flown only indoors",
+      "weighs under 250 grams and nothing more",
+      "is required to be registered",
       "has a camera"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Remote ID applies to drones that must be registered; under Part 107 that means essentially every aircraft.",
     "b": "Regulations"
   },
@@ -10102,12 +10102,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "To satisfy the visual-line-of-sight rule, the remote PIC may use:",
     "c": [
+      "a telescope on a tripod",
       "glasses or contacts, but not binoculars",
       "powerful binoculars to greatly extend the view",
-      "a first-person-view headset alone",
-      "a telescope on a tripod"
+      "a first-person-view headset alone"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Line of sight must be met with unaided vision, corrective lenses allowed; binoculars or an FPV headset do not satisfy it.",
     "b": "Regulations"
   },
@@ -10116,12 +10116,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Under Part 107, the remote PIC ___ keep the aircraft within visual line of sight.",
     "c": [
-      "must always",
       "should usually",
       "may occasionally",
-      "is advised to"
+      "is advised to",
+      "must always"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Visual line of sight is a firm requirement (must), not a recommendation, unless a waiver says otherwise.",
     "b": "Regulations"
   },
@@ -10130,12 +10130,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "A small UAS ___ be flown over a person not participating unless an approved category or waiver applies.",
     "c": [
-      "may not",
+      "should sometimes",
       "may freely",
       "must always",
-      "should sometimes"
+      "may not"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Flight over non-participating people is prohibited unless the aircraft meets an over-people category or holds a waiver.",
     "b": "Regulations"
   },
@@ -10144,12 +10144,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "For Part 107 operations at night, anti-collision lighting is:",
     "c": [
-      "required",
-      "recommended",
       "optional",
-      "discouraged"
+      "required",
+      "discouraged",
+      "recommended"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Anti-collision lighting visible for 3 statute miles is required at night, not merely recommended.",
     "b": "Regulations"
   },
@@ -10158,12 +10158,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Operating the control station from a moving vehicle is allowed only over a ___ area.",
     "c": [
-      "sparsely populated",
       "densely populated city",
+      "sparsely populated",
       "heavily trafficked",
       "congested urban"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Operating from a moving vehicle is permitted only over sparsely populated areas, unless a waiver allows otherwise.",
     "b": "Regulations"
   },
@@ -10172,12 +10172,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "When a manned aircraft approaches, the remote PIC:",
     "c": [
-      "must yield the right of way",
+      "yields only if convenient",
       "may hold its altitude if it is higher",
-      "has the right of way",
-      "yields only if convenient"
+      "must yield the right of way",
+      "has the right of way"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The remote PIC must always give way to manned aircraft, yielding the right of way and staying clear.",
     "b": "Regulations"
   },
@@ -10186,12 +10186,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "The prohibition on careless or reckless operation is:",
     "c": [
-      "a rule that cannot be waived",
       "waivable with a good reason",
+      "waived automatically at night",
       "only a guideline",
-      "waived automatically at night"
+      "a rule that cannot be waived"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The ban on careless or reckless operation is a core rule that is not waivable under Part 107.",
     "b": "Regulations"
   },
@@ -10200,12 +10200,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "Permission to enter controlled airspace is called an airspace ___, not a waiver.",
     "c": [
-      "authorization",
       "exemption",
       "registration",
-      "certification"
+      "certification",
+      "authorization"
     ],
-    "a": 0,
+    "a": 3,
     "e": "An airspace authorization grants access to controlled airspace; a waiver instead permits deviation from a specific rule.",
     "b": "Regulations"
   },
@@ -10214,12 +10214,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "A drone flown under Part 107 must be registered:",
     "c": [
+      "after 10 flights",
       "before its first flight",
-      "within 30 days after flying",
       "only if it crashes",
-      "after 10 flights"
+      "within 30 days after flying"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Registration must be completed before the aircraft's first flight, not afterward.",
     "b": "Regulations"
   },
@@ -10228,12 +10228,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.F",
     "q": "The registration number on the aircraft must be:",
     "c": [
-      "legible and readable without tools",
       "concealed inside the battery bay only",
       "visible only under UV light",
-      "engraved on the propeller"
+      "engraved on the propeller",
+      "legible and readable without tools"
     ],
-    "a": 0,
+    "a": 3,
     "e": "The number must be marked on an exterior surface and readable without tools or opening any compartment.",
     "b": "Regulations"
   },
@@ -10242,12 +10242,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.C",
     "q": "The $500 accident-reporting threshold counts damage to property:",
     "c": [
-      "other than the aircraft itself",
-      "including the small aircraft itself",
       "only to the aircraft",
-      "only to the controller"
+      "only to the controller",
+      "other than the aircraft itself",
+      "including the small aircraft itself"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The threshold is $500 or more of damage to property other than the small unmanned aircraft.",
     "b": "Regulations"
   },
@@ -10256,12 +10256,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.C",
     "q": "A reportable Part 107 accident must be reported to the FAA within:",
     "c": [
-      "10 calendar days",
+      "24 hours",
       "10 business hours",
       "30 days",
-      "24 hours"
+      "10 calendar days"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A reportable accident must be filed with the FAA within 10 calendar days of the event.",
     "b": "Regulations"
   },
@@ -10270,12 +10270,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "Part 107 bars operating within how many hours of consuming alcohol?",
     "c": [
-      "8 hours",
       "12 hours",
       "2 hours",
-      "24 hours"
+      "24 hours",
+      "8 hours"
     ],
-    "a": 0,
+    "a": 3,
     "e": "A pilot may not operate within 8 hours of consuming alcohol, and never while impaired.",
     "b": "Regulations"
   },
@@ -10284,12 +10284,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "A remote pilot may not operate with a blood alcohol concentration at or above:",
     "c": [
-      "0.04 percent",
       "0.08 percent",
-      "0.10 percent",
-      "0.02 percent"
+      "0.04 percent",
+      "0.02 percent",
+      "0.10 percent"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The limit is a blood alcohol concentration of 0.04 percent or higher, lower than most driving limits.",
     "b": "Regulations"
   },
@@ -10298,12 +10298,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The 400-foot Part 107 altitude limit is normally measured in feet:",
     "c": [
-      "above ground level",
-      "above mean sea level",
       "above the nearest airport",
-      "above the operator's head"
+      "above the operator's head",
+      "above ground level",
+      "above mean sea level"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The 400-foot ceiling is above ground level, except that near a structure it is measured from the structure.",
     "b": "Regulations"
   },
@@ -10312,12 +10312,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The maximum groundspeed allowed under Part 107 is:",
     "c": [
-      "100 mph (87 knots)",
       "150 mph (130 knots)",
+      "200 mph (174 knots)",
       "55 mph (48 knots)",
-      "200 mph (174 knots)"
+      "100 mph (87 knots)"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Groundspeed is limited to 100 mph, which is 87 knots.",
     "b": "Regulations"
   },
@@ -10327,9 +10327,9 @@ QUESTIONS_JSON = r'''[
     "q": "The minimum flight visibility for Part 107, measured from the control station, is:",
     "c": [
       "3 statute miles",
+      "half a statute mile",
       "1 statute mile",
-      "5 statute miles",
-      "half a statute mile"
+      "5 statute miles"
     ],
     "a": 0,
     "e": "A minimum of 3 statute miles of flight visibility is required from the control station.",
@@ -10340,12 +10340,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Part 107 cloud clearance is at least 500 ft below a cloud and how far horizontally?",
     "c": [
+      "250 ft",
       "2,000 ft",
       "500 ft",
-      "1,000 ft",
-      "250 ft"
+      "1,000 ft"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The requirement is 500 feet below and 2,000 feet horizontal from clouds.",
     "b": "Regulations"
   },
@@ -10354,12 +10354,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "Final responsibility and authority for a Part 107 operation rests with the:",
     "c": [
-      "remote pilot in command",
-      "small aircraft's manufacturer",
       "visual observer",
-      "FAA inspector"
+      "remote pilot in command",
+      "FAA inspector",
+      "small aircraft's manufacturer"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The remote pilot in command is directly responsible for, and the final authority over, the operation.",
     "b": "Regulations"
   },
@@ -10368,12 +10368,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "To keep exercising Part 107 privileges, recurrent training is:",
     "c": [
-      "required every 24 calendar months",
-      "recommended every couple of years or so",
       "optional after the first test",
-      "required only once ever"
+      "required only once ever",
+      "required every 24 calendar months",
+      "recommended every couple of years or so"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Recurrent training is required every 24 calendar months to continue exercising remote pilot privileges.",
     "b": "Regulations"
   },
@@ -10382,12 +10382,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "A Category 2 small UAS over people must not cause an injury worse than the impact of:",
     "c": [
+      "1 ft-lb of kinetic energy",
       "11 ft-lb of kinetic energy",
-      "50 ft-lb of kinetic energy",
       "25 ft-lb of kinetic energy",
-      "1 ft-lb of kinetic energy"
+      "50 ft-lb of kinetic energy"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Category 2 aircraft must not, on impact, transfer more than 11 ft-lb of kinetic energy, with no lacerations and no exposed rotating parts.",
     "b": "Regulations"
   },
@@ -10396,12 +10396,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "The kinetic-energy injury limit for a Category 3 small UAS over people is:",
     "c": [
+      "5 ft-lb",
       "25 ft-lb",
-      "11 ft-lb",
       "100 ft-lb",
-      "5 ft-lb"
+      "11 ft-lb"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Category 3 aircraft have a higher injury limit of 25 ft-lb but come with tighter operating-site restrictions.",
     "b": "Regulations"
   },
@@ -10410,12 +10410,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Unlike Category 2, a Category 3 operation may NOT be flown:",
     "c": [
-      "over an open-air assembly of people",
+      "with a visual observer",
       "anywhere near any tall city building",
       "after sunrise",
-      "with a visual observer"
+      "over an open-air assembly of people"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Category 3 forbids flight over open-air assemblies; it is limited to closed or restricted-access sites, or brief transiting.",
     "b": "Regulations"
   },
@@ -10424,12 +10424,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "A Category 1 small UAS flown over people must weigh 0.55 lb or less and have:",
     "c": [
-      "no exposed parts that could lacerate skin",
-      "a parachute that stays fully deployed at all times",
       "a second operator present",
-      "a metal cage around it"
+      "no exposed parts that could lacerate skin",
+      "a metal cage around it",
+      "a parachute that stays fully deployed at all times"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Category 1 requires the aircraft to be under 0.55 lb with no exposed rotating parts capable of lacerating skin.",
     "b": "Regulations"
   },
@@ -10438,12 +10438,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Category 4 operations over people require the aircraft to have:",
     "c": [
-      "an airworthiness certificate",
-      "a bright reflective paint scheme",
+      "a louder motor",
       "two spare batteries",
-      "a louder motor"
+      "an airworthiness certificate",
+      "a bright reflective paint scheme"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Category 4 aircraft must hold an airworthiness certificate and be maintained and operated within its limitations.",
     "b": "Regulations"
   },
@@ -10452,12 +10452,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Briefly flying across above scattered people, without hovering over them, is called:",
     "c": [
-      "transiting",
-      "an open-air assembly",
+      "a waiver operation",
       "sustained flight",
-      "a waiver operation"
+      "an open-air assembly",
+      "transiting"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Transiting is a brief pass over people; sustained flight means remaining over them, which triggers stricter category rules.",
     "b": "Regulations"
   },
@@ -10467,9 +10467,9 @@ QUESTIONS_JSON = r'''[
     "q": "Sustained flight over a moving vehicle with people inside is generally allowed only:",
     "c": [
       "in a restricted-access area or by waiver",
+      "over highways at night",
       "only if the vehicle is parked briefly first",
-      "anywhere below 400 ft",
-      "over highways at night"
+      "anywhere below 400 ft"
     ],
     "a": 0,
     "e": "Sustained flight over people in moving vehicles needs a restricted-access area or an approved category or waiver; brief transiting is treated differently.",
@@ -10480,12 +10480,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "When carrying property for compensation under Part 107, the aircraft plus its payload must weigh:",
     "c": [
-      "less than 55 lb total",
-      "less than 250 grams only",
       "under 100 lb total",
+      "less than 250 grams only",
+      "less than 55 lb total",
       "exactly 55 lb"
     ],
-    "a": 0,
+    "a": 2,
     "e": "The combined weight of the aircraft and its cargo must stay under 55 lb, and no hazardous materials may be carried.",
     "b": "Regulations"
   },
@@ -10509,9 +10509,9 @@ QUESTIONS_JSON = r'''[
     "q": "After passing the knowledge test and vetting, an applicant first receives a:",
     "c": [
       "temporary certificate valid 120 days",
-      "permanent plastic card issued instantly",
       "one-flight-only permit",
-      "lifetime medical card"
+      "lifetime medical card",
+      "permanent plastic card issued instantly"
     ],
     "a": 0,
     "e": "A temporary remote pilot certificate is issued (valid 120 days) while the permanent certificate is processed and mailed.",
@@ -10524,8 +10524,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "by mail after security vetting",
       "at the test center on the spot",
-      "by the drone's seller",
-      "only after 100 flights"
+      "only after 100 flights",
+      "by the drone's seller"
     ],
     "a": 0,
     "e": "The FAA mails the permanent certificate after the TSA security background check is complete.",
@@ -10536,12 +10536,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "Compared with the initial test, the required recurrent training is:",
     "c": [
-      "free and taken online",
-      "longer and in person",
       "a paid retake at a center",
-      "a supervised flight test"
+      "longer and in person",
+      "a supervised flight test",
+      "free and taken online"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Recurrent training is a free online course taken every 24 calendar months, unlike the in-person, proctored initial test.",
     "b": "Regulations"
   },
@@ -10550,12 +10550,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "During an in-flight emergency that requires immediate action, the remote PIC may:",
     "c": [
-      "deviate from Part 107 as far as needed",
-      "hand the controls over to any bystander",
       "never depart from any rule",
-      "only descend, nothing else"
+      "hand the controls over to any bystander",
+      "only descend, nothing else",
+      "deviate from Part 107 as far as needed"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Under 107.21 the remote PIC may deviate from any Part 107 rule to the extent necessary to meet an in-flight emergency.",
     "b": "Regulations"
   },
@@ -10564,12 +10564,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "After deviating from the rules for an emergency, the remote PIC must, if the FAA asks:",
     "c": [
+      "surrender the certificate",
       "send a written report of the deviation",
       "immediately ground the drone for a whole year",
-      "pay an automatic fine",
-      "surrender the certificate"
+      "pay an automatic fine"
     ],
-    "a": 0,
+    "a": 1,
     "e": "If the Administrator requests it, the pilot must submit a written report explaining the emergency deviation.",
     "b": "Regulations"
   },
@@ -10579,9 +10579,9 @@ QUESTIONS_JSON = r'''[
     "q": "On request during an operation, the remote PIC must present the certificate and:",
     "c": [
       "make the aircraft available for inspection",
-      "provide the original dated sales receipt too",
       "pay an inspection fee",
-      "show a pilot logbook only"
+      "show a pilot logbook only",
+      "provide the original dated sales receipt too"
     ],
     "a": 0,
     "e": "The pilot must present the certificate and identification and make the aircraft available to the FAA for inspection or testing.",
@@ -10592,12 +10592,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "Refusing to submit to an FAA-requested test for drugs or alcohol can result in:",
     "c": [
-      "denial or suspension of the certificate",
       "only a brief informal spoken verbal warning",
+      "denial or suspension of the certificate",
       "an automatic waiver",
       "a longer flight time"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Refusal to take a required drug or alcohol test is grounds for denying an application or suspending the certificate.",
     "b": "Regulations"
   },
@@ -10607,9 +10607,9 @@ QUESTIONS_JSON = r'''[
     "q": "Part 107 does NOT apply to:",
     "c": [
       "amateur rockets and moored balloons",
-      "routine commercial aerial mapping flights",
       "aerial photos for pay",
-      "survey drones over farms"
+      "survey drones over farms",
+      "routine commercial aerial mapping flights"
     ],
     "a": 0,
     "e": "Part 107 excludes amateur rockets, moored balloons and kites, air-carrier operations, and model aircraft flown under Section 44809.",
@@ -10621,9 +10621,9 @@ QUESTIONS_JSON = r'''[
     "q": "A small unmanned aircraft is defined as one weighing:",
     "c": [
       "less than 55 lb",
+      "more than 55 lb",
       "less than 5 lb",
-      "less than 250 lb",
-      "more than 55 lb"
+      "less than 250 lb"
     ],
     "a": 0,
     "e": "A small unmanned aircraft weighs less than 55 lb, including everything on board at take-off.",
@@ -10635,9 +10635,9 @@ QUESTIONS_JSON = r'''[
     "q": "Which of these Part 107 rules may be waived?",
     "c": [
       "operating over people",
-      "the registration rule",
+      "the careless-operation ban",
       "the Remote ID rule",
-      "the careless-operation ban"
+      "the registration rule"
     ],
     "a": 0,
     "e": "Operating over people (and rules like visual line of sight and night) can be waived; registration, Remote ID, and careless operation cannot.",
@@ -10648,12 +10648,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.D",
     "q": "A pilot who wants to operate two drones at once would need a waiver of the rule requiring:",
     "c": [
-      "one aircraft per remote pilot",
-      "daylight-only flight operations",
       "a visual observer",
-      "a written checklist"
+      "daylight-only flight operations",
+      "a written checklist",
+      "one aircraft per remote pilot"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Part 107 limits a remote pilot to one aircraft at a time, so simultaneous multi-aircraft operations require a waiver.",
     "b": "Regulations"
   },
@@ -10662,12 +10662,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "A recreational flyer under Section 44809 must fly within the safety guidelines of:",
     "c": [
-      "a recognized community-based organization",
       "any random online drone discussion forum group",
-      "the local police department",
-      "the drone's warranty card"
+      "the drone's warranty card",
+      "a recognized community-based organization",
+      "the local police department"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Recreational flyers must operate within the safety guidelines of an FAA-recognized community-based organization.",
     "b": "Regulations"
   },
@@ -10677,9 +10677,9 @@ QUESTIONS_JSON = r'''[
     "q": "To fly recreationally in controlled airspace under 44809, the flyer must:",
     "c": [
       "get authorization, such as through LAANC",
-      "simply stay under 400 ft for the whole flight",
       "call the airport by phone",
-      "avoid it only on weekends"
+      "avoid it only on weekends",
+      "simply stay under 400 ft for the whole flight"
     ],
     "a": 0,
     "e": "Recreational flights in controlled airspace still require prior authorization, commonly obtained through LAANC.",
@@ -10690,12 +10690,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.A",
     "q": "A person without a remote pilot certificate may fly a Part 107 operation only if:",
     "c": [
-      "a certificated remote PIC supervises",
       "they have read the entire manual once through",
-      "they are over age 21",
-      "they fly below 100 ft"
+      "they fly below 100 ft",
+      "a certificated remote PIC supervises",
+      "they are over age 21"
     ],
-    "a": 0,
+    "a": 2,
     "e": "An uncertificated person may manipulate the controls only under the direct supervision of a certificated remote PIC who can take over.",
     "b": "Regulations"
   },
@@ -10704,12 +10704,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.I.B",
     "q": "Under Part 107, carrying hazardous materials as cargo is:",
     "c": [
-      "prohibited",
+      "allowed intrastate only",
       "allowed under 55 lb",
-      "allowed with a waiver",
-      "allowed intrastate only"
+      "prohibited",
+      "allowed with a waiver"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Part 107 flatly prohibits the carriage of hazardous materials, regardless of weight or waivers.",
     "b": "Regulations"
   },
@@ -10718,9 +10718,9 @@ QUESTIONS_JSON = r'''[
     "q": "For long-term storage, a lithium-polymer pack is healthiest kept at roughly:",
     "c": [
       "a half charge, near 3.8V per cell",
+      "exactly 1 percent",
       "a full charge, 4.2V per cell, always",
-      "fully drained to 0V",
-      "exactly 1 percent"
+      "fully drained to 0V"
     ],
     "a": 0,
     "e": "LiPo packs last longest stored at about half charge (near 3.8V per cell), not full and not empty.",
@@ -10731,12 +10731,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Care",
     "q": "Leaving a lithium battery fully discharged for a long time will:",
     "c": [
-      "damage the cells",
+      "balance the cells",
       "recharge them faster",
       "improve capacity",
-      "balance the cells"
+      "damage the cells"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Deep discharge and long storage while empty can permanently damage lithium cells, so store them partly charged.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10747,8 +10747,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "keep all cells at equal voltage",
       "charge the whole pack much faster",
-      "add extra capacity",
-      "cool the pack down"
+      "cool the pack down",
+      "add extra capacity"
     ],
     "a": 0,
     "e": "Balance charging equalizes the individual cell voltages, which keeps the pack healthy and prevents a weak cell.",
@@ -10761,8 +10761,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "isolated in a fireproof container",
       "charged once more, just to test it out",
-      "flown until fully dead",
-      "stored with good packs"
+      "stored with good packs",
+      "flown until fully dead"
     ],
     "a": 0,
     "e": "Damaged or puffed lithium packs are a fire risk and should be isolated in a fireproof container and disposed of properly.",
@@ -10773,12 +10773,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Care",
     "q": "Charging a lithium battery when it is below freezing can:",
     "c": [
-      "permanently damage the cells",
       "speed up the whole charge safely",
+      "balance the pack",
       "increase its capacity",
-      "balance the pack"
+      "permanently damage the cells"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Charging a lithium pack below freezing harms the cells, so let a cold battery warm up before charging.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10788,9 +10788,9 @@ QUESTIONS_JSON = r'''[
     "q": "A hot battery just landed from a demanding flight should be:",
     "c": [
       "allowed to cool before charging",
+      "flown again at once",
       "charged immediately at high rate",
-      "submerged in water",
-      "flown again at once"
+      "submerged in water"
     ],
     "a": 0,
     "e": "Let a hot pack cool to a safe temperature before charging; charging while hot stresses the cells.",
@@ -10801,12 +10801,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Capacity",
     "q": "The capacity of a drone battery is rated in:",
     "c": [
-      "milliamp-hours (mAh)",
+      "lumens",
       "engine horsepower units",
       "decibels",
-      "lumens"
+      "milliamp-hours (mAh)"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Battery capacity is given in milliamp-hours (mAh); more mAh means more stored charge and, usually, more flight time.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10817,8 +10817,8 @@ QUESTIONS_JSON = r'''[
     "c": [
       "voltage, giving watt-hours",
       "its total weight, giving pounds",
-      "age, giving cycles",
-      "color, giving watts"
+      "color, giving watts",
+      "age, giving cycles"
     ],
     "a": 0,
     "e": "Capacity (in amp-hours) times voltage gives watt-hours of energy, a useful figure for estimating endurance.",
@@ -10829,12 +10829,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Capacity",
     "q": "Choosing a higher-capacity (more mAh) battery usually means:",
     "c": [
-      "longer flight but more weight",
+      "no change at all",
       "longer flight and less weight",
-      "shorter flight time",
-      "no change at all"
+      "longer flight but more weight",
+      "shorter flight time"
     ],
-    "a": 0,
+    "a": 2,
     "e": "A larger-capacity pack stores more energy for longer flights but weighs more, which eats into the gain.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10844,9 +10844,9 @@ QUESTIONS_JSON = r'''[
     "q": "Because of the wind gradient, wind near launch height is usually:",
     "c": [
       "weaker than the wind higher up",
+      "always calm",
       "stronger than the wind aloft",
-      "exactly the same at all heights",
-      "always calm"
+      "exactly the same at all heights"
     ],
     "a": 0,
     "e": "Surface friction slows the wind near the ground, so expect stronger wind as the aircraft climbs.",
@@ -10857,12 +10857,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "Hovering very close to a wall or in a tight corner can be unstable because of:",
     "c": [
+      "colder air",
       "recirculating rotor wash",
-      "a much stronger GPS signal",
       "reduced weight",
-      "colder air"
+      "a much stronger GPS signal"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Rotor wash bouncing off nearby surfaces recirculates through the props, disturbing the airflow and the hover.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10872,9 +10872,9 @@ QUESTIONS_JSON = r'''[
     "q": "Bolting on a large, non-streamlined payload will most affect performance by:",
     "c": [
       "adding drag that cuts speed and range",
+      "boosting climb rate",
       "greatly reducing the aircraft's total weight",
-      "cooling the motors",
-      "boosting climb rate"
+      "cooling the motors"
     ],
     "a": 0,
     "e": "A bulky external payload adds aerodynamic drag, lowering top speed and shortening endurance beyond the weight penalty alone.",
@@ -10886,9 +10886,9 @@ QUESTIONS_JSON = r'''[
     "q": "Holding sustained full throttle, such as a long hard climb, mainly risks:",
     "c": [
       "overheating the motors and ESCs",
-      "cooling the battery pack down nicely",
+      "extending flight time",
       "adding lift for free",
-      "extending flight time"
+      "cooling the battery pack down nicely"
     ],
     "a": 0,
     "e": "Prolonged maximum output builds heat in the motors and speed controllers, which can lead to thermal shutdown or damage.",
@@ -10899,12 +10899,12 @@ QUESTIONS_JSON = r'''[
     "s": "Weight and Balance",
     "q": "A 2 lb payload mounted 6 inches from the reference point produces a moment of:",
     "c": [
-      "12 inch-pounds",
-      "3 inch-pounds",
       "8 inch-pounds",
-      "0.3 inch-pounds"
+      "0.3 inch-pounds",
+      "3 inch-pounds",
+      "12 inch-pounds"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Moment equals weight times arm, so 2 lb times 6 inches is 12 inch-pounds.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10913,12 +10913,12 @@ QUESTIONS_JSON = r'''[
     "s": "Weight and Balance",
     "q": "The center of gravity stays within limits as long as the aircraft's total:",
     "c": [
-      "moment stays within the envelope",
+      "payload is symmetrical only",
       "battery is completely fully charged",
       "weight is under 55 lb only",
-      "payload is symmetrical only"
+      "moment stays within the envelope"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Balance depends on the total moment; if it falls within the manufacturer's envelope, the CG is within limits.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10927,12 +10927,12 @@ QUESTIONS_JSON = r'''[
     "s": "Center of Gravity",
     "q": "Adding a camera on the nose of a multirotor shifts the center of gravity:",
     "c": [
+      "not at all",
       "forward",
       "aft",
-      "straight up",
-      "not at all"
+      "straight up"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A nose-mounted camera moves the CG forward, which the aircraft offsets by tilting and working some motors harder.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10955,12 +10955,12 @@ QUESTIONS_JSON = r'''[
     "s": "Pressure Altitude",
     "q": "On a standard day at sea level, pressure altitude is about:",
     "c": [
+      "impossible to know",
       "equal to the field elevation",
-      "roughly 10,000 ft higher than that",
       "below sea level",
-      "impossible to know"
+      "roughly 10,000 ft higher than that"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Under standard conditions, pressure altitude closely matches true or field elevation.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10969,12 +10969,12 @@ QUESTIONS_JSON = r'''[
     "s": "Density Altitude",
     "q": "On a hot day, density altitude compared with pressure altitude is:",
     "c": [
-      "higher",
       "lower",
+      "higher",
       "exactly equal",
       "always zero"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Heat thins the air, so density altitude rises above pressure altitude, worsening performance.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10983,12 +10983,12 @@ QUESTIONS_JSON = r'''[
     "s": "Battery Care",
     "q": "For transport and storage, lithium packs are safest carried at:",
     "c": [
-      "a partial storage charge",
+      "any charge, it is irrelevant",
       "a full charge always",
-      "completely empty",
-      "any charge, it is irrelevant"
+      "a partial storage charge",
+      "completely empty"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Carrying and storing lithium packs at a partial storage charge lowers the fire risk and preserves cell health.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -10998,8 +10998,8 @@ QUESTIONS_JSON = r'''[
     "q": "A single weak or unbalanced cell in a pack can cause:",
     "c": [
       "a sudden mid-flight power drop",
-      "noticeably longer overall flight times",
       "cooler operation",
+      "noticeably longer overall flight times",
       "stronger GPS lock"
     ],
     "a": 0,
@@ -11011,12 +11011,12 @@ QUESTIONS_JSON = r'''[
     "s": "Performance",
     "q": "As air density falls, a fixed-pitch propeller at the same RPM produces:",
     "c": [
-      "less thrust",
-      "more thrust",
+      "negative thrust",
       "the same thrust",
-      "negative thrust"
+      "less thrust",
+      "more thrust"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Thinner air gives the propeller less to push against, so thrust drops at a given RPM as density falls.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -11025,12 +11025,12 @@ QUESTIONS_JSON = r'''[
     "s": "Maneuverability",
     "q": "A heavier drone changing direction quickly will:",
     "c": [
-      "carry more momentum and turn wider",
-      "stop almost instantly on a dime every time",
+      "become more agile",
       "need less power",
-      "become more agile"
+      "carry more momentum and turn wider",
+      "stop almost instantly on a dime every time"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Greater mass means more momentum, so a heavy drone turns and stops less sharply and needs earlier inputs.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -11039,12 +11039,12 @@ QUESTIONS_JSON = r'''[
     "s": "Preflight",
     "q": "Before charging, a lithium pack should always be:",
     "c": [
+      "shaken to mix cells",
       "inspected for swelling or damage",
       "fully drained down to zero volts first",
-      "warmed in an oven",
-      "shaken to mix cells"
+      "warmed in an oven"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Inspect each pack for puffing, dents, or damage before charging; a compromised pack can ignite while charging.",
     "acs": "UA.IV.A",
     "b": "Loading"
@@ -11054,12 +11054,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "An Air Defense Identification Zone (ADIZ), usually near borders or coasts, is an area where aircraft must:",
     "c": [
-      "be identified for national security",
-      "fly only during the late nighttime hours",
       "ignore all NOTAMs",
-      "exceed 400 ft AGL"
+      "exceed 400 ft AGL",
+      "fly only during the late nighttime hours",
+      "be identified for national security"
     ],
-    "a": 0,
+    "a": 3,
     "e": "An ADIZ requires aircraft to be readily identified in the interest of national security, typically along coastlines and borders.",
     "b": "Airspace"
   },
@@ -11068,12 +11068,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Regarding ADS-B Out, a small drone under Part 107 is:",
     "c": [
-      "generally not required to broadcast it",
       "strictly required to broadcast it at all times",
-      "banned from any radio use",
-      "required to carry radar"
+      "required to carry radar",
+      "generally not required to broadcast it",
+      "banned from any radio use"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Drones are generally not required to have ADS-B Out and are discouraged from equipping it, to avoid cluttering the system.",
     "b": "Airspace"
   },
@@ -11082,12 +11082,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "An FDC NOTAM most often carries:",
     "c": [
-      "regulatory information such as TFRs",
-      "the local coffee-shop daily opening hours",
       "runway paint colors",
-      "pilot birthdays"
+      "pilot birthdays",
+      "the local coffee-shop daily opening hours",
+      "regulatory information such as TFRs"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Flight Data Center (FDC) NOTAMs contain regulatory information, including temporary flight restrictions and chart amendments.",
     "b": "Airspace"
   },
@@ -11097,8 +11097,8 @@ QUESTIONS_JSON = r'''[
     "q": "Compared with a local NOTAM, a distant (D) NOTAM covers information that is:",
     "c": [
       "distributed beyond the local area",
-      "meant strictly for the tower staff only",
       "never relevant to drones",
+      "meant strictly for the tower staff only",
       "hidden from the public"
     ],
     "a": 0,
@@ -11110,12 +11110,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A temporary flight restriction may also be issued around:",
     "c": [
-      "a space launch or reentry",
-      "every single public city park",
       "all farmland",
-      "any parking lot"
+      "any parking lot",
+      "every single public city park",
+      "a space launch or reentry"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Space launch and reentry operations can trigger a TFR, along with disasters, hazards, sporting events, and VIP movements.",
     "b": "Airspace"
   },
@@ -11124,12 +11124,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "The Mode C veil is a 30 NM ring around a busy Class B airport where manned aircraft generally need a:",
     "c": [
-      "transponder",
+      "weather radar",
       "parachute",
-      "second engine",
-      "weather radar"
+      "transponder",
+      "second engine"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Within the 30 NM Mode C veil, manned aircraft need an operating transponder; it is a manned-aircraft rule, not a drone rule.",
     "b": "Airspace"
   },
@@ -11138,12 +11138,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "The DC Flight Restricted Zone (FRZ), inside the Washington SFRA, is an area where drone flight is:",
     "c": [
+      "limited to night hours",
       "prohibited without special approval",
       "freely allowed anywhere below 400 ft",
-      "open only on weekends",
-      "limited to night hours"
+      "open only on weekends"
     ],
-    "a": 0,
+    "a": 1,
     "e": "The DC FRZ is highly restricted; drone operations there require special authorization and are otherwise effectively banned.",
     "b": "Airspace"
   },
@@ -11153,9 +11153,9 @@ QUESTIONS_JSON = r'''[
     "q": "Class A airspace runs from 18,000 ft MSL up to:",
     "c": [
       "FL600 (about 60,000 ft)",
-      "only about 20,000 ft up there",
       "the surface",
-      "10,000 ft"
+      "10,000 ft",
+      "only about 20,000 ft up there"
     ],
     "a": 0,
     "e": "Class A extends from 18,000 ft MSL to FL600; it is IFR-only, so a Part 107 drone never operates there.",
@@ -11166,12 +11166,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Where not otherwise designated, Class E airspace begins by default at:",
     "c": [
-      "14,500 ft MSL",
+      "60,000 ft MSL",
       "400 ft AGL",
-      "the surface everywhere",
-      "60,000 ft MSL"
+      "14,500 ft MSL",
+      "the surface everywhere"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Absent a lower floor shown on the chart, Class E starts at 14,500 ft MSL across much of the country.",
     "b": "Airspace"
   },
@@ -11180,12 +11180,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "The layered, tiered shape of Class B airspace is often described as:",
     "c": [
-      "an upside-down wedding cake",
       "a single wide flat ring shape",
       "a tall thin tower",
-      "a flat pancake"
+      "a flat pancake",
+      "an upside-down wedding cake"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Class B is built from stacked shelves that widen with altitude, resembling an upside-down wedding cake.",
     "b": "Airspace"
   },
@@ -11194,12 +11194,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A typical Class C surface core has a radius of about:",
     "c": [
-      "5 nautical miles",
       "50 nautical miles",
-      "1 nautical mile",
-      "20 nautical miles"
+      "20 nautical miles",
+      "5 nautical miles",
+      "1 nautical mile"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Class C usually has a 5 NM surface core and a 10 NM shelf, up to about 4,000 ft above the airport.",
     "b": "Airspace"
   },
@@ -11208,12 +11208,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Class D airspace around a towered airport typically has a radius of about:",
     "c": [
+      "15 nautical miles",
       "4 nautical miles",
       "40 nautical miles",
-      "half a nautical mile",
-      "15 nautical miles"
+      "half a nautical mile"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Class D is usually a single circle of roughly 4 NM around a towered field, up to about 2,500 ft above it.",
     "b": "Airspace"
   },
@@ -11222,12 +11222,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Flying near a charted Alert Area, a pilot should expect:",
     "c": [
-      "a high volume of pilot training",
+      "guaranteed calm air",
       "absolutely no other aircraft ever",
-      "a total flight ban",
-      "guaranteed calm air"
+      "a high volume of pilot training",
+      "a total flight ban"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Alert Areas warn of a high volume of pilot training or unusual activity; no clearance is needed, but stay vigilant.",
     "b": "Airspace"
   },
@@ -11236,12 +11236,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A hazard or disaster TFR (under 91.137) is meant to:",
     "c": [
-      "keep aircraft clear of the incident",
       "open the whole area up to all flights",
+      "keep aircraft clear of the incident",
       "speed up news coverage",
       "cancel nearby NOTAMs"
     ],
-    "a": 0,
+    "a": 1,
     "e": "These TFRs protect responders and aircraft by keeping traffic away from disasters, hazards, and relief operations.",
     "b": "Airspace"
   },
@@ -11250,12 +11250,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Current temporary flight restrictions are best checked at:",
     "c": [
-      "tfr.faa.gov or a NOTAM briefing",
-      "a live weather radar loop image only",
       "a road-traffic map",
+      "a live weather radar loop image only",
+      "tfr.faa.gov or a NOTAM briefing",
       "last month's chart"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Active TFRs are published as NOTAMs and shown at tfr.faa.gov and in apps like B4UFLY; always check before flying.",
     "b": "Airspace"
   },
@@ -11265,9 +11265,9 @@ QUESTIONS_JSON = r'''[
     "q": "Which of these is a type of special use airspace?",
     "c": [
       "a Military Operations Area",
-      "a standard traffic pattern leg",
       "a Victor airway",
-      "a runway apron"
+      "a runway apron",
+      "a standard traffic pattern leg"
     ],
     "a": 0,
     "e": "Special use airspace includes MOAs, restricted, prohibited, warning, alert areas, controlled firing areas, and NSAs.",
@@ -11278,12 +11278,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "P-56, near the U.S. Capitol and White House, is an example of:",
     "c": [
-      "a prohibited area",
-      "a charted Victor airway",
       "an alert area",
-      "a warning area"
+      "a warning area",
+      "a charted Victor airway",
+      "a prohibited area"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Prohibited areas like P-56 ban flight entirely for security; they differ from restricted areas, which vary with activity.",
     "b": "Airspace"
   },
@@ -11292,12 +11292,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "LAANC gives near-instant authorization at participating airports, but at fields it does not cover you must:",
     "c": [
+      "stay below 50 ft",
       "use a manual FAA DroneZone request",
-      "fly without any authorization at all",
       "only fly at night",
-      "stay below 50 ft"
+      "fly without any authorization at all"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Where LAANC is unavailable, request authorization manually through the FAA DroneZone portal, which takes longer.",
     "b": "Airspace"
   },
@@ -11306,12 +11306,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A UAS Facility Map grid value of 0 for an area means LAANC will:",
     "c": [
+      "approve only at night",
       "not auto-approve any altitude there",
-      "approve any altitude at all instantly",
       "approve exactly 400 ft",
-      "approve only at night"
+      "approve any altitude at all instantly"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A grid value of 0 means no automatic LAANC approval is available there, so a manual authorization request is needed.",
     "b": "Airspace"
   },
@@ -11334,12 +11334,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.B",
     "q": "Victor airways charted in blue on a sectional are actually a form of:",
     "c": [
+      "Class A airspace",
       "Class E airspace",
-      "Class B airspace",
       "restricted airspace",
-      "Class A airspace"
+      "Class B airspace"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Victor airways are low-altitude Class E routes defined by VOR radials, drawn as blue lines on the sectional.",
     "b": "Airspace"
   },
@@ -11348,12 +11348,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Over a charted National Security Area, pilots are asked to:",
     "c": [
+      "climb above 400 ft",
       "voluntarily avoid flying",
       "land the aircraft immediately",
-      "climb above 400 ft",
       "broadcast on 121.5"
     ],
-    "a": 0,
+    "a": 1,
     "e": "A National Security Area requests voluntary avoidance; flight can be temporarily prohibited by NOTAM when needed.",
     "b": "Airspace"
   },
@@ -11362,12 +11362,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "A Warning Area differs from a Restricted Area mainly in that it lies:",
     "c": [
-      "over international waters",
       "directly over busy city centers",
       "inside Class D",
-      "along every highway"
+      "along every highway",
+      "over international waters"
     ],
-    "a": 0,
+    "a": 3,
     "e": "Warning Areas sit over international waters beyond 3 NM offshore, so the U.S. cannot designate them as restricted.",
     "b": "Airspace"
   },
@@ -11376,12 +11376,12 @@ QUESTIONS_JSON = r'''[
     "acs": "UA.II.A",
     "q": "Most Part 107 flights away from airports take place in which airspace?",
     "c": [
-      "Class G",
-      "Class A",
       "Class B",
+      "Class A",
+      "Class G",
       "Class R"
     ],
-    "a": 0,
+    "a": 2,
     "e": "Below the Class E floor and away from airports, operations are in uncontrolled Class G, needing no ATC authorization.",
     "b": "Airspace"
   }
@@ -11410,6 +11410,15 @@ def _secret_key():
 
 
 app.secret_key = _secret_key()
+
+# Cookie hardening. Secure is off for local HTTP so login works in development;
+# set SESSION_COOKIE_SECURE=1 (or serve over HTTPS) to send cookies only over TLS.
+_SECURE_COOKIES = os.environ.get("SESSION_COOKIE_SECURE", "").strip().lower() in ("1", "true", "yes", "on")
+app.config.update(
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+    SESSION_COOKIE_SECURE=_SECURE_COOKIES,
+)
 
 # ---- Data -------------------------------------------------------------------
 QUESTIONS = json.loads(QUESTIONS_JSON)
@@ -11454,12 +11463,12 @@ EXAM_MIN = 120
 # the Airspace band. These are midpoints and are safe to tune; they need not
 # sum to exactly 1 (they are normalized at apportionment time).
 EXAM_BLUEPRINT = {
-    "Operations": 0.38,
+    "Operations": 0.36,
     "Regulations": 0.20,
     "Airspace": 0.16,
     "Weather": 0.12,
     "Loading": 0.08,
-    "Charts": 0.06,
+    "Charts": 0.08,
 }
 CODE_SUBTOPICS = {"METAR", "TAF", "Winds Aloft"}
 
@@ -11676,7 +11685,9 @@ def _load_state():
 @app.after_request
 def _persist_cookie(resp):
     try:
-        resp.set_cookie(COOKIE, g.uid, max_age=60 * 60 * 24 * 365, samesite="Lax")
+        resp.set_cookie(COOKIE, g.uid, max_age=60 * 60 * 24 * 365,
+                        samesite="Lax", httponly=True,
+                        secure=(_SECURE_COOKIES or request.is_secure))
     except Exception:
         pass
     return resp
