@@ -33,7 +33,7 @@
     "q": "To keep a remote pilot certificate current, the pilot must:",
     "c": [
       "Log 100 flight hours per year",
-      "Retake the proctored knowledge exam every 2 years",
+      "Retake the entire proctored knowledge exam in person every 2 years",
       "Complete free online recurrent training every 24 calendar months",
       "Renew the certificate annually with the FAA"
     ],
@@ -256,7 +256,7 @@
     "s": "Special Use",
     "q": "Flight in a Prohibited Area such as P-56 over the National Mall is:",
     "c": [
-      "Permitted with LAANC",
+      "Permitted with a LAANC authorization request",
       "Not permitted under any circumstances",
       "Permitted below 400 ft",
       "Permitted on weekends"
@@ -566,7 +566,7 @@
     "c": [
       "Reduced radio reception only",
       "Severe turbulence, lightning, hail, and violent wind shear",
-      "Reduced visibility with light turbulence",
+      "Slightly reduced visibility with only light, harmless turbulence",
       "Higher humidity and minor GPS drift"
     ],
     "a": 1,
@@ -608,7 +608,7 @@
     "c": [
       "The average of daily high and low",
       "The temperature at 500 ft AGL",
-      "The temperature at which ice crystals form",
+      "The exact temperature at which ice crystals begin to form aloft",
       "The temperature to which air must cool to become saturated"
     ],
     "a": 3,
@@ -704,7 +704,7 @@
     "s": "Careless Operation",
     "q": "Operating a small UAS in a careless or reckless manner:",
     "c": [
-      "Applies only to manned aircraft",
+      "Applies only to large manned aircraft, never drones",
       "Is allowed in Class G",
       "Is prohibited and can lead to certificate action",
       "Is fine if no one is hurt"
@@ -805,7 +805,7 @@
       "Has no effect",
       "Reduces available capacity and flight time",
       "Increases capacity",
-      "Permanently prevents arming"
+      "Permanently prevents the motors from arming at all"
     ],
     "a": 1,
     "e": "Cold slows battery chemistry, lowering usable capacity and shortening flight time.",
@@ -845,7 +845,7 @@
     "q": "Stable atmospheric conditions are usually associated with:",
     "c": [
       "Severe wind shear",
-      "Strong turbulence and towering cumulus",
+      "Strong turbulence, gusty winds, and towering cumulus clouds",
       "Rapidly building thunderstorms",
       "Smooth air, layered clouds, and often poorer visibility"
     ],
@@ -1126,7 +1126,7 @@
     "c": [
       "The prohibition on carrying hazardous materials",
       "Flight over people",
-      "Operation from a moving vehicle",
+      "Operation of the control station from a moving vehicle",
       "Beyond visual line of sight"
     ],
     "a": 0,
@@ -1238,7 +1238,7 @@
     "c": [
       "No one",
       "The manufacturer",
-      "Local police only",
+      "The local police department only, in person",
       "The FAA, within 10 calendar days"
     ],
     "a": 3,
@@ -1363,7 +1363,7 @@
     "q": "A Warning Area is generally located:",
     "c": [
       "Over open water, starting 3 NM off the coast",
-      "At airports without towers",
+      "At smaller airports that have no control towers",
       "Over major cities",
       "Inside Class B only"
     ],
@@ -1574,7 +1574,7 @@
     "c": [
       "Allowed only at night",
       "Effectively closed without special approval",
-      "Unrestricted under 400 ft",
+      "Completely unrestricted anywhere under 400 ft",
       "The same as any Class G"
     ],
     "a": 1,
@@ -1586,7 +1586,7 @@
     "s": "Floor and Ceiling",
     "q": "On a sectional, an airspace tag reading 40 over SFC means the airspace:",
     "c": [
-      "Requires 40 knots minimum",
+      "Requires a 40-knot minimum speed at all times",
       "Tops out at 400 ft",
       "Extends from the surface up to 4,000 ft MSL",
       "Is 40 NM wide"
@@ -1631,7 +1631,7 @@
       "Continue if below 400 ft",
       "Yield the right of way and maneuver clear",
       "Climb to be more visible",
-      "Hold position and altitude"
+      "Simply hold its current position and altitude"
     ],
     "a": 1,
     "e": "Small UAS always yield the right of way to manned aircraft, regardless of airspace class.",
@@ -1741,7 +1741,7 @@
     "q": "The light blue lines radiating between navigation aids on a sectional represent:",
     "c": [
       "State boundaries",
-      "Restricted area edges",
+      "The outer edges of nearby restricted areas",
       "Power lines",
       "Victor airways used by other aircraft"
     ],
@@ -1824,7 +1824,7 @@
     "s": "Obstacles",
     "q": "When two numbers are printed at an obstacle, such as 2049 with 449 below in parentheses, the top number is the:",
     "c": [
-      "Distance to the airport",
+      "The straight-line distance to the nearest airport",
       "Obstacle lighting code",
       "Height above ground",
       "Height of the top above mean sea level"
@@ -1852,7 +1852,7 @@
     "s": "METAR",
     "q": "In a METAR, the group 'A2992' is the:",
     "c": [
-      "Visibility of 29.92 miles",
+      "A ground visibility of exactly 29.92 statute miles",
       "Altimeter setting of 29.92 inches of mercury",
       "Temperature of 29 degrees",
       "Wind speed of 92 knots"
@@ -1923,7 +1923,7 @@
     "q": "The main difference between a METAR and a TAF is that:",
     "c": [
       "Both are forecasts",
-      "A METAR is a forecast and a TAF is observed",
+      "A METAR is always a forecast, while a TAF is the observed weather",
       "A METAR reports observed conditions, while a TAF is a forecast",
       "Both are observations"
     ],
@@ -2175,7 +2175,7 @@
     "q": "When a visual observer is used, the remote PIC and observer must:",
     "c": [
       "Maintain effective communication at all times",
-      "Use separate control stations",
+      "Always use two entirely separate control stations",
       "Each fly a different aircraft",
       "Stand at least 100 ft apart"
     ],
@@ -2370,7 +2370,7 @@
     "s": "CRM",
     "q": "Crew resource management for a Part 107 crew mainly involves:",
     "c": [
-      "Letting the most senior person decide everything",
+      "Letting the single most senior person present decide absolutely everything",
       "Avoiding any communication during flight",
       "Assigning all tasks to the visual observer",
       "Effectively using all available people, information, and equipment"
@@ -2412,7 +2412,7 @@
     "s": "Lost Link",
     "q": "A sound preflight plan should include what to do if:",
     "c": [
-      "The battery is fully charged",
+      "The battery happens to already be fully charged",
       "A bystander asks a question",
       "The control link or GPS is lost during flight",
       "The weather is perfect"
@@ -2454,7 +2454,7 @@
     "s": "Crew Briefing",
     "q": "Before a multi-person operation, the remote PIC should:",
     "c": [
-      "Wait until after launch to assign roles",
+      "Wait until well after the launch to begin assigning any roles",
       "Keep the plan private to avoid confusion",
       "Assign all decisions to the observer",
       "Brief everyone on roles, the plan, and emergency procedures"
@@ -2552,7 +2552,7 @@
     "s": "Error Chain",
     "q": "Most accidents result from:",
     "c": [
-      "Bad luck that cannot be managed",
+      "Pure bad luck that simply cannot be managed at all ever",
       "A chain of small errors rather than a single cause",
       "Always a single mechanical failure",
       "Only weather"
@@ -2610,7 +2610,7 @@
     "c": [
       "Increasing lift",
       "Having no effect",
-      "Cooling the motors for more power",
+      "Cooling the motors and giving them noticeably more power",
       "Lowering air density, which reduces lift and thrust"
     ],
     "a": 3,
@@ -2749,7 +2749,7 @@
     "q": "The best source for a specific drone's maximum payload and balance limits is:",
     "c": [
       "The manufacturer's operating documentation",
-      "A general internet forum",
+      "A general public internet discussion forum thread",
       "Another pilot's guess",
       "The sectional chart"
     ],
@@ -2931,7 +2931,7 @@
     "q": "A practical way to protect flight time in cold weather is to:",
     "c": [
       "Add extra payload",
-      "Warm the props before takeoff",
+      "Warm up the propellers thoroughly before takeoff",
       "Keep batteries warm until just before launch",
       "Fly with a nearly empty pack"
     ],
@@ -3042,7 +3042,7 @@
     "s": "Wind",
     "q": "On final approach in a gusty crosswind, the pilot should:",
     "c": [
-      "Add payload for stability",
+      "Add extra payload weight for more hover stability",
       "Slow down and be ready to abort the landing",
       "Descend as fast as possible",
       "Ignore the gusts"
@@ -3199,7 +3199,7 @@
       "Loses the certificate forever",
       "May not act as remote PIC until it is completed",
       "May fly for 6 more months",
-      "Must retake the proctored exam"
+      "Must retake the full proctored knowledge exam again"
     ],
     "a": 1,
     "e": "You must be current on recurrent training to act as remote PIC.",
@@ -3548,7 +3548,7 @@
     "c": [
       "Valid only for the surface",
       "Issued every 6 hours and valid for about 24 hours",
-      "Issued hourly and valid 2 hours",
+      "Issued every single hour and valid for only 2 hours",
       "A one-time annual forecast"
     ],
     "a": 1,
@@ -3686,7 +3686,7 @@
     "s": "Navigation",
     "q": "Latitude and longitude lines on a sectional are used to:",
     "c": [
-      "Show airspace classes",
+      "Show each of the different airspace classes",
       "Pinpoint a precise position on the chart",
       "Indicate wind direction",
       "Mark restricted areas"
@@ -3855,7 +3855,7 @@
     "q": "The antidote to the anti-authority attitude is to remind yourself:",
     "c": [
       "Do it quickly",
-      "It will not happen to me",
+      "It surely will not ever happen to me at all",
       "Follow the rules; they are usually right",
       "I can handle anything"
     ],
@@ -4346,7 +4346,7 @@
     "c": [
       "Required only at night",
       "Prohibited",
-      "Required before every flight",
+      "Strictly required by the rule before every flight",
       "Good practice, though not required by the rule"
     ],
     "a": 3,
@@ -4654,7 +4654,7 @@
     "c": [
       "Any bystander",
       "Only the FAA",
-      "The aircraft seller",
+      "The original aircraft seller or its dealer",
       "The FAA, NTSB, TSA, or law enforcement"
     ],
     "a": 3,
@@ -4751,7 +4751,7 @@
     "q": "The TRUST certificate:",
     "c": [
       "Replaces Part 107",
-      "Allows flight over people",
+      "Allows unrestricted flight directly over people",
       "Expires every year",
       "Does not authorize commercial operations"
     ],
@@ -4990,7 +4990,7 @@
     "c": [
       "It is immune to wind",
       "Wind improves its battery",
-      "Gusts only affect manned aircraft",
+      "Gusts only ever affect the larger manned aircraft nearby",
       "Its light weight makes it easier to push off course"
     ],
     "a": 3,
@@ -5297,7 +5297,7 @@
     "q": "Removing unnecessary payload before a flight will generally:",
     "c": [
       "Have no effect",
-      "Shorten flight time",
+      "Noticeably shorten the total flight time",
       "Improve climb and extend flight time",
       "Reduce stability"
     ],
@@ -5341,7 +5341,7 @@
       "Improve hover efficiency",
       "Drain the battery faster and reduce range",
       "Extend the range",
-      "Have no combined effect"
+      "Have no real combined effect on the flight at all"
     ],
     "a": 1,
     "e": "Payload and wind both raise power demand, so together they cut range and endurance sharply.",
@@ -5716,7 +5716,7 @@
     "s": "Maximum Weight",
     "q": "Part 107 applies to small unmanned aircraft weighing how much?",
     "c": [
-      "Less than 100 pounds",
+      "Less than a full 100 pounds in total weight",
       "Less than 25 pounds",
       "Less than 10 pounds",
       "Less than 55 pounds including payload"
@@ -5774,7 +5774,7 @@
     "c": [
       "In the manufacturer's published limits",
       "In the METAR",
-      "On the sectional chart",
+      "Printed on the sectional aeronautical chart",
       "In 14 CFR Part 107"
     ],
     "a": 0,
@@ -5886,7 +5886,7 @@
     "c": [
       "A solid blue line",
       "A solid green tint",
-      "A segmented blue line",
+      "A segmented, dashed blue boundary line",
       "A magenta hatched (brushed) boundary"
     ],
     "a": 3,
@@ -5954,7 +5954,7 @@
     "s": "Airspace Symbols",
     "q": "A faded magenta band (vignette) around an airport on a sectional indicates what?",
     "c": [
-      "Class E at the surface",
+      "Class E airspace beginning right at the surface",
       "Class E airspace beginning at 700 ft AGL",
       "Class D airspace",
       "Class B airspace"
@@ -6012,7 +6012,7 @@
     "c": [
       "Greatly improved visibility",
       "Strong vertical updrafts",
-      "Severe turbulence and thunderstorms",
+      "Severe turbulence and widespread heavy thunderstorms",
       "Stable air with reduced visibility near the surface"
     ],
     "a": 3,
@@ -6094,7 +6094,7 @@
     "s": "Battery Health",
     "q": "What should be done with a swollen lithium-polymer battery?",
     "c": [
-      "Keep flying it until it fails",
+      "Keep on flying it until it finally fails completely",
       "Remove it from service and dispose of it safely",
       "Fully charge it and reuse it",
       "Puncture it to release the gas"
@@ -6153,7 +6153,7 @@
       "Increased power draw",
       "Improved endurance and maneuverability",
       "Reduced stability",
-      "Lower battery voltage"
+      "A permanently lower resting battery voltage"
     ],
     "a": 1,
     "e": "Carrying less weight reduces power demand, improving endurance and maneuverability.",
@@ -6263,7 +6263,7 @@
     "q": "Where must the aircraft registration number be displayed?",
     "c": [
       "Only stored on a phone",
-      "Filed with local police",
+      "Filed only with the local police department",
       "On the exterior surface of the aircraft",
       "On the controller screen"
     ],
@@ -6402,7 +6402,7 @@
     "s": "Navigation",
     "q": "Which chart lines run true north and south?",
     "c": [
-      "Isogonic lines",
+      "Isogonic magnetic variation lines",
       "Contour lines",
       "Victor airways",
       "Lines of longitude (meridians)"
@@ -6419,7 +6419,7 @@
       "Low-level turbulence and bumpy air",
       "Smooth, stable air",
       "Widespread fog",
-      "Higher air density"
+      "Noticeably higher surface air density"
     ],
     "a": 0,
     "e": "Surface heating creates rising convective currents that cause low-level turbulence.",
@@ -6671,7 +6671,7 @@
       "suspension or revocation of the certificate",
       "a verbal warning only",
       "a $50 fine",
-      "no action if unintentional"
+      "no action at all if it was truly unintentional"
     ],
     "a": 0,
     "e": "Falsification, reproduction, or alteration of records is grounds for suspension or revocation of the certificate.",
@@ -6865,7 +6865,7 @@
     "q": "High density altitude (hot, high, and humid conditions) affects sUAS performance by",
     "c": [
       "improving lift and thrust",
-      "having no effect on electric drones",
+      "having absolutely no effect at all on electric drones",
       "increasing maximum altitude",
       "reducing performance because the air is less dense"
     ],
@@ -7018,7 +7018,7 @@
     "s": "Remote ID",
     "q": "When using a Remote ID broadcast module, the remote pilot must",
     "c": [
-      "use two control stations",
+      "use two completely separate control stations always",
       "keep the aircraft within visual line of sight",
       "fly only in Class G airspace",
       "stay below 100 feet"
@@ -7088,7 +7088,7 @@
     "s": "Over People",
     "q": "An sUAS that meets the requirements of more than one operations-over-people category",
     "c": [
-      "must be re-registered for each category",
+      "must be separately re-registered for each and every category",
       "is prohibited from flying over people",
       "may be operated under any category for which it qualifies",
       "must pick one category permanently"
@@ -7201,7 +7201,7 @@
     "q": "Near a non-towered airport, monitoring the common traffic advisory frequency (CTAF) helps a remote pilot",
     "c": [
       "stay aware of nearby manned aircraft operations",
-      "obtain an airspace authorization",
+      "automatically obtain a full airspace authorization",
       "extend flight time",
       "register the drone"
     ],
@@ -7482,7 +7482,7 @@
     "c": [
       "improves lift and thrust",
       "increases payload capacity",
-      "has no effect on rotorcraft",
+      "has no real measurable effect at all on rotorcraft",
       "reduces lift and thrust, degrading performance"
     ],
     "a": 3,
@@ -7523,7 +7523,7 @@
     "q": "In a METAR, 'SCT' reports a sky condition of",
     "c": [
       "clear",
-      "broken, 5/8 to 7/8",
+      "a broken cloud layer, 5/8 to 7/8 coverage",
       "scattered clouds, 3/8 to 4/8 coverage",
       "overcast"
     ],
@@ -7620,7 +7620,7 @@
     "s": "Emergency",
     "q": "After deviating from a rule to handle an in-flight emergency, the remote PIC must, upon FAA request,",
     "c": [
-      "retake the knowledge test",
+      "retake the entire proctored knowledge test",
       "submit a written report of the deviation",
       "pay a fine",
       "surrender the certificate"
