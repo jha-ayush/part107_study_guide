@@ -11024,5 +11024,341 @@
     "e": "Inspect each pack for puffing, dents, or damage before charging; a compromised pack can ignite while charging.",
     "acs": "UA.IV.A",
     "b": "Loading"
+  },
+  {
+    "s": "ADIZ",
+    "acs": "UA.II.A",
+    "q": "An Air Defense Identification Zone (ADIZ), usually near borders or coasts, is an area where aircraft must:",
+    "c": [
+      "be identified for national security",
+      "fly only during the late nighttime hours",
+      "ignore all NOTAMs",
+      "exceed 400 ft AGL"
+    ],
+    "a": 0,
+    "e": "An ADIZ requires aircraft to be readily identified in the interest of national security, typically along coastlines and borders.",
+    "b": "Airspace"
+  },
+  {
+    "s": "ADS-B",
+    "acs": "UA.II.A",
+    "q": "Regarding ADS-B Out, a small drone under Part 107 is:",
+    "c": [
+      "generally not required to broadcast it",
+      "strictly required to broadcast it at all times",
+      "banned from any radio use",
+      "required to carry radar"
+    ],
+    "a": 0,
+    "e": "Drones are generally not required to have ADS-B Out and are discouraged from equipping it, to avoid cluttering the system.",
+    "b": "Airspace"
+  },
+  {
+    "s": "NOTAM",
+    "acs": "UA.II.A",
+    "q": "An FDC NOTAM most often carries:",
+    "c": [
+      "regulatory information such as TFRs",
+      "the local coffee-shop daily opening hours",
+      "runway paint colors",
+      "pilot birthdays"
+    ],
+    "a": 0,
+    "e": "Flight Data Center (FDC) NOTAMs contain regulatory information, including temporary flight restrictions and chart amendments.",
+    "b": "Airspace"
+  },
+  {
+    "s": "NOTAM",
+    "acs": "UA.II.A",
+    "q": "Compared with a local NOTAM, a distant (D) NOTAM covers information that is:",
+    "c": [
+      "distributed beyond the local area",
+      "meant strictly for the tower staff only",
+      "never relevant to drones",
+      "hidden from the public"
+    ],
+    "a": 0,
+    "e": "Distant NOTAMs are distributed widely beyond the immediate area, unlike purely local notices.",
+    "b": "Airspace"
+  },
+  {
+    "s": "TFR",
+    "acs": "UA.II.A",
+    "q": "A temporary flight restriction may also be issued around:",
+    "c": [
+      "a space launch or reentry",
+      "every single public city park",
+      "all farmland",
+      "any parking lot"
+    ],
+    "a": 0,
+    "e": "Space launch and reentry operations can trigger a TFR, along with disasters, hazards, sporting events, and VIP movements.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Mode C Veil",
+    "acs": "UA.II.A",
+    "q": "The Mode C veil is a 30 NM ring around a busy Class B airport where manned aircraft generally need a:",
+    "c": [
+      "transponder",
+      "parachute",
+      "second engine",
+      "weather radar"
+    ],
+    "a": 0,
+    "e": "Within the 30 NM Mode C veil, manned aircraft need an operating transponder; it is a manned-aircraft rule, not a drone rule.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Special Flight Rules",
+    "acs": "UA.II.A",
+    "q": "The DC Flight Restricted Zone (FRZ), inside the Washington SFRA, is an area where drone flight is:",
+    "c": [
+      "prohibited without special approval",
+      "freely allowed anywhere below 400 ft",
+      "open only on weekends",
+      "limited to night hours"
+    ],
+    "a": 0,
+    "e": "The DC FRZ is highly restricted; drone operations there require special authorization and are otherwise effectively banned.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class A",
+    "acs": "UA.II.A",
+    "q": "Class A airspace runs from 18,000 ft MSL up to:",
+    "c": [
+      "FL600 (about 60,000 ft)",
+      "only about 20,000 ft up there",
+      "the surface",
+      "10,000 ft"
+    ],
+    "a": 0,
+    "e": "Class A extends from 18,000 ft MSL to FL600; it is IFR-only, so a Part 107 drone never operates there.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class E",
+    "acs": "UA.II.A",
+    "q": "Where not otherwise designated, Class E airspace begins by default at:",
+    "c": [
+      "14,500 ft MSL",
+      "400 ft AGL",
+      "the surface everywhere",
+      "60,000 ft MSL"
+    ],
+    "a": 0,
+    "e": "Absent a lower floor shown on the chart, Class E starts at 14,500 ft MSL across much of the country.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class B",
+    "acs": "UA.II.A",
+    "q": "The layered, tiered shape of Class B airspace is often described as:",
+    "c": [
+      "an upside-down wedding cake",
+      "a single wide flat ring shape",
+      "a tall thin tower",
+      "a flat pancake"
+    ],
+    "a": 0,
+    "e": "Class B is built from stacked shelves that widen with altitude, resembling an upside-down wedding cake.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class C",
+    "acs": "UA.II.A",
+    "q": "A typical Class C surface core has a radius of about:",
+    "c": [
+      "5 nautical miles",
+      "50 nautical miles",
+      "1 nautical mile",
+      "20 nautical miles"
+    ],
+    "a": 0,
+    "e": "Class C usually has a 5 NM surface core and a 10 NM shelf, up to about 4,000 ft above the airport.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class D",
+    "acs": "UA.II.A",
+    "q": "Class D airspace around a towered airport typically has a radius of about:",
+    "c": [
+      "4 nautical miles",
+      "40 nautical miles",
+      "half a nautical mile",
+      "15 nautical miles"
+    ],
+    "a": 0,
+    "e": "Class D is usually a single circle of roughly 4 NM around a towered field, up to about 2,500 ft above it.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Alert Area",
+    "acs": "UA.II.A",
+    "q": "Flying near a charted Alert Area, a pilot should expect:",
+    "c": [
+      "a high volume of pilot training",
+      "absolutely no other aircraft ever",
+      "a total flight ban",
+      "guaranteed calm air"
+    ],
+    "a": 0,
+    "e": "Alert Areas warn of a high volume of pilot training or unusual activity; no clearance is needed, but stay vigilant.",
+    "b": "Airspace"
+  },
+  {
+    "s": "TFR",
+    "acs": "UA.II.A",
+    "q": "A hazard or disaster TFR (under 91.137) is meant to:",
+    "c": [
+      "keep aircraft clear of the incident",
+      "open the whole area up to all flights",
+      "speed up news coverage",
+      "cancel nearby NOTAMs"
+    ],
+    "a": 0,
+    "e": "These TFRs protect responders and aircraft by keeping traffic away from disasters, hazards, and relief operations.",
+    "b": "Airspace"
+  },
+  {
+    "s": "TFR",
+    "acs": "UA.II.A",
+    "q": "Current temporary flight restrictions are best checked at:",
+    "c": [
+      "tfr.faa.gov or a NOTAM briefing",
+      "a live weather radar loop image only",
+      "a road-traffic map",
+      "last month's chart"
+    ],
+    "a": 0,
+    "e": "Active TFRs are published as NOTAMs and shown at tfr.faa.gov and in apps like B4UFLY; always check before flying.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Special Use",
+    "acs": "UA.II.A",
+    "q": "Which of these is a type of special use airspace?",
+    "c": [
+      "a Military Operations Area",
+      "a standard traffic pattern leg",
+      "a Victor airway",
+      "a runway apron"
+    ],
+    "a": 0,
+    "e": "Special use airspace includes MOAs, restricted, prohibited, warning, alert areas, controlled firing areas, and NSAs.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Prohibited Area",
+    "acs": "UA.II.A",
+    "q": "P-56, near the U.S. Capitol and White House, is an example of:",
+    "c": [
+      "a prohibited area",
+      "a charted Victor airway",
+      "an alert area",
+      "a warning area"
+    ],
+    "a": 0,
+    "e": "Prohibited areas like P-56 ban flight entirely for security; they differ from restricted areas, which vary with activity.",
+    "b": "Airspace"
+  },
+  {
+    "s": "LAANC",
+    "acs": "UA.II.A",
+    "q": "LAANC gives near-instant authorization at participating airports, but at fields it does not cover you must:",
+    "c": [
+      "use a manual FAA DroneZone request",
+      "fly without any authorization at all",
+      "only fly at night",
+      "stay below 50 ft"
+    ],
+    "a": 0,
+    "e": "Where LAANC is unavailable, request authorization manually through the FAA DroneZone portal, which takes longer.",
+    "b": "Airspace"
+  },
+  {
+    "s": "UAS Facility Map",
+    "acs": "UA.II.A",
+    "q": "A UAS Facility Map grid value of 0 for an area means LAANC will:",
+    "c": [
+      "not auto-approve any altitude there",
+      "approve any altitude at all instantly",
+      "approve exactly 400 ft",
+      "approve only at night"
+    ],
+    "a": 0,
+    "e": "A grid value of 0 means no automatic LAANC approval is available there, so a manual authorization request is needed.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Controlled Airspace",
+    "acs": "UA.II.A",
+    "q": "The classes of controlled airspace are:",
+    "c": [
+      "A, B, C, D, and E",
+      "only Class B and Class C",
+      "F and G",
+      "only D"
+    ],
+    "a": 0,
+    "e": "Controlled airspace comprises Classes A, B, C, D, and E; Class G is uncontrolled.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Victor Airways",
+    "acs": "UA.II.B",
+    "q": "Victor airways charted in blue on a sectional are actually a form of:",
+    "c": [
+      "Class E airspace",
+      "Class B airspace",
+      "restricted airspace",
+      "Class A airspace"
+    ],
+    "a": 0,
+    "e": "Victor airways are low-altitude Class E routes defined by VOR radials, drawn as blue lines on the sectional.",
+    "b": "Airspace"
+  },
+  {
+    "s": "National Security Area",
+    "acs": "UA.II.A",
+    "q": "Over a charted National Security Area, pilots are asked to:",
+    "c": [
+      "voluntarily avoid flying",
+      "land the aircraft immediately",
+      "climb above 400 ft",
+      "broadcast on 121.5"
+    ],
+    "a": 0,
+    "e": "A National Security Area requests voluntary avoidance; flight can be temporarily prohibited by NOTAM when needed.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Warning Area",
+    "acs": "UA.II.A",
+    "q": "A Warning Area differs from a Restricted Area mainly in that it lies:",
+    "c": [
+      "over international waters",
+      "directly over busy city centers",
+      "inside Class D",
+      "along every highway"
+    ],
+    "a": 0,
+    "e": "Warning Areas sit over international waters beyond 3 NM offshore, so the U.S. cannot designate them as restricted.",
+    "b": "Airspace"
+  },
+  {
+    "s": "Class G",
+    "acs": "UA.II.A",
+    "q": "Most Part 107 flights away from airports take place in which airspace?",
+    "c": [
+      "Class G",
+      "Class A",
+      "Class B",
+      "Class R"
+    ],
+    "a": 0,
+    "e": "Below the Class E floor and away from airports, operations are in uncontrolled Class G, needing no ATC authorization.",
+    "b": "Airspace"
   }
 ]
