@@ -10688,5 +10688,341 @@
     "a": 0,
     "e": "Part 107 flatly prohibits the carriage of hazardous materials, regardless of weight or waivers.",
     "b": "Regulations"
+  },
+  {
+    "s": "Battery Care",
+    "q": "For long-term storage, a lithium-polymer pack is healthiest kept at roughly:",
+    "c": [
+      "a half charge, near 3.8V per cell",
+      "a full charge, 4.2V per cell, always",
+      "fully drained to 0V",
+      "exactly 1 percent"
+    ],
+    "a": 0,
+    "e": "LiPo packs last longest stored at about half charge (near 3.8V per cell), not full and not empty.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Care",
+    "q": "Leaving a lithium battery fully discharged for a long time will:",
+    "c": [
+      "damage the cells",
+      "recharge them faster",
+      "improve capacity",
+      "balance the cells"
+    ],
+    "a": 0,
+    "e": "Deep discharge and long storage while empty can permanently damage lithium cells, so store them partly charged.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Care",
+    "q": "Balance charging a multi-cell lithium pack is done to:",
+    "c": [
+      "keep all cells at equal voltage",
+      "charge the whole pack much faster",
+      "add extra capacity",
+      "cool the pack down"
+    ],
+    "a": 0,
+    "e": "Balance charging equalizes the individual cell voltages, which keeps the pack healthy and prevents a weak cell.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Care",
+    "q": "A swollen or physically damaged lithium battery should be:",
+    "c": [
+      "isolated in a fireproof container",
+      "charged once more, just to test it out",
+      "flown until fully dead",
+      "stored with good packs"
+    ],
+    "a": 0,
+    "e": "Damaged or puffed lithium packs are a fire risk and should be isolated in a fireproof container and disposed of properly.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Care",
+    "q": "Charging a lithium battery when it is below freezing can:",
+    "c": [
+      "permanently damage the cells",
+      "speed up the whole charge safely",
+      "increase its capacity",
+      "balance the pack"
+    ],
+    "a": 0,
+    "e": "Charging a lithium pack below freezing harms the cells, so let a cold battery warm up before charging.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Care",
+    "q": "A hot battery just landed from a demanding flight should be:",
+    "c": [
+      "allowed to cool before charging",
+      "charged immediately at high rate",
+      "submerged in water",
+      "flown again at once"
+    ],
+    "a": 0,
+    "e": "Let a hot pack cool to a safe temperature before charging; charging while hot stresses the cells.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Capacity",
+    "q": "The capacity of a drone battery is rated in:",
+    "c": [
+      "milliamp-hours (mAh)",
+      "engine horsepower units",
+      "decibels",
+      "lumens"
+    ],
+    "a": 0,
+    "e": "Battery capacity is given in milliamp-hours (mAh); more mAh means more stored charge and, usually, more flight time.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Capacity",
+    "q": "To estimate stored energy, multiply the pack's capacity by its:",
+    "c": [
+      "voltage, giving watt-hours",
+      "its total weight, giving pounds",
+      "age, giving cycles",
+      "color, giving watts"
+    ],
+    "a": 0,
+    "e": "Capacity (in amp-hours) times voltage gives watt-hours of energy, a useful figure for estimating endurance.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Capacity",
+    "q": "Choosing a higher-capacity (more mAh) battery usually means:",
+    "c": [
+      "longer flight but more weight",
+      "longer flight and less weight",
+      "shorter flight time",
+      "no change at all"
+    ],
+    "a": 0,
+    "e": "A larger-capacity pack stores more energy for longer flights but weighs more, which eats into the gain.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Wind",
+    "q": "Because of the wind gradient, wind near launch height is usually:",
+    "c": [
+      "weaker than the wind higher up",
+      "stronger than the wind aloft",
+      "exactly the same at all heights",
+      "always calm"
+    ],
+    "a": 0,
+    "e": "Surface friction slows the wind near the ground, so expect stronger wind as the aircraft climbs.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Performance",
+    "q": "Hovering very close to a wall or in a tight corner can be unstable because of:",
+    "c": [
+      "recirculating rotor wash",
+      "a much stronger GPS signal",
+      "reduced weight",
+      "colder air"
+    ],
+    "a": 0,
+    "e": "Rotor wash bouncing off nearby surfaces recirculates through the props, disturbing the airflow and the hover.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Payload Drag",
+    "q": "Bolting on a large, non-streamlined payload will most affect performance by:",
+    "c": [
+      "adding drag that cuts speed and range",
+      "greatly reducing the aircraft's total weight",
+      "cooling the motors",
+      "boosting climb rate"
+    ],
+    "a": 0,
+    "e": "A bulky external payload adds aerodynamic drag, lowering top speed and shortening endurance beyond the weight penalty alone.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Performance",
+    "q": "Holding sustained full throttle, such as a long hard climb, mainly risks:",
+    "c": [
+      "overheating the motors and ESCs",
+      "cooling the battery pack down nicely",
+      "adding lift for free",
+      "extending flight time"
+    ],
+    "a": 0,
+    "e": "Prolonged maximum output builds heat in the motors and speed controllers, which can lead to thermal shutdown or damage.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Weight and Balance",
+    "q": "A 2 lb payload mounted 6 inches from the reference point produces a moment of:",
+    "c": [
+      "12 inch-pounds",
+      "3 inch-pounds",
+      "8 inch-pounds",
+      "0.3 inch-pounds"
+    ],
+    "a": 0,
+    "e": "Moment equals weight times arm, so 2 lb times 6 inches is 12 inch-pounds.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Weight and Balance",
+    "q": "The center of gravity stays within limits as long as the aircraft's total:",
+    "c": [
+      "moment stays within the envelope",
+      "battery is completely fully charged",
+      "weight is under 55 lb only",
+      "payload is symmetrical only"
+    ],
+    "a": 0,
+    "e": "Balance depends on the total moment; if it falls within the manufacturer's envelope, the CG is within limits.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Center of Gravity",
+    "q": "Adding a camera on the nose of a multirotor shifts the center of gravity:",
+    "c": [
+      "forward",
+      "aft",
+      "straight up",
+      "not at all"
+    ],
+    "a": 0,
+    "e": "A nose-mounted camera moves the CG forward, which the aircraft offsets by tilting and working some motors harder.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Pressure Altitude",
+    "q": "Pressure altitude is the altitude shown when the altimeter is set to:",
+    "c": [
+      "29.92 inches of mercury",
+      "the local altimeter setting",
+      "the field elevation",
+      "zero feet"
+    ],
+    "a": 0,
+    "e": "Pressure altitude is read with the altimeter set to the standard datum of 29.92 inches of mercury.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Pressure Altitude",
+    "q": "On a standard day at sea level, pressure altitude is about:",
+    "c": [
+      "equal to the field elevation",
+      "roughly 10,000 ft higher than that",
+      "below sea level",
+      "impossible to know"
+    ],
+    "a": 0,
+    "e": "Under standard conditions, pressure altitude closely matches true or field elevation.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Density Altitude",
+    "q": "On a hot day, density altitude compared with pressure altitude is:",
+    "c": [
+      "higher",
+      "lower",
+      "exactly equal",
+      "always zero"
+    ],
+    "a": 0,
+    "e": "Heat thins the air, so density altitude rises above pressure altitude, worsening performance.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Care",
+    "q": "For transport and storage, lithium packs are safest carried at:",
+    "c": [
+      "a partial storage charge",
+      "a full charge always",
+      "completely empty",
+      "any charge, it is irrelevant"
+    ],
+    "a": 0,
+    "e": "Carrying and storing lithium packs at a partial storage charge lowers the fire risk and preserves cell health.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Battery Health",
+    "q": "A single weak or unbalanced cell in a pack can cause:",
+    "c": [
+      "a sudden mid-flight power drop",
+      "noticeably longer overall flight times",
+      "cooler operation",
+      "stronger GPS lock"
+    ],
+    "a": 0,
+    "e": "An unbalanced or failing cell can sag hard under load and cause an abrupt loss of power, so balance and inspect packs.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Performance",
+    "q": "As air density falls, a fixed-pitch propeller at the same RPM produces:",
+    "c": [
+      "less thrust",
+      "more thrust",
+      "the same thrust",
+      "negative thrust"
+    ],
+    "a": 0,
+    "e": "Thinner air gives the propeller less to push against, so thrust drops at a given RPM as density falls.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Maneuverability",
+    "q": "A heavier drone changing direction quickly will:",
+    "c": [
+      "carry more momentum and turn wider",
+      "stop almost instantly on a dime every time",
+      "need less power",
+      "become more agile"
+    ],
+    "a": 0,
+    "e": "Greater mass means more momentum, so a heavy drone turns and stops less sharply and needs earlier inputs.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
+  },
+  {
+    "s": "Preflight",
+    "q": "Before charging, a lithium pack should always be:",
+    "c": [
+      "inspected for swelling or damage",
+      "fully drained down to zero volts first",
+      "warmed in an oven",
+      "shaken to mix cells"
+    ],
+    "a": 0,
+    "e": "Inspect each pack for puffing, dents, or damage before charging; a compromised pack can ignite while charging.",
+    "acs": "UA.IV.A",
+    "b": "Loading"
   }
 ]
