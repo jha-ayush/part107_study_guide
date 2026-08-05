@@ -10016,5 +10016,677 @@
     "e": "The data block packs the airport name, field elevation, lighting, longest runway, and the CTAF or tower frequency.",
     "acs": "UA.II.B",
     "b": "Charts"
+  },
+  {
+    "s": "Remote ID",
+    "acs": "UA.I.F",
+    "q": "A standard Remote ID drone broadcasts the control station location, while a broadcast module instead sends the:",
+    "c": [
+      "take-off location",
+      "landing location",
+      "home airport location",
+      "manufacturer's address"
+    ],
+    "a": 0,
+    "e": "A broadcast module transmits the take-off location, whereas standard Remote ID transmits the control station location.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Remote ID",
+    "acs": "UA.I.F",
+    "q": "Remote ID meets its requirement by:",
+    "c": [
+      "broadcasting over radio, no internet needed",
+      "streaming continuously over a cellular network",
+      "emailing a flight log",
+      "calling ATC by phone"
+    ],
+    "a": 0,
+    "e": "Remote ID is a local radio broadcast (such as Bluetooth or Wi-Fi); it does not need an internet or cellular connection.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Remote ID",
+    "acs": "UA.I.F",
+    "q": "Remote ID must broadcast during which part of the flight?",
+    "c": [
+      "from take-off to shutdown",
+      "only during the take-off roll",
+      "only when above 400 ft",
+      "only near airports"
+    ],
+    "a": 0,
+    "e": "The broadcast must run for the entire operation, from take-off until the aircraft shuts down.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Remote ID",
+    "acs": "UA.I.F",
+    "q": "The Remote ID rule applies to a drone that:",
+    "c": [
+      "is required to be registered",
+      "weighs under 250 grams and nothing more",
+      "is flown only indoors",
+      "has a camera"
+    ],
+    "a": 0,
+    "e": "Remote ID applies to drones that must be registered; under Part 107 that means essentially every aircraft.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Visual Line of Sight",
+    "acs": "UA.I.B",
+    "q": "To satisfy the visual-line-of-sight rule, the remote PIC may use:",
+    "c": [
+      "glasses or contacts, but not binoculars",
+      "powerful binoculars to greatly extend the view",
+      "a first-person-view headset alone",
+      "a telescope on a tripod"
+    ],
+    "a": 0,
+    "e": "Line of sight must be met with unaided vision, corrective lenses allowed; binoculars or an FPV headset do not satisfy it.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Visual Line of Sight",
+    "acs": "UA.I.B",
+    "q": "Under Part 107, the remote PIC ___ keep the aircraft within visual line of sight.",
+    "c": [
+      "must always",
+      "should usually",
+      "may occasionally",
+      "is advised to"
+    ],
+    "a": 0,
+    "e": "Visual line of sight is a firm requirement (must), not a recommendation, unless a waiver says otherwise.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "A small UAS ___ be flown over a person not participating unless an approved category or waiver applies.",
+    "c": [
+      "may not",
+      "may freely",
+      "must always",
+      "should sometimes"
+    ],
+    "a": 0,
+    "e": "Flight over non-participating people is prohibited unless the aircraft meets an over-people category or holds a waiver.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Night Operations",
+    "acs": "UA.I.B",
+    "q": "For Part 107 operations at night, anti-collision lighting is:",
+    "c": [
+      "required",
+      "recommended",
+      "optional",
+      "discouraged"
+    ],
+    "a": 0,
+    "e": "Anti-collision lighting visible for 3 statute miles is required at night, not merely recommended.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Moving Vehicle",
+    "acs": "UA.I.B",
+    "q": "Operating the control station from a moving vehicle is allowed only over a ___ area.",
+    "c": [
+      "sparsely populated",
+      "densely populated city",
+      "heavily trafficked",
+      "congested urban"
+    ],
+    "a": 0,
+    "e": "Operating from a moving vehicle is permitted only over sparsely populated areas, unless a waiver allows otherwise.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Right-of-Way",
+    "acs": "UA.I.B",
+    "q": "When a manned aircraft approaches, the remote PIC:",
+    "c": [
+      "must yield the right of way",
+      "may hold its altitude if it is higher",
+      "has the right of way",
+      "yields only if convenient"
+    ],
+    "a": 0,
+    "e": "The remote PIC must always give way to manned aircraft, yielding the right of way and staying clear.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Careless Operation",
+    "acs": "UA.I.D",
+    "q": "The prohibition on careless or reckless operation is:",
+    "c": [
+      "a rule that cannot be waived",
+      "waivable with a good reason",
+      "only a guideline",
+      "waived automatically at night"
+    ],
+    "a": 0,
+    "e": "The ban on careless or reckless operation is a core rule that is not waivable under Part 107.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Authorization vs Waiver",
+    "acs": "UA.I.D",
+    "q": "Permission to enter controlled airspace is called an airspace ___, not a waiver.",
+    "c": [
+      "authorization",
+      "exemption",
+      "registration",
+      "certification"
+    ],
+    "a": 0,
+    "e": "An airspace authorization grants access to controlled airspace; a waiver instead permits deviation from a specific rule.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Registration",
+    "acs": "UA.I.F",
+    "q": "A drone flown under Part 107 must be registered:",
+    "c": [
+      "before its first flight",
+      "within 30 days after flying",
+      "only if it crashes",
+      "after 10 flights"
+    ],
+    "a": 0,
+    "e": "Registration must be completed before the aircraft's first flight, not afterward.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Registration",
+    "acs": "UA.I.F",
+    "q": "The registration number on the aircraft must be:",
+    "c": [
+      "legible and readable without tools",
+      "concealed inside the battery bay only",
+      "visible only under UV light",
+      "engraved on the propeller"
+    ],
+    "a": 0,
+    "e": "The number must be marked on an exterior surface and readable without tools or opening any compartment.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Accident Reporting",
+    "acs": "UA.I.C",
+    "q": "The $500 accident-reporting threshold counts damage to property:",
+    "c": [
+      "other than the aircraft itself",
+      "including the small aircraft itself",
+      "only to the aircraft",
+      "only to the controller"
+    ],
+    "a": 0,
+    "e": "The threshold is $500 or more of damage to property other than the small unmanned aircraft.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Accident Reporting",
+    "acs": "UA.I.C",
+    "q": "A reportable Part 107 accident must be reported to the FAA within:",
+    "c": [
+      "10 calendar days",
+      "10 business hours",
+      "30 days",
+      "24 hours"
+    ],
+    "a": 0,
+    "e": "A reportable accident must be filed with the FAA within 10 calendar days of the event.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Drugs and Alcohol",
+    "acs": "UA.I.A",
+    "q": "Part 107 bars operating within how many hours of consuming alcohol?",
+    "c": [
+      "8 hours",
+      "12 hours",
+      "2 hours",
+      "24 hours"
+    ],
+    "a": 0,
+    "e": "A pilot may not operate within 8 hours of consuming alcohol, and never while impaired.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Drugs and Alcohol",
+    "acs": "UA.I.A",
+    "q": "A remote pilot may not operate with a blood alcohol concentration at or above:",
+    "c": [
+      "0.04 percent",
+      "0.08 percent",
+      "0.10 percent",
+      "0.02 percent"
+    ],
+    "a": 0,
+    "e": "The limit is a blood alcohol concentration of 0.04 percent or higher, lower than most driving limits.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Altitude Limit",
+    "acs": "UA.I.B",
+    "q": "The 400-foot Part 107 altitude limit is normally measured in feet:",
+    "c": [
+      "above ground level",
+      "above mean sea level",
+      "above the nearest airport",
+      "above the operator's head"
+    ],
+    "a": 0,
+    "e": "The 400-foot ceiling is above ground level, except that near a structure it is measured from the structure.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Operating Limits",
+    "acs": "UA.I.B",
+    "q": "The maximum groundspeed allowed under Part 107 is:",
+    "c": [
+      "100 mph (87 knots)",
+      "150 mph (130 knots)",
+      "55 mph (48 knots)",
+      "200 mph (174 knots)"
+    ],
+    "a": 0,
+    "e": "Groundspeed is limited to 100 mph, which is 87 knots.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Operating Limits",
+    "acs": "UA.I.B",
+    "q": "The minimum flight visibility for Part 107, measured from the control station, is:",
+    "c": [
+      "3 statute miles",
+      "1 statute mile",
+      "5 statute miles",
+      "half a statute mile"
+    ],
+    "a": 0,
+    "e": "A minimum of 3 statute miles of flight visibility is required from the control station.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Operating Limits",
+    "acs": "UA.I.B",
+    "q": "Part 107 cloud clearance is at least 500 ft below a cloud and how far horizontally?",
+    "c": [
+      "2,000 ft",
+      "500 ft",
+      "1,000 ft",
+      "250 ft"
+    ],
+    "a": 0,
+    "e": "The requirement is 500 feet below and 2,000 feet horizontal from clouds.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Responsibility",
+    "acs": "UA.I.A",
+    "q": "Final responsibility and authority for a Part 107 operation rests with the:",
+    "c": [
+      "remote pilot in command",
+      "small aircraft's manufacturer",
+      "visual observer",
+      "FAA inspector"
+    ],
+    "a": 0,
+    "e": "The remote pilot in command is directly responsible for, and the final authority over, the operation.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Currency",
+    "acs": "UA.I.A",
+    "q": "To keep exercising Part 107 privileges, recurrent training is:",
+    "c": [
+      "required every 24 calendar months",
+      "recommended every couple of years or so",
+      "optional after the first test",
+      "required only once ever"
+    ],
+    "a": 0,
+    "e": "Recurrent training is required every 24 calendar months to continue exercising remote pilot privileges.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "A Category 2 small UAS over people must not cause an injury worse than the impact of:",
+    "c": [
+      "11 ft-lb of kinetic energy",
+      "50 ft-lb of kinetic energy",
+      "25 ft-lb of kinetic energy",
+      "1 ft-lb of kinetic energy"
+    ],
+    "a": 0,
+    "e": "Category 2 aircraft must not, on impact, transfer more than 11 ft-lb of kinetic energy, with no lacerations and no exposed rotating parts.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "The kinetic-energy injury limit for a Category 3 small UAS over people is:",
+    "c": [
+      "25 ft-lb",
+      "11 ft-lb",
+      "100 ft-lb",
+      "5 ft-lb"
+    ],
+    "a": 0,
+    "e": "Category 3 aircraft have a higher injury limit of 25 ft-lb but come with tighter operating-site restrictions.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "Unlike Category 2, a Category 3 operation may NOT be flown:",
+    "c": [
+      "over an open-air assembly of people",
+      "anywhere near any tall city building",
+      "after sunrise",
+      "with a visual observer"
+    ],
+    "a": 0,
+    "e": "Category 3 forbids flight over open-air assemblies; it is limited to closed or restricted-access sites, or brief transiting.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "A Category 1 small UAS flown over people must weigh 0.55 lb or less and have:",
+    "c": [
+      "no exposed parts that could lacerate skin",
+      "a parachute that stays fully deployed at all times",
+      "a second operator present",
+      "a metal cage around it"
+    ],
+    "a": 0,
+    "e": "Category 1 requires the aircraft to be under 0.55 lb with no exposed rotating parts capable of lacerating skin.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "Category 4 operations over people require the aircraft to have:",
+    "c": [
+      "an airworthiness certificate",
+      "a bright reflective paint scheme",
+      "two spare batteries",
+      "a louder motor"
+    ],
+    "a": 0,
+    "e": "Category 4 aircraft must hold an airworthiness certificate and be maintained and operated within its limitations.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over People",
+    "acs": "UA.I.B",
+    "q": "Briefly flying across above scattered people, without hovering over them, is called:",
+    "c": [
+      "transiting",
+      "an open-air assembly",
+      "sustained flight",
+      "a waiver operation"
+    ],
+    "a": 0,
+    "e": "Transiting is a brief pass over people; sustained flight means remaining over them, which triggers stricter category rules.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Over Vehicles",
+    "acs": "UA.I.B",
+    "q": "Sustained flight over a moving vehicle with people inside is generally allowed only:",
+    "c": [
+      "in a restricted-access area or by waiver",
+      "only if the vehicle is parked briefly first",
+      "anywhere below 400 ft",
+      "over highways at night"
+    ],
+    "a": 0,
+    "e": "Sustained flight over people in moving vehicles needs a restricted-access area or an approved category or waiver; brief transiting is treated differently.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Carriage of Property",
+    "acs": "UA.I.B",
+    "q": "When carrying property for compensation under Part 107, the aircraft plus its payload must weigh:",
+    "c": [
+      "less than 55 lb total",
+      "less than 250 grams only",
+      "under 100 lb total",
+      "exactly 55 lb"
+    ],
+    "a": 0,
+    "e": "The combined weight of the aircraft and its cargo must stay under 55 lb, and no hazardous materials may be carried.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Carriage of Property",
+    "acs": "UA.I.B",
+    "q": "Carrying another person's property for hire under Part 107 must be conducted:",
+    "c": [
+      "within the bounds of a single state",
+      "across at least two neighboring states",
+      "only over water",
+      "only at night"
+    ],
+    "a": 0,
+    "e": "Such carriage must remain intrastate (within one state's boundaries) and follow all other Part 107 rules.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Certificate Application",
+    "acs": "UA.I.A",
+    "q": "After passing the knowledge test and vetting, an applicant first receives a:",
+    "c": [
+      "temporary certificate valid 120 days",
+      "permanent plastic card issued instantly",
+      "one-flight-only permit",
+      "lifetime medical card"
+    ],
+    "a": 0,
+    "e": "A temporary remote pilot certificate is issued (valid 120 days) while the permanent certificate is processed and mailed.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Certificate Application",
+    "acs": "UA.I.A",
+    "q": "The permanent remote pilot certificate is issued:",
+    "c": [
+      "by mail after security vetting",
+      "at the test center on the spot",
+      "by the drone's seller",
+      "only after 100 flights"
+    ],
+    "a": 0,
+    "e": "The FAA mails the permanent certificate after the TSA security background check is complete.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Currency",
+    "acs": "UA.I.A",
+    "q": "Compared with the initial test, the required recurrent training is:",
+    "c": [
+      "free and taken online",
+      "longer and in person",
+      "a paid retake at a center",
+      "a supervised flight test"
+    ],
+    "a": 0,
+    "e": "Recurrent training is a free online course taken every 24 calendar months, unlike the in-person, proctored initial test.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Emergency Deviation",
+    "acs": "UA.I.B",
+    "q": "During an in-flight emergency that requires immediate action, the remote PIC may:",
+    "c": [
+      "deviate from Part 107 as far as needed",
+      "hand the controls over to any bystander",
+      "never depart from any rule",
+      "only descend, nothing else"
+    ],
+    "a": 0,
+    "e": "Under 107.21 the remote PIC may deviate from any Part 107 rule to the extent necessary to meet an in-flight emergency.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Emergency Deviation",
+    "acs": "UA.I.B",
+    "q": "After deviating from the rules for an emergency, the remote PIC must, if the FAA asks:",
+    "c": [
+      "send a written report of the deviation",
+      "immediately ground the drone for a whole year",
+      "pay an automatic fine",
+      "surrender the certificate"
+    ],
+    "a": 0,
+    "e": "If the Administrator requests it, the pilot must submit a written report explaining the emergency deviation.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Documents",
+    "acs": "UA.I.A",
+    "q": "On request during an operation, the remote PIC must present the certificate and:",
+    "c": [
+      "make the aircraft available for inspection",
+      "provide the original dated sales receipt too",
+      "pay an inspection fee",
+      "show a pilot logbook only"
+    ],
+    "a": 0,
+    "e": "The pilot must present the certificate and identification and make the aircraft available to the FAA for inspection or testing.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Drug and Alcohol",
+    "acs": "UA.I.A",
+    "q": "Refusing to submit to an FAA-requested test for drugs or alcohol can result in:",
+    "c": [
+      "denial or suspension of the certificate",
+      "only a brief informal spoken verbal warning",
+      "an automatic waiver",
+      "a longer flight time"
+    ],
+    "a": 0,
+    "e": "Refusal to take a required drug or alcohol test is grounds for denying an application or suspending the certificate.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Applicability",
+    "acs": "UA.I.B",
+    "q": "Part 107 does NOT apply to:",
+    "c": [
+      "amateur rockets and moored balloons",
+      "routine commercial aerial mapping flights",
+      "aerial photos for pay",
+      "survey drones over farms"
+    ],
+    "a": 0,
+    "e": "Part 107 excludes amateur rockets, moored balloons and kites, air-carrier operations, and model aircraft flown under Section 44809.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Definitions",
+    "acs": "UA.I.B",
+    "q": "A small unmanned aircraft is defined as one weighing:",
+    "c": [
+      "less than 55 lb",
+      "less than 5 lb",
+      "less than 250 lb",
+      "more than 55 lb"
+    ],
+    "a": 0,
+    "e": "A small unmanned aircraft weighs less than 55 lb, including everything on board at take-off.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "Which of these Part 107 rules may be waived?",
+    "c": [
+      "operating over people",
+      "the registration rule",
+      "the Remote ID rule",
+      "the careless-operation ban"
+    ],
+    "a": 0,
+    "e": "Operating over people (and rules like visual line of sight and night) can be waived; registration, Remote ID, and careless operation cannot.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Waivers",
+    "acs": "UA.I.D",
+    "q": "A pilot who wants to operate two drones at once would need a waiver of the rule requiring:",
+    "c": [
+      "one aircraft per remote pilot",
+      "daylight-only flight operations",
+      "a visual observer",
+      "a written checklist"
+    ],
+    "a": 0,
+    "e": "Part 107 limits a remote pilot to one aircraft at a time, so simultaneous multi-aircraft operations require a waiver.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Recreational Exception",
+    "acs": "UA.I.A",
+    "q": "A recreational flyer under Section 44809 must fly within the safety guidelines of:",
+    "c": [
+      "a recognized community-based organization",
+      "any random online drone discussion forum group",
+      "the local police department",
+      "the drone's warranty card"
+    ],
+    "a": 0,
+    "e": "Recreational flyers must operate within the safety guidelines of an FAA-recognized community-based organization.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Recreational Exception",
+    "acs": "UA.I.A",
+    "q": "To fly recreationally in controlled airspace under 44809, the flyer must:",
+    "c": [
+      "get authorization, such as through LAANC",
+      "simply stay under 400 ft for the whole flight",
+      "call the airport by phone",
+      "avoid it only on weekends"
+    ],
+    "a": 0,
+    "e": "Recreational flights in controlled airspace still require prior authorization, commonly obtained through LAANC.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Supervision",
+    "acs": "UA.I.A",
+    "q": "A person without a remote pilot certificate may fly a Part 107 operation only if:",
+    "c": [
+      "a certificated remote PIC supervises",
+      "they have read the entire manual once through",
+      "they are over age 21",
+      "they fly below 100 ft"
+    ],
+    "a": 0,
+    "e": "An uncertificated person may manipulate the controls only under the direct supervision of a certificated remote PIC who can take over.",
+    "b": "Regulations"
+  },
+  {
+    "s": "Hazardous Materials",
+    "acs": "UA.I.B",
+    "q": "Under Part 107, carrying hazardous materials as cargo is:",
+    "c": [
+      "prohibited",
+      "allowed under 55 lb",
+      "allowed with a waiver",
+      "allowed intrastate only"
+    ],
+    "a": 0,
+    "e": "Part 107 flatly prohibits the carriage of hazardous materials, regardless of weight or waivers.",
+    "b": "Regulations"
   }
 ]
