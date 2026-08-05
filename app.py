@@ -41,6 +41,15 @@ def _secret_key():
 
 app.secret_key = _secret_key()
 
+# Cookie hardening. Secure is off for local HTTP so login works in development;
+# set SESSION_COOKIE_SECURE=1 (or serve over HTTPS) to send cookies only over TLS.
+_SECURE_COOKIES = os.environ.get("SESSION_COOKIE_SECURE", "").strip().lower() in ("1", "true", "yes", "on")
+app.config.update(
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="Lax",
+    SESSION_COOKIE_SECURE=_SECURE_COOKIES,
+)
+
 # ---- Data -------------------------------------------------------------------
 with open(ROOT / "questions.json", encoding="utf-8") as fh:
     QUESTIONS = json.load(fh)
@@ -85,12 +94,12 @@ EXAM_MIN = 120
 # the Airspace band. These are midpoints and are safe to tune; they need not
 # sum to exactly 1 (they are normalized at apportionment time).
 EXAM_BLUEPRINT = {
-    "Operations": 0.38,
+    "Operations": 0.36,
     "Regulations": 0.20,
     "Airspace": 0.16,
     "Weather": 0.12,
     "Loading": 0.08,
-    "Charts": 0.06,
+    "Charts": 0.08,
 }
 CODE_SUBTOPICS = {"METAR", "TAF", "Winds Aloft"}
 
@@ -307,7 +316,9 @@ def _load_state():
 @app.after_request
 def _persist_cookie(resp):
     try:
-        resp.set_cookie(COOKIE, g.uid, max_age=60 * 60 * 24 * 365, samesite="Lax")
+        resp.set_cookie(COOKIE, g.uid, max_age=60 * 60 * 24 * 365,
+                        samesite="Lax", httponly=True,
+                        secure=(_SECURE_COOKIES or request.is_secure))
     except Exception:
         pass
     return resp
